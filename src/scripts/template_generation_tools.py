@@ -50,9 +50,9 @@ def generate_ind_template(taxonomy_file_path, centralized_data_folder, output_fi
     taxonomy_config = read_taxonomy_config(taxon)
 
     taxonomy_folder_name = get_centralized_taxonomy_folder(taxonomy_config)
-    allen_desc_file = ALLEN_DESCRIPTIONS_PATH.format(centralized_data_folder, taxonomy_folder_name,
-                                                     taxonomy_config['Species_abbv'][0])
-    allen_descriptions = read_allen_descriptions(allen_desc_file)
+    # allen_desc_file = ALLEN_DESCRIPTIONS_PATH.format(centralized_data_folder, taxonomy_folder_name,
+    #                                                  taxonomy_config['Species_abbv'][0])
+    # allen_descriptions = read_allen_descriptions(allen_desc_file)
 
     subtrees = get_subtrees(dend_tree, taxonomy_config)
 
@@ -112,11 +112,11 @@ def generate_ind_template(taxonomy_file_path, centralized_data_folder, output_fi
             d['Rank'] = '|'.join([cell_type.strip().replace("No", "None")
                                   for cell_type in str(o["cell_type_card"]).split(",")])
 
-        if o['cell_set_accession'] in allen_descriptions:
-            allen_data = allen_descriptions[o['cell_set_accession']]
-            d['Comment'] = allen_data["summary"][0]
-            if allen_data["aliases"][0]:
-                d['Aliases'] = '|'.join([alias.strip() for alias in str(allen_data["aliases"][0]).split("|")])
+        # if o['cell_set_accession'] in allen_descriptions:
+        #     allen_data = allen_descriptions[o['cell_set_accession']]
+        #     d['Comment'] = allen_data["summary"][0]
+        #     if allen_data["aliases"][0]:
+        #         d['Aliases'] = '|'.join([alias.strip() for alias in str(allen_data["aliases"][0]).split("|")])
 
         dl.append(d)
     robot_template = pd.DataFrame.from_records(dl)
