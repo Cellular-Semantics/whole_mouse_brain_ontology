@@ -10,12 +10,10 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 Ontology(<http://purl.obolibrary.org/obo/PCL.owl>
 Import(<http://purl.obolibrary.org/obo/helper.owl>)
-Import(<http://purl.obolibrary.org/obo/bdscratch/imports/simple_human_import.owl>)
-Import(<http://purl.obolibrary.org/obo/bdscratch/imports/simple_marmoset_import.owl>)
 Import(<http://purl.obolibrary.org/obo/pcl/imports/merged_import.owl>)
 Import(<http://purl.obolibrary.org/obo/bdscratch/patterns/definitions.owl>)
 Import(<http://purl.obolibrary.org/obo/components/all_templates.owl>)
-Annotation(dce:title "Brain Data Standards Cell Ontology")
+Annotation(dce:title "Full Mouse Brain Ontology")
 Annotation(dcterms:license <http://creativecommons.org/licenses/by/4.0/>)
 
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000099>))

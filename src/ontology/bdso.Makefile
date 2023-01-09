@@ -3,16 +3,17 @@
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
 
-IMPORTS += simple_human simple_marmoset
+#IMPORTS += simple_human simple_marmoset
 
-JOBS = CCN202002013 CCN201912131 CCN201912132 CS1908210 #CCN202002270 CCN202002013 CCN201810310 CCN201908211 CCN201908210
-GENE_LIST = ensmusg simple_human simple_marmoset
+JOBS = CS202211210
+#GENE_LIST = ensmusg simple_human simple_marmoset
+GENE_LIST = ensmusg
 BDS_BASE = http://purl.obolibrary.org/obo/
 ONTBASE=                    $(URIBASE)/pcl
 
 TSV_CLASS_FILES = $(patsubst %, ../patterns/data/default/%_class.tsv, $(JOBS))
-TSV_CLASS_HOMOLOGOUS_FILES = $(patsubst %, ../patterns/data/default/%_class_homologous.tsv, $(JOBS))
-TSV_MARKER_SET_FILES = $(patsubst %, ../patterns/data/default/%_marker_set.tsv, $(JOBS))
+#TSV_CLASS_HOMOLOGOUS_FILES = $(patsubst %, ../patterns/data/default/%_class_homologous.tsv, $(JOBS))
+#TSV_MARKER_SET_FILES = $(patsubst %, ../patterns/data/default/%_marker_set.tsv, $(JOBS))
 
 OWL_FILES = $(patsubst %, components/%.owl, $(JOBS))
 OWL_CLASS_FILES = $(patsubst %, components/%_class.owl, $(JOBS))
@@ -68,6 +69,15 @@ imports/%_import.owl: mirror/merged.owl imports/%_terms_combined.txt
 
 .PRECIOUS: imports/%_import.owl
 
+imports/ensmusg_import.owl: mirror/ensmusg.owl imports/ensmusg_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) query  -i $< --update ../sparql/inject-version-info.ru --update ../sparql/preprocess-module.ru \
+		extract -T imports/ensmusg_terms_combined.txt --force true --copy-ontology-annotations true --individuals exclude --method BOT \
+		remove  --select "<http://www.informatics.jax.org/marker/MGI:*>" remove  --select "<http://purl.obolibrary.org/obo/OBA_*>" remove  --select "<http://purl.obolibrary.org/obo/ENVO_*>" remove  --select "<http://purl.obolibrary.org/obo/OBI_*>" remove  --select "<http://purl.obolibrary.org/obo/GOCHE_*>" remove  --select "<http://purl.obolibrary.org/obo/CARO_*>" remove  --select "<http://purl.obolibrary.org/obo/NCBITaxon_Union_*>" remove  --select "<http://www.genenames.org/cgi-bin/gene_symbol_report*>"  \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
+		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+
+.PRECIOUS: imports/ensmusg_import.owl
+
 # remove exclude_iri_patterns
 imports/pr_import.owl: mirror/merged.owl imports/pr_terms_combined.txt
 	if [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then $(ROBOT) extract -i $< -T imports/pr_terms_combined.txt --force true --individuals exclude --method BOT \
@@ -91,14 +101,14 @@ $(PATTERNDIR)/data/default/%_class_base.txt: $(PATTERNDIR)/data/default/%_class_
 $(PATTERNDIR)/data/default/%_class_curation.txt: $(PATTERNDIR)/data/default/%_class_curation.tsv $(TSV_CLASS_FILES) .FORCE
 	if [ $(PAT) = true ]; then $(DOSDPT) terms --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_class.yaml --obo-prefixes=true --prefixes=template_prefixes.yaml --outfile=$@; fi
 
-$(PATTERNDIR)/data/default/%_class_homologous.txt: $(PATTERNDIR)/data/default/%_class_homologous.tsv $(TSV_CLASS_FILES) .FORCE
-	if [ $(PAT) = true ]; then $(DOSDPT) terms --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_class_homologous.yaml --obo-prefixes=true --prefixes=template_prefixes.yaml --outfile=$@; fi
-
-$(PATTERNDIR)/data/default/%_marker_set.txt: $(PATTERNDIR)/data/default/%_marker_set.tsv $(TSV_MARKER_SET_FILES) .FORCE
-	if [ $(PAT) = true ]; then $(DOSDPT) terms --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_marker_set.yaml --obo-prefixes=true --prefixes=template_prefixes.yaml --outfile=$@; fi
-
-$(PATTERNDIR)/data/default/Protein2GeneExpression.txt: $(PATTERNDIR)/data/default/Protein2GeneExpression.tsv .FORCE
-	if [ $(PAT) = true ]; then $(DOSDPT) terms --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/Protein2GeneExpression.yaml --obo-prefixes=true --prefixes=template_prefixes.yaml --outfile=$@; fi
+#$(PATTERNDIR)/data/default/%_class_homologous.txt: $(PATTERNDIR)/data/default/%_class_homologous.tsv $(TSV_CLASS_FILES) .FORCE
+#	if [ $(PAT) = true ]; then $(DOSDPT) terms --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_class_homologous.yaml --obo-prefixes=true --prefixes=template_prefixes.yaml --outfile=$@; fi
+#
+#$(PATTERNDIR)/data/default/%_marker_set.txt: $(PATTERNDIR)/data/default/%_marker_set.tsv $(TSV_MARKER_SET_FILES) .FORCE
+#	if [ $(PAT) = true ]; then $(DOSDPT) terms --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_marker_set.yaml --obo-prefixes=true --prefixes=template_prefixes.yaml --outfile=$@; fi
+#
+#$(PATTERNDIR)/data/default/Protein2GeneExpression.txt: $(PATTERNDIR)/data/default/Protein2GeneExpression.tsv .FORCE
+#	if [ $(PAT) = true ]; then $(DOSDPT) terms --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/Protein2GeneExpression.yaml --obo-prefixes=true --prefixes=template_prefixes.yaml --outfile=$@; fi
 
 
 # merge class template data
@@ -113,22 +123,22 @@ mirror/ensmusg.owl: ../templates/ensmusg.tsv .FORCE
       --add-prefixes template_prefixes.json \
       annotate --ontology-iri ${BDS_BASE}$@ \
       convert --format ofn --output $@; fi
-	if [ $(MIR) = true ]; then $(ROBOT) template --input $(SRC) --template ../templates/simple_human.tsv \
-      --add-prefixes template_prefixes.json \
-      annotate --ontology-iri ${BDS_BASE}mirror/simple_human.owl \
-      convert --format ofn --output mirror/simple_human.owl; fi
-	if [ $(MIR) = true ]; then $(ROBOT) template --input $(SRC) --template ../templates/simple_marmoset.tsv \
-      --add-prefixes template_prefixes.json \
-      annotate --ontology-iri ${BDS_BASE}mirror/simple_marmoset.owl \
-      convert --format ofn --output mirror/simple_marmoset.owl; fi
+#	if [ $(MIR) = true ]; then $(ROBOT) template --input $(SRC) --template ../templates/simple_human.tsv \
+#      --add-prefixes template_prefixes.json \
+#      annotate --ontology-iri ${BDS_BASE}mirror/simple_human.owl \
+#      convert --format ofn --output mirror/simple_human.owl; fi
+#	if [ $(MIR) = true ]; then $(ROBOT) template --input $(SRC) --template ../templates/simple_marmoset.tsv \
+#      --add-prefixes template_prefixes.json \
+#      annotate --ontology-iri ${BDS_BASE}mirror/simple_marmoset.owl \
+#      convert --format ofn --output mirror/simple_marmoset.owl; fi
 
-.PRECIOUS: mirror/simple_human.owl
-.PRECIOUS: imports/simple_human_import.owl
-.PRECIOUS: mirror/simple_marmoset.owl
-.PRECIOUS: imports/simple_marmoset_import.owl
+#.PRECIOUS: mirror/simple_human.owl
+#.PRECIOUS: imports/simple_human_import.owl
+#.PRECIOUS: mirror/simple_marmoset.owl
+#.PRECIOUS: imports/simple_marmoset_import.owl
 
 # merge all templates except application specific ones
-components/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_MIN_MARKER_FILES) $(OWL_TAXONOMY_FILE) $(OWL_PROTEIN2GENE_FILE) $(OWL_APP_SPECIFIC_FILES) $(PCL_LEGACY_FILE) $(OWL_CLASS_HOMOLOGOUS_FILES) $(OWL_DATASET_FILES) $(OWL_MARKER_SET_FILES) $(OWL_OBSOLETE_TAXONOMY_FILE) $(OWL_OBSOLETE_INDVS)
+components/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES)
 	$(ROBOT) merge $(patsubst %, -i %, $(filter-out $(OWL_APP_SPECIFIC_FILES), $^)) \
 	 --collapse-import-closure false \
 	 annotate --ontology-iri ${BDS_BASE}$@  \
@@ -148,93 +158,93 @@ components/%_class.owl: $(PATTERNDIR)/data/default/%_class.tsv $(SRC) $(PATTERND
         --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_class.yaml \
         --ontology=$(SRC) --obo-prefixes=true --outfile=$@
 
-components/%_class_homologous.owl: $(PATTERNDIR)/data/default/%_class_homologous.tsv $(SRC) $(PATTERNDIR)/dosdp-patterns/taxonomy_class_homologous.yaml $(SRC) all_imports .FORCE
-	$(DOSDPT) generate --catalog=catalog-v001.xml --prefixes=template_prefixes.yaml \
-        --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_class_homologous.yaml \
-        --ontology=$(SRC) --obo-prefixes=true --outfile=$@
+#components/%_class_homologous.owl: $(PATTERNDIR)/data/default/%_class_homologous.tsv $(SRC) $(PATTERNDIR)/dosdp-patterns/taxonomy_class_homologous.yaml $(SRC) all_imports .FORCE
+#	$(DOSDPT) generate --catalog=catalog-v001.xml --prefixes=template_prefixes.yaml \
+#        --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_class_homologous.yaml \
+#        --ontology=$(SRC) --obo-prefixes=true --outfile=$@
+#
+#components/%_marker_set.owl: $(PATTERNDIR)/data/default/%_marker_set.tsv $(SRC) $(PATTERNDIR)/dosdp-patterns/taxonomy_marker_set.yaml $(SRC) all_imports .FORCE
+#	$(DOSDPT) generate --catalog=catalog-v001.xml --prefixes=template_prefixes.yaml \
+#        --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_marker_set.yaml \
+#        --ontology=$(SRC) --obo-prefixes=true --outfile=$@
+#
+#components/taxonomies.owl: ../templates/Taxonomies.tsv $(SRC)
+#	$(ROBOT) template --input $(SRC) --template $< \
+#    		--add-prefixes template_prefixes.json \
+#    		annotate --ontology-iri ${BDS_BASE}$@ \
+#    		convert --format ofn --output $@
+#
+#components/taxonomies_obsolete.owl: ../templates/Taxonomies_obsolete.tsv $(SRC)
+#	$(ROBOT) template --input $(SRC) --template $< \
+#    		--add-prefixes template_prefixes.json \
+#    		annotate --ontology-iri ${BDS_BASE}$@ \
+#    		convert --format ofn --output $@
+#
+#components/%_obsolete_indvs.owl: ../templates/%_obsolete_indvs.tsv $(SRC)
+#	$(ROBOT) template --input $(SRC) --template $< \
+#    		--add-prefixes template_prefixes.json \
+#    		annotate --ontology-iri ${BDS_BASE}$@ \
+#    		convert --format ofn --output $@ \
+#
+#components/Protein2GeneExpression.owl: $(PATTERNDIR)/data/default/Protein2GeneExpression.tsv $(PATTERNDIR)/dosdp-patterns/Protein2GeneExpression.yaml $(SRC) all_imports .FORCE
+#	$(DOSDPT) generate --catalog=catalog-v001.xml --prefixes=template_prefixes.yaml \
+#        --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/Protein2GeneExpression.yaml \
+#        --ontology=$(SRC) --obo-prefixes=true --outfile=$@
+#
+## release a legacy ontology to support older versions of the PCL
+#components/pcl-legacy.owl: ../resources/pCL_4.1.0.owl components/pCL_mapping.owl
+#	$(ROBOT) query --input ../resources/pCL_4.1.0.owl --update ../sparql/delete-legacy-properties.ru \
+#			query --update ../sparql/delete-non-pcl-terms.ru \
+#			query --update ../sparql/postprocess-module.ru \
+#			remove --select ontology \
+#			merge --input components/pCL_mapping.owl \
+#			annotate --ontology-iri $(ONTBASE)/pcl.owl  \
+#			--link-annotation dc:license http://creativecommons.org/licenses/by/4.0/ \
+#			--annotation owl:versionInfo $(VERSION) \
+#			--annotation dc:title "Provisional Cell Ontology" \
+#			--output $@
+#
+#components/pCL_mapping.owl: ../templates/pCL_mapping.tsv ../resources/pCL_4.1.0.owl
+#	$(ROBOT) template --input ../resources/pCL_4.1.0.owl --template $< \
+#    		--add-prefixes template_prefixes.json \
+#    		convert --format ofn --output $@
+#
+#components/%_app_specific.owl: ../templates/%_app_specific.tsv allen_helper.owl
+#	$(ROBOT) template --input allen_helper.owl --template $< \
+#    		--add-prefixes template_prefixes.json \
+#    		annotate --ontology-iri ${BDS_BASE}$@ \
+#    		convert --format ofn --output $@ \
+#
+#components/%_dataset.owl: ../templates/%_dataset.tsv $(SRC)
+#	$(ROBOT) template --input $(SRC) --template $< \
+#    		--add-prefixes template_prefixes.json \
+#    		annotate --ontology-iri ${BDS_BASE}$@ \
+#    		convert --format ofn --output $@ \
 
-components/%_marker_set.owl: $(PATTERNDIR)/data/default/%_marker_set.tsv $(SRC) $(PATTERNDIR)/dosdp-patterns/taxonomy_marker_set.yaml $(SRC) all_imports .FORCE
-	$(DOSDPT) generate --catalog=catalog-v001.xml --prefixes=template_prefixes.yaml \
-        --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_marker_set.yaml \
-        --ontology=$(SRC) --obo-prefixes=true --outfile=$@
 
-components/taxonomies.owl: ../templates/Taxonomies.tsv $(SRC)
-	$(ROBOT) template --input $(SRC) --template $< \
-    		--add-prefixes template_prefixes.json \
-    		annotate --ontology-iri ${BDS_BASE}$@ \
-    		convert --format ofn --output $@
-
-components/taxonomies_obsolete.owl: ../templates/Taxonomies_obsolete.tsv $(SRC)
-	$(ROBOT) template --input $(SRC) --template $< \
-    		--add-prefixes template_prefixes.json \
-    		annotate --ontology-iri ${BDS_BASE}$@ \
-    		convert --format ofn --output $@
-
-components/%_obsolete_indvs.owl: ../templates/%_obsolete_indvs.tsv $(SRC)
-	$(ROBOT) template --input $(SRC) --template $< \
-    		--add-prefixes template_prefixes.json \
-    		annotate --ontology-iri ${BDS_BASE}$@ \
-    		convert --format ofn --output $@ \
-
-components/Protein2GeneExpression.owl: $(PATTERNDIR)/data/default/Protein2GeneExpression.tsv $(PATTERNDIR)/dosdp-patterns/Protein2GeneExpression.yaml $(SRC) all_imports .FORCE
-	$(DOSDPT) generate --catalog=catalog-v001.xml --prefixes=template_prefixes.yaml \
-        --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/Protein2GeneExpression.yaml \
-        --ontology=$(SRC) --obo-prefixes=true --outfile=$@
-
-# release a legacy ontology to support older versions of the PCL
-components/pcl-legacy.owl: ../resources/pCL_4.1.0.owl components/pCL_mapping.owl
-	$(ROBOT) query --input ../resources/pCL_4.1.0.owl --update ../sparql/delete-legacy-properties.ru \
-			query --update ../sparql/delete-non-pcl-terms.ru \
-			query --update ../sparql/postprocess-module.ru \
-			remove --select ontology \
-			merge --input components/pCL_mapping.owl \
-			annotate --ontology-iri $(ONTBASE)/pcl.owl  \
-			--link-annotation dc:license http://creativecommons.org/licenses/by/4.0/ \
-			--annotation owl:versionInfo $(VERSION) \
-			--annotation dc:title "Provisional Cell Ontology" \
-			--output $@
-
-components/pCL_mapping.owl: ../templates/pCL_mapping.tsv ../resources/pCL_4.1.0.owl
-	$(ROBOT) template --input ../resources/pCL_4.1.0.owl --template $< \
-    		--add-prefixes template_prefixes.json \
-    		convert --format ofn --output $@
-
-components/%_app_specific.owl: ../templates/%_app_specific.tsv allen_helper.owl
-	$(ROBOT) template --input allen_helper.owl --template $< \
-    		--add-prefixes template_prefixes.json \
-    		annotate --ontology-iri ${BDS_BASE}$@ \
-    		convert --format ofn --output $@ \
-
-components/%_dataset.owl: ../templates/%_dataset.tsv $(SRC)
-	$(ROBOT) template --input $(SRC) --template $< \
-    		--add-prefixes template_prefixes.json \
-    		annotate --ontology-iri ${BDS_BASE}$@ \
-    		convert --format ofn --output $@ \
-
-
-# Release additional artifacts
-$(ONT).owl: $(ONT)-full.owl $(ONT)-allen.owl $(ONT)-pcl-comp.owl $(ONT)-pcl-comp.obo $(ONT)-pcl-comp.json
-	$(ROBOT) annotate --input $< --ontology-iri $(URIBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
-		convert -o $@.tmp.owl && mv $@.tmp.owl $@
-
-# Allen app specific ontology (with color information etc.) (Used for Solr dump)
-$(ONT)-allen.owl: $(ONT)-full.owl allen_helper.owl
-	$(ROBOT) merge -i $< -i allen_helper.owl $(patsubst %, -i %, $(OWL_APP_SPECIFIC_FILES)) \
-			 annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
-		 	 --output $(RELEASEDIR)/$@
-
-# Artifact that extends base with gene ontologies (used by PCL)
-$(ONT)-pcl-comp.owl:  $(ONT)-base.owl $(GENE_FILES)
-	$(ROBOT) merge -i $< $(patsubst %, -i %, $(GENE_FILES)) \
-	query --update ../sparql/remove_preflabels.ru \
-			 annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
-		 	 --output $(RELEASEDIR)/$@
-$(ONT)-pcl-comp.obo: $(RELEASEDIR)/$(ONT)-pcl-comp.owl
-	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo && grep -v ^owl-axioms $@.tmp.obo > $(RELEASEDIR)/$@ && rm $@.tmp.obo
-$(ONT)-pcl-comp.json: $(RELEASEDIR)/$(ONT)-pcl-comp.owl
-	$(ROBOT) annotate --input $< --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
-		convert --check false -f json -o $@.tmp.json &&\
-	jq -S 'walk(if type == "array" then sort else . end)' $@.tmp.json > $(RELEASEDIR)/$@ && rm $@.tmp.json
+## Release additional artifacts
+#$(ONT).owl: $(ONT)-full.owl $(ONT)-allen.owl $(ONT)-pcl-comp.owl $(ONT)-pcl-comp.obo $(ONT)-pcl-comp.json
+#	$(ROBOT) annotate --input $< --ontology-iri $(URIBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+#		convert -o $@.tmp.owl && mv $@.tmp.owl $@
+#
+## Allen app specific ontology (with color information etc.) (Used for Solr dump)
+#$(ONT)-allen.owl: $(ONT)-full.owl allen_helper.owl
+#	$(ROBOT) merge -i $< -i allen_helper.owl $(patsubst %, -i %, $(OWL_APP_SPECIFIC_FILES)) \
+#			 annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+#		 	 --output $(RELEASEDIR)/$@
+#
+## Artifact that extends base with gene ontologies (used by PCL)
+#$(ONT)-pcl-comp.owl:  $(ONT)-base.owl $(GENE_FILES)
+#	$(ROBOT) merge -i $< $(patsubst %, -i %, $(GENE_FILES)) \
+#	query --update ../sparql/remove_preflabels.ru \
+#			 annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+#		 	 --output $(RELEASEDIR)/$@
+#$(ONT)-pcl-comp.obo: $(RELEASEDIR)/$(ONT)-pcl-comp.owl
+#	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo && grep -v ^owl-axioms $@.tmp.obo > $(RELEASEDIR)/$@ && rm $@.tmp.obo
+#$(ONT)-pcl-comp.json: $(RELEASEDIR)/$(ONT)-pcl-comp.owl
+#	$(ROBOT) annotate --input $< --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+#		convert --check false -f json -o $@.tmp.json &&\
+#	jq -S 'walk(if type == "array" then sort else . end)' $@.tmp.json > $(RELEASEDIR)/$@ && rm $@.tmp.json
 
 
 # skip schema checks for now, because odk using the wrong validator
