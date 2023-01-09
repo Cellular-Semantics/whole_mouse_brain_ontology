@@ -5,12 +5,12 @@ JOBS = CS202211210
 #REPO_NAME=					MOp_taxonomies_ontology
 #CENTRALIZED_DIR=			centralized_data
 
-TEMPLATE_FILES = $(patsubst %, ../templates/%.tsv, $(JOBS))
-MARKER_DENORMALIZED_FILES = $(patsubst %, ../markers/%_markers_denormalized.tsv, $(JOBS))
+#TEMPLATE_FILES = $(patsubst %, ../templates/%.tsv, $(JOBS))
+#MARKER_DENORMALIZED_FILES = $(patsubst %, ../markers/%_markers_denormalized.tsv, $(JOBS))
 TEMPLATE_CLASS_BASE_FILES = $(patsubst %, ../patterns/data/default/%_class_base.tsv, $(JOBS))
 TEMPLATE_CLASS_CURATION_FILES = $(patsubst %, ../patterns/data/default/%_class_curation.tsv, $(JOBS))
-TEMPLATE_CLASS_HOMOLOGOUS_FILES = $(patsubst %, ../patterns/data/default/%_class_homologous.tsv, $(JOBS))
-APP_SPECIFIC_TEMPLATE_FILES = $(patsubst %, ../templates/%_app_specific.tsv, $(JOBS))
+#TEMPLATE_CLASS_HOMOLOGOUS_FILES = $(patsubst %, ../patterns/data/default/%_class_homologous.tsv, $(JOBS))
+#APP_SPECIFIC_TEMPLATE_FILES = $(patsubst %, ../templates/%_app_specific.tsv, $(JOBS))
 #DATASET_TEMPLATE_FILES = $(patsubst %, ../templates/%_dataset.tsv, $(JOBS))
 #MARKER_SET_TEMPLATE_FILES = $(patsubst %, ../patterns/data/default/%_marker_set.tsv, $(JOBS))
 #TAXONOMY_TEMPLATE_FILE = ../templates/Taxonomies.tsv
@@ -18,15 +18,15 @@ APP_SPECIFIC_TEMPLATE_FILES = $(patsubst %, ../templates/%_app_specific.tsv, $(J
 #OBSOLETE_TAXONOMY_TEMPLATE_FILE = ../templates/Taxonomies_obsolete.tsv
 
 #all: update_centralized_repo $(TEMPLATE_FILES) $(TEMPLATE_CLASS_BASE_FILES) $(TEMPLATE_CLASS_CURATION_FILES) $(MARKER_DENORMALIZED_FILES) $(TAXONOMY_TEMPLATE_FILE) $(APP_SPECIFIC_TEMPLATE_FILES) $(TEMPLATE_CLASS_HOMOLOGOUS_FILES) $(DATASET_TEMPLATE_FILES) $(MARKER_SET_TEMPLATE_FILES) $(OBSOLETE_INDV_TEMPLATE_FILES) $(OBSOLETE_TAXONOMY_TEMPLATE_FILE)
-all: $(TEMPLATE_FILES) $(TEMPLATE_CLASS_BASE_FILES) $(TEMPLATE_CLASS_CURATION_FILES) $(MARKER_DENORMALIZED_FILES) $(TAXONOMY_TEMPLATE_FILE) $(APP_SPECIFIC_TEMPLATE_FILES) $(TEMPLATE_CLASS_HOMOLOGOUS_FILES)
+all: $(TEMPLATE_CLASS_BASE_FILES) $(TEMPLATE_CLASS_CURATION_FILES)
 
-../templates/%.tsv: %.json nomenclature_table_%.csv
-	if [ $< = CS1908210.json ]; then python ../scripts/template_runner.py generator -i $< -i2 $(CENTRALIZED_DIR)/$(REPO_NAME) -o $@ ;\
-	else python ../scripts/template_runner.py generator -i $(word 2, $^) -i2 $(CENTRALIZED_DIR)/$(REPO_NAME) -o $@ ; fi
-
-../markers/%_markers_denormalized.tsv: %.json nomenclature_table_%.csv
-	if [ $< = CS1908210.json ]; then python ../scripts/template_runner.py generator -md -i $< -o $@ ;\
-	else python ../scripts/template_runner.py generator -md -i $(word 2, $^) -o $@ ; fi
+#../templates/%.tsv: %.json nomenclature_table_%.csv
+#	if [ $< = CS1908210.json ]; then python ../scripts/template_runner.py generator -i $< -i2 $(CENTRALIZED_DIR)/$(REPO_NAME) -o $@ ;\
+#	else python ../scripts/template_runner.py generator -i $(word 2, $^) -i2 $(CENTRALIZED_DIR)/$(REPO_NAME) -o $@ ; fi
+#
+#../markers/%_markers_denormalized.tsv: %.json nomenclature_table_%.csv
+#	if [ $< = CS1908210.json ]; then python ../scripts/template_runner.py generator -md -i $< -o $@ ;\
+#	else python ../scripts/template_runner.py generator -md -i $(word 2, $^) -o $@ ; fi
 
 ../patterns/data/default/%_class_base.tsv: %.json nomenclature_table_%.csv
 	if [ $< = CS1908210.json ]; then python ../scripts/template_runner.py generator -cb -i $< -o $@ ;\
@@ -36,13 +36,13 @@ all: $(TEMPLATE_FILES) $(TEMPLATE_CLASS_BASE_FILES) $(TEMPLATE_CLASS_CURATION_FI
 	if [ $< = CS1908210.json ]; then python ../scripts/template_runner.py generator -cc -i $< -o $@ ;\
 	else python ../scripts/template_runner.py generator -cc -i $(word 2, $^) -o $@ ; fi
 
-../patterns/data/default/%_class_homologous.tsv: %.json nomenclature_table_%.csv $(TEMPLATE_CLASS_BASE_FILES)
-	if [ $< = CS1908210.json ]; then python ../scripts/template_runner.py generator -ch -i $< -b "$(TEMPLATE_CLASS_BASE_FILES)" -o $@ ;\
-	else python ../scripts/template_runner.py generator -ch -i $(word 2, $^) -b "$(TEMPLATE_CLASS_BASE_FILES)" -o $@ ; fi
-
-../templates/%_app_specific.tsv: %.json nomenclature_table_%.csv
-	if [ $< = CS1908210.json ]; then python ../scripts/template_runner.py generator -a -i $< -o $@ ;\
-	else python ../scripts/template_runner.py generator -a -i $(word 2, $^) -o $@ ; fi
+#../patterns/data/default/%_class_homologous.tsv: %.json nomenclature_table_%.csv $(TEMPLATE_CLASS_BASE_FILES)
+#	if [ $< = CS1908210.json ]; then python ../scripts/template_runner.py generator -ch -i $< -b "$(TEMPLATE_CLASS_BASE_FILES)" -o $@ ;\
+#	else python ../scripts/template_runner.py generator -ch -i $(word 2, $^) -b "$(TEMPLATE_CLASS_BASE_FILES)" -o $@ ; fi
+#
+#../templates/%_app_specific.tsv: %.json nomenclature_table_%.csv
+#	if [ $< = CS1908210.json ]; then python ../scripts/template_runner.py generator -a -i $< -o $@ ;\
+#	else python ../scripts/template_runner.py generator -a -i $(word 2, $^) -o $@ ; fi
 
 #../patterns/data/default/%_marker_set.tsv: %.json nomenclature_table_%.csv
 #	if [ $< = CS1908210.json ]; then python ../scripts/template_runner.py generator -ms -i $< -i2 $(CENTRALIZED_DIR)/$(REPO_NAME) -o $@ ;\
