@@ -31,7 +31,7 @@ TAXONOMY_DETAILS_YAML = os.path.join(os.path.dirname(os.path.realpath(__file__))
                                      '../dendrograms/taxonomy_details.yaml')
 
 # Allocate IDs starting from PCL_0011000
-ID_RANGE_BASE = 11000
+ID_RANGE_BASE = 110000
 TAXONOMY_ID_RANGE = 4000
 INDV_ID_DISPLACEMENT = 500
 DATASET_ID_DISPLACEMENT = 1451
