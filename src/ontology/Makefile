@@ -94,7 +94,7 @@ all_main: $(MAIN_FILES)
 ## By default this is the cross-product of IMPORT_MODULES x FORMATS
 
 
-IMPORTS =  pr go ro uberon pato cl ensmusg ncbitaxon
+IMPORTS =  pr go ro uberon pato cl ensmusg ncbitaxon mba
 
 IMPORT_ROOTS = $(patsubst %, imports/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -376,6 +376,15 @@ mirror/ncbitaxon.trigger: $(SRC)
 mirror/ncbitaxon.owl: mirror/ncbitaxon.trigger
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
 .PRECIOUS: mirror/ncbitaxon.owl
+
+
+## ONTOLOGY: mba
+## Copy of mba is re-downloaded whenever source changes
+mirror/mba.trigger: $(SRC)
+
+mirror/mba.owl: mirror/mba.trigger
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I https://raw.githubusercontent.com/hkir-dev/mouse_brain_atlas_ontology/main/mba.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+.PRECIOUS: mirror/mba.owl
 
 ALL_MIRRORS = $(patsubst %, mirror/%.owl, $(IMPORTS))
 MERGE_MIRRORS = true

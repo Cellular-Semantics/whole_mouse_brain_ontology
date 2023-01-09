@@ -16,7 +16,7 @@
   Gene_abbv:
     - Mmus
   Brain_region:
-    - UBERON:0001384
+    - MBA:997
   Brain_region_abbv:
     - MOp
   Reference_gene_list:

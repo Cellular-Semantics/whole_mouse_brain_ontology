@@ -17,5 +17,6 @@
   <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/pcl/imports/merged_import.owl" uri="imports/merged_import.owl"/>
   <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/helper.owl" uri="helper.owl"/>
   <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/bdscratch/patterns/definitions.owl" uri="../patterns/definitions.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/bdscratch/imports/mba.owl" uri="imports/mba_import.owl"/>
   <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base=""/>
 </catalog>
