@@ -18,11 +18,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2023-01-09"
+            "val": "2023-01-10"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/pcl/releases/2023-01-09/bdso-simple.json",
+        "version": "http://purl.obolibrary.org/obo/pcl/releases/2023-01-10/bdso-simple.json",
         "xrefs": []
       },
       "nodes": [
@@ -248,35 +248,6 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/RO_0015001",
-          "lbl": "has exemplar data",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "transcriptomically defined cell type X equivalent to ‘cell’ and (has_exemplar_data value [transcriptomic profile data])"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
-                "val": "C has_exemplar_data y iff x is an instance of C and y is data about x that is taken as exemplifying of C."
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "Patrick Ray"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
-                "val": "This relation is not meant to capture the relation between occurrents and data."
-              }
-            ],
-            "definition": {
-              "val": "A relation between a material entity and some data in which the data is taken as exemplifying the material entity.",
-              "xrefs": []
-            }
-          },
-          "type": "PROPERTY"
-        },
-        {
           "id": "http://purl.obolibrary.org/obo/RO_0015004",
           "lbl": "has characterizing marker set",
           "meta": {
@@ -467,6 +438,11 @@
         {
           "id": "http://purl.obolibrary.org/obo/PCL_0010062",
           "lbl": "fbeta_confidence_score",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/PCL_0010063",
+          "lbl": "soma located in",
           "type": "PROPERTY"
         },
         {

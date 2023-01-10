@@ -18,11 +18,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2023-01-09"
+            "val": "2023-01-10"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/pcl/releases/2023-01-09/bdso-simple-non-classified.json",
+        "version": "http://purl.obolibrary.org/obo/pcl/releases/2023-01-10/bdso-simple-non-classified.json",
         "xrefs": []
       },
       "nodes": [],

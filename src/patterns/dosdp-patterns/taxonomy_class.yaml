@@ -38,6 +38,7 @@ list_vars:
   Allen_markers: "'sequence_feature'"
   Layers: "'layer of neocortex'"
   MBA: "'thing'"
+  NT: "'thing'"
 
 vars:
   Classification: "'cell'"
@@ -49,7 +50,6 @@ vars:
   has_soma_location: "'thing'"
   Individual: "'thing'"
   marker_gene_set: "'thing'"
-  NT: "'thing'"
   CL: "'cell'"
 
 data_list_vars:

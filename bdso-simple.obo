@@ -1,10 +1,14 @@
 format-version: 1.2
-data-version: pcl/releases/2023-01-09/bdso-simple.owl
+data-version: pcl/releases/2023-01-10/bdso-simple.owl
 subsetdef: ro-eco ""
 ontology: pcl/bdso-simple
 property_value: dc-title "Full Mouse Brain Ontology" xsd:string
 property_value: dcterms-license http://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2023-01-09" xsd:string
+property_value: owl:versionInfo "2023-01-10" xsd:string
+
+[Typedef]
+id: PCL:0010063
+name: soma located in
 
 [Typedef]
 id: RO:0002100
@@ -21,15 +25,6 @@ name: expresses
 def: "Inverse of 'expressed in'" []
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 "Chris Mungall" xsd:string
-
-[Typedef]
-id: RO:0015001
-name: has exemplar data
-def: "A relation between a material entity and some data in which the data is taken as exemplifying the material entity." []
-property_value: IAO:0000112 "transcriptomically defined cell type X equivalent to ‘cell’ and (has_exemplar_data value [transcriptomic profile data])" xsd:string
-property_value: IAO:0000116 "C has_exemplar_data y iff x is an instance of C and y is data about x that is taken as exemplifying of C." xsd:string
-property_value: IAO:0000117 "Patrick Ray" xsd:string
-property_value: IAO:0000232 "This relation is not meant to capture the relation between occurrents and data." xsd:string
 
 [Typedef]
 id: RO:0015004
