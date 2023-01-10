@@ -220,7 +220,7 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                     d["MBA"] = "|".join(mbas)
                 if "NT" in o and o["NT"]:
                     neuro_transmitters = [nt.strip() for nt in str(o["NT"]).split("|") if nt and nt.strip()]
-                    d['NT'] = neuro_transmitters
+                    d['NT'] = "|".join(neuro_transmitters)
                 if "CL" in o and o["CL"]:
                     d['CL'] = o["CL"]
 
