@@ -161,6 +161,9 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                       'part_of',
                       'has_soma_location',
                       'aligned_alias',
+                      'MBA',
+                      'NT',
+                      'CL',
                       'marker_gene_set'
                       ]
         class_template = []
@@ -210,6 +213,15 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                     d['aligned_alias'] = o["cell_set_aligned_alias"]
                 if o['cell_set_accession'] in minimal_markers:
                     d['marker_gene_set'] = PCL_PREFIX + get_marker_gene_set_id(o['cell_set_accession'])
+
+                if "MBA" in o and o["MBA"]:
+                    mbas = [mba.strip().replace("http://purl.obolibrary.org/obo/MBA_", "MBA:")
+                            for mba in str(o["MBA"]).split("|") if mba and mba.strip()]
+                    d["MBA"] = "|".join(mbas)
+                if "NT" in o and o["NT"]:
+                    d['NT'] = o["NT"]
+                if "CL" in o and o["CL"]:
+                    d['CL'] = o["CL"]
 
                 for k in class_seed:
                     if not (k in d.keys()):

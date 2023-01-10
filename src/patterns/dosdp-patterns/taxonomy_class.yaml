@@ -21,6 +21,8 @@ relations:
   bearer_of: "RO:0000053"
   has_exemplar_data: "RO:0015001"
   has_characterizing_marker_set: "RO:0015004"
+  capable_of: "RO:0002215"
+  'soma located in': "PCL:0010063"
 
 annotationProperties:
   skosPrefLabel: "skos:prefLabel"
@@ -35,6 +37,7 @@ list_vars:
   Minimal_markers: "'sequence_feature'"
   Allen_markers: "'sequence_feature'"
   Layers: "'layer of neocortex'"
+  MBA: "'thing'"
 
 vars:
   Classification: "'cell'"
@@ -46,6 +49,8 @@ vars:
   has_soma_location: "'thing'"
   Individual: "'thing'"
   marker_gene_set: "'thing'"
+  NT: "'thing'"
+  CL: "'cell'"
 
 data_list_vars:
   Synonyms_from_taxonomy: "xsd:string"
@@ -210,6 +215,21 @@ logical_axioms:
      text: "'has_characterizing_marker_set' some %s"
      vars:
         - marker_gene_set
+   - axiom_type: subClassOf
+     text: "'capable_of' some %s"
+     vars:
+       - NT
+   - axiom_type: subClassOf
+     text: "%s"
+     vars:
+       - CL
+   - axiom_type: subClassOf
+     multi_clause:
+       sep: " and "
+       clauses:
+         - text: "'soma located in' some %s"
+           vars:
+             - MBA
 
 annotations:
   - annotationProperty: skosPrefLabel
@@ -243,3 +263,4 @@ annotations:
         - text: "%s"
           vars:
             - Minimal_markers
+
