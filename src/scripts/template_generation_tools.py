@@ -197,7 +197,7 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                     d['Brain_region_abbv'] = taxonomy_config['Brain_region_abbv'][0]
                 if 'Species_abbv' in taxonomy_config:
                     d['Species_abbv'] = taxonomy_config['Species_abbv'][0]
-                d['Individual'] = PCL_INDV_BASE + o['cell_set_accession']
+                # d['Individual'] = PCL_INDV_BASE + o['cell_set_accession']
 
                 for index, subtree in enumerate(subtrees):
                     if o['cell_set_accession'] in subtree:
@@ -219,7 +219,8 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                             for mba in str(o["MBA"]).split("|") if mba and mba.strip()]
                     d["MBA"] = "|".join(mbas)
                 if "NT" in o and o["NT"]:
-                    d['NT'] = o["NT"]
+                    neuro_transmitters = [nt.strip() for nt in str(o["NT"]).split("|") if nt and nt.strip()]
+                    d['NT'] = neuro_transmitters
                 if "CL" in o and o["CL"]:
                     d['CL'] = o["CL"]
 
