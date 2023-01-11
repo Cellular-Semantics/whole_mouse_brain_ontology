@@ -75425,6 +75425,18 @@ id: RO:0002292
 name: expresses
 
 [Typedef]
+id: RO:0015001
+name: has exemplar data
+
+[Typedef]
+id: RO:0015002
+name: exemplar data of
+
+[Typedef]
+id: RO:0015003
+name: subcluster of
+
+[Typedef]
 id: RO:0015004
 name: has characterizing marker set
 

@@ -93,7 +93,7 @@ def generate_ind_template(taxonomy_file_path, centralized_data_folder, output_fi
         else:
             d['PrefLabel'] = o['cell_set_accession']
         d['Entity Type'] = 'PCL:0010001'  # Cluster
-        d['Metadata'] = json.dumps(o)
+        # d['Metadata'] = json.dumps(o)
         d['Synonyms'] = '|'.join([o[prop] for prop in synonym_properties if prop in o.keys() and o[prop]])
         d['Property Assertions'] = '|'.join(
             sorted(['PCL_INDV:' + e[1] for e in dend['edges'] if e[0] == o['cell_set_accession']]))
@@ -197,7 +197,7 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                     d['Brain_region_abbv'] = taxonomy_config['Brain_region_abbv'][0]
                 if 'Species_abbv' in taxonomy_config:
                     d['Species_abbv'] = taxonomy_config['Species_abbv'][0]
-                # d['Individual'] = PCL_INDV_BASE + o['cell_set_accession']
+                d['Individual'] = PCL_INDV_BASE + o['cell_set_accession']
 
                 for index, subtree in enumerate(subtrees):
                     if o['cell_set_accession'] in subtree:

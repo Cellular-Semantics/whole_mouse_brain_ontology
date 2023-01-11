@@ -29,10 +29,6 @@ PCL_LEGACY_FILE = components/pcl-legacy.owl
 OWL_OBSOLETE_INDVS = $(patsubst %, components/%_obsolete_indvs.owl, $(JOBS))
 OWL_OBSOLETE_TAXONOMY_FILE = components/taxonomies_obsolete.owl
 
-#DEND_FILES = $(patsubst %, ../dendrograms/%.json, $(JOBS))
-#TEMPLATE_FILES = $(patsubst %, ../templates/%.tsv, $(JOBS))
-#TEMPLATE_CLASS_FILES = $(patsubst %, ../templates/_%class.tsv, $(JOBS))
-
 # overriding to add prefixes
 $(PATTERNDIR)/pattern.owl: pattern_schema_checks update_patterns
 	if [ $(PAT) = true ]; then $(DOSDPT) prototype --prefixes=template_prefixes.yaml --obo-prefixes true --template=$(PATTERNDIR)/dosdp-patterns --outfile=$@; fi
