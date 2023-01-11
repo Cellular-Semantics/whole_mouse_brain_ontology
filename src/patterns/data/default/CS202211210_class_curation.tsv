@@ -5276,7 +5276,6 @@ http://purl.obolibrary.org/obo/PCL_0115275	MM-ant Foxb1 Glut
 http://purl.obolibrary.org/obo/PCL_0115276	MM Foxb1 Glut											
 http://purl.obolibrary.org/obo/PCL_0115277	PVa-ARH Six3 Dopa-Gaba											
 http://purl.obolibrary.org/obo/PCL_0115278	PM-TM-PVp Tbx3 Hist-Gaba											
-http://purl.obolibrary.org/obo/PCL_0115279	MOB Eomes Ms4a15 Glut											
 http://purl.obolibrary.org/obo/PCL_0115280	TRS Sln Glut											
 http://purl.obolibrary.org/obo/PCL_0115281	GPi Skor1 Gaba-Glut											
 http://purl.obolibrary.org/obo/PCL_0115282	RT Gnb3 Gaba											
@@ -5343,7 +5342,6 @@ http://purl.obolibrary.org/obo/PCL_0115342	PH-LHA Foxb1 Glut
 http://purl.obolibrary.org/obo/PCL_0115343	PM-LHA Foxb1 Glut											
 http://purl.obolibrary.org/obo/PCL_0115344	PAG Dmrta2 Glut											
 http://purl.obolibrary.org/obo/PCL_0115345	MRN-PAG Nkx6-1 Glut											
-http://purl.obolibrary.org/obo/PCL_0115346	MB-MY Glut-Sero											
 http://purl.obolibrary.org/obo/PCL_0115347	PH-an Pitx2 Glut											
 http://purl.obolibrary.org/obo/PCL_0115348	PH-SUM Foxa1 Glut											
 http://purl.obolibrary.org/obo/PCL_0115349	IPN-IF-RL Foxa1 Glut											
@@ -5444,7 +5442,6 @@ http://purl.obolibrary.org/obo/PCL_0115443	MV-NTS Bcl11b Neurod2 Gly-Gaba
 http://purl.obolibrary.org/obo/PCL_0115444	SPVI-SPVC Sall3 Gly-Gaba											
 http://purl.obolibrary.org/obo/PCL_0115445	NTS Dbh Glut											
 http://purl.obolibrary.org/obo/PCL_0115446	DMX Tbx20 Chol											
-http://purl.obolibrary.org/obo/PCL_0115447	SNc-VTA-RAmb Foxa1 Dopa											
 http://purl.obolibrary.org/obo/PCL_0115448	MA3 Foxd2 Glut											
 http://purl.obolibrary.org/obo/PCL_0115449	VCO-PSV-SOCl Mafa Meis2 Glut											
 http://purl.obolibrary.org/obo/PCL_0115450	SPVO Mafa Meis2 Glut											
@@ -5469,7 +5466,6 @@ http://purl.obolibrary.org/obo/PCL_0115468	MOB-mi Frmd7 Gaba
 http://purl.obolibrary.org/obo/PCL_0115469	MOB Dopa-Gaba											
 http://purl.obolibrary.org/obo/PCL_0115470	MOB-STR-CTX Inh IMN											
 http://purl.obolibrary.org/obo/PCL_0115471	DG-PIR Ex IMN											
-http://purl.obolibrary.org/obo/PCL_0115472	HPF CR Glut											
 http://purl.obolibrary.org/obo/PCL_0115473	Astro-NT NN											
 http://purl.obolibrary.org/obo/PCL_0115474	Astro-TE NN											
 http://purl.obolibrary.org/obo/PCL_0115475	Astro-OLF NN											
@@ -5487,42 +5483,4 @@ http://purl.obolibrary.org/obo/PCL_0115486	Endo NN
 http://purl.obolibrary.org/obo/PCL_0115487	BAM NN											
 http://purl.obolibrary.org/obo/PCL_0115488	DC NN											
 http://purl.obolibrary.org/obo/PCL_0115489	Lymphoid NN											
-http://purl.obolibrary.org/obo/PCL_0115490	IT-ET|IT-ET											
-http://purl.obolibrary.org/obo/PCL_0115491	NP-CT-L6b|NP-CT-L6b											
-http://purl.obolibrary.org/obo/PCL_0115492	DG-MOB-IMN											
-http://purl.obolibrary.org/obo/PCL_0115493	CGE											
-http://purl.obolibrary.org/obo/PCL_0115494	MGE											
-http://purl.obolibrary.org/obo/PCL_0115495	CNU GABA											
-http://purl.obolibrary.org/obo/PCL_0115496	LSX											
-http://purl.obolibrary.org/obo/PCL_0115497	TH											
-http://purl.obolibrary.org/obo/PCL_0115498	HY MM Glut											
-http://purl.obolibrary.org/obo/PCL_0115499	CNU-HY GABA											
-http://purl.obolibrary.org/obo/PCL_0115500	CNU-HYa Glut											
-http://purl.obolibrary.org/obo/PCL_0115501	HY Glut											
-http://purl.obolibrary.org/obo/PCL_0115502	MB Glut											
-http://purl.obolibrary.org/obo/PCL_0115503	P Glut											
-http://purl.obolibrary.org/obo/PCL_0115504	MY Glut											
-http://purl.obolibrary.org/obo/PCL_0115505	P Gaba											
-http://purl.obolibrary.org/obo/PCL_0115506	MY Gaba											
-http://purl.obolibrary.org/obo/PCL_0115507	MB Gaba											
-http://purl.obolibrary.org/obo/PCL_0115508	CB Gaba											
-http://purl.obolibrary.org/obo/PCL_0115509	CB Grandule											
-http://purl.obolibrary.org/obo/PCL_0115510	Neuroglial											
-http://purl.obolibrary.org/obo/PCL_0115511	Vascular											
-http://purl.obolibrary.org/obo/PCL_0115512	Immune											
-http://purl.obolibrary.org/obo/PCL_0115513	Pallium glutamatergic											
-http://purl.obolibrary.org/obo/PCL_0115514	Subpallium GABAergic											
-http://purl.obolibrary.org/obo/PCL_0115515	PAL-sAMY-TH-HY-MB-HB neuronal											
-http://purl.obolibrary.org/obo/PCL_0115516	CBX-MOB-other neuronal											
-http://purl.obolibrary.org/obo/PCL_0115517	CGE-MGE											
-http://purl.obolibrary.org/obo/PCL_0115518	HEAD											
-http://purl.obolibrary.org/obo/PCL_0115519	HEAD-Gaba1											
 http://purl.obolibrary.org/obo/PCL_0115520	HEAD-Gaba2											
-http://purl.obolibrary.org/obo/PCL_0115521	HEAD-Glut											
-http://purl.obolibrary.org/obo/PCL_0115522	MB-HB											
-http://purl.obolibrary.org/obo/PCL_0115523	MB-HB-Gaba											
-http://purl.obolibrary.org/obo/PCL_0115524	MB-HB-Glut											
-http://purl.obolibrary.org/obo/PCL_0115526	Other-Sub-Gaba											
-http://purl.obolibrary.org/obo/PCL_0115527	Pallium_Glut											
-http://purl.obolibrary.org/obo/PCL_0115528	Subpallium-GABA											
-http://purl.obolibrary.org/obo/PCL_0115529	TH-EPI											
