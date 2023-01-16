@@ -10,13 +10,14 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:custom="http://n2o.neo/custom/"
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pcl/bdso-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pcl/releases/2023-01-11/bdso-simple.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pcl/releases/2023-01-16/bdso-simple.owl"/>
         <dc:title>Full Mouse Brain Ontology</dc:title>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-11</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-16</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -29,6 +30,36 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://n2o.neo/custom/cell_set_additional_aliases -->
+
+    <owl:AnnotationProperty rdf:about="http://n2o.neo/custom/cell_set_additional_aliases"/>
+    
+
+
+    <!-- http://n2o.neo/custom/cell_set_alias_assignee -->
+
+    <owl:AnnotationProperty rdf:about="http://n2o.neo/custom/cell_set_alias_assignee"/>
+    
+
+
+    <!-- http://n2o.neo/custom/cell_set_label -->
+
+    <owl:AnnotationProperty rdf:about="http://n2o.neo/custom/cell_set_label"/>
+    
+
+
+    <!-- http://n2o.neo/custom/cell_set_preferred_alias -->
+
+    <owl:AnnotationProperty rdf:about="http://n2o.neo/custom/cell_set_preferred_alias"/>
+    
+
+
+    <!-- http://n2o.neo/custom/original_label -->
+
+    <owl:AnnotationProperty rdf:about="http://n2o.neo/custom/original_label"/>
     
 
 
@@ -198,6 +229,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PCL_0010063 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/PCL_0010063">
+        <rdfs:label>some_soma_located_in</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0001900 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001900"/>
@@ -301,9 +340,7 @@
 
     <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
-        <rdfs:label>database_cross_reference</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
     
 
 
@@ -359,14 +396,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PCL_0010063 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/PCL_0010063">
-        <rdfs:label>soma located in</rdfs:label>
-    </owl:ObjectProperty>
     
 
 
@@ -463,6 +492,46 @@
         <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
         <rdfs:label>expresses</rdfs:label>
         <rdfs:label xml:lang="en">expresses</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0015001 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0015001">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0015002"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0015001"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0015003"/>
+        </owl:propertyChainAxiom>
+        <obo:IAO_0000112>transcriptomically defined cell type X equivalent to ‘cell’ and (has_exemplar_data value [transcriptomic profile data])</obo:IAO_0000112>
+        <obo:IAO_0000115>A relation between a material entity and some data in which the data is taken as exemplifying the material entity.</obo:IAO_0000115>
+        <obo:IAO_0000116>C has_exemplar_data y iff x is an instance of C and y is data about x that is taken as exemplifying of C.</obo:IAO_0000116>
+        <obo:IAO_0000117>Patrick Ray</obo:IAO_0000117>
+        <obo:IAO_0000232>This relation is not meant to capture the relation between occurrents and data.</obo:IAO_0000232>
+        <rdfs:label>has exemplar data</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0015002 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0015002">
+        <obo:IAO_0000117>Patrick Ray</obo:IAO_0000117>
+        <rdfs:label>exemplar data of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0015003 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0015003">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <obo:IAO_0000115>A relation between a group and another group it is part of but does not fully constitute.</obo:IAO_0000115>
+        <obo:IAO_0000116>X subcluster_of Y iff: X and Y are clusters/groups; X != Y; all members of X are also members of Y.</obo:IAO_0000116>
+        <obo:IAO_0000117>Shawn Tan</obo:IAO_0000117>
+        <obo:IAO_0000232>This is used specifically for sets whose members are specified by some set-forming operator (method of grouping) such as clustering analyses in single cell transcriptomics.</obo:IAO_0000232>
+        <rdfs:label>subcluster of</rdfs:label>
     </owl:ObjectProperty>
     
 

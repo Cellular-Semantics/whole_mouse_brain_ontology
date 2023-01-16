@@ -2,7 +2,13 @@
   "graphs": [
     {
       "domainRangeAxioms": [],
-      "edges": [],
+      "edges": [
+        {
+          "obj": "http://purl.obolibrary.org/obo/RO_0015002",
+          "pred": "inverseOf",
+          "sub": "http://purl.obolibrary.org/obo/RO_0015001"
+        }
+      ],
       "equivalentNodesSets": [],
       "id": "http://purl.obolibrary.org/obo/pcl/bdso-simple.json",
       "logicalDefinitionAxioms": [],
@@ -18,11 +24,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2023-01-11"
+            "val": "2023-01-16"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/pcl/releases/2023-01-11/bdso-simple.json",
+        "version": "http://purl.obolibrary.org/obo/pcl/releases/2023-01-16/bdso-simple.json",
         "xrefs": []
       },
       "nodes": [
@@ -248,6 +254,73 @@
           "type": "PROPERTY"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/RO_0015001",
+          "lbl": "has exemplar data",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "transcriptomically defined cell type X equivalent to ‘cell’ and (has_exemplar_data value [transcriptomic profile data])"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
+                "val": "C has_exemplar_data y iff x is an instance of C and y is data about x that is taken as exemplifying of C."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Patrick Ray"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
+                "val": "This relation is not meant to capture the relation between occurrents and data."
+              }
+            ],
+            "definition": {
+              "val": "A relation between a material entity and some data in which the data is taken as exemplifying the material entity.",
+              "xrefs": []
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/RO_0015002",
+          "lbl": "exemplar data of",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Patrick Ray"
+              }
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/RO_0015003",
+          "lbl": "subcluster of",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
+                "val": "X subcluster_of Y iff: X and Y are clusters/groups; X != Y; all members of X are also members of Y."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Shawn Tan"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
+                "val": "This is used specifically for sets whose members are specified by some set-forming operator (method of grouping) such as clustering analyses in single cell transcriptomics."
+              }
+            ],
+            "definition": {
+              "val": "A relation between a group and another group it is part of but does not fully constitute.",
+              "xrefs": []
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/RO_0015004",
           "lbl": "has characterizing marker set",
           "meta": {
@@ -442,12 +515,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/PCL_0010063",
-          "lbl": "soma located in",
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
-          "lbl": "database_cross_reference",
+          "lbl": "some_soma_located_in",
           "type": "PROPERTY"
         },
         {
@@ -463,6 +531,13 @@
             "http://purl.obolibrary.org/obo/RO_0002215"
           ],
           "predicateId": "http://purl.obolibrary.org/obo/RO_0002162"
+        },
+        {
+          "chainPredicateIds": [
+            "http://purl.obolibrary.org/obo/RO_0015001",
+            "http://purl.obolibrary.org/obo/RO_0015003"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0015001"
         }
       ]
     }

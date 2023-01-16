@@ -22,7 +22,6 @@ relations:
   has_exemplar_data: "RO:0015001"
   has_characterizing_marker_set: "RO:0015004"
   capable_of: "RO:0002215"
-  'soma located in': "PCL:0010063"
 
 annotationProperties:
   skosPrefLabel: "skos:prefLabel"
@@ -31,6 +30,7 @@ annotationProperties:
   hasDbXref: "oboInOwl:hasDbXref"
   symbol: "IAO:0000028"
   'has nsforest marker': "PCL:0010058"
+  some_soma_located_in: "PCL:0010063"
 
 list_vars:
   Expresses: "'thing'"
@@ -39,7 +39,6 @@ list_vars:
   Layers: "'layer of neocortex'"
   MBA: "'thing'"
   NT: "'thing'"
-  Nomenclature_Layers: "'layer of neocortex'"
 
 vars:
   Classification: "'cell'"
@@ -52,6 +51,7 @@ vars:
   Individual: "'thing'"
   marker_gene_set: "'thing'"
   CL: "'cell'"
+  Nomenclature_Layers: "'layer of neocortex'"
   Nomenclature_Projection: "'projection type'"
 
 data_list_vars:
@@ -214,12 +214,9 @@ logical_axioms:
      vars:
         - Individual
    - axiom_type: subClassOf
-     multi_clause:
-       sep: " or "
-       clauses:
-         - text: "'has_soma_location' some %s"
-           vars:
-             - Nomenclature_Layers
+     text: "'has_soma_location' some %s"
+     vars:
+       - Nomenclature_Layers
    - axiom_type: subClassOf
      text: "'has_characterizing_marker_set' some %s"
      vars:
@@ -260,6 +257,8 @@ annotations:
     vars:
       - prefLabel
       - Species_abbv
+  - annotationProperty: some_soma_located_in
+    value: MBA
   - annotationProperty: 'has nsforest marker'
     multi_clause:
       sep: " "
@@ -267,11 +266,4 @@ annotations:
         - text: "%s"
           vars:
             - Minimal_markers
-  - annotationProperty: 'some soma located in'
-    multi_clause:
-      sep: " "
-      clauses:
-        - text: "%s"
-          vars:
-            - MBA
 
