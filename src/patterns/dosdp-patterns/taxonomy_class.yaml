@@ -257,8 +257,6 @@ annotations:
     vars:
       - prefLabel
       - Species_abbv
-  - annotationProperty: some_soma_located_in
-    value: MBA
   - annotationProperty: 'has nsforest marker'
     multi_clause:
       sep: " "
@@ -266,4 +264,6 @@ annotations:
         - text: "%s"
           vars:
             - Minimal_markers
+  - annotationProperty: some_soma_located_in
+    value: MBA
 
