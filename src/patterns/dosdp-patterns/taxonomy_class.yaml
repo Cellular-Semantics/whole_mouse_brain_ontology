@@ -39,6 +39,7 @@ list_vars:
   Layers: "'layer of neocortex'"
   MBA: "'thing'"
   NT: "'thing'"
+  Nomenclature_Layers: "'layer of neocortex'"
 
 vars:
   Classification: "'cell'"
@@ -51,6 +52,7 @@ vars:
   Individual: "'thing'"
   marker_gene_set: "'thing'"
   CL: "'cell'"
+  Nomenclature_Projection: "'projection type'"
 
 data_list_vars:
   Synonyms_from_taxonomy: "xsd:string"
@@ -86,12 +88,16 @@ internal_vars:
     apply:
       join:
         sep: ' or '
+  - var_name: Atlas_loc_cat
+    input: MBA
+    apply:
+      join:
+        sep: ', '
 
 name:
-   text: "%s %s %s (%s)"
+   text: "%s %s (%s)"
    vars:
       - prefLabel
-      - Brain_region
       - Gross_cell_type
       - Taxon_abbv
 
@@ -117,10 +123,13 @@ def:
                   - Allen_markers_cat
               - text: 'These cells have projection type %s.'
                 vars:
-                  - Projection_type
-              - text: 'The soma of these cells in located in: %s.'
+                  - Nomenclature_Projection
+              - text: 'The soma of these cells can be found in %s.'
                 vars:
-                  - Cortical_layer_cat
+                  - Atlas_loc_cat
+              - text: 'The soma of these cells are also found in %s.'
+                vars:
+                  - Nomenclature_Layers
               - text: 'The reference data for this cell type is %s.'
                 vars:
                   - Cluster_ID
@@ -180,7 +189,7 @@ logical_axioms:
    - axiom_type: subClassOf
      text: "'bearer_of' some %s"
      vars:
-       - Projection_type
+       - Nomenclature_Projection
    - axiom_type: subClassOf
      multi_clause:
       sep: " and "
@@ -210,7 +219,7 @@ logical_axioms:
        clauses:
          - text: "'has_soma_location' some %s"
            vars:
-             - Layers
+             - Nomenclature_Layers
    - axiom_type: subClassOf
      text: "'has_characterizing_marker_set' some %s"
      vars:
@@ -226,13 +235,6 @@ logical_axioms:
      text: "%s"
      vars:
        - CL
-   - axiom_type: subClassOf
-     multi_clause:
-       sep: " and "
-       clauses:
-         - text: "'soma located in' some %s"
-           vars:
-             - MBA
 
 annotations:
   - annotationProperty: skosPrefLabel
@@ -254,10 +256,9 @@ annotations:
           vars:
             - Curated_synonyms
   - annotationProperty: symbol
-    text: "%s %s (%s)"
+    text: "%s (%s)"
     vars:
       - prefLabel
-      - Brain_region_abbv
       - Species_abbv
   - annotationProperty: 'has nsforest marker'
     multi_clause:
@@ -266,4 +267,11 @@ annotations:
         - text: "%s"
           vars:
             - Minimal_markers
+  - annotationProperty: 'some soma located in'
+    multi_clause:
+      sep: " "
+      clauses:
+        - text: "%s"
+          vars:
+            - MBA
 

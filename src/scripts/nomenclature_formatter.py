@@ -76,6 +76,6 @@ def list_level2_nodes(nomenclature_name):
     # print(shawn_not_in_mine)
 
 
-# convert_tsv_to_csv("nomenclature_with_mba.tsv", "nomenclature_table_CS202211210.csv")
-# log_root_nodes("nomenclature_table_CS202211210.csv")
-list_level2_nodes("nomenclature_table_CS202211210.csv")
+convert_tsv_to_csv("nomenclature_with_curation.tsv", "nomenclature_table_CS202211210.csv")
+# # log_root_nodes("nomenclature_table_CS202211210.csv")
+# list_level2_nodes("nomenclature_table_CS202211210.csv")

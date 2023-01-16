@@ -164,6 +164,8 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                       'MBA',
                       'NT',
                       'CL',
+                      'Nomenclature_Layers',
+                      'Nomenclature_Projection',
                       'marker_gene_set'
                       ]
         class_template = []
@@ -223,6 +225,10 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                     d['NT'] = "|".join(neuro_transmitters)
                 if "CL" in o and o["CL"]:
                     d['CL'] = o["CL"]
+                if "layer" in o and o["layer"]:
+                    d['Nomenclature_Layers'] = o["layer"]
+                if "projection" in o and o["projection"]:
+                    d['Nomenclature_Projection'] = o["projection"]
 
                 for k in class_seed:
                     if not (k in d.keys()):

@@ -107,7 +107,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010062> "fbe
 
 # Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010063> (soma located in)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010063> "soma located in")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010063> "some soma located in")
 
 
 ############################
