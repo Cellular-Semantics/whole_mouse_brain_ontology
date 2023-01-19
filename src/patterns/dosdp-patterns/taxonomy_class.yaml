@@ -124,7 +124,7 @@ def:
               - text: 'These cells have projection type %s.'
                 vars:
                   - Nomenclature_Projection
-              - text: 'The soma of these cells can be found in %s.'
+              - text: 'The soma of these cells can be found in the %s.'
                 vars:
                   - Atlas_loc_cat
               - text: 'The soma of these cells are also found in %s.'
