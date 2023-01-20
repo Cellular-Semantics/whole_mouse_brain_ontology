@@ -1,0 +1,28 @@
+# PURL configuration for http://purl.obolibrary.org/obo/bdso
+
+idspace: BDSO
+base_url: /obo/bdso
+
+products:
+- bdso.owl: https://raw.githubusercontent.com/obophenotype/bdso/main/bdso.owl
+- bdso.obo: https://raw.githubusercontent.com/obophenotype/bdso/main/bdso.obo
+
+term_browser: ontobee
+example_terms:
+- BDSO_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/obophenotype/bdso/v
+
+- prefix: /tracker/
+  replacement: https://github.com/obophenotype/bdso/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/BDSO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/obophenotype/bdso/main/
+
