@@ -11,7 +11,7 @@ GENE_LIST = ensmusg
 BDS_BASE = http://purl.obolibrary.org/obo/
 ONTBASE=                    $(URIBASE)/pcl
 
-TSV_CLASS_FILES = $(patsubst %, ../patterns/data/default/%_class.tsv, $(JOBS))
+TSV_CLASS_FILES = $(patsubst %,../patterns/data/default/%_class.tsv, $(JOBS))
 #TSV_CLASS_HOMOLOGOUS_FILES = $(patsubst %, ../patterns/data/default/%_class_homologous.tsv, $(JOBS))
 #TSV_MARKER_SET_FILES = $(patsubst %, ../patterns/data/default/%_marker_set.tsv, $(JOBS))
 
@@ -28,6 +28,14 @@ PCL_LEGACY_FILE = components/pcl-legacy.owl
 
 OWL_OBSOLETE_INDVS = $(patsubst %, components/%_obsolete_indvs.owl, $(JOBS))
 OWL_OBSOLETE_TAXONOMY_FILE = components/taxonomies_obsolete.owl
+
+# override and skip touching components, since this is creating an empty *_class.owl file
+$(COMPONENTSDIR)/%: | $(COMPONENTSDIR)
+	echo "****** Touching components"
+	#sleep 5
+	if [ "skip" = true ]; then touch $@; fi
+	echo "****** Touching components ended"
+.PRECIOUS: $(COMPONENTSDIR)/%
 
 # overriding to add prefixes
 $(PATTERNDIR)/pattern.owl: $(ALL_PATTERN_FILES)
@@ -94,7 +102,7 @@ $(IMPORTDIR)/ensmusg_import.owl: mirror/ensmusg.owl imports/ensmusg_terms_combin
 #.PRECIOUS: imports/pr_import.owl
 
 # DISABLE automatic DOSDP pattern management. Manually managed below
-$(PATTERNDIR)/definitions.owl:
+$(PATTERNDIR)/definitions.owl: $(TSV_CLASS_FILES)
 	if [ $(PAT) = "skip" ] && [ "${DOSDP_PATTERN_NAMES_DEFAULT}" ]   && [ $(PAT) = true ]; then $(ROBOT) merge $(addprefix -i , $^) \
 		annotate --ontology-iri $(ONTBASE)/patterns/definitions.owl  --version-iri $(ONTBASE)/releases/$(TODAY)/patterns/definitions.owl \
       --annotation owl:versionInfo $(VERSION) -o definitions.ofn && mv definitions.ofn $@; fi
@@ -108,6 +116,10 @@ update_patterns:
 # disable automatic term management and manually manage below
 $(PATTERNDIR)/data/default/%.txt: $(PATTERNDIR)/dosdp-patterns/%.yaml $(PATTERNDIR)/data/default/%.tsv .FORCE
 	if [ $(PAT) = 'skip' ]; then $(DOSDPT) terms --infile=$(word 2, $^) --template=$< --obo-prefixes=true --outfile=$@; fi
+
+# TODO DELETE
+$(PATTERNDIR)/data/default/%_class.txt: $(PATTERNDIR)/data/default/%_class_base.txt $(PATTERNDIR)/data/default/%_class_curation.txt
+	cat $^ > $@
 
 $(PATTERNDIR)/data/default/%_class_base.txt: $(PATTERNDIR)/data/default/%_class_base.tsv $(TSV_CLASS_FILES) .FORCE
 	if [ $(PAT) = true ]; then $(DOSDPT) terms --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_class.yaml --obo-prefixes=true --prefixes=template_prefixes.yaml --outfile=$@; fi
@@ -126,13 +138,17 @@ $(PATTERNDIR)/data/default/%_class_curation.txt: $(PATTERNDIR)/data/default/%_cl
 
 
 # merge class template data
-$(PATTERNDIR)/data/default/%_class.tsv: $(PATTERNDIR)/data/default/%_class_base.tsv $(PATTERNDIR)/data/default/%_class_curation.tsv
+../patterns/data/default/%_class.tsv: ../patterns/data/default/%_class_base.tsv ../patterns/data/default/%_class_curation.tsv
+	echo "****** Merging scripts now"
+	#sleep 20
 	python ../scripts/template_runner.py modifier --merge -i=$< -i2=$(word 2, $^) -o=$@
+	echo "****** Merging completed"
 
 # TODO DELETE
-.PRECIOUS: $(PATTERNDIR)/data/default/%_class.tsv
+#.PRECIOUS: $(PATTERNDIR)/data/default/%_class.tsv
 
-all_imports: $(IMPORT_FILES) imports/merged_import.owl
+# TODO DELETE
+#all_imports: $(IMPORT_FILES) imports/merged_import.owl
 
 # hard wiring for now.  Work on patsubst later
 mirror/ensmusg.owl: ../templates/ensmusg.tsv .FORCE
@@ -155,11 +171,15 @@ mirror/ensmusg.owl: ../templates/ensmusg.tsv .FORCE
 #.PRECIOUS: imports/simple_marmoset_import.owl
 
 # merge all templates except application specific ones
+.PHONY: $(COMPONENTSDIR)/all_templates.owl
 $(COMPONENTSDIR)/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES)
+	echo "****** Merging all templates"
+	#sleep 20
 	$(ROBOT) merge $(patsubst %, -i %, $(filter-out $(OWL_APP_SPECIFIC_FILES), $^)) \
 	 --collapse-import-closure false \
 	 annotate --ontology-iri ${BDS_BASE}$@  \
 	 convert -f ofn	 -o $@
+	echo "****** All templates merged"
 
 .PRECIOUS: $(COMPONENTSDIR)/all_templates.owl
 
@@ -167,15 +187,30 @@ $(COMPONENTSDIR)/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES)
 #	$(ROBOT) merge -i pcl-template.owl $(patsubst %, -i %, $^) --collapse-import-closure false -o $@
 
 components/%.owl: ../templates/%.tsv $(SRC)
+	echo "****** Generating ROBOT template"
+	#sleep 20
 	$(ROBOT) template --input $(SRC) --template $< \
     		--add-prefixes template_prefixes.json \
     		annotate --ontology-iri ${BDS_BASE}$@ \
-    		convert --format ofn --output $@ \
+    		convert --format ofn --output $@
+	echo "****** ROBOT template generated"
 
-components/%_class.owl: $(PATTERNDIR)/data/default/%_class.tsv $(SRC) $(PATTERNDIR)/dosdp-patterns/taxonomy_class.yaml $(SRC) .FORCE
+#.PHONY: components/%_class.owl
+#components/%_class.owl: $(PATTERNDIR)/data/default/%_class.tsv $(PATTERNDIR)/dosdp-patterns/taxonomy_class.yaml $(SRC) $(TSV_CLASS_FILES) .FORCE
+#	# TODO DELETE sleep
+#	sleep 15
+#	$(DOSDPT) generate --catalog=catalog-v001.xml --prefixes=template_prefixes.yaml \
+#        --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_class.yaml \
+#        --ontology=$(SRC) --obo-prefixes=true --outfile=$@
+
+components/%_class.owl: $(PATTERNDIR)/data/default/%_class.tsv $(PATTERNDIR)/dosdp-patterns/taxonomy_class.yaml $(SRC)
+	# TODO DELETE sleep
+	echo "****** Waiting DOSDP now"
+	#sleep 20
 	$(DOSDPT) generate --catalog=catalog-v001.xml --prefixes=template_prefixes.yaml \
         --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_class.yaml \
         --ontology=$(SRC) --obo-prefixes=true --outfile=$@
+	echo "****** Wait DOSDP complete"
 
 #components/%_class_homologous.owl: $(PATTERNDIR)/data/default/%_class_homologous.tsv $(SRC) $(PATTERNDIR)/dosdp-patterns/taxonomy_class_homologous.yaml $(SRC) all_imports .FORCE
 #	$(DOSDPT) generate --catalog=catalog-v001.xml --prefixes=template_prefixes.yaml \

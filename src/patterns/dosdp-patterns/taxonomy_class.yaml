@@ -264,6 +264,6 @@ annotations:
         - text: "%s"
           vars:
             - Minimal_markers
-  - annotationProperty: some_soma_located_in
-    value: MBA
+#  - annotationProperty: some_soma_located_in
+#    value: MBA
 
