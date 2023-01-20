@@ -220,6 +220,8 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                     mbas = [mba.strip().replace("http://purl.obolibrary.org/obo/MBA_", "MBA:")
                             for mba in str(o["MBA"]).split("|") if mba and mba.strip()]
                     d["MBA"] = "|".join(mbas)
+                    for index, term in enumerate(mbas, start=1):
+                        d["MBA_" + str(index)] = term
                 if "NT" in o and o["NT"]:
                     neuro_transmitters = [nt.strip() for nt in str(o["NT"]).split("|") if nt and nt.strip()]
                     d['NT'] = "|".join(neuro_transmitters)
