@@ -10,7 +10,7 @@ PATH_DENDROGRAM_JSON = os.path.join(os.path.dirname(os.path.realpath(__file__)),
 PATH_NOMENCLATURE_CSV = os.path.join(os.path.dirname(os.path.realpath(__file__)),
                                      "./test_data/nomenclature_table_CCN201912131.csv")
 PATH_NOMENCLATURE_CSV_MOUSE = os.path.join(os.path.dirname(os.path.realpath(__file__)),
-                                           "../dendrograms/nomenclature_table_CCN202002013.csv")
+                                           "./test_data/nomenclature_table_CCN202002013.csv")
 
 
 class TemplateUtilsTest(unittest.TestCase):

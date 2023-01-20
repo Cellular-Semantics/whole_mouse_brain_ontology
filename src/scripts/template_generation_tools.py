@@ -49,7 +49,7 @@ def generate_ind_template(taxonomy_file_path, centralized_data_folder, output_fi
     dend_tree = generate_dendrogram_tree(dend)
     taxonomy_config = read_taxonomy_config(taxon)
 
-    taxonomy_folder_name = get_centralized_taxonomy_folder(taxonomy_config)
+    # taxonomy_folder_name = get_centralized_taxonomy_folder(taxonomy_config)
     # allen_desc_file = ALLEN_DESCRIPTIONS_PATH.format(centralized_data_folder, taxonomy_folder_name,
     #                                                  taxonomy_config['Species_abbv'][0])
     # allen_descriptions = read_allen_descriptions(allen_desc_file)
