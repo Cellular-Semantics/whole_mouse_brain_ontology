@@ -53,6 +53,12 @@ vars:
   CL: "'cell'"
   Nomenclature_Layers: "'layer of neocortex'"
   Nomenclature_Projection: "'projection type'"
+  MBA_1: "'thing'"
+  MBA_2: "'thing'"
+  MBA_3: "'thing'"
+  MBA_4: "'thing'"
+  MBA_5: "'thing'"
+  MBA_6: "'thing'"
 
 data_list_vars:
   Synonyms_from_taxonomy: "xsd:string"
@@ -265,5 +271,14 @@ annotations:
           vars:
             - Minimal_markers
   - annotationProperty: some_soma_located_in
-    value: MBA
-
+    var: MBA_1
+  - annotationProperty: some_soma_located_in
+    var: MBA_2
+  - annotationProperty: some_soma_located_in
+    var: MBA_3
+  - annotationProperty: some_soma_located_in
+    var: MBA_4
+  - annotationProperty: some_soma_located_in
+    var: MBA_5
+  - annotationProperty: some_soma_located_in
+    var: MBA_6
