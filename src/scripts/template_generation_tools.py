@@ -49,7 +49,7 @@ def generate_ind_template(taxonomy_file_path, centralized_data_folder, output_fi
     dend_tree = generate_dendrogram_tree(dend)
     taxonomy_config = read_taxonomy_config(taxon)
 
-    taxonomy_folder_name = get_centralized_taxonomy_folder(taxonomy_config)
+    # taxonomy_folder_name = get_centralized_taxonomy_folder(taxonomy_config)
     # allen_desc_file = ALLEN_DESCRIPTIONS_PATH.format(centralized_data_folder, taxonomy_folder_name,
     #                                                  taxonomy_config['Species_abbv'][0])
     # allen_descriptions = read_allen_descriptions(allen_desc_file)
@@ -93,7 +93,7 @@ def generate_ind_template(taxonomy_file_path, centralized_data_folder, output_fi
         else:
             d['PrefLabel'] = o['cell_set_accession']
         d['Entity Type'] = 'PCL:0010001'  # Cluster
-        d['Metadata'] = json.dumps(o)
+        # d['Metadata'] = json.dumps(o)
         d['Synonyms'] = '|'.join([o[prop] for prop in synonym_properties if prop in o.keys() and o[prop]])
         d['Property Assertions'] = '|'.join(
             sorted(['PCL_INDV:' + e[1] for e in dend['edges'] if e[0] == o['cell_set_accession']]))
@@ -161,6 +161,11 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                       'part_of',
                       'has_soma_location',
                       'aligned_alias',
+                      'MBA',
+                      'NT',
+                      'CL',
+                      'Nomenclature_Layers',
+                      'Nomenclature_Projection',
                       'marker_gene_set'
                       ]
         class_template = []
@@ -210,6 +215,22 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                     d['aligned_alias'] = o["cell_set_aligned_alias"]
                 if o['cell_set_accession'] in minimal_markers:
                     d['marker_gene_set'] = PCL_PREFIX + get_marker_gene_set_id(o['cell_set_accession'])
+
+                if "MBA" in o and o["MBA"]:
+                    mbas = [mba.strip().replace("http://purl.obolibrary.org/obo/MBA_", "MBA:")
+                            for mba in str(o["MBA"]).split("|") if mba and mba.strip()]
+                    d["MBA"] = "|".join(mbas)
+                    for index, term in enumerate(mbas, start=1):
+                        d["MBA_" + str(index)] = term
+                if "NT" in o and o["NT"]:
+                    neuro_transmitters = [nt.strip() for nt in str(o["NT"]).split("|") if nt and nt.strip()]
+                    d['NT'] = "|".join(neuro_transmitters)
+                if "CL" in o and o["CL"]:
+                    d['CL'] = o["CL"]
+                if "layer" in o and o["layer"]:
+                    d['Nomenclature_Layers'] = o["layer"]
+                if "projection" in o and o["projection"]:
+                    d['Nomenclature_Projection'] = o["projection"]
 
                 for k in class_seed:
                     if not (k in d.keys()):

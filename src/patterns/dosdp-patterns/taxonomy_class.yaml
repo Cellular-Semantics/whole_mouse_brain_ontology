@@ -21,6 +21,7 @@ relations:
   bearer_of: "RO:0000053"
   has_exemplar_data: "RO:0015001"
   has_characterizing_marker_set: "RO:0015004"
+  capable_of: "RO:0002215"
 
 annotationProperties:
   skosPrefLabel: "skos:prefLabel"
@@ -29,12 +30,15 @@ annotationProperties:
   hasDbXref: "oboInOwl:hasDbXref"
   symbol: "IAO:0000028"
   'has nsforest marker': "PCL:0010058"
+  some_soma_located_in: "PCL:0010063"
 
 list_vars:
   Expresses: "'thing'"
   Minimal_markers: "'sequence_feature'"
   Allen_markers: "'sequence_feature'"
   Layers: "'layer of neocortex'"
+  MBA: "'thing'"
+  NT: "'thing'"
 
 vars:
   Classification: "'cell'"
@@ -46,6 +50,15 @@ vars:
   has_soma_location: "'thing'"
   Individual: "'thing'"
   marker_gene_set: "'thing'"
+  CL: "'cell'"
+  Nomenclature_Layers: "'layer of neocortex'"
+  Nomenclature_Projection: "'projection type'"
+  MBA_1: "'thing'"
+  MBA_2: "'thing'"
+  MBA_3: "'thing'"
+  MBA_4: "'thing'"
+  MBA_5: "'thing'"
+  MBA_6: "'thing'"
 
 data_list_vars:
   Synonyms_from_taxonomy: "xsd:string"
@@ -81,12 +94,16 @@ internal_vars:
     apply:
       join:
         sep: ' or '
+  - var_name: Atlas_loc_cat
+    input: MBA
+    apply:
+      join:
+        sep: ', '
 
 name:
-   text: "%s %s %s (%s)"
+   text: "%s %s (%s)"
    vars:
       - prefLabel
-      - Brain_region
       - Gross_cell_type
       - Taxon_abbv
 
@@ -112,10 +129,13 @@ def:
                   - Allen_markers_cat
               - text: 'These cells have projection type %s.'
                 vars:
-                  - Projection_type
-              - text: 'The soma of these cells in located in: %s.'
+                  - Nomenclature_Projection
+              - text: 'The soma of these cells can be found in the %s.'
                 vars:
-                  - Cortical_layer_cat
+                  - Atlas_loc_cat
+              - text: 'The soma of these cells are also found in %s.'
+                vars:
+                  - Nomenclature_Layers
               - text: 'The reference data for this cell type is %s.'
                 vars:
                   - Cluster_ID
@@ -175,7 +195,7 @@ logical_axioms:
    - axiom_type: subClassOf
      text: "'bearer_of' some %s"
      vars:
-       - Projection_type
+       - Nomenclature_Projection
    - axiom_type: subClassOf
      multi_clause:
       sep: " and "
@@ -200,16 +220,24 @@ logical_axioms:
      vars:
         - Individual
    - axiom_type: subClassOf
-     multi_clause:
-       sep: " or "
-       clauses:
-         - text: "'has_soma_location' some %s"
-           vars:
-             - Layers
+     text: "'has_soma_location' some %s"
+     vars:
+       - Nomenclature_Layers
    - axiom_type: subClassOf
      text: "'has_characterizing_marker_set' some %s"
      vars:
         - marker_gene_set
+   - axiom_type: subClassOf
+     multi_clause:
+       sep: " and "
+       clauses:
+         - text: "'capable_of' some %s"
+           vars:
+             - NT
+   - axiom_type: subClassOf
+     text: "%s"
+     vars:
+       - CL
 
 annotations:
   - annotationProperty: skosPrefLabel
@@ -231,10 +259,9 @@ annotations:
           vars:
             - Curated_synonyms
   - annotationProperty: symbol
-    text: "%s %s (%s)"
+    text: "%s (%s)"
     vars:
       - prefLabel
-      - Brain_region_abbv
       - Species_abbv
   - annotationProperty: 'has nsforest marker'
     multi_clause:
@@ -243,3 +270,15 @@ annotations:
         - text: "%s"
           vars:
             - Minimal_markers
+  - annotationProperty: some_soma_located_in
+    var: MBA_1
+  - annotationProperty: some_soma_located_in
+    var: MBA_2
+  - annotationProperty: some_soma_located_in
+    var: MBA_3
+  - annotationProperty: some_soma_located_in
+    var: MBA_4
+  - annotationProperty: some_soma_located_in
+    var: MBA_5
+  - annotationProperty: some_soma_located_in
+    var: MBA_6

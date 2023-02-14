@@ -9,10 +9,11 @@ from template_generation_utils import read_dendrogram_tree, index_dendrogram, ge
 from marker_tools import read_marker_file
 from nomenclature_tools import nomenclature_2_nodes_n_edges
 
-TAXON = "CS202002013"
+TAXON = "CS202211210"
 # TAXON = "CS201912132"
 
-NODE_LABEL_DISPLACEMENT = 1200
+# NODE_LABEL_DISPLACEMENT = 1200
+NODE_LABEL_DISPLACEMENT = 600
 
 NODE_Y_DISPLACEMENT = 300
 
@@ -24,7 +25,7 @@ LEAF_NODE_SIZE = 50
 
 PATH_DEND_JSON = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../dendrograms/" + TAXON + ".json")
 
-PATH_NMN_TABLE = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../dendrograms/nomenclature_table_CCN202002013.csv")
+PATH_NMN_TABLE = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../dendrograms/nomenclature_table_CS202211210.csv")
 
 PATH_MARKERS = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../markers/" + TAXON + "_markers.tsv")
 
@@ -58,6 +59,67 @@ def visualise_tree(root=None, exact_order=True):
     plt.show()
 
 
+def visualise_sub_tree(target_nodes):
+    """
+    Visualizes only the target nodes and their parents.
+    Args:
+        target_nodes: labels of the target nodes.
+    """
+    # tree = read_dendrogram_tree(PATH_DEND_JSON)
+    dend = nomenclature_2_nodes_n_edges(PATH_NMN_TABLE)
+    base_tree = generate_dendrogram_tree(dend)
+
+    target_ids = list()
+    for o in dend['nodes']:
+        if o['cell_set_preferred_alias'] in target_nodes:
+            target_ids.append(o['cell_set_accession'])
+    extended_targets = list()
+    for target in target_ids:
+        extended_targets.append(target)
+        for ancestor in nx.ancestors(base_tree, target):
+            if ancestor not in extended_targets:
+                extended_targets.append(ancestor)
+
+    tree = nx.DiGraph()
+    for edge in dend['edges']:
+        if edge[1] in extended_targets and edge[0] in extended_targets:
+            tree.add_edge(edge[1], edge[0])
+
+    marker_expressions = read_marker_file(PATH_MARKERS)
+
+    add_label_metadata(tree)
+    node_colors, node_labels, node_sizes, pos = decorate_nodes(marker_expressions, tree)
+
+    all_leafs = [x for x in tree.nodes(data=True) if tree.out_degree(x[0]) == 0]
+
+    position_leaf_nodes(all_leafs, True, pos)
+    position_intermediate_nodes(all_leafs, pos, tree)
+
+    # nx.draw_networkx(tree, pos, node_color=color_map, with_labels=False, arrows=False)
+    nx.draw_networkx_nodes(tree, pos, node_color=node_colors, node_size=node_sizes)
+    nx.draw_networkx_edges(tree, pos, arrows=True, connectionstyle="arc3,rad=0.1")
+    text = nx.draw_networkx_labels(tree, pos, node_labels, font_size=7)
+    rotate_leaf_labels(text)
+
+    plt.show()
+
+
+def prune_tree(dendrogram_data, last_index_to_prune):
+    to_remove = []
+    for node in dendrogram_data['nodes']:
+        if int(str(node["cell_set_accession"]).split("_")[1]) <= last_index_to_prune:
+            to_remove.append(node)
+    dendrogram_data['nodes'] = [x for x in dendrogram_data['nodes'] if x not in to_remove]
+
+    to_remove = set()
+    for edge in dendrogram_data['edges']:
+        if int(str(edge[0]).split("_")[1]) <= last_index_to_prune or int(str(edge[1]).split("_")[1]) <= last_index_to_prune:
+            to_remove.add(edge)
+    dendrogram_data['edges'] = dendrogram_data['edges'] - to_remove
+
+    return dendrogram_data
+
+
 def position_leaf_nodes(all_leaves, exact_order, pos):
     if exact_order:
         # sort by accession_id increasing
@@ -66,8 +128,7 @@ def position_leaf_nodes(all_leaves, exact_order, pos):
         leaf_order = list()
         for node in leaves:
             leaf_order.append(node[1]["label"])
-
-        print(leaf_order)
+        # print(leaf_order)
     else:
         leaf_order = CLUSTER_ORDER
 
@@ -183,6 +244,8 @@ def get_min_depth(all_leafs, pos):
     return min_depth
 
 
-visualise_tree()
-#visualise_tree("CS202002013_123")
-#visualise_tree("CS202002013_179")
+target_nodes = ['All cells', 'IT-ET|IT-ET', 'NP-CT-L6b|NP-CT-L6b', 'DG-MOB-IMN', 'CGE', 'MGE', 'CNU GABA', 'LSX', 'TH', 'HY MM Glut', 'CNU-HY GABA', 'CNU-HYa Glut', 'HY Glut', 'MB Glut', 'P Glut', 'MY Glut', 'P Gaba', 'MY Gaba','MB Gaba', 'CB Gaba', 'CB Grandule', 'Neuroglial', 'Vascular', 'Immune', 'Pallium glutamatergic', 'Subpallium GABAergic', 'PAL-sAMY-TH-HY-MB-HB neuronal', 'CBX-MOB-other neuronal', 'CGE-MGE', 'HEAD', 'HEAD-Gaba1', 'HEAD-Gaba2', 'HEAD-Glut', 'MB-HB', 'MB-HB-Gaba', 'MB-HB-Glut', 'NN-IMN-GC', 'Other-Sub-Gaba', 'Pallium_Glut', 'Subpallium-GABA', 'TH-EPI']
+
+visualise_sub_tree(target_nodes)
+# visualise_tree()
+# visualise_tree("CS202211210_5512")
