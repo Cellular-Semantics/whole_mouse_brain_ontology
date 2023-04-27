@@ -41,6 +41,7 @@ def align_nomenclatures(old_nomenclature, new_nomenclature):
                 row_data[header] = new_data[accession_id][header]
         annotation_added = False
         if old_data_record:
+            print("counterparts: " + accession_id + "   vs   " + old_data_record["cell_set_accession"])
             # migrate old annotations
             if "MBA" in old_data_record and old_data_record["MBA"]:
                 row_data["MBA"] = old_data_record["MBA"]
@@ -85,7 +86,6 @@ def align_nomenclatures(old_nomenclature, new_nomenclature):
 
     print(str(len(counterparts)) + " records migrated from old to new nomenclature")
     print(str(len(not_migrated)) + " records NOT migrated from old to new nomenclature")
-
 
 
 def find_old_data_counterpart(new_label, old_data, old_data_scan_index):

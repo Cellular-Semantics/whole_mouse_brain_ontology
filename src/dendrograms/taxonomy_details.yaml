@@ -45,7 +45,7 @@
     - Node: CS202211210_5495
       Cell_type: CL:0000617
       Location_relation: has_soma_location
-#      CNU GABA
+#      CNU GABA  CS202212150_6352 ???
     - Node: CS202211210_5496
       Cell_type: CL:0000617
       Location_relation: has_soma_location
@@ -57,7 +57,7 @@
     - Node: CS202211210_5498
       Cell_type: CL:0000679
       Location_relation: has_soma_location
-#      HY MM Glut
+#      HY MM Glut  CS202212150_6356 ???
     - Node: CS202211210_5499
       Cell_type: CL:0000617
       Location_relation: has_soma_location
@@ -65,23 +65,23 @@
     - Node: CS202211210_5279
       Cell_type: CL:0000679
       Location_relation: has_soma_location
-#      MOB Glut
+#      MOB Glut  CS202212150_5468 ???
     - Node: CS202211210_5500
       Cell_type: CL:0000679
       Location_relation: has_soma_location
-#      CNU-HYa Glut
+#      CNU-HYa Glut  CS202212150_6359 ???
     - Node: CS202211210_5501
       Cell_type: CL:0000679
       Location_relation: has_soma_location
-#      HY Glut
+#      HY Glut  CS202212150_6361 ???
     - Node: CS202211210_5502
       Cell_type: CL:0000679
       Location_relation: has_soma_location
-#      MB Glut
+#      MB Glut   CS202212150_6362  ???
     - Node: CS202211210_5503
       Cell_type: CL:0000679
       Location_relation: has_soma_location
-#      P Glut
+#      P Glut  CS202212150_6363 ???
     - Node: CS202211210_5346
       Cell_type: CL:0000850
       Location_relation: has_soma_location
@@ -89,7 +89,7 @@
     - Node: CS202211210_5504
       Cell_type: CL:0000679
       Location_relation: has_soma_location
-#      MY Glut
+#      MY Glut  CS202212150_6364 ???
     - Node: CS202211210_5505
       Cell_type: CL:0000617
       Location_relation: has_soma_location
@@ -101,15 +101,15 @@
     - Node: CS202211210_5507
       Cell_type: CL:0000617
       Location_relation: has_soma_location
-#      MB Gaba
+#      MB Gaba   CS202212150_6365  ???
     - Node: CS202211210_5508
       Cell_type: CL:0000617
       Location_relation: has_soma_location
-#      CB Gaba
+#      CB Gaba   CS202212150_6368  ???
     - Node: CS202211210_5447
       Cell_type: CL:0000700
       Location_relation: has_soma_location
-#      MB Dopa
+#      MB Dopa  CS202212150_6047 ???
     - Node: CS202211210_5509
       Cell_type: CL:0000679
       Location_relation: has_soma_location
@@ -117,7 +117,7 @@
     - Node: CS202211210_5472
       Cell_type: CL:0000679
       Location_relation: has_soma_location
-#      CR
+#      CR  CS202212150_6097 ???
     - Node: CS202211210_5102
       Cell_type: CL:0000679
       Location_relation: has_soma_location
@@ -129,11 +129,11 @@
     - Node: CS202211210_5511
       Cell_type: CL:4023072
       Location_relation: has_soma_location
-#      Vascular
+#      Vascular  CS202212150_6372  ???
     - Node: CS202211210_5512
       Cell_type: CL:0000738
       Location_relation: has_soma_location
-#      Immune
+#      Immune  CS202212150_6373  ???
 
 #    - Node: CS202002013_123
 #      Cell_type: CL:0011005
