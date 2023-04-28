@@ -4,7 +4,7 @@
 ##
 
 -
-  Taxonomy_id: CS202211210
+  Taxonomy_id: CS202212150
   Description: Mouse full brain BICCN taxonomy using multiple RNA-Seq datasets
   Reference: TBD
   PMID:
@@ -22,177 +22,117 @@
   Reference_gene_list:
     - Ensmusg
   Root_nodes:
-    - Node: CS202211210_5490
-      Cell_type: CL:0000679
-      Location_relation: has_soma_location
-#      IT-ET
-    - Node: CS202211210_5491
-      Cell_type: CL:0000679
-      Location_relation: has_soma_location
-#     NP-CT-L6b
-    - Node: CS202211210_5492
-      Cell_type: CL:0000679
-      Location_relation: has_soma_location
-#      DG-MOB-IMN
-    - Node: CS202211210_5493
-      Cell_type: CL:4023064
-      Location_relation: has_soma_location
-#      CGE
-    - Node: CS202211210_5494
-      Cell_type: CL:4023063
-      Location_relation: has_soma_location
-#      MGE
-    - Node: CS202211210_5495
-      Cell_type: CL:0000617
-      Location_relation: has_soma_location
-#      CNU GABA  CS202212150_6352 ???
-    - Node: CS202211210_5496
-      Cell_type: CL:0000617
-      Location_relation: has_soma_location
-#      LSX
-    - Node: CS202211210_5497
-      Cell_type: CL:0000679
-      Location_relation: has_soma_location
-#      TH
-    - Node: CS202211210_5498
-      Cell_type: CL:0000679
-      Location_relation: has_soma_location
-#      HY MM Glut  CS202212150_6356 ???
-    - Node: CS202211210_5499
-      Cell_type: CL:0000617
-      Location_relation: has_soma_location
-#      CNU-HY GABA
-    - Node: CS202211210_5279
-      Cell_type: CL:0000679
-      Location_relation: has_soma_location
-#      MOB Glut  CS202212150_5468 ???
-    - Node: CS202211210_5500
-      Cell_type: CL:0000679
-      Location_relation: has_soma_location
-#      CNU-HYa Glut  CS202212150_6359 ???
-    - Node: CS202211210_5501
-      Cell_type: CL:0000679
-      Location_relation: has_soma_location
-#      HY Glut  CS202212150_6361 ???
-    - Node: CS202211210_5502
-      Cell_type: CL:0000679
-      Location_relation: has_soma_location
-#      MB Glut   CS202212150_6362  ???
-    - Node: CS202211210_5503
-      Cell_type: CL:0000679
-      Location_relation: has_soma_location
-#      P Glut  CS202212150_6363 ???
-    - Node: CS202211210_5346
-      Cell_type: CL:0000850
-      Location_relation: has_soma_location
-#      Sero
-    - Node: CS202211210_5504
-      Cell_type: CL:0000679
-      Location_relation: has_soma_location
-#      MY Glut  CS202212150_6364 ???
-    - Node: CS202211210_5505
-      Cell_type: CL:0000617
-      Location_relation: has_soma_location
-#      P Gaba
-    - Node: CS202211210_5506
-      Cell_type: CL:0000617
-      Location_relation: has_soma_location
-#      MY Gaba
-    - Node: CS202211210_5507
-      Cell_type: CL:0000617
-      Location_relation: has_soma_location
-#      MB Gaba   CS202212150_6365  ???
-    - Node: CS202211210_5508
-      Cell_type: CL:0000617
-      Location_relation: has_soma_location
-#      CB Gaba   CS202212150_6368  ???
-    - Node: CS202211210_5447
-      Cell_type: CL:0000700
-      Location_relation: has_soma_location
-#      MB Dopa  CS202212150_6047 ???
-    - Node: CS202211210_5509
-      Cell_type: CL:0000679
-      Location_relation: has_soma_location
-#      CB Grandule
-    - Node: CS202211210_5472
-      Cell_type: CL:0000679
-      Location_relation: has_soma_location
-#      CR  CS202212150_6097 ???
-    - Node: CS202211210_5102
-      Cell_type: CL:0000679
-      Location_relation: has_soma_location
-#      V3 Glut
-    - Node: CS202211210_5510
-      Cell_type: CL:0000125
-      Location_relation: has_soma_location
-#      Neuroglial
-    - Node: CS202211210_5511
-      Cell_type: CL:4023072
-      Location_relation: has_soma_location
-#      Vascular  CS202212150_6372  ???
-    - Node: CS202211210_5512
-      Cell_type: CL:0000738
-      Location_relation: has_soma_location
-#      Immune  CS202212150_6373  ???
-
-#    - Node: CS202002013_123
-#      Cell_type: CL:0011005
-#      Location_relation: has_soma_location
-#      #GABAergic interneuron
-#    - Node: CS202002013_179
+#    - Node: CS202211210_5490
 #      Cell_type: CL:0000679
 #      Location_relation: has_soma_location
-#      #glutamatergic neuron
-#    - Node: CS202002013_209
-#      Cell_type: CL:4023065
-#      Location_relation: RO:0002100
-#      #meis2 GABAergic
-#    - Node: CS202002013_91
-#      Cell_type: CL:0002453
-#      Location_relation: part_of
-#      #oligodendrocyte precursor cell
-#    - Node: CS202002013_210
-#      Cell_type: CL:0000127
-#      Location_relation: part_of
-#      #astrocyte
-#    - Node: CS202002013_212
-#      Cell_type: CL:0000128
-#      Location_relation: part_of
-#      #oligodendrocyte
-#    - Node: CS202002013_103
-#      Cell_type: CL:0000115
-#      Location_relation: part_of
-#      #endothelial cell
-#    - Node: CS202002013_222
-#      Cell_type: CL:4023051
-#      Location_relation: RO:0002100
-#      #VLMC
-#    - Node: CS202002013_111
-#      Cell_type: CL:0002590
-#      Location_relation: part_of
-#      #Brain SMC
-#    - Node: CS202002013_112
-#      Cell_type: CL:2000043
-#      Location_relation: part_of
-#      #brain pericyte
-#    - Node: CS202002013_113
-#      Cell_type: CL:0000129
-#      Location_relation: part_of
-#      #microglial
-#    - Node: CS202002013_237
-#      Cell_type: CL:0000881
-#      Location_relation: part_of
-      #PVM      
+##      IT-ET
+#    - Node: CS202211210_5491
+#      Cell_type: CL:0000679
+#      Location_relation: has_soma_location
+##     NP-CT-L6b
+#    - Node: CS202211210_5492
+#      Cell_type: CL:0000679
+#      Location_relation: has_soma_location
+##      DG-MOB-IMN
+#    - Node: CS202211210_5493
+#      Cell_type: CL:4023064
+#      Location_relation: has_soma_location
+##      CGE
+#    - Node: CS202211210_5494
+#      Cell_type: CL:4023063
+#      Location_relation: has_soma_location
+##      MGE
+    - Node: CS202212150_6352
+      Cell_type: CL:0000617
+      Location_relation: has_soma_location
+#      CNU GABA
+#    - Node: CS202211210_5496
+#      Cell_type: CL:0000617
+#      Location_relation: has_soma_location
+##      LSX
+#    - Node: CS202211210_5497
+#      Cell_type: CL:0000679
+#      Location_relation: has_soma_location
+##      TH
+    - Node: CS202212150_6356
+      Cell_type: CL:0000679
+      Location_relation: has_soma_location
+#      HY MM Glut
+#    - Node: CS202211210_5499
+#      Cell_type: CL:0000617
+#      Location_relation: has_soma_location
+##      CNU-HY GABA
+    - Node: CS202212150_5468
+      Cell_type: CL:0000679
+      Location_relation: has_soma_location
+#      MOB Glut
+    - Node: CS202212150_6359
+      Cell_type: CL:0000679
+      Location_relation: has_soma_location
+#      CNU-HYa Glut
+    - Node: CS202212150_6361
+      Cell_type: CL:0000679
+      Location_relation: has_soma_location
+#      HY Glut
+    - Node: CS202212150_6362
+      Cell_type: CL:0000679
+      Location_relation: has_soma_location
+#      MB Glut
+    - Node: CS202212150_6363
+      Cell_type: CL:0000679
+      Location_relation: has_soma_location
+#      P Glut
+#    - Node: CS202211210_5346
+#      Cell_type: CL:0000850
+#      Location_relation: has_soma_location
+##      Sero
+    - Node: CS202212150_6364
+      Cell_type: CL:0000679
+      Location_relation: has_soma_location
+#      MY Glut
+#    - Node: CS202211210_5505
+#      Cell_type: CL:0000617
+#      Location_relation: has_soma_location
+##      P Gaba
+#    - Node: CS202211210_5506
+#      Cell_type: CL:0000617
+#      Location_relation: has_soma_location
+##      MY Gaba
+    - Node: CS202212150_6365
+      Cell_type: CL:0000617
+      Location_relation: has_soma_location
+#      MB Gaba
+    - Node: CS202212150_6368
+      Cell_type: CL:0000617
+      Location_relation: has_soma_location
+#      CB Gaba
+    - Node: CS202212150_6047
+      Cell_type: CL:0000700
+      Location_relation: has_soma_location
+#      MB Dopa
+#    - Node: CS202211210_5509
+#      Cell_type: CL:0000679
+#      Location_relation: has_soma_location
+##      CB Grandule
+    - Node: CS202212150_6097
+      Cell_type: CL:0000679
+      Location_relation: has_soma_location
+#      CR
+#    - Node: CS202211210_5102
+#      Cell_type: CL:0000679
+#      Location_relation: has_soma_location
+##      V3 Glut
+#    - Node: CS202211210_5510
+#      Cell_type: CL:0000125
+#      Location_relation: has_soma_location
+##      Neuroglial
+    - Node: CS202212150_6372
+      Cell_type: CL:4023072
+      Location_relation: has_soma_location
+#      Vascular
+    - Node: CS202212150_6373
+      Cell_type: CL:0000738
+      Location_relation: has_soma_location
+#      Immune
+
   non_taxonomy_roots: []
-  #non_taxonomy_roots:
-  #  - Node: CS202002013_235
-  #    Cell_type: CL:0000125
-  #    # non-neuronal currently mapped as glial cell
-  #  - Node: CS202002013_237
-  #    Cell_type: CL:0000881
-  #    #perivascular macrophage
-  #    # Node: CS202002013_238 #other NN no such CL mapping
-  #    # Node: CS202002013_259 #lower FS BC
-  #  - Node: CS202002013_256
-  #    Cell_type: CL:4023027
-  #    #L5 T Martinotti

@@ -123,4 +123,31 @@ def find_old_data_counterpart(new_label, old_data, old_data_scan_index):
     return None, old_data_scan_index
 
 
-align_nomenclatures(OLD_NOMENCLATURE, NEW_NOMENCLATURE)
+def copy_child_cell_set_accessions(source_nomenclature, target_nomenclature, out_file):
+    """
+    When nomenclature file is edited by excel or google sheets, some child cell set accessions columns are cleared since
+     their length is more than the max cell length. This function copies deleted child_cell_set_accessions from the
+     source nomenclature to the target and outputs to a new file.
+    Args:
+        source_nomenclature: nomenclature to read child_cell_set_accessions
+        target_nomenclature: nomenclature to apply child_cell_set_accessions
+        out_file: new nomenclature with updated child_cell_set_accessions
+    """
+    source_headers, source_data = read_csv_to_dict(os.path.join(DENDROGRAM_FOLDER, source_nomenclature), id_column=1)
+    target_headers, target_data = read_csv_to_dict(os.path.join(DENDROGRAM_FOLDER, target_nomenclature))
+
+    all_data = []
+    for accession_id in target_data:
+        row_data = {}
+        for header in target_headers:
+            if header:
+                row_data[header] = target_data[accession_id][header]
+        row_data["child_cell_set_accessions"] = source_data[accession_id]["child_cell_set_accessions"]
+        all_data.append(row_data)
+
+    class_robot_template = pd.DataFrame.from_records(all_data)
+    class_robot_template.to_csv(os.path.join(DENDROGRAM_FOLDER, out_file), sep=",", index=False)
+
+
+# align_nomenclatures(OLD_NOMENCLATURE, NEW_NOMENCLATURE)
+copy_child_cell_set_accessions("CCN_nomenclature_table_WMB.csv", "nomenclature_table_CS202212150.csv", "nomenclature_table_CS202212150_fixed.csv")
