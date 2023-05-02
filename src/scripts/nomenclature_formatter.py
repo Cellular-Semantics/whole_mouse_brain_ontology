@@ -101,6 +101,6 @@ def list_level2_nodes(nomenclature_name):
 
 
 # convert_tsv_to_csv("nomenclature_with_curation.tsv", "nomenclature_table_CS202211210.csv")
-reformat_csv("CCN_nomenclature_table_WMB.csv", "nomenclature_table_CS202212150.csv")
-# # log_root_nodes("nomenclature_table_CS202211210.csv")
-# list_level2_nodes("nomenclature_table_CS202211210.csv")
+# reformat_csv("CCN_nomenclature_table_WMB.csv", "nomenclature_table_CS202212150.csv")
+# log_root_nodes("nomenclature_table_CS202212150.csv")
+list_level2_nodes("nomenclature_table_CS202212150.csv")
