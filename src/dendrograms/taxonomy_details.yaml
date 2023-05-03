@@ -86,10 +86,10 @@
       Cell_type: CL:0000679
       Location_relation: has_soma_location
 #      P Glut
-#    - Node: CS202211210_5346
-#      Cell_type: CL:0000850
-#      Location_relation: has_soma_location
-##      Sero ??? MB-MY Glut-Sero_1 to 6
+    - Node: CS202212150_6248
+      Cell_type: CL:0000850
+      Location_relation: has_soma_location
+#      Sero
     - Node: CS202212150_6364
       Cell_type: CL:0000679
       Location_relation: has_soma_location

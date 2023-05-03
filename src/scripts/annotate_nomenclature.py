@@ -123,26 +123,33 @@ def find_old_data_counterpart(new_label, old_data, old_data_scan_index):
     return None, old_data_scan_index
 
 
-def copy_child_cell_set_accessions(source_nomenclature, target_nomenclature, out_file):
+def copy_child_cell_set_accessions(source_nomenclature, annotated_nomenclature, out_file):
     """
     When nomenclature file is edited by excel or google sheets, some child cell set accessions columns are cleared since
-     their length is more than the max cell length. This function copies deleted child_cell_set_accessions from the
-     source nomenclature to the target and outputs to a new file.
+     their length is more than the max cell length. This function copies annotations from the
+     annotated nomenclature to the source and outputs to a new file.
     Args:
-        source_nomenclature: nomenclature to read child_cell_set_accessions
-        target_nomenclature: nomenclature to apply child_cell_set_accessions
+        source_nomenclature: original nomenclature
+        annotated_nomenclature: nomenclature to apply child_cell_set_accessions
         out_file: new nomenclature with updated child_cell_set_accessions
     """
-    source_headers, source_data = read_csv_to_dict(os.path.join(DENDROGRAM_FOLDER, source_nomenclature), id_column=1)
-    target_headers, target_data = read_csv_to_dict(os.path.join(DENDROGRAM_FOLDER, target_nomenclature))
+    source_headers, source_data = read_csv_to_dict(os.path.join(DENDROGRAM_FOLDER, source_nomenclature))
+    annotated_headers, annotated_data = read_csv_to_dict(os.path.join(DENDROGRAM_FOLDER, annotated_nomenclature))
 
     all_data = []
-    for accession_id in target_data:
+    for accession_id in source_data:
         row_data = {}
-        for header in target_headers:
+        for header in source_headers:
             if header:
-                row_data[header] = target_data[accession_id][header]
-        row_data["child_cell_set_accessions"] = source_data[accession_id]["child_cell_set_accessions"]
+                row_data[header] = source_data[accession_id][header]
+        print(accession_id)
+        # apply annotations NT, MBA, projection, layer, CL
+        row_data["NT"] = annotated_data[accession_id]["NT"]
+        row_data["MBA"] = annotated_data[accession_id]["MBA"]
+        row_data["projection"] = annotated_data[accession_id]["projection"]
+        row_data["layer"] = annotated_data[accession_id]["layer"]
+        row_data["CL"] = annotated_data[accession_id]["CL"]
+
         all_data.append(row_data)
 
     class_robot_template = pd.DataFrame.from_records(all_data)
@@ -150,4 +157,5 @@ def copy_child_cell_set_accessions(source_nomenclature, target_nomenclature, out
 
 
 # align_nomenclatures(OLD_NOMENCLATURE, NEW_NOMENCLATURE)
-copy_child_cell_set_accessions("CCN_nomenclature_table_WMB.csv", "nomenclature_table_CS202212150.csv", "nomenclature_table_CS202212150_fixed.csv")
+copy_child_cell_set_accessions("nomenclature_table_CS202212150_original.csv",
+                               "nomenclature_table_CS202212150_annotated.csv", "nomenclature_table_CS202212150.csv")
