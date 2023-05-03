@@ -1,9 +1,9 @@
 format-version: 1.2
-data-version: pcl/releases/2023-05-02/bdso-simple-non-classified.owl
+data-version: pcl/releases/2023-05-03/bdso-simple-non-classified.owl
 ontology: pcl/bdso-simple-non-classified
 property_value: http://purl.org/dc/elements/1.1/title "Full Mouse Brain Ontology" xsd:string
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2023-05-02" xsd:string
+property_value: owl:versionInfo "2023-05-03" xsd:string
 
 [Term]
 id: PCL:0110001
@@ -278,7 +278,7 @@ property_value: prefLabel "0022 IT EP-CLA Glut_4" xsd:string
 
 [Term]
 id: PCL:0110023
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Entorhinal area. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440002. The reference data for this cell type is CS202212150_23." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Entorhinal area. The soma of these cells are also found in cortical layer V/VI. The reference data for this cell type is CS202212150_23." []
 synonym: "0023 L5/6 IT TPE-ENT Glut_1" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -291,7 +291,7 @@ property_value: prefLabel "0023 L5/6 IT TPE-ENT Glut_1" xsd:string
 
 [Term]
 id: PCL:0110024
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Entorhinal area. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440002. The reference data for this cell type is CS202212150_24." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Entorhinal area. The soma of these cells are also found in cortical layer V/VI. The reference data for this cell type is CS202212150_24." []
 synonym: "0024 L5/6 IT TPE-ENT Glut_1" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -304,7 +304,7 @@ property_value: prefLabel "0024 L5/6 IT TPE-ENT Glut_1" xsd:string
 
 [Term]
 id: PCL:0110025
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Entorhinal area. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440002. The reference data for this cell type is CS202212150_25." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Entorhinal area. The soma of these cells are also found in cortical layer V/VI. The reference data for this cell type is CS202212150_25." []
 synonym: "0025 L5/6 IT TPE-ENT Glut_1" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -317,7 +317,7 @@ property_value: prefLabel "0025 L5/6 IT TPE-ENT Glut_1" xsd:string
 
 [Term]
 id: PCL:0110026
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Entorhinal area. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440002. The reference data for this cell type is CS202212150_26." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Entorhinal area. The soma of these cells are also found in cortical layer V/VI. The reference data for this cell type is CS202212150_26." []
 synonym: "0026 L5/6 IT TPE-ENT Glut_2" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -330,7 +330,7 @@ property_value: prefLabel "0026 L5/6 IT TPE-ENT Glut_2" xsd:string
 
 [Term]
 id: PCL:0110027
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Entorhinal area. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440002. The reference data for this cell type is CS202212150_27." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Entorhinal area. The soma of these cells are also found in cortical layer V/VI. The reference data for this cell type is CS202212150_27." []
 synonym: "0027 L5/6 IT TPE-ENT Glut_2" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -343,7 +343,7 @@ property_value: prefLabel "0027 L5/6 IT TPE-ENT Glut_2" xsd:string
 
 [Term]
 id: PCL:0110028
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Entorhinal area. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440002. The reference data for this cell type is CS202212150_28." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Entorhinal area. The soma of these cells are also found in cortical layer V/VI. The reference data for this cell type is CS202212150_28." []
 synonym: "0028 L5/6 IT TPE-ENT Glut_2" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -356,7 +356,7 @@ property_value: prefLabel "0028 L5/6 IT TPE-ENT Glut_2" xsd:string
 
 [Term]
 id: PCL:0110029
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Entorhinal area. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440002. The reference data for this cell type is CS202212150_29." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Entorhinal area. The soma of these cells are also found in cortical layer V/VI. The reference data for this cell type is CS202212150_29." []
 synonym: "0029 L5/6 IT TPE-ENT Glut_3" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -369,7 +369,7 @@ property_value: prefLabel "0029 L5/6 IT TPE-ENT Glut_3" xsd:string
 
 [Term]
 id: PCL:0110030
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Entorhinal area. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440002. The reference data for this cell type is CS202212150_30." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Entorhinal area. The soma of these cells are also found in cortical layer V/VI. The reference data for this cell type is CS202212150_30." []
 synonym: "0030 L5/6 IT TPE-ENT Glut_4" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -382,7 +382,7 @@ property_value: prefLabel "0030 L5/6 IT TPE-ENT Glut_4" xsd:string
 
 [Term]
 id: PCL:0110031
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Entorhinal area. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440002. The reference data for this cell type is CS202212150_31." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Entorhinal area. The soma of these cells are also found in cortical layer V/VI. The reference data for this cell type is CS202212150_31." []
 synonym: "0031 L5/6 IT TPE-ENT Glut_5" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -837,7 +837,7 @@ property_value: prefLabel "0065 L5 IT CTX Glut_5" xsd:string
 
 [Term]
 id: PCL:0110066
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440001. The reference data for this cell type is CS202212150_66." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in cortical layer IV/V. The reference data for this cell type is CS202212150_66." []
 synonym: "0066 L4/5 IT CTX Glut_1" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -850,7 +850,7 @@ property_value: prefLabel "0066 L4/5 IT CTX Glut_1" xsd:string
 
 [Term]
 id: PCL:0110067
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440001. The reference data for this cell type is CS202212150_67." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in cortical layer IV/V. The reference data for this cell type is CS202212150_67." []
 synonym: "0067 L4/5 IT CTX Glut_1" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -863,7 +863,7 @@ property_value: prefLabel "0067 L4/5 IT CTX Glut_1" xsd:string
 
 [Term]
 id: PCL:0110068
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440001. The reference data for this cell type is CS202212150_68." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in cortical layer IV/V. The reference data for this cell type is CS202212150_68." []
 synonym: "0068 L4/5 IT CTX Glut_1" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -876,7 +876,7 @@ property_value: prefLabel "0068 L4/5 IT CTX Glut_1" xsd:string
 
 [Term]
 id: PCL:0110069
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440001. The reference data for this cell type is CS202212150_69." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in cortical layer IV/V. The reference data for this cell type is CS202212150_69." []
 synonym: "0069 L4/5 IT CTX Glut_1" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -889,7 +889,7 @@ property_value: prefLabel "0069 L4/5 IT CTX Glut_1" xsd:string
 
 [Term]
 id: PCL:0110070
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440001. The reference data for this cell type is CS202212150_70." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in cortical layer IV/V. The reference data for this cell type is CS202212150_70." []
 synonym: "0070 L4/5 IT CTX Glut_1" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -902,7 +902,7 @@ property_value: prefLabel "0070 L4/5 IT CTX Glut_1" xsd:string
 
 [Term]
 id: PCL:0110071
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440001. The reference data for this cell type is CS202212150_71." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in cortical layer IV/V. The reference data for this cell type is CS202212150_71." []
 synonym: "0071 L4/5 IT CTX Glut_1" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -915,7 +915,7 @@ property_value: prefLabel "0071 L4/5 IT CTX Glut_1" xsd:string
 
 [Term]
 id: PCL:0110072
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440001. The reference data for this cell type is CS202212150_72." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in cortical layer IV/V. The reference data for this cell type is CS202212150_72." []
 synonym: "0072 L4/5 IT CTX Glut_1" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -928,7 +928,7 @@ property_value: prefLabel "0072 L4/5 IT CTX Glut_1" xsd:string
 
 [Term]
 id: PCL:0110073
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440001. The reference data for this cell type is CS202212150_73." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in cortical layer IV/V. The reference data for this cell type is CS202212150_73." []
 synonym: "0073 L4/5 IT CTX Glut_1" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -941,7 +941,7 @@ property_value: prefLabel "0073 L4/5 IT CTX Glut_1" xsd:string
 
 [Term]
 id: PCL:0110074
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440001. The reference data for this cell type is CS202212150_74." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in cortical layer IV/V. The reference data for this cell type is CS202212150_74." []
 synonym: "0074 L4/5 IT CTX Glut_1" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -954,7 +954,7 @@ property_value: prefLabel "0074 L4/5 IT CTX Glut_1" xsd:string
 
 [Term]
 id: PCL:0110075
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440001. The reference data for this cell type is CS202212150_75." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in cortical layer IV/V. The reference data for this cell type is CS202212150_75." []
 synonym: "0075 L4/5 IT CTX Glut_2" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -967,7 +967,7 @@ property_value: prefLabel "0075 L4/5 IT CTX Glut_2" xsd:string
 
 [Term]
 id: PCL:0110076
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440001. The reference data for this cell type is CS202212150_76." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in cortical layer IV/V. The reference data for this cell type is CS202212150_76." []
 synonym: "0076 L4/5 IT CTX Glut_2" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -980,7 +980,7 @@ property_value: prefLabel "0076 L4/5 IT CTX Glut_2" xsd:string
 
 [Term]
 id: PCL:0110077
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440001. The reference data for this cell type is CS202212150_77." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in cortical layer IV/V. The reference data for this cell type is CS202212150_77." []
 synonym: "0077 L4/5 IT CTX Glut_2" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -993,7 +993,7 @@ property_value: prefLabel "0077 L4/5 IT CTX Glut_2" xsd:string
 
 [Term]
 id: PCL:0110078
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440001. The reference data for this cell type is CS202212150_78." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in cortical layer IV/V. The reference data for this cell type is CS202212150_78." []
 synonym: "0078 L4/5 IT CTX Glut_2" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -1006,7 +1006,7 @@ property_value: prefLabel "0078 L4/5 IT CTX Glut_2" xsd:string
 
 [Term]
 id: PCL:0110079
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440001. The reference data for this cell type is CS202212150_79." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in cortical layer IV/V. The reference data for this cell type is CS202212150_79." []
 synonym: "0079 L4/5 IT CTX Glut_2" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -1019,7 +1019,7 @@ property_value: prefLabel "0079 L4/5 IT CTX Glut_2" xsd:string
 
 [Term]
 id: PCL:0110080
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440001. The reference data for this cell type is CS202212150_80." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in cortical layer IV/V. The reference data for this cell type is CS202212150_80." []
 synonym: "0080 L4/5 IT CTX Glut_2" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -1032,7 +1032,7 @@ property_value: prefLabel "0080 L4/5 IT CTX Glut_2" xsd:string
 
 [Term]
 id: PCL:0110081
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440001. The reference data for this cell type is CS202212150_81." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in cortical layer IV/V. The reference data for this cell type is CS202212150_81." []
 synonym: "0081 L4/5 IT CTX Glut_2" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -1045,7 +1045,7 @@ property_value: prefLabel "0081 L4/5 IT CTX Glut_2" xsd:string
 
 [Term]
 id: PCL:0110082
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440001. The reference data for this cell type is CS202212150_82." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in cortical layer IV/V. The reference data for this cell type is CS202212150_82." []
 synonym: "0082 L4/5 IT CTX Glut_2" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -1058,7 +1058,7 @@ property_value: prefLabel "0082 L4/5 IT CTX Glut_2" xsd:string
 
 [Term]
 id: PCL:0110083
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440001. The reference data for this cell type is CS202212150_83." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in cortical layer IV/V. The reference data for this cell type is CS202212150_83." []
 synonym: "0083 L4/5 IT CTX Glut_3" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -1071,7 +1071,7 @@ property_value: prefLabel "0083 L4/5 IT CTX Glut_3" xsd:string
 
 [Term]
 id: PCL:0110084
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440001. The reference data for this cell type is CS202212150_84." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in cortical layer IV/V. The reference data for this cell type is CS202212150_84." []
 synonym: "0084 L4/5 IT CTX Glut_3" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -1084,7 +1084,7 @@ property_value: prefLabel "0084 L4/5 IT CTX Glut_3" xsd:string
 
 [Term]
 id: PCL:0110085
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440001. The reference data for this cell type is CS202212150_85." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in cortical layer IV/V. The reference data for this cell type is CS202212150_85." []
 synonym: "0085 L4/5 IT CTX Glut_3" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -1097,7 +1097,7 @@ property_value: prefLabel "0085 L4/5 IT CTX Glut_3" xsd:string
 
 [Term]
 id: PCL:0110086
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440001. The reference data for this cell type is CS202212150_86." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in cortical layer IV/V. The reference data for this cell type is CS202212150_86." []
 synonym: "0086 L4/5 IT CTX Glut_3" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -1110,7 +1110,7 @@ property_value: prefLabel "0086 L4/5 IT CTX Glut_3" xsd:string
 
 [Term]
 id: PCL:0110087
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440001. The reference data for this cell type is CS202212150_87." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in cortical layer IV/V. The reference data for this cell type is CS202212150_87." []
 synonym: "0087 L4/5 IT CTX Glut_3" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -1123,7 +1123,7 @@ property_value: prefLabel "0087 L4/5 IT CTX Glut_3" xsd:string
 
 [Term]
 id: PCL:0110088
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440001. The reference data for this cell type is CS202212150_88." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in cortical layer IV/V. The reference data for this cell type is CS202212150_88." []
 synonym: "0088 L4/5 IT CTX Glut_3" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -1136,7 +1136,7 @@ property_value: prefLabel "0088 L4/5 IT CTX Glut_3" xsd:string
 
 [Term]
 id: PCL:0110089
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440001. The reference data for this cell type is CS202212150_89." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in cortical layer IV/V. The reference data for this cell type is CS202212150_89." []
 synonym: "0089 L4/5 IT CTX Glut_4" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -1149,7 +1149,7 @@ property_value: prefLabel "0089 L4/5 IT CTX Glut_4" xsd:string
 
 [Term]
 id: PCL:0110090
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440001. The reference data for this cell type is CS202212150_90." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in cortical layer IV/V. The reference data for this cell type is CS202212150_90." []
 synonym: "0090 L4/5 IT CTX Glut_4" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -1162,7 +1162,7 @@ property_value: prefLabel "0090 L4/5 IT CTX Glut_4" xsd:string
 
 [Term]
 id: PCL:0110091
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440001. The reference data for this cell type is CS202212150_91." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in cortical layer IV/V. The reference data for this cell type is CS202212150_91." []
 synonym: "0091 L4/5 IT CTX Glut_4" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -1175,7 +1175,7 @@ property_value: prefLabel "0091 L4/5 IT CTX Glut_4" xsd:string
 
 [Term]
 id: PCL:0110092
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440001. The reference data for this cell type is CS202212150_92." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in cortical layer IV/V. The reference data for this cell type is CS202212150_92." []
 synonym: "0092 L4/5 IT CTX Glut_4" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -1188,7 +1188,7 @@ property_value: prefLabel "0092 L4/5 IT CTX Glut_4" xsd:string
 
 [Term]
 id: PCL:0110093
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440001. The reference data for this cell type is CS202212150_93." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in cortical layer IV/V. The reference data for this cell type is CS202212150_93." []
 synonym: "0093 L4/5 IT CTX Glut_4" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -1201,7 +1201,7 @@ property_value: prefLabel "0093 L4/5 IT CTX Glut_4" xsd:string
 
 [Term]
 id: PCL:0110094
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440001. The reference data for this cell type is CS202212150_94." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in cortical layer IV/V. The reference data for this cell type is CS202212150_94." []
 synonym: "0094 L4/5 IT CTX Glut_4" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -1214,7 +1214,7 @@ property_value: prefLabel "0094 L4/5 IT CTX Glut_4" xsd:string
 
 [Term]
 id: PCL:0110095
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440001. The reference data for this cell type is CS202212150_95." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in cortical layer IV/V. The reference data for this cell type is CS202212150_95." []
 synonym: "0095 L4/5 IT CTX Glut_5" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -1227,7 +1227,7 @@ property_value: prefLabel "0095 L4/5 IT CTX Glut_5" xsd:string
 
 [Term]
 id: PCL:0110096
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440001. The reference data for this cell type is CS202212150_96." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in cortical layer IV/V. The reference data for this cell type is CS202212150_96." []
 synonym: "0096 L4/5 IT CTX Glut_5" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -1240,7 +1240,7 @@ property_value: prefLabel "0096 L4/5 IT CTX Glut_5" xsd:string
 
 [Term]
 id: PCL:0110097
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440001. The reference data for this cell type is CS202212150_97." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in cortical layer IV/V. The reference data for this cell type is CS202212150_97." []
 synonym: "0097 L4/5 IT CTX Glut_5" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -1253,7 +1253,7 @@ property_value: prefLabel "0097 L4/5 IT CTX Glut_5" xsd:string
 
 [Term]
 id: PCL:0110098
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440001. The reference data for this cell type is CS202212150_98." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in cortical layer IV/V. The reference data for this cell type is CS202212150_98." []
 synonym: "0098 L4/5 IT CTX Glut_5" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -1266,7 +1266,7 @@ property_value: prefLabel "0098 L4/5 IT CTX Glut_5" xsd:string
 
 [Term]
 id: PCL:0110099
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440001. The reference data for this cell type is CS202212150_99." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in cortical layer IV/V. The reference data for this cell type is CS202212150_99." []
 synonym: "0099 L4/5 IT CTX Glut_5" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -1279,7 +1279,7 @@ property_value: prefLabel "0099 L4/5 IT CTX Glut_5" xsd:string
 
 [Term]
 id: PCL:0110100
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440001. The reference data for this cell type is CS202212150_100." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in cortical layer IV/V. The reference data for this cell type is CS202212150_100." []
 synonym: "0100 L4/5 IT CTX Glut_6" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -1292,7 +1292,7 @@ property_value: prefLabel "0100 L4/5 IT CTX Glut_6" xsd:string
 
 [Term]
 id: PCL:0110101
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440001. The reference data for this cell type is CS202212150_101." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in cortical layer IV/V. The reference data for this cell type is CS202212150_101." []
 synonym: "0101 L4/5 IT CTX Glut_6" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -1305,7 +1305,7 @@ property_value: prefLabel "0101 L4/5 IT CTX Glut_6" xsd:string
 
 [Term]
 id: PCL:0110102
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440001. The reference data for this cell type is CS202212150_102." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in cortical layer IV/V. The reference data for this cell type is CS202212150_102." []
 synonym: "0102 L4/5 IT CTX Glut_6" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -1318,7 +1318,7 @@ property_value: prefLabel "0102 L4/5 IT CTX Glut_6" xsd:string
 
 [Term]
 id: PCL:0110103
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440001. The reference data for this cell type is CS202212150_103." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in cortical layer IV/V. The reference data for this cell type is CS202212150_103." []
 synonym: "0103 L4/5 IT CTX Glut_6" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -13931,56 +13931,86 @@ property_value: prefLabel "1185 RE-Xi Nox4 Glut_4" xsd:string
 
 [Term]
 id: PCL:0111186
-def: "A glutamatergic neuron of the Mus musculus brain. The reference data for this cell type is CS202212150_1186." []
+def: "A glutamatergic neuron of the Mus musculus brain. The soma of these cells can be found in the Posterior limiting nucleus of the thalamus, Posterior intralaminar thalamic nucleus, Posterior triangular thalamic nucleus, Suprageniculate nucleus. The reference data for this cell type is CS202212150_1186." []
 synonym: "1186 MG-POL-SGN Glut_1" EXACT []
 relationship: RO:0002100 MBA:997 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
+relationship: RO:0002215 GO:0061535 ! capable of
 property_value: IAO:0000028 "1186 MG-POL-SGN Glut_1 (Mouse)" xsd:string
+property_value: PCL:0010063 MBA:1029
+property_value: PCL:0010063 MBA:325
+property_value: PCL:0010063 MBA:560581563
+property_value: PCL:0010063 MBA:563807435
 property_value: prefLabel "1186 MG-POL-SGN Glut_1" xsd:string
 
 [Term]
 id: PCL:0111187
-def: "A glutamatergic neuron of the Mus musculus brain. The reference data for this cell type is CS202212150_1187." []
+def: "A glutamatergic neuron of the Mus musculus brain. The soma of these cells can be found in the Posterior limiting nucleus of the thalamus, Posterior intralaminar thalamic nucleus, Posterior triangular thalamic nucleus, http://purl.obolibrary.org/obo/MBA_3255. The reference data for this cell type is CS202212150_1187." []
 synonym: "1187 MG-POL-SGN Glut_1" EXACT []
 relationship: RO:0002100 MBA:997 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
+relationship: RO:0002215 GO:0061535 ! capable of
 property_value: IAO:0000028 "1187 MG-POL-SGN Glut_1 (Mouse)" xsd:string
+property_value: PCL:0010063 MBA:1029
+property_value: PCL:0010063 MBA:3255
+property_value: PCL:0010063 MBA:560581563
+property_value: PCL:0010063 MBA:563807435
 property_value: prefLabel "1187 MG-POL-SGN Glut_1" xsd:string
 
 [Term]
 id: PCL:0111188
-def: "A glutamatergic neuron of the Mus musculus brain. The reference data for this cell type is CS202212150_1188." []
+def: "A glutamatergic neuron of the Mus musculus brain. The soma of these cells can be found in the Posterior limiting nucleus of the thalamus, Posterior intralaminar thalamic nucleus, Posterior triangular thalamic nucleus, http://purl.obolibrary.org/obo/MBA_3255. The reference data for this cell type is CS202212150_1188." []
 synonym: "1188 MG-POL-SGN Glut_1" EXACT []
 relationship: RO:0002100 MBA:997 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
+relationship: RO:0002215 GO:0061535 ! capable of
 property_value: IAO:0000028 "1188 MG-POL-SGN Glut_1 (Mouse)" xsd:string
+property_value: PCL:0010063 MBA:1029
+property_value: PCL:0010063 MBA:3255
+property_value: PCL:0010063 MBA:560581563
+property_value: PCL:0010063 MBA:563807435
 property_value: prefLabel "1188 MG-POL-SGN Glut_1" xsd:string
 
 [Term]
 id: PCL:0111189
-def: "A glutamatergic neuron of the Mus musculus brain. The reference data for this cell type is CS202212150_1189." []
+def: "A glutamatergic neuron of the Mus musculus brain. The soma of these cells can be found in the Posterior limiting nucleus of the thalamus, Posterior intralaminar thalamic nucleus, Posterior triangular thalamic nucleus, http://purl.obolibrary.org/obo/MBA_3255. The reference data for this cell type is CS202212150_1189." []
 synonym: "1189 MG-POL-SGN Glut_2" EXACT []
 relationship: RO:0002100 MBA:997 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
+relationship: RO:0002215 GO:0061535 ! capable of
 property_value: IAO:0000028 "1189 MG-POL-SGN Glut_2 (Mouse)" xsd:string
+property_value: PCL:0010063 MBA:1029
+property_value: PCL:0010063 MBA:3255
+property_value: PCL:0010063 MBA:560581563
+property_value: PCL:0010063 MBA:563807435
 property_value: prefLabel "1189 MG-POL-SGN Glut_2" xsd:string
 
 [Term]
 id: PCL:0111190
-def: "A glutamatergic neuron of the Mus musculus brain. The reference data for this cell type is CS202212150_1190." []
+def: "A glutamatergic neuron of the Mus musculus brain. The soma of these cells can be found in the Posterior limiting nucleus of the thalamus, Posterior intralaminar thalamic nucleus, Posterior triangular thalamic nucleus, http://purl.obolibrary.org/obo/MBA_3255. The reference data for this cell type is CS202212150_1190." []
 synonym: "1190 MG-POL-SGN Glut_2" EXACT []
 relationship: RO:0002100 MBA:997 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
+relationship: RO:0002215 GO:0061535 ! capable of
 property_value: IAO:0000028 "1190 MG-POL-SGN Glut_2 (Mouse)" xsd:string
+property_value: PCL:0010063 MBA:1029
+property_value: PCL:0010063 MBA:3255
+property_value: PCL:0010063 MBA:560581563
+property_value: PCL:0010063 MBA:563807435
 property_value: prefLabel "1190 MG-POL-SGN Glut_2" xsd:string
 
 [Term]
 id: PCL:0111191
-def: "A glutamatergic neuron of the Mus musculus brain. The reference data for this cell type is CS202212150_1191." []
+def: "A glutamatergic neuron of the Mus musculus brain. The soma of these cells can be found in the Posterior limiting nucleus of the thalamus, Posterior intralaminar thalamic nucleus, Posterior triangular thalamic nucleus, http://purl.obolibrary.org/obo/MBA_3255. The reference data for this cell type is CS202212150_1191." []
 synonym: "1191 MG-POL-SGN Glut_2" EXACT []
 relationship: RO:0002100 MBA:997 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
+relationship: RO:0002215 GO:0061535 ! capable of
 property_value: IAO:0000028 "1191 MG-POL-SGN Glut_2 (Mouse)" xsd:string
+property_value: PCL:0010063 MBA:1029
+property_value: PCL:0010063 MBA:3255
+property_value: PCL:0010063 MBA:560581563
+property_value: PCL:0010063 MBA:563807435
 property_value: prefLabel "1191 MG-POL-SGN Glut_2" xsd:string
 
 [Term]
@@ -26633,6 +26663,422 @@ property_value: IAO:0000028 "2657 MRN-PAG Nkx6-1 Glut (Mouse)" xsd:string
 property_value: PCL:0010063 MBA:128
 property_value: PCL:0010063 MBA:795
 property_value: prefLabel "2657 MRN-PAG Nkx6-1 Glut" xsd:string
+
+[Term]
+id: PCL:0112658
+def: "A serotonergic neuron of the Mus musculus brain. The soma of these cells can be found in the Midbrain, Medulla. The reference data for this cell type is CS202212150_2658." []
+synonym: "2658 MB-MY Glut-Sero_1" EXACT []
+relationship: RO:0002100 MBA:997 ! has soma location
+relationship: RO:0002162 NCBITaxon:10090
+relationship: RO:0002215 GO:0060096 ! capable of
+relationship: RO:0002215 GO:0061535 ! capable of
+property_value: IAO:0000028 "2658 MB-MY Glut-Sero_1 (Mouse)" xsd:string
+property_value: PCL:0010063 MBA:313
+property_value: PCL:0010063 MBA:354
+property_value: prefLabel "2658 MB-MY Glut-Sero_1" xsd:string
+
+[Term]
+id: PCL:0112659
+def: "A serotonergic neuron of the Mus musculus brain. The soma of these cells can be found in the Midbrain, Medulla. The reference data for this cell type is CS202212150_2659." []
+synonym: "2659 MB-MY Glut-Sero_1" EXACT []
+relationship: RO:0002100 MBA:997 ! has soma location
+relationship: RO:0002162 NCBITaxon:10090
+relationship: RO:0002215 GO:0060096 ! capable of
+relationship: RO:0002215 GO:0061535 ! capable of
+property_value: IAO:0000028 "2659 MB-MY Glut-Sero_1 (Mouse)" xsd:string
+property_value: PCL:0010063 MBA:313
+property_value: PCL:0010063 MBA:354
+property_value: prefLabel "2659 MB-MY Glut-Sero_1" xsd:string
+
+[Term]
+id: PCL:0112660
+def: "A serotonergic neuron of the Mus musculus brain. The soma of these cells can be found in the Midbrain, Medulla. The reference data for this cell type is CS202212150_2660." []
+synonym: "2660 MB-MY Glut-Sero_1" EXACT []
+relationship: RO:0002100 MBA:997 ! has soma location
+relationship: RO:0002162 NCBITaxon:10090
+relationship: RO:0002215 GO:0060096 ! capable of
+relationship: RO:0002215 GO:0061535 ! capable of
+property_value: IAO:0000028 "2660 MB-MY Glut-Sero_1 (Mouse)" xsd:string
+property_value: PCL:0010063 MBA:313
+property_value: PCL:0010063 MBA:354
+property_value: prefLabel "2660 MB-MY Glut-Sero_1" xsd:string
+
+[Term]
+id: PCL:0112661
+def: "A serotonergic neuron of the Mus musculus brain. The soma of these cells can be found in the Midbrain, Medulla. The reference data for this cell type is CS202212150_2661." []
+synonym: "2661 MB-MY Glut-Sero_1" EXACT []
+relationship: RO:0002100 MBA:997 ! has soma location
+relationship: RO:0002162 NCBITaxon:10090
+relationship: RO:0002215 GO:0060096 ! capable of
+relationship: RO:0002215 GO:0061535 ! capable of
+property_value: IAO:0000028 "2661 MB-MY Glut-Sero_1 (Mouse)" xsd:string
+property_value: PCL:0010063 MBA:313
+property_value: PCL:0010063 MBA:354
+property_value: prefLabel "2661 MB-MY Glut-Sero_1" xsd:string
+
+[Term]
+id: PCL:0112662
+def: "A serotonergic neuron of the Mus musculus brain. The soma of these cells can be found in the Midbrain, Medulla. The reference data for this cell type is CS202212150_2662." []
+synonym: "2662 MB-MY Glut-Sero_1" EXACT []
+relationship: RO:0002100 MBA:997 ! has soma location
+relationship: RO:0002162 NCBITaxon:10090
+relationship: RO:0002215 GO:0060096 ! capable of
+relationship: RO:0002215 GO:0061535 ! capable of
+property_value: IAO:0000028 "2662 MB-MY Glut-Sero_1 (Mouse)" xsd:string
+property_value: PCL:0010063 MBA:313
+property_value: PCL:0010063 MBA:354
+property_value: prefLabel "2662 MB-MY Glut-Sero_1" xsd:string
+
+[Term]
+id: PCL:0112663
+def: "A serotonergic neuron of the Mus musculus brain. The soma of these cells can be found in the Midbrain, Medulla. The reference data for this cell type is CS202212150_2663." []
+synonym: "2663 MB-MY Glut-Sero_1" EXACT []
+relationship: RO:0002100 MBA:997 ! has soma location
+relationship: RO:0002162 NCBITaxon:10090
+relationship: RO:0002215 GO:0060096 ! capable of
+relationship: RO:0002215 GO:0061535 ! capable of
+property_value: IAO:0000028 "2663 MB-MY Glut-Sero_1 (Mouse)" xsd:string
+property_value: PCL:0010063 MBA:313
+property_value: PCL:0010063 MBA:354
+property_value: prefLabel "2663 MB-MY Glut-Sero_1" xsd:string
+
+[Term]
+id: PCL:0112664
+def: "A serotonergic neuron of the Mus musculus brain. The soma of these cells can be found in the Midbrain, Medulla. The reference data for this cell type is CS202212150_2664." []
+synonym: "2664 MB-MY Glut-Sero_1" EXACT []
+relationship: RO:0002100 MBA:997 ! has soma location
+relationship: RO:0002162 NCBITaxon:10090
+relationship: RO:0002215 GO:0060096 ! capable of
+relationship: RO:0002215 GO:0061535 ! capable of
+property_value: IAO:0000028 "2664 MB-MY Glut-Sero_1 (Mouse)" xsd:string
+property_value: PCL:0010063 MBA:313
+property_value: PCL:0010063 MBA:354
+property_value: prefLabel "2664 MB-MY Glut-Sero_1" xsd:string
+
+[Term]
+id: PCL:0112665
+def: "A serotonergic neuron of the Mus musculus brain. The soma of these cells can be found in the Midbrain, Medulla. The reference data for this cell type is CS202212150_2665." []
+synonym: "2665 MB-MY Glut-Sero_1" EXACT []
+relationship: RO:0002100 MBA:997 ! has soma location
+relationship: RO:0002162 NCBITaxon:10090
+relationship: RO:0002215 GO:0060096 ! capable of
+relationship: RO:0002215 GO:0061535 ! capable of
+property_value: IAO:0000028 "2665 MB-MY Glut-Sero_1 (Mouse)" xsd:string
+property_value: PCL:0010063 MBA:313
+property_value: PCL:0010063 MBA:354
+property_value: prefLabel "2665 MB-MY Glut-Sero_1" xsd:string
+
+[Term]
+id: PCL:0112666
+def: "A serotonergic neuron of the Mus musculus brain. The soma of these cells can be found in the Midbrain, Medulla. The reference data for this cell type is CS202212150_2666." []
+synonym: "2666 MB-MY Glut-Sero_2" EXACT []
+relationship: RO:0002100 MBA:997 ! has soma location
+relationship: RO:0002162 NCBITaxon:10090
+relationship: RO:0002215 GO:0060096 ! capable of
+relationship: RO:0002215 GO:0061535 ! capable of
+property_value: IAO:0000028 "2666 MB-MY Glut-Sero_2 (Mouse)" xsd:string
+property_value: PCL:0010063 MBA:313
+property_value: PCL:0010063 MBA:354
+property_value: prefLabel "2666 MB-MY Glut-Sero_2" xsd:string
+
+[Term]
+id: PCL:0112667
+def: "A serotonergic neuron of the Mus musculus brain. The soma of these cells can be found in the Midbrain, Medulla. The reference data for this cell type is CS202212150_2667." []
+synonym: "2667 MB-MY Glut-Sero_2" EXACT []
+relationship: RO:0002100 MBA:997 ! has soma location
+relationship: RO:0002162 NCBITaxon:10090
+relationship: RO:0002215 GO:0060096 ! capable of
+relationship: RO:0002215 GO:0061535 ! capable of
+property_value: IAO:0000028 "2667 MB-MY Glut-Sero_2 (Mouse)" xsd:string
+property_value: PCL:0010063 MBA:313
+property_value: PCL:0010063 MBA:354
+property_value: prefLabel "2667 MB-MY Glut-Sero_2" xsd:string
+
+[Term]
+id: PCL:0112668
+def: "A serotonergic neuron of the Mus musculus brain. The soma of these cells can be found in the Midbrain, Medulla. The reference data for this cell type is CS202212150_2668." []
+synonym: "2668 MB-MY Glut-Sero_2" EXACT []
+relationship: RO:0002100 MBA:997 ! has soma location
+relationship: RO:0002162 NCBITaxon:10090
+relationship: RO:0002215 GO:0060096 ! capable of
+relationship: RO:0002215 GO:0061535 ! capable of
+property_value: IAO:0000028 "2668 MB-MY Glut-Sero_2 (Mouse)" xsd:string
+property_value: PCL:0010063 MBA:313
+property_value: PCL:0010063 MBA:354
+property_value: prefLabel "2668 MB-MY Glut-Sero_2" xsd:string
+
+[Term]
+id: PCL:0112669
+def: "A serotonergic neuron of the Mus musculus brain. The soma of these cells can be found in the Midbrain, Medulla. The reference data for this cell type is CS202212150_2669." []
+synonym: "2669 MB-MY Glut-Sero_2" EXACT []
+relationship: RO:0002100 MBA:997 ! has soma location
+relationship: RO:0002162 NCBITaxon:10090
+relationship: RO:0002215 GO:0060096 ! capable of
+relationship: RO:0002215 GO:0061535 ! capable of
+property_value: IAO:0000028 "2669 MB-MY Glut-Sero_2 (Mouse)" xsd:string
+property_value: PCL:0010063 MBA:313
+property_value: PCL:0010063 MBA:354
+property_value: prefLabel "2669 MB-MY Glut-Sero_2" xsd:string
+
+[Term]
+id: PCL:0112670
+def: "A serotonergic neuron of the Mus musculus brain. The soma of these cells can be found in the Midbrain, Medulla. The reference data for this cell type is CS202212150_2670." []
+synonym: "2670 MB-MY Glut-Sero_2" EXACT []
+relationship: RO:0002100 MBA:997 ! has soma location
+relationship: RO:0002162 NCBITaxon:10090
+relationship: RO:0002215 GO:0060096 ! capable of
+relationship: RO:0002215 GO:0061535 ! capable of
+property_value: IAO:0000028 "2670 MB-MY Glut-Sero_2 (Mouse)" xsd:string
+property_value: PCL:0010063 MBA:313
+property_value: PCL:0010063 MBA:354
+property_value: prefLabel "2670 MB-MY Glut-Sero_2" xsd:string
+
+[Term]
+id: PCL:0112671
+def: "A serotonergic neuron of the Mus musculus brain. The soma of these cells can be found in the Midbrain, Medulla. The reference data for this cell type is CS202212150_2671." []
+synonym: "2671 MB-MY Glut-Sero_2" EXACT []
+relationship: RO:0002100 MBA:997 ! has soma location
+relationship: RO:0002162 NCBITaxon:10090
+relationship: RO:0002215 GO:0060096 ! capable of
+relationship: RO:0002215 GO:0061535 ! capable of
+property_value: IAO:0000028 "2671 MB-MY Glut-Sero_2 (Mouse)" xsd:string
+property_value: PCL:0010063 MBA:313
+property_value: PCL:0010063 MBA:354
+property_value: prefLabel "2671 MB-MY Glut-Sero_2" xsd:string
+
+[Term]
+id: PCL:0112672
+def: "A serotonergic neuron of the Mus musculus brain. The soma of these cells can be found in the Midbrain, Medulla. The reference data for this cell type is CS202212150_2672." []
+synonym: "2672 MB-MY Glut-Sero_2" EXACT []
+relationship: RO:0002100 MBA:997 ! has soma location
+relationship: RO:0002162 NCBITaxon:10090
+relationship: RO:0002215 GO:0060096 ! capable of
+relationship: RO:0002215 GO:0061535 ! capable of
+property_value: IAO:0000028 "2672 MB-MY Glut-Sero_2 (Mouse)" xsd:string
+property_value: PCL:0010063 MBA:313
+property_value: PCL:0010063 MBA:354
+property_value: prefLabel "2672 MB-MY Glut-Sero_2" xsd:string
+
+[Term]
+id: PCL:0112673
+def: "A serotonergic neuron of the Mus musculus brain. The soma of these cells can be found in the Midbrain, Medulla. The reference data for this cell type is CS202212150_2673." []
+synonym: "2673 MB-MY Glut-Sero_2" EXACT []
+relationship: RO:0002100 MBA:997 ! has soma location
+relationship: RO:0002162 NCBITaxon:10090
+relationship: RO:0002215 GO:0060096 ! capable of
+relationship: RO:0002215 GO:0061535 ! capable of
+property_value: IAO:0000028 "2673 MB-MY Glut-Sero_2 (Mouse)" xsd:string
+property_value: PCL:0010063 MBA:313
+property_value: PCL:0010063 MBA:354
+property_value: prefLabel "2673 MB-MY Glut-Sero_2" xsd:string
+
+[Term]
+id: PCL:0112674
+def: "A serotonergic neuron of the Mus musculus brain. The soma of these cells can be found in the Midbrain, Medulla. The reference data for this cell type is CS202212150_2674." []
+synonym: "2674 MB-MY Glut-Sero_3" EXACT []
+relationship: RO:0002100 MBA:997 ! has soma location
+relationship: RO:0002162 NCBITaxon:10090
+relationship: RO:0002215 GO:0060096 ! capable of
+relationship: RO:0002215 GO:0061535 ! capable of
+property_value: IAO:0000028 "2674 MB-MY Glut-Sero_3 (Mouse)" xsd:string
+property_value: PCL:0010063 MBA:313
+property_value: PCL:0010063 MBA:354
+property_value: prefLabel "2674 MB-MY Glut-Sero_3" xsd:string
+
+[Term]
+id: PCL:0112675
+def: "A serotonergic neuron of the Mus musculus brain. The soma of these cells can be found in the Midbrain, Medulla. The reference data for this cell type is CS202212150_2675." []
+synonym: "2675 MB-MY Glut-Sero_3" EXACT []
+relationship: RO:0002100 MBA:997 ! has soma location
+relationship: RO:0002162 NCBITaxon:10090
+relationship: RO:0002215 GO:0060096 ! capable of
+relationship: RO:0002215 GO:0061535 ! capable of
+property_value: IAO:0000028 "2675 MB-MY Glut-Sero_3 (Mouse)" xsd:string
+property_value: PCL:0010063 MBA:313
+property_value: PCL:0010063 MBA:354
+property_value: prefLabel "2675 MB-MY Glut-Sero_3" xsd:string
+
+[Term]
+id: PCL:0112676
+def: "A serotonergic neuron of the Mus musculus brain. The soma of these cells can be found in the Midbrain, Medulla. The reference data for this cell type is CS202212150_2676." []
+synonym: "2676 MB-MY Glut-Sero_3" EXACT []
+relationship: RO:0002100 MBA:997 ! has soma location
+relationship: RO:0002162 NCBITaxon:10090
+relationship: RO:0002215 GO:0060096 ! capable of
+relationship: RO:0002215 GO:0061535 ! capable of
+property_value: IAO:0000028 "2676 MB-MY Glut-Sero_3 (Mouse)" xsd:string
+property_value: PCL:0010063 MBA:313
+property_value: PCL:0010063 MBA:354
+property_value: prefLabel "2676 MB-MY Glut-Sero_3" xsd:string
+
+[Term]
+id: PCL:0112677
+def: "A serotonergic neuron of the Mus musculus brain. The soma of these cells can be found in the Midbrain, Medulla. The reference data for this cell type is CS202212150_2677." []
+synonym: "2677 MB-MY Glut-Sero_3" EXACT []
+relationship: RO:0002100 MBA:997 ! has soma location
+relationship: RO:0002162 NCBITaxon:10090
+relationship: RO:0002215 GO:0060096 ! capable of
+relationship: RO:0002215 GO:0061535 ! capable of
+property_value: IAO:0000028 "2677 MB-MY Glut-Sero_3 (Mouse)" xsd:string
+property_value: PCL:0010063 MBA:313
+property_value: PCL:0010063 MBA:354
+property_value: prefLabel "2677 MB-MY Glut-Sero_3" xsd:string
+
+[Term]
+id: PCL:0112678
+def: "A serotonergic neuron of the Mus musculus brain. The soma of these cells can be found in the Midbrain, Medulla. The reference data for this cell type is CS202212150_2678." []
+synonym: "2678 MB-MY Glut-Sero_3" EXACT []
+relationship: RO:0002100 MBA:997 ! has soma location
+relationship: RO:0002162 NCBITaxon:10090
+relationship: RO:0002215 GO:0060096 ! capable of
+relationship: RO:0002215 GO:0061535 ! capable of
+property_value: IAO:0000028 "2678 MB-MY Glut-Sero_3 (Mouse)" xsd:string
+property_value: PCL:0010063 MBA:313
+property_value: PCL:0010063 MBA:354
+property_value: prefLabel "2678 MB-MY Glut-Sero_3" xsd:string
+
+[Term]
+id: PCL:0112679
+def: "A serotonergic neuron of the Mus musculus brain. The soma of these cells can be found in the Midbrain, Medulla. The reference data for this cell type is CS202212150_2679." []
+synonym: "2679 MB-MY Glut-Sero_3" EXACT []
+relationship: RO:0002100 MBA:997 ! has soma location
+relationship: RO:0002162 NCBITaxon:10090
+relationship: RO:0002215 GO:0060096 ! capable of
+relationship: RO:0002215 GO:0061535 ! capable of
+property_value: IAO:0000028 "2679 MB-MY Glut-Sero_3 (Mouse)" xsd:string
+property_value: PCL:0010063 MBA:313
+property_value: PCL:0010063 MBA:354
+property_value: prefLabel "2679 MB-MY Glut-Sero_3" xsd:string
+
+[Term]
+id: PCL:0112680
+def: "A serotonergic neuron of the Mus musculus brain. The soma of these cells can be found in the Midbrain, Medulla. The reference data for this cell type is CS202212150_2680." []
+synonym: "2680 MB-MY Glut-Sero_4" EXACT []
+relationship: RO:0002100 MBA:997 ! has soma location
+relationship: RO:0002162 NCBITaxon:10090
+relationship: RO:0002215 GO:0060096 ! capable of
+relationship: RO:0002215 GO:0061535 ! capable of
+property_value: IAO:0000028 "2680 MB-MY Glut-Sero_4 (Mouse)" xsd:string
+property_value: PCL:0010063 MBA:313
+property_value: PCL:0010063 MBA:354
+property_value: prefLabel "2680 MB-MY Glut-Sero_4" xsd:string
+
+[Term]
+id: PCL:0112681
+def: "A serotonergic neuron of the Mus musculus brain. The soma of these cells can be found in the Midbrain, Medulla. The reference data for this cell type is CS202212150_2681." []
+synonym: "2681 MB-MY Glut-Sero_4" EXACT []
+relationship: RO:0002100 MBA:997 ! has soma location
+relationship: RO:0002162 NCBITaxon:10090
+relationship: RO:0002215 GO:0060096 ! capable of
+relationship: RO:0002215 GO:0061535 ! capable of
+property_value: IAO:0000028 "2681 MB-MY Glut-Sero_4 (Mouse)" xsd:string
+property_value: PCL:0010063 MBA:313
+property_value: PCL:0010063 MBA:354
+property_value: prefLabel "2681 MB-MY Glut-Sero_4" xsd:string
+
+[Term]
+id: PCL:0112682
+def: "A serotonergic neuron of the Mus musculus brain. The soma of these cells can be found in the Midbrain, Medulla. The reference data for this cell type is CS202212150_2682." []
+synonym: "2682 MB-MY Glut-Sero_4" EXACT []
+relationship: RO:0002100 MBA:997 ! has soma location
+relationship: RO:0002162 NCBITaxon:10090
+relationship: RO:0002215 GO:0060096 ! capable of
+relationship: RO:0002215 GO:0061535 ! capable of
+property_value: IAO:0000028 "2682 MB-MY Glut-Sero_4 (Mouse)" xsd:string
+property_value: PCL:0010063 MBA:313
+property_value: PCL:0010063 MBA:354
+property_value: prefLabel "2682 MB-MY Glut-Sero_4" xsd:string
+
+[Term]
+id: PCL:0112683
+def: "A serotonergic neuron of the Mus musculus brain. The soma of these cells can be found in the Midbrain, Medulla. The reference data for this cell type is CS202212150_2683." []
+synonym: "2683 MB-MY Glut-Sero_4" EXACT []
+relationship: RO:0002100 MBA:997 ! has soma location
+relationship: RO:0002162 NCBITaxon:10090
+relationship: RO:0002215 GO:0060096 ! capable of
+relationship: RO:0002215 GO:0061535 ! capable of
+property_value: IAO:0000028 "2683 MB-MY Glut-Sero_4 (Mouse)" xsd:string
+property_value: PCL:0010063 MBA:313
+property_value: PCL:0010063 MBA:354
+property_value: prefLabel "2683 MB-MY Glut-Sero_4" xsd:string
+
+[Term]
+id: PCL:0112684
+def: "A serotonergic neuron of the Mus musculus brain. The soma of these cells can be found in the Midbrain, Medulla. The reference data for this cell type is CS202212150_2684." []
+synonym: "2684 MB-MY Glut-Sero_4" EXACT []
+relationship: RO:0002100 MBA:997 ! has soma location
+relationship: RO:0002162 NCBITaxon:10090
+relationship: RO:0002215 GO:0060096 ! capable of
+relationship: RO:0002215 GO:0061535 ! capable of
+property_value: IAO:0000028 "2684 MB-MY Glut-Sero_4 (Mouse)" xsd:string
+property_value: PCL:0010063 MBA:313
+property_value: PCL:0010063 MBA:354
+property_value: prefLabel "2684 MB-MY Glut-Sero_4" xsd:string
+
+[Term]
+id: PCL:0112685
+def: "A serotonergic neuron of the Mus musculus brain. The soma of these cells can be found in the Midbrain, Medulla. The reference data for this cell type is CS202212150_2685." []
+synonym: "2685 MB-MY Glut-Sero_6" EXACT []
+relationship: RO:0002100 MBA:997 ! has soma location
+relationship: RO:0002162 NCBITaxon:10090
+relationship: RO:0002215 GO:0060096 ! capable of
+relationship: RO:0002215 GO:0061535 ! capable of
+property_value: IAO:0000028 "2685 MB-MY Glut-Sero_6 (Mouse)" xsd:string
+property_value: PCL:0010063 MBA:313
+property_value: PCL:0010063 MBA:354
+property_value: prefLabel "2685 MB-MY Glut-Sero_6" xsd:string
+
+[Term]
+id: PCL:0112686
+def: "A serotonergic neuron of the Mus musculus brain. The soma of these cells can be found in the Midbrain, Medulla. The reference data for this cell type is CS202212150_2686." []
+synonym: "2686 MB-MY Glut-Sero_6" EXACT []
+relationship: RO:0002100 MBA:997 ! has soma location
+relationship: RO:0002162 NCBITaxon:10090
+relationship: RO:0002215 GO:0060096 ! capable of
+relationship: RO:0002215 GO:0061535 ! capable of
+property_value: IAO:0000028 "2686 MB-MY Glut-Sero_6 (Mouse)" xsd:string
+property_value: PCL:0010063 MBA:313
+property_value: PCL:0010063 MBA:354
+property_value: prefLabel "2686 MB-MY Glut-Sero_6" xsd:string
+
+[Term]
+id: PCL:0112687
+def: "A serotonergic neuron of the Mus musculus brain. The soma of these cells can be found in the Midbrain, Medulla. The reference data for this cell type is CS202212150_2687." []
+synonym: "2687 MB-MY Glut-Sero_6" EXACT []
+relationship: RO:0002100 MBA:997 ! has soma location
+relationship: RO:0002162 NCBITaxon:10090
+relationship: RO:0002215 GO:0060096 ! capable of
+relationship: RO:0002215 GO:0061535 ! capable of
+property_value: IAO:0000028 "2687 MB-MY Glut-Sero_6 (Mouse)" xsd:string
+property_value: PCL:0010063 MBA:313
+property_value: PCL:0010063 MBA:354
+property_value: prefLabel "2687 MB-MY Glut-Sero_6" xsd:string
+
+[Term]
+id: PCL:0112688
+def: "A serotonergic neuron of the Mus musculus brain. The soma of these cells can be found in the Midbrain, Medulla. The reference data for this cell type is CS202212150_2688." []
+synonym: "2688 MB-MY Glut-Sero_7" EXACT []
+relationship: RO:0002100 MBA:997 ! has soma location
+relationship: RO:0002162 NCBITaxon:10090
+relationship: RO:0002215 GO:0060096 ! capable of
+relationship: RO:0002215 GO:0061535 ! capable of
+property_value: IAO:0000028 "2688 MB-MY Glut-Sero_7 (Mouse)" xsd:string
+property_value: PCL:0010063 MBA:313
+property_value: PCL:0010063 MBA:354
+property_value: prefLabel "2688 MB-MY Glut-Sero_7" xsd:string
+
+[Term]
+id: PCL:0112689
+def: "A serotonergic neuron of the Mus musculus brain. The soma of these cells can be found in the Midbrain, Medulla. The reference data for this cell type is CS202212150_2689." []
+synonym: "2689 MB-MY Glut-Sero_8" EXACT []
+relationship: RO:0002100 MBA:997 ! has soma location
+relationship: RO:0002162 NCBITaxon:10090
+relationship: RO:0002215 GO:0060096 ! capable of
+relationship: RO:0002215 GO:0061535 ! capable of
+property_value: IAO:0000028 "2689 MB-MY Glut-Sero_8 (Mouse)" xsd:string
+property_value: PCL:0010063 MBA:313
+property_value: PCL:0010063 MBA:354
+property_value: prefLabel "2689 MB-MY Glut-Sero_8" xsd:string
 
 [Term]
 id: PCL:0112690
@@ -55829,7 +56275,7 @@ property_value: prefLabel "IT EP-CLA Glut_4" xsd:string
 
 [Term]
 id: PCL:0115207
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Entorhinal area. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440002. The reference data for this cell type is CS202212150_5207." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Entorhinal area. The soma of these cells are also found in cortical layer V/VI. The reference data for this cell type is CS202212150_5207." []
 synonym: "L5/6 IT TPE-ENT Glut_1" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -55880,7 +56326,7 @@ property_value: prefLabel "L6 IT CTX Glut_2" xsd:string
 
 [Term]
 id: PCL:0115211
-def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in http://purl.obolibrary.org/obo/UBERON_8440001. The reference data for this cell type is CS202212150_5211." []
+def: "A glutamatergic neuron of the Mus musculus brain. These cells have projection type intratelencephalic projecting. The soma of these cells can be found in the Cerebral cortex. The soma of these cells are also found in cortical layer IV/V. The reference data for this cell type is CS202212150_5211." []
 synonym: "L6 IT CTX Glut_3" EXACT []
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 MBA:997 ! has soma location
@@ -60286,6 +60732,51 @@ relationship: RO:0002100 MBA:997 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 property_value: IAO:0000028 "MRN-PAG Nkx6-1 Glut (Mouse)" xsd:string
 property_value: prefLabel "MRN-PAG Nkx6-1 Glut" xsd:string
+
+[Term]
+id: PCL:0115724
+def: "A serotonergic neuron of the Mus musculus brain. The reference data for this cell type is CS202212150_5724." []
+synonym: "MB-MY Glut-Sero_1" EXACT []
+relationship: RO:0002100 MBA:997 ! has soma location
+relationship: RO:0002162 NCBITaxon:10090
+property_value: IAO:0000028 "MB-MY Glut-Sero_1 (Mouse)" xsd:string
+property_value: prefLabel "MB-MY Glut-Sero_1" xsd:string
+
+[Term]
+id: PCL:0115725
+def: "A serotonergic neuron of the Mus musculus brain. The reference data for this cell type is CS202212150_5725." []
+synonym: "MB-MY Glut-Sero_2" EXACT []
+relationship: RO:0002100 MBA:997 ! has soma location
+relationship: RO:0002162 NCBITaxon:10090
+property_value: IAO:0000028 "MB-MY Glut-Sero_2 (Mouse)" xsd:string
+property_value: prefLabel "MB-MY Glut-Sero_2" xsd:string
+
+[Term]
+id: PCL:0115726
+def: "A serotonergic neuron of the Mus musculus brain. The reference data for this cell type is CS202212150_5726." []
+synonym: "MB-MY Glut-Sero_3" EXACT []
+relationship: RO:0002100 MBA:997 ! has soma location
+relationship: RO:0002162 NCBITaxon:10090
+property_value: IAO:0000028 "MB-MY Glut-Sero_3 (Mouse)" xsd:string
+property_value: prefLabel "MB-MY Glut-Sero_3" xsd:string
+
+[Term]
+id: PCL:0115727
+def: "A serotonergic neuron of the Mus musculus brain. The reference data for this cell type is CS202212150_5727." []
+synonym: "MB-MY Glut-Sero_4" EXACT []
+relationship: RO:0002100 MBA:997 ! has soma location
+relationship: RO:0002162 NCBITaxon:10090
+property_value: IAO:0000028 "MB-MY Glut-Sero_4 (Mouse)" xsd:string
+property_value: prefLabel "MB-MY Glut-Sero_4" xsd:string
+
+[Term]
+id: PCL:0115728
+def: "A serotonergic neuron of the Mus musculus brain. The reference data for this cell type is CS202212150_5728." []
+synonym: "MB-MY Glut-Sero_6" EXACT []
+relationship: RO:0002100 MBA:997 ! has soma location
+relationship: RO:0002162 NCBITaxon:10090
+property_value: IAO:0000028 "MB-MY Glut-Sero_6 (Mouse)" xsd:string
+property_value: prefLabel "MB-MY Glut-Sero_6" xsd:string
 
 [Term]
 id: PCL:0115729
@@ -65770,11 +66261,12 @@ property_value: prefLabel "CBX MLI Megf11 Gaba" xsd:string
 
 [Term]
 id: PCL:0116330
-def: "A GABAergic neuron of the Mus musculus brain. The reference data for this cell type is CS202212150_6330." []
+def: "A GABAergic neuron of the Mus musculus brain. The soma of these cells can be found in the Cerebellum. The reference data for this cell type is CS202212150_6330." []
 synonym: "CB Granule Glut" EXACT []
 relationship: RO:0002100 MBA:997 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 property_value: IAO:0000028 "CB Granule Glut (Mouse)" xsd:string
+property_value: PCL:0010063 MBA:512
 property_value: prefLabel "CB Granule Glut" xsd:string
 
 [Term]
