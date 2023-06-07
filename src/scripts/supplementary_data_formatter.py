@@ -34,14 +34,17 @@ def get_brain_regions(raw_file_path):
     mba_abbreviations = read_csv_to_dict(MBA_ABBREVIATIONS, delimiter="\t", id_column_name="abbreviation", id_to_lower=True)[1]
     headers, records = read_csv_to_dict(raw_file_path, delimiter="\t")
 
-    delimiters = " ", ",", "-", "/"
+    delimiters = " ", ",", "-"
     regex_pattern = '|'.join(map(re.escape, delimiters))
 
     unmatched = set()
     for cluster_id in records:
-        brain_regions = records[cluster_id]["tentative_anatomical_annotation"].strip().replace("?", "").replace("(", "").replace(")", "").lower()
+        brain_regions = records[cluster_id]["tentative_anatomical_annotation"].strip().replace("?", "").replace("(", "").replace(")", "").replace(" or ", " ").replace(" + ", " ").lower()
         if brain_regions and brain_regions != "NA":
             parts = re.split(regex_pattern, brain_regions)
+            for part in parts:
+                if "/" in part:
+                    parts.extend(part.split("/"))
             regions = list()
             for part in parts:
                 if part in mba_abbreviations:

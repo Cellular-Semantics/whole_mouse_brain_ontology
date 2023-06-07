@@ -101,7 +101,7 @@ CS202212150_99	0099 L4/5 IT CTX Glut_5
 CS202212150_100	0100 L4/5 IT CTX Glut_6	
 CS202212150_101	0101 L4/5 IT CTX Glut_6	
 CS202212150_102	0102 L4/5 IT CTX Glut_6	
-CS202212150_103	0103 L4/5 IT CTX Glut_6	http://purl.obolibrary.org/obo/MBA_254|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_484682508
+CS202212150_103	0103 L4/5 IT CTX Glut_6	http://purl.obolibrary.org/obo/MBA_254|http://purl.obolibrary.org/obo/MBA_484682508
 CS202212150_104	0104 L2/3 IT CTX Glut_1	
 CS202212150_105	0105 L2/3 IT CTX Glut_1	http://purl.obolibrary.org/obo/MBA_714
 CS202212150_106	0106 L2/3 IT CTX Glut_1	
@@ -1126,8 +1126,8 @@ CS202212150_1124	1124 CM-IAD-CL-PCN Glut_3	http://purl.obolibrary.org/obo/MBA_59
 CS202212150_1125	1125 CM-IAD-CL-PCN Glut_4	http://purl.obolibrary.org/obo/MBA_1113
 CS202212150_1126	1126 CM-IAD-CL-PCN Glut_4	http://purl.obolibrary.org/obo/MBA_1113
 CS202212150_1127	1127 CM-IAD-CL-PCN Glut_4	http://purl.obolibrary.org/obo/MBA_1113
-CS202212150_1128	1128 CM-IAD-CL-PCN Glut_5	http://purl.obolibrary.org/obo/MBA_1120|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_967|http://purl.obolibrary.org/obo/MBA_1020
-CS202212150_1129	1129 CM-IAD-CL-PCN Glut_5	http://purl.obolibrary.org/obo/MBA_1120|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_967|http://purl.obolibrary.org/obo/MBA_1020
+CS202212150_1128	1128 CM-IAD-CL-PCN Glut_5	http://purl.obolibrary.org/obo/MBA_1120|http://purl.obolibrary.org/obo/MBA_967|http://purl.obolibrary.org/obo/MBA_1020
+CS202212150_1129	1129 CM-IAD-CL-PCN Glut_5	http://purl.obolibrary.org/obo/MBA_1120|http://purl.obolibrary.org/obo/MBA_967|http://purl.obolibrary.org/obo/MBA_1020
 CS202212150_1130	1130 TH Prkcd Grin2c Glut_1	http://purl.obolibrary.org/obo/MBA_218|http://purl.obolibrary.org/obo/MBA_1020|http://purl.obolibrary.org/obo/MBA_733|http://purl.obolibrary.org/obo/MBA_170|http://purl.obolibrary.org/obo/MBA_475
 CS202212150_1131	1131 TH Prkcd Grin2c Glut_1	http://purl.obolibrary.org/obo/MBA_733|http://purl.obolibrary.org/obo/MBA_718|http://purl.obolibrary.org/obo/MBA_170
 CS202212150_1132	1132 TH Prkcd Grin2c Glut_10	http://purl.obolibrary.org/obo/MBA_362|http://purl.obolibrary.org/obo/MBA_1017
@@ -1728,9 +1728,9 @@ CS202212150_1727	1727 PVR Six3 Gaba_1	http://purl.obolibrary.org/obo/MBA_272|htt
 CS202212150_1728	1728 PVR Six3 Gaba_1	http://purl.obolibrary.org/obo/MBA_272|http://purl.obolibrary.org/obo/MBA_452
 CS202212150_1729	1729 PVR Six3 Gaba_1	http://purl.obolibrary.org/obo/MBA_272|http://purl.obolibrary.org/obo/MBA_452
 CS202212150_1730	1730 PVR Six3 Gaba_1	http://purl.obolibrary.org/obo/MBA_272|http://purl.obolibrary.org/obo/MBA_452
-CS202212150_1731	1731 PVR Six3 Gaba_10	http://purl.obolibrary.org/obo/MBA_515|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_351|http://purl.obolibrary.org/obo/MBA_1020
-CS202212150_1732	1732 PVR Six3 Gaba_10	http://purl.obolibrary.org/obo/MBA_515|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_351|http://purl.obolibrary.org/obo/MBA_1020
-CS202212150_1733	1733 PVR Six3 Gaba_11	http://purl.obolibrary.org/obo/MBA_515|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_351|http://purl.obolibrary.org/obo/MBA_1020
+CS202212150_1731	1731 PVR Six3 Gaba_10	http://purl.obolibrary.org/obo/MBA_515|http://purl.obolibrary.org/obo/MBA_351|http://purl.obolibrary.org/obo/MBA_1020
+CS202212150_1732	1732 PVR Six3 Gaba_10	http://purl.obolibrary.org/obo/MBA_515|http://purl.obolibrary.org/obo/MBA_351|http://purl.obolibrary.org/obo/MBA_1020
+CS202212150_1733	1733 PVR Six3 Gaba_11	http://purl.obolibrary.org/obo/MBA_515|http://purl.obolibrary.org/obo/MBA_351|http://purl.obolibrary.org/obo/MBA_1020
 CS202212150_1734	1734 PVR Six3 Gaba_12	
 CS202212150_1735	1735 PVR Six3 Gaba_12	
 CS202212150_1736	1736 PVR Six3 Gaba_12	
@@ -1978,13 +1978,13 @@ CS202212150_1977	1977 DMH-LHA Gsx1 Gaba_2	http://purl.obolibrary.org/obo/MBA_194
 CS202212150_1978	1978 DMH-LHA Gsx1 Gaba_2	http://purl.obolibrary.org/obo/MBA_194|http://purl.obolibrary.org/obo/MBA_830
 CS202212150_1979	1979 DMH-LHA Gsx1 Gaba_2	http://purl.obolibrary.org/obo/MBA_194|http://purl.obolibrary.org/obo/MBA_830
 CS202212150_1980	1980 DMH-LHA Gsx1 Gaba_2	http://purl.obolibrary.org/obo/MBA_194|http://purl.obolibrary.org/obo/MBA_830
-CS202212150_1981	1981 PVHd-DMH Lhx6 Gaba_1	http://purl.obolibrary.org/obo/MBA_63|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_797
-CS202212150_1982	1982 PVHd-DMH Lhx6 Gaba_1	http://purl.obolibrary.org/obo/MBA_63|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_797
-CS202212150_1983	1983 PVHd-DMH Lhx6 Gaba_1	http://purl.obolibrary.org/obo/MBA_63|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_797
-CS202212150_1984	1984 PVHd-DMH Lhx6 Gaba_1	http://purl.obolibrary.org/obo/MBA_63|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_797
-CS202212150_1985	1985 PVHd-DMH Lhx6 Gaba_1	http://purl.obolibrary.org/obo/MBA_63|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_797
-CS202212150_1986	1986 PVHd-DMH Lhx6 Gaba_1	http://purl.obolibrary.org/obo/MBA_63|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_797
-CS202212150_1987	1987 PVHd-DMH Lhx6 Gaba_1	http://purl.obolibrary.org/obo/MBA_63|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_797
+CS202212150_1981	1981 PVHd-DMH Lhx6 Gaba_1	http://purl.obolibrary.org/obo/MBA_63|http://purl.obolibrary.org/obo/MBA_797
+CS202212150_1982	1982 PVHd-DMH Lhx6 Gaba_1	http://purl.obolibrary.org/obo/MBA_63|http://purl.obolibrary.org/obo/MBA_797
+CS202212150_1983	1983 PVHd-DMH Lhx6 Gaba_1	http://purl.obolibrary.org/obo/MBA_63|http://purl.obolibrary.org/obo/MBA_797
+CS202212150_1984	1984 PVHd-DMH Lhx6 Gaba_1	http://purl.obolibrary.org/obo/MBA_63|http://purl.obolibrary.org/obo/MBA_797
+CS202212150_1985	1985 PVHd-DMH Lhx6 Gaba_1	http://purl.obolibrary.org/obo/MBA_63|http://purl.obolibrary.org/obo/MBA_797
+CS202212150_1986	1986 PVHd-DMH Lhx6 Gaba_1	http://purl.obolibrary.org/obo/MBA_63|http://purl.obolibrary.org/obo/MBA_797
+CS202212150_1987	1987 PVHd-DMH Lhx6 Gaba_1	http://purl.obolibrary.org/obo/MBA_63|http://purl.obolibrary.org/obo/MBA_797
 CS202212150_1988	1988 PVHd-DMH Lhx6 Gaba_2	
 CS202212150_1989	1989 PVHd-DMH Lhx6 Gaba_2	
 CS202212150_1990	1990 PVHd-DMH Lhx6 Gaba_2	
@@ -2304,8 +2304,8 @@ CS202212150_2303	2303 SI-MA-LPO Skor1 Glut_3	http://purl.obolibrary.org/obo/MBA_
 CS202212150_2304	2304 SI-MA-LPO Skor1 Glut_3	http://purl.obolibrary.org/obo/MBA_194|http://purl.obolibrary.org/obo/MBA_226
 CS202212150_2305	2305 SI-MA-LPO Skor1 Glut_3	http://purl.obolibrary.org/obo/MBA_194|http://purl.obolibrary.org/obo/MBA_226
 CS202212150_2306	2306 SI-MA-LPO Skor1 Glut_3	http://purl.obolibrary.org/obo/MBA_194|http://purl.obolibrary.org/obo/MBA_226
-CS202212150_2307	2307 SI-MA-LPO Skor1 Glut_3	http://purl.obolibrary.org/obo/MBA_226|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_194
-CS202212150_2308	2308 SI-MA-LPO Skor1 Glut_3	http://purl.obolibrary.org/obo/MBA_226|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_194
+CS202212150_2307	2307 SI-MA-LPO Skor1 Glut_3	http://purl.obolibrary.org/obo/MBA_226|http://purl.obolibrary.org/obo/MBA_194
+CS202212150_2308	2308 SI-MA-LPO Skor1 Glut_3	http://purl.obolibrary.org/obo/MBA_226|http://purl.obolibrary.org/obo/MBA_194
 CS202212150_2309	2309 SI-MA-LPO Skor1 Glut_3	http://purl.obolibrary.org/obo/MBA_194|http://purl.obolibrary.org/obo/MBA_226
 CS202212150_2310	2310 SI-MA-LPO Skor1 Glut_4	http://purl.obolibrary.org/obo/MBA_226|http://purl.obolibrary.org/obo/MBA_342
 CS202212150_2311	2311 SI-MA-LPO Skor1 Glut_4	http://purl.obolibrary.org/obo/MBA_226|http://purl.obolibrary.org/obo/MBA_342
@@ -2735,14 +2735,14 @@ CS202212150_2738	2738 IPN-IF-RL Foxa1 Glut_4	http://purl.obolibrary.org/obo/MBA_
 CS202212150_2739	2739 PAG-SC Neurod2 Meis2 Glut_1	http://purl.obolibrary.org/obo/MBA_842
 CS202212150_2740	2740 PAG-SC Neurod2 Meis2 Glut_1	http://purl.obolibrary.org/obo/MBA_26
 CS202212150_2741	2741 PAG-SC Neurod2 Meis2 Glut_1	http://purl.obolibrary.org/obo/MBA_26
-CS202212150_2742	2742 PAG-SC Neurod2 Meis2 Glut_1	http://purl.obolibrary.org/obo/MBA_26|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_795
+CS202212150_2742	2742 PAG-SC Neurod2 Meis2 Glut_1	http://purl.obolibrary.org/obo/MBA_26|http://purl.obolibrary.org/obo/MBA_795
 CS202212150_2743	2743 PAG-SC Neurod2 Meis2 Glut_2	http://purl.obolibrary.org/obo/MBA_795
 CS202212150_2744	2744 PAG-SC Neurod2 Meis2 Glut_2	http://purl.obolibrary.org/obo/MBA_795
 CS202212150_2745	2745 PAG-SC Neurod2 Meis2 Glut_2	http://purl.obolibrary.org/obo/MBA_795
 CS202212150_2746	2746 PAG-SC Neurod2 Meis2 Glut_2	http://purl.obolibrary.org/obo/MBA_795
 CS202212150_2747	2747 PAG-SC Neurod2 Meis2 Glut_3	http://purl.obolibrary.org/obo/MBA_842
-CS202212150_2748	2748 PAG-SC Neurod2 Meis2 Glut_3	http://purl.obolibrary.org/obo/MBA_795|http://purl.obolibrary.org/obo/MBA_484682520
-CS202212150_2749	2749 PAG-SC Neurod2 Meis2 Glut_3	http://purl.obolibrary.org/obo/MBA_867|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_534
+CS202212150_2748	2748 PAG-SC Neurod2 Meis2 Glut_3	http://purl.obolibrary.org/obo/MBA_795
+CS202212150_2749	2749 PAG-SC Neurod2 Meis2 Glut_3	http://purl.obolibrary.org/obo/MBA_867|http://purl.obolibrary.org/obo/MBA_534
 CS202212150_2750	2750 PAG-SC Neurod2 Meis2 Glut_3	http://purl.obolibrary.org/obo/MBA_795
 CS202212150_2751	2751 PAG-SC Neurod2 Meis2 Glut_3	http://purl.obolibrary.org/obo/MBA_128
 CS202212150_2752	2752 PAG-SC Neurod2 Meis2 Glut_4	http://purl.obolibrary.org/obo/MBA_795
@@ -2917,7 +2917,7 @@ CS202212150_2920	2920 PRC-PAG Tcf7l2 Glut_5	http://purl.obolibrary.org/obo/MBA_7
 CS202212150_2921	2921 PRC-PAG Tcf7l2 Glut_5	http://purl.obolibrary.org/obo/MBA_128
 CS202212150_2922	2922 PRC-PAG Tcf7l2 Glut_5	http://purl.obolibrary.org/obo/MBA_128
 CS202212150_2923	2923 SPA-SPFm-SPFp-POL-PIL-PoT Glut_1	http://purl.obolibrary.org/obo/MBA_422|http://purl.obolibrary.org/obo/MBA_609
-CS202212150_2924	2924 SPA-SPFm-SPFp-POL-PIL-PoT Glut_1	http://purl.obolibrary.org/obo/MBA_181|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_1077
+CS202212150_2924	2924 SPA-SPFm-SPFp-POL-PIL-PoT Glut_1	http://purl.obolibrary.org/obo/MBA_181|http://purl.obolibrary.org/obo/MBA_1077
 CS202212150_2925	2925 SPA-SPFm-SPFp-POL-PIL-PoT Glut_1	http://purl.obolibrary.org/obo/MBA_1029|http://purl.obolibrary.org/obo/MBA_560581563
 CS202212150_2926	2926 SPA-SPFm-SPFp-POL-PIL-PoT Glut_1	http://purl.obolibrary.org/obo/MBA_1029
 CS202212150_2927	2927 SPA-SPFm-SPFp-POL-PIL-PoT Glut_1	http://purl.obolibrary.org/obo/MBA_1029|http://purl.obolibrary.org/obo/MBA_560581563
@@ -2926,7 +2926,7 @@ CS202212150_2929	2929 SPA-SPFm-SPFp-POL-PIL-PoT Glut_1	http://purl.obolibrary.or
 CS202212150_2930	2930 SPA-SPFm-SPFp-POL-PIL-PoT Glut_1	http://purl.obolibrary.org/obo/MBA_149
 CS202212150_2931	2931 SPA-SPFm-SPFp-POL-PIL-PoT Glut_1	http://purl.obolibrary.org/obo/MBA_534
 CS202212150_2932	2932 SPA-SPFm-SPFp-POL-PIL-PoT Glut_1	http://purl.obolibrary.org/obo/MBA_422
-CS202212150_2933	2933 SPA-SPFm-SPFp-POL-PIL-PoT Glut_1	http://purl.obolibrary.org/obo/MBA_609|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_795
+CS202212150_2933	2933 SPA-SPFm-SPFp-POL-PIL-PoT Glut_1	http://purl.obolibrary.org/obo/MBA_609|http://purl.obolibrary.org/obo/MBA_795
 CS202212150_2934	2934 SPA-SPFm-SPFp-POL-PIL-PoT Glut_1	http://purl.obolibrary.org/obo/MBA_609
 CS202212150_2935	2935 SPA-SPFm-SPFp-POL-PIL-PoT Glut_1	http://purl.obolibrary.org/obo/MBA_563807435
 CS202212150_2936	2936 SPA-SPFm-SPFp-POL-PIL-PoT Glut_1	http://purl.obolibrary.org/obo/MBA_1044|http://purl.obolibrary.org/obo/MBA_325
@@ -3071,7 +3071,7 @@ CS202212150_3074	3074 PAG Tfap2b Glut_2	http://purl.obolibrary.org/obo/MBA_128
 CS202212150_3075	3075 PAG Tfap2b Glut_2	http://purl.obolibrary.org/obo/MBA_128
 CS202212150_3076	3076 PAG Tfap2b Glut_2	http://purl.obolibrary.org/obo/MBA_128
 CS202212150_3077	3077 PAG Tfap2b Glut_2	http://purl.obolibrary.org/obo/MBA_128
-CS202212150_3078	3078 PAG Pou4f1 Glut_1	http://purl.obolibrary.org/obo/MBA_795|http://purl.obolibrary.org/obo/MBA_484682520
+CS202212150_3078	3078 PAG Pou4f1 Glut_1	http://purl.obolibrary.org/obo/MBA_795
 CS202212150_3079	3079 PAG Pou4f1 Glut_1	http://purl.obolibrary.org/obo/MBA_795
 CS202212150_3080	3080 PAG Pou4f1 Glut_1	http://purl.obolibrary.org/obo/MBA_795
 CS202212150_3081	3081 PAG Pou4f1 Glut_1	http://purl.obolibrary.org/obo/MBA_795
@@ -3249,12 +3249,12 @@ CS202212150_3252	3252 SCig Foxb1 Glut_6
 CS202212150_3253	3253 SCig Foxb1 Glut_6	
 CS202212150_3254	3254 SCig Foxb1 Glut_6	
 CS202212150_3255	3255 SCig Foxb1 Glut_6	
-CS202212150_3256	3256 SCdg Tfap2b Glut	http://purl.obolibrary.org/obo/MBA_795|http://purl.obolibrary.org/obo/MBA_484682520
-CS202212150_3257	3257 SCdg Tfap2b Glut	http://purl.obolibrary.org/obo/MBA_795|http://purl.obolibrary.org/obo/MBA_484682520
+CS202212150_3256	3256 SCdg Tfap2b Glut	http://purl.obolibrary.org/obo/MBA_795
+CS202212150_3257	3257 SCdg Tfap2b Glut	http://purl.obolibrary.org/obo/MBA_795
 CS202212150_3258	3258 SCdg Tfap2b Glut	http://purl.obolibrary.org/obo/MBA_26
-CS202212150_3259	3259 SCdg Tfap2b Glut	http://purl.obolibrary.org/obo/MBA_795|http://purl.obolibrary.org/obo/MBA_484682520
-CS202212150_3260	3260 SCdg Tfap2b Glut	http://purl.obolibrary.org/obo/MBA_795|http://purl.obolibrary.org/obo/MBA_484682520
-CS202212150_3261	3261 SCdg Tfap2b Glut	http://purl.obolibrary.org/obo/MBA_795|http://purl.obolibrary.org/obo/MBA_484682520
+CS202212150_3259	3259 SCdg Tfap2b Glut	http://purl.obolibrary.org/obo/MBA_795
+CS202212150_3260	3260 SCdg Tfap2b Glut	http://purl.obolibrary.org/obo/MBA_795
+CS202212150_3261	3261 SCdg Tfap2b Glut	http://purl.obolibrary.org/obo/MBA_795
 CS202212150_3262	3262 SCdg Tfap2b Glut	http://purl.obolibrary.org/obo/MBA_26
 CS202212150_3263	3263 SCig-ve Pitx2 Glut_1	http://purl.obolibrary.org/obo/MBA_128|http://purl.obolibrary.org/obo/MBA_795
 CS202212150_3264	3264 SCig-ve Pitx2 Glut_1	
@@ -3337,8 +3337,8 @@ CS202212150_3340	3340 CUN-PPN Evx2 Meis2 Glut_2	http://purl.obolibrary.org/obo/M
 CS202212150_3341	3341 CUN-PPN Evx2 Meis2 Glut_2	http://purl.obolibrary.org/obo/MBA_616|http://purl.obolibrary.org/obo/MBA_795
 CS202212150_3342	3342 CUN-PPN Evx2 Meis2 Glut_2	http://purl.obolibrary.org/obo/MBA_616|http://purl.obolibrary.org/obo/MBA_1017
 CS202212150_3343	3343 CUN-PPN Evx2 Meis2 Glut_3	http://purl.obolibrary.org/obo/MBA_1052
-CS202212150_3344	3344 CUN-PPN Evx2 Meis2 Glut_3	http://purl.obolibrary.org/obo/MBA_1052|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_128
-CS202212150_3345	3345 CUN-PPN Evx2 Meis2 Glut_3	http://purl.obolibrary.org/obo/MBA_1052|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_128
+CS202212150_3344	3344 CUN-PPN Evx2 Meis2 Glut_3	http://purl.obolibrary.org/obo/MBA_1052|http://purl.obolibrary.org/obo/MBA_128
+CS202212150_3345	3345 CUN-PPN Evx2 Meis2 Glut_3	http://purl.obolibrary.org/obo/MBA_1052|http://purl.obolibrary.org/obo/MBA_128
 CS202212150_3346	3346 CUN-PPN Evx2 Meis2 Glut_3	http://purl.obolibrary.org/obo/MBA_616|http://purl.obolibrary.org/obo/MBA_1052
 CS202212150_3347	3347 CUN-PPN Evx2 Meis2 Glut_4	http://purl.obolibrary.org/obo/MBA_1052|http://purl.obolibrary.org/obo/MBA_162
 CS202212150_3348	3348 CUN-PPN Evx2 Meis2 Glut_4	http://purl.obolibrary.org/obo/MBA_162
@@ -3358,7 +3358,7 @@ CS202212150_3361	3361 PB-an-do Evx2 Glut_1	http://purl.obolibrary.org/obo/MBA_86
 CS202212150_3362	3362 PB-an-do Evx2 Glut_1	http://purl.obolibrary.org/obo/MBA_867
 CS202212150_3363	3363 PB-an-do Evx2 Glut_1	http://purl.obolibrary.org/obo/MBA_867
 CS202212150_3364	3364 PB-an-do Evx2 Glut_1	http://purl.obolibrary.org/obo/MBA_867
-CS202212150_3365	3365 PB-an-do Evx2 Glut_1	http://purl.obolibrary.org/obo/MBA_867|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_1052
+CS202212150_3365	3365 PB-an-do Evx2 Glut_1	http://purl.obolibrary.org/obo/MBA_867|http://purl.obolibrary.org/obo/MBA_1052
 CS202212150_3366	3366 PB-an-do Evx2 Glut_2	http://purl.obolibrary.org/obo/MBA_867
 CS202212150_3367	3367 PB-an-do Evx2 Glut_2	http://purl.obolibrary.org/obo/MBA_867
 CS202212150_3368	3368 PB-an-do Evx2 Glut_2	http://purl.obolibrary.org/obo/MBA_867
@@ -3367,12 +3367,12 @@ CS202212150_3370	3370 PB-an-do Evx2 Glut_2	http://purl.obolibrary.org/obo/MBA_86
 CS202212150_3371	3371 PB-an-do Evx2 Glut_2	http://purl.obolibrary.org/obo/MBA_867
 CS202212150_3372	3372 PB-an-do Evx2 Glut_2	http://purl.obolibrary.org/obo/MBA_867
 CS202212150_3373	3373 PB-an-do Evx2 Glut_2	http://purl.obolibrary.org/obo/MBA_867
-CS202212150_3374	3374 PB-an-do Evx2 Glut_2	http://purl.obolibrary.org/obo/MBA_867|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_1052
+CS202212150_3374	3374 PB-an-do Evx2 Glut_2	http://purl.obolibrary.org/obo/MBA_867|http://purl.obolibrary.org/obo/MBA_1052
 CS202212150_3375	3375 PB-an-do Evx2 Glut_2	http://purl.obolibrary.org/obo/MBA_867
 CS202212150_3376	3376 PB-an-do Evx2 Glut_3	http://purl.obolibrary.org/obo/MBA_867
 CS202212150_3377	3377 PB-an-do Evx2 Glut_3	http://purl.obolibrary.org/obo/MBA_867
 CS202212150_3378	3378 PB-an-do Evx2 Glut_3	http://purl.obolibrary.org/obo/MBA_867
-CS202212150_3379	3379 PB-an-do Evx2 Glut_3	http://purl.obolibrary.org/obo/MBA_867|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_616
+CS202212150_3379	3379 PB-an-do Evx2 Glut_3	http://purl.obolibrary.org/obo/MBA_867|http://purl.obolibrary.org/obo/MBA_616
 CS202212150_3380	3380 PB-an-do Evx2 Glut_3	http://purl.obolibrary.org/obo/MBA_867
 CS202212150_3381	3381 PB-an-do Evx2 Glut_3	http://purl.obolibrary.org/obo/MBA_867
 CS202212150_3382	3382 PB-an-do Evx2 Glut_3	http://purl.obolibrary.org/obo/MBA_867
@@ -3380,7 +3380,7 @@ CS202212150_3383	3383 PB-an-do Evx2 Glut_3	http://purl.obolibrary.org/obo/MBA_86
 CS202212150_3384	3384 PB-an-do Evx2 Glut_3	http://purl.obolibrary.org/obo/MBA_867
 CS202212150_3385	3385 PB-an-do Evx2 Glut_3	http://purl.obolibrary.org/obo/MBA_867
 CS202212150_3386	3386 PB-an-do Evx2 Glut_3	http://purl.obolibrary.org/obo/MBA_867
-CS202212150_3387	3387 PB-an-do Evx2 Glut_3	http://purl.obolibrary.org/obo/MBA_867|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_616
+CS202212150_3387	3387 PB-an-do Evx2 Glut_3	http://purl.obolibrary.org/obo/MBA_867|http://purl.obolibrary.org/obo/MBA_616
 CS202212150_3388	3388 PB-an-do Evx2 Glut_3	http://purl.obolibrary.org/obo/MBA_867
 CS202212150_3389	3389 PB-an-do Evx2 Glut_3	http://purl.obolibrary.org/obo/MBA_867
 CS202212150_3390	3390 PB-an-do Evx2 Glut_3	http://purl.obolibrary.org/obo/MBA_867
@@ -3438,14 +3438,14 @@ CS202212150_3441	3441 PCG-PRN-GRN Vsx2 Nkx6-1 Glut_3	http://purl.obolibrary.org/
 CS202212150_3442	3442 PCG-PRN-GRN Vsx2 Nkx6-1 Glut_3	http://purl.obolibrary.org/obo/MBA_898
 CS202212150_3443	3443 PCG-PRN-GRN Vsx2 Nkx6-1 Glut_4	http://purl.obolibrary.org/obo/MBA_599626927
 CS202212150_3444	3444 PCG-PRN-GRN Vsx2 Nkx6-1 Glut_6	http://purl.obolibrary.org/obo/MBA_1048
-CS202212150_3445	3445 RPO-NI Vsx2 Nr4a2 Glut_1	http://purl.obolibrary.org/obo/MBA_653|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_604
+CS202212150_3445	3445 RPO-NI Vsx2 Nr4a2 Glut_1	http://purl.obolibrary.org/obo/MBA_653|http://purl.obolibrary.org/obo/MBA_604
 CS202212150_3446	3446 RPO-NI Vsx2 Nr4a2 Glut_1	http://purl.obolibrary.org/obo/MBA_1093
 CS202212150_3447	3447 RPO-NI Vsx2 Nr4a2 Glut_1	http://purl.obolibrary.org/obo/MBA_604
 CS202212150_3448	3448 RPO-NI Vsx2 Nr4a2 Glut_1	
-CS202212150_3449	3449 RPO-NI Vsx2 Nr4a2 Glut_1	http://purl.obolibrary.org/obo/MBA_318|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_653
+CS202212150_3449	3449 RPO-NI Vsx2 Nr4a2 Glut_1	http://purl.obolibrary.org/obo/MBA_318|http://purl.obolibrary.org/obo/MBA_653
 CS202212150_3450	3450 RPO-NI Vsx2 Nr4a2 Glut_1	http://purl.obolibrary.org/obo/MBA_238
 CS202212150_3451	3451 RPO-NI Vsx2 Nr4a2 Glut_1	http://purl.obolibrary.org/obo/MBA_238
-CS202212150_3452	3452 RPO-NI Vsx2 Nr4a2 Glut_1	http://purl.obolibrary.org/obo/MBA_318|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_604
+CS202212150_3452	3452 RPO-NI Vsx2 Nr4a2 Glut_1	http://purl.obolibrary.org/obo/MBA_318|http://purl.obolibrary.org/obo/MBA_604
 CS202212150_3453	3453 RPO-NI Vsx2 Nr4a2 Glut_1	http://purl.obolibrary.org/obo/MBA_238|http://purl.obolibrary.org/obo/MBA_604
 CS202212150_3454	3454 RPO-NI Vsx2 Nr4a2 Glut_1	http://purl.obolibrary.org/obo/MBA_238|http://purl.obolibrary.org/obo/MBA_604
 CS202212150_3455	3455 RPO-NI Vsx2 Nr4a2 Glut_2	http://purl.obolibrary.org/obo/MBA_238|http://purl.obolibrary.org/obo/MBA_604
@@ -3675,7 +3675,7 @@ CS202212150_3678	3678 PGRN-PARN-MDRN Hoxb5 Glut_2	http://purl.obolibrary.org/obo
 CS202212150_3679	3679 PGRN-PARN-MDRN Hoxb5 Glut_2	http://purl.obolibrary.org/obo/MBA_1048|http://purl.obolibrary.org/obo/MBA_1107
 CS202212150_3680	3680 PGRN-PARN-MDRN Hoxb5 Glut_2	http://purl.obolibrary.org/obo/MBA_1048|http://purl.obolibrary.org/obo/MBA_1107
 CS202212150_3681	3681 PGRN-PARN-MDRN Hoxb5 Glut_2	http://purl.obolibrary.org/obo/MBA_1048|http://purl.obolibrary.org/obo/MBA_1107
-CS202212150_3682	3682 PGRN-PARN-MDRN Hoxb5 Glut_2	http://purl.obolibrary.org/obo/MBA_599626927|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_318
+CS202212150_3682	3682 PGRN-PARN-MDRN Hoxb5 Glut_2	http://purl.obolibrary.org/obo/MBA_599626927|http://purl.obolibrary.org/obo/MBA_318
 CS202212150_3683	3683 PGRN-PARN-MDRN Hoxb5 Glut_2	http://purl.obolibrary.org/obo/MBA_1048|http://purl.obolibrary.org/obo/MBA_1107
 CS202212150_3684	3684 PGRN-PARN-MDRN Hoxb5 Glut_2	http://purl.obolibrary.org/obo/MBA_1048|http://purl.obolibrary.org/obo/MBA_1107
 CS202212150_3685	3685 PGRN-PARN-MDRN Hoxb5 Glut_2	http://purl.obolibrary.org/obo/MBA_1048|http://purl.obolibrary.org/obo/MBA_1107
@@ -4143,13 +4143,13 @@ CS202212150_4146	4146 IC Six3 En2 Gaba_1	http://purl.obolibrary.org/obo/MBA_4
 CS202212150_4147	4147 IC Six3 En2 Gaba_1	http://purl.obolibrary.org/obo/MBA_4
 CS202212150_4148	4148 IC Six3 En2 Gaba_1	http://purl.obolibrary.org/obo/MBA_4
 CS202212150_4149	4149 IC Six3 En2 Gaba_1	http://purl.obolibrary.org/obo/MBA_4
-CS202212150_4150	4150 IC Six3 En2 Gaba_2	http://purl.obolibrary.org/obo/MBA_795|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_4
-CS202212150_4151	4151 IC Six3 En2 Gaba_2	http://purl.obolibrary.org/obo/MBA_795|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_4
-CS202212150_4152	4152 IC Six3 En2 Gaba_2	http://purl.obolibrary.org/obo/MBA_795|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_4
-CS202212150_4153	4153 IC Six3 En2 Gaba_2	http://purl.obolibrary.org/obo/MBA_795|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_4
-CS202212150_4154	4154 IC Six3 En2 Gaba_2	http://purl.obolibrary.org/obo/MBA_795|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_4
-CS202212150_4155	4155 IC Six3 En2 Gaba_2	http://purl.obolibrary.org/obo/MBA_795|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_4
-CS202212150_4156	4156 IC Six3 En2 Gaba_2	http://purl.obolibrary.org/obo/MBA_795|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_4
+CS202212150_4150	4150 IC Six3 En2 Gaba_2	http://purl.obolibrary.org/obo/MBA_795|http://purl.obolibrary.org/obo/MBA_4
+CS202212150_4151	4151 IC Six3 En2 Gaba_2	http://purl.obolibrary.org/obo/MBA_795|http://purl.obolibrary.org/obo/MBA_4
+CS202212150_4152	4152 IC Six3 En2 Gaba_2	http://purl.obolibrary.org/obo/MBA_795|http://purl.obolibrary.org/obo/MBA_4
+CS202212150_4153	4153 IC Six3 En2 Gaba_2	http://purl.obolibrary.org/obo/MBA_795|http://purl.obolibrary.org/obo/MBA_4
+CS202212150_4154	4154 IC Six3 En2 Gaba_2	http://purl.obolibrary.org/obo/MBA_795|http://purl.obolibrary.org/obo/MBA_4
+CS202212150_4155	4155 IC Six3 En2 Gaba_2	http://purl.obolibrary.org/obo/MBA_795|http://purl.obolibrary.org/obo/MBA_4
+CS202212150_4156	4156 IC Six3 En2 Gaba_2	http://purl.obolibrary.org/obo/MBA_795|http://purl.obolibrary.org/obo/MBA_4
 CS202212150_4157	4157 IC Six3 En2 Gaba_3	http://purl.obolibrary.org/obo/MBA_128|http://purl.obolibrary.org/obo/MBA_381
 CS202212150_4158	4158 IC Six3 En2 Gaba_3	http://purl.obolibrary.org/obo/MBA_128|http://purl.obolibrary.org/obo/MBA_381
 CS202212150_4159	4159 IC Six3 En2 Gaba_3	http://purl.obolibrary.org/obo/MBA_271|http://purl.obolibrary.org/obo/MBA_874|http://purl.obolibrary.org/obo/MBA_4
@@ -4277,8 +4277,8 @@ CS202212150_4280	4280 RN-PAG Nkx2-2 Otx1 Gaba_2	http://purl.obolibrary.org/obo/M
 CS202212150_4281	4281 RN-PAG Nkx2-2 Otx1 Gaba_2	http://purl.obolibrary.org/obo/MBA_795
 CS202212150_4282	4282 RN-PAG Nkx2-2 Otx1 Gaba_2	http://purl.obolibrary.org/obo/MBA_795
 CS202212150_4283	4283 RN-PAG Nkx2-2 Otx1 Gaba_3	http://purl.obolibrary.org/obo/MBA_795
-CS202212150_4284	4284 RN-PAG Nkx2-2 Otx1 Gaba_3	http://purl.obolibrary.org/obo/MBA_795|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_4
-CS202212150_4285	4285 RN-PAG Nkx2-2 Otx1 Gaba_3	http://purl.obolibrary.org/obo/MBA_795|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_4
+CS202212150_4284	4284 RN-PAG Nkx2-2 Otx1 Gaba_3	http://purl.obolibrary.org/obo/MBA_795|http://purl.obolibrary.org/obo/MBA_4
+CS202212150_4285	4285 RN-PAG Nkx2-2 Otx1 Gaba_3	http://purl.obolibrary.org/obo/MBA_795|http://purl.obolibrary.org/obo/MBA_4
 CS202212150_4286	4286 RN-PAG Nkx2-2 Otx1 Gaba_3	http://purl.obolibrary.org/obo/MBA_4
 CS202212150_4287	4287 RN-PAG Nkx2-2 Otx1 Gaba_3	http://purl.obolibrary.org/obo/MBA_4
 CS202212150_4288	4288 RN-PAG Nkx2-2 Otx1 Gaba_3	http://purl.obolibrary.org/obo/MBA_4
@@ -4286,7 +4286,7 @@ CS202212150_4289	4289 RN-PAG Nkx2-2 Otx1 Gaba_3	http://purl.obolibrary.org/obo/M
 CS202212150_4290	4290 RN-PAG Nkx2-2 Otx1 Gaba_3	http://purl.obolibrary.org/obo/MBA_795
 CS202212150_4291	4291 RN-PAG Nkx2-2 Otx1 Gaba_3	http://purl.obolibrary.org/obo/MBA_795
 CS202212150_4292	4292 RN-PAG Nkx2-2 Otx1 Gaba_3	http://purl.obolibrary.org/obo/MBA_795
-CS202212150_4293	4293 RN-PAG Nkx2-2 Otx1 Gaba_3	http://purl.obolibrary.org/obo/MBA_795|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_4
+CS202212150_4293	4293 RN-PAG Nkx2-2 Otx1 Gaba_3	http://purl.obolibrary.org/obo/MBA_795|http://purl.obolibrary.org/obo/MBA_4
 CS202212150_4294	4294 RN-PAG Nkx2-2 Otx1 Gaba_4	http://purl.obolibrary.org/obo/MBA_4
 CS202212150_4295	4295 RN-PAG Nkx2-2 Otx1 Gaba_4	http://purl.obolibrary.org/obo/MBA_795
 CS202212150_4296	4296 RN-PAG Nkx2-2 Otx1 Gaba_4	http://purl.obolibrary.org/obo/MBA_795
@@ -4709,16 +4709,16 @@ CS202212150_4712	4712 PARN-MDRNd Gbx2 Gly-Gaba_5	http://purl.obolibrary.org/obo/
 CS202212150_4713	4713 PARN-MDRNd Gbx2 Gly-Gaba_5	http://purl.obolibrary.org/obo/MBA_429
 CS202212150_4714	4714 PARN-MDRNd Gbx2 Gly-Gaba_5	http://purl.obolibrary.org/obo/MBA_429
 CS202212150_4715	4715 PARN-MDRNd Gbx2 Gly-Gaba_5	http://purl.obolibrary.org/obo/MBA_429
-CS202212150_4716	4716 PARN-MDRNd Gbx2 Gly-Gaba_6	http://purl.obolibrary.org/obo/MBA_852|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_651
-CS202212150_4717	4717 PARN-MDRNd Gbx2 Gly-Gaba_6	http://purl.obolibrary.org/obo/MBA_852|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_651
-CS202212150_4718	4718 PARN-MDRNd Gbx2 Gly-Gaba_6	http://purl.obolibrary.org/obo/MBA_852|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_651
-CS202212150_4719	4719 PARN-MDRNd Gbx2 Gly-Gaba_6	http://purl.obolibrary.org/obo/MBA_852|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_651
-CS202212150_4720	4720 PARN-MDRNd Gbx2 Gly-Gaba_6	http://purl.obolibrary.org/obo/MBA_852|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_651
-CS202212150_4721	4721 PARN-MDRNd Gbx2 Gly-Gaba_7	http://purl.obolibrary.org/obo/MBA_852|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_651
-CS202212150_4722	4722 PARN-MDRNd Gbx2 Gly-Gaba_7	http://purl.obolibrary.org/obo/MBA_852|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_651
-CS202212150_4723	4723 PARN-MDRNd Gbx2 Gly-Gaba_7	http://purl.obolibrary.org/obo/MBA_852|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_651
-CS202212150_4724	4724 PARN-MDRNd Gbx2 Gly-Gaba_7	http://purl.obolibrary.org/obo/MBA_852|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_651
-CS202212150_4725	4725 PARN-MDRNd Gbx2 Gly-Gaba_8	http://purl.obolibrary.org/obo/MBA_202|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_209
+CS202212150_4716	4716 PARN-MDRNd Gbx2 Gly-Gaba_6	http://purl.obolibrary.org/obo/MBA_852|http://purl.obolibrary.org/obo/MBA_651
+CS202212150_4717	4717 PARN-MDRNd Gbx2 Gly-Gaba_6	http://purl.obolibrary.org/obo/MBA_852|http://purl.obolibrary.org/obo/MBA_651
+CS202212150_4718	4718 PARN-MDRNd Gbx2 Gly-Gaba_6	http://purl.obolibrary.org/obo/MBA_852|http://purl.obolibrary.org/obo/MBA_651
+CS202212150_4719	4719 PARN-MDRNd Gbx2 Gly-Gaba_6	http://purl.obolibrary.org/obo/MBA_852|http://purl.obolibrary.org/obo/MBA_651
+CS202212150_4720	4720 PARN-MDRNd Gbx2 Gly-Gaba_6	http://purl.obolibrary.org/obo/MBA_852|http://purl.obolibrary.org/obo/MBA_651
+CS202212150_4721	4721 PARN-MDRNd Gbx2 Gly-Gaba_7	http://purl.obolibrary.org/obo/MBA_852|http://purl.obolibrary.org/obo/MBA_651
+CS202212150_4722	4722 PARN-MDRNd Gbx2 Gly-Gaba_7	http://purl.obolibrary.org/obo/MBA_852|http://purl.obolibrary.org/obo/MBA_651
+CS202212150_4723	4723 PARN-MDRNd Gbx2 Gly-Gaba_7	http://purl.obolibrary.org/obo/MBA_852|http://purl.obolibrary.org/obo/MBA_651
+CS202212150_4724	4724 PARN-MDRNd Gbx2 Gly-Gaba_7	http://purl.obolibrary.org/obo/MBA_852|http://purl.obolibrary.org/obo/MBA_651
+CS202212150_4725	4725 PARN-MDRNd Gbx2 Gly-Gaba_8	http://purl.obolibrary.org/obo/MBA_202|http://purl.obolibrary.org/obo/MBA_209
 CS202212150_4726	4726 IRN Dmbx1 Pax2 Gly-Gaba	http://purl.obolibrary.org/obo/MBA_136
 CS202212150_4727	4727 IRN Dmbx1 Pax2 Gly-Gaba	http://purl.obolibrary.org/obo/MBA_136
 CS202212150_4728	4728 IRN Dmbx1 Pax2 Gly-Gaba	http://purl.obolibrary.org/obo/MBA_136
@@ -4843,9 +4843,9 @@ CS202212150_4846	4846 NTS Dbh Glut_5	http://purl.obolibrary.org/obo/MBA_651
 CS202212150_4847	4847 DMX Tbx20 Chol_1	http://purl.obolibrary.org/obo/MBA_839
 CS202212150_4848	4848 DMX Tbx20 Chol_1	http://purl.obolibrary.org/obo/MBA_839
 CS202212150_4849	4849 DMX Tbx20 Chol_1	http://purl.obolibrary.org/obo/MBA_839
-CS202212150_4850	4850 DMX Tbx20 Chol_1	http://purl.obolibrary.org/obo/MBA_939|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_203
+CS202212150_4850	4850 DMX Tbx20 Chol_1	http://purl.obolibrary.org/obo/MBA_939|http://purl.obolibrary.org/obo/MBA_203
 CS202212150_4851	4851 DMX Tbx20 Chol_1	http://purl.obolibrary.org/obo/MBA_839
-CS202212150_4852	4852 DMX Tbx20 Chol_2	http://purl.obolibrary.org/obo/MBA_122|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_398
+CS202212150_4852	4852 DMX Tbx20 Chol_2	http://purl.obolibrary.org/obo/MBA_122|http://purl.obolibrary.org/obo/MBA_398
 CS202212150_4853	4853 PAG Ucn Glut	http://purl.obolibrary.org/obo/MBA_975
 CS202212150_4854	4854 SNc-VTA-RAmb Foxa1 Dopa_1	http://purl.obolibrary.org/obo/MBA_749|http://purl.obolibrary.org/obo/MBA_591|http://purl.obolibrary.org/obo/MBA_197
 CS202212150_4855	4855 SNc-VTA-RAmb Foxa1 Dopa_1	http://purl.obolibrary.org/obo/MBA_749|http://purl.obolibrary.org/obo/MBA_591|http://purl.obolibrary.org/obo/MBA_197
@@ -4890,9 +4890,9 @@ CS202212150_4893	4893 SNc-VTA-RAmb Foxa1 Dopa_7	http://purl.obolibrary.org/obo/M
 CS202212150_4894	4894 SNc-VTA-RAmb Foxa1 Dopa_8	http://purl.obolibrary.org/obo/MBA_749|http://purl.obolibrary.org/obo/MBA_197
 CS202212150_4895	4895 SNc-VTA-RAmb Foxa1 Dopa_8	http://purl.obolibrary.org/obo/MBA_749|http://purl.obolibrary.org/obo/MBA_197
 CS202212150_4896	4896 SNc-VTA-RAmb Foxa1 Dopa_8	http://purl.obolibrary.org/obo/MBA_749|http://purl.obolibrary.org/obo/MBA_197
-CS202212150_4897	4897 MA3 Foxd2 Glut	http://purl.obolibrary.org/obo/MBA_549009211|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_587
-CS202212150_4898	4898 MA3 Foxd2 Glut	http://purl.obolibrary.org/obo/MBA_549009211|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_587
-CS202212150_4899	4899 MA3 Foxd2 Glut	http://purl.obolibrary.org/obo/MBA_549009211|http://purl.obolibrary.org/obo/MBA_484682520|http://purl.obolibrary.org/obo/MBA_587
+CS202212150_4897	4897 MA3 Foxd2 Glut	http://purl.obolibrary.org/obo/MBA_549009211|http://purl.obolibrary.org/obo/MBA_587
+CS202212150_4898	4898 MA3 Foxd2 Glut	http://purl.obolibrary.org/obo/MBA_549009211|http://purl.obolibrary.org/obo/MBA_587
+CS202212150_4899	4899 MA3 Foxd2 Glut	http://purl.obolibrary.org/obo/MBA_549009211|http://purl.obolibrary.org/obo/MBA_587
 CS202212150_4900	4900 IO Glut	http://purl.obolibrary.org/obo/MBA_83
 CS202212150_4901	4901 POR Spp1 Gly-Gaba	http://purl.obolibrary.org/obo/MBA_122
 CS202212150_4902	4902 VCO-SOCl Mafa Meis2 Glut	http://purl.obolibrary.org/obo/MBA_114
