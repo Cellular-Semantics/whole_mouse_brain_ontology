@@ -52,10 +52,10 @@ def get_brain_regions(raw_file_path):
 
     with open(BRAIN_REGION_MAPPING, mode='w') as out:
         writer = csv.writer(out, delimiter="\t", quotechar='"')
-        writer.writerow(["Accession_ID", "MBA_ID"])
+        writer.writerow(["Accession_ID", "Label", "MBA_ID"])
 
         for region in regions_map:
-            writer.writerow([region, regions_map[region]])
+            writer.writerow([region, records[region.replace("CS202212150_", "")]["cluster_label"], regions_map[region]])
 
     print("Couldn't find the following abbreviations (" + str(len(unmatched)) + "):")
     for unmatch in unmatched:
