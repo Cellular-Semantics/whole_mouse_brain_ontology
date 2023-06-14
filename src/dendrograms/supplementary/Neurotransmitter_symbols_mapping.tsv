@@ -1,0 +1,9 @@
+SYMBOL	CELL TYPE LABEL	CELL TYPE NEUROTRANSMISSION ID	GENES	COMMENTS
+Glut	glutamatergic	GO:0061535
+Nora	norepinephrine	GO:0061533
+Glyc	glycinergic	GO:0061537
+Sero	serotonergic	GO:0060096
+Hist	histaminergic	GO:0061538
+GABA	GABAergic	GO:0061534
+Chol	cholinergic	GO:0014055
+Dopa	dopaminergic	GO:0061527

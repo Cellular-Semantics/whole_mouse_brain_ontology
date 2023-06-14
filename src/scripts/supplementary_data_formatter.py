@@ -11,14 +11,16 @@ NT_SYMBOL_MAPPING = os.path.join(os.path.dirname(os.path.realpath(__file__)), ".
 BRAIN_REGION_MAPPING = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../dendrograms/supplementary/Brain_region_mapping.tsv")
 
 
-def get_unique_nts(raw_file_path):
+def get_unique_nts(*raw_file_paths):
     unique_nts = set()
-    headers, records = read_csv_to_dict(raw_file_path, delimiter="\t")
 
-    for record in records:
-        neurotransmitters = records[record]["Neurotransmitter auto-annotation"].strip()
-        if neurotransmitters:
-            unique_nts.update(neurotransmitters.split(" "))
+    for raw_file_path in raw_file_paths:
+        headers, records = read_csv_to_dict(raw_file_path, delimiter="\t")
+
+        for record in records:
+            neurotransmitters = records[record]["nt_type_label"].strip()
+            if neurotransmitters and neurotransmitters != "NA":
+                unique_nts.update(neurotransmitters.split("-"))
 
     with open(NT_SYMBOL_MAPPING, mode='w') as out:
         writer = csv.writer(out, delimiter="\t", quotechar='"')
@@ -65,5 +67,5 @@ def get_brain_regions(raw_file_path):
         print(unmatch)
 
 
-# get_unique_nts(CLUSTER_ANNOTATION_PATH)
-get_brain_regions(CLUSTER_ANNOTATION_PATH)
+get_unique_nts(CLUSTER_ANNOTATION_PATH, SUBCLASS_ANNOTATION_PATH, SUPERTYPE_ANNOTATION_PATH)
+# get_brain_regions(CLUSTER_ANNOTATION_PATH)
