@@ -59,6 +59,7 @@ vars:
   MBA_4: "'thing'"
   MBA_5: "'thing'"
   MBA_6: "'thing'"
+  MBA_7: "'thing'"
 
 data_list_vars:
   Synonyms_from_taxonomy: "xsd:string"
@@ -77,6 +78,13 @@ data_vars:
   Cluster_ID: "xsd:string"
   Cross_species_text: "xsd:string"
   Taxon_abbv: "xsd:string"
+  MBA_1_comment: "xsd:string"
+  MBA_2_comment: "xsd:string"
+  MBA_3_comment: "xsd:string"
+  MBA_4_comment: "xsd:string"
+  MBA_5_comment: "xsd:string"
+  MBA_6_comment: "xsd:string"
+  MBA_7_comment: "xsd:string"
 
 internal_vars:
   - var_name: Minimal_markers_cat
@@ -272,13 +280,50 @@ annotations:
             - Minimal_markers
   - annotationProperty: some_soma_located_in
     var: MBA_1
+    annotations:
+      - annotationProperty: rdfsComment
+        text: "%s"
+        vars:
+          - MBA_1_comment
   - annotationProperty: some_soma_located_in
     var: MBA_2
+    annotations:
+      - annotationProperty: rdfsComment
+        text: "%s"
+        vars:
+          - MBA_2_comment
   - annotationProperty: some_soma_located_in
     var: MBA_3
+    annotations:
+      - annotationProperty: rdfsComment
+        text: "%s"
+        vars:
+          - MBA_3_comment
   - annotationProperty: some_soma_located_in
     var: MBA_4
+    annotations:
+      - annotationProperty: rdfsComment
+        text: "%s"
+        vars:
+          - MBA_4_comment
   - annotationProperty: some_soma_located_in
     var: MBA_5
+    annotations:
+      - annotationProperty: rdfsComment
+        text: "%s"
+        vars:
+          - MBA_5_comment
   - annotationProperty: some_soma_located_in
     var: MBA_6
+    annotations:
+      - annotationProperty: rdfsComment
+        text: "%s"
+        vars:
+          - MBA_6_comment
+  - annotationProperty: some_soma_located_in
+    var: MBA_7
+    annotations:
+      - annotationProperty: rdfsComment
+        text: "%s"
+        vars:
+          - MBA_7_comment

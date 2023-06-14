@@ -31,7 +31,8 @@ def get_unique_nts(*raw_file_paths):
 
 
 def get_brain_regions(raw_file_path):
-    regions_map = dict()
+    tentative_regions_map = dict()
+    max_dissection_regions_map = dict()
 
     mba_abbreviations = read_csv_to_dict(MBA_ABBREVIATIONS, delimiter="\t", id_column_name="abbreviation", id_to_lower=True)[1]
     headers, records = read_csv_to_dict(raw_file_path, delimiter="\t")
@@ -53,19 +54,33 @@ def get_brain_regions(raw_file_path):
                     regions.append("http://purl.obolibrary.org/obo/MBA_" + mba_abbreviations[part]["structure ID"])
                 else:
                     unmatched.add(part)
-            regions_map["CS202212150_" + cluster_id] = "|".join(regions)
+            tentative_regions_map["CS202212150_" + cluster_id] = "|".join(regions)
+
+        brain_regions = records[cluster_id]["max_dissection_region"].strip().replace("?", "").replace("(", "").replace(")", "").replace(" or ", " ").replace(" + ", " ").lower()
+        if brain_regions and brain_regions != "NA":
+            parts = re.split(regex_pattern, brain_regions)
+            for part in parts:
+                if "/" in part:
+                    parts.extend(part.split("/"))
+            regions = list()
+            for part in parts:
+                if part in mba_abbreviations:
+                    regions.append("http://purl.obolibrary.org/obo/MBA_" + mba_abbreviations[part]["structure ID"])
+                else:
+                    unmatched.add(part)
+            max_dissection_regions_map["CS202212150_" + cluster_id] = "|".join(regions)
 
     with open(BRAIN_REGION_MAPPING, mode='w') as out:
         writer = csv.writer(out, delimiter="\t", quotechar='"')
-        writer.writerow(["Accession_ID", "Label", "MBA_ID"])
+        writer.writerow(["Accession_ID", "Label", "TENTATIVE_MBA_ID", "MAX_DISSECTION_MBA_ID"])
 
-        for region in regions_map:
-            writer.writerow([region, records[region.replace("CS202212150_", "")]["cluster_label"], regions_map[region]])
+        for region in tentative_regions_map:
+            writer.writerow([region, records[region.replace("CS202212150_", "")]["cluster_label"], tentative_regions_map[region], max_dissection_regions_map[region]])
 
     print("Couldn't find the following abbreviations (" + str(len(unmatched)) + "):")
     for unmatch in unmatched:
         print(unmatch)
 
 
-get_unique_nts(CLUSTER_ANNOTATION_PATH, SUBCLASS_ANNOTATION_PATH, SUPERTYPE_ANNOTATION_PATH)
-# get_brain_regions(CLUSTER_ANNOTATION_PATH)
+# get_unique_nts(CLUSTER_ANNOTATION_PATH, SUBCLASS_ANNOTATION_PATH, SUPERTYPE_ANNOTATION_PATH)
+get_brain_regions(CLUSTER_ANNOTATION_PATH)
