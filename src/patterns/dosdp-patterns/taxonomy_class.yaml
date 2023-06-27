@@ -39,6 +39,7 @@ list_vars:
   Layers: "'layer of neocortex'"
   MBA: "'thing'"
   NT: "'thing'"
+  NT_markers: "'sequence_feature'"
 
 vars:
   Classification: "'cell'"
@@ -104,6 +105,16 @@ internal_vars:
         sep: ' or '
   - var_name: Atlas_loc_cat
     input: MBA
+    apply:
+      join:
+        sep: ', '
+  - var_name: NT_cat
+    input: NT
+    apply:
+      join:
+        sep: ', '
+  - var_name: NT_markers_cat
+    input: NT_markers
     apply:
       join:
         sep: ', '
@@ -242,6 +253,16 @@ logical_axioms:
          - text: "'capable_of' some %s"
            vars:
              - NT
+     annotations:
+       - annotationProperty: hasDbXref
+         multi_clause:
+           sep: " "
+           clauses:
+             - text: 'Inferred to be %s based on expression of %s'
+               vars:
+                 - NT_cat
+                 - NT_markers_cat
+
    - axiom_type: subClassOf
      text: "%s"
      vars:

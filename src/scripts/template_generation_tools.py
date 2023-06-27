@@ -140,6 +140,7 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
         dend_tree = generate_dendrogram_tree(dend)
         subtrees = get_subtrees(dend_tree, taxonomy_config)
 
+        gene_names = dict()
         if "Reference_gene_list" in taxonomy_config:
             gene_db_path = ENSEMBLE_PATH.format(str(taxonomy_config["Reference_gene_list"][0]).strip().lower())
             gene_names = read_gene_data(gene_db_path)
@@ -171,6 +172,7 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                       'has_soma_location',
                       'aligned_alias',
                       'NT',
+                      'NT_markers'
                       'CL',
                       'Nomenclature_Layers',
                       'Nomenclature_Projection',
@@ -263,24 +265,29 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                         d['NT'] = "|".join(
                             [nt_symbols_mapping[nt_symbol]["CELL TYPE NEUROTRANSMISSION ID"] if nt_symbol != "NA" else "" for
                              nt_symbol in nt_symbols])
+                        nt_markers_str = cluster_annotations[cluster_index]["nt.markers"].split(",")
+                        d['NT_markers'] = "|".join(
+                            [find_marker(gene_names, nt_marker.split(":")[0].strip()) if nt_marker != "NA" else "" for
+                             nt_marker in nt_markers_str])
                     else:
-                        d['Neurotransmitter'] = ""
+                        d['NT'] = ""
+                        d['NT_markers'] = ""
 
                     if o['cell_set_accession'] in brain_region_mapping:
-                        d['MBA'] = brain_region_mapping[o['cell_set_accession']]["TENTATIVE_MBA_ID"]
+                        d['MBA'] = brain_region_mapping[o['cell_set_accession']]["TENTATIVE_MBA_ID"].replace("http://purl.obolibrary.org/obo/MBA_", "MBA:")
                         index = 1
 
                         if brain_region_mapping[o['cell_set_accession']]["TENTATIVE_MBA_ID"]:
                             tentative_regions = brain_region_mapping[o['cell_set_accession']]["TENTATIVE_MBA_ID"].split("|")
                             for tentative_region in tentative_regions:
-                                d['MBA_' + str(index)] = tentative_region
+                                d['MBA_' + str(index)] = tentative_region.replace("http://purl.obolibrary.org/obo/MBA_", "MBA:")
                                 d['MBA_' + str(index) + '_comment'] = "Location assignment based on tentative anatomical annotations."
                                 index += 1
 
                         if brain_region_mapping[o['cell_set_accession']]["MAX_DISSECTION_MBA_ID"]:
                             max_dissection_regions = brain_region_mapping[o['cell_set_accession']]["MAX_DISSECTION_MBA_ID"].split("|")
                             for max_dissection_region in max_dissection_regions:
-                                d['MBA_' + str(index)] = max_dissection_region
+                                d['MBA_' + str(index)] = max_dissection_region.replace("http://purl.obolibrary.org/obo/MBA_", "MBA:")
                                 d['MBA_' + str(index) + '_comment'] = "Location assignment based on max dissection region."
                                 index += 1
 
@@ -837,3 +844,19 @@ def get_centralized_taxonomy_folder(taxonomy_config):
     """
     return str(taxonomy_config['Species_abbv'][0]).lower() + taxonomy_config['Brain_region_abbv'][0] \
            + "_" + taxonomy_config["Taxonomy_id"]
+
+
+def find_marker(all_genes, marker_name):
+    """
+    Searches given marker name in the gene database.
+    Args:
+        all_genes: gene db dictionary (id-row data)
+        marker_name: name of the marker to search
+
+    Returns: id of the found marker, throws an exception otherwise.
+    """
+    for gene_id in all_genes:
+        if all_genes[gene_id].replace("(Mmus)", "").strip() == marker_name:
+            return gene_id
+
+    raise ValueError("Marker not found: " + marker_name)

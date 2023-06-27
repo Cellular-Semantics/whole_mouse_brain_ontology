@@ -1,10 +1,10 @@
 format-version: 1.2
-data-version: pcl/releases/2023-05-03/bdso-simple.owl
+data-version: pcl/releases/2023-06-27/bdso-simple.owl
 subsetdef: ro-eco ""
 ontology: pcl/bdso-simple
 property_value: dc-title "Full Mouse Brain Ontology" xsd:string
 property_value: dcterms-license http://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2023-05-03" xsd:string
+property_value: owl:versionInfo "2023-06-27" xsd:string
 
 [Typedef]
 id: RO:0002100

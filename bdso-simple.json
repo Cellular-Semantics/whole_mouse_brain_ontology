@@ -10,9 +10,9 @@
         "val" : "http://creativecommons.org/licenses/by/4.0/"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2023-05-03"
+        "val" : "2023-06-27"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/pcl/releases/2023-05-03/bdso-simple.json"
+      "version" : "http://purl.obolibrary.org/obo/pcl/releases/2023-06-27/bdso-simple.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/IAO_0000028",
@@ -375,6 +375,10 @@
           "val" : "dcterms-license"
         } ]
       }
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
+      "lbl" : "database_cross_reference",
+      "type" : "PROPERTY"
     }, {
       "id" : "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym",
       "lbl" : "has_exact_synonym",
