@@ -254,7 +254,7 @@ logical_axioms:
            vars:
              - NT
      annotations:
-       - annotationProperty: hasDbXref
+       - annotationProperty: rdfsComment
          multi_clause:
            sep: " "
            clauses:
