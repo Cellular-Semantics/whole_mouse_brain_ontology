@@ -1,4 +1,4 @@
-JOBS = CS202211210
+JOBS = CS202212150
 
 # GIT related configurations
 #GIT_REPO=					https://github.com/AllenInstitute/MOp_taxonomies_ontology.git

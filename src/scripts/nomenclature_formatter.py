@@ -25,6 +25,30 @@ def convert_tsv_to_csv(nomenclature_name: str, new_name: str):
     class_robot_template.to_csv(os.path.join(DENDROGRAM_FOLDER, new_name), sep=",", index=False)
 
 
+def reformat_csv(nomenclature_name: str, new_name: str):
+    """
+    Original nomenclature has quotations and an index column. This functions formats input csv to the standard form.
+    Args:
+        nomenclature_name: original nomenclature
+        new_name: output file name
+
+    Returns:
+    """
+    taxonomy_file_path = os.path.join(DENDROGRAM_FOLDER, nomenclature_name)
+    headers, data = read_csv_to_dict(taxonomy_file_path, id_column=1)
+
+    all_data = []
+    for accession_id in data:
+        row_data = {}
+        for header in headers:
+            if header:
+                row_data[header] = data[accession_id][header]
+        all_data.append(row_data)
+
+    class_robot_template = pd.DataFrame.from_records(all_data)
+    class_robot_template.to_csv(os.path.join(DENDROGRAM_FOLDER, new_name), sep=",", index=False)
+
+
 def log_root_nodes(nomenclature_name):
     """
     Creates dendrogram config roots for all intermediate nodes.
@@ -76,6 +100,7 @@ def list_level2_nodes(nomenclature_name):
     # print(shawn_not_in_mine)
 
 
-convert_tsv_to_csv("nomenclature_with_curation.tsv", "nomenclature_table_CS202211210.csv")
-# # log_root_nodes("nomenclature_table_CS202211210.csv")
-# list_level2_nodes("nomenclature_table_CS202211210.csv")
+# convert_tsv_to_csv("nomenclature_with_curation.tsv", "nomenclature_table_CS202211210.csv")
+reformat_csv("CCN_nomenclature_table_WMB.csv", "nomenclature_table_CS202212150_original.csv")
+# log_root_nodes("nomenclature_table_CS202212150.csv")
+# list_level2_nodes("nomenclature_table_CS202212150.csv")

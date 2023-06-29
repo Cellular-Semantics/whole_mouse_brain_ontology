@@ -5,7 +5,7 @@
 
 #IMPORTS += simple_human simple_marmoset
 
-JOBS = CS202211210
+JOBS = CS202212150
 #GENE_LIST = ensmusg simple_human simple_marmoset
 GENE_LIST = ensmusg
 BDS_BASE = http://purl.obolibrary.org/obo/
