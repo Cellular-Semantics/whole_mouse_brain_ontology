@@ -1,6 +1,6 @@
 # Whole Mouse Brain Ontology
 
-The Whole Mouse Brain Ontology project constructs a data-driven cell-type ontology of the human brain. This project utilizes [high-resolution transcriptomic and spatial atlas of cell types in the whole mouse brain](https://doi.org/10.1101/2023.03.06.531121) to build a comprehensive understanding of the molecular and cellular diversity within the mouse brain.
+The Whole Mouse Brain Ontology project constructs a data-driven cell-type ontology of the mouse brain. This project utilizes [high-resolution transcriptomic and spatial atlas of cell types in the whole mouse brain](https://doi.org/10.1101/2023.03.06.531121) to build a comprehensive understanding of the molecular and cellular diversity within the mouse brain.
 
 WMBO aims to construct a robust and hierarchical ontology that organizes brain cell types based on shared gene expression patterns, functional properties, and anatomical locations.
 
