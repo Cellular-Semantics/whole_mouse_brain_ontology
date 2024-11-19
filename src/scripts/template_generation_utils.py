@@ -364,14 +364,25 @@ def read_markers(marker_path, gene_names):
     return markers
 
 
-def get_gross_cell_type(_id, subtrees, taxonomy_config):
+# def get_gross_cell_type(_id, subtrees, taxonomy_config):
+#     gross_cell_type = ''
+#     matched_subtree_size = sys.maxsize
+#     for index, subtree in enumerate(subtrees):
+#         # in case _id exists in multiple subtrees, pick the smallest one (the most specific)
+#         if _id in subtree and len(subtree) < matched_subtree_size:
+#             gross_cell_type = taxonomy_config['Root_nodes'][index]['Cell_type']
+#             matched_subtree_size = len(subtree)
+#     return gross_cell_type
+
+def get_gross_cell_type(_id, nodes):
     gross_cell_type = ''
-    matched_subtree_size = sys.maxsize
-    for index, subtree in enumerate(subtrees):
-        # in case _id exists in multiple subtrees, pick the smallest one (the most specific)
-        if _id in subtree and len(subtree) < matched_subtree_size:
-            gross_cell_type = taxonomy_config['Root_nodes'][index]['Cell_type']
-            matched_subtree_size = len(subtree)
+    for node in nodes:
+        if _id == node['cell_set_accession']:
+            if 'cell_ontology_term_id' in node:
+                gross_cell_type = node['cell_ontology_term_id']
+            elif 'parent_cell_set_accession' in node:
+                gross_cell_type = get_gross_cell_type(node['parent_cell_set_accession'], nodes)
+            break
     return gross_cell_type
 
 

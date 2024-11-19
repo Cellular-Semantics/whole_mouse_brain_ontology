@@ -4,7 +4,7 @@
 ##
 
 -
-  Taxonomy_id: CS202212150
+  Taxonomy_id: CCN20230722
   Description: Mouse full brain BICCN taxonomy using multiple RNA-Seq datasets
   Reference: TBD
   PMID:
@@ -22,34 +22,34 @@
   Reference_gene_list:
     - Ensmusg
   Root_nodes:
-    - Node: CS202212150_6347
+    - Node: CS20230722_CLAS_01
       Cell_type: CL:0000679
       Location_relation: has_soma_location
-#      IT-ET
-    - Node: CS202212150_6348
+#      01 IT-ET Glut
+    - Node: CS20230722_CLAS_02
       Cell_type: CL:0000679
       Location_relation: has_soma_location
-#     NP-CT-L6b
-    - Node: CS202212150_6349
+#     02 NP-CT-L6b Glut
+    - Node: CS20230722_CLAS_04
       Cell_type: CL:0000679
       Location_relation: has_soma_location
-#      DG-MOB-IMN
-    - Node: CS202212150_6350
+#      04 DG-IMN Glut
+    - Node: CS20230722_CLAS_06
       Cell_type: CL:4023064
       Location_relation: has_soma_location
-#      CGE
-    - Node: CS202212150_6351
+#      06 CTX-CGE GABA
+    - Node: CS20230722_CLAS_07
       Cell_type: CL:4023063
       Location_relation: has_soma_location
-#      MGE
-    - Node: CS202212150_6352
+#      07 CTX-MGE GABA
+    - Node: CS20230722_CLAS_08
       Cell_type: CL:0000617
       Location_relation: has_soma_location
-#      CNU GABA
-    - Node: CS202212150_6353
+#      08 CNU-MGE GABA
+    - Node: CS20230722_CLAS_10
       Cell_type: CL:0000617
       Location_relation: has_soma_location
-#      LSX
+#      10 LSX GABA
     - Node: CS202212150_6354
       Cell_type: CL:0000617
       Location_relation: has_soma_location

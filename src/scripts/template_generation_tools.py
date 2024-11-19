@@ -3,13 +3,13 @@ import json
 import os
 import logging
 
-from dendrogram_tools import dend_json_2_nodes_n_edges
+from dendrogram_tools import dend_json_2_nodes_n_edges, read_json_file
 from template_generation_utils import get_synonyms_from_taxonomy, read_taxonomy_config, \
     get_subtrees, generate_dendrogram_tree, read_taxonomy_details_yaml, read_csv_to_dict,\
     read_csv, read_gene_data, read_markers, get_gross_cell_type, merge_tables, read_allen_descriptions, \
     extract_taxonomy_name_from_path
 from nomenclature_tools import nomenclature_2_nodes_n_edges
-from pcl_id_factory import get_class_id, get_individual_id, get_taxonomy_id, get_dataset_id, get_marker_gene_set_id
+from pcl_id_factory import PCLIdFactory
 from marker_tools import get_nsforest_confidences
 
 log = logging.getLogger(__name__)
@@ -24,8 +24,8 @@ MARKER_PATH = '../markers/CS{}_markers.tsv'
 ALLEN_MARKER_PATH = "../markers/CS{}_Allen_markers.tsv"
 NOMENCLATURE_TABLE_PATH = '../dendrograms/nomenclature_table_{}.csv'
 ENSEMBLE_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../templates/{}.tsv")
-CLUSTER_ANNOTATIONS_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)),
-                                        '../dendrograms/supplementary/cluster_annotation_{}.tsv')
+# CLUSTER_ANNOTATIONS_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)),
+#                                         '../dendrograms/supplementary/cluster_annotation_{}.tsv')
 NT_SYMBOLS_MAPPING = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../dendrograms/supplementary/Neurotransmitter_symbols_mapping.tsv")
 BRAIN_REGION_MAPPING = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../dendrograms/supplementary/Brain_region_mapping.tsv")
 
@@ -41,25 +41,16 @@ NSFOREST_MARKER_CSV = "{}/NSForestMarkers/{}_{}_NSForest_Markers.csv"
 EXPRESSION_SEPARATOR = "|"
 
 
-def generate_ind_template(taxonomy_file_path, centralized_data_folder, output_filepath):
-    path_parts = taxonomy_file_path.split(os.path.sep)
-    taxon = path_parts[len(path_parts) - 1].split(".")[0]
+def generate_ind_template(taxonomy_file_path, output_filepath):
+    # path_parts = taxonomy_file_path.split(os.path.sep)
+    # taxon = path_parts[len(path_parts) - 1].split(".")[0]
 
-    if str(taxonomy_file_path).endswith(".json"):
-        dend = dend_json_2_nodes_n_edges(taxonomy_file_path)
-    else:
-        dend = nomenclature_2_nodes_n_edges(taxonomy_file_path)
-        taxon = path_parts[len(path_parts) - 1].split(".")[0].replace("nomenclature_table_", "")
+    dend = dend_json_2_nodes_n_edges(taxonomy_file_path)
+    id_factory = PCLIdFactory(read_json_file(taxonomy_file_path))
 
-    dend_tree = generate_dendrogram_tree(dend)
-    taxonomy_config = read_taxonomy_config(taxon)
-
-    # taxonomy_folder_name = get_centralized_taxonomy_folder(taxonomy_config)
-    # allen_desc_file = ALLEN_DESCRIPTIONS_PATH.format(centralized_data_folder, taxonomy_folder_name,
-    #                                                  taxonomy_config['Species_abbv'][0])
-    # allen_descriptions = read_allen_descriptions(allen_desc_file)
-
-    subtrees = get_subtrees(dend_tree, taxonomy_config)
+    # dend_tree = generate_dendrogram_tree(dend)
+    # taxonomy_config = read_taxonomy_config(taxon)
+    # subtrees = get_subtrees(dend_tree, taxonomy_config)
 
     robot_template_seed = {'ID': 'ID',
                            'Label': 'LABEL',
@@ -85,43 +76,28 @@ def generate_ind_template(taxonomy_file_path, centralized_data_folder, output_fi
                            }
     dl = [robot_template_seed]
 
-    synonym_properties = ['cell_set_aligned_alias',
-                          'cell_set_additional_aliases']
-
     for o in dend['nodes']:
         d = dict()
         d['ID'] = 'PCL_INDV:' + o['cell_set_accession']
         d['TYPE'] = 'owl:NamedIndividual'
-        d['Label'] = o['cell_set_label'] + ' - ' + o['cell_set_accession']
+        d['Label'] = o['cell_label'] + ' - ' + o['cell_set_accession']
         if 'cell_set_preferred_alias' in o and o['cell_set_preferred_alias']:
             d['PrefLabel'] = o['cell_set_preferred_alias']
         else:
             d['PrefLabel'] = o['cell_set_accession']
         d['Entity Type'] = 'PCL:0010001'  # Cluster
         # d['Metadata'] = json.dumps(o)
-        d['Synonyms'] = '|'.join([o[prop] for prop in synonym_properties if prop in o.keys() and o[prop]])
+        d['Synonyms'] = '|'.join(o.get('synonyms', []))
         d['Property Assertions'] = '|'.join(
             sorted(['PCL_INDV:' + e[1] for e in dend['edges'] if e[0] == o['cell_set_accession']]))
-        meta_properties = ['cell_set_preferred_alias', 'original_label', 'cell_set_label', 'cell_set_aligned_alias',
-                           'cell_set_additional_aliases', 'cell_set_alias_assignee', 'cell_set_alias_citation']
+        meta_properties = ['cell_fullname']
         for prop in meta_properties:
             if prop in o.keys():
                 d[prop] = '|'.join([prop_val.strip() for prop_val in str(o[prop]).split("|") if prop_val])
             else:
                 d[prop] = ''
         d['Cluster_ID'] = o['cell_set_accession']
-        if o['cell_set_accession'] in set().union(*subtrees) and o['cell_set_preferred_alias']:
-            d['Exemplar_of'] = PCL_BASE + get_class_id(o['cell_set_accession'])
-
-        if "cell_type_card" in o:
-            d['Rank'] = '|'.join([cell_type.strip().replace("No", "None")
-                                  for cell_type in str(o["cell_type_card"]).split(",")])
-
-        # if o['cell_set_accession'] in allen_descriptions:
-        #     allen_data = allen_descriptions[o['cell_set_accession']]
-        #     d['Comment'] = allen_data["summary"][0]
-        #     if allen_data["aliases"][0]:
-        #         d['Aliases'] = '|'.join([alias.strip() for alias in str(allen_data["aliases"][0]).split("|")])
+        d['Exemplar_of'] = PCL_BASE + id_factory.get_class_id(o['cell_set_accession'])
 
         dl.append(d)
     robot_template = pd.DataFrame.from_records(dl)
@@ -133,12 +109,10 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
     taxonomy_config = read_taxonomy_config(taxon)
 
     if taxonomy_config:
-        if str(taxonomy_file_path).endswith(".json"):
-            dend = dend_json_2_nodes_n_edges(taxonomy_file_path)
-        else:
-            dend = nomenclature_2_nodes_n_edges(taxonomy_file_path)
-        dend_tree = generate_dendrogram_tree(dend)
-        subtrees = get_subtrees(dend_tree, taxonomy_config)
+        dend = dend_json_2_nodes_n_edges(taxonomy_file_path)
+        id_factory = PCLIdFactory(read_json_file(taxonomy_file_path))
+        # dend_tree = generate_dendrogram_tree(dend)
+        # subtrees = get_subtrees(dend_tree, taxonomy_config)
 
         gene_names = dict()
         if "Reference_gene_list" in taxonomy_config:
@@ -150,7 +124,7 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
             minimal_markers = {}
             allen_markers = {}
 
-        cluster_annotations = read_csv_to_dict(CLUSTER_ANNOTATIONS_PATH.format(taxon), delimiter="\t")[1]
+        # cluster_annotations = read_csv_to_dict(CLUSTER_ANNOTATIONS_PATH.format(taxon), delimiter="\t")[1]
         nt_symbols_mapping = read_csv_to_dict(NT_SYMBOLS_MAPPING, delimiter="\t")[1]
         brain_region_mapping = read_csv_to_dict(BRAIN_REGION_MAPPING, delimiter="\t")[1]
 
@@ -182,22 +156,20 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
         class_template = []
 
         for o in dend['nodes']:
-            if o['cell_set_accession'] in set.union(*subtrees) and (o['cell_set_preferred_alias'] or
-                                                                    o['cell_set_additional_aliases']):
+            # if o['cell_set_accession'] in set.union(*subtrees) and (o['cell_set_preferred_alias'] or o['cell_set_additional_aliases']):
+            if o['cell_set_accession']:
                 d = dict()
-                d['defined_class'] = PCL_BASE + get_class_id(o['cell_set_accession'])
-                if o['cell_set_preferred_alias']:
-                    d['prefLabel'] = o['cell_set_preferred_alias']
-                elif o['cell_set_additional_aliases']:
-                    d['prefLabel'] = str(o['cell_set_additional_aliases']).split(EXPRESSION_SEPARATOR)[0]
-                d['Synonyms_from_taxonomy'] = get_synonyms_from_taxonomy(o)
-                d['Gross_cell_type'] = get_gross_cell_type(o['cell_set_accession'], subtrees, taxonomy_config)
+                d['defined_class'] = PCL_BASE + id_factory.get_class_id(o['cell_set_accession'])
+                if o.get('cell_fullname'):
+                    d['prefLabel'] = o['cell_fullname']
+                d['Synonyms_from_taxonomy'] = "|".join(sorted(o.get("synonyms", [])))
+                d['Gross_cell_type'] = get_gross_cell_type(o['cell_set_accession'], dend['nodes'])
                 d['Taxon'] = taxonomy_config['Species'][0]
                 d['Taxon_abbv'] = taxonomy_config['Gene_abbv'][0]
                 d['Brain_region'] = taxonomy_config['Brain_region'][0]
                 d['Cluster_ID'] = o['cell_set_accession']
-                if 'cell_set_alias_citation' in o and o['cell_set_alias_citation']:
-                    alias_citations = [citation.strip() for citation in str(o["cell_set_alias_citation"]).split("|")
+                if 'rationale_dois' in o and o['rationale_dois']:
+                    alias_citations = [citation.strip() for citation in o['rationale_dois']
                                        if citation and citation.strip()]
                     d["Alias_citations"] = "|".join(alias_citations)
                 else:
@@ -216,22 +188,23 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                     d['Species_abbv'] = taxonomy_config['Species_abbv'][0]
                 d['Individual'] = PCL_INDV_BASE + o['cell_set_accession']
 
-                for index, subtree in enumerate(subtrees):
-                    if o['cell_set_accession'] in subtree:
-                        location_rel = taxonomy_config['Root_nodes'][index]['Location_relation']
-                        if location_rel == "part_of":
-                            d['part_of'] = taxonomy_config['Brain_region'][0]
-                            d['has_soma_location'] = ''
-                        elif location_rel == "has_soma_location":
-                            d['part_of'] = ''
-                            d['has_soma_location'] = taxonomy_config['Brain_region'][0]
+                # for index, subtree in enumerate(subtrees):
+                #     if o['cell_set_accession'] in subtree:
+                #         location_rel = taxonomy_config['Root_nodes'][index]['Location_relation']
+                #         if location_rel == "part_of":
+                #             d['part_of'] = taxonomy_config['Brain_region'][0]
+                #             d['has_soma_location'] = ''
+                #         elif location_rel == "has_soma_location":
+                #             d['part_of'] = ''
+                #             d['has_soma_location'] = taxonomy_config['Brain_region'][0]
 
-                if "cell_set_aligned_alias" in o and o["cell_set_aligned_alias"]:
-                    d['aligned_alias'] = o["cell_set_aligned_alias"]
-                else:
-                    d['aligned_alias'] = ""
-                if o['cell_set_accession'] in minimal_markers:
-                    d['marker_gene_set'] = PCL_PREFIX + get_marker_gene_set_id(o['cell_set_accession'])
+                # TODO check this
+                d['part_of'] = ''
+                d['has_soma_location'] = taxonomy_config['Brain_region'][0]
+
+                d['aligned_alias'] = ""
+                if o.get('marker_gene_evidence'):
+                    d['marker_gene_set'] = PCL_PREFIX + id_factory.get_marker_gene_set_id(o['cell_set_accession'])
                 else:
                     d['marker_gene_set'] = ""
                 # if "MBA" in o and o["MBA"]:
@@ -243,53 +216,55 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                 # if "NT" in o and o["NT"]:
                 #     neuro_transmitters = [nt.strip() for nt in str(o["NT"]).split("|") if nt and nt.strip()]
                 #     d['NT'] = "|".join(neuro_transmitters)
-                if "CL" in o and o["CL"]:
-                    d['CL'] = o["CL"]
+                if "cell_ontology_term_id" in o and o["cell_ontology_term_id"]:
+                    d['CL'] = o["cell_ontology_term_id"]
                 else:
                     d['CL'] = ""
-                if "layer" in o and o["layer"]:
-                    d['Nomenclature_Layers'] = o["layer"]
-                else:
-                    d['Nomenclature_Layers'] = ""
-                if "projection" in o and o["projection"]:
-                    d['Nomenclature_Projection'] = o["projection"]
-                else:
-                    d['Nomenclature_Projection'] = ""
+                # if "layer" in o and o["layer"]:
+                #     d['Nomenclature_Layers'] = o["layer"]
+                # else:
+                #     d['Nomenclature_Layers'] = ""
+                # if "projection" in o and o["projection"]:
+                #     d['Nomenclature_Projection'] = o["projection"]
+                # else:
+                #     d['Nomenclature_Projection'] = ""
 
                 # CS202212150_1 -> 1
-                cluster_index = str(o['cell_set_accession']).replace(taxon + "_", "")
-                if cluster_index in cluster_annotations:
-                    nt_symbols = cluster_annotations[cluster_index]["nt_type_label"].split("-")
-                    # TODO add evidence comment "inferred to be {x}-ergic based on expression of {y}"
-                    if nt_symbols:
-                        d['NT'] = "|".join(
-                            [nt_symbols_mapping[nt_symbol]["CELL TYPE NEUROTRANSMISSION ID"] if nt_symbol != "NA" else "" for
-                             nt_symbol in nt_symbols])
-                        nt_markers_str = cluster_annotations[cluster_index]["nt.markers"].split(",")
-                        d['NT_markers'] = "|".join(
-                            [find_marker(gene_names, nt_marker.split(":")[0].strip()) if nt_marker != "NA" else "" for
-                             nt_marker in nt_markers_str])
-                    else:
-                        d['NT'] = ""
-                        d['NT_markers'] = ""
+                # cluster_index = str(o['cell_set_accession']).replace(taxon + "_", "")
+                # if cluster_index in cluster_annotations:
+                #     nt_symbols = cluster_annotations[cluster_index]["nt_type_label"].split("-")
+                #     # TODO add evidence comment "inferred to be {x}-ergic based on expression of {y}"
+                #     if nt_symbols:
+                #         d['NT'] = "|".join(
+                #             [nt_symbols_mapping[nt_symbol]["CELL TYPE NEUROTRANSMISSION ID"] if nt_symbol != "NA" else "" for
+                #              nt_symbol in nt_symbols])
+                #         nt_markers_str = cluster_annotations[cluster_index]["nt.markers"].split(",")
+                #         d['NT_markers'] = "|".join(
+                #             [find_marker(gene_names, nt_marker.split(":")[0].strip()) if nt_marker != "NA" else "" for
+                #              nt_marker in nt_markers_str])
+                #     else:
+                #         d['NT'] = ""
+                #         d['NT_markers'] = ""
+                    d['NT'] = ""
+                    d['NT_markers'] = ""
 
-                    if o['cell_set_accession'] in brain_region_mapping:
-                        d['MBA'] = brain_region_mapping[o['cell_set_accession']]["TENTATIVE_MBA_ID"].replace("http://purl.obolibrary.org/obo/MBA_", "MBA:")
-                        index = 1
-
-                        if brain_region_mapping[o['cell_set_accession']]["TENTATIVE_MBA_ID"]:
-                            tentative_regions = brain_region_mapping[o['cell_set_accession']]["TENTATIVE_MBA_ID"].split("|")
-                            for tentative_region in tentative_regions:
-                                d['MBA_' + str(index)] = tentative_region.replace("http://purl.obolibrary.org/obo/MBA_", "MBA:")
-                                d['MBA_' + str(index) + '_comment'] = "Location assignment based on tentative anatomical annotations."
-                                index += 1
-
-                        if brain_region_mapping[o['cell_set_accession']]["MAX_DISSECTION_MBA_ID"]:
-                            max_dissection_regions = brain_region_mapping[o['cell_set_accession']]["MAX_DISSECTION_MBA_ID"].split("|")
-                            for max_dissection_region in max_dissection_regions:
-                                d['MBA_' + str(index)] = max_dissection_region.replace("http://purl.obolibrary.org/obo/MBA_", "MBA:")
-                                d['MBA_' + str(index) + '_comment'] = "Location assignment based on max dissection region."
-                                index += 1
+                    # if o['cell_set_accession'] in brain_region_mapping:
+                    #     d['MBA'] = brain_region_mapping[o['cell_set_accession']]["TENTATIVE_MBA_ID"].replace("http://purl.obolibrary.org/obo/MBA_", "MBA:")
+                    #     index = 1
+                    #
+                    #     if brain_region_mapping[o['cell_set_accession']]["TENTATIVE_MBA_ID"]:
+                    #         tentative_regions = brain_region_mapping[o['cell_set_accession']]["TENTATIVE_MBA_ID"].split("|")
+                    #         for tentative_region in tentative_regions:
+                    #             d['MBA_' + str(index)] = tentative_region.replace("http://purl.obolibrary.org/obo/MBA_", "MBA:")
+                    #             d['MBA_' + str(index) + '_comment'] = "Location assignment based on tentative anatomical annotations."
+                    #             index += 1
+                    #
+                    #     if brain_region_mapping[o['cell_set_accession']]["MAX_DISSECTION_MBA_ID"]:
+                    #         max_dissection_regions = brain_region_mapping[o['cell_set_accession']]["MAX_DISSECTION_MBA_ID"].split("|")
+                    #         for max_dissection_region in max_dissection_regions:
+                    #             d['MBA_' + str(index)] = max_dissection_region.replace("http://purl.obolibrary.org/obo/MBA_", "MBA:")
+                    #             d['MBA_' + str(index) + '_comment'] = "Location assignment based on max dissection region."
+                    #             index += 1
 
                 for k in class_seed:
                     if not (k in d.keys()):
@@ -305,12 +280,11 @@ def generate_curated_class_template(taxonomy_file_path, output_filepath):
     taxonomy_config = read_taxonomy_config(taxon)
 
     if taxonomy_config:
-        if str(taxonomy_file_path).endswith(".json"):
-            dend = dend_json_2_nodes_n_edges(taxonomy_file_path)
-        else:
-            dend = nomenclature_2_nodes_n_edges(taxonomy_file_path)
-        dend_tree = generate_dendrogram_tree(dend)
-        subtrees = get_subtrees(dend_tree, taxonomy_config)
+        dend = dend_json_2_nodes_n_edges(taxonomy_file_path)
+        id_factory = PCLIdFactory(read_json_file(taxonomy_file_path))
+
+        # dend_tree = generate_dendrogram_tree(dend)
+        # subtrees = get_subtrees(dend_tree, taxonomy_config)
 
         class_curation_seed = ['defined_class',
                                'Curated_synonyms',
@@ -328,14 +302,12 @@ def generate_curated_class_template(taxonomy_file_path, output_filepath):
         class_template = []
 
         for o in dend['nodes']:
-            if o['cell_set_accession'] in set.union(*subtrees) and (o['cell_set_preferred_alias'] or
-                                                                    o['cell_set_additional_aliases']):
+            # if o['cell_set_accession'] in set.union(*subtrees) and (o['cell_set_preferred_alias'] or o['cell_set_additional_aliases']):
+            if o['cell_set_accession']:
                 d = dict()
-                d['defined_class'] = PCL_BASE + get_class_id(o['cell_set_accession'])
-                if o['cell_set_preferred_alias']:
-                    d['prefLabel'] = o['cell_set_preferred_alias']
-                elif o['cell_set_additional_aliases']:
-                    d['prefLabel'] = str(o['cell_set_additional_aliases']).split(EXPRESSION_SEPARATOR)[0]
+                d['defined_class'] = PCL_BASE + id_factory.get_class_id(o['cell_set_accession'])
+                if o.get('cell_fullname'):
+                    d['prefLabel'] = o['cell_fullname']
 
                 for k in class_curation_seed:
                     if not (k in d.keys()):
@@ -363,10 +335,9 @@ def generate_homologous_to_template(taxonomy_file_path, all_base_files, output_f
     other_taxonomy_aliases = index_base_files([t for t in all_base_files if taxon not in t])
 
     if taxonomy_config:
-        if str(taxonomy_file_path).endswith(".json"):
-            dend = dend_json_2_nodes_n_edges(taxonomy_file_path)
-        else:
-            dend = nomenclature_2_nodes_n_edges(taxonomy_file_path)
+        dend = dend_json_2_nodes_n_edges(taxonomy_file_path)
+        id_factory = PCLIdFactory(read_json_file(taxonomy_file_path))
+
         dend_tree = generate_dendrogram_tree(dend)
         subtrees = get_subtrees(dend_tree, taxonomy_config)
 
@@ -376,7 +347,7 @@ def generate_homologous_to_template(taxonomy_file_path, all_base_files, output_f
             if o['cell_set_accession'] in set.union(*subtrees) and (o['cell_set_preferred_alias'] or
                                                                     o['cell_set_additional_aliases']):
                 d = dict()
-                d['defined_class'] = PCL_BASE + get_class_id(o['cell_set_accession'])
+                d['defined_class'] = PCL_BASE + id_factory.get_class_id(o['cell_set_accession'])
                 homologous_to = list()
                 for other_aliases in other_taxonomy_aliases:
                     if "cell_set_aligned_alias" in o and o["cell_set_aligned_alias"] \
@@ -393,6 +364,7 @@ def generate_homologous_to_template(taxonomy_file_path, all_base_files, output_f
 
 def generate_non_taxonomy_classification_template(taxonomy_file_path, output_filepath):
     taxon = extract_taxonomy_name_from_path(taxonomy_file_path)
+    id_factory = PCLIdFactory(read_json_file(taxonomy_file_path))
 
     cell_set_accession = 3
     child_cell_set_accessions = 14
@@ -421,7 +393,7 @@ def generate_non_taxonomy_classification_template(taxonomy_file_path, output_fil
                     # child of root with cell_set_preferred_alias
                     if child not in non_taxo_roots and nomenclature_records[child][0]:
                         d = dict()
-                        d['defined_class'] = PCL_BASE + get_class_id(child)
+                        d['defined_class'] = PCL_BASE + id_factory.get_class_id(child)
                         d['Classification'] = non_taxo_roots[columns[cell_set_accession]]
                         nomenclature_template.append(d)
 
@@ -434,10 +406,9 @@ def generate_cross_species_template(taxonomy_file_path, output_filepath):
     taxonomy_config = read_taxonomy_config(taxon)
 
     if taxonomy_config:
-        if str(taxonomy_file_path).endswith(".json"):
-            dend = dend_json_2_nodes_n_edges(taxonomy_file_path)
-        else:
-            dend = nomenclature_2_nodes_n_edges(taxonomy_file_path)
+        dend = dend_json_2_nodes_n_edges(taxonomy_file_path)
+        id_factory = PCLIdFactory(read_json_file(taxonomy_file_path))
+
         dend_tree = generate_dendrogram_tree(dend)
         subtrees = get_subtrees(dend_tree, taxonomy_config)
         cross_species_template = []
@@ -452,19 +423,19 @@ def generate_cross_species_template(taxonomy_file_path, output_filepath):
                                                                     o['cell_set_additional_aliases']):
                 cross_species_classes = set()
                 if o["cell_set_aligned_alias"] and str(o["cell_set_aligned_alias"]).lower() in cs_by_aligned_alias:
-                    cross_species_classes.add(PCL_BASE + get_class_id(cs_by_aligned_alias[str(o["cell_set_aligned_alias"])
+                    cross_species_classes.add(PCL_BASE + id_factory.get_class_id(cs_by_aligned_alias[str(o["cell_set_aligned_alias"])
                                               .lower()]["cell_set_accession"]))
 
                 if "cell_set_additional_aliases" in o and o["cell_set_additional_aliases"]:
                     additional_aliases = str(o["cell_set_additional_aliases"]).lower().split(EXPRESSION_SEPARATOR)
                     for additional_alias in additional_aliases:
                         if additional_alias in cs_by_preferred_alias:
-                            cross_species_classes.add(PCL_BASE + get_class_id(
+                            cross_species_classes.add(PCL_BASE + id_factory.get_class_id(
                                                       cs_by_preferred_alias[additional_alias]["cell_set_accession"]))
 
                 if len(cross_species_classes):
                     d = dict()
-                    d['defined_class'] = PCL_BASE + get_class_id(o['cell_set_accession'])
+                    d['defined_class'] = PCL_BASE + id_factory.get_class_id(o['cell_set_accession'])
                     d['cross_species_classes'] = EXPRESSION_SEPARATOR.join(cross_species_classes)
 
                     cross_species_template.append(d)
@@ -539,64 +510,64 @@ def add_taxonomy_info_panel_properties(centralized_data_folder, d, taxon_config)
                          .format(taxon_config["Taxonomy_id"], taxonomy_metadata_path))
 
 
-def generate_datasets_template(centralized_data_folder, output_filepath):
-    path_parts = output_filepath.split(os.path.sep)
-    taxonomy_id = str(path_parts[len(path_parts) - 1]).split("_")[0]
-    taxonomy_config = read_taxonomy_config(taxonomy_id)
-
-    expected_file_name = DATASET_INFO_CSV.format(centralized_data_folder,
-                                                 get_centralized_taxonomy_folder(taxonomy_config), taxonomy_id)
-
-    if os.path.isfile(expected_file_name):
-        headers, dataset_metadata = read_csv_to_dict(expected_file_name, generated_ids=True)
-
-        robot_template_seed = {'ID': 'ID',
-                               'TYPE': 'TYPE',
-                               'Entity Type': 'TI %',
-                               'Label': 'LABEL',
-                               'PrefLabel': 'A skos:prefLabel',
-                               'Symbol': 'A IAO:0000028',
-                               'Taxonomy': 'AI schema:includedInDataCatalog',
-                               'Cell Count': "AT 'cell_count'^^xsd:integer",
-                               'Nuclei Count': "AT 'nuclei_count'^^xsd:integer",
-                               'Dataset': "A schema:headline",
-                               'Species': "A schema:assesses",
-                               'Region': "A schema:position",
-                               'Description': "A rdfs:comment",
-                               'Download Link': "A schema:archivedAt",
-                               'Explore Link': "A schema:discussionUrl"
-                               }
-        dl = [robot_template_seed]
-
-        dataset_index = 0
-        for dataset in dataset_metadata:
-            d = dict()
-            d['ID'] = 'PCL:' + get_dataset_id(taxonomy_id, dataset_index)
-            d['TYPE'] = 'owl:NamedIndividual'
-            d['Entity Type'] = 'schema:Dataset'  # Taxonomy
-            d['Label'] = dataset_metadata[dataset]['Ontology Name']
-            d['PrefLabel'] = dataset_metadata[dataset]['Dataset']
-            d['Symbol'] = dataset_metadata[dataset]['Ontology Symbol']
-            d['Taxonomy'] = 'PCL_INDV:' + taxonomy_id
-            cells_nuclei = dataset_metadata[dataset]['cells/nuclei']
-            if 'nuclei' in cells_nuclei:
-                d['Nuclei Count'] = int(''.join(c for c in cells_nuclei if c.isdigit()))
-            elif 'cells' in cells_nuclei:
-                d['Cell Count'] = int(''.join(c for c in cells_nuclei if c.isdigit()))
-            d['Dataset'] = dataset_metadata[dataset]['dataset_number']
-            d['Species'] = dataset_metadata[dataset]['species']
-            d['Region'] = dataset_metadata[dataset]['region']
-            d['Description'] = dataset_metadata[dataset]['text']
-            d['Download Link'] = dataset_metadata[dataset]['download_link']
-            d['Explore Link'] = dataset_metadata[dataset]['explore_link']
-
-            dataset_index += 1
-            dl.append(d)
-        robot_template = pd.DataFrame.from_records(dl)
-        robot_template.to_csv(output_filepath, sep="\t", index=False)
-    else:
-        raise ValueError("Couldn't find taxonomy '{}' landingpage dataset info file at: '{}'"
-                         .format(taxonomy_id, expected_file_name))
+# def generate_datasets_template(centralized_data_folder, output_filepath):
+#     path_parts = output_filepath.split(os.path.sep)
+#     taxonomy_id = str(path_parts[len(path_parts) - 1]).split("_")[0]
+#     taxonomy_config = read_taxonomy_config(taxonomy_id)
+#
+#     expected_file_name = DATASET_INFO_CSV.format(centralized_data_folder,
+#                                                  get_centralized_taxonomy_folder(taxonomy_config), taxonomy_id)
+#
+#     if os.path.isfile(expected_file_name):
+#         headers, dataset_metadata = read_csv_to_dict(expected_file_name, generated_ids=True)
+#
+#         robot_template_seed = {'ID': 'ID',
+#                                'TYPE': 'TYPE',
+#                                'Entity Type': 'TI %',
+#                                'Label': 'LABEL',
+#                                'PrefLabel': 'A skos:prefLabel',
+#                                'Symbol': 'A IAO:0000028',
+#                                'Taxonomy': 'AI schema:includedInDataCatalog',
+#                                'Cell Count': "AT 'cell_count'^^xsd:integer",
+#                                'Nuclei Count': "AT 'nuclei_count'^^xsd:integer",
+#                                'Dataset': "A schema:headline",
+#                                'Species': "A schema:assesses",
+#                                'Region': "A schema:position",
+#                                'Description': "A rdfs:comment",
+#                                'Download Link': "A schema:archivedAt",
+#                                'Explore Link': "A schema:discussionUrl"
+#                                }
+#         dl = [robot_template_seed]
+#
+#         dataset_index = 0
+#         for dataset in dataset_metadata:
+#             d = dict()
+#             d['ID'] = 'PCL:' + get_dataset_id(taxonomy_id, dataset_index)
+#             d['TYPE'] = 'owl:NamedIndividual'
+#             d['Entity Type'] = 'schema:Dataset'  # Taxonomy
+#             d['Label'] = dataset_metadata[dataset]['Ontology Name']
+#             d['PrefLabel'] = dataset_metadata[dataset]['Dataset']
+#             d['Symbol'] = dataset_metadata[dataset]['Ontology Symbol']
+#             d['Taxonomy'] = 'PCL_INDV:' + taxonomy_id
+#             cells_nuclei = dataset_metadata[dataset]['cells/nuclei']
+#             if 'nuclei' in cells_nuclei:
+#                 d['Nuclei Count'] = int(''.join(c for c in cells_nuclei if c.isdigit()))
+#             elif 'cells' in cells_nuclei:
+#                 d['Cell Count'] = int(''.join(c for c in cells_nuclei if c.isdigit()))
+#             d['Dataset'] = dataset_metadata[dataset]['dataset_number']
+#             d['Species'] = dataset_metadata[dataset]['species']
+#             d['Region'] = dataset_metadata[dataset]['region']
+#             d['Description'] = dataset_metadata[dataset]['text']
+#             d['Download Link'] = dataset_metadata[dataset]['download_link']
+#             d['Explore Link'] = dataset_metadata[dataset]['explore_link']
+#
+#             dataset_index += 1
+#             dl.append(d)
+#         robot_template = pd.DataFrame.from_records(dl)
+#         robot_template.to_csv(output_filepath, sep="\t", index=False)
+#     else:
+#         raise ValueError("Couldn't find taxonomy '{}' landingpage dataset info file at: '{}'"
+#                          .format(taxonomy_id, expected_file_name))
 
 
 def generate_marker_gene_set_template(taxonomy_file_path, centralized_data_folder, output_filepath):
@@ -604,10 +575,9 @@ def generate_marker_gene_set_template(taxonomy_file_path, centralized_data_folde
     taxonomy_config = read_taxonomy_config(taxon)
 
     if taxonomy_config:
-        if str(taxonomy_file_path).endswith(".json"):
-            dend = dend_json_2_nodes_n_edges(taxonomy_file_path)
-        else:
-            dend = nomenclature_2_nodes_n_edges(taxonomy_file_path)
+        dend = dend_json_2_nodes_n_edges(taxonomy_file_path)
+        id_factory = PCLIdFactory(read_json_file(taxonomy_file_path))
+
         dend_tree = generate_dendrogram_tree(dend)
         subtrees = get_subtrees(dend_tree, taxonomy_config)
 
@@ -639,7 +609,7 @@ def generate_marker_gene_set_template(taxonomy_file_path, centralized_data_folde
                                                                     o['cell_set_additional_aliases']):
                 if o['cell_set_accession'] in minimal_markers:
                     d = dict()
-                    d['defined_class'] = PCL_BASE + get_marker_gene_set_id(o['cell_set_accession'])
+                    d['defined_class'] = PCL_BASE + id_factory.get_marker_gene_set_id(o['cell_set_accession'])
                     d['Marker_set_of'] = o['cell_set_preferred_alias']
                     d['Minimal_markers'] = minimal_markers[o['cell_set_accession']]
                     if 'Brain_region_abbv' in taxonomy_config:
@@ -680,134 +650,6 @@ def generate_app_specific_template(taxonomy_file_path, output_filepath):
             d['cell_set_color'] = str(o["cell_set_color"]).strip()
             dl.append(d)
 
-    robot_template = pd.DataFrame.from_records(dl)
-    robot_template.to_csv(output_filepath, sep="\t", index=False)
-
-
-def generate_obsolete_ind_template(taxonomy_file_path, centralized_data_folder, output_filepath):
-    """
-    Individuals with PCL IDs are obsoleted (now using accession ID)
-    Args:
-        taxonomy_file_path:
-        centralized_data_folder:
-        output_filepath:
-
-    Returns:
-    """
-    path_parts = taxonomy_file_path.split(os.path.sep)
-    taxon = path_parts[len(path_parts) - 1].split(".")[0]
-
-    if str(taxonomy_file_path).endswith(".json"):
-        dend = dend_json_2_nodes_n_edges(taxonomy_file_path)
-    else:
-        dend = nomenclature_2_nodes_n_edges(taxonomy_file_path)
-        taxon = path_parts[len(path_parts) - 1].split(".")[0].replace("nomenclature_table_", "")
-
-    dend_tree = generate_dendrogram_tree(dend)
-    taxonomy_config = read_taxonomy_config(taxon)
-
-    taxonomy_folder_name = get_centralized_taxonomy_folder(taxonomy_config)
-    allen_desc_file = ALLEN_DESCRIPTIONS_PATH.format(centralized_data_folder, taxonomy_folder_name,
-                                                     taxonomy_config['Species_abbv'][0])
-    allen_descriptions = read_allen_descriptions(allen_desc_file)
-
-    robot_template_seed = {'ID': 'ID',
-                           'Label': 'LABEL',
-                           'PrefLabel': 'A skos:prefLabel',
-                           'Obsoleted By': 'AI obo:IAO_0100001',
-                           'Obsolete': 'AT owl:deprecated^^xsd:boolean',
-                           'Entity Type': 'TI %',
-                           'TYPE': 'TYPE',
-                           'Synonyms': 'A oboInOwl:hasExactSynonym SPLIT=|',
-                           'Cluster_ID': "A 'cluster id'",
-                           'cell_set_preferred_alias': "A n2o:cell_set_preferred_alias",
-                           'original_label': "A n2o:original_label",
-                           'cell_set_label': "A n2o:cell_set_label",
-                           'cell_set_aligned_alias': "A n2o:cell_set_aligned_alias",
-                           'cell_set_additional_aliases': "A n2o:cell_set_additional_aliases SPLIT=|",
-                           'cell_set_alias_assignee': "A n2o:cell_set_alias_assignee SPLIT=|",
-                           'cell_set_alias_citation': "A n2o:cell_set_alias_citation SPLIT=|",
-                           'Metadata': "A n2o:node_metadata",
-                           'Comment': "A rdfs:comment",
-                           'Aliases': "A oboInOwl:hasRelatedSynonym SPLIT=|",
-                           'Rank': "A 'cell_type_rank' SPLIT=|"
-                           }
-    dl = [robot_template_seed]
-
-    synonym_properties = ['cell_set_aligned_alias',
-                          'cell_set_additional_aliases']
-
-    for o in dend['nodes']:
-        d = dict()
-        d['ID'] = 'PCL:' + get_individual_id(o['cell_set_accession'])
-        d['TYPE'] = 'owl:NamedIndividual'
-        d['Comment'] = 'This term has been obsoleted and replaced with updated by an updated term from the ' \
-                       'Brain Data Standards ontology, please see \'term replaced by\' axiom to for the new term.'
-        d['Obsoleted By'] = 'PCL_INDV:' + o['cell_set_accession']
-        d['Obsolete'] = 'true'
-        d['Label'] = 'obsolete ' + o['cell_set_label'] + ' - ' + o['cell_set_accession']
-        if 'cell_set_preferred_alias' in o and o['cell_set_preferred_alias']:
-            d['PrefLabel'] = 'obsolete ' + o['cell_set_preferred_alias']
-        else:
-            d['PrefLabel'] = 'obsolete ' + o['cell_set_accession']
-        d['Entity Type'] = 'PCL:0010001'  # Cluster
-        d['Metadata'] = json.dumps(o)
-        d['Synonyms'] = '|'.join([o[prop] for prop in synonym_properties if prop in o.keys() and o[prop]])
-        meta_properties = ['cell_set_preferred_alias', 'original_label', 'cell_set_label', 'cell_set_aligned_alias',
-                           'cell_set_additional_aliases', 'cell_set_alias_assignee', 'cell_set_alias_citation']
-        for prop in meta_properties:
-            if prop in o.keys():
-                d[prop] = '|'.join([prop_val.strip() for prop_val in str(o[prop]).split("|") if prop_val])
-            else:
-                d[prop] = ''
-        d['Cluster_ID'] = o['cell_set_accession']
-
-        if "cell_type_card" in o:
-            d['Rank'] = '|'.join([cell_type.strip().replace("No", "None")
-                                  for cell_type in str(o["cell_type_card"]).split(",")])
-
-        if o['cell_set_accession'] in allen_descriptions:
-            allen_data = allen_descriptions[o['cell_set_accession']]
-            if allen_data["aliases"][0]:
-                d['Aliases'] = '|'.join([alias.strip() for alias in str(allen_data["aliases"][0]).split("|")])
-
-        dl.append(d)
-
-    robot_template = pd.DataFrame.from_records(dl)
-    robot_template.to_csv(output_filepath, sep="\t", index=False)
-
-
-def generate_obsolete_taxonomies_template(centralized_data_folder, output_filepath):
-    """
-    Taxonomy nodes with PCL IDs are obsoleted (now using accession ID)
-    """
-    taxon_configs = read_taxonomy_details_yaml()
-
-    robot_template_seed = {'ID': 'ID',
-                           'TYPE': 'TYPE',
-                           'Entity Type': 'TI %',
-                           'Label': 'LABEL',
-                           'Obsoleted By': 'AI obo:IAO_0100001',
-                           'Obsolete': 'AT owl:deprecated^^xsd:boolean',
-                           'Comment': "A rdfs:comment",
-                           'Anatomic Region': "A 'has_brain_region'",
-                           'Primary Citation': "A oboInOwl:hasDbXref"
-                           }
-    dl = [robot_template_seed]
-
-    for taxon_config in taxon_configs:
-        d = dict()
-        d['ID'] = 'PCL:' + get_taxonomy_id(taxon_config["Taxonomy_id"])
-        d['TYPE'] = 'owl:NamedIndividual'
-        d['Entity Type'] = 'PCL:0010002'  # Taxonomy
-        d['Label'] = 'obsolete ' + taxon_config["Taxonomy_id"]
-        d['Comment'] = 'This term has been obsoleted and replaced with updated by an updated term from the ' \
-                       'Brain Data Standards ontology, please see \'term replaced by\' axiom to for the new term.'
-        d['Obsoleted By'] = 'PCL_INDV:' + taxon_config["Taxonomy_id"]
-        d['Obsolete'] = 'true'
-        d['Anatomic Region'] = taxon_config['Brain_region'][0]
-        d['Primary Citation'] = taxon_config['PMID'][0]
-        dl.append(d)
     robot_template = pd.DataFrame.from_records(dl)
     robot_template.to_csv(output_filepath, sep="\t", index=False)
 
