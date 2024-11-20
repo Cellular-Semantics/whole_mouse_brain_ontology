@@ -1,0 +1,251 @@
+{
+  "graphs" : [ {
+    "id" : "http://purl.obolibrary.org/obo/pcl/wmbo-simple.json",
+    "meta" : {
+      "basicPropertyValues" : [ {
+        "pred" : "http://purl.org/dc/elements/1.1/title",
+        "val" : "Full Mouse Brain Ontology"
+      }, {
+        "pred" : "http://purl.org/dc/terms/license",
+        "val" : "http://creativecommons.org/licenses/by/4.0/"
+      }, {
+        "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
+        "val" : "2024-11-20"
+      } ],
+      "version" : "http://purl.obolibrary.org/obo/pcl/releases/2024-11-20/wmbo-simple.json"
+    },
+    "nodes" : [ {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002100",
+      "lbl" : "has soma location",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "Relation between a neuron and a material anatomical entity that its soma is part of."
+        },
+        "xrefs" : [ {
+          "val" : "RO:0002100"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002162",
+      "lbl" : "in taxon",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "x is in taxon y if an only if y is an organism, and the relationship between x and y is one of: part of (reflexive), developmentally preceded by, derives from, secreted by, expressed."
+        },
+        "comments" : [ "Connects a biological entity to its taxon of origin." ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002215",
+      "lbl" : "capable of",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. "
+        },
+        "xrefs" : [ {
+          "val" : "RO:0002215"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002292",
+      "lbl" : "expresses",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "y expresses x if and only if there is a gene expression process (GO:0010467) that occurs in y, and one of the following holds: (i) x is a gene, and x is transcribed into a transcript as part of the gene expression process (ii) x is a transcript, and x was transcribed from a gene as part of the gene expression process (iii) x is a mature gene product (protein or RNA), and x was translated or otherwise processed from a transcript that was transcribed as part of the gene expression process."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0015001",
+      "lbl" : "has exemplar data",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "A relation between a material entity and some data in which the data is taken as exemplifying the material entity."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0015002",
+      "lbl" : "exemplar data of",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0015003",
+      "lbl" : "subcluster of",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "A relation between a group and another group it is part of but does not fully constitute."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0015004",
+      "lbl" : "has characterizing marker set",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "A relation that applies between a cell type and a set of markers that can be used to uniquely identify that cell type."
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "has marker gene combination"
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "has marker signature set"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000028",
+      "lbl" : "symbol",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000115",
+      "lbl" : "definition",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PCL_0010051",
+      "lbl" : "cell_type_rank",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PCL_0010052",
+      "lbl" : "cell_types_count",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PCL_0010053",
+      "lbl" : "cell_subclasses_count",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PCL_0010054",
+      "lbl" : "cell_classes_count",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PCL_0010055",
+      "lbl" : "has_age",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PCL_0010056",
+      "lbl" : "has_sex",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PCL_0010057",
+      "lbl" : "has_brain_region",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PCL_0010058",
+      "lbl" : "has nsforest marker",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PCL_0010059",
+      "lbl" : "cluster id",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PCL_0010060",
+      "lbl" : "cell_count",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PCL_0010061",
+      "lbl" : "nuclei_count",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PCL_0010062",
+      "lbl" : "fbeta_confidence_score",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PCL_0010063",
+      "lbl" : "some_soma_located_in",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/elements/1.1/contributor",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/elements/1.1/description",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/elements/1.1/title",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/description",
+      "lbl" : "description",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/license",
+      "lbl" : "license",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "xrefs" : [ {
+          "val" : "http://purl.org/dc/terms/license"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.org/dc/terms/provenance",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/relation",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/subject",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/title",
+      "lbl" : "title",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    } ],
+    "edges" : [ {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0015001",
+      "pred" : "inverseOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0015002"
+    } ],
+    "propertyChainAxioms" : [ {
+      "predicateId" : "http://purl.obolibrary.org/obo/RO_0002162",
+      "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/RO_0002215", "http://purl.obolibrary.org/obo/RO_0002162" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/RO_0015001",
+      "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/RO_0015001", "http://purl.obolibrary.org/obo/RO_0015003" ]
+    } ]
+  } ]
+}

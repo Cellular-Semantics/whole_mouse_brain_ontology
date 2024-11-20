@@ -207,6 +207,9 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                     d['marker_gene_set'] = PCL_PREFIX + id_factory.get_marker_gene_set_id(o['cell_set_accession'])
                 else:
                     d['marker_gene_set'] = ""
+                for i in range(1, 8):
+                    d[("MBA_" + str(i))] = ''
+                    d[("MBA_" + str(i)) + "_comment"] = ''
                 # if "MBA" in o and o["MBA"]:
                 #     mbas = [mba.strip().replace("http://purl.obolibrary.org/obo/MBA_", "MBA:")
                 #             for mba in str(o["MBA"]).split("|") if mba and mba.strip()]

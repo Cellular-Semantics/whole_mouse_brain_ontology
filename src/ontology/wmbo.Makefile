@@ -5,7 +5,7 @@
 
 #IMPORTS += simple_human simple_marmoset
 
-JOBS = CS202212150
+JOBS = CCN20230722
 #GENE_LIST = ensmusg simple_human simple_marmoset
 GENE_LIST = ensmusg
 BDS_BASE = http://purl.obolibrary.org/obo/
@@ -15,7 +15,7 @@ TSV_CLASS_FILES = $(patsubst %, $(TMPDIR)/%_class.tsv, $(JOBS))
 #TSV_CLASS_HOMOLOGOUS_FILES = $(patsubst %, ../patterns/data/default/%_class_homologous.tsv, $(JOBS))
 #TSV_MARKER_SET_FILES = $(patsubst %, ../patterns/data/default/%_marker_set.tsv, $(JOBS))
 
-OWL_FILES = $(patsubst %, components/%.owl, $(JOBS))
+OWL_FILES = $(patsubst %, components/%_indv.owl, $(JOBS))
 OWL_CLASS_FILES = $(patsubst %, components/%_class.owl, $(JOBS))
 OWL_CLASS_HOMOLOGOUS_FILES = $(patsubst %, components/%_class_homologous.owl, $(JOBS))
 OWL_MARKER_SET_FILES = $(patsubst %, components/%_marker_set.owl, $(JOBS))
@@ -127,13 +127,13 @@ $(COMPONENTSDIR)/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES)
 
 .PRECIOUS: $(COMPONENTSDIR)/all_templates.owl
 
-components/%.owl: ../templates/%.tsv $(SRC)
+$(COMPONENTSDIR)/%_indv.owl: ../templates/%.tsv $(SRC)
 	$(ROBOT) template --input $(SRC) --template $< \
     		--add-prefixes template_prefixes.json \
     		annotate --ontology-iri ${BDS_BASE}$@ \
     		convert --format ofn --output $@
 
-components/%_class.owl: $(TMPDIR)/%_class.tsv $(PATTERNDIR)/dosdp-patterns/taxonomy_class.yaml $(SRC)
+$(COMPONENTSDIR)/%_class.owl: $(TMPDIR)/%_class.tsv $(PATTERNDIR)/dosdp-patterns/taxonomy_class.yaml $(SRC)
 	$(DOSDPT) generate --catalog=catalog-v001.xml --prefixes=template_prefixes.yaml \
         --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_class.yaml \
         --ontology=$(SRC) --obo-prefixes=true --outfile=$@
@@ -247,6 +247,42 @@ reason_test: $(EDIT_PREPROCESSED)
 	#$(ROBOT) explain --input $< --reasoner ELK -M unsatisfiability --unsatisfiable all --explanation explain.md --output explain.ofn
 	#$(ROBOT) reason --input $< --reasoner ELK --equivalent-classes-allowed asserted-only \
 #			--output test.owl && rm test.owl
-	$(ROBOT) --add-prefixes template_prefixes.json merge --input $< remove --term https://purl.brain-bican.org/ontology/mbao/MBA_967 --term MBA:901 --term MBA:813 --term MBA:717 --term MBA:808 --term MBA:917 \
-		reason --reasoner ELK --equivalent-classes-allowed asserted-only \
+	$(ROBOT) --add-prefixes template_prefixes.json merge --input $< remove --term https://purl.brain-bican.org/ontology/mbao/MBA_967 --term https://purl.brain-bican.org/ontology/mbao/MBA_901 --term https://purl.brain-bican.org/ontology/mbao/MBA_813 --term https://purl.brain-bican.org/ontology/mbao/MBA_717 --term https://purl.brain-bican.org/ontology/mbao/MBA_808 --term https://purl.brain-bican.org/ontology/mbao/MBA_917  --term https://purl.brain-bican.org/ontology/mbao/MBA_997 --term https://purl.brain-bican.org/ontology/mbao/MBA_632 \
+		reason --reasoner ELK \
 		--output test.owl && rm test.owl
+
+#TODO: removing unsat MBA classes and removing asserted equivalent classes restriction
+# 'remove --base-iri' constraint relaxed
+$(ONT)-base.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(IMPORT_FILES)
+	$(ROBOT_RELEASE_IMPORT_MODE) \
+	remove --term https://purl.brain-bican.org/ontology/mbao/MBA_967 --term https://purl.brain-bican.org/ontology/mbao/MBA_901 --term https://purl.brain-bican.org/ontology/mbao/MBA_813 --term https://purl.brain-bican.org/ontology/mbao/MBA_717 --term https://purl.brain-bican.org/ontology/mbao/MBA_808 --term https://purl.brain-bican.org/ontology/mbao/MBA_917  --term https://purl.brain-bican.org/ontology/mbao/MBA_997 \
+	reason --reasoner ELK --exclude-tautologies structural --annotate-inferred-axioms False \
+	relax \
+	reduce -r ELK \
+	remove --base-iri $(URIBASE)/WMBO --base-iri $(URIBASE)/PCL --base-iri $(URIBASE)/pcl/CS20230722 --axioms external --preserve-structure false --trim false \
+	$(SHARED_ROBOT_COMMANDS) \
+	annotate --link-annotation http://purl.org/dc/elements/1.1/type http://purl.obolibrary.org/obo/IAO_8000001 \
+		--ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+		--output $@.tmp.owl && mv $@.tmp.owl $@
+# Full: The full artefacts with imports merged, reasoned.
+$(ONT)-full.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(IMPORT_FILES)
+	$(ROBOT_RELEASE_IMPORT_MODE) \
+		remove --term https://purl.brain-bican.org/ontology/mbao/MBA_967 --term https://purl.brain-bican.org/ontology/mbao/MBA_901 --term https://purl.brain-bican.org/ontology/mbao/MBA_813 --term https://purl.brain-bican.org/ontology/mbao/MBA_717 --term https://purl.brain-bican.org/ontology/mbao/MBA_808 --term https://purl.brain-bican.org/ontology/mbao/MBA_917  --term https://purl.brain-bican.org/ontology/mbao/MBA_997 \
+		reason --reasoner ELK --exclude-tautologies structural \
+		relax \
+		reduce -r ELK \
+		$(SHARED_ROBOT_COMMANDS) annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
+# foo-simple: (edit->reason,relax,reduce,drop imports, drop every axiom which contains an entity outside the "namespaces of interest")
+# drop every axiom: filter --term-file keep_terms.txt --trim true
+#	remove --select imports --trim false
+$(ONT)-simple.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(SIMPLESEED) $(IMPORT_FILES)
+	$(ROBOT_RELEASE_IMPORT_MODE) \
+		remove --term https://purl.brain-bican.org/ontology/mbao/MBA_967 --term https://purl.brain-bican.org/ontology/mbao/MBA_901 --term https://purl.brain-bican.org/ontology/mbao/MBA_813 --term https://purl.brain-bican.org/ontology/mbao/MBA_717 --term https://purl.brain-bican.org/ontology/mbao/MBA_808 --term https://purl.brain-bican.org/ontology/mbao/MBA_917  --term https://purl.brain-bican.org/ontology/mbao/MBA_997 \
+		reason --reasoner ELK --exclude-tautologies structural --annotate-inferred-axioms False \
+		relax \
+		remove --axioms equivalent \
+		relax \
+		filter --term-file $(SIMPLESEED) --select "annotations ontology anonymous self" --trim true --signature true \
+		reduce -r ELK \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru \
+		$(SHARED_ROBOT_COMMANDS) annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
