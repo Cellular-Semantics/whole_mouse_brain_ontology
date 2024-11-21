@@ -5,7 +5,7 @@ import requests
 from pathlib import Path
 import pandas as pd
 from template_generation_utils import read_csv, read_csv_to_dict, read_taxonomy_details_yaml, index_dendrogram
-from dendrogram_tools import dend_json_2_nodes_n_edges
+from dendrogram_tools import cas_json_2_nodes_n_edges
 
 
 GENE_DB_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../templates/{}.tsv")
@@ -58,7 +58,7 @@ def normalize_raw_markers(raw_marker):
     print("Taxonomy ID: " + taxonomy_id)
     if taxonomy_id == "CS1908210":
         print("Read dendrogram: " + taxonomy_id)
-        dend = dend_json_2_nodes_n_edges(DENDROGRAM.format(taxonomy_id))
+        dend = cas_json_2_nodes_n_edges(DENDROGRAM.format(taxonomy_id))
         nomenclature_indexes = [
                                 index_dendrogram(dend, id_field_name="cell_set_preferred_alias", id_to_lower=True),
                                 # index_dendrogram(dend, id_field_name="cell_set_aligned_alias", id_to_lower=True),

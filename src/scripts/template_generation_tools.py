@@ -3,7 +3,7 @@ import json
 import os
 import logging
 
-from dendrogram_tools import dend_json_2_nodes_n_edges, read_json_file
+from dendrogram_tools import cas_json_2_nodes_n_edges, read_json_file
 from template_generation_utils import get_synonyms_from_taxonomy, read_taxonomy_config, \
     get_subtrees, generate_dendrogram_tree, read_taxonomy_details_yaml, read_csv_to_dict,\
     read_csv, read_gene_data, read_markers, get_gross_cell_type, merge_tables, read_allen_descriptions, \
@@ -45,7 +45,7 @@ def generate_ind_template(taxonomy_file_path, output_filepath):
     # path_parts = taxonomy_file_path.split(os.path.sep)
     # taxon = path_parts[len(path_parts) - 1].split(".")[0]
 
-    dend = dend_json_2_nodes_n_edges(taxonomy_file_path)
+    dend = cas_json_2_nodes_n_edges(taxonomy_file_path)
     id_factory = PCLIdFactory(read_json_file(taxonomy_file_path))
 
     # dend_tree = generate_dendrogram_tree(dend)
@@ -109,7 +109,7 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
     taxonomy_config = read_taxonomy_config(taxon)
 
     if taxonomy_config:
-        dend = dend_json_2_nodes_n_edges(taxonomy_file_path)
+        dend = cas_json_2_nodes_n_edges(taxonomy_file_path)
         id_factory = PCLIdFactory(read_json_file(taxonomy_file_path))
         # dend_tree = generate_dendrogram_tree(dend)
         # subtrees = get_subtrees(dend_tree, taxonomy_config)
@@ -160,8 +160,9 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
             if o['cell_set_accession']:
                 d = dict()
                 d['defined_class'] = PCL_BASE + id_factory.get_class_id(o['cell_set_accession'])
-                if o.get('cell_fullname'):
-                    d['prefLabel'] = o['cell_fullname']
+                d['prefLabel'] = o['cell_label']
+                # if o.get('cell_fullname'):
+                #     d['prefLabel'] = o['cell_fullname']
                 d['Synonyms_from_taxonomy'] = "|".join(sorted(o.get("synonyms", [])))
                 d['Gross_cell_type'] = get_gross_cell_type(o['cell_set_accession'], dend['nodes'])
                 d['Taxon'] = taxonomy_config['Species'][0]
@@ -283,7 +284,7 @@ def generate_curated_class_template(taxonomy_file_path, output_filepath):
     taxonomy_config = read_taxonomy_config(taxon)
 
     if taxonomy_config:
-        dend = dend_json_2_nodes_n_edges(taxonomy_file_path)
+        dend = cas_json_2_nodes_n_edges(taxonomy_file_path)
         id_factory = PCLIdFactory(read_json_file(taxonomy_file_path))
 
         # dend_tree = generate_dendrogram_tree(dend)
@@ -338,7 +339,7 @@ def generate_homologous_to_template(taxonomy_file_path, all_base_files, output_f
     other_taxonomy_aliases = index_base_files([t for t in all_base_files if taxon not in t])
 
     if taxonomy_config:
-        dend = dend_json_2_nodes_n_edges(taxonomy_file_path)
+        dend = cas_json_2_nodes_n_edges(taxonomy_file_path)
         id_factory = PCLIdFactory(read_json_file(taxonomy_file_path))
 
         dend_tree = generate_dendrogram_tree(dend)
@@ -409,7 +410,7 @@ def generate_cross_species_template(taxonomy_file_path, output_filepath):
     taxonomy_config = read_taxonomy_config(taxon)
 
     if taxonomy_config:
-        dend = dend_json_2_nodes_n_edges(taxonomy_file_path)
+        dend = cas_json_2_nodes_n_edges(taxonomy_file_path)
         id_factory = PCLIdFactory(read_json_file(taxonomy_file_path))
 
         dend_tree = generate_dendrogram_tree(dend)
@@ -578,7 +579,7 @@ def generate_marker_gene_set_template(taxonomy_file_path, centralized_data_folde
     taxonomy_config = read_taxonomy_config(taxon)
 
     if taxonomy_config:
-        dend = dend_json_2_nodes_n_edges(taxonomy_file_path)
+        dend = cas_json_2_nodes_n_edges(taxonomy_file_path)
         id_factory = PCLIdFactory(read_json_file(taxonomy_file_path))
 
         dend_tree = generate_dendrogram_tree(dend)
@@ -635,7 +636,7 @@ def generate_marker_gene_set_template(taxonomy_file_path, centralized_data_folde
 
 def generate_app_specific_template(taxonomy_file_path, output_filepath):
     if str(taxonomy_file_path).endswith(".json"):
-        dend = dend_json_2_nodes_n_edges(taxonomy_file_path)
+        dend = cas_json_2_nodes_n_edges(taxonomy_file_path)
     else:
         dend = nomenclature_2_nodes_n_edges(taxonomy_file_path)
 

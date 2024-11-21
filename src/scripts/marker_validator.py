@@ -4,7 +4,7 @@ import logging
 import argparse
 import csv
 
-from dendrogram_tools import dend_json_2_nodes_n_edges
+from dendrogram_tools import cas_json_2_nodes_n_edges
 from template_generation_utils import read_tsv, index_dendrogram, read_csv_to_dict
 from nomenclature_tools import nomenclature_2_nodes_n_edges
 from abc import ABC, abstractmethod, ABCMeta
@@ -141,7 +141,7 @@ class DendrogramCrossChecker(SoftChecker):
                 if os.path.exists(dendrogram_path):
                     marker_records = read_tsv(join(MARKERS_FOLDER, marker_file))
                     if str(dendrogram_path).endswith(".json"):
-                        dend = dend_json_2_nodes_n_edges(dendrogram_path)
+                        dend = cas_json_2_nodes_n_edges(dendrogram_path)
                     else:
                         dend = nomenclature_2_nodes_n_edges(dendrogram_path)
                     self.check_all_nodes_exist(dend, marker_records, marker_file)
@@ -178,7 +178,7 @@ class TaxonomyNodeIdChecker(StrictChecker):
                 if os.path.exists(dendrogram_path):
                     headers, marker_records = read_csv_to_dict(join(MARKERS_FOLDER, marker_file), delimiter="\t")
                     if str(dendrogram_path).endswith(".json"):
-                        dend = dend_json_2_nodes_n_edges(dendrogram_path)
+                        dend = cas_json_2_nodes_n_edges(dendrogram_path)
                     else:
                         dend = nomenclature_2_nodes_n_edges(dendrogram_path)
                     dend_dict = index_dendrogram(dend)
@@ -227,7 +227,7 @@ class ClusterNameChecker(SoftChecker):
                 if os.path.exists(dendrogram_path):
                     headers, marker_records = read_csv_to_dict(join(MARKERS_FOLDER, marker_file), delimiter="\t")
                     if str(dendrogram_path).endswith(".json"):
-                        dend = dend_json_2_nodes_n_edges(dendrogram_path)
+                        dend = cas_json_2_nodes_n_edges(dendrogram_path)
                     else:
                         dend = nomenclature_2_nodes_n_edges(dendrogram_path)
                     dend_dict = index_dendrogram(dend)

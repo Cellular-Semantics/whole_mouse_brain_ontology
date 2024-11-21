@@ -4,7 +4,7 @@ import os
 import matplotlib.pyplot as plt
 from networkx.drawing.nx_agraph import graphviz_layout
 from networkx.algorithms.traversal.depth_first_search import dfs_tree
-from dendrogram_tools import dend_json_2_nodes_n_edges
+from dendrogram_tools import cas_json_2_nodes_n_edges
 from template_generation_utils import read_dendrogram_tree, index_dendrogram, generate_dendrogram_tree
 from marker_tools import read_marker_file
 from nomenclature_tools import nomenclature_2_nodes_n_edges

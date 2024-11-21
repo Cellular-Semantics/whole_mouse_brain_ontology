@@ -13,7 +13,7 @@ def read_json_file(file_path):
     with open(file_path, "r") as f:
         return json.load(f)
 
-def dend_json_2_nodes_n_edges(path_to_json):
+def cas_json_2_nodes_n_edges(path_to_json):
     j = read_json_file(path_to_json)
     out = {}
     tree_recurse(j, out)
