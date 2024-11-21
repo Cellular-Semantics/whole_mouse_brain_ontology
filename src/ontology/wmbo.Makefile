@@ -253,6 +253,7 @@ reason_test: $(EDIT_PREPROCESSED)
 
 #TODO: removing unsat MBA classes and removing asserted equivalent classes restriction
 # 'remove --base-iri' constraint relaxed
+# pcl id validator added
 $(ONT)-base.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(IMPORT_FILES)
 	$(ROBOT_RELEASE_IMPORT_MODE) \
 	remove --term https://purl.brain-bican.org/ontology/mbao/MBA_967 --term https://purl.brain-bican.org/ontology/mbao/MBA_901 --term https://purl.brain-bican.org/ontology/mbao/MBA_813 --term https://purl.brain-bican.org/ontology/mbao/MBA_717 --term https://purl.brain-bican.org/ontology/mbao/MBA_808 --term https://purl.brain-bican.org/ontology/mbao/MBA_917  --term https://purl.brain-bican.org/ontology/mbao/MBA_997 \
