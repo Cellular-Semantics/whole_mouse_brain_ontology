@@ -25,9 +25,11 @@ MARKER_PATH = '../markers/CS{}_markers.tsv'
 ALLEN_MARKER_PATH = "../markers/CS{}_Allen_markers.tsv"
 NOMENCLATURE_TABLE_PATH = '../dendrograms/nomenclature_table_{}.csv'
 ENSEMBLE_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../templates/{}.tsv")
-# CLUSTER_ANNOTATIONS_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)),
-#                                         '../dendrograms/supplementary/cluster_annotation_{}.tsv')
-NT_SYMBOLS_MAPPING = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../dendrograms/supplementary/Neurotransmitter_symbols_mapping.tsv")
+
+CLUSTER_ANNOTATIONS_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)),
+                                        '../dendrograms/supplementary/version2/cluster_annotation_CCN20230722.csv')
+NT_MAPPING = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../dendrograms/supplementary/version2/neurotransmitters.tsv")
+NT_SYMBOLS_MAPPING = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../dendrograms/supplementary/version2/Neurotransmitter_symbols_mapping.tsv")
 BRAIN_REGION_MAPPING = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../dendrograms/supplementary/Brain_region_mapping.tsv")
 
 CROSS_SPECIES_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)),
@@ -125,7 +127,8 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
             minimal_markers = {}
             allen_markers = {}
 
-        # cluster_annotations = read_csv_to_dict(CLUSTER_ANNOTATIONS_PATH.format(taxon), delimiter="\t")[1]
+        cluster_annotations = read_csv_to_dict(CLUSTER_ANNOTATIONS_PATH, id_column_name="cell_set_accession.cluster")[1]
+        neurotransmitters = read_csv_to_dict(NT_MAPPING, delimiter="\t")[1]
         nt_symbols_mapping = read_csv_to_dict(NT_SYMBOLS_MAPPING, delimiter="\t")[1]
         brain_region_mapping = read_csv_to_dict(BRAIN_REGION_MAPPING, delimiter="\t")[1]
 
@@ -236,40 +239,39 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
 
                 # CS202212150_1 -> 1
                 # cluster_index = str(o['cell_set_accession']).replace(taxon + "_", "")
-                # if cluster_index in cluster_annotations:
-                #     nt_symbols = cluster_annotations[cluster_index]["nt_type_label"].split("-")
-                #     # TODO add evidence comment "inferred to be {x}-ergic based on expression of {y}"
-                #     if nt_symbols:
-                #         d['NT'] = "|".join(
-                #             [nt_symbols_mapping[nt_symbol]["CELL TYPE NEUROTRANSMISSION ID"] if nt_symbol != "NA" else "" for
-                #              nt_symbol in nt_symbols])
-                #         nt_markers_str = cluster_annotations[cluster_index]["nt.markers"].split(",")
-                #         d['NT_markers'] = "|".join(
-                #             [find_marker(gene_names, nt_marker.split(":")[0].strip()) if nt_marker != "NA" else "" for
-                #              nt_marker in nt_markers_str])
-                #     else:
-                #         d['NT'] = ""
-                #         d['NT_markers'] = ""
-                    d['NT'] = ""
-                    d['NT_markers'] = ""
+                d['NT'] = ""
+                d['NT_markers'] = ""
+                if o['cell_set_accession'] in neurotransmitters:
+                    nt_symbol = neurotransmitters[o['cell_set_accession']]["neurotransmitter_label"]
+                    # TODO add evidence comment "inferred to be {x}-ergic based on expression of {y}"
+                    if nt_symbol in nt_symbols_mapping:
+                        d['NT'] = nt_symbols_mapping.get(nt_symbol)["CELL TYPE NEUROTRANSMISSION ID"]
+                        # nt_markers_str = cluster_annotations[cluster_index]["nt.markers"].split(",")
+                        # d['NT_markers'] = "|".join(
+                        #     [find_marker(gene_names, nt_marker.split(":")[0].strip()) if nt_marker != "NA" else "" for
+                        #      nt_marker in nt_markers_str])
+                        d['NT_markers'] = ""
+                if o['cell_set_accession'] in cluster_annotations:
+                    nt_markers = cluster_annotations[o['cell_set_accession']]["nt.markers"]
+                    d['NT_markers'] = "|".join([entry.split(':')[0] for entry in nt_markers.split(",") if entry])
 
-                    # if o['cell_set_accession'] in brain_region_mapping:
-                    #     d['MBA'] = brain_region_mapping[o['cell_set_accession']]["TENTATIVE_MBA_ID"].replace("http://purl.obolibrary.org/obo/MBA_", "MBA:")
-                    #     index = 1
-                    #
-                    #     if brain_region_mapping[o['cell_set_accession']]["TENTATIVE_MBA_ID"]:
-                    #         tentative_regions = brain_region_mapping[o['cell_set_accession']]["TENTATIVE_MBA_ID"].split("|")
-                    #         for tentative_region in tentative_regions:
-                    #             d['MBA_' + str(index)] = tentative_region.replace("http://purl.obolibrary.org/obo/MBA_", "MBA:")
-                    #             d['MBA_' + str(index) + '_comment'] = "Location assignment based on tentative anatomical annotations."
-                    #             index += 1
-                    #
-                    #     if brain_region_mapping[o['cell_set_accession']]["MAX_DISSECTION_MBA_ID"]:
-                    #         max_dissection_regions = brain_region_mapping[o['cell_set_accession']]["MAX_DISSECTION_MBA_ID"].split("|")
-                    #         for max_dissection_region in max_dissection_regions:
-                    #             d['MBA_' + str(index)] = max_dissection_region.replace("http://purl.obolibrary.org/obo/MBA_", "MBA:")
-                    #             d['MBA_' + str(index) + '_comment'] = "Location assignment based on max dissection region."
-                    #             index += 1
+                # if o['cell_set_accession'] in brain_region_mapping:
+                #     d['MBA'] = brain_region_mapping[o['cell_set_accession']]["TENTATIVE_MBA_ID"].replace("http://purl.obolibrary.org/obo/MBA_", "MBA:")
+                #     index = 1
+                #
+                #     if brain_region_mapping[o['cell_set_accession']]["TENTATIVE_MBA_ID"]:
+                #         tentative_regions = brain_region_mapping[o['cell_set_accession']]["TENTATIVE_MBA_ID"].split("|")
+                #         for tentative_region in tentative_regions:
+                #             d['MBA_' + str(index)] = tentative_region.replace("http://purl.obolibrary.org/obo/MBA_", "MBA:")
+                #             d['MBA_' + str(index) + '_comment'] = "Location assignment based on tentative anatomical annotations."
+                #             index += 1
+                #
+                #     if brain_region_mapping[o['cell_set_accession']]["MAX_DISSECTION_MBA_ID"]:
+                #         max_dissection_regions = brain_region_mapping[o['cell_set_accession']]["MAX_DISSECTION_MBA_ID"].split("|")
+                #         for max_dissection_region in max_dissection_regions:
+                #             d['MBA_' + str(index)] = max_dissection_region.replace("http://purl.obolibrary.org/obo/MBA_", "MBA:")
+                #             d['MBA_' + str(index) + '_comment'] = "Location assignment based on max dissection region."
+                #             index += 1
 
                 for k in class_seed:
                     if not (k in d.keys()):
