@@ -10,6 +10,7 @@ JOBS = CCN20230722
 GENE_LIST = ensmusg
 BDS_BASE = http://purl.obolibrary.org/obo/
 ONTBASE=                    $(URIBASE)/pcl
+BICANBASE=                    https://purl.brain-bican.org/taxonomy
 
 TSV_CLASS_FILES = $(patsubst %, $(TMPDIR)/%_class.tsv, $(JOBS))
 #TSV_CLASS_HOMOLOGOUS_FILES = $(patsubst %, ../patterns/data/default/%_class_homologous.tsv, $(JOBS))
@@ -28,6 +29,8 @@ PCL_LEGACY_FILE = components/pcl-legacy.owl
 
 OWL_OBSOLETE_INDVS = $(patsubst %, components/%_obsolete_indvs.owl, $(JOBS))
 OWL_OBSOLETE_TAXONOMY_FILE = components/taxonomies_obsolete.owl
+
+CLEANFILES=$(MAIN_FILES) $(SRCMERGED) $(EDIT_PREPROCESSED) $(OWL_FILES) $(OWL_CLASS_FILES) $(COMPONENTSDIR)/wmb_taxonomy.owl
 
 # overriding to add prefixes
 $(PATTERNDIR)/pattern.owl: $(ALL_PATTERN_FILES)
@@ -117,9 +120,13 @@ mirror/ensmusg.owl: ../templates/ensmusg.tsv .FORCE
 #.PRECIOUS: mirror/simple_marmoset.owl
 #.PRECIOUS: imports/simple_marmoset_import.owl
 
+$(COMPONENTSDIR)/wmb_taxonomy.owl:
+	wget https://raw.githubusercontent.com/brain-bican/whole_mouse_brain_taxonomy/refs/heads/main/CCN20230722.rdf -O $(TMPDIR)/CCN20230722.rdf
+	$(ROBOT) query --input $(TMPDIR)/CCN20230722.rdf --update ../sparql/delete_taxonomy_annotations.ru --update ../sparql/inject_fix_taxonomy_properties.ru --output $@
+
 # merge all templates except application specific ones
 .PHONY: $(COMPONENTSDIR)/all_templates.owl
-$(COMPONENTSDIR)/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES)
+$(COMPONENTSDIR)/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES) $(COMPONENTSDIR)/wmb_taxonomy.owl
 	$(ROBOT) merge $(patsubst %, -i %, $(filter-out $(OWL_APP_SPECIFIC_FILES), $^)) \
 	 --collapse-import-closure false \
 	 annotate --ontology-iri ${BDS_BASE}$@  \
@@ -260,7 +267,7 @@ $(ONT)-base.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(IMPORT_FILES)
 	reason --reasoner ELK --exclude-tautologies structural --annotate-inferred-axioms False \
 	relax \
 	reduce -r ELK \
-	remove --base-iri $(URIBASE)/WMBO --base-iri $(URIBASE)/PCL --base-iri $(URIBASE)/pcl/CS20230722 --axioms external --preserve-structure false --trim false \
+	remove --base-iri $(URIBASE)/WMBO --base-iri $(URIBASE)/PCL --base-iri $(URIBASE)/pcl/CS20230722 --base-iri $(BICANBASE)/CCN20230722 --axioms external --preserve-structure false --trim false \
 	$(SHARED_ROBOT_COMMANDS) \
 	annotate --link-annotation http://purl.org/dc/elements/1.1/type http://purl.obolibrary.org/obo/IAO_8000001 \
 		--ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \

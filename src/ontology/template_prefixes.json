@@ -13,6 +13,8 @@
     "jcvi": "http://www.jcvi.org/framework/nsf2_full_mtg#",
     "schema": "http://schema.org/",
     "dcterms": "http://purl.org/dc/terms/",
-    "MBA": "http://purl.obolibrary.org/obo/MBA_"
+    "MBA": "https://purl.brain-bican.org/ontology/mbao/MBA_",
+    "BICAN_INDV": "https://purl.brain-bican.org/taxonomy/CCN20230722/",
+    "BICAN": "https://purl.brain-bican.org/taxonomy/"
   }
 }

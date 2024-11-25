@@ -10,9 +10,9 @@
         "val" : "http://creativecommons.org/licenses/by/4.0/"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2024-11-21"
+        "val" : "2024-11-25"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/pcl/releases/2024-11-21/wmbo-simple.json"
+      "version" : "http://purl.obolibrary.org/obo/pcl/releases/2024-11-25/wmbo-simple.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/RO_0002100",
@@ -60,6 +60,19 @@
         "definition" : {
           "val" : "y expresses x if and only if there is a gene expression process (GO:0010467) that occurs in y, and one of the following holds: (i) x is a gene, and x is transcribed into a transcript as part of the gene expression process (ii) x is a transcript, and x was transcribed from a gene as part of the gene expression process (iii) x is a mature gene product (protein or RNA), and x was translated or otherwise processed from a transcript that was transcribed as part of the gene expression process."
         }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002473",
+      "lbl" : "composed primarily of",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "x composed_primarily_of y if and only if more than half of the mass of x is made from y or units of the same type as y."
+        },
+        "xrefs" : [ {
+          "val" : "RO:0002473"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RO_0015001",
@@ -232,6 +245,46 @@
       "propertyType" : "ANNOTATION"
     }, {
       "id" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "https://purl.brain-bican.org/taxonomy/annotations",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "https://purl.brain-bican.org/taxonomy/author_annotation_fields",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "https://purl.brain-bican.org/taxonomy/author_name",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "https://purl.brain-bican.org/taxonomy/cell_ontology_term",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "https://purl.brain-bican.org/taxonomy/cellannotation_schema_version",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "https://purl.brain-bican.org/taxonomy/has_labelset",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "https://purl.brain-bican.org/taxonomy/labelsets",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "https://purl.brain-bican.org/taxonomy/orcid",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "https://purl.brain-bican.org/taxonomy/rank",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "https://purl.brain-bican.org/taxonomy/title",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     } ],

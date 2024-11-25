@@ -10,12 +10,13 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:taxonomy="https://purl.brain-bican.org/taxonomy/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pcl/wmbo-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pcl/releases/2024-11-21/wmbo-simple.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pcl/releases/2024-11-25/wmbo-simple.owl"/>
         <dc:title>Full Mouse Brain Ontology</dc:title>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
-        <owl:versionInfo>2024-11-21</owl:versionInfo>
+        <owl:versionInfo>2024-11-25</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -230,6 +231,66 @@
     
 
 
+    <!-- https://purl.brain-bican.org/taxonomy/annotations -->
+
+    <owl:AnnotationProperty rdf:about="https://purl.brain-bican.org/taxonomy/annotations"/>
+    
+
+
+    <!-- https://purl.brain-bican.org/taxonomy/author_annotation_fields -->
+
+    <owl:AnnotationProperty rdf:about="https://purl.brain-bican.org/taxonomy/author_annotation_fields"/>
+    
+
+
+    <!-- https://purl.brain-bican.org/taxonomy/author_name -->
+
+    <owl:AnnotationProperty rdf:about="https://purl.brain-bican.org/taxonomy/author_name"/>
+    
+
+
+    <!-- https://purl.brain-bican.org/taxonomy/cell_ontology_term -->
+
+    <owl:AnnotationProperty rdf:about="https://purl.brain-bican.org/taxonomy/cell_ontology_term"/>
+    
+
+
+    <!-- https://purl.brain-bican.org/taxonomy/cellannotation_schema_version -->
+
+    <owl:AnnotationProperty rdf:about="https://purl.brain-bican.org/taxonomy/cellannotation_schema_version"/>
+    
+
+
+    <!-- https://purl.brain-bican.org/taxonomy/has_labelset -->
+
+    <owl:AnnotationProperty rdf:about="https://purl.brain-bican.org/taxonomy/has_labelset"/>
+    
+
+
+    <!-- https://purl.brain-bican.org/taxonomy/labelsets -->
+
+    <owl:AnnotationProperty rdf:about="https://purl.brain-bican.org/taxonomy/labelsets"/>
+    
+
+
+    <!-- https://purl.brain-bican.org/taxonomy/orcid -->
+
+    <owl:AnnotationProperty rdf:about="https://purl.brain-bican.org/taxonomy/orcid"/>
+    
+
+
+    <!-- https://purl.brain-bican.org/taxonomy/rank -->
+
+    <owl:AnnotationProperty rdf:about="https://purl.brain-bican.org/taxonomy/rank"/>
+    
+
+
+    <!-- https://purl.brain-bican.org/taxonomy/title -->
+
+    <owl:AnnotationProperty rdf:about="https://purl.brain-bican.org/taxonomy/title"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -283,6 +344,16 @@
         <obo:IAO_0000115>y expresses x if and only if there is a gene expression process (GO:0010467) that occurs in y, and one of the following holds: (i) x is a gene, and x is transcribed into a transcript as part of the gene expression process (ii) x is a transcript, and x was transcribed from a gene as part of the gene expression process (iii) x is a mature gene product (protein or RNA), and x was translated or otherwise processed from a transcript that was transcribed as part of the gene expression process.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">expresses</rdfs:label>
         <rdfs:label>expresses</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002473 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002473">
+        <obo:IAO_0000115>x composed_primarily_of y if and only if more than half of the mass of x is made from y or units of the same type as y.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>RO:0002473</oboInOwl:hasDbXref>
+        <rdfs:label>composed primarily of</rdfs:label>
     </owl:ObjectProperty>
     
 

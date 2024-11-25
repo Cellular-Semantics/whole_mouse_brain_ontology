@@ -17,6 +17,7 @@ log = logging.getLogger(__name__)
 
 PCL_BASE = 'http://purl.obolibrary.org/obo/PCL_'
 PCL_INDV_BASE = 'http://purl.obolibrary.org/obo/pcl/'
+BICAN_INDV_BASE = 'https://purl.brain-bican.org/taxonomy/CCN20230722/'
 
 PCL_PREFIX = 'PCL:'
 
@@ -78,18 +79,18 @@ def generate_ind_template(taxonomy_file_path, output_filepath):
 
     for o in dend['nodes']:
         d = dict()
-        d['ID'] = 'PCL_INDV:' + o['cell_set_accession']
+        d['ID'] = 'BICAN_INDV:' + o['cell_set_accession']
         d['TYPE'] = 'owl:NamedIndividual'
-        d['Label'] = o['cell_label'] + ' - ' + o['cell_set_accession']
+        # d['Label'] = o['cell_label'] + ' - ' + o['cell_set_accession']
         if 'cell_set_preferred_alias' in o and o['cell_set_preferred_alias']:
             d['PrefLabel'] = o['cell_set_preferred_alias']
         else:
-            d['PrefLabel'] = o['cell_set_accession']
+            d['PrefLabel'] = o['cell_label'] + o['cell_set_accession']
         d['Entity Type'] = 'PCL:0010001'  # Cluster
         # d['Metadata'] = json.dumps(o)
         d['Synonyms'] = '|'.join(o.get('synonyms', []))
         d['Property Assertions'] = '|'.join(
-            sorted(['PCL_INDV:' + e[1] for e in dend['edges'] if e[0] == o['cell_set_accession']]))
+            sorted(['BICAN_INDV:' + e[1] for e in dend['edges'] if e[0] == o['cell_set_accession'] and e[1]]))
         meta_properties = ['cell_fullname']
         for prop in meta_properties:
             if prop in o.keys():
@@ -187,7 +188,7 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                     d['Brain_region_abbv'] = taxonomy_config['Brain_region_abbv'][0]
                 if 'Species_abbv' in taxonomy_config:
                     d['Species_abbv'] = taxonomy_config['Species_abbv'][0]
-                d['Individual'] = PCL_INDV_BASE + o['cell_set_accession']
+                d['Individual'] = BICAN_INDV_BASE + o['cell_set_accession']
 
                 # for index, subtree in enumerate(subtrees):
                 #     if o['cell_set_accession'] in subtree:
@@ -474,7 +475,7 @@ def generate_taxonomies_template(centralized_data_folder, output_filepath):
 
     for taxon_config in taxon_configs:
         d = dict()
-        d['ID'] = 'PCL_INDV:' + taxon_config["Taxonomy_id"]
+        d['ID'] = 'BICAN:' + taxon_config["Taxonomy_id"]
         d['TYPE'] = 'owl:NamedIndividual'
         d['Entity Type'] = 'PCL:0010002'  # Taxonomy
         d['Label'] = taxon_config["Taxonomy_id"]
@@ -649,7 +650,7 @@ def generate_app_specific_template(taxonomy_file_path, output_filepath):
     for o in dend['nodes']:
         if "cell_set_color" in o and o["cell_set_color"]:
             d = dict()
-            d['ID'] = 'PCL_INDV:' + o['cell_set_accession']
+            d['ID'] = 'BICAN_INDV:' + o['cell_set_accession']
             d['TYPE'] = 'owl:NamedIndividual'
             d['cell_set_color'] = str(o["cell_set_color"]).strip()
             dl.append(d)
