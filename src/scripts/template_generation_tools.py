@@ -2,6 +2,7 @@ import pandas as pd
 import json
 import os
 import logging
+from rdflib import Graph, Namespace, URIRef
 
 from dendrogram_tools import cas_json_2_nodes_n_edges, read_json_file
 from template_generation_utils import get_synonyms_from_taxonomy, read_taxonomy_config, \
@@ -11,6 +12,7 @@ from template_generation_utils import get_synonyms_from_taxonomy, read_taxonomy_
 from nomenclature_tools import nomenclature_2_nodes_n_edges
 from pcl_id_factory import PCLIdFactory
 from marker_tools import get_nsforest_confidences
+
 
 log = logging.getLogger(__name__)
 
@@ -34,6 +36,8 @@ BRAIN_REGION_MAPPING = os.path.join(os.path.dirname(os.path.realpath(__file__)),
 
 CROSS_SPECIES_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)),
                                   "../dendrograms/nomenclature_table_CCN202002270.csv")
+MBA_ONTOLOGY = os.path.join(os.path.dirname(os.path.realpath(__file__)),
+                                  "../ontology/mirror/mba.owl")
 
 # centralized data files
 ALLEN_DESCRIPTIONS_PATH = "{}/{}/All Descriptions_{}.json"
@@ -42,6 +46,9 @@ TAXONOMY_INFO_CSV = "{}/{}/{}_Taxonomy_Info_Panel.csv"
 NSFOREST_MARKER_CSV = "{}/NSForestMarkers/{}_{}_NSForest_Markers.csv"
 
 EXPRESSION_SEPARATOR = "|"
+
+ACRONYM_REGION = "CCF acronym region"
+BROAD_REGION = "CCF broad region"
 
 
 def generate_ind_template(taxonomy_file_path, output_filepath):
@@ -131,6 +138,7 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
         neurotransmitters = read_csv_to_dict(NT_MAPPING, delimiter="\t")[1]
         nt_symbols_mapping = read_csv_to_dict(NT_SYMBOLS_MAPPING, delimiter="\t")[1]
         brain_region_mapping = read_csv_to_dict(BRAIN_REGION_MAPPING, delimiter="\t")[1]
+        mba_symbols = get_mba_symbols_map()
 
         class_seed = ['defined_class',
                       'prefLabel',
@@ -212,18 +220,6 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                     d['marker_gene_set'] = PCL_PREFIX + id_factory.get_marker_gene_set_id(o['cell_set_accession'])
                 else:
                     d['marker_gene_set'] = ""
-                for i in range(1, 8):
-                    d[("MBA_" + str(i))] = ''
-                    d[("MBA_" + str(i)) + "_comment"] = ''
-                # if "MBA" in o and o["MBA"]:
-                #     mbas = [mba.strip().replace("http://purl.obolibrary.org/obo/MBA_", "MBA:")
-                #             for mba in str(o["MBA"]).split("|") if mba and mba.strip()]
-                #     d["MBA"] = "|".join(mbas)
-                #     for index, term in enumerate(mbas, start=1):
-                #         d["MBA_" + str(index)] = term
-                # if "NT" in o and o["NT"]:
-                #     neuro_transmitters = [nt.strip() for nt in str(o["NT"]).split("|") if nt and nt.strip()]
-                #     d['NT'] = "|".join(neuro_transmitters)
                 if "cell_ontology_term_id" in o and o["cell_ontology_term_id"]:
                     d['CL'] = o["cell_ontology_term_id"]
                 else:
@@ -246,14 +242,22 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                     # TODO add evidence comment "inferred to be {x}-ergic based on expression of {y}"
                     if nt_symbol in nt_symbols_mapping:
                         d['NT'] = nt_symbols_mapping.get(nt_symbol)["CELL TYPE NEUROTRANSMISSION ID"]
-                        # nt_markers_str = cluster_annotations[cluster_index]["nt.markers"].split(",")
-                        # d['NT_markers'] = "|".join(
-                        #     [find_marker(gene_names, nt_marker.split(":")[0].strip()) if nt_marker != "NA" else "" for
-                        #      nt_marker in nt_markers_str])
-                        d['NT_markers'] = ""
                 if o['cell_set_accession'] in cluster_annotations:
                     nt_markers = cluster_annotations[o['cell_set_accession']]["nt.markers"]
                     d['NT_markers'] = "|".join([entry.split(':')[0] for entry in nt_markers.split(",") if entry])
+
+                missed_regions = set()
+                if o['cell_set_accession'] in cluster_annotations:
+                    ccf_broad_freq = cluster_annotations[o['cell_set_accession']]["CCF_broad.freq"]
+                    ccf_acronym_freq = cluster_annotations[o['cell_set_accession']]["CCF_acronym.freq"]
+
+                    index = 1
+                    index = populate_mba_relations(ccf_broad_freq, BROAD_REGION, d, index, mba_symbols, missed_regions)
+                    populate_mba_relations(ccf_acronym_freq, ACRONYM_REGION, d, index, mba_symbols, missed_regions)
+
+                d['MBA_assay'] = "EFO:0008992"
+                for missed_region in missed_regions:
+                    print("MBA symbol not found for region: ", missed_region)
 
                 # if o['cell_set_accession'] in brain_region_mapping:
                 #     d['MBA'] = brain_region_mapping[o['cell_set_accession']]["TENTATIVE_MBA_ID"].replace("http://purl.obolibrary.org/obo/MBA_", "MBA:")
@@ -280,6 +284,28 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
 
         class_robot_template = pd.DataFrame.from_records(class_template)
         class_robot_template.to_csv(output_filepath, sep="\t", index=False)
+
+
+def populate_mba_relations(ccf_broad_freq, approach, d, index, mba_symbols, missed_regions):
+    regions = [{"region": item.split(":")[0].strip().lower(),
+                "percentage": float(item.split(":")[1].strip()) if ":" in item else 0}
+               for item in ccf_broad_freq.split(",")]
+    mbas = set()
+    for region in regions:
+        if region["percentage"] >= 0.05 and region["region"] != "na":
+            if region["region"] in mba_symbols:
+                d['MBA_' + str(index)] = mba_symbols[region["region"]]
+                d['MBA_' + str(index) + '_cell_percentage'] = region["percentage"]
+                # d['MBA_' + str(index) + '_assay'] = "EFO:0008992"
+                d['MBA_' + str(
+                    index) + '_comment'] = "Location assignment based on {}.".format(approach)
+                mbas.add(mba_symbols[region["region"]])
+                index += 1
+            else:
+                missed_regions.add(region["region"])
+    if approach == BROAD_REGION:
+        d['MBA'] = "|".join(mbas)
+    return index
 
 
 def generate_curated_class_template(taxonomy_file_path, output_filepath):
@@ -709,3 +735,17 @@ def find_marker(all_genes, marker_name):
             return gene_id
 
     raise ValueError("Marker not found: " + marker_name)
+
+def get_mba_symbols_map():
+    MBAO = Namespace("https://purl.brain-bican.org/ontology/mbao/MBA_")
+    OBOINOWL = Namespace("http://www.geneontology.org/formats/oboInOwl#")
+
+    g = Graph()
+    g.parse(MBA_ONTOLOGY, format="xml")
+
+    synonyms = {}
+    for s, p, o in g:
+        if str(s).startswith(str(MBAO)) and p == OBOINOWL.hasExactSynonym:
+            synonyms[str(o).strip().lower()] = "MBA:" + str(s).split("_")[-1]
+
+    return synonyms

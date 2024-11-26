@@ -31,6 +31,8 @@ annotationProperties:
   symbol: "IAO:0000028"
   'has nsforest marker': "PCL:0010058"
   some_soma_located_in: "PCL:0010063"
+  assay_label: "PCL:0010064"
+  cell_ratio: "PCL:0010065"
 
 list_vars:
   Expresses: "'thing'"
@@ -61,6 +63,14 @@ vars:
   MBA_5: "'thing'"
   MBA_6: "'thing'"
   MBA_7: "'thing'"
+  MBA_8: "'thing'"
+  MBA_9: "'thing'"
+  MBA_10: "'thing'"
+  MBA_11: "'thing'"
+  MBA_12: "'thing'"
+  MBA_13: "'thing'"
+  MBA_14: "'thing'"
+  MBA_assay: "'thing'"
 
 data_list_vars:
   Synonyms_from_taxonomy: "xsd:string"
@@ -86,6 +96,27 @@ data_vars:
   MBA_5_comment: "xsd:string"
   MBA_6_comment: "xsd:string"
   MBA_7_comment: "xsd:string"
+  MBA_8_comment: "xsd:string"
+  MBA_9_comment: "xsd:string"
+  MBA_10_comment: "xsd:string"
+  MBA_11_comment: "xsd:string"
+  MBA_12_comment: "xsd:string"
+  MBA_13_comment: "xsd:string"
+  MBA_14_comment: "xsd:string"
+  MBA_1_cell_percentage: "xsd:double"
+  MBA_2_cell_percentage: "xsd:double"
+  MBA_3_cell_percentage: "xsd:double"
+  MBA_4_cell_percentage: "xsd:double"
+  MBA_5_cell_percentage: "xsd:double"
+  MBA_6_cell_percentage: "xsd:double"
+  MBA_7_cell_percentage: "xsd:double"
+  MBA_8_cell_percentage: "xsd:double"
+  MBA_9_cell_percentage: "xsd:double"
+  MBA_10_cell_percentage: "xsd:double"
+  MBA_11_cell_percentage: "xsd:double"
+  MBA_12_cell_percentage: "xsd:double"
+  MBA_13_cell_percentage: "xsd:double"
+  MBA_14_cell_percentage: "xsd:double"
 
 internal_vars:
   - var_name: Minimal_markers_cat
@@ -306,6 +337,12 @@ annotations:
         text: "%s"
         vars:
           - MBA_1_comment
+      - annotationProperty: cell_ratio
+        text: "%s"
+        vars:
+          - MBA_1_cell_percentage
+      - annotationProperty: assay_label
+        var: MBA_assay
   - annotationProperty: some_soma_located_in
     var: MBA_2
     annotations:
@@ -313,6 +350,12 @@ annotations:
         text: "%s"
         vars:
           - MBA_2_comment
+      - annotationProperty: cell_ratio
+        text: "%s"
+        vars:
+          - MBA_2_cell_percentage
+      - annotationProperty: assay_label
+        var: MBA_assay
   - annotationProperty: some_soma_located_in
     var: MBA_3
     annotations:
@@ -320,6 +363,12 @@ annotations:
         text: "%s"
         vars:
           - MBA_3_comment
+      - annotationProperty: cell_ratio
+        text: "%s"
+        vars:
+          - MBA_3_cell_percentage
+      - annotationProperty: assay_label
+        var: MBA_assay
   - annotationProperty: some_soma_located_in
     var: MBA_4
     annotations:
@@ -327,6 +376,12 @@ annotations:
         text: "%s"
         vars:
           - MBA_4_comment
+      - annotationProperty: cell_ratio
+        text: "%s"
+        vars:
+          - MBA_4_cell_percentage
+      - annotationProperty: assay_label
+        var: MBA_assay
   - annotationProperty: some_soma_located_in
     var: MBA_5
     annotations:
@@ -334,6 +389,12 @@ annotations:
         text: "%s"
         vars:
           - MBA_5_comment
+      - annotationProperty: cell_ratio
+        text: "%s"
+        vars:
+          - MBA_5_cell_percentage
+      - annotationProperty: assay_label
+        var: MBA_assay
   - annotationProperty: some_soma_located_in
     var: MBA_6
     annotations:
@@ -341,6 +402,12 @@ annotations:
         text: "%s"
         vars:
           - MBA_6_comment
+      - annotationProperty: cell_ratio
+        text: "%s"
+        vars:
+          - MBA_6_cell_percentage
+      - annotationProperty: assay_label
+        var: MBA_assay
   - annotationProperty: some_soma_located_in
     var: MBA_7
     annotations:
@@ -348,3 +415,100 @@ annotations:
         text: "%s"
         vars:
           - MBA_7_comment
+      - annotationProperty: cell_ratio
+        text: "%s"
+        vars:
+          - MBA_7_cell_percentage
+      - annotationProperty: assay_label
+        var: MBA_assay
+  - annotationProperty: some_soma_located_in
+    var: MBA_8
+    annotations:
+      - annotationProperty: rdfsComment
+        text: "%s"
+        vars:
+          - MBA_8_comment
+      - annotationProperty: cell_ratio
+        text: "%s"
+        vars:
+          - MBA_8_cell_percentage
+      - annotationProperty: assay_label
+        var: MBA_assay
+  - annotationProperty: some_soma_located_in
+    var: MBA_9
+    annotations:
+      - annotationProperty: rdfsComment
+        text: "%s"
+        vars:
+          - MBA_9_comment
+      - annotationProperty: cell_ratio
+        text: "%s"
+        vars:
+          - MBA_9_cell_percentage
+      - annotationProperty: assay_label
+        var: MBA_assay
+  - annotationProperty: some_soma_located_in
+    var: MBA_10
+    annotations:
+      - annotationProperty: rdfsComment
+        text: "%s"
+        vars:
+          - MBA_10_comment
+      - annotationProperty: cell_ratio
+        text: "%s"
+        vars:
+          - MBA_10_cell_percentage
+      - annotationProperty: assay_label
+        var: MBA_assay
+  - annotationProperty: some_soma_located_in
+    var: MBA_11
+    annotations:
+      - annotationProperty: rdfsComment
+        text: "%s"
+        vars:
+          - MBA_11_comment
+      - annotationProperty: cell_ratio
+        text: "%s"
+        vars:
+          - MBA_11_cell_percentage
+      - annotationProperty: assay_label
+        var: MBA_assay
+  - annotationProperty: some_soma_located_in
+    var: MBA_12
+    annotations:
+      - annotationProperty: rdfsComment
+        text: "%s"
+        vars:
+          - MBA_12_comment
+      - annotationProperty: cell_ratio
+        text: "%s"
+        vars:
+          - MBA_12_cell_percentage
+      - annotationProperty: assay_label
+        var: MBA_assay
+  - annotationProperty: some_soma_located_in
+    var: MBA_13
+    annotations:
+      - annotationProperty: rdfsComment
+        text: "%s"
+        vars:
+          - MBA_13_comment
+      - annotationProperty: cell_ratio
+        text: "%s"
+        vars:
+          - MBA_13_cell_percentage
+      - annotationProperty: assay_label
+        var: MBA_assay
+  - annotationProperty: some_soma_located_in
+    var: MBA_14
+    annotations:
+      - annotationProperty: rdfsComment
+        text: "%s"
+        vars:
+          - MBA_14_comment
+      - annotationProperty: cell_ratio
+        text: "%s"
+        vars:
+          - MBA_14_cell_percentage
+      - annotationProperty: assay_label
+        var: MBA_assay

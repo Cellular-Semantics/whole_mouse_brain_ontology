@@ -28,6 +28,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PCL_0010002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PR_P60041>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000956>))
 Declaration(Class(<http://purl.obolibrary.org/obo/SO_0001260>))
+Declaration(Class(<http://www.ebi.ac.uk/efo/EFO_0008992>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002100>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002215>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002292>))
@@ -48,6 +49,8 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010060>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010061>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010062>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010063>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010064>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010065>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000028>))
 Declaration(AnnotationProperty(dce:contributor))
 Declaration(AnnotationProperty(dce:description))
@@ -114,6 +117,14 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010062> "fbe
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010063> "some_soma_located_in")
 
+# Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010064> (assay_label)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010064> "assay_label")
+
+# Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010065> (cell_ratio)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010065> "cell_ratio")
+
 
 ############################
 #   Object Properties
@@ -143,5 +154,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0015003> "subc
 ############################
 #   Classes
 ############################
+
+AnnotationAssertion(rdfs:label <http://www.ebi.ac.uk/efo/EFO_0008992> "MERFISH")
 
 )
