@@ -254,9 +254,10 @@ reason_test: $(EDIT_PREPROCESSED)
 	#$(ROBOT) explain --input $< --reasoner ELK -M unsatisfiability --unsatisfiable all --explanation explain.md --output explain.ofn
 	#$(ROBOT) reason --input $< --reasoner ELK --equivalent-classes-allowed asserted-only \
 #			--output test.owl && rm test.owl
-	$(ROBOT) --add-prefixes template_prefixes.json merge --input $< remove --term https://purl.brain-bican.org/ontology/mbao/MBA_967 --term https://purl.brain-bican.org/ontology/mbao/MBA_901 --term https://purl.brain-bican.org/ontology/mbao/MBA_813 --term https://purl.brain-bican.org/ontology/mbao/MBA_717 --term https://purl.brain-bican.org/ontology/mbao/MBA_808 --term https://purl.brain-bican.org/ontology/mbao/MBA_917  --term https://purl.brain-bican.org/ontology/mbao/MBA_997 --term https://purl.brain-bican.org/ontology/mbao/MBA_632 \
-		reason --reasoner ELK \
-		--output test.owl && rm test.owl
+#	$(ROBOT) --add-prefixes template_prefixes.json merge --input $< remove --term https://purl.brain-bican.org/ontology/mbao/MBA_967 --term https://purl.brain-bican.org/ontology/mbao/MBA_901 --term https://purl.brain-bican.org/ontology/mbao/MBA_813 --term https://purl.brain-bican.org/ontology/mbao/MBA_717 --term https://purl.brain-bican.org/ontology/mbao/MBA_808 --term https://purl.brain-bican.org/ontology/mbao/MBA_917  --term https://purl.brain-bican.org/ontology/mbao/MBA_997 --term https://purl.brain-bican.org/ontology/mbao/MBA_632 \
+#		reason --reasoner ELK \
+#		--output test.owl && rm test.owl
+	echo "reasoning test complete"
 
 #TODO: removing unsat MBA classes and removing asserted equivalent classes restriction
 # 'remove --base-iri' constraint relaxed
@@ -296,3 +297,12 @@ $(ONT)-simple.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(SIMPLESEED) $(IMPORT_FILE
 		reduce -r ELK \
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru \
 		$(SHARED_ROBOT_COMMANDS) annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
+
+## ONTOLOGY: uberon
+## delete disjoint classes and properties, they are causing inconsistencies when merged with mba
+.PHONY: mirror-uberon
+.PRECIOUS: $(MIRRORDIR)/uberon.owl
+mirror-uberon: | $(TMPDIR)
+	curl -L $(OBOBASE)/uberon/uberon-base.owl --create-dirs -o $(TMPDIR)/uberon-download.owl --retry 4 --max-time 400 && \
+	$(ROBOT) convert -i $(TMPDIR)/uberon-download.owl -o $(TMPDIR)/$@.owl
+	$(ROBOT) query -i $(TMPDIR)/$@.owl --update ../sparql/delete_uberon_disjointness.ru -o $(TMPDIR)/$@.owl

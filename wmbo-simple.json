@@ -10,9 +10,9 @@
         "val" : "http://creativecommons.org/licenses/by/4.0/"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2024-11-25"
+        "val" : "2024-11-29"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/pcl/releases/2024-11-25/wmbo-simple.json"
+      "version" : "http://purl.obolibrary.org/obo/pcl/releases/2024-11-29/wmbo-simple.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/RO_0002100",
@@ -189,6 +189,16 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/PCL_0010063",
       "lbl" : "some_soma_located_in",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PCL_0010064",
+      "lbl" : "assay_label",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PCL_0010065",
+      "lbl" : "cell_ratio",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
