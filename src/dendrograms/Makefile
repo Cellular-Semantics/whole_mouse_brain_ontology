@@ -4,8 +4,9 @@ SUPPLEMENTARY = supplementary
 TEMPLATE_FILES = $(patsubst %, ../templates/%.tsv, $(JOBS))
 TEMPLATE_CLASS_BASE_FILES = $(patsubst %, ../patterns/data/default/%_class_base.tsv, $(JOBS))
 TEMPLATE_CLASS_CURATION_FILES = $(patsubst %, ../patterns/data/default/%_class_curation.tsv, $(JOBS))
+TEMPLATE_MARKER_SET_FILES = $(patsubst %, ../patterns/data/default/%_marker_set.tsv, $(JOBS))
 
-all: $(TEMPLATE_FILES) $(TEMPLATE_CLASS_BASE_FILES) $(TEMPLATE_CLASS_CURATION_FILES)
+all: $(TEMPLATE_FILES) $(TEMPLATE_CLASS_BASE_FILES) $(TEMPLATE_CLASS_CURATION_FILES) $(TEMPLATE_MARKER_SET_FILES)
 
 CCN20230722.json:
 	wget https://purl.brain-bican.org/taxonomy/CCN20230722/CCN20230722.json -O $@
@@ -25,5 +26,8 @@ CCN20230722.json:
 
 $(SUPPLEMENTARY)/version2/neurotransmitters.tsv:
 	python ../scripts/supplementary_data_processor.py -nt -o $@
+
+../patterns/data/default/%_marker_set.tsv: %.json
+	python ../scripts/template_runner.py generator -ms -i $< -o $@
 
 

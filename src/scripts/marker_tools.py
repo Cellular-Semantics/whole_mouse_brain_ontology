@@ -243,3 +243,6 @@ def search_terms_in_index(term_variants, indexes):
             if term in index:
                 return index[term]
     return None
+
+def generate_allen_marker_template(taxonomy_file_path, output_filepath):
+    pass

@@ -3,6 +3,7 @@ import json
 import os
 import logging
 from rdflib import Graph, Namespace, URIRef
+from rdflib.namespace import RDFS
 
 from dendrogram_tools import cas_json_2_nodes_n_edges, read_json_file
 from template_generation_utils import get_synonyms_from_taxonomy, read_taxonomy_config, \
@@ -23,10 +24,11 @@ BICAN_INDV_BASE = 'https://purl.brain-bican.org/taxonomy/CCN20230722/'
 
 PCL_PREFIX = 'PCL:'
 
+TEMPLATES_FOLDER_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../templates/")
 MARKER_PATH = '../markers/CS{}_markers.tsv'
 ALLEN_MARKER_PATH = "../markers/CS{}_Allen_markers.tsv"
 NOMENCLATURE_TABLE_PATH = '../dendrograms/nomenclature_table_{}.csv'
-ENSEMBLE_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../templates/{}.tsv")
+ENSEMBLE_PATH = os.path.join(TEMPLATES_FOLDER_PATH, "{}.tsv")
 
 CLUSTER_ANNOTATIONS_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)),
                                         '../dendrograms/supplementary/version2/cluster_annotation_CCN20230722.csv')
@@ -139,6 +141,7 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
         nt_symbols_mapping = read_csv_to_dict(NT_SYMBOLS_MAPPING, delimiter="\t")[1]
         brain_region_mapping = read_csv_to_dict(BRAIN_REGION_MAPPING, delimiter="\t")[1]
         mba_symbols = get_mba_symbols_map()
+        mba_labels = get_mba_labels_map()
 
         class_seed = ['defined_class',
                       'prefLabel',
@@ -154,6 +157,8 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                       'Brain_region_abbv',
                       'Species_abbv',
                       'Cluster_ID',
+                      'Labelset',
+                      'Dataset_url',
                       'part_of',
                       'has_soma_location',
                       'aligned_alias',
@@ -163,7 +168,8 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                       'Nomenclature_Layers',
                       'Nomenclature_Projection',
                       'marker_gene_set',
-                      'MBA'
+                      'MBA',
+                      'MBA_text'
                       ]
         class_template = []
 
@@ -181,6 +187,8 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                 d['Taxon_abbv'] = taxonomy_config['Gene_abbv'][0]
                 d['Brain_region'] = taxonomy_config['Brain_region'][0]
                 d['Cluster_ID'] = o['cell_set_accession']
+                d['Labelset'] = o['labelset']
+                d['Dataset_url'] = "https://purl.brain-bican.org/taxonomy/CCN20230722"
                 if 'rationale_dois' in o and o['rationale_dois']:
                     alias_citations = [citation.strip() for citation in o['rationale_dois']
                                        if citation and citation.strip()]
@@ -194,7 +202,10 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                 if o['cell_set_accession'] in allen_markers:
                     d['Allen_markers'] = allen_markers[o['cell_set_accession']]
                 else:
-                    d['Allen_markers'] = ''
+                    if str(o["author_annotation_fields"].get(f"{o['labelset']}.markers.combo", "")).lower() != "none":
+                        d['Allen_markers'] = o["author_annotation_fields"].get(f"{o['labelset']}.markers.combo", "")
+                    else:
+                        d['Allen_markers'] = ""
                 if 'Brain_region_abbv' in taxonomy_config:
                     d['Brain_region_abbv'] = taxonomy_config['Brain_region_abbv'][0]
                 if 'Species_abbv' in taxonomy_config:
@@ -218,6 +229,11 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                 d['aligned_alias'] = ""
                 if o.get('marker_gene_evidence'):
                     d['marker_gene_set'] = PCL_PREFIX + id_factory.get_marker_gene_set_id(o['cell_set_accession'])
+                elif  ("author_annotation_fields" in o and
+                       o["author_annotation_fields"].get(f"{o['labelset']}.markers.combo") and
+                       str(o["author_annotation_fields"].get(f"{o['labelset']}.markers.combo", "")).lower() != "none"):
+                    d['marker_gene_set'] = PCL_PREFIX + id_factory.get_marker_gene_set_id(
+                        o['cell_set_accession'])
                 else:
                     d['marker_gene_set'] = ""
                 if "cell_ontology_term_id" in o and o["cell_ontology_term_id"]:
@@ -252,8 +268,8 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                     ccf_acronym_freq = cluster_annotations[o['cell_set_accession']]["CCF_acronym.freq"]
 
                     index = 1
-                    index = populate_mba_relations(ccf_broad_freq, BROAD_REGION, d, index, mba_symbols, missed_regions)
-                    populate_mba_relations(ccf_acronym_freq, ACRONYM_REGION, d, index, mba_symbols, missed_regions)
+                    index = populate_mba_relations(ccf_broad_freq, BROAD_REGION, d, index, mba_symbols, mba_labels, missed_regions)
+                    populate_mba_relations(ccf_acronym_freq, ACRONYM_REGION, d, index, mba_symbols, mba_labels, missed_regions)
 
                 d['MBA_assay'] = "EFO:0008992"
                 for missed_region in missed_regions:
@@ -286,11 +302,12 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
         class_robot_template.to_csv(output_filepath, sep="\t", index=False)
 
 
-def populate_mba_relations(ccf_broad_freq, approach, d, index, mba_symbols, missed_regions):
+def populate_mba_relations(ccf_broad_freq, approach, d, index, mba_symbols, mba_labels, missed_regions):
     regions = [{"region": item.split(":")[0].strip().lower(),
                 "percentage": float(item.split(":")[1].strip()) if ":" in item else 0}
                for item in ccf_broad_freq.split(",")]
     mbas = set()
+    mba_text = set()
     for region in regions:
         if region["percentage"] >= 0.05 and region["region"] != "na":
             if region["region"] in mba_symbols:
@@ -300,11 +317,14 @@ def populate_mba_relations(ccf_broad_freq, approach, d, index, mba_symbols, miss
                 d['MBA_' + str(
                     index) + '_comment'] = "Location assignment based on {}.".format(approach)
                 mbas.add(mba_symbols[region["region"]])
+                # {fullname} ({symbol}, {fraction of cells})}
+                mba_text.add(mba_labels[d['MBA_' + str(index)]] + " (" + region["region"] + ", " + str(region["percentage"]) + ")")
                 index += 1
             else:
                 missed_regions.add(region["region"])
     if approach == BROAD_REGION:
         d['MBA'] = "|".join(mbas)
+        d['MBA_text'] = ", ".join(mba_text)
     elif approach == ACRONYM_REGION:
         d['CCF_acronym_freq'] = "|".join(mbas)
     return index
@@ -605,7 +625,7 @@ def add_taxonomy_info_panel_properties(centralized_data_folder, d, taxon_config)
 #                          .format(taxonomy_id, expected_file_name))
 
 
-def generate_marker_gene_set_template(taxonomy_file_path, centralized_data_folder, output_filepath):
+def generate_marker_gene_set_template(taxonomy_file_path, output_filepath):
     taxon = extract_taxonomy_name_from_path(taxonomy_file_path)
     taxonomy_config = read_taxonomy_config(taxon)
 
@@ -613,8 +633,8 @@ def generate_marker_gene_set_template(taxonomy_file_path, centralized_data_folde
         dend = cas_json_2_nodes_n_edges(taxonomy_file_path)
         id_factory = PCLIdFactory(read_json_file(taxonomy_file_path))
 
-        dend_tree = generate_dendrogram_tree(dend)
-        subtrees = get_subtrees(dend_tree, taxonomy_config)
+        # dend_tree = generate_dendrogram_tree(dend)
+        # subtrees = get_subtrees(dend_tree, taxonomy_config)
 
         if "Reference_gene_list" in taxonomy_config:
             gene_db_path = ENSEMBLE_PATH.format(str(taxonomy_config["Reference_gene_list"][0]).strip().lower())
@@ -623,14 +643,17 @@ def generate_marker_gene_set_template(taxonomy_file_path, centralized_data_folde
         else:
             minimal_markers = {}
 
-        ns_forest_marker_file = NSFOREST_MARKER_CSV.format(centralized_data_folder,
-                                                           taxonomy_config['Species_abbv'][0],
-                                                           taxonomy_config['Brain_region_abbv'][0])
-        confidences = get_nsforest_confidences(taxon, dend, ns_forest_marker_file)
+        # ns_forest_marker_file = NSFOREST_MARKER_CSV.format(centralized_data_folder,
+        #                                                    taxonomy_config['Species_abbv'][0],
+        #                                                    taxonomy_config['Brain_region_abbv'][0])
+        # confidences = get_nsforest_confidences(taxon, dend, ns_forest_marker_file)
+
+        gene_db = read_gene_dbs(TEMPLATES_FOLDER_PATH)
 
         class_seed = ['defined_class',
                       'Marker_set_of',
                       'Minimal_markers',
+                      'Minimal_markers_label',
                       'Brain_region_abbv',
                       'Species_abbv',
                       'Brain_region',
@@ -640,21 +663,25 @@ def generate_marker_gene_set_template(taxonomy_file_path, centralized_data_folde
         class_template = []
 
         for o in dend['nodes']:
-            if o['cell_set_accession'] in set.union(*subtrees) and (o['cell_set_preferred_alias'] or
-                                                                    o['cell_set_additional_aliases']):
-                if o['cell_set_accession'] in minimal_markers:
+            if o['cell_set_accession'] :
+                if ("author_annotation_fields" in o and
+                        o["author_annotation_fields"].get(f"{o['labelset']}.markers.combo", "") and
+                        str(o["author_annotation_fields"].get(f"{o['labelset']}.markers.combo", "")).lower() != "none"):
                     d = dict()
                     d['defined_class'] = PCL_BASE + id_factory.get_marker_gene_set_id(o['cell_set_accession'])
-                    d['Marker_set_of'] = o['cell_set_preferred_alias']
-                    d['Minimal_markers'] = minimal_markers[o['cell_set_accession']]
+                    d['Marker_set_of'] = o['cell_label']
+                    markers_str = o["author_annotation_fields"].get(f"{o['labelset']}.markers.combo", "")
+                    markers_list = [marker.strip() for marker in markers_str.split(",")]
+                    d['Minimal_markers'] = "|".join([get_gene_id(gene_db, marker) for marker in markers_list if str(marker).lower() != "none"])
+                    d['Minimal_markers_label'] = o["author_annotation_fields"].get(f"{o['labelset']}.markers.combo", "")
                     if 'Brain_region_abbv' in taxonomy_config:
                         d['Brain_region_abbv'] = taxonomy_config['Brain_region_abbv'][0]
                     if 'Species_abbv' in taxonomy_config:
                         d['Species_abbv'] = taxonomy_config['Species_abbv'][0]
                     d['Brain_region'] = taxonomy_config['Brain_region'][0]
                     d['Parent'] = "SO:0001260"  # sequence collection
-                    if o['cell_set_accession'] in confidences:
-                        d['FBeta_confidence_score'] = confidences[o['cell_set_accession']]
+                    # if o['cell_set_accession'] in confidences:
+                    #     d['FBeta_confidence_score'] = confidences[o['cell_set_accession']]
 
                     for k in class_seed:
                         if not (k in d.keys()):
@@ -722,24 +749,18 @@ def get_centralized_taxonomy_folder(taxonomy_config):
     return str(taxonomy_config['Species_abbv'][0]).lower() + taxonomy_config['Brain_region_abbv'][0] \
            + "_" + taxonomy_config["Taxonomy_id"]
 
-
-def find_marker(all_genes, marker_name):
-    """
-    Searches given marker name in the gene database.
-    Args:
-        all_genes: gene db dictionary (id-row data)
-        marker_name: name of the marker to search
-
-    Returns: id of the found marker, throws an exception otherwise.
-    """
-    for gene_id in all_genes:
-        if all_genes[gene_id].replace("(Mmus)", "").strip() == marker_name:
-            return gene_id
-
-    raise ValueError("Marker not found: " + marker_name)
+def get_gene_id(gene_db, gene_name):
+    if str(gene_name) in gene_db:
+        return gene_db[str(gene_name)]
+    else:
+        # gene_db may have styling issues, so workaround
+        # TODO remove this workaround after fixing the gene_db
+        for gene in gene_db:
+            if gene_name.lower() in gene.lower():
+                return gene_db[gene]
+    raise Exception(f"Gene ID not found for gene: {gene_name}")
 
 def get_mba_symbols_map():
-    MBAO = Namespace("https://purl.brain-bican.org/ontology/mbao/MBA_")
     OBOINOWL = Namespace("http://www.geneontology.org/formats/oboInOwl#")
 
     g = Graph()
@@ -747,7 +768,40 @@ def get_mba_symbols_map():
 
     synonyms = {}
     for s, p, o in g:
-        if str(s).startswith(str(MBAO)) and p == OBOINOWL.hasExactSynonym:
+        if str(s).startswith("https://purl.brain-bican.org/ontology/mbao/MBA_") and p == OBOINOWL.hasExactSynonym:
             synonyms[str(o).strip().lower()] = "MBA:" + str(s).split("_")[-1]
 
     return synonyms
+
+def get_mba_labels_map():
+    g = Graph()
+    g.parse(MBA_ONTOLOGY, format="xml")
+
+    labels = {}
+    for s, p, o in g:
+        if str(s).startswith("https://purl.brain-bican.org/ontology/mbao/MBA_") and p == RDFS.label:
+            labels["MBA:" + str(s).split("_")[-1]] = str(o).strip().lower()
+
+    return labels
+
+def read_gene_dbs(folder_path: str):
+    """
+    Reads all TSV files in the templates folder and creates a dictionary of genes
+    where the key is the NAME column and the value is the ID column.
+    Args:
+        folder_path: Path to the folder containing gene TSV files.
+    Returns:
+        dict: Dictionary with gene NAME as keys and ID as values.
+
+    """
+    gene_dict = {}
+
+    for file_name in os.listdir(folder_path):
+        if file_name.endswith('.tsv') and not file_name.startswith("CS") and not file_name.startswith("CCN"):
+            file_path = os.path.join(folder_path, file_name)
+            df = pd.read_csv(file_path, sep='\t')
+            for _, row in df.iterrows():
+                gene_dict[row['NAME'].replace("(Mmus)", "").strip()] = row['ID']
+
+    return gene_dict
+

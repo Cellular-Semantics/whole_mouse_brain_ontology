@@ -15,6 +15,19 @@
       "version" : "http://purl.obolibrary.org/obo/pcl/releases/2024-12-09/wmbo-simple.json"
     },
     "nodes" : [ {
+      "id" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "lbl" : "has_part",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "a core relation that holds between a whole and its part"
+        },
+        "xrefs" : [ {
+          "val" : "BFO:0000051"
+        } ]
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/RO_0002100",
       "lbl" : "has soma location",
       "type" : "PROPERTY",
@@ -299,11 +312,18 @@
       "propertyType" : "ANNOTATION"
     } ],
     "edges" : [ {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002473",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000051"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/RO_0015001",
       "pred" : "inverseOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0015002"
     } ],
     "propertyChainAxioms" : [ {
+      "predicateId" : "http://purl.obolibrary.org/obo/RO_0002162",
+      "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/BFO_0000051", "http://purl.obolibrary.org/obo/RO_0002162" ]
+    }, {
       "predicateId" : "http://purl.obolibrary.org/obo/RO_0002162",
       "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/RO_0002215", "http://purl.obolibrary.org/obo/RO_0002162" ]
     }, {

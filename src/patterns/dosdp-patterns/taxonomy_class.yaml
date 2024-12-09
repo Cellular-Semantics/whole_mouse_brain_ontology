@@ -89,6 +89,9 @@ data_vars:
   Cluster_ID: "xsd:string"
   Cross_species_text: "xsd:string"
   Taxon_abbv: "xsd:string"
+  Dataset_url: "xsd:string"
+  Labelset: "xsd:string"
+  MBA_text: "xsd:string"
   MBA_1_comment: "xsd:string"
   MBA_2_comment: "xsd:string"
   MBA_3_comment: "xsd:string"
@@ -162,32 +165,28 @@ def:
   multi_clause:
     sep: " "
     clauses:
-      - text: 'A %s of the %s %s.'
+      - text: 'A %s of the %s brain.'
         vars:
           - Gross_cell_type
           - Taxon
-          - Brain_region
         sub_clauses:
           - sep: ' '
           - clauses:
-              - text: 'These cells can be distinguished from other cells in the %s by their selective expression of %s.'
+              - text: 'It is distinguished from other cells in the %s by selective expression of %s.'
                 vars:
                   - Brain_region
                   - Minimal_markers_cat
-              - text: 'These cells also express %s.'
+              - text: 'These cells are %s.'
                 vars:
-                  - Allen_markers_cat
-              - text: 'These cells have projection type %s.'
+                  - NT_cat
+              - text: 'Soma of this cell type are located in the %s.'
                 vars:
-                  - Nomenclature_Projection
-              - text: 'The soma of these cells can be found in the %s.'
+                  - MBA_text
+              - text: "Standard transcriptomic reference data for this class can be found at %s in %s:%s (%s)."
                 vars:
-                  - Atlas_loc_cat
-              - text: 'The soma of these cells are also found in %s.'
-                vars:
-                  - Nomenclature_Layers
-              - text: 'The reference data for this cell type is %s.'
-                vars:
+                  - Dataset_url
+                  - Labelset
+                  - prefLabel
                   - Cluster_ID
 
 generated_synonyms:
@@ -266,7 +265,7 @@ logical_axioms:
      vars:
         - Individual
    - axiom_type: equivalentTo
-     text: "'native_cell' and 'has_exemplar_data' value %s"
+     text: "'cell' and 'has_exemplar_data' value %s"
      vars:
         - Individual
    - axiom_type: subClassOf

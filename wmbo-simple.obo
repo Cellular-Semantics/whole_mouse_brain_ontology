@@ -11,6 +11,14 @@ property_value: owl:versionInfo "2024-12-09" xsd:string
 property_value: terms:license http://creativecommons.org/licenses/by/4.0/
 
 [Typedef]
+id: BFO:0000051
+name: has part
+name: has_part
+def: "a core relation that holds between a whole and its part" []
+xref: BFO:0000051
+is_transitive: true
+
+[Typedef]
 id: RO:0002100
 name: has soma location
 def: "Relation between a neuron and a material anatomical entity that its soma is part of." []
@@ -21,6 +29,7 @@ id: RO:0002162
 name: in taxon
 def: "x is in taxon y if an only if y is an organism, and the relationship between x and y is one of: part of (reflexive), developmentally preceded by, derives from, secreted by, expressed." []
 comment: Connects a biological entity to its taxon of origin.
+holds_over_chain: BFO:0000051 RO:0002162
 holds_over_chain: RO:0002215 RO:0002162
 
 [Typedef]
@@ -39,6 +48,7 @@ id: RO:0002473
 name: composed primarily of
 def: "x composed_primarily_of y if and only if more than half of the mass of x is made from y or units of the same type as y." []
 xref: RO:0002473
+is_a: BFO:0000051 ! has part
 
 [Typedef]
 id: RO:0015001

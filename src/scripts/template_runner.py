@@ -2,7 +2,7 @@ from template_generation_tools import generate_base_class_template, generate_cur
     generate_ind_template, merge_class_templates, \
     generate_cross_species_template, generate_taxonomies_template, generate_app_specific_template, \
     generate_homologous_to_template, generate_marker_gene_set_template
-from marker_tools import generate_denormalised_marker_template
+from marker_tools import generate_denormalised_marker_template, generate_allen_marker_template
 import argparse
 import pathlib
 
@@ -27,6 +27,7 @@ parser_generator.add_argument('-a', action='store_true', help="Generate a app sp
 parser_generator.add_argument('-ds', action='store_true', help="Generate a datasets template.")
 parser_generator.add_argument('-tx', action='store_true', help="Generate a taxonomies template.")
 parser_generator.add_argument('-ms', action='store_true', help="Generate a marker gene set template.")
+parser_generator.add_argument('-am', action='store_true', help="Generate Allen markers template.")
 parser_generator.add_argument('-oi', action='store_true', help="Generate a obsolete individuals data template.")
 parser_generator.add_argument('-ot', action='store_true', help="Generate a obsolete taxonomies template.")
 
@@ -58,6 +59,8 @@ else:
     elif args.tx:
         generate_taxonomies_template(args.input, args.output)
     elif args.ms:
-        generate_marker_gene_set_template(args.input, args.input2, args.output)
+        generate_marker_gene_set_template(args.input, args.output)
+    elif args.am:
+        generate_allen_marker_template(args.input, args.output)
     else:
         generate_ind_template(args.input, args.output)
