@@ -305,6 +305,8 @@ def populate_mba_relations(ccf_broad_freq, approach, d, index, mba_symbols, miss
                 missed_regions.add(region["region"])
     if approach == BROAD_REGION:
         d['MBA'] = "|".join(mbas)
+    elif approach == ACRONYM_REGION:
+        d['CCF_acronym_freq'] = "|".join(mbas)
     return index
 
 

@@ -144,6 +144,7 @@ $(COMPONENTSDIR)/%_class.owl: $(TMPDIR)/%_class.tsv $(PATTERNDIR)/dosdp-patterns
 	$(DOSDPT) generate --catalog=catalog-v001.xml --prefixes=template_prefixes.yaml \
         --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_class.yaml \
         --ontology=$(SRC) --obo-prefixes=true --outfile=$@
+	$(ROBOT)  query --input $@ --update ../sparql/replace_string_to_float.ru --output $@
 
 #components/%_class_homologous.owl: $(PATTERNDIR)/data/default/%_class_homologous.tsv $(SRC) $(PATTERNDIR)/dosdp-patterns/taxonomy_class_homologous.yaml $(SRC) all_imports .FORCE
 #	$(DOSDPT) generate --catalog=catalog-v001.xml --prefixes=template_prefixes.yaml \
