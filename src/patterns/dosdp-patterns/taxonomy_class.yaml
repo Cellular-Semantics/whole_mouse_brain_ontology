@@ -91,6 +91,7 @@ data_vars:
   Taxon_abbv: "xsd:string"
   Dataset_url: "xsd:string"
   Labelset: "xsd:string"
+  NT_label: "xsd:string"
   MBA_text: "xsd:string"
   MBA_1_comment: "xsd:string"
   MBA_2_comment: "xsd:string"
@@ -178,7 +179,7 @@ def:
                   - Minimal_markers_cat
               - text: 'These cells are %s.'
                 vars:
-                  - NT_cat
+                  - NT_label
               - text: 'Soma of this cell type are located in the %s.'
                 vars:
                   - MBA_text

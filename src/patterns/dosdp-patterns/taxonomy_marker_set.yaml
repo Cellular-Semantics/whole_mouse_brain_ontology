@@ -28,7 +28,7 @@ annotationProperties:
   fbetaConfidenceScore: "STATO:0000663"
 
 name:
-   text: "NS forest marker set of %s (%s %s)."
+   text: "Marker set of %s (%s %s)."
    vars:
       - Marker_set_of
       - Species_abbv

@@ -163,6 +163,7 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                       'has_soma_location',
                       'aligned_alias',
                       'NT',
+                      'NT_label',
                       'NT_markers'
                       'CL',
                       'Nomenclature_Layers',
@@ -258,6 +259,7 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                     # TODO add evidence comment "inferred to be {x}-ergic based on expression of {y}"
                     if nt_symbol in nt_symbols_mapping:
                         d['NT'] = nt_symbols_mapping.get(nt_symbol)["CELL TYPE NEUROTRANSMISSION ID"]
+                        d['NT_label'] = " and ".join(nt_symbols_mapping.get(nt_symbol)["CELL TYPE LABEL"].split("|"))
                 if o['cell_set_accession'] in cluster_annotations:
                     nt_markers = cluster_annotations[o['cell_set_accession']]["nt.markers"]
                     d['NT_markers'] = "|".join([entry.split(':')[0] for entry in nt_markers.split(",") if entry])
