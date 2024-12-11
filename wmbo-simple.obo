@@ -1,76 +1,11 @@
 format-version: 1.2
-data-version: pcl/releases/2024-12-10/wmbo-simple.owl
+data-version: pcl/releases/2024-12-11/wmbo-simple.owl
 idspace: dc http://purl.org/dc/elements/1.1/ 
-idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
 idspace: skos http://www.w3.org/2004/02/skos/core# 
 idspace: taxonomy https://purl.brain-bican.org/taxonomy/ 
 idspace: terms http://purl.org/dc/terms/ 
 ontology: pcl/wmbo-simple
 property_value: dc:title "Full Mouse Brain Ontology" xsd:string
-property_value: owl:versionInfo "2024-12-10" xsd:string
+property_value: owl:versionInfo "2024-12-11" xsd:string
 property_value: terms:license http://creativecommons.org/licenses/by/4.0/
-
-[Typedef]
-id: BFO:0000051
-name: has part
-name: has_part
-def: "a core relation that holds between a whole and its part" []
-xref: BFO:0000051
-is_transitive: true
-
-[Typedef]
-id: RO:0002100
-name: has soma location
-def: "Relation between a neuron and a material anatomical entity that its soma is part of." []
-xref: RO:0002100
-
-[Typedef]
-id: RO:0002162
-name: in taxon
-def: "x is in taxon y if an only if y is an organism, and the relationship between x and y is one of: part of (reflexive), developmentally preceded by, derives from, secreted by, expressed." []
-comment: Connects a biological entity to its taxon of origin.
-holds_over_chain: BFO:0000051 RO:0002162
-holds_over_chain: RO:0002215 RO:0002162
-
-[Typedef]
-id: RO:0002215
-name: capable of
-def: "A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. " []
-xref: RO:0002215
-
-[Typedef]
-id: RO:0002292
-name: expresses
-def: "y expresses x if and only if there is a gene expression process (GO:0010467) that occurs in y, and one of the following holds: (i) x is a gene, and x is transcribed into a transcript as part of the gene expression process (ii) x is a transcript, and x was transcribed from a gene as part of the gene expression process (iii) x is a mature gene product (protein or RNA), and x was translated or otherwise processed from a transcript that was transcribed as part of the gene expression process." []
-
-[Typedef]
-id: RO:0002473
-name: composed primarily of
-def: "x composed_primarily_of y if and only if more than half of the mass of x is made from y or units of the same type as y." []
-xref: RO:0002473
-is_a: BFO:0000051 ! has part
-
-[Typedef]
-id: RO:0015001
-name: has exemplar data
-def: "A relation between a material entity and some data in which the data is taken as exemplifying the material entity." []
-inverse_of: RO:0015002 ! exemplar data of
-transitive_over: RO:0015003 ! subcluster of
-
-[Typedef]
-id: RO:0015002
-name: exemplar data of
-
-[Typedef]
-id: RO:0015003
-name: subcluster of
-def: "A relation between a group and another group it is part of but does not fully constitute." []
-is_transitive: true
-
-[Typedef]
-id: RO:0015004
-name: has characterizing marker set
-def: "A relation that applies between a cell type and a set of markers that can be used to uniquely identify that cell type." []
-synonym: "has marker gene combination" EXACT []
-synonym: "has marker signature set" EXACT []
 

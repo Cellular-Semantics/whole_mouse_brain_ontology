@@ -250,8 +250,8 @@ components/%_marker_set.owl: $(PATTERNDIR)/data/default/%_marker_set.tsv $(PATTE
 #	$(ROBOT) query -i $(TMPDIR)/$@.owl --update ../sparql/remove_material_disjoint.ru -o $(TMPDIR)/$@.owl
 
 # temporarily remove --exclude-tautologies structural
-.PHONY: reason_test
-reason_test: $(EDIT_PREPROCESSED)
+#.PHONY: reason_test
+#reason_test: $(EDIT_PREPROCESSED)
 	#$(ROBOT) explain --input $< --reasoner ELK -M unsatisfiability --unsatisfiable all --explanation explain.md --output explain.ofn
 	#$(ROBOT) reason --input $< --reasoner ELK --equivalent-classes-allowed asserted-only \
 #			--output test.owl && rm test.owl
@@ -265,7 +265,6 @@ reason_test: $(EDIT_PREPROCESSED)
 # pcl id validator added
 $(ONT)-base.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(IMPORT_FILES)
 	$(ROBOT_RELEASE_IMPORT_MODE) \
-	remove --term https://purl.brain-bican.org/ontology/mbao/MBA_967 --term https://purl.brain-bican.org/ontology/mbao/MBA_901 --term https://purl.brain-bican.org/ontology/mbao/MBA_813 --term https://purl.brain-bican.org/ontology/mbao/MBA_717 --term https://purl.brain-bican.org/ontology/mbao/MBA_808 --term https://purl.brain-bican.org/ontology/mbao/MBA_917  --term https://purl.brain-bican.org/ontology/mbao/MBA_997 \
 	reason --reasoner ELK --exclude-tautologies structural --annotate-inferred-axioms False \
 	relax \
 	reduce -r ELK \
@@ -277,16 +276,18 @@ $(ONT)-base.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(IMPORT_FILES)
 	python ../scripts/pcl_id_validator.py
 
 # Full: The full artefacts with imports merged, reasoned.
+# -equivalent-classes-allowed asserted-only removed
 $(ONT)-full.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(IMPORT_FILES)
 	$(ROBOT_RELEASE_IMPORT_MODE) \
-		remove --term https://purl.brain-bican.org/ontology/mbao/MBA_967 --term https://purl.brain-bican.org/ontology/mbao/MBA_901 --term https://purl.brain-bican.org/ontology/mbao/MBA_813 --term https://purl.brain-bican.org/ontology/mbao/MBA_717 --term https://purl.brain-bican.org/ontology/mbao/MBA_808 --term https://purl.brain-bican.org/ontology/mbao/MBA_917  --term https://purl.brain-bican.org/ontology/mbao/MBA_997 \
-		reason --reasoner ELK --exclude-tautologies structural \
+  		reason --reasoner ELK --exclude-tautologies structural \
 		relax \
 		reduce -r ELK \
 		$(SHARED_ROBOT_COMMANDS) annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
+
 # foo-simple: (edit->reason,relax,reduce,drop imports, drop every axiom which contains an entity outside the "namespaces of interest")
 # drop every axiom: filter --term-file keep_terms.txt --trim true
 #	remove --select imports --trim false
+# filter selector self constraint relaxed
 $(ONT)-simple.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(SIMPLESEED) $(IMPORT_FILES)
 	$(ROBOT_RELEASE_IMPORT_MODE) \
 		remove --term https://purl.brain-bican.org/ontology/mbao/MBA_967 --term https://purl.brain-bican.org/ontology/mbao/MBA_901 --term https://purl.brain-bican.org/ontology/mbao/MBA_813 --term https://purl.brain-bican.org/ontology/mbao/MBA_717 --term https://purl.brain-bican.org/ontology/mbao/MBA_808 --term https://purl.brain-bican.org/ontology/mbao/MBA_917  --term https://purl.brain-bican.org/ontology/mbao/MBA_997 \
@@ -294,7 +295,7 @@ $(ONT)-simple.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(SIMPLESEED) $(IMPORT_FILE
 		relax \
 		remove --axioms equivalent \
 		relax \
-		filter --term-file $(SIMPLESEED) --select "annotations ontology anonymous self" --trim true --signature true \
+		filter --term-file $(SIMPLESEED) --select "annotations ontology anonymous self <http://purl.obolibrary.org/obo/PCL_*>" --select "<https://purl.brain-bican.org/taxonomy/*>" --trim true --signature true \
 		reduce -r ELK \
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru \
 		$(SHARED_ROBOT_COMMANDS) annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
