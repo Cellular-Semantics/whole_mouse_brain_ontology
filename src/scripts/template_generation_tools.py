@@ -182,7 +182,7 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                 d = dict()
                 d['defined_class'] = PCL_BASE + id_factory.get_class_id(o['cell_set_accession'])
                 if o['cell_label'] in duplicate_labels:
-                    d['prefLabel'] = o['cell_label'] + " " + o['labelset']
+                    d['prefLabel'] = o['cell_label'] + " (" + o['labelset'] + ")"
                 else:
                     d['prefLabel'] = o['cell_label']
                 # if o.get('cell_fullname'):
@@ -310,13 +310,13 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
 
 
 def populate_mba_relations(ccf_broad_freq, approach, d, index, mba_symbols, mba_labels, missed_regions):
-    regions = [{"region": item.split(":")[0].strip().lower(),
+    regions = [{"region": item.split(":")[0].strip(),
                 "percentage": float(item.split(":")[1].strip()) if ":" in item else 0}
                for item in ccf_broad_freq.split(",")]
     mbas = set()
     mba_text = set()
     for region in regions:
-        if region["percentage"] >= 0.05 and region["region"] != "na":
+        if region["percentage"] >= 0.05 and region["region"] != "NA":
             if region["region"] in mba_symbols:
                 d['MBA_' + str(index)] = mba_symbols[region["region"]]
                 d['MBA_' + str(index) + '_cell_percentage'] = region["percentage"]
@@ -781,7 +781,7 @@ def get_mba_symbols_map():
     synonyms = {}
     for s, p, o in g:
         if str(s).startswith("https://purl.brain-bican.org/ontology/mbao/MBA_") and p == OBOINOWL.hasExactSynonym:
-            synonyms[str(o).strip().lower()] = "MBA:" + str(s).split("_")[-1]
+            synonyms[str(o).strip()] = "MBA:" + str(s).split("_")[-1]
 
     return synonyms
 
