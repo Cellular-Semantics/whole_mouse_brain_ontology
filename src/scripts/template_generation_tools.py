@@ -126,6 +126,8 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
         # dend_tree = generate_dendrogram_tree(dend)
         # subtrees = get_subtrees(dend_tree, taxonomy_config)
 
+        duplicate_labels = find_duplicate_cell_labels(dend['nodes'])
+
         gene_names = dict()
         if "Reference_gene_list" in taxonomy_config:
             gene_db_path = ENSEMBLE_PATH.format(str(taxonomy_config["Reference_gene_list"][0]).strip().lower())
@@ -179,7 +181,10 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
             if o['cell_set_accession']:
                 d = dict()
                 d['defined_class'] = PCL_BASE + id_factory.get_class_id(o['cell_set_accession'])
-                d['prefLabel'] = o['cell_label']
+                if o['cell_label'] in duplicate_labels:
+                    d['prefLabel'] = o['cell_label'] + " " + o['labelset']
+                else:
+                    d['prefLabel'] = o['cell_label']
                 # if o.get('cell_fullname'):
                 #     d['prefLabel'] = o['cell_fullname']
                 d['Synonyms_from_taxonomy'] = "|".join(sorted(o.get("synonyms", [])))
@@ -635,16 +640,18 @@ def generate_marker_gene_set_template(taxonomy_file_path, output_filepath):
         dend = cas_json_2_nodes_n_edges(taxonomy_file_path)
         id_factory = PCLIdFactory(read_json_file(taxonomy_file_path))
 
+        duplicate_labels = find_duplicate_cell_labels(dend['nodes'])
+
         # dend_tree = generate_dendrogram_tree(dend)
         # subtrees = get_subtrees(dend_tree, taxonomy_config)
 
-        if "Reference_gene_list" in taxonomy_config:
-            gene_db_path = ENSEMBLE_PATH.format(str(taxonomy_config["Reference_gene_list"][0]).strip().lower())
-            gene_names = read_gene_data(gene_db_path)
-            minimal_markers = read_markers(MARKER_PATH.format(taxon.replace("CCN", "").replace("CS", "")), gene_names)
-        else:
-            minimal_markers = {}
-
+        # if "Reference_gene_list" in taxonomy_config:
+        #     gene_db_path = ENSEMBLE_PATH.format(str(taxonomy_config["Reference_gene_list"][0]).strip().lower())
+        #     gene_names = read_gene_data(gene_db_path)
+        #     minimal_markers = read_markers(MARKER_PATH.format(taxon.replace("CCN", "").replace("CS", "")), gene_names)
+        # else:
+        #     minimal_markers = {}
+        #
         # ns_forest_marker_file = NSFOREST_MARKER_CSV.format(centralized_data_folder,
         #                                                    taxonomy_config['Species_abbv'][0],
         #                                                    taxonomy_config['Brain_region_abbv'][0])
@@ -671,7 +678,10 @@ def generate_marker_gene_set_template(taxonomy_file_path, output_filepath):
                         str(o["author_annotation_fields"].get(f"{o['labelset']}.markers.combo", "")).lower() != "none"):
                     d = dict()
                     d['defined_class'] = PCL_BASE + id_factory.get_marker_gene_set_id(o['cell_set_accession'])
-                    d['Marker_set_of'] = o['cell_label']
+                    if o['cell_label'] in duplicate_labels:
+                        d['Marker_set_of'] = o['cell_label'] + " (" + o['labelset'] + ")"
+                    else:
+                        d['Marker_set_of'] = o['cell_label']
                     markers_str = o["author_annotation_fields"].get(f"{o['labelset']}.markers.combo", "")
                     markers_list = [marker.strip() for marker in markers_str.split(",")]
                     d['Minimal_markers'] = "|".join([get_gene_id(gene_db, marker) for marker in markers_list if str(marker).lower() != "none"])
@@ -806,4 +816,17 @@ def read_gene_dbs(folder_path: str):
                 gene_dict[row['NAME'].replace("(Mmus)", "").strip()] = row['ID']
 
     return gene_dict
+
+def find_duplicate_cell_labels(nodes):
+    seen_labels = set()
+    duplicates = []
+
+    for node in nodes:
+        label = node.get('cell_label')
+        if label in seen_labels:
+            duplicates.append(label)
+        else:
+            seen_labels.add(label)
+
+    return duplicates
 

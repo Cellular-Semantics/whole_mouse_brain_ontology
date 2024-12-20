@@ -1,5 +1,5 @@
 defined_class	Marker_set_of	Minimal_markers	Minimal_markers_label	Brain_region_abbv	Species_abbv	Brain_region	Parent	FBeta_confidence_score
-http://purl.obolibrary.org/obo/PCL_0122881	0001 CLA-EPd-CTX Car3 Glut_1	ensembl:ENSMUSG00000027559|ensembl:ENSMUSG00000038331|ensembl:ENSMUSG00000020140	Car3,Satb2,Lgr5	MOp	Mouse	MBA:997	SO:0001260	
+http://purl.obolibrary.org/obo/PCL_0122881	0001 CLA-EPd-CTX Car3 Glut_1 (cluster)	ensembl:ENSMUSG00000027559|ensembl:ENSMUSG00000038331|ensembl:ENSMUSG00000020140	Car3,Satb2,Lgr5	MOp	Mouse	MBA:997	SO:0001260	
 http://purl.obolibrary.org/obo/PCL_0122882	0002 CLA-EPd-CTX Car3 Glut_1	ensembl:ENSMUSG00000027559|ensembl:ENSMUSG00000070570|ensembl:ENSMUSG00000112210	Car3,Slc17a7,4930407I19Rik	MOp	Mouse	MBA:997	SO:0001260	
 http://purl.obolibrary.org/obo/PCL_0122883	0003 CLA-EPd-CTX Car3 Glut_1	ensembl:ENSMUSG00000027559|ensembl:ENSMUSG00000038331|ensembl:ENSMUSG00000046318	Car3,Satb2,Ccbe1	MOp	Mouse	MBA:997	SO:0001260	
 http://purl.obolibrary.org/obo/PCL_0122884	0004 CLA-EPd-CTX Car3 Glut_1	ensembl:ENSMUSG00000027559|ensembl:ENSMUSG00000034009|ensembl:ENSMUSG00000030351	Car3,Rxfp1,Tspan11	MOp	Mouse	MBA:997	SO:0001260	
@@ -5659,7 +5659,7 @@ http://purl.obolibrary.org/obo/PCL_0120895	335 BAM NN	ensembl:ENSMUSG00000026712
 http://purl.obolibrary.org/obo/PCL_0120896	336 Monocytes NN	ensembl:ENSMUSG00000056071	S100a9	MOp	Mouse	MBA:997	SO:0001260	
 http://purl.obolibrary.org/obo/PCL_0120897	337 DC NN	ensembl:ENSMUSG00000024610	Cd74	MOp	Mouse	MBA:997	SO:0001260	
 http://purl.obolibrary.org/obo/PCL_0120898	338 Lymphoid NN	ensembl:ENSMUSG00000000682|ensembl:ENSMUSG00000039264	Cd52,Gimap3	MOp	Mouse	MBA:997	SO:0001260	
-http://purl.obolibrary.org/obo/PCL_0121071	0001 CLA-EPd-CTX Car3 Glut_1	ensembl:ENSMUSG00000027559|ensembl:ENSMUSG00000041014|ensembl:ENSMUSG00000117254	Car3,Nrg3,Gm34567	MOp	Mouse	MBA:997	SO:0001260	
+http://purl.obolibrary.org/obo/PCL_0121071	0001 CLA-EPd-CTX Car3 Glut_1 (supertype)	ensembl:ENSMUSG00000027559|ensembl:ENSMUSG00000041014|ensembl:ENSMUSG00000117254	Car3,Nrg3,Gm34567	MOp	Mouse	MBA:997	SO:0001260	
 http://purl.obolibrary.org/obo/PCL_0121072	0002 CLA-EPd-CTX Car3 Glut_2	ensembl:ENSMUSG00000041431|ensembl:ENSMUSG00000055799	Ccnb1,Tcf7l1	MOp	Mouse	MBA:997	SO:0001260	
 http://purl.obolibrary.org/obo/PCL_0121073	0003 IT EP-CLA Glut_1	ensembl:ENSMUSG00000048387|ensembl:ENSMUSG00000038331|ensembl:ENSMUSG00000068696|ensembl:ENSMUSG00000022665|ensembl:ENSMUSG00000048332	Osr1,Satb2,Gpr88,Ccdc80,Lhfp	MOp	Mouse	MBA:997	SO:0001260	
 http://purl.obolibrary.org/obo/PCL_0121074	0004 IT EP-CLA Glut_2	ensembl:ENSMUSG00000048387|ensembl:ENSMUSG00000021998|ensembl:ENSMUSG00000062991|ensembl:ENSMUSG00000036885	Osr1,Lcp1,Nrg1,Arhgef26	MOp	Mouse	MBA:997	SO:0001260	
