@@ -5,7 +5,7 @@ import logging
 import os
 
 from template_generation_utils import get_root_nodes, read_taxonomy_config, generate_dendrogram_tree, index_dendrogram, read_csv_to_dict
-from dendrogram_tools import dend_json_2_nodes_n_edges
+from dendrogram_tools import cas_json_2_nodes_n_edges
 from nomenclature_tools import nomenclature_2_nodes_n_edges
 
 CLUSTER = "cluster"
@@ -30,7 +30,7 @@ def generate_denormalised_marker_template(taxonomy_file_path, output_marker_path
     path_parts = taxonomy_file_path.split(os.path.sep)
     taxon = path_parts[len(path_parts) - 1].split(".")[0]
     if str(taxonomy_file_path).endswith(".json"):
-        dend = dend_json_2_nodes_n_edges(taxonomy_file_path)
+        dend = cas_json_2_nodes_n_edges(taxonomy_file_path)
     else:
         dend = nomenclature_2_nodes_n_edges(taxonomy_file_path)
         taxon = path_parts[len(path_parts) - 1].split(".")[0].replace("nomenclature_table_", "")
@@ -243,3 +243,6 @@ def search_terms_in_index(term_variants, indexes):
             if term in index:
                 return index[term]
     return None
+
+def generate_allen_marker_template(taxonomy_file_path, output_filepath):
+    pass

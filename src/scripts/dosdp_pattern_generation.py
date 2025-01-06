@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 
-from dendrogram_tools import dend_json_2_nodes_n_edges
+from dendrogram_tools import cas_json_2_nodes_n_edges
 from template_generation_utils import read_taxonomy_config, get_subtrees, read_dendrogram_tree, read_gene_data, \
     read_markers, get_gross_cell_type
 
@@ -19,7 +19,7 @@ def generate_pattern_table_denormalised_markers(dend_json_path, output_filepath)
 
     taxonomy_config = read_taxonomy_config(taxon)
 
-    dend = dend_json_2_nodes_n_edges(dend_json_path)
+    dend = cas_json_2_nodes_n_edges(dend_json_path)
     dend_tree = read_dendrogram_tree(dend_json_path)
 
     marker_path = MARKER_PATH.format(str(taxon).replace("CCN", ""))

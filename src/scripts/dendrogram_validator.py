@@ -1,6 +1,6 @@
 import logging
 import os
-from dendrogram_tools import dend_json_2_nodes_n_edges
+from dendrogram_tools import cas_json_2_nodes_n_edges
 from abc import ABC, abstractmethod
 from os.path import isfile, join
 
@@ -53,7 +53,7 @@ def main():
     for file in files:
         filename, file_extension = os.path.splitext(file)
         if file_extension == ".json":
-            dend = dend_json_2_nodes_n_edges(join(DENDROGRAM_FOLDER, file))
+            dend = cas_json_2_nodes_n_edges(join(DENDROGRAM_FOLDER, file))
             is_valid &= PrefAliasUniquenessChecker().check(filename, dend)
 
     if not is_valid:
