@@ -44,11 +44,11 @@ Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#prefLabel>))
 #   Classes
 ############################
 
-# Class: <http://purl.obolibrary.org/obo/odk/brainCellCharacterizingMarkerSets.yaml> (Marker set of xsd:string (xsd:string xsd:string).)
+# Class: <http://purl.obolibrary.org/obo/odk/brainCellCharacterizingMarkerSets.yaml> (Marker set of xsd:string (xsd:string).)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/STATO_0000663> <http://purl.obolibrary.org/obo/odk/brainCellCharacterizingMarkerSets.yaml> "xsd:float"^^xsd:string)
 AnnotationAssertion(<http://purl.org/dc/terms/title> <http://purl.obolibrary.org/obo/odk/brainCellCharacterizingMarkerSets.yaml> "brainCellCharacterizingMarkerSets"^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/odk/brainCellCharacterizingMarkerSets.yaml> "Marker set of xsd:string (xsd:string xsd:string)."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/odk/brainCellCharacterizingMarkerSets.yaml> "Marker set of xsd:string (xsd:string)."^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/odk/brainCellCharacterizingMarkerSets.yaml> owl:Thing)
 SubClassOf(<http://purl.obolibrary.org/obo/odk/brainCellCharacterizingMarkerSets.yaml> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/SO_0000110>))
 

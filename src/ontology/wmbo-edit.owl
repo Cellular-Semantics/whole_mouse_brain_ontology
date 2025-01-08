@@ -156,5 +156,6 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0015003> "subc
 ############################
 
 AnnotationAssertion(rdfs:label <http://www.ebi.ac.uk/efo/EFO_0008992> "MERFISH")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SO_0001260> "sequence_collection")
 
 )

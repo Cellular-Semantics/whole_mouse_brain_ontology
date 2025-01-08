@@ -1,11 +1,11 @@
 format-version: 1.2
-data-version: pcl/releases/2024-12-20/wmbo-simple.owl
+data-version: pcl/releases/2025-01-08/wmbo-simple.owl
 idspace: dc http://purl.org/dc/elements/1.1/ 
 idspace: skos http://www.w3.org/2004/02/skos/core# 
 idspace: taxonomy https://purl.brain-bican.org/taxonomy/ 
 idspace: terms http://purl.org/dc/terms/ 
 ontology: pcl/wmbo-simple
 property_value: dc:title "Full Mouse Brain Ontology" xsd:string
-property_value: owl:versionInfo "2024-12-20" xsd:string
+property_value: owl:versionInfo "2025-01-08" xsd:string
 property_value: terms:license http://creativecommons.org/licenses/by/4.0/
 
