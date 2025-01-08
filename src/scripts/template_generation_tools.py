@@ -663,7 +663,6 @@ def generate_marker_gene_set_template(taxonomy_file_path, output_filepath):
                       'Marker_set_of',
                       'Minimal_markers',
                       'Minimal_markers_label',
-                      'Brain_region_abbv',
                       'Species_abbv',
                       'Brain_region',
                       'Parent',
@@ -686,8 +685,6 @@ def generate_marker_gene_set_template(taxonomy_file_path, output_filepath):
                     markers_list = [marker.strip() for marker in markers_str.split(",")]
                     d['Minimal_markers'] = "|".join([get_gene_id(gene_db, marker) for marker in markers_list if str(marker).lower() != "none"])
                     d['Minimal_markers_label'] = o["author_annotation_fields"].get(f"{o['labelset']}.markers.combo", "")
-                    if 'Brain_region_abbv' in taxonomy_config:
-                        d['Brain_region_abbv'] = taxonomy_config['Brain_region_abbv'][0]
                     if 'Species_abbv' in taxonomy_config:
                         d['Species_abbv'] = taxonomy_config['Species_abbv'][0]
                     d['Brain_region'] = taxonomy_config['Brain_region'][0]
