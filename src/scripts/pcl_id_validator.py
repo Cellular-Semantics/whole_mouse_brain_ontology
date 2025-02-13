@@ -4,7 +4,7 @@ import rdflib
 import os
 
 
-PCL_URL = "https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/refs/heads/master/pcl-base.owl"
+PCL_URL = "http://purl.obolibrary.org/obo/pcl/pcl-base.owl"
 WMBO_FILE = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../../wmbo-base.owl")
 
 common_ids = [

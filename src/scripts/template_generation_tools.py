@@ -128,6 +128,7 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
 
         duplicate_labels = find_duplicate_cell_labels(dend['nodes'])
 
+        gene_db = read_gene_dbs(TEMPLATES_FOLDER_PATH)
         gene_names = dict()
         if "Reference_gene_list" in taxonomy_config:
             gene_db_path = ENSEMBLE_PATH.format(str(taxonomy_config["Reference_gene_list"][0]).strip().lower())
@@ -201,10 +202,11 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                     d["Alias_citations"] = "|".join(alias_citations)
                 else:
                     d["Alias_citations"] = ""
-                if o['cell_set_accession'] in minimal_markers:
-                    d['Minimal_markers'] = minimal_markers[o['cell_set_accession']]
-                else:
-                    d['Minimal_markers'] = ""
+
+                markers_str = o["author_annotation_fields"].get(f"{o['labelset']}.markers.combo", "")
+                markers_list = [marker.strip() for marker in markers_str.split(",") if marker.strip()]
+                d['Minimal_markers'] = "|".join([get_gene_id(gene_db, marker) for marker in markers_list if str(marker).lower() != "none"])
+
                 if o['cell_set_accession'] in allen_markers:
                     d['Allen_markers'] = allen_markers[o['cell_set_accession']]
                 else:
