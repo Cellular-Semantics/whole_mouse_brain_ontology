@@ -491,3 +491,34 @@ def extract_taxonomy_name_from_path(taxonomy_file_path):
         raise ValueError("Unsupported taxonomy file extension. Should be csv or json, but was: " +
                          path_parts[len(path_parts) - 1].split(".")[1])
     return str(taxon)
+
+def find_singleton_chains(treex):
+    """
+    Finds the node chains composed of linked nodes who has only one child in the given networkx tree (DiGraph).
+    Args:
+        treex: networkx directed graph that represents the taxonomy
+    """
+    def _follow_chain(start):
+        chain = [start]
+        while treex.out_degree(chain[-1]) == 1:
+            next_node = next(iter(treex.successors(chain[-1])))
+            chain.append(next_node)
+        return chain
+
+    chains = []
+
+    # pick roots
+    roots = [n for n in treex.nodes if treex.in_degree(n) == 0]
+    # pick all branch starts: nodes whose parent has multiple children
+    branch_starts = [
+        node for node in treex.nodes
+        if any(treex.out_degree(pred) > 1 for pred in treex.predecessors(node))
+    ]
+
+    search_roots = roots + branch_starts
+    for root in search_roots:
+        chain = _follow_chain(root)
+        if len(chain) > 1:
+            chains.append(chain)
+
+    return chains
