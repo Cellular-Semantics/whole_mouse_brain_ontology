@@ -8,7 +8,7 @@ from dendrogram_tools import cas_json_2_nodes_n_edges, read_json_file
 from nomenclature_tools import nomenclature_2_nodes_n_edges
 from template_generation_utils import get_synonyms_from_taxonomy, get_synonym_pairs, \
     PAIR_SEPARATOR, OR_SEPARATOR, read_taxonomy_config, get_subtrees, read_dendrogram_tree, \
-    find_singleton_chains, generate_dendrogram_tree
+    find_singleton_chains, generate_dendrogram_tree, read_one_concept_one_name_tsv
 
 PATH_DENDROGRAM_JSON = os.path.join(os.path.dirname(os.path.realpath(__file__)), "./test_data/CCN202002013.json")
 PATH_NOMENCLATURE_CSV = os.path.join(os.path.dirname(os.path.realpath(__file__)),
@@ -20,6 +20,8 @@ PATH_MOUSE_CAS = os.path.join(os.path.dirname(os.path.realpath(__file__)),
                                            "../src/dendrograms/CCN20230722.json")
 PATH_MOUSE_REPORT_TSV = os.path.join(os.path.dirname(os.path.realpath(__file__)),
                                            "./test_data/one_concept_one_name.tsv")
+OCON_TSV = os.path.join(os.path.dirname(os.path.realpath(__file__)),
+                                           "../src/dendrograms/supplementary/version2/one_concept_one_name_curation.tsv")
 
 
 class TemplateUtilsTest(unittest.TestCase):
@@ -211,6 +213,18 @@ class TemplateUtilsTest(unittest.TestCase):
         self.assertEqual(248, len(chains))
         # self.compare_with_old_results(label_chain)
         # self.write_chains_to_tsv(chains, node_index, labelsets, PATH_MOUSE_REPORT_TSV)
+
+    def test_one_concept_one_name_dict_population(self):
+        curation_data = read_one_concept_one_name_tsv(OCON_TSV)
+        self.assertEqual(10, len(curation_data))
+        self.assertEqual(curation_data.get("25 Pineal Glut"), "pinealocyte")
+        self.assertEqual(curation_data.get("262 Pineal Crx Glut"), "pinealocyte")
+        self.assertEqual(curation_data.get("1030 Pineal Crx Glut_1"), "pinealocyte")
+        self.assertEqual(curation_data.get("4606 Pineal Crx Glut_1"), "pinealocyte")
+        self.assertEqual(curation_data.get("316 Bergmann NN"), "Bergman glial cell")
+        self.assertEqual(curation_data.get("1157 Bergmann NN_1"), "Bergman glial cell")
+        self.assertEqual(curation_data.get("5206 Bergmann NN_1"), "Bergman glial cell")
+
 
     def write_chains_to_tsv(self, chains, node_index, labelsets, output_filepath):
         # Sort labelsets by rank (higher rank to lower rank)

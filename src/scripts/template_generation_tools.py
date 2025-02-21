@@ -9,7 +9,7 @@ from dendrogram_tools import cas_json_2_nodes_n_edges, read_json_file
 from template_generation_utils import get_synonyms_from_taxonomy, read_taxonomy_config, \
     get_subtrees, generate_dendrogram_tree, read_taxonomy_details_yaml, read_csv_to_dict,\
     read_csv, read_gene_data, read_markers, get_gross_cell_type, merge_tables, read_allen_descriptions, \
-    extract_taxonomy_name_from_path, get_collapsed_nodes
+    extract_taxonomy_name_from_path, get_collapsed_nodes, read_one_concept_one_name_tsv
 from nomenclature_tools import nomenclature_2_nodes_n_edges
 from pcl_id_factory import PCLIdFactory
 from marker_tools import get_nsforest_confidences
@@ -40,6 +40,7 @@ CROSS_SPECIES_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)),
                                   "../dendrograms/nomenclature_table_CCN202002270.csv")
 MBA_ONTOLOGY = os.path.join(os.path.dirname(os.path.realpath(__file__)),
                                   "../ontology/mirror/mba.owl")
+NAME_CURATION_MAPPING = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../dendrograms/supplementary/version2/one_concept_one_name_curation.tsv")
 
 # centralized data files
 ALLEN_DESCRIPTIONS_PATH = "{}/{}/All Descriptions_{}.json"
@@ -132,6 +133,7 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
         id_factory = PCLIdFactory(read_json_file(taxonomy_file_path))
         dend_tree = generate_dendrogram_tree(dend)
         nodes_to_collapse = get_collapsed_nodes(dend_tree, all_nodes)
+        name_curations = read_one_concept_one_name_tsv(NAME_CURATION_MAPPING)
         # subtrees = get_subtrees(dend_tree, taxonomy_config)
 
         duplicate_labels = find_duplicate_cell_labels(dend['nodes'])
@@ -196,13 +198,23 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
             if node.get('cell_set_accession') and node['cell_set_accession'] not in processed_accessions:
                 d = dict()
                 d['defined_class'] = PCL_BASE + id_factory.get_class_id(node['cell_set_accession'])
-                if node['cell_label'] in duplicate_labels:
-                    d['prefLabel'] = node['cell_label'] + " (" + node['labelset'] + ")"
+
+                if o['cell_label'] in name_curations:
+                    cell_label = name_curations[o['cell_label']]
                 else:
-                    d['prefLabel'] = node['cell_label']
+                    if node['cell_label'] in duplicate_labels:
+                        cell_label = node['cell_label'] + " (" + node['labelset'] + ")"
+                    else:
+                        cell_label = node['cell_label']
+                d["prefLabel"] = cell_label
+
                 # if o.get('cell_fullname'):
                 #     d['prefLabel'] = o['cell_fullname']
-                d['Synonyms_from_taxonomy'] = "|".join(sorted(node.get("synonyms", [])))
+                synonyms = node.get("synonyms", [])
+                synonyms.append(node['cell_label'])
+                if collapsed:
+                    synonyms.extend([ all_nodes[accession_id]['cell_label'] for accession_id in node["chain"]])
+                d['Synonyms_from_taxonomy'] = "|".join(sorted(list(set(synonyms))))
                 d['Gross_cell_type'] = get_gross_cell_type(node['cell_set_accession'], dend['nodes'])
                 d['Taxon'] = taxonomy_config['Species'][0]
                 d['Taxon_abbv'] = taxonomy_config['Gene_abbv'][0]

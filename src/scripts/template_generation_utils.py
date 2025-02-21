@@ -574,3 +574,30 @@ def deep_merge_dicts(base, updates):
             else:
                 base[key] = value
     return base
+
+
+def read_one_concept_one_name_tsv(file_path):
+    """
+    Reads the one_concept_one_name tsv file and returns a dict of old cell set names mapped to the curated one.
+    Args:
+        file_path: path to the one_concept_one_name tsv file
+
+    Returns: dict of old cell set names mapped to the curated one
+    """
+    records = dict()
+    with open(file_path) as fd:
+        rd = csv.reader(fd, delimiter="\t", quotechar='"')
+        headers = next(rd)
+        if 'preferred_name' in headers:
+            preferred_name_index = headers.index('preferred_name')
+        elif 'Preferred Name' in headers:
+            preferred_name_index = headers.index('Preferred Name')
+        else:
+            raise ValueError("Preferred name column not found in the one_concept_one_name file.")
+        for row in rd:
+            preferred_name = row[preferred_name_index]
+            if preferred_name:
+                for index in range(preferred_name_index):
+                    if row[index]:
+                        records[row[index]] = preferred_name
+    return records

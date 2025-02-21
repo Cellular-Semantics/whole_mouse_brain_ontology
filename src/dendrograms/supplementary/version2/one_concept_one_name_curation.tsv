@@ -1,0 +1,249 @@
+Class	Subclass	Supertype	Cluster	Preferred Name	Notes
+15 HY Gnrh1 Glut	142 HY Gnrh1 Glut	0628 HY Gnrh1 Glut_1	2564 HY Gnrh1 Glut_1		
+25 Pineal Glut	262 Pineal Crx Glut	1030 Pineal Crx Glut_1	4606 Pineal Crx Glut_1	pinealocyte	
+32 OEC	328 OEC NN	1185 OEC NN_1			
+	184 PAG Tcf24 Glut	0782 PAG Tcf24 Glut_1	3353 PAG Tcf24 Glut_1		
+	157 RN Spp1 Glut	0682 RN Spp1 Glut_1	2761 RN Spp1 Glut_1		
+	241 NTS Mbnl3 Glut	0971 NTS Mbnl3 Glut_1	4310 NTS Mbnl3 Glut_1		
+	317 Astro-CB NN	1158 Astro-CB NN_1	5207 Astro-CB NN_1	cerebellar astrocyte	
+	253 IO Fgl2 Glut	1012 IO Fgl2 Glut_1	4557 IO Fgl2 Glut_1		
+	234 MEV Ppp1r1c Glut	0952 MEV Ppp1r1c Glut_1	4197 MEV Ppp1r1c Glut_1		
+	026 NLOT Rho Glut	0102 NLOT Rho Glut_1	0402 NLOT Rho Glut_1		
+	281 POR Gata3 Gly-Gaba	1081 POR Gata3 Gly-Gaba_1	4811 POR Gata3 Gly-Gaba_1		
+	336 Monocytes NN	1196 Monocytes NN_1	5315 Monocytes NN_1		
+	024 L5 PPP Glut	0099 L5 PPP Glut_1	0398 L5 PPP Glut_1		
+	189 PAG Ucn Glut	0789 PAG Ucn Glut_1	3382 PAG Ucn Glut_1		
+	266 PRNc Prox1 Brs3 Gly-Gaba	1043 PRNc Prox1 Brs3 Gly-Gaba_1	4669 PRNc Prox1 Brs3 Gly-Gaba_1		
+	324 Hypendymal NN	1177 Hypendymal NN_1	5263 Hypendymal NN_1		
+	096 PVHd Gsc Gaba	0441 PVHd Gsc Gaba_1	1625 PVHd Gsc Gaba_1		
+	110 BST-po Iigp1 Glut	0501 BST-po Iigp1 Glut_1	1989 BST-po Iigp1 Glut_1		
+	282 POR Spp1 Gly-Gaba	1082 POR Spp1 Gly-Gaba_1	4812 POR Spp1 Gly-Gaba_1		
+	240 MDRNv Lhx4 Qrfprl Glut	0970 MDRNv Lhx4 Qrfprl Glut_1	4309 MDRNv Lhx4 Qrfprl Glut_1		
+	280 NLL-po Pax7 Gaba	1080 NLL-po Pax7 Gaba_1	4810 NLL-po Pax7 Gaba_1		
+	183 PBG Mtnr1a Glut-Chol	0781 PBG Mtnr1a Glut-Chol_1	3352 PBG Mtnr1a Glut-Chol_1		
+	301 MV Nr4a2 Gly-Gaba	1127 MV Nr4a2 Gly-Gaba_1	5066 MV Nr4a2 Gly-Gaba_1		
+	297 CU-ECU Pax2 Gly-Gaba	1117 CU-ECU Pax2 Gly-Gaba_1	5009 CU-ECU Pax2 Gly-Gaba_1		
+	302 MV Xdh Gly-Gaba	1128 MV Xdh Gly-Gaba_1	5067 MV Xdh Gly-Gaba_1		
+	316 Bergmann NN	1157 Bergmann NN_1	5206 Bergmann NN_1	Bergman glial cell	
+	239 MARN-GRN Pyy Glut	0969 MARN-GRN Pyy Glut_1	4308 MARN-GRN Pyy Glut_1		
+	334 Microglia NN	1194 Microglia NN_1	5312 Microglia NN_1		
+	312 CBX MLI Cdh22 Gaba	1151 CBX MLI Cdh22 Gaba_1	5192 CBX MLI Cdh22 Gaba_1		
+21 MB Dopa	215 SNc-VTA-RAmb Foxa1 Dopa				
+22 MB-HB Sero	216 MB-MY Tph2 Glut-Sero				
+	190 ND-INC Foxd2 Glut	0790 ND-INC Foxd2 Glut_1			
+	077 CEA-BST Gal Avp Gaba	0363 CEA-BST Gal Avp Gaba_1			
+	163 APN C1ql2 Glut	0702 APN C1ql2 Glut_1			
+	227 PB-PSV Phox2b Glut	0938 PB-PSV Phox2b Glut_1			
+	156 MB-ant-ve Dmrta2 Glut	0681 MB-ant-ve Dmrta2 Glut_1			
+	112 GPi Tbr1 Cngb3 Gaba-Glut	0504 GPi Tbr1 Cngb3 Gaba-Glut_1			
+	244 MV-SPIV Slc6a2 Glut	0980 MV-SPIV Slc6a2 Glut_1			
+	219 PB-SUT Tlx3 Lhx2 Glut	0903 PB-SUT Tlx3 Lhx2 Glut_1			
+	307 RO-RPA Pkd2l1 Gaba	1140 RO-RPA Pkd2l1 Gaba_1			
+	105 TMd-DMH Foxd2 Gaba	0481 TMd-DMH Foxd2 Gaba_1			
+	333 Endo NN	1193 Endo NN_1			
+	218 PSV Lmx1a Trpv6 Glut	0902 PSV Lmx1a Trpv6 Glut_1			
+	259 MDRNd Bves Glut	1023 MDRNd Bves Glut_1			
+	235 PG-TRN-LRN Fat2 Glut	0953 PG-TRN-LRN Fat2 Glut_1			
+	329 ABC NN	1186 ABC NN_1			
+	325 CHOR NN	1178 CHOR NN_1			
+	242 PGRNd Dmbx1 Glut	0972 PGRNd Dmbx1 Glut_1			
+	036 HPF CR Glut	0135 HPF CR Glut_1			
+	177 SCig-an-PPT Foxb1 Glut	0764 SCig-an-PPT Foxb1 Glut_1			
+	260 MDRNv Crp Glut	1024 MDRNv Crp Glut_1			
+	298 PRP Gata3 Slc6a5 Gly-Gaba	1118 PRP Gata3 Slc6a5 Gly-Gaba_1			
+	331 Peri NN	1191 Peri NN_1			
+	288 MDRN Hoxb5 Ebf2 Gly-Gaba	1102 MDRN Hoxb5 Ebf2 Gly-Gaba_1			
+	249 NTS Aldh1a2 Glut	1002 NTS Aldh1a2 Glut_1			
+	303 IRN Dmbx1 Pax2 Gly-Gaba	1129 IRN Dmbx1 Pax2 Gly-Gaba_1			
+	286 PPY-PGRNl Vip Glyc-Gaba	1098 PPY-PGRNl Vip Glyc-Gaba_1			
+	147 AD Serpinb7 Glut	0641 AD Serpinb7 Glut_1			
+	337 DC NN	1197 DC NN_1			
+	284 GRN-IRN-MDRNd Ikzf1 Gly-Gaba	1088 GRN-IRN-MDRNd Ikzf1 Gly-Gaba_1			
+	120 MEA Otp Foxp2 Glut	0538 MEA Otp Foxp2 Glut_1			
+	255 SPVO Mafa Meis2 Glut	1017 SPVO Mafa Meis2 Glut_1			
+	230 PRNr Otp Nfib Glut	0945 PRNr Otp Nfib Glut_1			
+	289 MDRNd Prox1 Pax6 Gly-Gaba	1103 MDRNd Prox1 Pax6 Gly-Gaba_1			
+	051 Pvalb chandelier Gaba	0204 Pvalb chandelier Gaba_1			
+	043 OB-mi Frmd7 Gaba	0161 OB-mi Frmd7 Gaba_1			
+	021 L4 RSP-ACA Glut	0089 L4 RSP-ACA Glut_1			
+	274 PDTg Otp Shroom3 Gaba	1065 PDTg Otp Shroom3 Gaba_1			
+	186 SCop Pou4f2 Neurod2 Glut	0784 SCop Pou4f2 Neurod2 Glut_1			
+	290 MY Prox1 Lmo7 Gly-Gaba	1104 MY Prox1 Lmo7 Gly-Gaba_1			
+	269 LDT Fgf7 Gaba	1049 LDT Fgf7 Gaba_1			
+	296 RPA Pax6 Hoxb5 Gly-Gaba	1116 RPA Pax6 Hoxb5 Gly-Gaba_1			
+	188 SCop Sln Glut	0788 SCop Sln Glut_1			
+	185 SCig Tfap2b Chrnb3 Glut	0783 SCig Tfap2b Chrnb3 Glut_1			
+	148 AV Col27a1 Glut	0642 AV Col27a1 Glut_1			
+	034 NP PPP Glut	0129 NP PPP Glut_1			
+	143 MM-ant Foxb1 Glut	0629 MM-ant Foxb1 Glut_1			
+	332 SMC NN	1192 SMC NN_1			
+	250 CBN Neurod2 Pvalb Glut	1003 CBN Neurod2 Pvalb Glut_1			
+	179 SCdg-PAG Tfap2b Glut	0766 SCdg-PAG Tfap2b Glut_1			
+	115 MS-SF Bsx Glut	0518 MS-SF Bsx Glut_1			
+	310 CBX Golgi Gly-Gaba	1148 CBX Golgi Gly-Gaba_1			
+	178 SCig Foxb1 Otx2 Glut	0765 SCig Foxb1 Otx2 Glut_1			
+	197 SNr Six3 Gaba	0806 SNr Six3 Gaba_1			
+	299 MARN-PPY Ngfr Gly-Gaba	1119 MARN-PPY Ngfr Gly-Gaba_1			
+	191 PAG-MRN Rln3 Gaba	0791 PAG-MRN Rln3 Gaba_1			
+	050 Lamp5 Lhx6 Gaba	0203 Lamp5 Lhx6 Gaba_1			
+	236 IRN Vip Glut	0954 IRN Vip Glut_1			
+	335 BAM NN	1195 BAM NN_1			
+	275 PDTg Otp Olig3 Gaba	1066 PDTg Otp Olig3 Gaba_1			
+	315 DCO UBC Glut	1156 DCO UBC Glut_1			
+	257 SPVC Ccdc172 Glut	1020 SPVC Ccdc172 Glut_1			
+	295 CBN Dmbx1 Gaba	1115 CBN Dmbx1 Gaba_1			
+	164 APN C1ql4 Glut	0703 APN C1ql4 Glut_1			
+		0160 OB-out Frmd7 Gaba_3	0578 OB-out Frmd7 Gaba_3		
+		1076 NLL Gata3 Gly-Gaba_3	4806 NLL Gata3 Gly-Gaba_3		
+		0315 LSX Nkx2-1 Gaba_10	1112 LSX Nkx2-1 Gaba_10		
+		0949 LDT Vsx2 Nkx6-1 Nfib Glut_2	4194 LDT Vsx2 Nkx6-1 Nfib Glut_2		
+		0544 DMH Nkx2-4 Glut_1	2225 DMH Nkx2-4 Glut_1		
+		0655 TH Prkcd Grin2c Glut_2	2650 TH Prkcd Grin2c Glut_2		
+		0191 Sncg Gaba_7	0683 Sncg Gaba_7		
+		0010 L5/6 IT TPE-ENT Glut_4	0030 L5/6 IT TPE-ENT Glut_4		
+		0862 SCs Pax7 Nfia Gaba_4	3758 SCs Pax7 Nfia Gaba_4		
+		0559 DMH-LHA Vgll2 Glut_1	2285 DMH-LHA Vgll2 Glut_1		
+		0858 SC Lef1 Otx2 Gaba_2	3745 SC Lef1 Otx2 Gaba_2		
+		0139 DG Glut_4	0510 DG Glut_4		
+		0744 PAG Pou4f1 Ebf2 Glut_8	3142 PAG Pou4f1 Ebf2 Glut_8		
+		0280 STR D2 Gaba_7	0989 STR D2 Gaba_7		
+		0428 ARH-PVi Six6 Dopa-Gaba_2	1572 ARH-PVi Six6 Dopa-Gaba_2		
+		0293 IA Mgp Gaba_4	1024 IA Mgp Gaba_4		
+		0334 LSX Sall3 Lmo1 Gaba_4	1182 LSX Sall3 Lmo1 Gaba_4		
+		0140 DG-PIR Ex IMN_1	0511 DG-PIR Ex IMN_1		
+		0797 MRN-PPN-CUN Pax8 Gaba_3	3418 MRN-PPN-CUN Pax8 Gaba_3		
+		0133 OB Eomes Ms4a15 Glut_4	0494 OB Eomes Ms4a15 Glut_4		
+		0212 Pvalb Gaba_8	0754 Pvalb Gaba_8		
+		0256 NDB-SI-MA-STRv Lhx8 Gaba_13	0917 NDB-SI-MA-STRv Lhx8 Gaba_13		
+		0156 OB-in Frmd7 Gaba_7	0566 OB-in Frmd7 Gaba_7		
+		0257 GPe-SI Sox6 Cyp26b1 Gaba_1	0918 GPe-SI Sox6 Cyp26b1 Gaba_1		
+		0271 STR D1 Gaba_7	0960 STR D1 Gaba_7		
+		0896 PB Lmx1a Glut_2	3926 PB Lmx1a Glut_2		
+		0557 ARH-PVp Tbx3 Glut_4	2283 ARH-PVp Tbx3 Glut_4		
+		0558 ARH-PVp Tbx3 Glut_5	2284 ARH-PVp Tbx3 Glut_5		
+		1009 NTS Dbh Glut_6	4550 NTS Dbh Glut_6		
+		0164 OB Dopa-Gaba_3	0591 OB Dopa-Gaba_3		
+		0416 PVR Six3 Sox3 Gaba_6	1523 PVR Six3 Sox3 Gaba_6		
+		0255 NDB-SI-MA-STRv Lhx8 Gaba_12	0916 NDB-SI-MA-STRv Lhx8 Gaba_12		
+		0617 PH-LHA Foxb1 Glut_6	2519 PH-LHA Foxb1 Glut_6		
+		0058 COAp Grxcr2 Glut_1	0215 COAp Grxcr2 Glut_1		
+		0390 CEA-BST Ebf1 Pdyn Gaba_7	1404 CEA-BST Ebf1 Pdyn Gaba_7		
+		0950 NLL-SOC Spp1 Glut_1	4195 NLL-SOC Spp1 Glut_1		
+		0163 OB Dopa-Gaba_2	0590 OB Dopa-Gaba_2		
+		0262 OT D3 Folh1 Gaba_1	0939 OT D3 Folh1 Gaba_1		
+		0995 MV-SPIV Phox2b Ebf3 Lbx1 Glut_4	4488 MV-SPIV Phox2b Ebf3 Lbx1 Glut_4		
+		0254 NDB-SI-MA-STRv Lhx8 Gaba_11	0915 NDB-SI-MA-STRv Lhx8 Gaba_11		
+		0243 Sst Chodl Gaba_6	0862 Sst Chodl Gaba_6		
+		0879 IPN Otp Crisp1 Gaba_3	3836 IPN Otp Crisp1 Gaba_3		
+		0083 L2 IT PPP-APr Glut_4	0328 L2 IT PPP-APr Glut_4		
+		1199 ILC NN_2	5320 ILC NN_2		
+		1147 CB PLI Gly-Gaba_4	5185 CB PLI Gly-Gaba_4		
+		1025 HB Calcb Chol_1	4601 HB Calcb Chol_1		
+		0273 STR D1 Gaba_9	0964 STR D1 Gaba_9		
+		0842 SC Otx2 Gcnt4 Gaba_2	3672 SC Otx2 Gcnt4 Gaba_2		
+		0022 L5 IT CTX Glut_5	0065 L5 IT CTX Glut_5		
+		0119 L6 CT CTX Glut_6	0457 L6 CT CTX Glut_6		
+		0856 SCs Dmbx1 Gaba_5	3740 SCs Dmbx1 Gaba_5		
+		0689 IF-RL-CLI-PAG Foxa1 Glut_5	2780 IF-RL-CLI-PAG Foxa1 Glut_5		
+		0993 MV-SPIV Phox2b Ebf3 Lbx1 Glut_2	4486 MV-SPIV Phox2b Ebf3 Lbx1 Glut_2		
+		0002 CLA-EPd-CTX Car3 Glut_2	0005 CLA-EPd-CTX Car3 Glut_2		
+		0894 MB-MY Tph2 Glut-Sero_7	3911 MB-MY Tph2 Glut-Sero_7		
+		0100 CA2-FC-IG Glut_1	0399 CA2-FC-IG Glut_1		
+		0145 OB Meis2 Thsd7b Gaba_3	0525 OB Meis2 Thsd7b Gaba_3		
+		1075 NLL Gata3 Gly-Gaba_2	4805 NLL Gata3 Gly-Gaba_2		
+		1078 PSV Pax2 Gly-Gaba_1	4808 PSV Pax2 Gly-Gaba_1		
+		1059 LDT-PCG-CS Gata3 Lhx1 Gaba_4	4745 LDT-PCG-CS Gata3 Lhx1 Gaba_4		
+		1164 Astro-TE NN_4	5228 Astro-TE NN_4		
+		1008 NTS Dbh Glut_5	4549 NTS Dbh Glut_5		
+		0053 L2 IT ENT-po Glut_3	0190 L2 IT ENT-po Glut_3		
+		0472 DMH-LHA Gsx1 Gaba_3	1810 DMH-LHA Gsx1 Gaba_3		
+		0009 L5/6 IT TPE-ENT Glut_3	0029 L5/6 IT TPE-ENT Glut_3		
+		1026 HB Calcb Chol_2	4602 HB Calcb Chol_2		
+		0324 LSX Prdm12 Slit2 Gaba_8	1147 LSX Prdm12 Slit2 Gaba_8		
+		0157 OB-in Frmd7 Gaba_8	0567 OB-in Frmd7 Gaba_8		
+		0821 PAG-ND-PCG Onecut1 Gaba_4	3553 PAG-ND-PCG Onecut1 Gaba_4		
+		1046 CS-PRNr-PCG Tmem163 Otp Gaba_3	4686 CS-PRNr-PCG Tmem163 Otp Gaba_3		
+		0893 MB-MY Tph2 Glut-Sero_6	3910 MB-MY Tph2 Glut-Sero_6		
+		1042 PB Sst Gly-Gaba_2	4668 PB Sst Gly-Gaba_2		
+		1011 DMX VII Tbx20 Chol_2	4556 DMX VII Tbx20 Chol_2		
+		1054 NI-RPO Gata3 Nr4a2 Gaba_3	4729 NI-RPO Gata3 Nr4a2 Gaba_3		
+		0146 OB Meis2 Thsd7b Gaba_4	0526 OB Meis2 Thsd7b Gaba_4		
+		0087 L2/3 IT RSP Glut_1	0342 L2/3 IT RSP Glut_1		
+		0012 L5/6 IT TPE-ENT Glut_6	0032 L5/6 IT TPE-ENT Glut_6		
+		0863 SCs Pax7 Nfia Gaba_5	3759 SCs Pax7 Nfia Gaba_5		
+		0298 NDB-SI-ant Prdm12 Gaba_4	1041 NDB-SI-ant Prdm12 Gaba_4		
+		0928 PCG-PRNr Vsx2 Nkx6-1 Glut_4	4116 PCG-PRNr Vsx2 Nkx6-1 Glut_4		
+		0716 PRC-PAG Tcf7l2 Irx2 Glut_4	2920 PRC-PAG Tcf7l2 Irx2 Glut_4		
+		0680 PRC-PAG Pax6 Glut_5	2751 PRC-PAG Pax6 Glut_5		
+		0604 STN-PSTN Pitx2 Glut_7	2459 STN-PSTN Pitx2 Glut_7		
+		0498 LGv-ZI Otx2 Gaba_3	1979 LGv-ZI Otx2 Gaba_3		
+		0951 NLL-SOC Spp1 Glut_2	4196 NLL-SOC Spp1 Glut_2		
+		1014 VCO Mafa Meis2 Glut_2	4561 VCO Mafa Meis2 Glut_2		
+		1200 NK cells NN_3	5321 NK cells NN_3		
+		0942 PSV Pvalb Lhx2 Glut_4	4153 PSV Pvalb Lhx2 Glut_4		
+		1190 VLMC NN_4	5303 VLMC NN_4		
+		1029 HB Calcb Chol_5	4605 HB Calcb Chol_5		
+		0692 PAG-SC Neurod2 Meis2 Glut_3	2790 PAG-SC Neurod2 Meis2 Glut_3		
+		0011 L5/6 IT TPE-ENT Glut_5	0031 L5/6 IT TPE-ENT Glut_5		
+		0994 MV-SPIV Phox2b Ebf3 Lbx1 Glut_3	4487 MV-SPIV Phox2b Ebf3 Lbx1 Glut_3		
+		0296 NDB-SI-ant Prdm12 Gaba_2	1038 NDB-SI-ant Prdm12 Gaba_2		
+		1077 NLL Gata3 Gly-Gaba_4	4807 NLL Gata3 Gly-Gaba_4		
+		0526 LHA Barhl2 Glut_3	2112 LHA Barhl2 Glut_3		
+		0165 OB Dopa-Gaba_4	0592 OB Dopa-Gaba_4		
+		1028 HB Calcb Chol_4	4604 HB Calcb Chol_4		
+		0517 COAa-PAA-MEA Barhl2 Glut_9	2053 COAa-PAA-MEA Barhl2 Glut_9		
+		0211 Pvalb Gaba_7	0753 Pvalb Gaba_7		
+		0325 LSX Prdm12 Slit2 Gaba_9	1148 LSX Prdm12 Slit2 Gaba_9		
+		0188 Sncg Gaba_4	0678 Sncg Gaba_4		
+		0421 BST-MPN Six3 Nrgn Gaba_2	1540 BST-MPN Six3 Nrgn Gaba_2		
+		1079 PSV Pax2 Gly-Gaba_2	4809 PSV Pax2 Gly-Gaba_2		
+		0756 SC Bnc2 Glut_1	3203 SC Bnc2 Glut_1		
+		0043 L2/3 IT PIR-ENTl Glut_5	0161 L2/3 IT PIR-ENTl Glut_5		
+		0506 MEA-COA-BMA Ccdc42 Glut_2	2004 MEA-COA-BMA Ccdc42 Glut_2		
+		1180 OPC NN_2	5271 OPC NN_2		
+		0991 CU-ECU-SPVI Foxb1 Glut_4	4474 CU-ECU-SPVI Foxb1 Glut_4		
+		1201 T cells NN_4	5322 T cells NN_4		
+		0171 OB-STR-CTX Inh IMN_6	0621 OB-STR-CTX Inh IMN_6		
+		0774 IC Tfap2d Maf Glut_5	3315 IC Tfap2d Maf Glut_5		
+		0276 STR D2 Gaba_3	0978 STR D2 Gaba_3		
+		0377 CEA-AAA-BST Six3 Sp9 Gaba_5	1368 CEA-AAA-BST Six3 Sp9 Gaba_5		
+		0541 MEA-BST Otp Zic2 Glut_3	2217 MEA-BST Otp Zic2 Glut_3		
+		1096 MY Lhx1 Gly-Gaba_8	4925 MY Lhx1 Gly-Gaba_8		
+		0578 LHA-AHN-PVH Otp Trh Glut_5	2339 LHA-AHN-PVH Otp Trh Glut_5		
+		0941 PSV Pvalb Lhx2 Glut_3	4152 PSV Pvalb Lhx2 Glut_3		
+		0117 L6 CT CTX Glut_4	0450 L6 CT CTX Glut_4		
+		1112 PAS-MV Ebf2 Gly-Gaba_4	4993 PAS-MV Ebf2 Gly-Gaba_4		
+		1062 PDTg-PCG Pax6 Gaba_2	4753 PDTg-PCG Pax6 Gaba_2		
+		0190 Sncg Gaba_6	0682 Sncg Gaba_6		
+		0054 L2 IT ENT-po Glut_4	0191 L2 IT ENT-po Glut_4		
+		1174 Tanycyte NN_3	5250 Tanycyte NN_3		
+		0401 SI-MPO-LPO Lhx8 Gaba_6	1456 SI-MPO-LPO Lhx8 Gaba_6		
+		0378 CEA-AAA-BST Six3 Sp9 Gaba_6	1369 CEA-AAA-BST Six3 Sp9 Gaba_6		
+		0583 AHN-RCH-LHA Otp Fezf1 Glut_5	2360 AHN-RCH-LHA Otp Fezf1 Glut_5		
+		0671 RE-Xi Nox4 Glut_4	2703 RE-Xi Nox4 Glut_4		
+		1142 DCO Il22 Gly-Gaba_2	5172 DCO Il22 Gly-Gaba_2		
+		0120 CT SUB Glut_1	0458 CT SUB Glut_1		
+		0314 LSX Nkx2-1 Gaba_9	1111 LSX Nkx2-1 Gaba_9		
+		0113 L6b CTX Glut_4	0435 L6b CTX Glut_4		
+		0648 PVT-PT Ntrk1 Glut_6	2632 PVT-PT Ntrk1 Glut_6		
+		0924 B-PB Nr4a2 Glut_2	4099 B-PB Nr4a2 Glut_2		
+		0148 OB Trdn Gaba_1	0529 OB Trdn Gaba_1		
+		0571 VMH Nr5a1 Glut_6	2319 VMH Nr5a1 Glut_6		
+		0562 DMH-LHA Vgll2 Glut_4	2289 DMH-LHA Vgll2 Glut_4		
+		0263 OT D3 Folh1 Gaba_2	0940 OT D3 Folh1 Gaba_2		
+		1170 Astroependymal NN_2	5240 Astroependymal NN_2		
+		0356 MEA-BST Lhx6 Nr2e1 Gaba_3	1280 MEA-BST Lhx6 Nr2e1 Gaba_3		
+		1189 VLMC NN_3	5302 VLMC NN_3		
+		0996 MV-SPIV Phox2b Ebf3 Lbx1 Glut_5	4489 MV-SPIV Phox2b Ebf3 Lbx1 Glut_5		
+		0543 LHA-MEA Otp Glut_2	2224 LHA-MEA Otp Glut_2		
+		0801 SNr-VTA Pax5 Npas1 Gaba_2	3441 SNr-VTA Pax5 Npas1 Gaba_2		
+		1016 VCO Mafa Meis2 Glut_4	4566 VCO Mafa Meis2 Glut_4		
+		0705 PAG-MRN Pou3f1 Glut_2	2868 PAG-MRN Pou3f1 Glut_2		
+		1198 B cells NN_1	5319 B cells NN_1		
+		0706 PAG-MRN Pou3f1 Glut_3	2869 PAG-MRN Pou3f1 Glut_3		
+		0379 CEA-AAA-BST Six3 Sp9 Gaba_7	1370 CEA-AAA-BST Six3 Sp9 Gaba_7		
+		0155 OB-in Frmd7 Gaba_6	0565 OB-in Frmd7 Gaba_6		
+		0213 Pvalb Gaba_9	0755 Pvalb Gaba_9		
+		1027 HB Calcb Chol_3	4603 HB Calcb Chol_3		
+		0560 DMH-LHA Vgll2 Glut_2	2286 DMH-LHA Vgll2 Glut_2		
+		0172 OB-STR-CTX Inh IMN_7	0622 OB-STR-CTX Inh IMN_7		
