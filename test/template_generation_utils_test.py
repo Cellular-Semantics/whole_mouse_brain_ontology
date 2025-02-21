@@ -203,14 +203,14 @@ class TemplateUtilsTest(unittest.TestCase):
 
         label_chain = set()
         for chain in chains:
-            chain_srt = "Chain: " + " -> ".join([node_index[n]["cell_label"] for n in chain])
+            chain_str = "Chain: " + " -> ".join([node_index[n]["cell_label"] for n in chain])
             # print(chain_srt)
-            label_chain.add(chain_srt)
+            label_chain.add(chain_str)
 
 
         self.assertEqual(248, len(chains))
         # self.compare_with_old_results(label_chain)
-        self.write_chains_to_tsv(chains, node_index, labelsets, PATH_MOUSE_REPORT_TSV)
+        # self.write_chains_to_tsv(chains, node_index, labelsets, PATH_MOUSE_REPORT_TSV)
 
     def write_chains_to_tsv(self, chains, node_index, labelsets, output_filepath):
         # Sort labelsets by rank (higher rank to lower rank)

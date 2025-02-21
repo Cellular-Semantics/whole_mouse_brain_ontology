@@ -3,7 +3,10 @@ import os
 import csv
 import networkx as nx
 import json
-import sys
+import copy
+
+from pandas.core.common import all_none
+
 import pcl_id_factory
 
 from dendrogram_tools import tree_recurse
@@ -522,3 +525,52 @@ def find_singleton_chains(treex):
             chains.append(chain)
 
     return chains
+
+def get_collapsed_nodes(dend_tree, all_nodes):
+    """
+    The WMB taxonomy has many cases where there are multiple terms referring to the same set of
+    cells. The Cell Ontology requires one name per concept. Returns the list of nodes that should
+    be collapsed into a single node along with the node to be collapsed into (merged chain node).
+
+    Requirement: https://github.com/Cellular-Semantics/whole_mouse_brain_ontology/issues/46
+    Args:
+        dend_tree: networkx DiGraph representing the taxonomy
+        all_nodes: list of all nodes in the dendrogram
+
+    Returns: dictionary of nodes to be collapsed into a single node. Value is the node to be
+    collapsed into which is the deep merged node of the chain.
+    """
+    collapse_dict = {}
+    chains = find_singleton_chains(dend_tree)
+    for chain in chains:
+        merged_node = copy.deepcopy(all_nodes[chain[-1]])
+        for node_index in reversed(chain[:-1]):
+            merged_node = deep_merge_dicts(merged_node, all_nodes[node_index])
+        # use the cell_label of the highest node in the chain
+        merged_node['cell_label'] = all_nodes[chain[0]]['cell_label']
+        merged_node['chain'] = chain
+        for node_to_collapse in chain:
+            collapse_dict[node_to_collapse] = merged_node
+
+
+    return collapse_dict
+
+def deep_merge_dicts(base, updates):
+    """
+    Merges two dictionaries deeply. If a key exists in both dictionaries, the value in the updates dictionary is used.
+    Args:
+        base: base dictionary
+        updates: dictionary to update the base dictionary
+
+    Returns: merged dictionary
+    """
+    for key, value in updates.items():
+        if isinstance(value, dict) and key in base and isinstance(base[key], dict):
+            deep_merge_dicts(base[key], value)
+        else:
+            if key in base:
+                if base[key] in ["", None, "None"]:
+                    base[key] = value
+            else:
+                base[key] = value
+    return base

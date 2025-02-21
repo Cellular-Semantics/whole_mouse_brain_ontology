@@ -1,0 +1,84 @@
+pattern_name: brainCellClasses
+pattern_iri: http://purl.obolibrary.org/obo/odk/brainCellClasses.yaml
+description: "Class template for BDS."
+
+classes:
+  "cell": "CL:0000000"
+  "thing": "owl:Thing"
+  "animal cell": "CL:0000548"
+  "native_cell": "CL:0000003"
+  "Vertebrata <vertebrates>": "NCBITaxon:7742"
+  "regional part of brain": "UBERON:0002616"
+  "sequence_feature": "SO:0000110"
+  "layer of neocortex": "UBERON:0002301"
+  "projection type": "PATO:0070033" # neuron projection quality
+
+relations:
+  expresses: "RO:0002292"
+  part_of: "BFO:0000050"
+  in_taxon: "RO:0002162"
+  has_soma_location: "RO:0002100"
+  bearer_of: "RO:0000053"
+  has_exemplar_data: "RO:0015001"
+  has_characterizing_marker_set: "RO:0015004"
+  capable_of: "RO:0002215"
+
+annotationProperties:
+  skosPrefLabel: "skos:prefLabel"
+  hasExactSynonym: "oboInOwl:hasExactSynonym"
+  rdfsComment: "rdfs:comment"
+  hasDbXref: "oboInOwl:hasDbXref"
+  symbol: "IAO:0000028"
+  'has nsforest marker': "PCL:0010058"
+  some_soma_located_in: "PCL:0010063"
+  assay_label: "PCL:0010064"
+  cell_ratio: "PCL:0010065"
+  deprecated: "owl:deprecated"
+
+vars:
+  Gross_cell_type: "'cell'"
+  Taxon: "'Vertebrata <vertebrates>'"
+  Classification: "'cell'"
+
+data_vars:
+  prefLabel: "xsd:string"
+  Taxon_abbv: "xsd:string"
+  Comment: "xsd:string"
+  Deprecated: "xsd:boolean"
+
+name:
+   text: "%s %s (%s)"
+   vars:
+      - prefLabel
+      - Gross_cell_type
+      - Taxon_abbv
+
+def:
+  xrefs: Alias_citations
+  multi_clause:
+    sep: " "
+    clauses:
+      - text: 'A %s of the %s brain.'
+        vars:
+          - Gross_cell_type
+          - Taxon
+
+logical_axioms:
+   - axiom_type: subClassOf
+     text: "%s"
+     vars:
+        - Classification
+
+annotations:
+  - annotationProperty: skosPrefLabel
+    text: "%s"
+    vars:
+      - prefLabel
+  - annotationProperty: rdfsComment
+    text: "%s"
+    vars:
+      - Comment
+  - annotationProperty: deprecated
+    text: "%s"
+    vars:
+      - Deprecated

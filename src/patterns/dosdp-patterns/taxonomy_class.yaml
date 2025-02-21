@@ -42,6 +42,7 @@ list_vars:
   MBA: "'thing'"
   NT: "'thing'"
   NT_markers: "'sequence_feature'"
+  Individuals: "'thing'"
 
 vars:
   Classification: "'cell'"
@@ -51,7 +52,6 @@ vars:
   Projection_type: "'projection type'"
   part_of: "'thing'"
   has_soma_location: "'thing'"
-  Individual: "'thing'"
   marker_gene_set: "'thing'"
   CL: "'cell'"
   Nomenclature_Layers: "'layer of neocortex'"
@@ -79,6 +79,7 @@ data_list_vars:
   Expresses_comment: "xsd:string"
   Expresses_pub: "xsd:string"
   Alias_citations: "xsd:string"
+  Cluster_IDs: "xsd:string"
 
 data_vars:
   prefLabel: "xsd:string"
@@ -86,7 +87,6 @@ data_vars:
   Classification_comment: "xsd:string"
   Brain_region_abbv: "xsd:string"
   Species_abbv: "xsd:string"
-  Cluster_ID: "xsd:string"
   Cross_species_text: "xsd:string"
   Taxon_abbv: "xsd:string"
   Dataset_url: "xsd:string"
@@ -153,6 +153,11 @@ internal_vars:
     apply:
       join:
         sep: ', '
+  - var_name: Cluster_IDs_cat
+    input: Cluster_IDs
+    apply:
+      join:
+        sep: ', '
 
 name:
    text: "%s %s (%s)"
@@ -188,7 +193,7 @@ def:
                   - Dataset_url
                   - Labelset
                   - prefLabel
-                  - Cluster_ID
+                  - Cluster_IDs_cat
 
 generated_synonyms:
    - text: "%s expressing %s of %s (%s)"
@@ -262,13 +267,19 @@ logical_axioms:
      vars:
        - has_soma_location
    - axiom_type: subClassOf
-     text: "'has_exemplar_data' value %s"
-     vars:
-        - Individual
+     multi_clause:
+       sep: " and "
+       clauses:
+         - text: "'has_exemplar_data' value %s"
+           vars:
+             - Individuals
    - axiom_type: equivalentTo
-     text: "'cell' and 'has_exemplar_data' value %s"
-     vars:
-        - Individual
+     multi_clause:
+       sep: " and "
+       clauses:
+         - text: "'cell' and 'has_exemplar_data' value %s"
+           vars:
+             - Individuals
    - axiom_type: subClassOf
      text: "'has_soma_location' some %s"
      vars:
