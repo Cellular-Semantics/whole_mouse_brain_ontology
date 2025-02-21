@@ -9,7 +9,7 @@ from dendrogram_tools import cas_json_2_nodes_n_edges, read_json_file
 from template_generation_utils import get_synonyms_from_taxonomy, read_taxonomy_config, \
     get_subtrees, generate_dendrogram_tree, read_taxonomy_details_yaml, read_csv_to_dict,\
     read_csv, read_gene_data, read_markers, get_gross_cell_type, merge_tables, read_allen_descriptions, \
-    extract_taxonomy_name_from_path, get_collapsed_nodes, read_one_concept_one_name_tsv
+    extract_taxonomy_name_from_path, get_collapsed_nodes, read_one_concept_one_name_tsv, format_cell_label
 from nomenclature_tools import nomenclature_2_nodes_n_edges
 from pcl_id_factory import PCLIdFactory
 from marker_tools import get_nsforest_confidences
@@ -136,7 +136,7 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
         name_curations = read_one_concept_one_name_tsv(NAME_CURATION_MAPPING)
         # subtrees = get_subtrees(dend_tree, taxonomy_config)
 
-        duplicate_labels = find_duplicate_cell_labels(dend['nodes'])
+        # duplicate_labels = find_duplicate_cell_labels(dend['nodes'])
 
         gene_db = read_gene_dbs(TEMPLATES_FOLDER_PATH)
         gene_names = dict()
@@ -188,6 +188,7 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
         class_template = []
         obsolete_template = []
         processed_accessions = set()
+        all_cell_labels = set()
         for o in dend['nodes']:
             node = o
             if o['cell_set_accession'] in nodes_to_collapse:
@@ -202,12 +203,9 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                 if o['cell_label'] in name_curations:
                     cell_label = name_curations[o['cell_label']]
                 else:
-                    if node['cell_label'] in duplicate_labels:
-                        cell_label = node['cell_label'] + " (" + node['labelset'] + ")"
-                    else:
-                        cell_label = node['cell_label']
-                d["prefLabel"] = cell_label
-
+                    cell_label = node['cell_label']
+                d["prefLabel"] = format_cell_label(cell_label, node, all_cell_labels)
+                all_cell_labels.add(d["prefLabel"])
                 # if o.get('cell_fullname'):
                 #     d['prefLabel'] = o['cell_fullname']
                 synonyms = node.get("synonyms", [])

@@ -4,6 +4,7 @@ import csv
 import networkx as nx
 import json
 import copy
+import re
 
 from pandas.core.common import all_none
 
@@ -601,3 +602,42 @@ def read_one_concept_one_name_tsv(file_path):
                     if row[index]:
                         records[row[index]] = preferred_name
     return records
+
+
+def format_cell_label(cell_label, node, all_labels):
+    """
+    Formats the cell labels to remove the heading numbers and making label unique by applying markers
+    Args:
+        cell_label: current name to format
+        node: all cell set data
+        all_labels: all assigned names
+
+    Returns: formatted cell label
+    """
+    # remove the heading numbers
+    m = re.match("^0*([1-9][0-9]*) (.+)$", cell_label)
+    if m:
+        formatted_name = m.group(2).strip()
+    else:
+        formatted_name = cell_label.strip()
+    if formatted_name in all_labels:
+        marker_properties = ["cluster.markers.combo _within subclass_", "cluster.markers.combo", "supertype.markers.combo _within subclass_", "supertype.markers.combo"]
+        unified_markers = []
+        author_annotations = node["author_annotation_fields"]
+        for marker_property in marker_properties:
+            if marker_property in author_annotations and author_annotations[marker_property] != "None":
+                unified_markers.extend([marker.strip() for marker in author_annotations[marker_property].split(",") if marker.strip() not in unified_markers])
+        # apply one of the unified markers at a time till the name is unique
+        for marker in unified_markers:
+            # if len(marker) <= 8:
+            new_name = formatted_name + " " + marker
+            if new_name not in all_labels:
+                formatted_name = new_name
+                break
+        if formatted_name in all_labels:
+            print(unified_markers)
+            print(node["cell_set_accession"])
+            raise ValueError("Couldn't find a unique name for: " + cell_label + " - " + node["cell_set_accession"])
+        if "none" in formatted_name.lower():
+            raise ValueError("Name contains 'none': " + cell_label)
+    return formatted_name
