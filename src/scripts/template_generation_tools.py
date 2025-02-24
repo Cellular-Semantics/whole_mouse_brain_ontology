@@ -130,6 +130,7 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
     if taxonomy_config:
         dend = cas_json_2_nodes_n_edges(taxonomy_file_path)
         all_nodes = {node['cell_set_accession']: node for node in dend['nodes']}
+        all_names = {node['cell_label']: node for node in dend['nodes']}
         id_factory = PCLIdFactory(read_json_file(taxonomy_file_path))
         dend_tree = generate_dendrogram_tree(dend)
         nodes_to_collapse = get_collapsed_nodes(dend_tree, all_nodes)
@@ -188,7 +189,7 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
         class_template = []
         obsolete_template = []
         processed_accessions = set()
-        all_cell_labels = set()
+        all_cell_set_labels = set()
         for o in dend['nodes']:
             node = o
             if o['cell_set_accession'] in nodes_to_collapse:
@@ -200,12 +201,8 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                 d = dict()
                 d['defined_class'] = PCL_BASE + id_factory.get_class_id(node['cell_set_accession'])
 
-                if o['cell_label'] in name_curations:
-                    cell_label = name_curations[o['cell_label']]
-                else:
-                    cell_label = node['cell_label']
-                d["prefLabel"] = format_cell_label(cell_label, node, all_cell_labels)
-                all_cell_labels.add(d["prefLabel"])
+                d["prefLabel"] = get_unique_cell_label(o, node, all_cell_set_labels, all_names,
+                                                   name_curations)
                 # if o.get('cell_fullname'):
                 #     d['prefLabel'] = o['cell_fullname']
                 synonyms = node.get("synonyms", [])
@@ -360,6 +357,27 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
             obsolete_filepath = output_filepath.replace("_base.tsv", "_obsolete.tsv")
             class_obsolete_template = pd.DataFrame.from_records(obsolete_template)
             class_obsolete_template.to_csv(obsolete_filepath, sep="\t", index=False)
+
+
+def get_unique_cell_label(o, node, generated_labels, all_names, name_curations):
+    """
+    Provides a unique cell label by checking the manual curation and existing labels in the taxonomy.
+    Args:
+        o: Taxonomy node
+        node: compressed node or 'o' if no compression
+        generated_labels: all labels added to ontology
+        all_names: all labels existing in the taxonomy
+        name_curations: manual curation of cell labels
+
+    Returns: unique cell label
+    """
+    if o['cell_label'] in name_curations:
+        cell_label = name_curations[o['cell_label']]
+    else:
+        cell_label = node['cell_label']
+    cell_label = format_cell_label(cell_label, node, all_names, generated_labels)
+    generated_labels.add(cell_label)
+    return cell_label
 
 
 def populate_mba_relations(ccf_broad_freq, approach, d, index, mba_symbols, mba_labels, missed_regions):

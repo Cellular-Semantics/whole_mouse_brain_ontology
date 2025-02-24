@@ -604,13 +604,14 @@ def read_one_concept_one_name_tsv(file_path):
     return records
 
 
-def format_cell_label(cell_label, node, all_labels):
+def format_cell_label(cell_label, node, all_labels, generated_labels):
     """
     Formats the cell labels to remove the heading numbers and making label unique by applying markers
     Args:
         cell_label: current name to format
         node: all cell set data
-        all_labels: all assigned names
+        all_labels: all cell set names in the taxonomy
+        generated_labels: all labels added to ontology
 
     Returns: formatted cell label
     """
@@ -620,7 +621,8 @@ def format_cell_label(cell_label, node, all_labels):
         formatted_name = m.group(2).strip()
     else:
         formatted_name = cell_label.strip()
-    if formatted_name in all_labels:
+    will_be_unique = len([cell_label for cell_label in all_labels if cell_label.endswith(formatted_name)]) <= 1
+    if not will_be_unique:
         marker_properties = ["cluster.markers.combo _within subclass_", "cluster.markers.combo", "supertype.markers.combo _within subclass_", "supertype.markers.combo"]
         unified_markers = []
         author_annotations = node["author_annotation_fields"]
@@ -630,13 +632,12 @@ def format_cell_label(cell_label, node, all_labels):
         # apply one of the unified markers at a time till the name is unique
         for marker in unified_markers:
             # if len(marker) <= 8:
-            new_name = formatted_name + " " + marker
-            if new_name not in all_labels:
-                formatted_name = new_name
-                break
-        if formatted_name in all_labels:
-            print(unified_markers)
-            print(node["cell_set_accession"])
+            if marker not in formatted_name:
+                new_name = formatted_name + " " + marker
+                if new_name not in generated_labels:
+                    formatted_name = new_name
+                    break
+        if formatted_name in generated_labels:
             raise ValueError("Couldn't find a unique name for: " + cell_label + " - " + node["cell_set_accession"])
         if "none" in formatted_name.lower():
             raise ValueError("Name contains 'none': " + cell_label)
