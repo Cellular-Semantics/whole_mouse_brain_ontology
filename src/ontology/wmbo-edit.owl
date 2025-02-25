@@ -6,6 +6,7 @@ Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 Prefix(dcterms:=<http://purl.org/dc/terms/>)
+Prefix(IAO:=<http://purl.obolibrary.org/obo/IAO_>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/WMBO.owl>
@@ -15,6 +16,9 @@ Import(<http://purl.obolibrary.org/obo/bdscratch/patterns/definitions.owl>)
 Import(<http://purl.obolibrary.org/obo/components/all_templates.owl>)
 Annotation(dce:title "Full Mouse Brain Ontology")
 Annotation(dcterms:license <http://creativecommons.org/licenses/by/4.0/>)
+
+# OLS root term
+Annotation(IAO:0000700 <http://purl.obolibrary.org/obo/CL_0000000>)
 
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000099>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_4023119>))
