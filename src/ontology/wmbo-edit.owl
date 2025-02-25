@@ -14,7 +14,8 @@ Import(<http://purl.obolibrary.org/obo/helper.owl>)
 Import(<http://purl.obolibrary.org/obo/pcl/imports/merged_import.owl>)
 Import(<http://purl.obolibrary.org/obo/bdscratch/patterns/definitions.owl>)
 Import(<http://purl.obolibrary.org/obo/components/all_templates.owl>)
-Annotation(dce:title "Full Mouse Brain Ontology")
+Annotation(dcterms:title "Whole Mouse Brain Ontology")
+Annotation(dcterms:description "A data-driven cell-type ontology of the whole mouse brain.")
 Annotation(dcterms:license <http://creativecommons.org/licenses/by/4.0/>)
 
 # OLS root term
