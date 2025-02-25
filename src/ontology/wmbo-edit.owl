@@ -18,8 +18,47 @@ Annotation(dcterms:title "Whole Mouse Brain Ontology")
 Annotation(dcterms:description "A data-driven cell-type ontology of the whole mouse brain.")
 Annotation(dcterms:license <http://creativecommons.org/licenses/by/4.0/>)
 
-# OLS root term
-Annotation(IAO:0000700 <http://purl.obolibrary.org/obo/CL_0000000>)
+# OLS root terms
+# endothelial cell
+Annotation(IAO:0000700 <http://purl.obolibrary.org/obo/CL_0000115>)
+# glial cell
+Annotation(IAO:0000700 <http://purl.obolibrary.org/obo/CL_0000125>)
+# astrocyte
+Annotation(IAO:0000700 <http://purl.obolibrary.org/obo/CL_0000127>)
+# oligodendrocyte
+Annotation(IAO:0000700 <http://purl.obolibrary.org/obo/CL_0000128>)
+# microglial cell
+Annotation(IAO:0000700 <http://purl.obolibrary.org/obo/CL_0000129>)
+# dopaminergic neuro
+Annotation(IAO:0000700 <http://purl.obolibrary.org/obo/CL_0000700>)
+# leukocyte
+Annotation(IAO:0000700 <http://purl.obolibrary.org/obo/CL_0000738>)
+# serotonergic neuron
+Annotation(IAO:0000700 <http://purl.obolibrary.org/obo/CL_0000850>)
+# perivascular macrophage
+Annotation(IAO:0000700 <http://purl.obolibrary.org/obo/CL_0000881>)
+# GABAergic neuron
+Annotation(IAO:0000700 <http://purl.obolibrary.org/obo/CL_0000617>)
+# Glut
+Annotation(IAO:0000700 <http://purl.obolibrary.org/obo/CL_0000679>)
+# oligodendrocyte precursor cell
+Annotation(IAO:0000700 <http://purl.obolibrary.org/obo/CL_0002453>)
+# smooth muscle cell of the brain vasculature
+Annotation(IAO:0000700 <http://purl.obolibrary.org/obo/CL_0002590>)
+# GABAergic interneuron
+Annotation(IAO:0000700 <http://purl.obolibrary.org/obo/CL_0011005>)
+# vascular leptomeningeal cell
+Annotation(IAO:0000700 <http://purl.obolibrary.org/obo/CL_4023051>)
+# brain pericyte
+Annotation(IAO:0000700 <http://purl.obolibrary.org/obo/CL_2000043>)
+# L5 sst T-Martinotti interneuron
+# Annotation(IAO:0000700 <http://purl.obolibrary.org/obo/CL_4023027>)
+# Annotation(IAO:0000700 <http://purl.obolibrary.org/obo/CL_4023063>)
+# Annotation(IAO:0000700 <http://purl.obolibrary.org/obo/CL_4023064>)
+# Annotation(IAO:0000700 <http://purl.obolibrary.org/obo/CL_4023065>)
+# Annotation(IAO:0000700 <http://purl.obolibrary.org/obo/CL_4023072>)
+
+
 
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000099>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_4023119>))
