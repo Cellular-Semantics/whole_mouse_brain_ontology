@@ -547,7 +547,7 @@ def get_collapsed_nodes(dend_tree, all_nodes):
         merged_node = copy.deepcopy(all_nodes[chain[-1]])
         for node_index in reversed(chain[:-1]):
             merged_node = deep_merge_dicts(merged_node, all_nodes[node_index])
-        # use the cell_label of the highest node in the chain
+        # use the cell_label and label set of the highest node in the chain
         merged_node['cell_label'] = all_nodes[chain[0]]['cell_label']
         merged_node['chain'] = chain
         for node_to_collapse in chain:
@@ -604,7 +604,7 @@ def read_one_concept_one_name_tsv(file_path):
     return records
 
 
-def format_cell_label(cell_label, node, all_labels, generated_labels):
+def format_cell_label(cell_label, node, all_labels, generated_labels, is_collapsed=False):
     """
     Formats the cell labels to remove the heading numbers and making label unique by applying markers
     Args:
@@ -612,6 +612,7 @@ def format_cell_label(cell_label, node, all_labels, generated_labels):
         node: all cell set data
         all_labels: all cell set names in the taxonomy
         generated_labels: all labels added to ontology
+        is_collapsed: if the cell set is part of a compressed chain
 
     Returns: formatted cell label
     """
@@ -621,9 +622,9 @@ def format_cell_label(cell_label, node, all_labels, generated_labels):
         formatted_name = m.group(2).strip()
     else:
         formatted_name = cell_label.strip()
-    will_be_unique = len([cell_label for cell_label in all_labels if cell_label.endswith(formatted_name)]) <= 1
-    if not will_be_unique:
-        marker_properties = ["cluster.markers.combo _within subclass_", "cluster.markers.combo", "supertype.markers.combo _within subclass_", "supertype.markers.combo"]
+    will_be_unique =  len([cell_label for cell_label in all_labels if cell_label.endswith(formatted_name)]) <= 1
+    if not is_collapsed and str(node["labelset"]).lower() == "cluster" and not will_be_unique:
+        marker_properties = ["cluster.markers.combo _within subclass_", "cluster.markers.combo", "cluster.TF.markers.combo", "supertype.markers.combo _within subclass_", "supertype.markers.combo"]
         unified_markers = []
         author_annotations = node["author_annotation_fields"]
         for marker_property in marker_properties:
@@ -637,8 +638,8 @@ def format_cell_label(cell_label, node, all_labels, generated_labels):
                 if new_name not in generated_labels:
                     formatted_name = new_name
                     break
-        if formatted_name in generated_labels:
-            raise ValueError("Couldn't find a unique name for: " + cell_label + " - " + node["cell_set_accession"])
-        if "none" in formatted_name.lower():
-            raise ValueError("Name contains 'none': " + cell_label)
+    if formatted_name in generated_labels:
+        raise ValueError("Couldn't find a unique name for: " + cell_label + " - " + node["cell_set_accession"])
+    if "none" in formatted_name.lower():
+        raise ValueError("Name contains 'none': " + cell_label)
     return formatted_name
