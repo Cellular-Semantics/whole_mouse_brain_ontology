@@ -31,8 +31,11 @@ annotationProperties:
   symbol: "IAO:0000028"
   'has nsforest marker': "PCL:0010058"
   some_soma_located_in: "PCL:0010063"
-  assay_label: "PCL:0010064"
+#  assay_label: "PCL:0010064"
+  assay: "OBI:0000070"
   cell_ratio: "PCL:0010065"
+  'has minimal marker': "PCL:0010066"
+  evidence: "oboInOwl:evidence"
 
 list_vars:
   Expresses: "'thing'"
@@ -56,6 +59,14 @@ vars:
   CL: "'cell'"
   Nomenclature_Layers: "'layer of neocortex'"
   Nomenclature_Projection: "'projection type'"
+  NT_marker_1: "'thing'"
+  NT_marker_2: "'thing'"
+  NT_marker_3: "'thing'"
+  NT_marker_4: "'thing'"
+  NT_marker_5: "'thing'"
+  NT_marker_6: "'thing'"
+  NT_marker_7: "'thing'"
+  NT_marker_8: "'thing'"
   MBA_1: "'thing'"
   MBA_2: "'thing'"
   MBA_3: "'thing'"
@@ -309,6 +320,23 @@ logical_axioms:
      text: "%s"
      vars:
        - CL
+     annotations:
+       - annotationProperty: evidence
+         var: NT_marker_1
+       - annotationProperty: evidence
+         var: NT_marker_2
+       - annotationProperty: evidence
+         var: NT_marker_3
+       - annotationProperty: evidence
+         var: NT_marker_4
+       - annotationProperty: evidence
+         var: NT_marker_5
+       - annotationProperty: evidence
+         var: NT_marker_6
+       - annotationProperty: evidence
+         var: NT_marker_7
+       - annotationProperty: evidence
+         var: NT_marker_8
 
 annotations:
   - annotationProperty: skosPrefLabel
@@ -334,7 +362,7 @@ annotations:
     vars:
       - prefLabel
       - Species_abbv
-  - annotationProperty: 'has nsforest marker'
+  - annotationProperty: 'has minimal marker'
     multi_clause:
       sep: " "
       clauses:
@@ -352,7 +380,7 @@ annotations:
         text: "%s"
         vars:
           - MBA_1_cell_percentage
-      - annotationProperty: assay_label
+      - annotationProperty: assay
         var: MBA_assay
   - annotationProperty: some_soma_located_in
     var: MBA_2
@@ -365,7 +393,7 @@ annotations:
         text: "%s"
         vars:
           - MBA_2_cell_percentage
-      - annotationProperty: assay_label
+      - annotationProperty: assay
         var: MBA_assay
   - annotationProperty: some_soma_located_in
     var: MBA_3
@@ -378,7 +406,7 @@ annotations:
         text: "%s"
         vars:
           - MBA_3_cell_percentage
-      - annotationProperty: assay_label
+      - annotationProperty: assay
         var: MBA_assay
   - annotationProperty: some_soma_located_in
     var: MBA_4
@@ -391,7 +419,7 @@ annotations:
         text: "%s"
         vars:
           - MBA_4_cell_percentage
-      - annotationProperty: assay_label
+      - annotationProperty: assay
         var: MBA_assay
   - annotationProperty: some_soma_located_in
     var: MBA_5
@@ -404,7 +432,7 @@ annotations:
         text: "%s"
         vars:
           - MBA_5_cell_percentage
-      - annotationProperty: assay_label
+      - annotationProperty: assay
         var: MBA_assay
   - annotationProperty: some_soma_located_in
     var: MBA_6
@@ -417,7 +445,7 @@ annotations:
         text: "%s"
         vars:
           - MBA_6_cell_percentage
-      - annotationProperty: assay_label
+      - annotationProperty: assay
         var: MBA_assay
   - annotationProperty: some_soma_located_in
     var: MBA_7
@@ -430,7 +458,7 @@ annotations:
         text: "%s"
         vars:
           - MBA_7_cell_percentage
-      - annotationProperty: assay_label
+      - annotationProperty: assay
         var: MBA_assay
   - annotationProperty: some_soma_located_in
     var: MBA_8
@@ -443,7 +471,7 @@ annotations:
         text: "%s"
         vars:
           - MBA_8_cell_percentage
-      - annotationProperty: assay_label
+      - annotationProperty: assay
         var: MBA_assay
   - annotationProperty: some_soma_located_in
     var: MBA_9
@@ -456,7 +484,7 @@ annotations:
         text: "%s"
         vars:
           - MBA_9_cell_percentage
-      - annotationProperty: assay_label
+      - annotationProperty: assay
         var: MBA_assay
   - annotationProperty: some_soma_located_in
     var: MBA_10
@@ -469,7 +497,7 @@ annotations:
         text: "%s"
         vars:
           - MBA_10_cell_percentage
-      - annotationProperty: assay_label
+      - annotationProperty: assay
         var: MBA_assay
   - annotationProperty: some_soma_located_in
     var: MBA_11
@@ -482,7 +510,7 @@ annotations:
         text: "%s"
         vars:
           - MBA_11_cell_percentage
-      - annotationProperty: assay_label
+      - annotationProperty: assay
         var: MBA_assay
   - annotationProperty: some_soma_located_in
     var: MBA_12
@@ -495,7 +523,7 @@ annotations:
         text: "%s"
         vars:
           - MBA_12_cell_percentage
-      - annotationProperty: assay_label
+      - annotationProperty: assay
         var: MBA_assay
   - annotationProperty: some_soma_located_in
     var: MBA_13
@@ -508,7 +536,7 @@ annotations:
         text: "%s"
         vars:
           - MBA_13_cell_percentage
-      - annotationProperty: assay_label
+      - annotationProperty: assay
         var: MBA_assay
   - annotationProperty: some_soma_located_in
     var: MBA_14
@@ -521,5 +549,5 @@ annotations:
         text: "%s"
         vars:
           - MBA_14_cell_percentage
-      - annotationProperty: assay_label
+      - annotationProperty: assay
         var: MBA_assay
