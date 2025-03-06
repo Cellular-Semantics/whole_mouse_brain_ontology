@@ -12,13 +12,15 @@ INSERT {
   ?restriction ?p ?o .
 }
 WHERE {
+  VALUES ?restriction_property { <http://purl.obolibrary.org/obo/RO_0015001> <http://purl.obolibrary.org/obo/RO_0015004> }
+
   ?class a owl:Class;
             rdfs:subClassOf ?subClassOf .
   ?subClassOf a owl:Class ;
             owl:intersectionOf ?intersection .
   ?intersection rdf:rest*/rdf:first ?restriction .
 
-  ?restriction owl:onProperty <http://purl.obolibrary.org/obo/RO_0015001> .
+  ?restriction owl:onProperty ?restriction_property .
   ?restriction ?p ?o .
   FILTER( strstarts(str(?class), str(pcl:)) )
 }

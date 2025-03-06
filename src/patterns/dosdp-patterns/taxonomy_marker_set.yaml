@@ -16,15 +16,17 @@ vars:
   Parent: "'thing'"
 
 list_vars:
-  Minimal_markers: "'sequence_feature'"
+  Markers: "'sequence_feature'"
 
 data_vars:
   Marker_set_of: "xsd:string"
   Species_abbv: "xsd:string"
   FBeta_confidence_score: "xsd:float"
+  Algorithm: "xsd:string"
 
 annotationProperties:
   fbetaConfidenceScore: "STATO:0000663"
+  algorithm: "IAO:0000064"
 
 name:
    text: "Marker set of %s (%s)."
@@ -39,7 +41,7 @@ logical_axioms:
       clauses:
         - text: "'has_part' some %s"
           vars:
-            - Minimal_markers
+            - Markers
    - axiom_type: subClassOf
      text: "%s"
      vars:
@@ -54,3 +56,7 @@ annotations:
     text: "%s"
     vars:
       - FBeta_confidence_score
+  - annotationProperty: algorithm
+    text: "%s"
+    vars:
+      - Algorithm

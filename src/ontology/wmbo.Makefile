@@ -14,13 +14,13 @@ BICANBASE=                    https://purl.brain-bican.org/taxonomy
 
 TSV_CLASS_FILES = $(patsubst %, $(TMPDIR)/%_class.tsv, $(JOBS))
 #TSV_CLASS_HOMOLOGOUS_FILES = $(patsubst %, ../patterns/data/default/%_class_homologous.tsv, $(JOBS))
-#TSV_MARKER_SET_FILES = $(patsubst %, ../patterns/data/default/%_marker_set.tsv, $(JOBS))
 
 OWL_FILES = $(patsubst %, components/%_indv.owl, $(JOBS))
 OWL_CLASS_FILES = $(patsubst %, components/%_class.owl, $(JOBS))
 OWL_OBSOLETE_CLASS_FILES = $(patsubst %, components/%_obsolete_class.owl, $(JOBS))
 OWL_CLASS_HOMOLOGOUS_FILES = $(patsubst %, components/%_class_homologous.owl, $(JOBS))
 OWL_MARKER_SET_FILES = $(patsubst %, components/%_marker_set.owl, $(JOBS))
+OWL_NSF_MARKER_SET_FILES = $(patsubst %, components/%_nsforest_marker_set.owl, $(JOBS))
 GENE_FILES = $(patsubst %, mirror/%.owl, $(GENE_LIST))
 OWL_APP_SPECIFIC_FILES = $(patsubst %, components/%_app_specific.owl, $(JOBS))
 OWL_DATASET_FILES = $(patsubst %, components/%_dataset.owl, $(JOBS))
@@ -31,7 +31,7 @@ PCL_LEGACY_FILE = components/pcl-legacy.owl
 OWL_OBSOLETE_INDVS = $(patsubst %, components/%_obsolete_indvs.owl, $(JOBS))
 OWL_OBSOLETE_TAXONOMY_FILE = components/taxonomies_obsolete.owl
 
-CLEANFILES=$(MAIN_FILES) $(SRCMERGED) $(EDIT_PREPROCESSED) $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_OBSOLETE_CLASS_FILES) $(OWL_MARKER_SET_FILES) $(COMPONENTSDIR)/wmb_taxonomy.owl
+CLEANFILES=$(MAIN_FILES) $(SRCMERGED) $(EDIT_PREPROCESSED) $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_OBSOLETE_CLASS_FILES) $(OWL_MARKER_SET_FILES) $(OWL_NSF_MARKER_SET_FILES) $(COMPONENTSDIR)/wmb_taxonomy.owl
 
 # overriding to add prefixes
 $(PATTERNDIR)/pattern.owl: $(ALL_PATTERN_FILES)
@@ -93,7 +93,10 @@ $(PATTERNDIR)/data/default/%_class_obsolete.txt: $(PATTERNDIR)/data/default/%_cl
 #$(PATTERNDIR)/data/default/%_class_homologous.txt: $(PATTERNDIR)/data/default/%_class_homologous.tsv $(TSV_CLASS_FILES) .FORCE
 #	if [ $(PAT) = true ]; then $(DOSDPT) terms --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_class_homologous.yaml --obo-prefixes=true --prefixes=template_prefixes.yaml --outfile=$@; fi
 
-$(PATTERNDIR)/data/default/%_marker_set.txt: $(PATTERNDIR)/data/default/%_marker_set.tsv $(TSV_MARKER_SET_FILES) .FORCE
+$(PATTERNDIR)/data/default/%_marker_set.txt: $(PATTERNDIR)/data/default/%_marker_set.tsv .FORCE
+	if [ $(PAT) = true ]; then $(DOSDPT) terms --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_marker_set.yaml --obo-prefixes=true --prefixes=template_prefixes.yaml --outfile=$@; fi
+
+$(PATTERNDIR)/data/default/%_nsforest_marker_set.txt: $(PATTERNDIR)/data/default/%_nsforest_marker_set.tsv .FORCE
 	if [ $(PAT) = true ]; then $(DOSDPT) terms --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_marker_set.yaml --obo-prefixes=true --prefixes=template_prefixes.yaml --outfile=$@; fi
 
 #$(PATTERNDIR)/data/default/Protein2GeneExpression.txt: $(PATTERNDIR)/data/default/Protein2GeneExpression.tsv .FORCE
@@ -110,19 +113,6 @@ mirror/ensmusg.owl: ../templates/ensmusg.tsv .FORCE
       --add-prefixes template_prefixes.json \
       annotate --ontology-iri ${BDS_BASE}$@ \
       convert --format ofn --output $@; fi
-#	if [ $(MIR) = true ]; then $(ROBOT) template --input $(SRC) --template ../templates/simple_human.tsv \
-#      --add-prefixes template_prefixes.json \
-#      annotate --ontology-iri ${BDS_BASE}mirror/simple_human.owl \
-#      convert --format ofn --output mirror/simple_human.owl; fi
-#	if [ $(MIR) = true ]; then $(ROBOT) template --input $(SRC) --template ../templates/simple_marmoset.tsv \
-#      --add-prefixes template_prefixes.json \
-#      annotate --ontology-iri ${BDS_BASE}mirror/simple_marmoset.owl \
-#      convert --format ofn --output mirror/simple_marmoset.owl; fi
-
-#.PRECIOUS: mirror/simple_human.owl
-#.PRECIOUS: imports/simple_human_import.owl
-#.PRECIOUS: mirror/simple_marmoset.owl
-#.PRECIOUS: imports/simple_marmoset_import.owl
 
 $(COMPONENTSDIR)/wmb_taxonomy.owl:
 	wget https://raw.githubusercontent.com/brain-bican/whole_mouse_brain_taxonomy/refs/heads/main/CCN20230722.rdf -O $(TMPDIR)/CCN20230722.rdf
@@ -130,10 +120,14 @@ $(COMPONENTSDIR)/wmb_taxonomy.owl:
 
 # merge all templates except application specific ones
 .PHONY: $(COMPONENTSDIR)/all_templates.owl
-$(COMPONENTSDIR)/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_OBSOLETE_CLASS_FILES) $(OWL_MARKER_SET_FILES) $(COMPONENTSDIR)/wmb_taxonomy.owl
+$(COMPONENTSDIR)/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_OBSOLETE_CLASS_FILES) $(OWL_MARKER_SET_FILES) $(OWL_NSF_MARKER_SET_FILES) $(COMPONENTSDIR)/wmb_taxonomy.owl
 	$(ROBOT) merge $(patsubst %, -i %, $(filter-out $(OWL_APP_SPECIFIC_FILES), $^)) \
 	 --collapse-import-closure false \
 	 annotate --ontology-iri ${BDS_BASE}$@  \
+	 query --update ../sparql/replace_string_to_float.ru  \
+	 query --update ../sparql/replace_string_to_boolean.ru  \
+	 query --update ../sparql/unpack_subclass_of_intersection.ru  \
+	 query --update ../sparql/unpack_equivalentclass_intersection.ru  \
 	 convert -f ofn	 -o $@
 
 .PRECIOUS: $(COMPONENTSDIR)/all_templates.owl
@@ -148,15 +142,11 @@ $(COMPONENTSDIR)/%_obsolete_class.owl: $(PATTERNDIR)/data/default/%_class_obsole
 	$(DOSDPT) generate --catalog=catalog-v001.xml --prefixes=template_prefixes.yaml \
         --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_class_obsolete.yaml \
         --ontology=$(SRC) --obo-prefixes=true --outfile=$@
-	$(ROBOT)  query --input $@ --update ../sparql/replace_string_to_boolean.ru --output $@
 
 $(COMPONENTSDIR)/%_class.owl: $(TMPDIR)/%_class.tsv $(PATTERNDIR)/dosdp-patterns/taxonomy_class.yaml $(SRC)
 	$(DOSDPT) generate --catalog=catalog-v001.xml --prefixes=template_prefixes.yaml \
         --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_class.yaml \
         --ontology=$(SRC) --obo-prefixes=true --outfile=$@
-	$(ROBOT)  query --input $@ --update ../sparql/replace_string_to_float.ru --output $@
-	$(ROBOT)  query --input $@ --update ../sparql/unpack_equivalentclass_intersection.ru --output $@
-	$(ROBOT)  query --input $@ --update ../sparql/unpack_subclass_of_intersection.ru --output $@
 
 #components/%_class_homologous.owl: $(PATTERNDIR)/data/default/%_class_homologous.tsv $(SRC) $(PATTERNDIR)/dosdp-patterns/taxonomy_class_homologous.yaml $(SRC) all_imports .FORCE
 #	$(DOSDPT) generate --catalog=catalog-v001.xml --prefixes=template_prefixes.yaml \
@@ -164,6 +154,11 @@ $(COMPONENTSDIR)/%_class.owl: $(TMPDIR)/%_class.tsv $(PATTERNDIR)/dosdp-patterns
 #        --ontology=$(SRC) --obo-prefixes=true --outfile=$@
 
 components/%_marker_set.owl: $(PATTERNDIR)/data/default/%_marker_set.tsv $(PATTERNDIR)/dosdp-patterns/taxonomy_marker_set.yaml $(SRC)
+	$(DOSDPT) generate --catalog=catalog-v001.xml --prefixes=template_prefixes.yaml \
+        --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_marker_set.yaml \
+        --ontology=$(SRC) --obo-prefixes=true --outfile=$@
+
+components/%_nsforest_marker_set.owl: $(PATTERNDIR)/data/default/%_nsforest_marker_set.tsv $(PATTERNDIR)/dosdp-patterns/taxonomy_marker_set.yaml $(SRC)
 	$(DOSDPT) generate --catalog=catalog-v001.xml --prefixes=template_prefixes.yaml \
         --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_marker_set.yaml \
         --ontology=$(SRC) --obo-prefixes=true --outfile=$@

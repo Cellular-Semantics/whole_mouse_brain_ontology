@@ -46,6 +46,7 @@ list_vars:
   NT: "'thing'"
   NT_markers: "'sequence_feature'"
   Individuals: "'thing'"
+  nsforest_marker_gene_sets: "'thing'"
 
 vars:
   Classification: "'cell'"
@@ -299,6 +300,13 @@ logical_axioms:
      text: "'has_characterizing_marker_set' some %s"
      vars:
         - marker_gene_set
+   - axiom_type: subClassOf
+     multi_clause:
+       sep: " and "
+       clauses:
+         - text: "'has_characterizing_marker_set' some %s"
+           vars:
+             - nsforest_marker_gene_sets
    - axiom_type: subClassOf
      multi_clause:
        sep: " and "
