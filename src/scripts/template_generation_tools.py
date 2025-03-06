@@ -1,8 +1,8 @@
 import pandas as pd
-import json
 import os
+import ast
 import logging
-from rdflib import Graph, Namespace, URIRef
+from rdflib import Graph, Namespace
 from rdflib.namespace import RDFS
 
 from dendrogram_tools import cas_json_2_nodes_n_edges, read_json_file
@@ -38,8 +38,8 @@ BRAIN_REGION_MAPPING = os.path.join(os.path.dirname(os.path.realpath(__file__)),
 
 CROSS_SPECIES_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)),
                                   "../dendrograms/nomenclature_table_CCN202002270.csv")
-MBA_ONTOLOGY = os.path.join(os.path.dirname(os.path.realpath(__file__)),
-                                  "../ontology/mirror/mba.owl")
+# MBA_ONTOLOGY = os.path.join(os.path.dirname(os.path.realpath(__file__)),
+#                                   "../ontology/mirror/mba.owl")
 NAME_CURATION_MAPPING = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../dendrograms/supplementary/version2/one_concept_one_name_curation.tsv")
 
 # centralized data files
@@ -137,18 +137,8 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
         name_curations = read_one_concept_one_name_tsv(NAME_CURATION_MAPPING)
         # subtrees = get_subtrees(dend_tree, taxonomy_config)
 
-        # duplicate_labels = find_duplicate_cell_labels(dend['nodes'])
-
         gene_db = read_gene_dbs(TEMPLATES_FOLDER_PATH)
-        gene_names = dict()
-        if "Reference_gene_list" in taxonomy_config:
-            gene_db_path = ENSEMBLE_PATH.format(str(taxonomy_config["Reference_gene_list"][0]).strip().lower())
-            gene_names = read_gene_data(gene_db_path)
-            minimal_markers = read_markers(MARKER_PATH.format(taxon.replace("CCN", "").replace("CS", "")), gene_names)
-            allen_markers = read_markers(ALLEN_MARKER_PATH.format(taxon.replace("CCN", "").replace("CS", "")), gene_names)
-        else:
-            minimal_markers = {}
-            allen_markers = {}
+        ns_forest_markers = read_nsforest_markers_dataframe()
 
         cluster_annotations = read_csv_to_dict(CLUSTER_ANNOTATIONS_PATH, id_column_name="cell_set_accession.cluster")[1]
         # neurotransmitters = read_csv_to_dict(NT_MAPPING, delimiter="\t")[1]
@@ -272,6 +262,21 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                         node['cell_set_accession'])
                 else:
                     d['marker_gene_set'] = ""
+
+                d['nsforest_marker_gene_sets'] = ""
+                if not collapsed:
+                    filtered_df = ns_forest_markers[ns_forest_markers['clusterName'] == o['cell_label']]
+                    if not filtered_df.empty:
+                        d['nsforest_marker_gene_sets'] = PCL_PREFIX + id_factory.get_nsf_marker_gene_set_id(node['cell_set_accession'])
+                else:
+                    marker_sets = []
+                    for collapsed_accession in node['chain']:
+                        collapsed_node = all_nodes[collapsed_accession]
+                        filtered_df = ns_forest_markers[ns_forest_markers['clusterName'] == collapsed_node['cell_label']]
+                        if not filtered_df.empty:
+                            marker_sets.append(PCL_PREFIX + id_factory.get_nsf_marker_gene_set_id(collapsed_node['cell_set_accession']))
+                    d['nsforest_marker_gene_sets'] = "|".join(marker_sets)
+
                 if "cell_ontology_term_id" in node and node["cell_ontology_term_id"]:
                     d['CL'] = node["cell_ontology_term_id"]
                 else:
@@ -365,7 +370,7 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
             class_obsolete_template.to_csv(obsolete_filepath, sep="\t", index=False)
 
 
-def get_unique_cell_label(o, node, generated_labels, all_names, name_curations, is_collapsed=False):
+def get_unique_cell_label(o, node, generated_labels, all_names, name_curations, is_collapsed=False, fail_on_duplicate=True):
     """
     Provides a unique cell label by checking the manual curation and existing labels in the taxonomy.
     Args:
@@ -375,14 +380,14 @@ def get_unique_cell_label(o, node, generated_labels, all_names, name_curations, 
         all_names: all labels existing in the taxonomy
         name_curations: manual curation of cell labels
         is_collapsed: True if the node is part of a collapsed chain
-
+        fail_on_duplicate: True if the function should raise an error if a duplicate label is found
     Returns: unique cell label
     """
     if o['cell_label'] in name_curations:
         cell_label = name_curations[o['cell_label']]
     else:
         cell_label = node['cell_label']
-    cell_label = format_cell_label(cell_label, node, all_names, generated_labels, is_collapsed)
+    cell_label = format_cell_label(cell_label, node, all_names, generated_labels, is_collapsed, fail_on_duplicate)
     generated_labels.add(cell_label)
     return cell_label
 
@@ -724,59 +729,116 @@ def generate_marker_gene_set_template(taxonomy_file_path, output_filepath):
 
     if taxonomy_config:
         dend = cas_json_2_nodes_n_edges(taxonomy_file_path)
+        all_nodes = {node['cell_set_accession']: node for node in dend['nodes']}
+        all_names = {node['cell_label']: node for node in dend['nodes']}
         id_factory = PCLIdFactory(read_json_file(taxonomy_file_path))
-
-        duplicate_labels = find_duplicate_cell_labels(dend['nodes'])
-
-        # dend_tree = generate_dendrogram_tree(dend)
-        # subtrees = get_subtrees(dend_tree, taxonomy_config)
-
-        # if "Reference_gene_list" in taxonomy_config:
-        #     gene_db_path = ENSEMBLE_PATH.format(str(taxonomy_config["Reference_gene_list"][0]).strip().lower())
-        #     gene_names = read_gene_data(gene_db_path)
-        #     minimal_markers = read_markers(MARKER_PATH.format(taxon.replace("CCN", "").replace("CS", "")), gene_names)
-        # else:
-        #     minimal_markers = {}
-        #
-        # ns_forest_marker_file = NSFOREST_MARKER_CSV.format(centralized_data_folder,
-        #                                                    taxonomy_config['Species_abbv'][0],
-        #                                                    taxonomy_config['Brain_region_abbv'][0])
-        # confidences = get_nsforest_confidences(taxon, dend, ns_forest_marker_file)
+        dend_tree = generate_dendrogram_tree(dend)
+        nodes_to_collapse = get_collapsed_nodes(dend_tree, all_nodes)
+        name_curations = read_one_concept_one_name_tsv(NAME_CURATION_MAPPING)
 
         gene_db = read_gene_dbs(TEMPLATES_FOLDER_PATH)
 
         class_seed = ['defined_class',
                       'Marker_set_of',
-                      'Minimal_markers',
-                      'Minimal_markers_label',
+                      'Markers',
+                      'Markers_label',
                       'Species_abbv',
                       'Brain_region',
                       'Parent',
-                      'FBeta_confidence_score'
+                      'FBeta_confidence_score',
+                      'Algorithm'
                       ]
         class_template = []
-
+        processed_accessions = set()
+        all_cell_set_labels = set()
         for o in dend['nodes']:
-            if o['cell_set_accession'] :
-                if ("author_annotation_fields" in o and
-                        o["author_annotation_fields"].get(f"{o['labelset']}.markers.combo", "") and
-                        str(o["author_annotation_fields"].get(f"{o['labelset']}.markers.combo", "")).lower() != "none"):
+            node = o
+            if o['cell_set_accession'] in nodes_to_collapse:
+                node = nodes_to_collapse[o['cell_set_accession']]
+                collapsed = True
+            else:
+                collapsed = False
+            if node.get('cell_set_accession') and node['cell_set_accession'] not in processed_accessions :
+                if ("author_annotation_fields" in node and
+                        node["author_annotation_fields"].get(f"{node['labelset']}.markers.combo", "") and
+                        str(node["author_annotation_fields"].get(f"{node['labelset']}.markers.combo", "")).lower() != "none"):
                     d = dict()
-                    d['defined_class'] = PCL_BASE + id_factory.get_marker_gene_set_id(o['cell_set_accession'])
-                    if o['cell_label'] in duplicate_labels:
-                        d['Marker_set_of'] = o['cell_label'] + " (" + o['labelset'] + ")"
-                    else:
-                        d['Marker_set_of'] = o['cell_label']
-                    markers_str = o["author_annotation_fields"].get(f"{o['labelset']}.markers.combo", "")
+                    d['defined_class'] = PCL_BASE + id_factory.get_marker_gene_set_id(node['cell_set_accession'])
+                    cell_set_label = get_unique_cell_label(o, node, all_cell_set_labels, all_names, name_curations, collapsed)
+                    d['Marker_set_of'] = cell_set_label
+                    markers_str = node["author_annotation_fields"].get(f"{node['labelset']}.markers.combo", "")
                     markers_list = [marker.strip() for marker in markers_str.split(",")]
-                    d['Minimal_markers'] = "|".join([get_gene_id(gene_db, marker) for marker in markers_list if str(marker).lower() != "none"])
-                    d['Minimal_markers_label'] = o["author_annotation_fields"].get(f"{o['labelset']}.markers.combo", "")
+                    d['Markers'] = "|".join([get_gene_id(gene_db, marker) for marker in markers_list if str(marker).lower() != "none"])
+                    d['Markers_label'] = node["author_annotation_fields"].get(f"{node['labelset']}.markers.combo", "")
                     if 'Species_abbv' in taxonomy_config:
                         d['Species_abbv'] = taxonomy_config['Species_abbv'][0]
                     d['Brain_region'] = taxonomy_config['Brain_region'][0]
                     d['Parent'] = "SO:0001260"  # sequence collection
-                    # if o['cell_set_accession'] in confidences:
-                    #     d['FBeta_confidence_score'] = confidences[o['cell_set_accession']]
+                    d['FBeta_confidence_score'] = ""
+                    d['Algorithm'] = ""
+
+                    for k in class_seed:
+                        if not (k in d.keys()):
+                            d[k] = ''
+                    class_template.append(d)
+                    processed_accessions.add(node['cell_set_accession'])
+
+        class_robot_template = pd.DataFrame.from_records(class_template)
+        class_robot_template.to_csv(output_filepath, sep="\t", index=False)
+
+
+def generate_nsforest_marker_gene_set_template(taxonomy_file_path, output_filepath):
+    taxon = extract_taxonomy_name_from_path(taxonomy_file_path)
+    taxonomy_config = read_taxonomy_config(taxon)
+
+    if taxonomy_config:
+        dend = cas_json_2_nodes_n_edges(taxonomy_file_path)
+        all_nodes = {node['cell_set_accession']: node for node in dend['nodes']}
+        all_names = {node['cell_label']: node for node in dend['nodes']}
+        id_factory = PCLIdFactory(read_json_file(taxonomy_file_path))
+        dend_tree = generate_dendrogram_tree(dend)
+        nodes_to_collapse = get_collapsed_nodes(dend_tree, all_nodes)
+        name_curations = read_one_concept_one_name_tsv(NAME_CURATION_MAPPING)
+        nsforest_markers = read_nsforest_markers_dataframe()
+
+        gene_db = read_gene_dbs(TEMPLATES_FOLDER_PATH)
+
+        class_seed = ['defined_class',
+                      'Marker_set_of',
+                      'Markers',
+                      'Markers_label',
+                      'Species_abbv',
+                      'Brain_region',
+                      'Parent',
+                      'FBeta_confidence_score',
+                      'Algorithm'
+                      ]
+        class_template = []
+        processed_accessions = set()
+        all_cell_set_labels = set()
+        for o in dend['nodes']:
+            node = o
+            if o['cell_set_accession'] in nodes_to_collapse:
+                node = nodes_to_collapse[o['cell_set_accession']]
+                collapsed = True
+            else:
+                collapsed = False
+            if node.get('cell_set_accession'):
+                filtered_df = nsforest_markers[nsforest_markers['clusterName'] == o['cell_label']]
+                if not filtered_df.empty:
+                    d = dict()
+                    d['defined_class'] = PCL_BASE + id_factory.get_nsf_marker_gene_set_id(o['cell_set_accession'])
+                    cell_set_label = get_unique_cell_label(o, node, all_cell_set_labels, all_names, name_curations, collapsed, False)
+                    d['Marker_set_of'] = cell_set_label
+                    markers_list = ast.literal_eval(filtered_df['markers'].values[0])  # convert "['Vxn', 'C1ql3']" string to list
+                    d['Markers'] = "|".join([get_gene_id(gene_db, marker) for marker in markers_list])
+                    d['Markers_label'] = ", ".join(markers_list)
+                    if 'Species_abbv' in taxonomy_config:
+                        d['Species_abbv'] = taxonomy_config['Species_abbv'][0]
+                    d['Brain_region'] = taxonomy_config['Brain_region'][0]
+                    d['Parent'] = "SO:0001260"  # sequence collection
+                    d['FBeta_confidence_score'] = filtered_df['f_score'].values[0]
+                    d['Algorithm'] = "NSforest"
 
                     for k in class_seed:
                         if not (k in d.keys()):
@@ -785,6 +847,22 @@ def generate_marker_gene_set_template(taxonomy_file_path, output_filepath):
 
         class_robot_template = pd.DataFrame.from_records(class_template)
         class_robot_template.to_csv(output_filepath, sep="\t", index=False)
+
+
+def read_nsforest_markers_dataframe():
+    """
+    NS Forest markers dataframe is read from the CSV file.
+    Returns: NS Forest markers dataframe
+    """
+    ns_forest_marker_class_df = pd.read_csv(
+        os.path.join(os.path.dirname(os.path.realpath(__file__)),
+                     '../dendrograms/supplementary/version2/NSForest_global_class_results.csv'))
+    ns_forest_marker_subclass_df = pd.read_csv(
+        os.path.join(os.path.dirname(os.path.realpath(__file__)),
+                     '../dendrograms/supplementary/version2/NSForest_global_subclass_comb_results.csv'))
+    nsforest_markers = pd.merge(ns_forest_marker_class_df, ns_forest_marker_subclass_df,
+                                how='outer')
+    return nsforest_markers
 
 
 def generate_app_specific_template(taxonomy_file_path, output_filepath):
@@ -856,21 +934,18 @@ def get_gene_id(gene_db, gene_name):
     raise Exception(f"Gene ID not found for gene: {gene_name}")
 
 def get_mba_symbols_map():
-    OBOINOWL = Namespace("http://www.geneontology.org/formats/oboInOwl#")
-
-    g = Graph()
-    g.parse(MBA_ONTOLOGY, format="xml")
+    obo_in_owl = Namespace("http://www.geneontology.org/formats/oboInOwl#")
+    g = get_mba_ontology()
 
     synonyms = {}
     for s, p, o in g:
-        if str(s).startswith("https://purl.brain-bican.org/ontology/mbao/MBA_") and p == OBOINOWL.hasExactSynonym:
+        if str(s).startswith("https://purl.brain-bican.org/ontology/mbao/MBA_") and p == obo_in_owl.hasExactSynonym:
             synonyms[str(o).strip()] = "MBA:" + str(s).split("_")[-1]
 
     return synonyms
 
 def get_mba_labels_map():
-    g = Graph()
-    g.parse(MBA_ONTOLOGY, format="xml")
+    g = get_mba_ontology()
 
     labels = {}
     for s, p, o in g:
@@ -878,6 +953,15 @@ def get_mba_labels_map():
             labels["MBA:" + str(s).split("_")[-1]] = str(o).strip().lower()
 
     return labels
+
+mba_ontology = None
+
+def get_mba_ontology():
+    global mba_ontology
+    if not mba_ontology:
+        mba_ontology = Graph()
+        mba_ontology.parse('https://purl.brain-bican.org/ontology/mbao/mbao.owl', format="xml")
+    return mba_ontology
 
 def read_gene_dbs(folder_path: str):
     """

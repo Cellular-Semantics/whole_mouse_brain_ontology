@@ -7,11 +7,11 @@ ID range allocation logic is as follows
 
     - 0010000 to 0010999  custom classes and properties (manually managed)
     - 0011000 taxonomy1 individual # idle: now individuals use accession_id
-    - 0011001 to 0011499 taxonomy1 classes (500)
-    - 0012451 to 0012500 taxonomy1 datasets (50)
-    - 0012501 to 0012999 taxonomy1 marker gene sets (500)
-    - 0013000 to 0014999 taxonomy1 spare id space (2000)
-    - ...
+    - classes (for each labelset 1.5 times of annotation count)
+    - datasets (50)
+    - marker gene sets (annotation count * 1.5)
+    - NS Forest marker gene sets (annotation count * 1.5)
+    - spare id space
 
 """
 
@@ -22,7 +22,7 @@ import os
 TAXONOMY_DETAILS_YAML = os.path.join(os.path.dirname(os.path.realpath(__file__)),
                                      '../dendrograms/taxonomy_details.yaml')
 
-# Allocate IDs starting from PCL_0011000
+# Allocate IDs starting from PCL_0110000
 ID_RANGE_BASE = 110000
 
 LABELSET_SYMBOLS = { "CLAS": "class",
@@ -38,6 +38,7 @@ class PCLIdFactory:
         self.taxonomy_ids = [taxon["Taxonomy_id"] for taxon in self.taxonomies]
         ranked_labelsets = [labelset for labelset in taxonomy['labelsets'] if "rank" in labelset]
         self.labelsets = [labelset["name"] for labelset in sorted(ranked_labelsets, key=lambda x: x["rank"], reverse=True)]
+        annotation_count = sum(1 for node in taxonomy['annotations'])
 
         # class ranges per labelset
         self.class_ranges = {}
@@ -48,6 +49,7 @@ class PCLIdFactory:
             id_range = round_up_to_nearest(id_range, 1)
         self.dataset_id_start = id_range + 1
         self.marker_set_id_start = round_up_to_nearest(self.dataset_id_start + 50, 2)
+        self.nsf_marker_set_start = round_up_to_nearest( int(self.marker_set_id_start + (annotation_count * 1.5)) , 1)
 
 
     def get_class_id(self, accession_id):
@@ -99,7 +101,7 @@ class PCLIdFactory:
         """
         Generates a PCL id for the given accession id. Parses taxonomy id from accession id and based on taxonomy's order
         in the 'taxonomy_details.yaml' finds the allocated id range for the taxonomy. Generates a PCL id displaced by the
-        node_id in the marker gene set range (taxonomy range + 400).
+        node_id in the marker gene set range.
         Args:
             accession_id: cell set accession id
 
@@ -108,6 +110,23 @@ class PCLIdFactory:
         node_id, labelset = parse_accession_id(accession_id)
         class_id = self.class_ranges[labelset] + node_id
         marker_set_id_displacement = self.marker_set_id_start - ID_RANGE_BASE
+        pcl_id = class_id + marker_set_id_displacement
+
+        return str(pcl_id).zfill(7)
+
+    def get_nsf_marker_gene_set_id(self, accession_id):
+        """
+        Generates a PCL id for the given accession id. Parses taxonomy id from accession id and based on taxonomy's order
+        in the 'taxonomy_details.yaml' finds the allocated id range for the taxonomy. Generates a PCL id displaced by the
+        node_id in the NS Forest marker gene set range.
+        Args:
+            accession_id: cell set accession id
+
+        Returns: seven digit PCL id as string
+        """
+        node_id, labelset = parse_accession_id(accession_id)
+        class_id = self.class_ranges[labelset] + node_id
+        marker_set_id_displacement = self.nsf_marker_set_start - ID_RANGE_BASE
         pcl_id = class_id + marker_set_id_displacement
 
         return str(pcl_id).zfill(7)

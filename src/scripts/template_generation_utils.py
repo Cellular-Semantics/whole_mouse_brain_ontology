@@ -604,7 +604,7 @@ def read_one_concept_one_name_tsv(file_path):
     return records
 
 
-def format_cell_label(cell_label, node, all_labels, generated_labels, is_collapsed=False):
+def format_cell_label(cell_label, node, all_labels, generated_labels, is_collapsed=False, fail_on_duplicate=True):
     """
     Formats the cell labels to remove the heading numbers and making label unique by applying markers
     Args:
@@ -613,6 +613,7 @@ def format_cell_label(cell_label, node, all_labels, generated_labels, is_collaps
         all_labels: all cell set names in the taxonomy
         generated_labels: all labels added to ontology
         is_collapsed: if the cell set is part of a compressed chain
+        fail_on_duplicate: if True, raises an error if a unique name can't be found
 
     Returns: formatted cell label
     """
@@ -638,7 +639,7 @@ def format_cell_label(cell_label, node, all_labels, generated_labels, is_collaps
                 if new_name not in generated_labels:
                     formatted_name = new_name
                     break
-    if formatted_name in generated_labels:
+    if fail_on_duplicate and formatted_name in generated_labels:
         raise ValueError("Couldn't find a unique name for: " + cell_label + " - " + node["cell_set_accession"])
     if "none" in formatted_name.lower():
         raise ValueError("Name contains 'none': " + cell_label)
