@@ -10,6 +10,7 @@ from template_generation_utils import get_synonyms_from_taxonomy, read_taxonomy_
     get_subtrees, generate_dendrogram_tree, read_taxonomy_details_yaml, read_csv_to_dict,\
     read_csv, read_gene_data, read_markers, get_gross_cell_type, merge_tables, read_allen_descriptions, \
     extract_taxonomy_name_from_path, get_collapsed_nodes, read_one_concept_one_name_tsv, format_cell_label
+from disclaimer_generator import get_anatomical_location_inconsistencies, get_location_symbols
 from nomenclature_tools import nomenclature_2_nodes_n_edges
 from pcl_id_factory import PCLIdFactory
 from marker_tools import get_nsforest_confidences
@@ -38,8 +39,6 @@ BRAIN_REGION_MAPPING = os.path.join(os.path.dirname(os.path.realpath(__file__)),
 
 CROSS_SPECIES_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)),
                                   "../dendrograms/nomenclature_table_CCN202002270.csv")
-# MBA_ONTOLOGY = os.path.join(os.path.dirname(os.path.realpath(__file__)),
-#                                   "../ontology/mirror/mba.owl")
 NAME_CURATION_MAPPING = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../dendrograms/supplementary/version2/one_concept_one_name_curation.tsv")
 
 # centralized data files
@@ -141,11 +140,10 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
         ns_forest_markers = read_nsforest_markers_dataframe()
 
         cluster_annotations = read_csv_to_dict(CLUSTER_ANNOTATIONS_PATH, id_column_name="cell_set_accession.cluster")[1]
-        # neurotransmitters = read_csv_to_dict(NT_MAPPING, delimiter="\t")[1]
         nt_symbols_mapping = read_csv_to_dict(NT_SYMBOLS_MAPPING, delimiter="\t")[1]
-        brain_region_mapping = read_csv_to_dict(BRAIN_REGION_MAPPING, delimiter="\t")[1]
         mba_symbols = get_mba_symbols_map()
         mba_labels = get_mba_labels_map()
+        anatomical_loc_inconsistencies = get_anatomical_location_inconsistencies(CLUSTER_ANNOTATIONS_PATH)
 
         class_seed = ['defined_class',
                       'prefLabel',
@@ -174,7 +172,8 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                       'Nomenclature_Projection',
                       'marker_gene_set',
                       'MBA',
-                      'MBA_text'
+                      'MBA_text',
+                      'Location_disclaimer'
                       ]
         class_template = []
         obsolete_template = []
@@ -193,8 +192,6 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
 
                 d["prefLabel"] = get_unique_cell_label(o, node, all_cell_set_labels, all_names,
                                                    name_curations, collapsed)
-                # if o.get('cell_fullname'):
-                #     d['prefLabel'] = o['cell_fullname']
                 synonyms = node.get("synonyms", [])
                 synonyms.append(node['cell_label'])
                 if collapsed:
@@ -221,13 +218,6 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                 markers_list = [marker.strip() for marker in markers_str.split(",") if marker.strip()]
                 d['Minimal_markers'] = "|".join([get_gene_id(gene_db, marker) for marker in markers_list if str(marker).lower() != "none"])
 
-                # Allen markers are not used, legacy code
-                # if o['cell_set_accession'] in allen_markers:
-                #     d['Allen_markers'] = allen_markers[o['cell_set_accession']]
-                # else:
-                #     if str(o["author_annotation_fields"].get(f"{o['labelset']}.markers.combo", "")).lower() != "none":
-                #         d['Allen_markers'] = o["author_annotation_fields"].get(f"{o['labelset']}.markers.combo", "")
-                #     else:
                 d['Allen_markers'] = ""
                 if 'Brain_region_abbv' in taxonomy_config:
                     d['Brain_region_abbv'] = taxonomy_config['Brain_region_abbv'][0]
@@ -238,17 +228,6 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                     individuals = "|".join([BICAN_INDV_BASE + indv_id for indv_id in node["chain"]])
                 d['Individuals'] = individuals
 
-                # for index, subtree in enumerate(subtrees):
-                #     if o['cell_set_accession'] in subtree:
-                #         location_rel = taxonomy_config['Root_nodes'][index]['Location_relation']
-                #         if location_rel == "part_of":
-                #             d['part_of'] = taxonomy_config['Brain_region'][0]
-                #             d['has_soma_location'] = ''
-                #         elif location_rel == "has_soma_location":
-                #             d['part_of'] = ''
-                #             d['has_soma_location'] = taxonomy_config['Brain_region'][0]
-
-                # TODO check this
                 d['part_of'] = ''
                 d['has_soma_location'] = taxonomy_config['Brain_region'][0]
 
@@ -281,17 +260,7 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                     d['CL'] = node["cell_ontology_term_id"]
                 else:
                     d['CL'] = ""
-                # if "layer" in o and o["layer"]:
-                #     d['Nomenclature_Layers'] = o["layer"]
-                # else:
-                #     d['Nomenclature_Layers'] = ""
-                # if "projection" in o and o["projection"]:
-                #     d['Nomenclature_Projection'] = o["projection"]
-                # else:
-                #     d['Nomenclature_Projection'] = ""
 
-                # CS202212150_1 -> 1
-                # cluster_index = str(o['cell_set_accession']).replace(taxon + "_", "")
                 d['NT'] = ""
                 d['NT_markers'] = ""
                 if node.get('neurotransmitter_accession'):
@@ -323,23 +292,18 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                 for missed_region in missed_regions:
                     print("MBA symbol not found for region: ", missed_region)
 
-                # if o['cell_set_accession'] in brain_region_mapping:
-                #     d['MBA'] = brain_region_mapping[o['cell_set_accession']]["TENTATIVE_MBA_ID"].replace("http://purl.obolibrary.org/obo/MBA_", "MBA:")
-                #     index = 1
-                #
-                #     if brain_region_mapping[o['cell_set_accession']]["TENTATIVE_MBA_ID"]:
-                #         tentative_regions = brain_region_mapping[o['cell_set_accession']]["TENTATIVE_MBA_ID"].split("|")
-                #         for tentative_region in tentative_regions:
-                #             d['MBA_' + str(index)] = tentative_region.replace("http://purl.obolibrary.org/obo/MBA_", "MBA:")
-                #             d['MBA_' + str(index) + '_comment'] = "Location assignment based on tentative anatomical annotations."
-                #             index += 1
-                #
-                #     if brain_region_mapping[o['cell_set_accession']]["MAX_DISSECTION_MBA_ID"]:
-                #         max_dissection_regions = brain_region_mapping[o['cell_set_accession']]["MAX_DISSECTION_MBA_ID"].split("|")
-                #         for max_dissection_region in max_dissection_regions:
-                #             d['MBA_' + str(index)] = max_dissection_region.replace("http://purl.obolibrary.org/obo/MBA_", "MBA:")
-                #             d['MBA_' + str(index) + '_comment'] = "Location assignment based on max dissection region."
-                #             index += 1
+                if node["cell_label"] in anatomical_loc_inconsistencies:
+                    mentioned_locations = get_location_symbols(node["cell_label"])
+                    inconsistent_locations = anatomical_loc_inconsistencies[node["cell_label"]]
+                    location_names = ", ".join([mba_labels[mba_symbols[loc]] + " (" + loc + ")" for loc in inconsistent_locations])
+                    if len(mentioned_locations) == len(inconsistent_locations):
+                        d["Location_disclaimer"] = "Warning: This type {name} does not have cells in any of the regions it is named for {location_names}. " \
+                         "The name merely indicates that it is a subtype of more general transcriptomic type that does. This assertion is based on data " \
+                         "from registration to a reference standard common co-ordinate framework and parcelation scheme.".format(name=node["cell_label"], location_names=location_names)
+                    else:
+                        d["Location_disclaimer"] = ("Warning: Despite its name, {name} does not have cells in {location_names}. " 
+                                                    "This assertion is based on data from registration to a reference standard common co-ordinate "
+                                                    "framework and parcelation scheme.").format(name=node["cell_label"], location_names=location_names)
 
                 for k in class_seed:
                     if not (k in d.keys()):

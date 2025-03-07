@@ -133,6 +133,7 @@ data_vars:
   MBA_12_cell_percentage: "xsd:double"
   MBA_13_cell_percentage: "xsd:double"
   MBA_14_cell_percentage: "xsd:double"
+  Location_disclaimer: "xsd:string"
 
 internal_vars:
   - var_name: Minimal_markers_cat
@@ -206,6 +207,9 @@ def:
                   - Labelset
                   - prefLabel
                   - Cluster_IDs_cat
+              - text: '%s'
+                vars:
+                  - Location_disclaimer
 
 generated_synonyms:
    - text: "%s expressing %s of %s (%s)"
