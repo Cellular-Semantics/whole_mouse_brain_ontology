@@ -299,11 +299,11 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                     if len(mentioned_locations) == len(inconsistent_locations):
                         d["Location_disclaimer"] = "Warning: This type {name} does not have cells in any of the regions it is named for {location_names}. " \
                          "The name merely indicates that it is a subtype of more general transcriptomic type that does. This assertion is based on data " \
-                         "from registration to a reference standard common co-ordinate framework and parcelation scheme.".format(name=node["cell_label"], location_names=location_names)
+                         "from registration to a reference standard common co-ordinate framework and parcelation scheme.".format(name=d["prefLabel"], location_names=location_names)
                     else:
                         d["Location_disclaimer"] = ("Warning: Despite its name, {name} does not have cells in {location_names}. " 
                                                     "This assertion is based on data from registration to a reference standard common co-ordinate "
-                                                    "framework and parcelation scheme.").format(name=node["cell_label"], location_names=location_names)
+                                                    "framework and parcelation scheme.").format(name=d["prefLabel"], location_names=location_names)
 
                 for k in class_seed:
                     if not (k in d.keys()):
