@@ -208,12 +208,6 @@ def:
                   - Labelset
                   - prefLabel
                   - Cluster_IDs_cat
-              - text: '%s'
-                vars:
-                  - Location_disclaimer
-              - text: '%s'
-                vars:
-                  - NT_disclaimer
 
 generated_synonyms:
    - text: "%s expressing %s of %s (%s)"
@@ -385,6 +379,16 @@ annotations:
         - text: "%s"
           vars:
             - Minimal_markers
+  - annotationProperty: rdfsComment
+    multi_clause:
+      sep: " "
+      clauses:
+        - text: '%s'
+          vars:
+            - Location_disclaimer
+        - text: '%s'
+          vars:
+            - NT_disclaimer
   - annotationProperty: some_soma_located_in
     var: MBA_1
     annotations:
