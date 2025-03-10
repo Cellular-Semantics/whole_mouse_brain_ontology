@@ -4,52 +4,106 @@
     "meta" : {
       "basicPropertyValues" : [ {
         "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
-        "val" : "http://purl.obolibrary.org/obo/CL_0000115"
+        "val" : "http://purl.obolibrary.org/obo/PCL_0110001"
       }, {
         "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
-        "val" : "http://purl.obolibrary.org/obo/CL_0000125"
+        "val" : "http://purl.obolibrary.org/obo/PCL_0110002"
       }, {
         "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
-        "val" : "http://purl.obolibrary.org/obo/CL_0000127"
+        "val" : "http://purl.obolibrary.org/obo/PCL_0110003"
       }, {
         "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
-        "val" : "http://purl.obolibrary.org/obo/CL_0000128"
+        "val" : "http://purl.obolibrary.org/obo/PCL_0110004"
       }, {
         "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
-        "val" : "http://purl.obolibrary.org/obo/CL_0000129"
+        "val" : "http://purl.obolibrary.org/obo/PCL_0110005"
       }, {
         "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
-        "val" : "http://purl.obolibrary.org/obo/CL_0000617"
+        "val" : "http://purl.obolibrary.org/obo/PCL_0110006"
       }, {
         "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
-        "val" : "http://purl.obolibrary.org/obo/CL_0000679"
+        "val" : "http://purl.obolibrary.org/obo/PCL_0110007"
       }, {
         "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
-        "val" : "http://purl.obolibrary.org/obo/CL_0000700"
+        "val" : "http://purl.obolibrary.org/obo/PCL_0110008"
       }, {
         "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
-        "val" : "http://purl.obolibrary.org/obo/CL_0000738"
+        "val" : "http://purl.obolibrary.org/obo/PCL_0110009"
       }, {
         "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
-        "val" : "http://purl.obolibrary.org/obo/CL_0000850"
+        "val" : "http://purl.obolibrary.org/obo/PCL_0110010"
       }, {
         "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
-        "val" : "http://purl.obolibrary.org/obo/CL_0000881"
+        "val" : "http://purl.obolibrary.org/obo/PCL_0110011"
       }, {
         "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
-        "val" : "http://purl.obolibrary.org/obo/CL_0002453"
+        "val" : "http://purl.obolibrary.org/obo/PCL_0110012"
       }, {
         "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
-        "val" : "http://purl.obolibrary.org/obo/CL_0002590"
+        "val" : "http://purl.obolibrary.org/obo/PCL_0110013"
       }, {
         "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
-        "val" : "http://purl.obolibrary.org/obo/CL_0011005"
+        "val" : "http://purl.obolibrary.org/obo/PCL_0110014"
       }, {
         "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
-        "val" : "http://purl.obolibrary.org/obo/CL_2000043"
+        "val" : "http://purl.obolibrary.org/obo/PCL_0110016"
       }, {
         "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
-        "val" : "http://purl.obolibrary.org/obo/CL_4023051"
+        "val" : "http://purl.obolibrary.org/obo/PCL_0110017"
+      }, {
+        "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
+        "val" : "http://purl.obolibrary.org/obo/PCL_0110018"
+      }, {
+        "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
+        "val" : "http://purl.obolibrary.org/obo/PCL_0110019"
+      }, {
+        "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
+        "val" : "http://purl.obolibrary.org/obo/PCL_0110020"
+      }, {
+        "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
+        "val" : "http://purl.obolibrary.org/obo/PCL_0110023"
+      }, {
+        "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
+        "val" : "http://purl.obolibrary.org/obo/PCL_0110024"
+      }, {
+        "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
+        "val" : "http://purl.obolibrary.org/obo/PCL_0110026"
+      }, {
+        "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
+        "val" : "http://purl.obolibrary.org/obo/PCL_0110027"
+      }, {
+        "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
+        "val" : "http://purl.obolibrary.org/obo/PCL_0110028"
+      }, {
+        "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
+        "val" : "http://purl.obolibrary.org/obo/PCL_0110029"
+      }, {
+        "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
+        "val" : "http://purl.obolibrary.org/obo/PCL_0110030"
+      }, {
+        "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
+        "val" : "http://purl.obolibrary.org/obo/PCL_0110031"
+      }, {
+        "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
+        "val" : "http://purl.obolibrary.org/obo/PCL_0110033"
+      }, {
+        "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
+        "val" : "http://purl.obolibrary.org/obo/PCL_0110034"
+      }, {
+        "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
+        "val" : "http://purl.obolibrary.org/obo/PCL_0110275"
+      }, {
+        "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
+        "val" : "http://purl.obolibrary.org/obo/PCL_0110276"
+      }, {
+        "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
+        "val" : "http://purl.obolibrary.org/obo/PCL_0111755"
+      }, {
+        "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
+        "val" : "http://purl.obolibrary.org/obo/PCL_0114944"
+      }, {
+        "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
+        "val" : "http://purl.obolibrary.org/obo/PCL_0116986"
       }, {
         "pred" : "http://purl.org/dc/terms/description",
         "val" : "A data-driven cell-type ontology of the whole mouse brain."
