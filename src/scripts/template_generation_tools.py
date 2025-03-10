@@ -10,7 +10,8 @@ from template_generation_utils import get_synonyms_from_taxonomy, read_taxonomy_
     get_subtrees, generate_dendrogram_tree, read_taxonomy_details_yaml, read_csv_to_dict,\
     read_csv, read_gene_data, read_markers, get_gross_cell_type, merge_tables, read_allen_descriptions, \
     extract_taxonomy_name_from_path, get_collapsed_nodes, read_one_concept_one_name_tsv, format_cell_label
-from disclaimer_generator import get_anatomical_location_inconsistencies, get_location_symbols
+from disclaimer_generator import (get_anatomical_location_inconsistencies, get_location_symbols,
+                                  get_neurotransmitter_inconsistencies)
 from nomenclature_tools import nomenclature_2_nodes_n_edges
 from pcl_id_factory import PCLIdFactory
 from marker_tools import get_nsforest_confidences
@@ -144,6 +145,7 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
         mba_symbols = get_mba_symbols_map()
         mba_labels = get_mba_labels_map()
         anatomical_loc_inconsistencies = get_anatomical_location_inconsistencies(CLUSTER_ANNOTATIONS_PATH)
+        nt_inconsistencies = get_neurotransmitter_inconsistencies(CLUSTER_ANNOTATIONS_PATH)
 
         class_seed = ['defined_class',
                       'prefLabel',
@@ -173,7 +175,8 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                       'marker_gene_set',
                       'MBA',
                       'MBA_text',
-                      'Location_disclaimer'
+                      'Location_disclaimer',
+                      'NT_disclaimer'
                       ]
         class_template = []
         obsolete_template = []
@@ -304,6 +307,9 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                         d["Location_disclaimer"] = ("Warning: Despite its name, {name} does not have cells in {location_names}. " 
                                                     "This assertion is based on data from registration to a reference standard common co-ordinate "
                                                     "framework and parcelation scheme.").format(name=d["prefLabel"], location_names=location_names)
+                if node["cell_set_accession"] in nt_inconsistencies:
+                    inconsistent_nts = nt_inconsistencies[node["cell_set_accession"]]
+                    d["NT_disclaimer"] = "Warning: Despite its name, {name} does not secrete the neurotransmitter {nt}, as assessed by expression of multiple marker genes.".format(name=d["prefLabel"], nt=", ".join(inconsistent_nts))
 
                 for k in class_seed:
                     if not (k in d.keys()):

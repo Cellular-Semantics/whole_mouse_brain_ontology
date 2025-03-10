@@ -4,12 +4,14 @@ Following inconsistency checks are performed:
 - Cell sets names include anatomical location unsupported by CCF
   Check: https://github.com/Cellular-Semantics/WMB_taxonomy_hacking/blob/location_experiments/Test_anat.ipynb for the original analysis
 - Clusters where NT in name is not supported by marker analysis
+  Check: https://github.com/Cellular-Semantics/WMB_taxonomy_hacking/blob/location_experiments/Test_NT.ipynb
 """
 import os
 import re
 from typing import Optional
 
 import pandas as pd
+import networkx as nx
 from rdflib import Graph
 
 # manually applied closure over part_of using relation graph
@@ -17,6 +19,97 @@ MBAO_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../dendro
 
 # Singleton materialized graph
 mba_ontology = None
+
+
+def get_neurotransmitter_inconsistencies(cluster_annotations_path: str) -> dict:
+    """
+    Returns the list of cell sets names that include neurotransmitter unsupported by marker analysis.
+    """
+    clusters = pd.read_csv(cluster_annotations_path).dropna(subset=['cluster_id_label'])
+    cluster_nt_df = clusters[
+        ['cluster_id_label', 'nt_type_label', 'nt_type_combo_label']].set_index('cluster_id_label')
+    cluster_2_nt = cluster_nt_df.to_dict(orient='index')
+    graph = get_wmb_taxonomy_graph()
+
+    # Choosing classes as roots.  Not bothering to check root status in graph.
+    roots = [
+        node
+        for node, data in graph.nodes(data=True)
+        if data.get("labelset") == 'https://purl.brain-bican.org/taxonomy/CCN20230722/class'
+    ]
+    # Run DFS from each root
+    count = [0]
+    inconsistencies = dict()
+    for root in roots:
+        dfs_traverse(graph, root, cluster_2_nt, inconsistencies)  # Ensure the correct format is passed
+    print(f"Number of clusters with mismatched NTs in name: {len(inconsistencies)}")
+
+    return inconsistencies
+
+
+def get_wmb_taxonomy_graph():
+    """
+    Returns the NetworkX graph representation of the WMB taxonomy.
+    Returns: NetworkX graph
+    """
+    url = "https://raw.githubusercontent.com/brain-bican/whole_mouse_brain_taxonomy/refs/heads/main/CCN20230722.rdf"
+    ont = Graph()
+    ont.parse(url, format="xml")
+
+    graph = nx.DiGraph()
+    # Step 3: Add triples from RDF graph to NetworkX graph for subcluster_of + labels for all nodes
+    for subj, pred, obj in ont:
+        if str(pred) == "http://purl.obolibrary.org/obo/RO_0015003":
+            graph.add_edge(obj, subj, predicate=pred)  # reversing order for Nx
+        if str(pred) == "http://www.w3.org/2000/01/rdf-schema#label":
+            graph.add_node(subj)
+            graph.nodes[subj]["label"] = str(obj)  # adding labels for all
+        if str(pred) == "https://purl.brain-bican.org/taxonomy/has_labelset":
+            graph.add_node(subj)
+            graph.nodes[subj]["labelset"] = str(obj)
+    return graph
+
+
+def dfs_traverse(graph, node, clusters_dict, inconsistencies, visited=None, out=None):
+    nt_names =   { 'Glut': 'Glut',
+                   'Gaba': 'GABA',
+                   'Gly': 'Glyc',
+                   'Dopa': 'Dopa',
+                   'Sero': 'Sero',
+                   'Chol': 'Chol',
+                   'Nora': 'Nora',
+                   'Hist': 'Hist'}
+    if visited is None:
+        visited = set()
+    if out is None:
+        out = set()
+
+    node_id = str(node)  # Ensure hashable type
+
+    if node_id in visited:
+        return
+    visited.add(node_id)
+
+    #print(f"Processing {G.nodes[node].get('label')} with labelset: {G.nodes[node].get('labelset', 'No labelset')}")
+    for nt in nt_names.keys():
+        if nt in graph.nodes[node].get('label'):
+            out.add(nt)
+    if graph.nodes[node].get('labelset') == 'https://purl.brain-bican.org/taxonomy/CCN20230722/cluster':
+        cluster_nts = clusters_dict[graph.nodes[node].get('label')]
+        #print(cluster_nts)
+        for nt in out:
+            if not nt_names[nt] in str(cluster_nts['nt_type_combo_label']):
+                node_accession = node_id.replace("https://purl.brain-bican.org/taxonomy/CCN20230722/", "")
+                nts = inconsistencies.get(node_accession, [])
+                nts.append(nt)
+                inconsistencies[node_accession] = nts
+                # print (f"{graph.nodes[node].get('label')} has {nt} in label but not in annotation")
+                # print (f"label NTs: {out}")
+                # print (f"NT annotation: {str(cluster_nts['nt_type_label'])}")
+                # print (f"NT combo annotation: {str(cluster_nts['nt_type_combo_label'])}")
+
+    for neighbor in graph.neighbors(node):
+        dfs_traverse(graph, neighbor, clusters_dict, inconsistencies, visited=visited)
 
 
 def get_anatomical_location_inconsistencies(cluster_annotations_path: str) -> dict:

@@ -134,6 +134,7 @@ data_vars:
   MBA_13_cell_percentage: "xsd:double"
   MBA_14_cell_percentage: "xsd:double"
   Location_disclaimer: "xsd:string"
+  NT_disclaimer: "xsd:string"
 
 internal_vars:
   - var_name: Minimal_markers_cat
@@ -210,6 +211,9 @@ def:
               - text: '%s'
                 vars:
                   - Location_disclaimer
+              - text: '%s'
+                vars:
+                  - NT_disclaimer
 
 generated_synonyms:
    - text: "%s expressing %s of %s (%s)"
