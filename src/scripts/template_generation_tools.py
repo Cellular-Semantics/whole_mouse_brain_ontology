@@ -136,6 +136,7 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
         nodes_to_collapse = get_collapsed_nodes(dend_tree, all_nodes)
         name_curations = read_one_concept_one_name_tsv(NAME_CURATION_MAPPING)
         # subtrees = get_subtrees(dend_tree, taxonomy_config)
+        all_pref_labels = get_all_unique_cell_labels(dend, nodes_to_collapse, all_names, name_curations)
 
         gene_db = read_gene_dbs(TEMPLATES_FOLDER_PATH)
         ns_forest_markers = read_nsforest_markers_dataframe()
@@ -149,6 +150,7 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
 
         class_seed = ['defined_class',
                       'prefLabel',
+                      'Taxonomy_label',
                       'Alias_citations',
                       'Synonyms_from_taxonomy',
                       'Gross_cell_type',
@@ -166,6 +168,7 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                       'part_of',
                       'has_soma_location',
                       'aligned_alias',
+                      'Parent_label',
                       'NT',
                       'NT_label',
                       'NT_markers',
@@ -175,13 +178,13 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                       'marker_gene_set',
                       'MBA',
                       'MBA_text',
+                      'Subclass_markers',
                       'Location_disclaimer',
                       'NT_disclaimer'
                       ]
         class_template = []
         obsolete_template = []
         processed_accessions = set()
-        all_cell_set_labels = set()
         for o in dend['nodes']:
             node = o
             if o['cell_set_accession'] in nodes_to_collapse:
@@ -193,8 +196,11 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                 d = dict()
                 d['defined_class'] = PCL_BASE + id_factory.get_class_id(node['cell_set_accession'])
 
-                d["prefLabel"] = get_unique_cell_label(o, node, all_cell_set_labels, all_names,
-                                                   name_curations, collapsed)
+                d["prefLabel"] = all_pref_labels[node['cell_set_accession']]
+                if node.get('taxonomy_cell_label'):
+                    d["Taxonomy_label"] = node['taxonomy_cell_label']
+                else:
+                    d["Taxonomy_label"] = node['cell_label']
                 synonyms = node.get("synonyms", [])
                 synonyms.append(node['cell_label'])
                 if collapsed:
@@ -216,7 +222,8 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                     d["Alias_citations"] = "|".join(alias_citations)
                 else:
                     d["Alias_citations"] = ""
-
+                if node.get('parent_cell_set_accession'):
+                    d['Parent_label'] = all_pref_labels[node['parent_cell_set_accession']]
                 markers_str = node["author_annotation_fields"].get(f"{node['labelset']}.markers.combo", "")
                 markers_list = [marker.strip() for marker in markers_str.split(",") if marker.strip()]
                 d['Minimal_markers'] = "|".join([get_gene_id(gene_db, marker) for marker in markers_list if str(marker).lower() != "none"])
@@ -226,11 +233,7 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                     d['Brain_region_abbv'] = taxonomy_config['Brain_region_abbv'][0]
                 if 'Species_abbv' in taxonomy_config:
                     d['Species_abbv'] = taxonomy_config['Species_abbv'][0]
-                individuals = BICAN_INDV_BASE + node['cell_set_accession']
-                if collapsed:
-                    individuals = "|".join([BICAN_INDV_BASE + indv_id for indv_id in node["chain"]])
-                d['Individuals'] = individuals
-
+                d['Individuals'] = BICAN_INDV_BASE + node['cell_set_accession']
                 d['part_of'] = ''
                 d['has_soma_location'] = taxonomy_config['Brain_region'][0]
 
@@ -295,6 +298,8 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                 for missed_region in missed_regions:
                     print("MBA symbol not found for region: ", missed_region)
 
+                d["Subclass_markers"] = (node.get("author_annotation_fields", dict()).
+                                         get("cluster.markers.combo _within subclass_", "").replace("None", "").replace(",", "|"))
                 if node["cell_label"] in anatomical_loc_inconsistencies:
                     mentioned_locations = get_location_symbols(node["cell_label"])
                     inconsistent_locations = anatomical_loc_inconsistencies[node["cell_label"]]
@@ -339,6 +344,34 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
             class_obsolete_template = pd.DataFrame.from_records(obsolete_template)
             class_obsolete_template.to_csv(obsolete_filepath, sep="\t", index=False)
 
+
+def get_all_unique_cell_labels(dend, nodes_to_collapse, all_names, name_curations):
+    all_pref_labels = dict()
+
+    processed_accessions = set()
+    all_cell_set_labels = set()
+    for o in dend['nodes']:
+        node = o
+        if o['cell_set_accession'] in nodes_to_collapse:
+            node = nodes_to_collapse[o['cell_set_accession']]
+            collapsed = True
+        else:
+            collapsed = False
+        if node.get('cell_set_accession'):
+            if node['cell_set_accession'] not in processed_accessions:
+                all_pref_labels[o['cell_set_accession']] = get_unique_cell_label(o, node,
+                                                                                 all_cell_set_labels,
+                                                                                 all_names,
+                                                                                 name_curations,
+                                                                                 collapsed)
+                processed_accessions.add(node['cell_set_accession'])
+            else:
+                all_pref_labels[o['cell_set_accession']] = get_unique_cell_label(o, node,
+                                                                                 all_cell_set_labels,
+                                                                                 all_names,
+                                                                                 name_curations,
+                                                                                 collapsed, fail_on_duplicate=False)
+    return all_pref_labels
 
 def get_unique_cell_label(o, node, generated_labels, all_names, name_curations, is_collapsed=False, fail_on_duplicate=True):
     """
@@ -705,6 +738,8 @@ def generate_marker_gene_set_template(taxonomy_file_path, output_filepath):
         dend_tree = generate_dendrogram_tree(dend)
         nodes_to_collapse = get_collapsed_nodes(dend_tree, all_nodes)
         name_curations = read_one_concept_one_name_tsv(NAME_CURATION_MAPPING)
+        all_pref_labels = get_all_unique_cell_labels(dend, nodes_to_collapse, all_names,
+                                                     name_curations)
 
         gene_db = read_gene_dbs(TEMPLATES_FOLDER_PATH)
 
@@ -720,21 +755,17 @@ def generate_marker_gene_set_template(taxonomy_file_path, output_filepath):
                       ]
         class_template = []
         processed_accessions = set()
-        all_cell_set_labels = set()
         for o in dend['nodes']:
             node = o
             if o['cell_set_accession'] in nodes_to_collapse:
                 node = nodes_to_collapse[o['cell_set_accession']]
-                collapsed = True
-            else:
-                collapsed = False
             if node.get('cell_set_accession') and node['cell_set_accession'] not in processed_accessions :
                 if ("author_annotation_fields" in node and
                         node["author_annotation_fields"].get(f"{node['labelset']}.markers.combo", "") and
                         str(node["author_annotation_fields"].get(f"{node['labelset']}.markers.combo", "")).lower() != "none"):
                     d = dict()
                     d['defined_class'] = PCL_BASE + id_factory.get_marker_gene_set_id(node['cell_set_accession'])
-                    cell_set_label = get_unique_cell_label(o, node, all_cell_set_labels, all_names, name_curations, collapsed)
+                    cell_set_label = all_pref_labels[node["cell_set_accession"]]
                     d['Marker_set_of'] = cell_set_label
                     markers_str = node["author_annotation_fields"].get(f"{node['labelset']}.markers.combo", "")
                     markers_list = [marker.strip() for marker in markers_str.split(",")]
@@ -770,6 +801,8 @@ def generate_nsforest_marker_gene_set_template(taxonomy_file_path, output_filepa
         nodes_to_collapse = get_collapsed_nodes(dend_tree, all_nodes)
         name_curations = read_one_concept_one_name_tsv(NAME_CURATION_MAPPING)
         nsforest_markers = read_nsforest_markers_dataframe()
+        all_pref_labels = get_all_unique_cell_labels(dend, nodes_to_collapse, all_names,
+                                                     name_curations)
 
         gene_db = read_gene_dbs(TEMPLATES_FOLDER_PATH)
 
@@ -784,21 +817,16 @@ def generate_nsforest_marker_gene_set_template(taxonomy_file_path, output_filepa
                       'Algorithm'
                       ]
         class_template = []
-        processed_accessions = set()
-        all_cell_set_labels = set()
         for o in dend['nodes']:
             node = o
             if o['cell_set_accession'] in nodes_to_collapse:
                 node = nodes_to_collapse[o['cell_set_accession']]
-                collapsed = True
-            else:
-                collapsed = False
             if node.get('cell_set_accession'):
                 filtered_df = nsforest_markers[nsforest_markers['clusterName'] == o['cell_label']]
                 if not filtered_df.empty:
                     d = dict()
                     d['defined_class'] = PCL_BASE + id_factory.get_nsf_marker_gene_set_id(o['cell_set_accession'])
-                    cell_set_label = get_unique_cell_label(o, node, all_cell_set_labels, all_names, name_curations, collapsed, False)
+                    cell_set_label = all_pref_labels[node["cell_set_accession"]]
                     d['Marker_set_of'] = cell_set_label
                     markers_list = ast.literal_eval(filtered_df['markers'].values[0])  # convert "['Vxn', 'C1ql3']" string to list
                     d['Markers'] = "|".join([get_gene_id(gene_db, marker) for marker in markers_list])

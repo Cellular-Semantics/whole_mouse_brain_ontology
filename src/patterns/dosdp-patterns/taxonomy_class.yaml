@@ -92,9 +92,12 @@ data_list_vars:
   Expresses_pub: "xsd:string"
   Alias_citations: "xsd:string"
   Cluster_IDs: "xsd:string"
+  Subclass_markers: "xsd:string"
 
 data_vars:
   prefLabel: "xsd:string"
+  Taxonomy_label: "xsd:string"
+  Parent_label: "xsd:string"
   Comment: "xsd:string"
   Classification_comment: "xsd:string"
   Brain_region_abbv: "xsd:string"
@@ -172,6 +175,11 @@ internal_vars:
     apply:
       join:
         sep: ', '
+  - var_name: Subclass_markers_cat
+    input: Subclass_markers
+    apply:
+      join:
+        sep: ', '
 
 name:
    text: "%s %s (%s)"
@@ -206,8 +214,12 @@ def:
                 vars:
                   - Dataset_url
                   - Labelset
-                  - prefLabel
+                  - Taxonomy_label
                   - Cluster_IDs_cat
+              - text: 'It is distinguished from other %s cells by expression of %s'
+                vars:
+                  - Parent_label
+                  - Subclass_markers_cat
 
 generated_synonyms:
    - text: "%s expressing %s of %s (%s)"

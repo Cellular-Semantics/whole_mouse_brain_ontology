@@ -548,7 +548,9 @@ def get_collapsed_nodes(dend_tree, all_nodes):
         for node_index in reversed(chain[:-1]):
             merged_node = deep_merge_dicts(merged_node, all_nodes[node_index])
         # use the cell_label and label set of the highest node in the chain
+        merged_node['taxonomy_cell_label'] = merged_node['cell_label']
         merged_node['cell_label'] = all_nodes[chain[0]]['cell_label']
+        merged_node['parent_cell_set_accession'] = all_nodes[chain[0]].get('parent_cell_set_accession')
         merged_node['chain'] = chain
         for node_to_collapse in chain:
             collapse_dict[node_to_collapse] = merged_node

@@ -115,9 +115,9 @@
         "val" : "Whole Mouse Brain Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-03-10"
+        "val" : "2025-03-12"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/pcl/releases/2025-03-10/wmbo-simple.json"
+      "version" : "http://purl.obolibrary.org/obo/pcl/releases/2025-03-12/wmbo-simple.json"
     },
     "nodes" : [ {
       "id" : "https://purl.brain-bican.org/taxonomy/Labelset",
