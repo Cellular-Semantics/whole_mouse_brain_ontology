@@ -204,6 +204,10 @@ def:
                 vars:
                   - Brain_region
                   - Minimal_markers_cat
+              - text: 'It is distinguished from other %s cells by expression of %s'
+                vars:
+                  - Parent_label
+                  - Subclass_markers_cat
               - text: 'These cells are %s.'
                 vars:
                   - NT_label
@@ -216,10 +220,6 @@ def:
                   - Labelset
                   - Taxonomy_label
                   - Cluster_IDs_cat
-              - text: 'It is distinguished from other %s cells by expression of %s'
-                vars:
-                  - Parent_label
-                  - Subclass_markers_cat
 
 generated_synonyms:
    - text: "%s expressing %s of %s (%s)"
