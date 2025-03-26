@@ -204,7 +204,7 @@ def:
                 vars:
                   - Brain_region
                   - Minimal_markers_cat
-              - text: 'It is distinguished from other %s cells by expression of %s'
+              - text: 'It is distinguished from other %s cells by expression of %s.'
                 vars:
                   - Parent_label
                   - Subclass_markers_cat

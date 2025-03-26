@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: pcl/releases/2025-03-12/wmbo-simple.owl
+data-version: pcl/releases/2025-03-26/wmbo-simple.owl
 idspace: skos http://www.w3.org/2004/02/skos/core# 
 idspace: taxonomy https://purl.brain-bican.org/taxonomy/ 
 idspace: terms http://purl.org/dc/terms/ 
@@ -38,7 +38,7 @@ property_value: IAO:0000700 PCL:0110276
 property_value: IAO:0000700 PCL:0111755
 property_value: IAO:0000700 PCL:0114944
 property_value: IAO:0000700 PCL:0116986
-property_value: owl:versionInfo "2025-03-12" xsd:string
+property_value: owl:versionInfo "2025-03-26" xsd:string
 property_value: terms:description "A data-driven cell-type ontology of the whole mouse brain." xsd:string
 property_value: terms:license http://creativecommons.org/licenses/by/4.0/
 property_value: terms:title "Whole Mouse Brain Ontology" xsd:string
