@@ -1,5 +1,5 @@
 defined_class	cell_set_accession	Taxonomy_label	defined_class_name	defined_class_definition	Curated_synonyms	Classification	Classification_comment	Classification_pub	Expresses	Expresses_comment	Expresses_pub	Projection_type	Layers	Cross_species_text	Comment
-http://purl.obolibrary.org/obo/PCL_0110001	CS20230722_CLAS_01	01 IT-ET Glut
+http://purl.obolibrary.org/obo/PCL_0110001	CS20230722_CLAS_01	01 IT-ET Glut													
 http://purl.obolibrary.org/obo/PCL_0110002	CS20230722_CLAS_02	02 NP-CT-L6b Glut													
 http://purl.obolibrary.org/obo/PCL_0110003	CS20230722_CLAS_03	03 OB-CR Glut													
 http://purl.obolibrary.org/obo/PCL_0110004	CS20230722_CLAS_04	04 DG-IMN Glut													
