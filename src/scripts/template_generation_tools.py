@@ -399,22 +399,25 @@ def populate_mba_relations(ccf_broad_freq, approach, d, index, mba_symbols, mba_
     regions = [{"region": item.split(":")[0].strip(),
                 "percentage": float(item.split(":")[1].strip()) if ":" in item else 0}
                for item in ccf_broad_freq.split(",")]
-    mbas = set()
-    mba_text = set()
+    mbas = []
+    mba_text = []
     for region in regions:
         if region["percentage"] >= 0.05 and region["region"] != "NA":
             if region["region"] in mba_symbols:
-                d['MBA_' + str(index)] = mba_symbols[region["region"]]
-                d['MBA_' + str(index) + '_cell_percentage'] = region["percentage"]
-                # d['MBA_' + str(index) + '_assay'] = "EFO:0008992"
-                d['MBA_' + str(
-                    index) + '_comment'] = "Location assignment based on {}.".format(approach)
-                mbas.add(mba_symbols[region["region"]])
-                # {fullname} ({symbol}, {fraction of cells})}
-                mba_text.add(mba_labels[d['MBA_' + str(index)]] + " (" + region["region"] + ", " + str(region["percentage"]) + ")")
-                index += 1
+                mbas.append(mba_symbols[region["region"]])
+                mba_text.append(mba_labels[mba_symbols[region["region"]]] + " (" + region["region"] + ", " + str(region["percentage"]) + ")")
             else:
                 missed_regions.add(region["region"])
+
+    # Sort mbas and mba_text together
+    sorted_pairs = sorted(zip(mbas, mba_text))
+    mbas, mba_text = zip(*sorted_pairs) if sorted_pairs else ([], [])
+
+    for i, mba in enumerate(mbas, start=index):
+        d['MBA_' + str(i)] = mba
+        d['MBA_' + str(i) + '_cell_percentage'] = regions[i - index]["percentage"]
+        d['MBA_' + str(i) + '_comment'] = "Location assignment based on {}.".format(approach)
+
     if approach == BROAD_REGION:
         d['MBA'] = "|".join(mbas)
         d['MBA_text'] = ", ".join(mba_text)
@@ -437,6 +440,10 @@ def generate_curated_class_template(taxonomy_file_path, output_filepath):
         # subtrees = get_subtrees(dend_tree, taxonomy_config)
 
         class_curation_seed = ['defined_class',
+                               'cell_set_accession',
+                               'Taxonomy_label',
+                               'defined_class_name',
+                               'defined_class_definition',
                                'Curated_synonyms',
                                'Classification',
                                'Classification_comment',
@@ -455,14 +462,11 @@ def generate_curated_class_template(taxonomy_file_path, output_filepath):
             node = o
             if o['cell_set_accession'] in nodes_to_collapse:
                 node = nodes_to_collapse[o['cell_set_accession']]
-                collapsed = True
-            else:
-                collapsed = False
             if node.get('cell_set_accession') and node['cell_set_accession'] not in processed_accessions:
                 d = dict()
                 d['defined_class'] = PCL_BASE + id_factory.get_class_id(node['cell_set_accession'])
-                if node.get('cell_fullname'):
-                    d['prefLabel'] = node['cell_fullname']
+                d["cell_set_accession"] = node['cell_set_accession']
+                d["Taxonomy_label"] = node['cell_label']
 
                 for k in class_curation_seed:
                     if not (k in d.keys()):
