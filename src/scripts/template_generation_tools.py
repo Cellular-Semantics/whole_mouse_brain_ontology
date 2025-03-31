@@ -442,6 +442,7 @@ def generate_curated_class_template(taxonomy_file_path, output_filepath):
         class_curation_seed = ['defined_class',
                                'cell_set_accession',
                                'Taxonomy_label',
+                               'Exclude_from_ontology',
                                'defined_class_name',
                                'defined_class_definition',
                                'Curated_synonyms',
@@ -467,6 +468,7 @@ def generate_curated_class_template(taxonomy_file_path, output_filepath):
                 d['defined_class'] = PCL_BASE + id_factory.get_class_id(node['cell_set_accession'])
                 d["cell_set_accession"] = node['cell_set_accession']
                 d["Taxonomy_label"] = node['cell_label']
+                d["Exclude_from_ontology"] = ""  # set `True` to exclude from ontology
 
                 for k in class_curation_seed:
                     if not (k in d.keys()):

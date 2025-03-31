@@ -423,7 +423,8 @@ def merge_tables(base_tsv, extension_tsv, output_filepath):
             for column in merged_headers:
                 row.append(row_data[column])
 
-            writer.writerow(row)
+            if not extension[key].get("Exclude_from_ontology", "False").lower() == "true":
+                writer.writerow(row)
 
 
 def migrate_manual_curations(source_tsv, target_tsv, migrate_columns, output_filepath, use_accession_ids=False):
