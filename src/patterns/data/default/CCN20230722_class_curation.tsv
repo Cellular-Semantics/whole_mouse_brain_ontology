@@ -1,6 +1,6 @@
 defined_class	cell_set_accession	Taxonomy_label	Exclude_from_ontology	defined_class_name	defined_class_definition	Curated_synonyms	Classification	Classification_comment	Classification_pub	Expresses	Expresses_comment	Expresses_pub	Projection_type	Layers	Cross_species_text	Comment
 http://purl.obolibrary.org/obo/PCL_0110001	CS20230722_CLAS_01	01 IT-ET Glut														
-http://purl.obolibrary.org/obo/PCL_0110002	CS20230722_CLAS_02	02 NP-CT-L6b Glut
+http://purl.obolibrary.org/obo/PCL_0110002	CS20230722_CLAS_02	02 NP-CT-L6b Glut														
 http://purl.obolibrary.org/obo/PCL_0110003	CS20230722_CLAS_03	03 OB-CR Glut														
 http://purl.obolibrary.org/obo/PCL_0110004	CS20230722_CLAS_04	04 DG-IMN Glut														
 http://purl.obolibrary.org/obo/PCL_0110005	CS20230722_CLAS_05	05 OB-IMN GABA														
@@ -23,7 +23,7 @@ http://purl.obolibrary.org/obo/PCL_0110275	CS20230722_SUBC_215	21 MB Dopa
 http://purl.obolibrary.org/obo/PCL_0110276	CS20230722_SUBC_216	22 MB-HB Sero														
 http://purl.obolibrary.org/obo/PCL_0110023	CS20230722_CLAS_23	23 P Glut														
 http://purl.obolibrary.org/obo/PCL_0110024	CS20230722_CLAS_24	24 MY Glut														
-http://purl.obolibrary.org/obo/PCL_0116986	CS20230722_CLUS_4606	25 Pineal Glut														
+http://purl.obolibrary.org/obo/PCL_0116986	CS20230722_CLUS_4606	25 Pineal Glut		pinealocyte (Mmus)												
 http://purl.obolibrary.org/obo/PCL_0110026	CS20230722_CLAS_26	26 P GABA														
 http://purl.obolibrary.org/obo/PCL_0110027	CS20230722_CLAS_27	27 MY GABA														
 http://purl.obolibrary.org/obo/PCL_0110028	CS20230722_CLAS_28	28 CB GABA														
@@ -31,8 +31,8 @@ http://purl.obolibrary.org/obo/PCL_0110029	CS20230722_CLAS_29	29 CB Glut
 http://purl.obolibrary.org/obo/PCL_0110030	CS20230722_CLAS_30	30 Astro-Epen														
 http://purl.obolibrary.org/obo/PCL_0110031	CS20230722_CLAS_31	31 OPC-Oligo														
 http://purl.obolibrary.org/obo/PCL_0111755	CS20230722_SUPT_1185	32 OEC														
-http://purl.obolibrary.org/obo/PCL_0110033	CS20230722_CLAS_33	33 Vascular														
-http://purl.obolibrary.org/obo/PCL_0110034	CS20230722_CLAS_34	34 Immune														
+http://purl.obolibrary.org/obo/PCL_0110033	CS20230722_CLAS_33	33 Vascular	TRUE													
+http://purl.obolibrary.org/obo/PCL_0110034	CS20230722_CLAS_34	34 Immune	TRUE													
 http://purl.obolibrary.org/obo/PCL_0110061	CS20230722_SUBC_001	001 CLA-EPd-CTX Car3 Glut														
 http://purl.obolibrary.org/obo/PCL_0110062	CS20230722_SUBC_002	002 IT EP-CLA Glut														
 http://purl.obolibrary.org/obo/PCL_0110063	CS20230722_SUBC_003	003 L5/6 IT TPE-ENT Glut														
@@ -344,28 +344,28 @@ http://purl.obolibrary.org/obo/PCL_0117572	CS20230722_CLUS_5192	312 CBX MLI Cdh2
 http://purl.obolibrary.org/obo/PCL_0110373	CS20230722_SUBC_313	313 CBX Purkinje Gaba														
 http://purl.obolibrary.org/obo/PCL_0110374	CS20230722_SUBC_314	314 CB Granule Glut														
 http://purl.obolibrary.org/obo/PCL_0111726	CS20230722_SUPT_1156	315 DCO UBC Glut														
-http://purl.obolibrary.org/obo/PCL_0117586	CS20230722_CLUS_5206	316 Bergmann NN														
+http://purl.obolibrary.org/obo/PCL_0117586	CS20230722_CLUS_5206	316 Bergmann NN		Bergman glial cell (Mmus)												
 http://purl.obolibrary.org/obo/PCL_0117587	CS20230722_CLUS_5207	317 Astro-CB NN														
 http://purl.obolibrary.org/obo/PCL_0110378	CS20230722_SUBC_318	318 Astro-NT NN														
 http://purl.obolibrary.org/obo/PCL_0110379	CS20230722_SUBC_319	319 Astro-TE NN														
 http://purl.obolibrary.org/obo/PCL_0110380	CS20230722_SUBC_320	320 Astro-OLF NN														
 http://purl.obolibrary.org/obo/PCL_0110381	CS20230722_SUBC_321	321 Astroependymal NN														
-http://purl.obolibrary.org/obo/PCL_0110382	CS20230722_SUBC_322	322 Tanycyte NN														
-http://purl.obolibrary.org/obo/PCL_0110383	CS20230722_SUBC_323	323 Ependymal NN														
-http://purl.obolibrary.org/obo/PCL_0117643	CS20230722_CLUS_5263	324 Hypendymal NN														
-http://purl.obolibrary.org/obo/PCL_0111748	CS20230722_SUPT_1178	325 CHOR NN														
-http://purl.obolibrary.org/obo/PCL_0110386	CS20230722_SUBC_326	326 OPC NN														
-http://purl.obolibrary.org/obo/PCL_0110387	CS20230722_SUBC_327	327 Oligo NN														
-http://purl.obolibrary.org/obo/PCL_0111756	CS20230722_SUPT_1186	329 ABC NN														
-http://purl.obolibrary.org/obo/PCL_0110390	CS20230722_SUBC_330	330 VLMC NN														
-http://purl.obolibrary.org/obo/PCL_0111761	CS20230722_SUPT_1191	331 Peri NN														
-http://purl.obolibrary.org/obo/PCL_0111762	CS20230722_SUPT_1192	332 SMC NN														
-http://purl.obolibrary.org/obo/PCL_0111763	CS20230722_SUPT_1193	333 Endo NN														
-http://purl.obolibrary.org/obo/PCL_0117692	CS20230722_CLUS_5312	334 Microglia NN														
-http://purl.obolibrary.org/obo/PCL_0111765	CS20230722_SUPT_1195	335 BAM NN														
-http://purl.obolibrary.org/obo/PCL_0117695	CS20230722_CLUS_5315	336 Monocytes NN														
-http://purl.obolibrary.org/obo/PCL_0111767	CS20230722_SUPT_1197	337 DC NN														
-http://purl.obolibrary.org/obo/PCL_0110398	CS20230722_SUBC_338	338 Lymphoid NN														
+http://purl.obolibrary.org/obo/PCL_0110382	CS20230722_SUBC_322	322 Tanycyte NN		tanycyte (Mmus)												
+http://purl.obolibrary.org/obo/PCL_0110383	CS20230722_SUBC_323	323 Ependymal NN		ependymal cell (Mmus)												
+http://purl.obolibrary.org/obo/PCL_0117643	CS20230722_CLUS_5263	324 Hypendymal NN		hypendemal cell (Mmus)												
+http://purl.obolibrary.org/obo/PCL_0111748	CS20230722_SUPT_1178	325 CHOR NN		choroid plexus epithelial cell (Mmus)												
+http://purl.obolibrary.org/obo/PCL_0110386	CS20230722_SUBC_326	326 OPC NN		oligodendrocyte precursor cell (Mmus))												
+http://purl.obolibrary.org/obo/PCL_0110387	CS20230722_SUBC_327	327 Oligo NN		oligodendrocyte (Mmus)												
+http://purl.obolibrary.org/obo/PCL_0111756	CS20230722_SUPT_1186	329 ABC NN		arachnoid barrier cell (Mmus)												
+http://purl.obolibrary.org/obo/PCL_0110390	CS20230722_SUBC_330	330 VLMC NN		vascular leptomeningeal cell (Mmus)												
+http://purl.obolibrary.org/obo/PCL_0111761	CS20230722_SUPT_1191	331 Peri NN	TRUE													
+http://purl.obolibrary.org/obo/PCL_0111762	CS20230722_SUPT_1192	332 SMC NN	TRUE													
+http://purl.obolibrary.org/obo/PCL_0111763	CS20230722_SUPT_1193	333 Endo NN	TRUE													
+http://purl.obolibrary.org/obo/PCL_0117692	CS20230722_CLUS_5312	334 Microglia NN		microglial cell (Mmus)												
+http://purl.obolibrary.org/obo/PCL_0111765	CS20230722_SUPT_1195	335 BAM NN		border associated macrophage (Mmus)												
+http://purl.obolibrary.org/obo/PCL_0117695	CS20230722_CLUS_5315	336 Monocytes NN	TRUE													
+http://purl.obolibrary.org/obo/PCL_0111767	CS20230722_SUPT_1197	337 DC NN	TRUE													
+http://purl.obolibrary.org/obo/PCL_0110398	CS20230722_SUBC_338	338 Lymphoid NN	TRUE													
 http://purl.obolibrary.org/obo/PCL_0110571	CS20230722_SUPT_0001	0001 CLA-EPd-CTX Car3 Glut_1														
 http://purl.obolibrary.org/obo/PCL_0112385	CS20230722_CLUS_0005	0002 CLA-EPd-CTX Car3 Glut_2														
 http://purl.obolibrary.org/obo/PCL_0110573	CS20230722_SUPT_0003	0003 IT EP-CLA Glut_1														
@@ -1471,10 +1471,10 @@ http://purl.obolibrary.org/obo/PCL_0111757	CS20230722_SUPT_1187	1187 VLMC NN_1
 http://purl.obolibrary.org/obo/PCL_0111758	CS20230722_SUPT_1188	1188 VLMC NN_2														
 http://purl.obolibrary.org/obo/PCL_0117682	CS20230722_CLUS_5302	1189 VLMC NN_3														
 http://purl.obolibrary.org/obo/PCL_0117683	CS20230722_CLUS_5303	1190 VLMC NN_4														
-http://purl.obolibrary.org/obo/PCL_0117699	CS20230722_CLUS_5319	1198 B cells NN_1														
-http://purl.obolibrary.org/obo/PCL_0117700	CS20230722_CLUS_5320	1199 ILC NN_2														
-http://purl.obolibrary.org/obo/PCL_0117701	CS20230722_CLUS_5321	1200 NK cells NN_3														
-http://purl.obolibrary.org/obo/PCL_0117702	CS20230722_CLUS_5322	1201 T cells NN_4														
+http://purl.obolibrary.org/obo/PCL_0117699	CS20230722_CLUS_5319	1198 B cells NN_1	TRUE													
+http://purl.obolibrary.org/obo/PCL_0117700	CS20230722_CLUS_5320	1199 ILC NN_2	TRUE													
+http://purl.obolibrary.org/obo/PCL_0117701	CS20230722_CLUS_5321	1200 NK cells NN_3	TRUE													
+http://purl.obolibrary.org/obo/PCL_0117702	CS20230722_CLUS_5322	1201 T cells NN_4	TRUE													
 http://purl.obolibrary.org/obo/PCL_0112381	CS20230722_CLUS_0001	0001 CLA-EPd-CTX Car3 Glut_1														
 http://purl.obolibrary.org/obo/PCL_0112382	CS20230722_CLUS_0002	0002 CLA-EPd-CTX Car3 Glut_1														
 http://purl.obolibrary.org/obo/PCL_0112383	CS20230722_CLUS_0003	0003 CLA-EPd-CTX Car3 Glut_1														
@@ -6612,6 +6612,6 @@ http://purl.obolibrary.org/obo/PCL_0117690	CS20230722_CLUS_5310	5310 Endo NN_1
 http://purl.obolibrary.org/obo/PCL_0117691	CS20230722_CLUS_5311	5311 Endo NN_1														
 http://purl.obolibrary.org/obo/PCL_0117693	CS20230722_CLUS_5313	5313 BAM NN_1														
 http://purl.obolibrary.org/obo/PCL_0117694	CS20230722_CLUS_5314	5314 BAM NN_1														
-http://purl.obolibrary.org/obo/PCL_0117696	CS20230722_CLUS_5316	5316 DC NN_1														
-http://purl.obolibrary.org/obo/PCL_0117697	CS20230722_CLUS_5317	5317 DC NN_1														
-http://purl.obolibrary.org/obo/PCL_0117698	CS20230722_CLUS_5318	5318 DC NN_1														
+http://purl.obolibrary.org/obo/PCL_0117696	CS20230722_CLUS_5316	5316 DC NN_1	TRUE													
+http://purl.obolibrary.org/obo/PCL_0117697	CS20230722_CLUS_5317	5317 DC NN_1	TRUE													
+http://purl.obolibrary.org/obo/PCL_0117698	CS20230722_CLUS_5318	5318 DC NN_1	TRUE													
