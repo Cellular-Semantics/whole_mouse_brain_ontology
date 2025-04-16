@@ -1,6 +1,7 @@
 import pandas as pd
 import os
 import ast
+import csv
 import logging
 from rdflib import Graph, Namespace
 from rdflib.namespace import RDFS
@@ -55,14 +56,16 @@ BROAD_REGION = "CCF broad region"
 
 
 def generate_ind_template(taxonomy_file_path, output_filepath):
-    # path_parts = taxonomy_file_path.split(os.path.sep)
-    # taxon = path_parts[len(path_parts) - 1].split(".")[0]
+    path_parts = taxonomy_file_path.split(os.path.sep)
+    taxon = path_parts[-1].split(".")[0]
 
     dend = cas_json_2_nodes_n_edges(taxonomy_file_path)
     all_nodes = {node['cell_set_accession']: node for node in dend['nodes']}
     id_factory = PCLIdFactory(read_json_file(taxonomy_file_path))
     dend_tree = generate_dendrogram_tree(dend)
     nodes_to_collapse = get_collapsed_nodes(dend_tree, all_nodes)
+
+    excluded_classes = get_excluded_classes(taxon)
 
     # dend_tree = generate_dendrogram_tree(dend)
     # taxonomy_config = read_taxonomy_config(taxon)
@@ -114,9 +117,11 @@ def generate_ind_template(taxonomy_file_path, output_filepath):
                 d[prop] = ''
         d['Cluster_ID'] = o['cell_set_accession']
         if o['cell_set_accession'] in nodes_to_collapse:
-            d['Exemplar_of'] = PCL_BASE + id_factory.get_class_id(nodes_to_collapse[o['cell_set_accession']]['cell_set_accession'])
+            class_url = PCL_BASE + id_factory.get_class_id(nodes_to_collapse[o['cell_set_accession']]['cell_set_accession'])
         else:
-            d['Exemplar_of'] = PCL_BASE + id_factory.get_class_id(o['cell_set_accession'])
+            class_url = PCL_BASE + id_factory.get_class_id(o['cell_set_accession'])
+        if class_url not in excluded_classes:
+            d['Exemplar_of'] = class_url
 
         dl.append(d)
     robot_template = pd.DataFrame.from_records(dl)
@@ -1000,4 +1005,25 @@ def find_duplicate_cell_labels(nodes):
             seen_labels.add(label)
 
     return duplicates
+
+def get_excluded_classes(taxonomy_id):
+    """
+    Reads the class curation TSV file for the given taxonomy_id and returns a list of
+    class urls where Exclude_from_ontology equals True (case insensitive).
+
+    Args:
+        taxonomy_id: Taxonomy identifier (string)
+
+    Returns:
+        List of defined_class values for rows with Exclude_from_ontology set to True.
+    """
+    excluded = []
+    file_path = os.path.join(os.path.dirname(os.path.realpath(__file__)),
+                 f"../patterns/data/default/{taxonomy_id}_class_curation.tsv")
+    with open(file_path, newline='') as fd:
+        reader = csv.DictReader(fd, delimiter='\t')
+        for row in reader:
+            if row.get("Exclude_from_ontology", "").strip().lower() == "true":
+                excluded.append(row.get("defined_class", "").strip())
+    return excluded
 

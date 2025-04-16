@@ -421,7 +421,7 @@ def merge_tables(base_tsv, extension_tsv, output_filepath):
 
             row = list()
             for column in merged_headers:
-                row.append(row_data[column])
+                row.append(row_data.get(column, ""))
 
             if not extension[key].get("Exclude_from_ontology", "False").strip().lower() == "true":
                 writer.writerow(row)

@@ -43,6 +43,7 @@ list_vars:
   Allen_markers: "'sequence_feature'"
   Layers: "'layer of neocortex'"
   MBA: "'thing'"
+  CCF_acronym_freq: "'thing'"
   NT: "'thing'"
   NT_markers: "'sequence_feature'"
   Individuals: "'thing'"
@@ -160,6 +161,11 @@ internal_vars:
     apply:
       join:
         sep: ', '
+  - var_name: Atlas_loc_acronym_cat
+    input: CCF_acronym_freq
+    apply:
+      join:
+        sep: ', '
   - var_name: NT_cat
     input: NT
     apply:
@@ -211,9 +217,10 @@ def:
               - text: 'These cells are %s.'
                 vars:
                   - NT_label
-              - text: 'Soma of this cell type are located in the %s.'
+              - text: 'They are are located in the %s, more specifically in or close to the %s.'
                 vars:
-                  - MBA_text
+                  - Atlas_loc_cat
+                  - Atlas_loc_acronym_cat
               - text: "Standard transcriptomic reference data for this class can be found at %s in %s:%s (%s)."
                 vars:
                   - Dataset_url
@@ -383,7 +390,7 @@ annotations:
     text: "%s (%s)"
     vars:
       - prefLabel
-      - Species_abbv
+      - Taxon_abbv
   - annotationProperty: 'has minimal marker'
     multi_clause:
       sep: " "
