@@ -85,12 +85,6 @@
         "val" : "http://purl.obolibrary.org/obo/PCL_0110031"
       }, {
         "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
-        "val" : "http://purl.obolibrary.org/obo/PCL_0110033"
-      }, {
-        "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
-        "val" : "http://purl.obolibrary.org/obo/PCL_0110034"
-      }, {
-        "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
         "val" : "http://purl.obolibrary.org/obo/PCL_0110275"
       }, {
         "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
@@ -115,9 +109,9 @@
         "val" : "Whole Mouse Brain Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-03-26"
+        "val" : "2025-04-17"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/pcl/releases/2025-03-26/wmbo-simple.json"
+      "version" : "http://purl.obolibrary.org/obo/pcl/releases/2025-04-17/wmbo-simple.json"
     },
     "nodes" : [ {
       "id" : "https://purl.brain-bican.org/taxonomy/Labelset",

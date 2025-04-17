@@ -11,7 +11,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:taxonomy="https://purl.brain-bican.org/taxonomy/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pcl/wmbo-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pcl/releases/2025-03-26/wmbo-simple.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pcl/releases/2025-04-17/wmbo-simple.owl"/>
         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PCL_0110001"/>
         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PCL_0110002"/>
         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PCL_0110003"/>
@@ -39,8 +39,6 @@
         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PCL_0110029"/>
         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PCL_0110030"/>
         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PCL_0110031"/>
-        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PCL_0110033"/>
-        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PCL_0110034"/>
         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PCL_0110275"/>
         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PCL_0110276"/>
         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PCL_0111755"/>
@@ -49,7 +47,7 @@
         <terms:description>A data-driven cell-type ontology of the whole mouse brain.</terms:description>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <terms:title>Whole Mouse Brain Ontology</terms:title>
-        <owl:versionInfo>2025-03-26</owl:versionInfo>
+        <owl:versionInfo>2025-04-17</owl:versionInfo>
     </owl:Ontology>
     
 

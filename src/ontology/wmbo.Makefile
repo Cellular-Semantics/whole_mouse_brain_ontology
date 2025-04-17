@@ -307,6 +307,14 @@ $(ONT)-simple.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(SIMPLESEED) $(IMPORT_FILE
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru \
 		$(SHARED_ROBOT_COMMANDS) annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
 
+## delete disjoint classes and properties, they are causing inconsistencies when merged with mba
+.PHONY: mirror-ro
+.PRECIOUS: $(MIRRORDIR)/ro.owl
+mirror-ro: | $(TMPDIR)
+	curl -L $(OBOBASE)/ro/ro-base.owl --create-dirs -o $(TMPDIR)/ro-download.owl --retry 4 --max-time 400 && \
+	$(ROBOT) convert -i $(TMPDIR)/ro-download.owl -o $(TMPDIR)/$@.owl
+	$(ROBOT) query -i $(TMPDIR)/$@.owl --update ../sparql/delete_disjointness.ru -o $(TMPDIR)/$@.owl
+
 ## ONTOLOGY: uberon
 ## delete disjoint classes and properties, they are causing inconsistencies when merged with mba
 .PHONY: mirror-uberon
@@ -314,7 +322,7 @@ $(ONT)-simple.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(SIMPLESEED) $(IMPORT_FILE
 mirror-uberon: | $(TMPDIR)
 	curl -L $(OBOBASE)/uberon/uberon-base.owl --create-dirs -o $(TMPDIR)/uberon-download.owl --retry 4 --max-time 400 && \
 	$(ROBOT) convert -i $(TMPDIR)/uberon-download.owl -o $(TMPDIR)/$@.owl
-	$(ROBOT) query -i $(TMPDIR)/$@.owl --update ../sparql/delete_uberon_disjointness.ru -o $(TMPDIR)/$@.owl
+	$(ROBOT) query -i $(TMPDIR)/$@.owl --update ../sparql/delete_uberon_disjointness.ru --update ../sparql/delete_uberon_disjointness_2.ru -o $(TMPDIR)/$@.owl
 
 # Release additional artifacts
 $(ONT).owl: $(ONT)-full.owl $(ONT)-pcl-comp.owl $(ONT)-pcl-comp.obo $(ONT)-pcl-comp.json

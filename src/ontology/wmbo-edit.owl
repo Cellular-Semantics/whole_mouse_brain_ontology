@@ -51,8 +51,8 @@ Annotation(IAO:0000700 <http://purl.obolibrary.org/obo/PCL_0110029>)
 Annotation(IAO:0000700 <http://purl.obolibrary.org/obo/PCL_0110030>)
 Annotation(IAO:0000700 <http://purl.obolibrary.org/obo/PCL_0110031>)
 Annotation(IAO:0000700 <http://purl.obolibrary.org/obo/PCL_0111755>)
-Annotation(IAO:0000700 <http://purl.obolibrary.org/obo/PCL_0110033>)
-Annotation(IAO:0000700 <http://purl.obolibrary.org/obo/PCL_0110034>)
+# Annotation(IAO:0000700 <http://purl.obolibrary.org/obo/PCL_0110033>)
+# Annotation(IAO:0000700 <http://purl.obolibrary.org/obo/PCL_0110034>)
 
 
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000099>))
