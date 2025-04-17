@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                d996142404cce296d0f8ae99e212bfce3e34642c6aa055d8ba740f1f8e9ac5fb
+CONFIG_HASH=                cc82c9e1c136c6e5e7e1e8531c485aceaaf0064aedede05725652809b2e0f82c
 
 
 # ----------------------------------------
@@ -535,7 +535,7 @@ mirror-ncbitaxon: | $(TMPDIR)
 .PHONY: mirror-mba
 .PRECIOUS: $(MIRRORDIR)/mba.owl
 mirror-mba: | $(TMPDIR)
-	$(ROBOT) convert -I https://raw.githubusercontent.com/brain-bican/mouse_brain_atlas_ontology/main/mbao.owl -o $(TMPDIR)/$@.owl
+	$(ROBOT) convert -I https://raw.githubusercontent.com/brain-bican/mouse_brain_atlas_ontology/main/mbao-base.owl -o $(TMPDIR)/$@.owl
 
 ALL_MIRRORS = $(patsubst %, $(MIRRORDIR)/%.owl, $(IMPORTS))
 MERGE_MIRRORS = true

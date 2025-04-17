@@ -49,7 +49,7 @@ import_group:
     - id: ncbitaxon
       mirror_from: http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl
     - id: mba
-      mirror_from: https://raw.githubusercontent.com/brain-bican/mouse_brain_atlas_ontology/main/mbao.owl
+      mirror_from: https://raw.githubusercontent.com/brain-bican/mouse_brain_atlas_ontology/main/mbao-base.owl
 components:
   products:
     - filename: all_templates.owl
