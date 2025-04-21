@@ -2,6 +2,7 @@ import pandas as pd
 import os
 import ast
 import csv
+import json
 import logging
 from rdflib import Graph, Namespace
 from rdflib.namespace import RDFS
@@ -42,6 +43,7 @@ BRAIN_REGION_MAPPING = os.path.join(os.path.dirname(os.path.realpath(__file__)),
 CROSS_SPECIES_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)),
                                   "../dendrograms/nomenclature_table_CCN202002270.csv")
 NAME_CURATION_MAPPING = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../dendrograms/supplementary/version2/one_concept_one_name_curation.tsv")
+ABC_URLS_MAPPING = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../dendrograms/CCN20230722_abc_urls.json")
 
 # centralized data files
 ALLEN_DESCRIPTIONS_PATH = "{}/{}/All Descriptions_{}.json"
@@ -145,6 +147,7 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
 
         gene_db = read_gene_dbs(TEMPLATES_FOLDER_PATH)
         ns_forest_markers = read_nsforest_markers_dataframe()
+        atlas_payloads = read_abc_urls(ABC_URLS_MAPPING)
 
         cluster_annotations = read_csv_to_dict(CLUSTER_ANNOTATIONS_PATH, id_column_name="cell_set_accession.cluster")[1]
         nt_symbols_mapping = read_csv_to_dict(NT_SYMBOLS_MAPPING, delimiter="\t")[1]
@@ -185,7 +188,8 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                       'MBA_text',
                       'Subclass_markers',
                       'Location_disclaimer',
-                      'NT_disclaimer'
+                      'NT_disclaimer',
+                      'Atlas_url'
                       ]
         class_template = []
         obsolete_template = []
@@ -320,6 +324,9 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                 if node["cell_set_accession"] in nt_inconsistencies:
                     inconsistent_nts = nt_inconsistencies[node["cell_set_accession"]]
                     d["NT_disclaimer"] = "Warning: Despite its name, {name} does not secrete the neurotransmitter {nt}, as assessed by expression of multiple marker genes.".format(name=d["prefLabel"], nt=", ".join(inconsistent_nts))
+
+                if atlas_payloads.get(node["cell_set_accession"]):
+                    d["Atlas_url"] = "https://knowledge.brain-map.org/abcatlas#" + atlas_payloads.get(node["cell_set_accession"])
 
                 for k in class_seed:
                     if not (k in d.keys()):
@@ -1026,4 +1033,17 @@ def get_excluded_classes(taxonomy_id):
             if row.get("Exclude_from_ontology", "").strip().lower() == "true":
                 excluded.append(row.get("defined_class", "").strip())
     return excluded
+
+def read_abc_urls(file_path):
+    """
+    Reads the ABC URLs from a json file and returns them as a dictionary.
+    Args:
+        file_path: Path to the json file containing ABC URLs.
+    Returns:
+        dict: Dictionary with ABC URLs.
+    """
+    data_dict = {}
+    with open(file_path, 'r') as file:
+        data_dict = json.load(file)
+    return data_dict
 

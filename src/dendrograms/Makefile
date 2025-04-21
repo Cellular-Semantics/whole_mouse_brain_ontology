@@ -6,9 +6,9 @@ TEMPLATE_CLASS_BASE_FILES = $(patsubst %, ../patterns/data/default/%_class_base.
 TEMPLATE_CLASS_CURATION_FILES = $(patsubst %, ../patterns/data/default/%_class_curation.tsv, $(JOBS))
 TEMPLATE_MARKER_SET_FILES = $(patsubst %, ../patterns/data/default/%_marker_set.tsv, $(JOBS))
 TEMPLATE_NSFOREST_MARKER_SET_FILES = $(patsubst %, ../patterns/data/default/%_nsforest_marker_set.tsv, $(JOBS))
-ABC_URLS = $(patsubst %, ./%_abc_urls.txt, $(JOBS))
+ABC_URLS = $(patsubst %, ./%_abc_urls.json, $(JOBS))
 
-all: $(TEMPLATE_FILES) $(TEMPLATE_CLASS_BASE_FILES) $(TEMPLATE_CLASS_CURATION_FILES) $(TEMPLATE_MARKER_SET_FILES) $(TEMPLATE_NSFOREST_MARKER_SET_FILES)
+all: $(TEMPLATE_FILES) $(TEMPLATE_CLASS_BASE_FILES) $(TEMPLATE_CLASS_CURATION_FILES) $(TEMPLATE_MARKER_SET_FILES) $(TEMPLATE_NSFOREST_MARKER_SET_FILES) $(ABC_URLS)
 
 CCN20230722.json:
 	wget https://purl.brain-bican.org/taxonomy/CCN20230722/CCN20230722.json -O $@
@@ -40,7 +40,7 @@ $(SUPPLEMENTARY)/version2/neurotransmitters.tsv:
 	npm install --prefix ../../typescript typescript @types/node --save-dev
 	npx tsc -p ../../typescript/tsconfig.json
 
-CCN20230722_abc_urls.txt: ../../typescript/dist/index.js
+CCN20230722_abc_urls.json: ../../typescript/dist/index.js
 	node $< $@
 
 
