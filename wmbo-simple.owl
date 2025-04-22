@@ -40,9 +40,13 @@
         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PCL_0110031"/>
         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PCL_0110275"/>
         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PCL_0110276"/>
+        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PCL_0110390"/>
         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PCL_0111755"/>
+        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PCL_0111756"/>
+        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PCL_0111765"/>
         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PCL_0114944"/>
         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PCL_0116986"/>
+        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/PCL_0117692"/>
         <terms:description>A data-driven cell-type ontology of the whole mouse brain.</terms:description>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <terms:title>Whole Mouse Brain Ontology</terms:title>

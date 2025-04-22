@@ -91,13 +91,25 @@
         "val" : "http://purl.obolibrary.org/obo/PCL_0110276"
       }, {
         "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
+        "val" : "http://purl.obolibrary.org/obo/PCL_0110390"
+      }, {
+        "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
         "val" : "http://purl.obolibrary.org/obo/PCL_0111755"
+      }, {
+        "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
+        "val" : "http://purl.obolibrary.org/obo/PCL_0111756"
+      }, {
+        "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
+        "val" : "http://purl.obolibrary.org/obo/PCL_0111765"
       }, {
         "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
         "val" : "http://purl.obolibrary.org/obo/PCL_0114944"
       }, {
         "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
         "val" : "http://purl.obolibrary.org/obo/PCL_0116986"
+      }, {
+        "pred" : "http://purl.obolibrary.org/obo/IAO_0000700",
+        "val" : "http://purl.obolibrary.org/obo/PCL_0117692"
       }, {
         "pred" : "http://purl.org/dc/terms/description",
         "val" : "A data-driven cell-type ontology of the whole mouse brain."

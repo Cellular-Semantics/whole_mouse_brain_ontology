@@ -32,9 +32,13 @@ property_value: IAO:0000700 PCL:0110030
 property_value: IAO:0000700 PCL:0110031
 property_value: IAO:0000700 PCL:0110275
 property_value: IAO:0000700 PCL:0110276
+property_value: IAO:0000700 PCL:0110390
 property_value: IAO:0000700 PCL:0111755
+property_value: IAO:0000700 PCL:0111756
+property_value: IAO:0000700 PCL:0111765
 property_value: IAO:0000700 PCL:0114944
 property_value: IAO:0000700 PCL:0116986
+property_value: IAO:0000700 PCL:0117692
 property_value: owl:versionInfo "2025-04-22" xsd:string
 property_value: terms:description "A data-driven cell-type ontology of the whole mouse brain." xsd:string
 property_value: terms:license http://creativecommons.org/licenses/by/4.0/
