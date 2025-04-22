@@ -68,6 +68,7 @@ def generate_ind_template(taxonomy_file_path, output_filepath):
     nodes_to_collapse = get_collapsed_nodes(dend_tree, all_nodes)
 
     excluded_classes = get_excluded_classes(taxon)
+    atlas_payloads = read_abc_urls(ABC_URLS_MAPPING)
 
     # dend_tree = generate_dendrogram_tree(dend)
     # taxonomy_config = read_taxonomy_config(taxon)
@@ -93,7 +94,8 @@ def generate_ind_template(taxonomy_file_path, output_filepath):
                            'Exemplar_of': "TI 'exemplar data of' some %",
                            'Comment': "A rdfs:comment",
                            'Aliases': "A oboInOwl:hasRelatedSynonym SPLIT=|",
-                           'Rank': "A 'cell_type_rank' SPLIT=|"
+                           'Rank': "A 'cell_type_rank' SPLIT=|",
+                           'Atlas_url': "AT 'ABC atlas reference'^^xsd:anyURI",
                            }
     dl = [robot_template_seed]
 
@@ -124,6 +126,9 @@ def generate_ind_template(taxonomy_file_path, output_filepath):
             class_url = PCL_BASE + id_factory.get_class_id(o['cell_set_accession'])
         if class_url not in excluded_classes:
             d['Exemplar_of'] = class_url
+        if atlas_payloads.get(o["cell_set_accession"]):
+            d["Atlas_url"] = "https://knowledge.brain-map.org/abcatlas#" + atlas_payloads.get(
+                o["cell_set_accession"])
 
         dl.append(d)
     robot_template = pd.DataFrame.from_records(dl)
@@ -147,7 +152,6 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
 
         gene_db = read_gene_dbs(TEMPLATES_FOLDER_PATH)
         ns_forest_markers = read_nsforest_markers_dataframe()
-        atlas_payloads = read_abc_urls(ABC_URLS_MAPPING)
 
         cluster_annotations = read_csv_to_dict(CLUSTER_ANNOTATIONS_PATH, id_column_name="cell_set_accession.cluster")[1]
         nt_symbols_mapping = read_csv_to_dict(NT_SYMBOLS_MAPPING, delimiter="\t")[1]
@@ -188,8 +192,7 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                       'MBA_text',
                       'Subclass_markers',
                       'Location_disclaimer',
-                      'NT_disclaimer',
-                      'Atlas_url'
+                      'NT_disclaimer'
                       ]
         class_template = []
         obsolete_template = []
@@ -324,9 +327,6 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                 if node["cell_set_accession"] in nt_inconsistencies:
                     inconsistent_nts = nt_inconsistencies[node["cell_set_accession"]]
                     d["NT_disclaimer"] = "Warning: Despite its name, {name} does not secrete the neurotransmitter {nt}, as assessed by expression of multiple marker genes.".format(name=d["prefLabel"], nt=", ".join(inconsistent_nts))
-
-                if atlas_payloads.get(node["cell_set_accession"]):
-                    d["Atlas_url"] = "https://knowledge.brain-map.org/abcatlas#" + atlas_payloads.get(node["cell_set_accession"])
 
                 for k in class_seed:
                     if not (k in d.keys()):

@@ -36,7 +36,6 @@ annotationProperties:
   cell_ratio: "PCL:0010065"
   'has minimal marker': "PCL:0010066"
   evidence: "oboInOwl:evidence"
-  has_atlas_url: "PCL:0010067"
 
 list_vars:
   Expresses: "'thing'"
@@ -140,7 +139,6 @@ data_vars:
   MBA_14_cell_percentage: "xsd:double"
   Location_disclaimer: "xsd:string"
   NT_disclaimer: "xsd:string"
-  Atlas_url: "xsd:string"
 
 internal_vars:
   - var_name: Minimal_markers_cat
@@ -410,10 +408,6 @@ annotations:
         - text: '%s'
           vars:
             - NT_disclaimer
-  - annotationProperty: has_atlas_url
-    text: "%s"
-    vars:
-      - Atlas_url
   - annotationProperty: some_soma_located_in
     var: MBA_1
     annotations:

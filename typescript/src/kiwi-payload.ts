@@ -4,39 +4,16 @@ import type { ExplorePageInitPayload, Visualization } from './abc-atlas/url-sche
 import { decodeKiwiPayload, encodeAsKiwiQuery} from './kiwi-url-utils';
 
 /**
- * Creates a payload object for a given annotation.
+ * Generates a scRNAseq frame for the given annotation.
  * @param annotation - The annotation object containing labelset and cell_label.
- * @returns The generated ExplorePageInitPayload object.
+ * @returns The generated scRNAseq frame object.
  */
-function createPayload(annotation: any): ExplorePageInitPayload {
-  const metadataFilters = [
-    { categoryId: 'FS00DXV0T9R1X9FJ4QE', selectedValues: [] as string[] }, // class
-    { categoryId: 'QY5S8KMO5HLJUF0P00K', selectedValues: [] as string[] }, // subclass
-    { categoryId: '15BK47DCIOF1SLLUW9P', selectedValues: [] as string[] }, // supertype
-    { categoryId: 'CBGC0U30VV9JPR60TJU', selectedValues: [] as string[] }  // cluster
-  ];
-
-  switch (annotation.labelset) {
-    case 'class':
-      metadataFilters[0].selectedValues.push(annotation.cell_label);
-      break;
-    case 'subclass':
-      metadataFilters[1].selectedValues.push(annotation.cell_label);
-      break;
-    case 'supertype':
-      metadataFilters[2].selectedValues.push(annotation.cell_label);
-      break;
-    case 'cluster':
-      metadataFilters[3].selectedValues.push(annotation.cell_label);
-      break;
-    default:
-      break;
-  }
-
-  const frame: Visualization = {
+function generateScRNAseqFrame(annotation: any): Visualization {
+  const { metadataFilters, categoryId } = generateMetadataFilters(annotation);
+  return {
     dataCollectionId: 'AP8JNN5LYABGVMGKY1B',
     plotId: 'Q1NCWWPG6FZ0DNIXJBQ',
-    metadataFilters,
+    metadataFilters: metadataFilters,
     camera: {
       projection: 'CARTESIAN',
       center: { x: 6.2308759689331055, y: 4.501317501068115 },
@@ -45,7 +22,7 @@ function createPayload(annotation: any): ExplorePageInitPayload {
     genes: [{ symbol: 'C230099D08Rik' }],
     colorBy: {
       mode: 'METADATA',
-      value: 'QY5S8KMO5HLJUF0P00K',
+      value: categoryId ?? undefined,
       transparency: 0.5,
       isTransparent: false,
     },
@@ -60,10 +37,101 @@ function createPayload(annotation: any): ExplorePageInitPayload {
       stroke: { option: 'DEFAULT', color: '#000000', opacity: 100 },
     },
   };
+}
+
+/**
+* Generates a MerFish frame for the given annotation.
+* @param annotation - The annotation object containing labelset and cell_label.
+* @returns The generated MerFish frame object.
+*/
+function generateMerFishFrame(annotation: any): Visualization {
+  const { metadataFilters, categoryId } = generateMetadataFilters(annotation);
+  return {
+    dataCollectionId: 'ZI3RR0FXL3HYXGVE2S5',
+    plotId: 'FYY4OM2LU5J0YOF07DR',
+    metadataFilters: metadataFilters,
+    camera: {
+      projection: 'WEB_IMAGE',
+      center: { x: 35.968414306640625, y: 23.939821243286133 },
+      size: { x: 48.88800048828125, y: 59.15515899658203 },
+      gridFeatureId: '2NQTIE7TAMP8PQAHO4P',
+      slideBounds: {
+        minCorner: { x: -5.166423320770264, y: -4.229303359985352 },
+        maxCorner: { x: 5.117286682128906, y: 3.8190176486968994 },
+      },
+      hideUnselected: false,
+      offsetIndex: 0,
+    },
+    genes: [],
+    colorBy: {
+      mode: 'METADATA',
+      value: categoryId ?? undefined,
+      transparency: 0.5,
+      isTransparent: false,
+    },
+    visualizationId: '4STCSZBXHYOI0JUUA3M',
+    projectId: 'LVDBJAW8BI5YSS1QUBG',
+    quantitativeFilters: [],
+    annotation: {
+      referenceId: 'TLOKWCL95RU03D9PETG',
+      featureTypeReferenceId: 'TFQFLNEP3V222Y88C64',
+      isInFront: true,
+      fill: { option: 'NONE', color: '#000000', opacity: 100 },
+      stroke: { option: 'DEFAULT', color: '#000000', opacity: 100 },
+    },
+  };
+}
+
+/**
+ * Generates metadata filters based on the given annotation.
+ * @param annotation - The annotation object containing labelset and cell_label.
+ * @returns An array of metadata filters.
+ */
+function generateMetadataFilters(annotation: any) {
+    const metadataFilters = [
+    { categoryId: 'FS00DXV0T9R1X9FJ4QE', selectedValues: [] as string[] }, // class
+    { categoryId: 'QY5S8KMO5HLJUF0P00K', selectedValues: [] as string[] }, // subclass
+    { categoryId: '15BK47DCIOF1SLLUW9P', selectedValues: [] as string[] }, // supertype
+    { categoryId: 'CBGC0U30VV9JPR60TJU', selectedValues: [] as string[] }  // cluster
+  ];
+
+  let relatedCategoryId: string | null = null;
+
+  switch (annotation.labelset) {
+    case 'class':
+      metadataFilters[0].selectedValues.push(annotation.cell_label);
+      relatedCategoryId = metadataFilters[0].categoryId;
+      break;
+    case 'subclass':
+      metadataFilters[1].selectedValues.push(annotation.cell_label);
+      relatedCategoryId = metadataFilters[1].categoryId;
+      break;
+    case 'supertype':
+      metadataFilters[2].selectedValues.push(annotation.cell_label);
+      relatedCategoryId = metadataFilters[2].categoryId;
+      break;
+    case 'cluster':
+      metadataFilters[3].selectedValues.push(annotation.cell_label);
+      relatedCategoryId = metadataFilters[3].categoryId;
+      break;
+    default:
+      break;
+  }
+  return { metadataFilters, categoryId: relatedCategoryId };;
+}
+
+/**
+ * Creates a payload object for a given annotation.
+ * @param annotation - The annotation object containing labelset and cell_label.
+ * @returns The generated ExplorePageInitPayload object.
+ */
+function createPayload(annotation: any): ExplorePageInitPayload {
+  const scRNAseqFrame = generateScRNAseqFrame(annotation);
+  const merFishFrame = generateMerFishFrame(annotation);
 
   return {
-    frames: [frame],
-    layout: 'Single',
+    frames: [scRNAseqFrame, merFishFrame],
+    layout: 'DoubleHorizontal',
   };
 }
 
@@ -96,6 +164,7 @@ export function generatePayloadTable(jsonFilePath: string, outputPathArg: string
       continue; // Skip neurotransmitter annotations
     }
     const payload = createPayload(annotation);
+//     console.log(JSON.stringify(payload, null, 2))
     payloadDictionary[annotation.cell_set_accession] = encodeAsKiwiQuery(payload);
   }
 

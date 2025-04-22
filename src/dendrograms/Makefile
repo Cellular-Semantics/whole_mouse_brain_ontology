@@ -13,7 +13,7 @@ all: $(TEMPLATE_FILES) $(TEMPLATE_CLASS_BASE_FILES) $(TEMPLATE_CLASS_CURATION_FI
 CCN20230722.json:
 	wget https://purl.brain-bican.org/taxonomy/CCN20230722/CCN20230722.json -O $@
 
-../templates/%.tsv: %.json
+../templates/%.tsv: %.json %_abc_urls.json
 	python ../scripts/template_runner.py generator -i $< -o $@
 
 #../markers/%_markers_denormalized.tsv: %.json nomenclature_table_%.csv
