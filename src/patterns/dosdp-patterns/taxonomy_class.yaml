@@ -214,10 +214,10 @@ def:
                 vars:
                   - Parent_label
                   - Subclass_markers_cat
-              - text: 'These cells are %s.'
+              - text: 'It is %s.'
                 vars:
                   - NT_label
-              - text: 'They are are located in the %s, more specifically in or close to the %s.'
+              - text: 'These cells are are located in the %s, in or close to the regions: %s.'
                 vars:
                   - Atlas_loc_cat
                   - Atlas_loc_acronym_cat
