@@ -379,8 +379,8 @@ property_value: skos:prefLabel "CB Glut" xsd:string
 
 [Term]
 id: PCL:0110030
-name: Astro-Epen neuron (Mmus)
-def: "A neuron of the Mus musculus brain. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in class:30 Astro-Epen (CS20230722_CLAS_30)." []
+name: Astro-Epen cell (Mmus)
+def: "A cell of the Mus musculus brain. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in class:30 Astro-Epen (CS20230722_CLAS_30)." []
 synonym: "30 Astro-Epen" EXACT []
 is_a: BFO:0000002
 is_a: CL:2000029
@@ -392,8 +392,8 @@ property_value: skos:prefLabel "Astro-Epen" xsd:string
 
 [Term]
 id: PCL:0110031
-name: OPC-Oligo neuron (Mmus)
-def: "A neuron of the Mus musculus brain. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in class:31 OPC-Oligo (CS20230722_CLAS_31)." []
+name: OPC-Oligo cell (Mmus)
+def: "A cell of the Mus musculus brain. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in class:31 OPC-Oligo (CS20230722_CLAS_31)." []
 synonym: "31 OPC-Oligo" EXACT []
 is_a: BFO:0000002
 is_a: CL:2000029
@@ -4794,13 +4794,13 @@ property_value: skos:prefLabel "CB Granule Glut" xsd:string
 
 [Term]
 id: PCL:0110378
-name: subcortical astrrocyte (Mmus)
+name: subcortical astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Aqp4 (Mmus), Cd38 (Mmus), Agt (Mmus), Itih3 (Mmus). Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in subclass:318 Astro-NT NN (CS20230722_SUBC_318)." []
 synonym: "318 Astro-NT NN" EXACT []
 synonym: "Aqp4 (Mmus), Cd38 (Mmus), Agt (Mmus), Itih3 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:0000029
 is_a: CL:0000127
-is_a: PCL:0110030 ! Astro-Epen neuron (Mmus)
+is_a: PCL:0110030 ! Astro-Epen cell (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000006522
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024411
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029084
@@ -4822,7 +4822,7 @@ synonym: "319 Astro-TE NN" EXACT []
 synonym: "Gja1 (Mmus), Lhx2 (Mmus), Gpc5 (Mmus), Nr2f1 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:0000029
 is_a: CL:0000127
-is_a: PCL:0110030 ! Astro-Epen neuron (Mmus)
+is_a: PCL:0110030 ! Astro-Epen cell (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000000247
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022112
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000050953
@@ -4844,7 +4844,7 @@ synonym: "320 Astro-OLF NN" EXACT []
 synonym: "Gja1 (Mmus), Hs3st3a1 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:0000029
 is_a: CL:0000127
-is_a: PCL:0110030 ! Astro-Epen neuron (Mmus)
+is_a: PCL:0110030 ! Astro-Epen cell (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000047759
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000050953
 relationship: RO:0015004 PCL:0120880 ! Marker set of Astro-OLF NN (Mouse).
@@ -4856,11 +4856,11 @@ property_value: skos:prefLabel "Astro-OLF NN" xsd:string
 
 [Term]
 id: PCL:0110381
-name: Astroependymal NN neuron (Mmus)
-def: "A neuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gfap (Mmus), Slit2 (Mmus), Slc7a11 (Mmus), Zic4 (Mmus). Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in subclass:321 Astroependymal NN (CS20230722_SUBC_321)." []
+name: Astroependymal NN cell (Mmus)
+def: "A cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gfap (Mmus), Slit2 (Mmus), Slc7a11 (Mmus), Zic4 (Mmus). Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in subclass:321 Astroependymal NN (CS20230722_SUBC_321)." []
 synonym: "321 Astroependymal NN" EXACT []
-synonym: "Gfap (Mmus), Slit2 (Mmus), Slc7a11 (Mmus), Zic4 (Mmus) expressing neuron of brain (Mus musculus)" EXACT []
-is_a: PCL:0110030 ! Astro-Epen neuron (Mmus)
+synonym: "Gfap (Mmus), Slit2 (Mmus), Slc7a11 (Mmus), Zic4 (Mmus) expressing cell of brain (Mus musculus)" EXACT []
+is_a: PCL:0110030 ! Astro-Epen cell (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020932
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000027737
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031558
@@ -4881,7 +4881,7 @@ def: "A tanycyte of the Mus musculus brain. It is distinguished from other cells
 synonym: "322 Tanycyte NN" EXACT []
 synonym: "Gpr50 (Mmus), Apoe (Mmus) expressing tanycyte of brain (Mus musculus)" EXACT []
 is_a: CL:0002085
-is_a: PCL:0110030 ! Astro-Epen neuron (Mmus)
+is_a: PCL:0110030 ! Astro-Epen cell (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000002985
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000056380
 relationship: RO:0015004 PCL:0120882 ! Marker set of Tanycyte NN (Mouse).
@@ -4898,7 +4898,7 @@ def: "A ependymal cell of the Mus musculus brain. It is distinguished from other
 synonym: "323 Ependymal NN" EXACT []
 synonym: "Tmem212 (Mmus), Rarres2 (Mmus) expressing ependymal cell of brain (Mus musculus)" EXACT []
 is_a: CL:0000065
-is_a: PCL:0110030 ! Astro-Epen neuron (Mmus)
+is_a: PCL:0110030 ! Astro-Epen cell (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000009281
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000043164
 relationship: RO:0015004 PCL:0120883 ! Marker set of Ependymal NN (Mouse).
@@ -4916,7 +4916,7 @@ synonym: "326 OPC NN" EXACT []
 synonym: "Pdgfra (Mmus) expressing oligodendrocyte precursor cell of brain (Mus musculus)" EXACT []
 is_a: CL:0000029
 is_a: CL:0002453
-is_a: PCL:0110031 ! OPC-Oligo neuron (Mmus)
+is_a: PCL:0110031 ! OPC-Oligo cell (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029231
 relationship: RO:0015004 PCL:0120886 ! Marker set of OPC NN (Mouse).
 relationship: RO:0015004 PCL:0131246 ! Marker set of OPC NN (Mouse).
@@ -4932,7 +4932,7 @@ synonym: "327 Oligo NN" EXACT []
 synonym: "Cldn11 (Mmus), Gjc3 (Mmus) expressing oligodendrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:0000029
 is_a: CL:0000128
-is_a: PCL:0110031 ! OPC-Oligo neuron (Mmus)
+is_a: PCL:0110031 ! OPC-Oligo cell (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000037625
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000056966
 relationship: RO:0015004 PCL:0120887 ! Marker set of Oligo NN (Mouse).
@@ -23388,7 +23388,7 @@ name: Astro-NT NN_1 astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gfap (Mmus), Lhfpl3 (Mmus), Gria1 (Mmus), Hopx (Mmus). Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in supertype:1159 Astro-NT NN_1 (CS20230722_SUPT_1159)." []
 synonym: "1159 Astro-NT NN_1" EXACT []
 synonym: "Gfap (Mmus), Lhfpl3 (Mmus), Gria1 (Mmus), Hopx (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
-is_a: PCL:0110378 ! subcortical astrrocyte (Mmus)
+is_a: PCL:0110378 ! subcortical astrocyte (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020524
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020932
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000059325
@@ -23407,7 +23407,7 @@ name: Astro-NT NN_2 astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), A330076C08Rik (Mmus), Itih3 (Mmus), Gria2 (Mmus). Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in supertype:1160 Astro-NT NN_2 (CS20230722_SUPT_1160)." []
 synonym: "1160 Astro-NT NN_2" EXACT []
 synonym: "Gja1 (Mmus), A330076C08Rik (Mmus), Itih3 (Mmus), Gria2 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
-is_a: PCL:0110378 ! subcortical astrrocyte (Mmus)
+is_a: PCL:0110378 ! subcortical astrocyte (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000006522
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000033981
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000050953
@@ -23543,11 +23543,11 @@ property_value: skos:prefLabel "Astro-OLF NN_3" xsd:string
 
 [Term]
 id: PCL:0111739
-name: Astroependymal NN_1 neuron (Mmus)
-def: "A neuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gfap (Mmus), Cnmd (Mmus), Id1 (Mmus), Fabp7 (Mmus). Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in supertype:1169 Astroependymal NN_1 (CS20230722_SUPT_1169)." []
+name: Astroependymal NN_1 cell (Mmus)
+def: "A cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gfap (Mmus), Cnmd (Mmus), Id1 (Mmus), Fabp7 (Mmus). Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in supertype:1169 Astroependymal NN_1 (CS20230722_SUPT_1169)." []
 synonym: "1169 Astroependymal NN_1" EXACT []
-synonym: "Gfap (Mmus), Cnmd (Mmus), Id1 (Mmus), Fabp7 (Mmus) expressing neuron of brain (Mus musculus)" EXACT []
-is_a: PCL:0110381 ! Astroependymal NN neuron (Mmus)
+synonym: "Gfap (Mmus), Cnmd (Mmus), Id1 (Mmus), Fabp7 (Mmus) expressing cell of brain (Mus musculus)" EXACT []
+is_a: PCL:0110381 ! Astroependymal NN cell (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019874
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020932
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022025
@@ -23562,11 +23562,11 @@ property_value: skos:prefLabel "Astroependymal NN_1" xsd:string
 
 [Term]
 id: PCL:0111741
-name: Astroependymal NN_3 neuron (Mmus)
-def: "A neuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gfap (Mmus), Prokr2 (Mmus), Itih3 (Mmus). Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in supertype:1171 Astroependymal NN_3 (CS20230722_SUPT_1171)." []
+name: Astroependymal NN_3 cell (Mmus)
+def: "A cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gfap (Mmus), Prokr2 (Mmus), Itih3 (Mmus). Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in supertype:1171 Astroependymal NN_3 (CS20230722_SUPT_1171)." []
 synonym: "1171 Astroependymal NN_3" EXACT []
-synonym: "Gfap (Mmus), Prokr2 (Mmus), Itih3 (Mmus) expressing neuron of brain (Mus musculus)" EXACT []
-is_a: PCL:0110381 ! Astroependymal NN neuron (Mmus)
+synonym: "Gfap (Mmus), Prokr2 (Mmus), Itih3 (Mmus) expressing cell of brain (Mus musculus)" EXACT []
+is_a: PCL:0110381 ! Astroependymal NN cell (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000006522
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020932
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000050558
@@ -23654,7 +23654,7 @@ synonym: "1178 CHOR NN_1" EXACT []
 synonym: "2900040C04Rik (Mmus) expressing choroid plexus epithelial cell of brain (Mus musculus)" EXACT []
 synonym: "325 CHOR NN" EXACT []
 is_a: CL:0000706
-is_a: PCL:0110030 ! Astro-Epen neuron (Mmus)
+is_a: PCL:0110030 ! Astro-Epen cell (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000115625
 relationship: RO:0015004 PCL:0122248 ! Marker set of CHOR NN (Mouse).
 relationship: RO:0015004 PCL:0131245 ! Marker set of CHOR NN (Mouse).
@@ -143044,7 +143044,7 @@ synonym: "5206 Bergmann NN_1" EXACT []
 synonym: "Gpr37l1 (Mmus), Ctxn3 (Mmus) expressing Bergmann glial cell of brain (Mus musculus)" EXACT []
 is_a: CL:0000029
 is_a: CL:0000644 {evidence="http://identifiers.org/ensembl/ENSMUSG00000053279"}
-is_a: PCL:0110030 ! Astro-Epen neuron (Mmus)
+is_a: PCL:0110030 ! Astro-Epen cell (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026424
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000069372
 relationship: RO:0015004 PCL:0128086 ! Marker set of Bergman glial cell (Mouse).
@@ -143071,7 +143071,7 @@ synonym: "5207 Astro-CB NN_1" EXACT []
 synonym: "Dao (Mmus), Efemp1 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:0000029
 is_a: CL:0000127 {evidence="http://identifiers.org/ensembl/ENSMUSG00000053279"}
-is_a: PCL:0110030 ! Astro-Epen neuron (Mmus)
+is_a: PCL:0110030 ! Astro-Epen cell (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020467
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000042096
 relationship: RO:0015004 PCL:0128087 ! Marker set of cerebellar astrocyte (Mouse).
@@ -143712,11 +143712,11 @@ property_value: skos:prefLabel "Astro-OLF NN_3 Sfrp1" xsd:string
 
 [Term]
 id: PCL:0117617
-name: Astroependymal NN_1 Ano1 neuron (Mmus)
-def: "A neuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Aqp4 (Mmus), Ano1 (Mmus), Rspo3 (Mmus), Gjb6 (Mmus). It is distinguished from other Astroependymal NN_1 cells by expression of Ano1, Gjb6. These cells are are located in the Thalamus, in or close to the regions: brain, third ventricle, habenular commissure, stria medullaris, Dentate gyrus, molecular layer, Medial habenula. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in cluster:5237 Astroependymal NN_1 (CS20230722_CLUS_5237)." []
+name: Astroependymal NN_1 Ano1 cell (Mmus)
+def: "A cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Aqp4 (Mmus), Ano1 (Mmus), Rspo3 (Mmus), Gjb6 (Mmus). It is distinguished from other Astroependymal NN_1 cells by expression of Ano1, Gjb6. These cells are are located in the Thalamus, in or close to the regions: brain, third ventricle, habenular commissure, stria medullaris, Dentate gyrus, molecular layer, Medial habenula. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in cluster:5237 Astroependymal NN_1 (CS20230722_CLUS_5237)." []
 synonym: "5237 Astroependymal NN_1" EXACT []
-synonym: "Aqp4 (Mmus), Ano1 (Mmus), Rspo3 (Mmus), Gjb6 (Mmus) expressing neuron of brain (Mus musculus)" EXACT []
-is_a: PCL:0111739 ! Astroependymal NN_1 neuron (Mmus)
+synonym: "Aqp4 (Mmus), Ano1 (Mmus), Rspo3 (Mmus), Gjb6 (Mmus) expressing cell of brain (Mus musculus)" EXACT []
+is_a: PCL:0111739 ! Astroependymal NN_1 cell (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019880
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024411
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031075
@@ -143737,11 +143737,11 @@ property_value: skos:prefLabel "Astroependymal NN_1 Ano1" xsd:string
 
 [Term]
 id: PCL:0117618
-name: Astroependymal NN_1 Cidea neuron (Mmus)
-def: "A neuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Myoc (Mmus), Slc13a4 (Mmus). It is distinguished from other Astroependymal NN_1 cells by expression of Cidea. These cells are are located in the Hippocampal region, in or close to the regions: choroid plexus, fimbria, brain, third ventricle, Induseum griseum, Dentate gyrus, molecular layer. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in cluster:5238 Astroependymal NN_1 (CS20230722_CLUS_5238)." []
+name: Astroependymal NN_1 Cidea cell (Mmus)
+def: "A cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Myoc (Mmus), Slc13a4 (Mmus). It is distinguished from other Astroependymal NN_1 cells by expression of Cidea. These cells are are located in the Hippocampal region, in or close to the regions: choroid plexus, fimbria, brain, third ventricle, Induseum griseum, Dentate gyrus, molecular layer. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in cluster:5238 Astroependymal NN_1 (CS20230722_CLUS_5238)." []
 synonym: "5238 Astroependymal NN_1" EXACT []
-synonym: "Myoc (Mmus), Slc13a4 (Mmus) expressing neuron of brain (Mus musculus)" EXACT []
-is_a: PCL:0111739 ! Astroependymal NN_1 neuron (Mmus)
+synonym: "Myoc (Mmus), Slc13a4 (Mmus) expressing cell of brain (Mus musculus)" EXACT []
+is_a: PCL:0111739 ! Astroependymal NN_1 cell (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026697
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029843
 relationship: RO:0015004 PCL:0128118 ! Marker set of Astroependymal NN_1 Cidea (Mouse).
@@ -143758,11 +143758,11 @@ property_value: skos:prefLabel "Astroependymal NN_1 Cidea" xsd:string
 
 [Term]
 id: PCL:0117619
-name: Astroependymal NN_1 Six3 neuron (Mmus)
-def: "A neuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gfap (Mmus), Six3 (Mmus), Agt (Mmus), Zic1 (Mmus). It is distinguished from other Astroependymal NN_1 cells by expression of Six3, Cxcl14. These cells are are located in the Lateral septal complex, in or close to the regions: fimbria, Lateral septal nucleus, rostral (rostroventral) part, Lateral septal nucleus, ventral part, lateral ventricle, Septofimbrial nucleus, third ventricle, ventral hippocampal commissure. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in cluster:5239 Astroependymal NN_1 (CS20230722_CLUS_5239)." []
+name: Astroependymal NN_1 Six3 cell (Mmus)
+def: "A cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gfap (Mmus), Six3 (Mmus), Agt (Mmus), Zic1 (Mmus). It is distinguished from other Astroependymal NN_1 cells by expression of Six3, Cxcl14. These cells are are located in the Lateral septal complex, in or close to the regions: fimbria, Lateral septal nucleus, rostral (rostroventral) part, Lateral septal nucleus, ventral part, lateral ventricle, Septofimbrial nucleus, third ventricle, ventral hippocampal commissure. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in cluster:5239 Astroependymal NN_1 (CS20230722_CLUS_5239)." []
 synonym: "5239 Astroependymal NN_1" EXACT []
-synonym: "Gfap (Mmus), Six3 (Mmus), Agt (Mmus), Zic1 (Mmus) expressing neuron of brain (Mus musculus)" EXACT []
-is_a: PCL:0111739 ! Astroependymal NN_1 neuron (Mmus)
+synonym: "Gfap (Mmus), Six3 (Mmus), Agt (Mmus), Zic1 (Mmus) expressing cell of brain (Mus musculus)" EXACT []
+is_a: PCL:0111739 ! Astroependymal NN_1 cell (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020932
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031980
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000032368
@@ -143784,12 +143784,12 @@ property_value: skos:prefLabel "Astroependymal NN_1 Six3" xsd:string
 
 [Term]
 id: PCL:0117620
-name: Astroependymal NN_2 neuron (Mmus)
-def: "A neuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Wt1 (Mmus), Wif1 (Mmus). It is distinguished from other Astroependymal NN cells by expression of Wif1. These cells are are located in the Medulla, in or close to the regions: Area postrema. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in cluster:5240 Astroependymal NN_2 (CS20230722_SUPT_1170, CS20230722_CLUS_5240)." []
+name: Astroependymal NN_2 cell (Mmus)
+def: "A cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Wt1 (Mmus), Wif1 (Mmus). It is distinguished from other Astroependymal NN cells by expression of Wif1. These cells are are located in the Medulla, in or close to the regions: Area postrema. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in cluster:5240 Astroependymal NN_2 (CS20230722_SUPT_1170, CS20230722_CLUS_5240)." []
 synonym: "1170 Astroependymal NN_2" EXACT []
 synonym: "5240 Astroependymal NN_2" EXACT []
-synonym: "Wt1 (Mmus), Wif1 (Mmus) expressing neuron of brain (Mus musculus)" EXACT []
-is_a: PCL:0110381 ! Astroependymal NN neuron (Mmus)
+synonym: "Wt1 (Mmus), Wif1 (Mmus) expressing cell of brain (Mus musculus)" EXACT []
+is_a: PCL:0110381 ! Astroependymal NN cell (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000016458
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020218
 relationship: RO:0015004 PCL:0128120 ! Marker set of Astroependymal NN_2 (Mouse).
@@ -143801,11 +143801,11 @@ property_value: skos:prefLabel "Astroependymal NN_2" xsd:string
 
 [Term]
 id: PCL:0117621
-name: Astroependymal NN_3 Gm29683 neuron (Mmus)
-def: "A neuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gfap (Mmus), Prokr2 (Mmus), Gm29683 (Mmus). It is distinguished from other Astroependymal NN_3 cells by expression of Gm29683. These cells are are located in the Midbrain, in or close to the regions: cerebral aqueduct, Periaqueductal gray. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in cluster:5241 Astroependymal NN_3 (CS20230722_CLUS_5241)." []
+name: Astroependymal NN_3 Gm29683 cell (Mmus)
+def: "A cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gfap (Mmus), Prokr2 (Mmus), Gm29683 (Mmus). It is distinguished from other Astroependymal NN_3 cells by expression of Gm29683. These cells are are located in the Midbrain, in or close to the regions: cerebral aqueduct, Periaqueductal gray. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in cluster:5241 Astroependymal NN_3 (CS20230722_CLUS_5241)." []
 synonym: "5241 Astroependymal NN_3" EXACT []
-synonym: "Gfap (Mmus), Prokr2 (Mmus), Gm29683 (Mmus) expressing neuron of brain (Mus musculus)" EXACT []
-is_a: PCL:0111741 ! Astroependymal NN_3 neuron (Mmus)
+synonym: "Gfap (Mmus), Prokr2 (Mmus), Gm29683 (Mmus) expressing cell of brain (Mus musculus)" EXACT []
+is_a: PCL:0111741 ! Astroependymal NN_3 cell (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020932
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000050558
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000109097
@@ -143820,11 +143820,11 @@ property_value: skos:prefLabel "Astroependymal NN_3 Gm29683" xsd:string
 
 [Term]
 id: PCL:0117622
-name: Astroependymal NN_3 Dnah12 neuron (Mmus)
-def: "A neuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gfap (Mmus), Cubn (Mmus), Prokr2 (Mmus), C230072F16Rik (Mmus). It is distinguished from other Astroependymal NN_3 cells by expression of Dnah12. These cells are are located in the Midbrain, in or close to the regions: cerebral aqueduct, Periaqueductal gray. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in cluster:5242 Astroependymal NN_3 (CS20230722_CLUS_5242)." []
+name: Astroependymal NN_3 Dnah12 cell (Mmus)
+def: "A cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gfap (Mmus), Cubn (Mmus), Prokr2 (Mmus), C230072F16Rik (Mmus). It is distinguished from other Astroependymal NN_3 cells by expression of Dnah12. These cells are are located in the Midbrain, in or close to the regions: cerebral aqueduct, Periaqueductal gray. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in cluster:5242 Astroependymal NN_3 (CS20230722_CLUS_5242)." []
 synonym: "5242 Astroependymal NN_3" EXACT []
-synonym: "Gfap (Mmus), Cubn (Mmus), Prokr2 (Mmus), C230072F16Rik (Mmus) expressing neuron of brain (Mus musculus)" EXACT []
-is_a: PCL:0111741 ! Astroependymal NN_3 neuron (Mmus)
+synonym: "Gfap (Mmus), Cubn (Mmus), Prokr2 (Mmus), C230072F16Rik (Mmus) expressing cell of brain (Mus musculus)" EXACT []
+is_a: PCL:0111741 ! Astroependymal NN_3 cell (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020932
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026726
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000050558
@@ -144270,7 +144270,7 @@ synonym: "324 Hypendymal NN" EXACT []
 synonym: "5263 Hypendymal NN_1" EXACT []
 synonym: "Sspo (Mmus), Wfdc2 (Mmus) expressing hypendymal cell of brain (Mus musculus)" EXACT []
 is_a: CL:4023181 {evidence="http://identifiers.org/ensembl/ENSMUSG00000027360"}
-is_a: PCL:0110030 ! Astro-Epen neuron (Mmus)
+is_a: PCL:0110030 ! Astro-Epen cell (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000017723
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029797
 relationship: RO:0015004 PCL:0128143 ! Marker set of Hypendymal NN (Mouse).

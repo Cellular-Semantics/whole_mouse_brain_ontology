@@ -379,7 +379,7 @@ def read_markers(marker_path, gene_names):
 #     return gross_cell_type
 
 def get_gross_cell_type(_id, nodes):
-    gross_cell_type = 'CL:0000540'
+    gross_cell_type = 'CL:0000000'
     for node in nodes:
         if _id == node['cell_set_accession']:
             if 'cell_ontology_term_id' in node:
