@@ -19,7 +19,7 @@ function generateScRNAseqFrame(annotation: any): Visualization {
       center: { x: 6.2308759689331055, y: 4.501317501068115 },
       size: { x: 63.66279983520508, y: 41.63688659667969 },
     },
-    genes: [{ symbol: 'C230099D08Rik' }],
+    genes: [],
     colorBy: {
       mode: 'METADATA',
       value: categoryId ?? undefined,
