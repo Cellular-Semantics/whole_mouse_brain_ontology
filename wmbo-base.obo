@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: pcl/releases/2025-04-23/wmbo-base.owl
+data-version: pcl/releases/2025-04-24/wmbo-base.owl
 idspace: dce http://purl.org/dc/elements/1.1/ 
 idspace: dcterms http://purl.org/dc/terms/ 
 idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
@@ -46,7 +46,7 @@ property_value: IAO:0000700 PCL:0111765
 property_value: IAO:0000700 PCL:0114944
 property_value: IAO:0000700 PCL:0116986
 property_value: IAO:0000700 PCL:0117692
-property_value: owl:versionInfo "2025-04-23" xsd:string
+property_value: owl:versionInfo "2025-04-24" xsd:string
 
 [Term]
 id: PCL:0010001
@@ -4742,10 +4742,11 @@ property_value: skos:prefLabel "CB PLI Gly-Gaba" xsd:string
 
 [Term]
 id: PCL:0110371
-name: CBX MLI Megf11 Gaba neuron (Mmus)
-def: "A neuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Homer3 (Mmus), Tfap2b (Mmus), Sorcs3 (Mmus), Cacna1e (Mmus). Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in subclass:311 CBX MLI Megf11 Gaba (CS20230722_SUBC_311)." []
+name: CBX MLI Megf11 Gaba molecular layer interneuron (Mmus)
+def: "A molecular layer interneuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Homer3 (Mmus), Tfap2b (Mmus), Sorcs3 (Mmus), Cacna1e (Mmus). Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in subclass:311 CBX MLI Megf11 Gaba (CS20230722_SUBC_311)." []
 synonym: "311 CBX MLI Megf11 Gaba" EXACT []
-synonym: "Homer3 (Mmus), Tfap2b (Mmus), Sorcs3 (Mmus), Cacna1e (Mmus) expressing neuron of brain (Mus musculus)" EXACT []
+synonym: "Homer3 (Mmus), Tfap2b (Mmus), Sorcs3 (Mmus), Cacna1e (Mmus) expressing molecular layer interneuron of brain (Mus musculus)" EXACT []
+is_a: CL:4042035
 is_a: PCL:0110028 ! CB GABA neuron (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000003573
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000004110
@@ -23249,11 +23250,11 @@ property_value: skos:prefLabel "CBX Golgi Gly-Gaba" xsd:string
 
 [Term]
 id: PCL:0111719
-name: CBX MLI Megf11 Gaba_1 neuron (Mmus)
-def: "A neuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Dnah11 (Mmus), Sla (Mmus), Gldc (Mmus), Sdk2 (Mmus). Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in supertype:1149 CBX MLI Megf11 Gaba_1 (CS20230722_SUPT_1149)." []
+name: CBX MLI Megf11 Gaba_1 molecular layer interneuron (Mmus)
+def: "A molecular layer interneuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Dnah11 (Mmus), Sla (Mmus), Gldc (Mmus), Sdk2 (Mmus). Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in supertype:1149 CBX MLI Megf11 Gaba_1 (CS20230722_SUPT_1149)." []
 synonym: "1149 CBX MLI Megf11 Gaba_1" EXACT []
-synonym: "Dnah11 (Mmus), Sla (Mmus), Gldc (Mmus), Sdk2 (Mmus) expressing neuron of brain (Mus musculus)" EXACT []
-is_a: PCL:0110371 ! CBX MLI Megf11 Gaba neuron (Mmus)
+synonym: "Dnah11 (Mmus), Sla (Mmus), Gldc (Mmus), Sdk2 (Mmus) expressing molecular layer interneuron of brain (Mus musculus)" EXACT []
+is_a: PCL:0110371 ! CBX MLI Megf11 Gaba molecular layer interneuron (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000018581
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022372
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024827
@@ -23268,11 +23269,11 @@ property_value: skos:prefLabel "CBX MLI Megf11 Gaba_1" xsd:string
 
 [Term]
 id: PCL:0111720
-name: CBX MLI Megf11 Gaba_2 neuron (Mmus)
-def: "A neuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gabra6 (Mmus), Pvalb (Mmus). Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in supertype:1150 CBX MLI Megf11 Gaba_2 (CS20230722_SUPT_1150)." []
+name: CBX MLI Megf11 Gaba_2 molecular layer interneuron (Mmus)
+def: "A molecular layer interneuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gabra6 (Mmus), Pvalb (Mmus). Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in supertype:1150 CBX MLI Megf11 Gaba_2 (CS20230722_SUPT_1150)." []
 synonym: "1150 CBX MLI Megf11 Gaba_2" EXACT []
-synonym: "Gabra6 (Mmus), Pvalb (Mmus) expressing neuron of brain (Mus musculus)" EXACT []
-is_a: PCL:0110371 ! CBX MLI Megf11 Gaba neuron (Mmus)
+synonym: "Gabra6 (Mmus), Pvalb (Mmus) expressing molecular layer interneuron of brain (Mus musculus)" EXACT []
+is_a: PCL:0110371 ! CBX MLI Megf11 Gaba molecular layer interneuron (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000005716
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020428
 relationship: RO:0015004 PCL:0122220 ! Marker set of CBX MLI Megf11 Gaba_2 (Mouse).
@@ -23283,8 +23284,8 @@ property_value: skos:prefLabel "CBX MLI Megf11 Gaba_2" xsd:string
 
 [Term]
 id: PCL:0111721
-name: obsolete 1151 CBX MLI Cdh22 Gaba_1 neuron (Mmus)
-def: "A neuron of the Mus musculus brain." []
+name: obsolete 1151 CBX MLI Cdh22 Gaba_1 molecular layer interneuron (Mmus)
+def: "A molecular layer interneuron of the Mus musculus brain." []
 comment: This term is obsoleted due to identical cell set chain compression.
 is_a: CL:0000000
 property_value: skos:prefLabel "obsolete 1151 CBX MLI Cdh22 Gaba_1" xsd:string
@@ -23375,8 +23376,8 @@ is_obsolete: true
 
 [Term]
 id: PCL:0111728
-name: obsolete 1158 Astro-CB NN_1 astrocyte (Mmus)
-def: "A astrocyte of the Mus musculus brain." []
+name: obsolete 1158 Astro-CB NN_1 astrocyte of the cerebellum (Mmus)
+def: "A astrocyte of the cerebellum of the Mus musculus brain." []
 comment: This term is obsoleted due to identical cell set chain compression.
 is_a: CL:0000000
 property_value: skos:prefLabel "obsolete 1158 Astro-CB NN_1" xsd:string
@@ -23681,10 +23682,11 @@ property_value: skos:prefLabel "OPC NN_1" xsd:string
 
 [Term]
 id: PCL:0111751
-name: COP NN_1 oligodendrocyte (Mmus)
-def: "A oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Bmp4 (Mmus). Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in supertype:1181 COP NN_1 (CS20230722_SUPT_1181)." []
+name: COP NN_1 differentiation-committed oligodendrocyte precursor (Mmus)
+def: "A differentiation-committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Bmp4 (Mmus). Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in supertype:1181 COP NN_1 (CS20230722_SUPT_1181)." []
 synonym: "1181 COP NN_1" EXACT []
-synonym: "Gpr17 (Mmus), Bmp4 (Mmus) expressing oligodendrocyte of brain (Mus musculus)" EXACT []
+synonym: "Gpr17 (Mmus), Bmp4 (Mmus) expressing differentiation-committed oligodendrocyte precursor of brain (Mus musculus)" EXACT []
+is_a: CL:4023059
 is_a: PCL:0110387 ! oligodendrocyte (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021835
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000052229
@@ -128437,7 +128439,7 @@ property_value: skos:prefLabel "HB Calcb Chol_5" xsd:string
 [Term]
 id: PCL:0116986
 name: pinealocyte (Mmus)
-def: "A pinealocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cngb3 (Mmus), Ush2a (Mmus). It is glutamatergic. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in cluster:4606 Pineal Crx Glut_1 (CS20230722_CLAS_25, CS20230722_SUBC_262, CS20230722_SUPT_1030, CS20230722_CLUS_4606)." []
+def: "A pinealocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cngb3 (Mmus), Ush2a (Mmus). It is glutamatergic. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in cluster:4606 Pineal Crx Glut_1 (CS20230722_CLAS_25, CS20230722_SUBC_262, CS20230722_SUPT_1030, CS20230722_CLUS_4606)." [https://doi.org/10.1111/j.1600-079x.1996.tb00284.x, https://doi.org/10.3389/fendo.2019.00590]
 synonym: "1030 Pineal Crx Glut_1" EXACT []
 synonym: "25 Pineal Glut" EXACT []
 synonym: "262 Pineal Crx Glut" EXACT []
@@ -142628,12 +142630,11 @@ property_value: skos:prefLabel "CBX Golgi Gly-Gaba_1 Zfp385c" xsd:string
 
 [Term]
 id: PCL:0117568
-name: CBX MLI Megf11 Gaba_1 Chst9 neuron (Mmus)
-def: "A neuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Asgr1 (Mmus), Chst9 (Mmus), Spns2 (Mmus). It is distinguished from other CBX MLI Megf11 Gaba_1 cells by expression of Chst9, Spns2. It is GABAergic. These cells are are located in the Cerebellum, in or close to the regions: Simple lobule, Crus 1, Crus 2, Paraflocculus, Declive (VI), Paramedian lobule. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in cluster:5188 CBX MLI Megf11 Gaba_1 (CS20230722_CLUS_5188)." []
+name: CBX MLI Megf11 Gaba_1 Chst9 molecular layer interneuron (Mmus)
+def: "A molecular layer interneuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Asgr1 (Mmus), Chst9 (Mmus), Spns2 (Mmus). It is distinguished from other CBX MLI Megf11 Gaba_1 cells by expression of Chst9, Spns2. It is GABAergic. These cells are are located in the Cerebellum, in or close to the regions: Simple lobule, Crus 1, Crus 2, Paraflocculus, Declive (VI), Paramedian lobule. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in cluster:5188 CBX MLI Megf11 Gaba_1 (CS20230722_CLUS_5188)." []
 synonym: "5188 CBX MLI Megf11 Gaba_1" EXACT []
-synonym: "Asgr1 (Mmus), Chst9 (Mmus), Spns2 (Mmus) expressing neuron of brain (Mus musculus)" EXACT []
-is_a: CL:0000617
-is_a: PCL:0111719 ! CBX MLI Megf11 Gaba_1 neuron (Mmus)
+synonym: "Asgr1 (Mmus), Chst9 (Mmus), Spns2 (Mmus) expressing molecular layer interneuron of brain (Mus musculus)" EXACT []
+is_a: PCL:0111719 ! CBX MLI Megf11 Gaba_1 molecular layer interneuron (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020884
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000040447
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000047161
@@ -142652,12 +142653,11 @@ property_value: skos:prefLabel "CBX MLI Megf11 Gaba_1 Chst9" xsd:string
 
 [Term]
 id: PCL:0117569
-name: CBX MLI Megf11 Gaba_1 Slc6a5 neuron (Mmus)
-def: "A neuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Asgr1 (Mmus), Slc6a5 (Mmus), Megf10 (Mmus). It is distinguished from other CBX MLI Megf11 Gaba_1 cells by expression of Slc6a5. It is GABAergic. These cells are are located in the Cerebellum, in or close to the regions: Simple lobule, Crus 1, Paraflocculus, Nodulus (X), arbor vitae, Lobule III, Flocculus. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in cluster:5189 CBX MLI Megf11 Gaba_1 (CS20230722_CLUS_5189)." []
+name: CBX MLI Megf11 Gaba_1 Slc6a5 molecular layer interneuron (Mmus)
+def: "A molecular layer interneuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Asgr1 (Mmus), Slc6a5 (Mmus), Megf10 (Mmus). It is distinguished from other CBX MLI Megf11 Gaba_1 cells by expression of Slc6a5. It is GABAergic. These cells are are located in the Cerebellum, in or close to the regions: Simple lobule, Crus 1, Paraflocculus, Nodulus (X), arbor vitae, Lobule III, Flocculus. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in cluster:5189 CBX MLI Megf11 Gaba_1 (CS20230722_CLUS_5189)." []
 synonym: "5189 CBX MLI Megf11 Gaba_1" EXACT []
-synonym: "Asgr1 (Mmus), Slc6a5 (Mmus), Megf10 (Mmus) expressing neuron of brain (Mus musculus)" EXACT []
-is_a: CL:0000617
-is_a: PCL:0111719 ! CBX MLI Megf11 Gaba_1 neuron (Mmus)
+synonym: "Asgr1 (Mmus), Slc6a5 (Mmus), Megf10 (Mmus) expressing molecular layer interneuron of brain (Mus musculus)" EXACT []
+is_a: PCL:0111719 ! CBX MLI Megf11 Gaba_1 molecular layer interneuron (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020884
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024593
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039728
@@ -142677,12 +142677,11 @@ property_value: skos:prefLabel "CBX MLI Megf11 Gaba_1 Slc6a5" xsd:string
 
 [Term]
 id: PCL:0117570
-name: CBX MLI Megf11 Gaba_2 Cadps2 neuron (Mmus)
-def: "A neuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gabra6 (Mmus), Sorcs3 (Mmus). It is distinguished from other CBX MLI Megf11 Gaba_2 cells by expression of Cadps2, Grid1. It is GABAergic. These cells are are located in the Cerebellum, in or close to the regions: Simple lobule, Crus 1, Crus 2, Paraflocculus, Paramedian lobule. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in cluster:5190 CBX MLI Megf11 Gaba_2 (CS20230722_CLUS_5190)." []
+name: CBX MLI Megf11 Gaba_2 Cadps2 molecular layer interneuron (Mmus)
+def: "A molecular layer interneuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gabra6 (Mmus), Sorcs3 (Mmus). It is distinguished from other CBX MLI Megf11 Gaba_2 cells by expression of Cadps2, Grid1. It is GABAergic. These cells are are located in the Cerebellum, in or close to the regions: Simple lobule, Crus 1, Crus 2, Paraflocculus, Paramedian lobule. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in cluster:5190 CBX MLI Megf11 Gaba_2 (CS20230722_CLUS_5190)." []
 synonym: "5190 CBX MLI Megf11 Gaba_2" EXACT []
-synonym: "Gabra6 (Mmus), Sorcs3 (Mmus) expressing neuron of brain (Mus musculus)" EXACT []
-is_a: CL:0000617
-is_a: PCL:0111720 ! CBX MLI Megf11 Gaba_2 neuron (Mmus)
+synonym: "Gabra6 (Mmus), Sorcs3 (Mmus) expressing molecular layer interneuron of brain (Mus musculus)" EXACT []
+is_a: PCL:0111720 ! CBX MLI Megf11 Gaba_2 molecular layer interneuron (Mmus)
 relationship: RO:0015004 PCL:0128070 ! Marker set of CBX MLI Megf11 Gaba_2 Cadps2 (Mouse).
 property_value: IAO:0000028 "CBX MLI Megf11 Gaba_2 Cadps2 (Mmus)" xsd:string
 property_value: PCL:0010063 MBA:1007 {OBI:0000070="EFO:0008992", PCL:0010065="0.24", comment="Location assignment based on CCF acronym region."}
@@ -142696,12 +142695,11 @@ property_value: skos:prefLabel "CBX MLI Megf11 Gaba_2 Cadps2" xsd:string
 
 [Term]
 id: PCL:0117571
-name: CBX MLI Megf11 Gaba_2 Gabra6 neuron (Mmus)
-def: "A neuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gabra6 (Mmus), Nxph1 (Mmus), Pvalb (Mmus). It is distinguished from other CBX MLI Megf11 Gaba_2 cells by expression of Gabra6, Nxph1. It is GABAergic. These cells are are located in the Cerebellum, in or close to the regions: Simple lobule, Crus 1, Crus 2, Paraflocculus, Paramedian lobule. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in cluster:5191 CBX MLI Megf11 Gaba_2 (CS20230722_CLUS_5191)." []
+name: CBX MLI Megf11 Gaba_2 Gabra6 molecular layer interneuron (Mmus)
+def: "A molecular layer interneuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gabra6 (Mmus), Nxph1 (Mmus), Pvalb (Mmus). It is distinguished from other CBX MLI Megf11 Gaba_2 cells by expression of Gabra6, Nxph1. It is GABAergic. These cells are are located in the Cerebellum, in or close to the regions: Simple lobule, Crus 1, Crus 2, Paraflocculus, Paramedian lobule. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in cluster:5191 CBX MLI Megf11 Gaba_2 (CS20230722_CLUS_5191)." []
 synonym: "5191 CBX MLI Megf11 Gaba_2" EXACT []
-synonym: "Gabra6 (Mmus), Nxph1 (Mmus), Pvalb (Mmus) expressing neuron of brain (Mus musculus)" EXACT []
-is_a: CL:0000617
-is_a: PCL:0111720 ! CBX MLI Megf11 Gaba_2 neuron (Mmus)
+synonym: "Gabra6 (Mmus), Nxph1 (Mmus), Pvalb (Mmus) expressing molecular layer interneuron of brain (Mus musculus)" EXACT []
+is_a: PCL:0111720 ! CBX MLI Megf11 Gaba_2 molecular layer interneuron (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000005716
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020428
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000046178
@@ -142719,13 +142717,13 @@ property_value: skos:prefLabel "CBX MLI Megf11 Gaba_2 Gabra6" xsd:string
 
 [Term]
 id: PCL:0117572
-name: CBX MLI Cdh22 Gaba neuron (Mmus)
-def: "A neuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cdh1 (Mmus), Acvr1c (Mmus), Adamts15 (Mmus), Pax2 (Mmus). It is distinguished from other CB GABA cells by expression of Cdh1, Acvr1c, Adamts15, Pax2. It is GABAergic. These cells are are located in the Cerebellum, in or close to the regions: Simple lobule, Crus 1, Crus 2, Paraflocculus, Lobule III, Declive (VI), Paramedian lobule. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in cluster:5192 CBX MLI Cdh22 Gaba_1 (CS20230722_SUBC_312, CS20230722_SUPT_1151, CS20230722_CLUS_5192)." []
+name: CBX MLI Cdh22 Gaba molecular layer interneuron (Mmus)
+def: "A molecular layer interneuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cdh1 (Mmus), Acvr1c (Mmus), Adamts15 (Mmus), Pax2 (Mmus). It is distinguished from other CB GABA cells by expression of Cdh1, Acvr1c, Adamts15, Pax2. It is GABAergic. These cells are are located in the Cerebellum, in or close to the regions: Simple lobule, Crus 1, Crus 2, Paraflocculus, Lobule III, Declive (VI), Paramedian lobule. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in cluster:5192 CBX MLI Cdh22 Gaba_1 (CS20230722_SUBC_312, CS20230722_SUPT_1151, CS20230722_CLUS_5192)." []
 synonym: "1151 CBX MLI Cdh22 Gaba_1" EXACT []
 synonym: "312 CBX MLI Cdh22 Gaba" EXACT []
 synonym: "5192 CBX MLI Cdh22 Gaba_1" EXACT []
-synonym: "Cdh1 (Mmus), Acvr1c (Mmus), Adamts15 (Mmus), Pax2 (Mmus) expressing neuron of brain (Mus musculus)" EXACT []
-is_a: CL:0000617
+synonym: "Cdh1 (Mmus), Acvr1c (Mmus), Adamts15 (Mmus), Pax2 (Mmus) expressing molecular layer interneuron of brain (Mus musculus)" EXACT []
+is_a: CL:4042035 {evidence="http://identifiers.org/ensembl/ENSMUSG00000026787", evidence="http://identifiers.org/ensembl/ENSMUSG00000037771", evidence="http://identifiers.org/ensembl/ENSMUSG00000070880"}
 is_a: PCL:0110028 ! CB GABA neuron (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000000303
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000004231
@@ -143063,14 +143061,14 @@ property_value: skos:prefLabel "Bergman glial cell" xsd:string
 
 [Term]
 id: PCL:0117587
-name: cerebellar astrocyte astrocyte (Mmus)
-def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Dao (Mmus), Efemp1 (Mmus). It is distinguished from other Astro-Epen cells by expression of Dao, Efemp1. These cells are are located in the Cerebellum, in or close to the regions: Simple lobule, Crus 1, Crus 2, Paraflocculus, arbor vitae. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in cluster:5207 Astro-CB NN_1 (CS20230722_SUBC_317, CS20230722_SUPT_1158, CS20230722_CLUS_5207)." []
+name: cerebellar astrocyte astrocyte of the cerebellum (Mmus)
+def: "A astrocyte of the cerebellum of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Dao (Mmus), Efemp1 (Mmus). It is distinguished from other Astro-Epen cells by expression of Dao, Efemp1. These cells are are located in the Cerebellum, in or close to the regions: Simple lobule, Crus 1, Crus 2, Paraflocculus, arbor vitae. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in cluster:5207 Astro-CB NN_1 (CS20230722_SUBC_317, CS20230722_SUPT_1158, CS20230722_CLUS_5207)." []
 synonym: "1158 Astro-CB NN_1" EXACT []
 synonym: "317 Astro-CB NN" EXACT []
 synonym: "5207 Astro-CB NN_1" EXACT []
-synonym: "Dao (Mmus), Efemp1 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
+synonym: "Dao (Mmus), Efemp1 (Mmus) expressing astrocyte of the cerebellum of brain (Mus musculus)" EXACT []
 is_a: CL:0000029
-is_a: CL:0000127 {evidence="http://identifiers.org/ensembl/ENSMUSG00000053279"}
+is_a: CL:0002603 {evidence="http://identifiers.org/ensembl/ENSMUSG00000053279"}
 is_a: PCL:0110030 ! Astro-Epen cell (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020467
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000042096
@@ -144465,11 +144463,11 @@ property_value: skos:prefLabel "OPC NN_2" xsd:string
 
 [Term]
 id: PCL:0117652
-name: COP NN_1 Rgcc oligodendrocyte (Mmus)
-def: "A oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Bmp4 (Mmus), Zfp36l1 (Mmus). It is distinguished from other COP NN_1 cells by expression of Rgcc, Plpp4. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in cluster:5272 COP NN_1 (CS20230722_CLUS_5272)." []
+name: COP NN_1 Rgcc differentiation-committed oligodendrocyte precursor (Mmus)
+def: "A differentiation-committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Bmp4 (Mmus), Zfp36l1 (Mmus). It is distinguished from other COP NN_1 cells by expression of Rgcc, Plpp4. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in cluster:5272 COP NN_1 (CS20230722_CLUS_5272)." []
 synonym: "5272 COP NN_1" EXACT []
-synonym: "Gpr17 (Mmus), Bmp4 (Mmus), Zfp36l1 (Mmus) expressing oligodendrocyte of brain (Mus musculus)" EXACT []
-is_a: PCL:0111751 ! COP NN_1 oligodendrocyte (Mmus)
+synonym: "Gpr17 (Mmus), Bmp4 (Mmus), Zfp36l1 (Mmus) expressing differentiation-committed oligodendrocyte precursor of brain (Mus musculus)" EXACT []
+is_a: PCL:0111751 ! COP NN_1 differentiation-committed oligodendrocyte precursor (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021127
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021835
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000052229
@@ -144486,11 +144484,11 @@ property_value: skos:prefLabel "COP NN_1 Rgcc" xsd:string
 
 [Term]
 id: PCL:0117653
-name: COP NN_1 9130019P16Rik oligodendrocyte (Mmus)
-def: "A oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Gp1bb (Mmus), Pdzd2 (Mmus), Plekhg1 (Mmus). It is distinguished from other COP NN_1 cells by expression of Rgcc, 9130019P16Rik. These cells are are located in the Hippocampal region, Olfactory areas, Striatum dorsal region, Midbrain, Isocortex, in or close to the regions: Caudoputamen. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in cluster:5273 COP NN_1 (CS20230722_CLUS_5273)." []
+name: COP NN_1 9130019P16Rik differentiation-committed oligodendrocyte precursor (Mmus)
+def: "A differentiation-committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Gp1bb (Mmus), Pdzd2 (Mmus), Plekhg1 (Mmus). It is distinguished from other COP NN_1 cells by expression of Rgcc, 9130019P16Rik. These cells are are located in the Hippocampal region, Olfactory areas, Striatum dorsal region, Midbrain, Isocortex, in or close to the regions: Caudoputamen. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in cluster:5273 COP NN_1 (CS20230722_CLUS_5273)." []
 synonym: "5273 COP NN_1" EXACT []
-synonym: "Gpr17 (Mmus), Gp1bb (Mmus), Pdzd2 (Mmus), Plekhg1 (Mmus) expressing oligodendrocyte of brain (Mus musculus)" EXACT []
-is_a: PCL:0111751 ! COP NN_1 oligodendrocyte (Mmus)
+synonym: "Gpr17 (Mmus), Gp1bb (Mmus), Pdzd2 (Mmus), Plekhg1 (Mmus) expressing differentiation-committed oligodendrocyte precursor of brain (Mus musculus)" EXACT []
+is_a: PCL:0111751 ! COP NN_1 differentiation-committed oligodendrocyte precursor (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022197
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000040624
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000050761
@@ -144510,11 +144508,11 @@ property_value: skos:prefLabel "COP NN_1 9130019P16Rik" xsd:string
 
 [Term]
 id: PCL:0117654
-name: COP NN_1 C1ql1 oligodendrocyte (Mmus)
-def: "A oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Bgn (Mmus), Gstp1 (Mmus), C1ql1 (Mmus). It is distinguished from other COP NN_1 cells by expression of C1ql1, Gstp1. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in cluster:5274 COP NN_1 (CS20230722_CLUS_5274)." []
+name: COP NN_1 C1ql1 differentiation-committed oligodendrocyte precursor (Mmus)
+def: "A differentiation-committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Bgn (Mmus), Gstp1 (Mmus), C1ql1 (Mmus). It is distinguished from other COP NN_1 cells by expression of C1ql1, Gstp1. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in cluster:5274 COP NN_1 (CS20230722_CLUS_5274)." []
 synonym: "5274 COP NN_1" EXACT []
-synonym: "Gpr17 (Mmus), Bgn (Mmus), Gstp1 (Mmus), C1ql1 (Mmus) expressing oligodendrocyte of brain (Mus musculus)" EXACT []
-is_a: PCL:0111751 ! COP NN_1 oligodendrocyte (Mmus)
+synonym: "Gpr17 (Mmus), Bgn (Mmus), Gstp1 (Mmus), C1ql1 (Mmus) expressing differentiation-committed oligodendrocyte precursor of brain (Mus musculus)" EXACT []
+is_a: PCL:0111751 ! COP NN_1 differentiation-committed oligodendrocyte precursor (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031375
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000045532
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000052229
@@ -144535,11 +144533,11 @@ property_value: skos:prefLabel "COP NN_1 C1ql1" xsd:string
 
 [Term]
 id: PCL:0117655
-name: COP NN_1 Bmp4 oligodendrocyte (Mmus)
-def: "A oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Bmp4 (Mmus), Mob3b (Mmus). It is distinguished from other COP NN_1 cells by expression of Bmp4, Mob3b. These cells are are located in the Pallidum, Midbrain, Isocortex, Medulla, Striatum dorsal region, Thalamus, Pons, Hypothalamus, in or close to the regions: Caudoputamen. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in cluster:5275 COP NN_1 (CS20230722_CLUS_5275)." []
+name: COP NN_1 Bmp4 differentiation-committed oligodendrocyte precursor (Mmus)
+def: "A differentiation-committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Bmp4 (Mmus), Mob3b (Mmus). It is distinguished from other COP NN_1 cells by expression of Bmp4, Mob3b. These cells are are located in the Pallidum, Midbrain, Isocortex, Medulla, Striatum dorsal region, Thalamus, Pons, Hypothalamus, in or close to the regions: Caudoputamen. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in cluster:5275 COP NN_1 (CS20230722_CLUS_5275)." []
 synonym: "5275 COP NN_1" EXACT []
-synonym: "9630013A20Rik (Mmus), Bmp4 (Mmus), Mob3b (Mmus) expressing oligodendrocyte of brain (Mus musculus)" EXACT []
-is_a: PCL:0111751 ! COP NN_1 oligodendrocyte (Mmus)
+synonym: "9630013A20Rik (Mmus), Bmp4 (Mmus), Mob3b (Mmus) expressing differentiation-committed oligodendrocyte precursor of brain (Mus musculus)" EXACT []
+is_a: PCL:0111751 ! COP NN_1 differentiation-committed oligodendrocyte precursor (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021835
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000073910
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000115529
@@ -144560,11 +144558,11 @@ property_value: skos:prefLabel "COP NN_1 Bmp4" xsd:string
 
 [Term]
 id: PCL:0117656
-name: COP NN_1 Vwc2 oligodendrocyte (Mmus)
-def: "A oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Rab32 (Mmus), Opalin (Mmus). It is distinguished from other COP NN_1 cells by expression of Vwc2, Opalin. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in cluster:5276 COP NN_1 (CS20230722_CLUS_5276)." []
+name: COP NN_1 Vwc2 differentiation-committed oligodendrocyte precursor (Mmus)
+def: "A differentiation-committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Rab32 (Mmus), Opalin (Mmus). It is distinguished from other COP NN_1 cells by expression of Vwc2, Opalin. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in cluster:5276 COP NN_1 (CS20230722_CLUS_5276)." []
 synonym: "5276 COP NN_1" EXACT []
-synonym: "9630013A20Rik (Mmus), Rab32 (Mmus), Opalin (Mmus) expressing oligodendrocyte of brain (Mus musculus)" EXACT []
-is_a: PCL:0111751 ! COP NN_1 oligodendrocyte (Mmus)
+synonym: "9630013A20Rik (Mmus), Rab32 (Mmus), Opalin (Mmus) expressing differentiation-committed oligodendrocyte precursor of brain (Mus musculus)" EXACT []
+is_a: PCL:0111751 ! COP NN_1 differentiation-committed oligodendrocyte precursor (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019832
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000050121
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000115529
@@ -144581,11 +144579,11 @@ property_value: skos:prefLabel "COP NN_1 Vwc2" xsd:string
 
 [Term]
 id: PCL:0117657
-name: COP NN_1 Cck oligodendrocyte (Mmus)
-def: "A oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Bmp4 (Mmus), Cck (Mmus), Ptger1 (Mmus). It is distinguished from other COP NN_1 cells by expression of Bmp4, Cck, Ptger1. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in cluster:5277 COP NN_1 (CS20230722_CLUS_5277)." []
+name: COP NN_1 Cck differentiation-committed oligodendrocyte precursor (Mmus)
+def: "A differentiation-committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Bmp4 (Mmus), Cck (Mmus), Ptger1 (Mmus). It is distinguished from other COP NN_1 cells by expression of Bmp4, Cck, Ptger1. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in cluster:5277 COP NN_1 (CS20230722_CLUS_5277)." []
 synonym: "5277 COP NN_1" EXACT []
-synonym: "9630013A20Rik (Mmus), Bmp4 (Mmus), Cck (Mmus), Ptger1 (Mmus) expressing oligodendrocyte of brain (Mus musculus)" EXACT []
-is_a: PCL:0111751 ! COP NN_1 oligodendrocyte (Mmus)
+synonym: "9630013A20Rik (Mmus), Bmp4 (Mmus), Cck (Mmus), Ptger1 (Mmus) expressing differentiation-committed oligodendrocyte precursor of brain (Mus musculus)" EXACT []
+is_a: PCL:0111751 ! COP NN_1 differentiation-committed oligodendrocyte precursor (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019464
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021835
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000032532

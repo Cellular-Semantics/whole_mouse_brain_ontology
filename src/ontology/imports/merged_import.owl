@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/pcl/imports/merged_import.owl>
-<http://purl.obolibrary.org/obo/pcl/releases/2025-04-23/imports/merged_import.owl>
-Annotation(owl:versionInfo "2025-04-23")
+<http://purl.obolibrary.org/obo/pcl/releases/2025-04-24/imports/merged_import.owl>
+Annotation(owl:versionInfo "2025-04-24")
 
 Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000000037>))
 Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000000120>))
@@ -3371,6 +3371,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/CL_4023051>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_4023054>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_4023057>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_4023058>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CL_4023059>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_4023060>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_4023062>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_4023063>))
@@ -3429,6 +3430,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/CL_4042017>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_4042018>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_4042019>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_4042020>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CL_4042035>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_4042039>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_4047023>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_4052002>))
@@ -35739,6 +35741,15 @@ SubClassOf(<http://purl.obolibrary.org/obo/CL_4023058> <http://purl.obolibrary.o
 SubClassOf(<http://purl.obolibrary.org/obo/CL_4023058> <http://purl.obolibrary.org/obo/CL_4023054>)
 SubClassOf(<http://purl.obolibrary.org/obo/CL_4023058> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0000391>))
 
+# Class: <http://purl.obolibrary.org/obo/CL_4023059> (differentiation-committed oligodendrocyte precursor)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:32066987") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CL_4023059> "An oligodendrocyte precursor cell that is committed to differentiate.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CL_4023059> "committed oligodendrocyte precursor")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:27284195") rdfs:comment <http://purl.obolibrary.org/obo/CL_4023059> "COPs are distinct from OPCs in that the lack expression of Pdgfra and Cspg4 and come out as distinct clusters in transcriptomic profiling. This is the reason that this term is not modelled as a subclassOf OPC but instead linked using develops_from.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CL_4023059> "differentiation-committed oligodendrocyte precursor")
+SubClassOf(<http://purl.obolibrary.org/obo/CL_4023059> <http://purl.obolibrary.org/obo/CL_0000123>)
+SubClassOf(<http://purl.obolibrary.org/obo/CL_4023059> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/CL_0002453>))
+
 # Class: <http://purl.obolibrary.org/obo/CL_4023060> (hippocampal CA1-3 neuron)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "DOI:10.1101/2022.10.12.511898") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CL_4023060> "A neuron that has its soma located in CA1-3 of the hippocampus.")
@@ -36283,6 +36294,13 @@ SubClassOf(<http://purl.obolibrary.org/obo/CL_4042020> ObjectSomeValuesFrom(<htt
 SubClassOf(<http://purl.obolibrary.org/obo/CL_4042020> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002131> <http://purl.obolibrary.org/obo/UBERON_0002197>))
 SubClassOf(<http://purl.obolibrary.org/obo/CL_4042020> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://purl.obolibrary.org/obo/PR_000007479>))
 SubClassOf(<http://purl.obolibrary.org/obo/CL_4042020> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://purl.obolibrary.org/obo/PR_000007489>))
+
+# Class: <http://purl.obolibrary.org/obo/CL_4042035> (molecular layer interneuron)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:30742002") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:33075461") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:34616064") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:38692278") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CL_4042035> "A type of cerebellar inhibitory GABAergic interneuron that is located in the molecular layer of the cerebellum. This cell type inhibits Purkinje cells and other molecular layer interneurons. This interneuron plays a crucial role in regulating cerebellar output through feedforward inhibition and is characterized by its fast-spiking properties.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CL_4042035> "molecular layer interneuron"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CL_4042035> <http://purl.obolibrary.org/obo/CL_4023057>)
+SubClassOf(<http://purl.obolibrary.org/obo/CL_4042035> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0002974>))
 
 # Class: <http://purl.obolibrary.org/obo/CL_4042039> (caudal ganglionic eminence derived neuron)
 

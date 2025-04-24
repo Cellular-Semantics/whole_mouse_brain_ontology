@@ -11,9 +11,9 @@ ABC_URLS = $(patsubst %, ./%_abc_urls.json, $(JOBS))
 all: $(TEMPLATE_FILES) $(TEMPLATE_CLASS_BASE_FILES) $(TEMPLATE_CLASS_CURATION_FILES) $(TEMPLATE_MARKER_SET_FILES) $(TEMPLATE_NSFOREST_MARKER_SET_FILES) $(ABC_URLS)
 
 CCN20230722.json:
-	wget https://purl.brain-bican.org/taxonomy/CCN20230722/CCN20230722.json -O $@
+	wget https://raw.githubusercontent.com/brain-bican/whole_mouse_brain_taxonomy/refs/heads/cloud-rltbl/CCN20230722.json -O $@
 
-../templates/%.tsv: %.json %_abc_urls.json
+../templates/%.tsv: %.json %_abc_urls.json ../patterns/data/default/%_class_curation.tsv
 	python ../scripts/template_runner.py generator -i $< -o $@
 
 #../markers/%_markers_denormalized.tsv: %.json nomenclature_table_%.csv
@@ -35,8 +35,11 @@ $(SUPPLEMENTARY)/version2/neurotransmitters.tsv:
 ../patterns/data/default/%_nsforest_marker_set.tsv: %.json
 	python ../scripts/template_runner.py generator -nms -i $< -o $@
 
-../../typescript/dist/index.js: ../../typescript/tsconfig.json  ../../typescript/src/index.ts
+prepare_npm: ../../typescript/dist/index.js
 	rm -rf ../../typescript/dist
+	npm install typescript
+
+../../typescript/dist/index.js: prepare_npm ../../typescript/tsconfig.json  ../../typescript/src/index.ts
 	npm install --prefix ../../typescript typescript @types/node --save-dev
 	npx tsc -p ../../typescript/tsconfig.json
 

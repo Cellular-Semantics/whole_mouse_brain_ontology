@@ -24,9 +24,9 @@ http://purl.obolibrary.org/obo/PCL_0111652	obsolete 1082 POR Spp1 Gly-Gaba_1	Thi
 http://purl.obolibrary.org/obo/PCL_0111687	obsolete 1117 CU-ECU Pax2 Gly-Gaba_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000
 http://purl.obolibrary.org/obo/PCL_0111697	obsolete 1127 MV Nr4a2 Gly-Gaba_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000
 http://purl.obolibrary.org/obo/PCL_0111698	obsolete 1128 MV Xdh Gly-Gaba_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000
-http://purl.obolibrary.org/obo/PCL_0111721	obsolete 1151 CBX MLI Cdh22 Gaba_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000
+http://purl.obolibrary.org/obo/PCL_0111721	obsolete 1151 CBX MLI Cdh22 Gaba_1	This term is obsoleted due to identical cell set chain compression.	true	CL:4042035	NCBITaxon:10090	Mmus	CL:0000000
 http://purl.obolibrary.org/obo/PCL_0111727	obsolete 1157 Bergmann NN_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000644	NCBITaxon:10090	Mmus	CL:0000000
-http://purl.obolibrary.org/obo/PCL_0111728	obsolete 1158 Astro-CB NN_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000127	NCBITaxon:10090	Mmus	CL:0000000
+http://purl.obolibrary.org/obo/PCL_0111728	obsolete 1158 Astro-CB NN_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0002603	NCBITaxon:10090	Mmus	CL:0000000
 http://purl.obolibrary.org/obo/PCL_0111747	obsolete 1177 Hypendymal NN_1	This term is obsoleted due to identical cell set chain compression.	true	CL:4023181	NCBITaxon:10090	Mmus	CL:0000000
 http://purl.obolibrary.org/obo/PCL_0111764	obsolete 1194 Microglia NN_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000129	NCBITaxon:10090	Mmus	CL:0000000
 http://purl.obolibrary.org/obo/PCL_0111766	obsolete 1196 Monocytes NN_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000576	NCBITaxon:10090	Mmus	CL:0000000

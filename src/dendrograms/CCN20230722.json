@@ -1164,7 +1164,10 @@
         "M": "None"
       },
       "cell_ontology_term_id": "CL:0000652",
-      "cell_ontology_term": "pinealocyte"
+      "cell_ontology_term": "pinealocyte",
+      "rationale": "Consistent with this cell set being composed of Pinealocytes, a combination of Pinealocyte markers Gngt1 and Crx can identify the cells in this cluster with a confidence (F-beta score) of 0.91 in the context of glutamatergic cells (Pinealocytes release glutamate) from the hippocampal formation dissection (which includes the pineal gland).",
+      "rationale_dois": ["https://doi.org/10.1111/j.1600-079x.1996.tb00284.x","https://doi.org/10.3389/fendo.2019.00590"],
+      "marker_gene_evidence": ["Crx","Gngt1","Tph1","Asmt","Gngt2"]
     },
     {
       "labelset": "class",
@@ -14997,7 +15000,9 @@
         "F": "None",
         "CTX.neighborhood_label": "None",
         "M": "None"
-      }
+      },
+      "cell_ontology_term_id": "CL:4042035",
+      "cell_ontology_term": "molecular layer interneuron"
     },
     {
       "labelset": "subclass",
@@ -15040,7 +15045,9 @@
         "F": "None",
         "CTX.neighborhood_label": "None",
         "M": "None"
-      }
+      },
+      "cell_ontology_term_id": "CL:4042035",
+      "cell_ontology_term": "molecular layer interneuron"
     },
     {
       "labelset": "subclass",
@@ -15227,8 +15234,8 @@
       "cell_label": "317 Astro-CB NN",
       "cell_set_accession": "CS20230722_SUBC_317",
       "parent_cell_set_accession": "CS20230722_CLAS_30",
-      "cell_ontology_term": "Astrocyte",
-      "cell_ontology_term_id": "CL:0000127",
+      "cell_ontology_term": "astrocyte of the cerebellum",
+      "cell_ontology_term_id": "CL:0002603",
       "author_annotation_fields": {
         "neighborhood": "NN-IMN-GC",
         "subclass.tf.markers.combo": "Rfx4,Pax3,Etv4,Zic4,Klf12",
@@ -66955,6 +66962,8 @@
       "cell_label": "1181 COP NN_1",
       "cell_set_accession": "CS20230722_SUPT_1181",
       "parent_cell_set_accession": "CS20230722_SUBC_327",
+      "cell_ontology_term": "differentiation-committed oligodendrocyte precursor",
+      "cell_ontology_term_id": "CL:4023059",
       "author_annotation_fields": {
         "supertype.markers.combo _within subclass_": "Bmp4",
         "supertype.markers.combo": "Gpr17,Bmp4",
