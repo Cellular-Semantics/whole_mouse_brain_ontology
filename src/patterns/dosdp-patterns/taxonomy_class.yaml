@@ -295,10 +295,10 @@ logical_axioms:
      text: "'part_of' some %s"
      vars:
        - part_of
-   - axiom_type: subClassOf
-     text: "'has_soma_location' some %s"
-     vars:
-       - has_soma_location
+#   - axiom_type: subClassOf
+#     text: "'has_soma_location' some %s"
+#     vars:
+#       - has_soma_location
    - axiom_type: subClassOf
      multi_clause:
        sep: " and "

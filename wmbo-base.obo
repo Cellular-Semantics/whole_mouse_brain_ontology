@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: pcl/releases/2025-04-24/wmbo-base.owl
+data-version: pcl/releases/2025-04-28/wmbo-base.owl
 idspace: dce http://purl.org/dc/elements/1.1/ 
 idspace: dcterms http://purl.org/dc/terms/ 
 idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
@@ -46,7 +46,7 @@ property_value: IAO:0000700 PCL:0111765
 property_value: IAO:0000700 PCL:0114944
 property_value: IAO:0000700 PCL:0116986
 property_value: IAO:0000700 PCL:0117692
-property_value: owl:versionInfo "2025-04-24" xsd:string
+property_value: owl:versionInfo "2025-04-28" xsd:string
 
 [Term]
 id: PCL:0010001
@@ -62,8 +62,7 @@ name: IT-ET Glut neuron (Mmus)
 def: "A neuron of the Mus musculus brain. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in class:01 IT-ET Glut (CS20230722_CLAS_01)." []
 synonym: "01 IT-ET Glut" EXACT []
 is_a: BFO:0000002
-is_a: CL:2000029
-relationship: RO:0002100 MBA:997
+is_a: CL:0000540
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0015004 PCL:0130861 ! Marker set of IT-ET Glut (Mouse).
 property_value: IAO:0000028 "IT-ET Glut (Mmus)" xsd:string
@@ -75,8 +74,7 @@ name: NP-CT-L6b Glut neuron (Mmus)
 def: "A neuron of the Mus musculus brain. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in class:02 NP-CT-L6b Glut (CS20230722_CLAS_02)." []
 synonym: "02 NP-CT-L6b Glut" EXACT []
 is_a: BFO:0000002
-is_a: CL:2000029
-relationship: RO:0002100 MBA:997
+is_a: CL:0000540
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0015004 PCL:0130862 ! Marker set of NP-CT-L6b Glut (Mouse).
 property_value: IAO:0000028 "NP-CT-L6b Glut (Mmus)" xsd:string
@@ -88,8 +86,7 @@ name: OB-CR Glut neuron (Mmus)
 def: "A neuron of the Mus musculus brain. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in class:03 OB-CR Glut (CS20230722_CLAS_03)." []
 synonym: "03 OB-CR Glut" EXACT []
 is_a: BFO:0000002
-is_a: CL:2000029
-relationship: RO:0002100 MBA:997
+is_a: CL:0000540
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0015004 PCL:0130863 ! Marker set of OB-CR Glut (Mouse).
 property_value: IAO:0000028 "OB-CR Glut (Mmus)" xsd:string
@@ -101,8 +98,7 @@ name: DG-IMN Glut neuron (Mmus)
 def: "A neuron of the Mus musculus brain. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in class:04 DG-IMN Glut (CS20230722_CLAS_04)." []
 synonym: "04 DG-IMN Glut" EXACT []
 is_a: BFO:0000002
-is_a: CL:2000029
-relationship: RO:0002100 MBA:997
+is_a: CL:0000540
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0015004 PCL:0130864 ! Marker set of DG-IMN Glut (Mouse).
 property_value: IAO:0000028 "DG-IMN Glut (Mmus)" xsd:string
@@ -114,8 +110,7 @@ name: OB-IMN GABA neuron (Mmus)
 def: "A neuron of the Mus musculus brain. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in class:05 OB-IMN GABA (CS20230722_CLAS_05)." []
 synonym: "05 OB-IMN GABA" EXACT []
 is_a: BFO:0000002
-is_a: CL:2000029
-relationship: RO:0002100 MBA:997
+is_a: CL:0000540
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0015004 PCL:0130865 ! Marker set of OB-IMN GABA (Mouse).
 property_value: IAO:0000028 "OB-IMN GABA (Mmus)" xsd:string
@@ -127,7 +122,6 @@ name: CTX-CGE GABA caudal ganglionic eminence derived cortical interneuron (Mmus
 def: "A caudal ganglionic eminence derived cortical interneuron of the Mus musculus brain. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in class:06 CTX-CGE GABA (CS20230722_CLAS_06)." []
 synonym: "06 CTX-CGE GABA" EXACT []
 is_a: CL:4023064
-relationship: RO:0002100 MBA:997
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0015004 PCL:0130866 ! Marker set of CTX-CGE GABA (Mouse).
 property_value: IAO:0000028 "CTX-CGE GABA (Mmus)" xsd:string
@@ -139,7 +133,6 @@ name: CTX-MGE GABA medial ganglionic eminence derived GABAergic cortical interne
 def: "A medial ganglionic eminence derived GABAergic cortical interneuron of the Mus musculus brain. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in class:07 CTX-MGE GABA (CS20230722_CLAS_07)." []
 synonym: "07 CTX-MGE GABA" EXACT []
 is_a: CL:4023069
-relationship: RO:0002100 MBA:997
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0015004 PCL:0130867 ! Marker set of CTX-MGE GABA (Mouse).
 property_value: IAO:0000028 "CTX-MGE GABA (Mmus)" xsd:string
@@ -151,7 +144,6 @@ name: CNU-MGE GABA medial ganglionic eminence derived interneuron (Mmus)
 def: "A medial ganglionic eminence derived interneuron of the Mus musculus brain. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in class:08 CNU-MGE GABA (CS20230722_CLAS_08)." []
 synonym: "08 CNU-MGE GABA" EXACT []
 is_a: CL:4023063
-relationship: RO:0002100 MBA:997
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0015004 PCL:0130868 ! Marker set of CNU-MGE GABA (Mouse).
 property_value: IAO:0000028 "CNU-MGE GABA (Mmus)" xsd:string
@@ -163,7 +155,6 @@ name: CNU-LGE GABA lateral ganglionic eminence derived neuron (Mmus)
 def: "A lateral ganglionic eminence derived neuron of the Mus musculus brain. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in class:09 CNU-LGE GABA (CS20230722_CLAS_09)." []
 synonym: "09 CNU-LGE GABA" EXACT []
 is_a: CL:4023035
-relationship: RO:0002100 MBA:997
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0015004 PCL:0130869 ! Marker set of CNU-LGE GABA (Mouse).
 property_value: IAO:0000028 "CNU-LGE GABA (Mmus)" xsd:string
@@ -175,8 +166,7 @@ name: LSX GABA neuron (Mmus)
 def: "A neuron of the Mus musculus brain. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in class:10 LSX GABA (CS20230722_CLAS_10)." []
 synonym: "10 LSX GABA" EXACT []
 is_a: BFO:0000002
-is_a: CL:2000029
-relationship: RO:0002100 MBA:997
+is_a: CL:0000540
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0015004 PCL:0130870 ! Marker set of LSX GABA (Mouse).
 property_value: IAO:0000028 "LSX GABA (Mmus)" xsd:string
@@ -188,8 +178,7 @@ name: CNU-HYa GABA neuron (Mmus)
 def: "A neuron of the Mus musculus brain. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in class:11 CNU-HYa GABA (CS20230722_CLAS_11)." []
 synonym: "11 CNU-HYa GABA" EXACT []
 is_a: BFO:0000002
-is_a: CL:2000029
-relationship: RO:0002100 MBA:997
+is_a: CL:0000540
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0015004 PCL:0130871 ! Marker set of CNU-HYa GABA (Mouse).
 property_value: IAO:0000028 "CNU-HYa GABA (Mmus)" xsd:string
@@ -201,8 +190,7 @@ name: HY GABA neuron (Mmus)
 def: "A neuron of the Mus musculus brain. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in class:12 HY GABA (CS20230722_CLAS_12)." []
 synonym: "12 HY GABA" EXACT []
 is_a: BFO:0000002
-is_a: CL:2000029
-relationship: RO:0002100 MBA:997
+is_a: CL:0000540
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0015004 PCL:0130872 ! Marker set of HY GABA (Mouse).
 property_value: IAO:0000028 "HY GABA (Mmus)" xsd:string
@@ -214,8 +202,7 @@ name: CNU-HYa Glut neuron (Mmus)
 def: "A neuron of the Mus musculus brain. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in class:13 CNU-HYa Glut (CS20230722_CLAS_13)." []
 synonym: "13 CNU-HYa Glut" EXACT []
 is_a: BFO:0000002
-is_a: CL:2000029
-relationship: RO:0002100 MBA:997
+is_a: CL:0000540
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0015004 PCL:0130873 ! Marker set of CNU-HYa Glut (Mouse).
 property_value: IAO:0000028 "CNU-HYa Glut (Mmus)" xsd:string
@@ -227,8 +214,7 @@ name: HY Glut neuron (Mmus)
 def: "A neuron of the Mus musculus brain. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in class:14 HY Glut (CS20230722_CLAS_14)." []
 synonym: "14 HY Glut" EXACT []
 is_a: BFO:0000002
-is_a: CL:2000029
-relationship: RO:0002100 MBA:997
+is_a: CL:0000540
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0015004 PCL:0130874 ! Marker set of HY Glut (Mouse).
 property_value: IAO:0000028 "HY Glut (Mmus)" xsd:string
@@ -240,8 +226,7 @@ name: HY MM Glut neuron (Mmus)
 def: "A neuron of the Mus musculus brain. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in class:16 HY MM Glut (CS20230722_CLAS_16)." []
 synonym: "16 HY MM Glut" EXACT []
 is_a: BFO:0000002
-is_a: CL:2000029
-relationship: RO:0002100 MBA:997
+is_a: CL:0000540
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0015004 PCL:0130876 ! Marker set of HY MM Glut (Mouse).
 property_value: IAO:0000028 "HY MM Glut (Mmus)" xsd:string
@@ -253,8 +238,7 @@ name: MH-LH Glut neuron (Mmus)
 def: "A neuron of the Mus musculus brain. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in class:17 MH-LH Glut (CS20230722_CLAS_17)." []
 synonym: "17 MH-LH Glut" EXACT []
 is_a: BFO:0000002
-is_a: CL:2000029
-relationship: RO:0002100 MBA:997
+is_a: CL:0000540
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0015004 PCL:0130877 ! Marker set of MH-LH Glut (Mouse).
 property_value: IAO:0000028 "MH-LH Glut (Mmus)" xsd:string
@@ -266,8 +250,7 @@ name: TH Glut neuron (Mmus)
 def: "A neuron of the Mus musculus brain. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in class:18 TH Glut (CS20230722_CLAS_18)." []
 synonym: "18 TH Glut" EXACT []
 is_a: BFO:0000002
-is_a: CL:2000029
-relationship: RO:0002100 MBA:997
+is_a: CL:0000540
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0015004 PCL:0130878 ! Marker set of TH Glut (Mouse).
 property_value: IAO:0000028 "TH Glut (Mmus)" xsd:string
@@ -279,8 +262,7 @@ name: MB Glut neuron (Mmus)
 def: "A neuron of the Mus musculus brain. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in class:19 MB Glut (CS20230722_CLAS_19)." []
 synonym: "19 MB Glut" EXACT []
 is_a: BFO:0000002
-is_a: CL:2000029
-relationship: RO:0002100 MBA:997
+is_a: CL:0000540
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0015004 PCL:0130879 ! Marker set of MB Glut (Mouse).
 property_value: IAO:0000028 "MB Glut (Mmus)" xsd:string
@@ -292,8 +274,7 @@ name: MB GABA neuron (Mmus)
 def: "A neuron of the Mus musculus brain. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in class:20 MB GABA (CS20230722_CLAS_20)." []
 synonym: "20 MB GABA" EXACT []
 is_a: BFO:0000002
-is_a: CL:2000029
-relationship: RO:0002100 MBA:997
+is_a: CL:0000540
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0015004 PCL:0130880 ! Marker set of MB GABA (Mouse).
 property_value: IAO:0000028 "MB GABA (Mmus)" xsd:string
@@ -305,8 +286,7 @@ name: P Glut neuron (Mmus)
 def: "A neuron of the Mus musculus brain. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in class:23 P Glut (CS20230722_CLAS_23)." []
 synonym: "23 P Glut" EXACT []
 is_a: BFO:0000002
-is_a: CL:2000029
-relationship: RO:0002100 MBA:997
+is_a: CL:0000540
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0015004 PCL:0130883 ! Marker set of P Glut (Mouse).
 property_value: IAO:0000028 "P Glut (Mmus)" xsd:string
@@ -318,8 +298,7 @@ name: MY Glut neuron (Mmus)
 def: "A neuron of the Mus musculus brain. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in class:24 MY Glut (CS20230722_CLAS_24)." []
 synonym: "24 MY Glut" EXACT []
 is_a: BFO:0000002
-is_a: CL:2000029
-relationship: RO:0002100 MBA:997
+is_a: CL:0000540
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0015004 PCL:0130884 ! Marker set of MY Glut (Mouse).
 property_value: IAO:0000028 "MY Glut (Mmus)" xsd:string
@@ -331,8 +310,7 @@ name: P GABA neuron (Mmus)
 def: "A neuron of the Mus musculus brain. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in class:26 P GABA (CS20230722_CLAS_26)." []
 synonym: "26 P GABA" EXACT []
 is_a: BFO:0000002
-is_a: CL:2000029
-relationship: RO:0002100 MBA:997
+is_a: CL:0000540
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0015004 PCL:0130886 ! Marker set of P GABA (Mouse).
 property_value: IAO:0000028 "P GABA (Mmus)" xsd:string
@@ -344,8 +322,7 @@ name: MY GABA neuron (Mmus)
 def: "A neuron of the Mus musculus brain. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in class:27 MY GABA (CS20230722_CLAS_27)." []
 synonym: "27 MY GABA" EXACT []
 is_a: BFO:0000002
-is_a: CL:2000029
-relationship: RO:0002100 MBA:997
+is_a: CL:0000540
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0015004 PCL:0130887 ! Marker set of MY GABA (Mouse).
 property_value: IAO:0000028 "MY GABA (Mmus)" xsd:string
@@ -357,8 +334,7 @@ name: CB GABA neuron (Mmus)
 def: "A neuron of the Mus musculus brain. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in class:28 CB GABA (CS20230722_CLAS_28)." []
 synonym: "28 CB GABA" EXACT []
 is_a: BFO:0000002
-is_a: CL:2000029
-relationship: RO:0002100 MBA:997
+is_a: CL:0000540
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0015004 PCL:0130888 ! Marker set of CB GABA (Mouse).
 property_value: IAO:0000028 "CB GABA (Mmus)" xsd:string
@@ -370,8 +346,7 @@ name: CB Glut neuron (Mmus)
 def: "A neuron of the Mus musculus brain. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in class:29 CB Glut (CS20230722_CLAS_29)." []
 synonym: "29 CB Glut" EXACT []
 is_a: BFO:0000002
-is_a: CL:2000029
-relationship: RO:0002100 MBA:997
+is_a: CL:0000540
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0015004 PCL:0130889 ! Marker set of CB Glut (Mouse).
 property_value: IAO:0000028 "CB Glut (Mmus)" xsd:string
@@ -382,9 +357,7 @@ id: PCL:0110030
 name: Astro-Epen cell (Mmus)
 def: "A cell of the Mus musculus brain. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in class:30 Astro-Epen (CS20230722_CLAS_30)." []
 synonym: "30 Astro-Epen" EXACT []
-is_a: BFO:0000002
-is_a: CL:2000029
-relationship: RO:0002100 MBA:997
+is_a: CL:0000255
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0015004 PCL:0130890 ! Marker set of Astro-Epen (Mouse).
 property_value: IAO:0000028 "Astro-Epen (Mmus)" xsd:string
@@ -395,9 +368,7 @@ id: PCL:0110031
 name: OPC-Oligo cell (Mmus)
 def: "A cell of the Mus musculus brain. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in class:31 OPC-Oligo (CS20230722_CLAS_31)." []
 synonym: "31 OPC-Oligo" EXACT []
-is_a: BFO:0000002
-is_a: CL:2000029
-relationship: RO:0002100 MBA:997
+is_a: CL:0000255
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0015004 PCL:0130891 ! Marker set of OPC-Oligo (Mouse).
 property_value: IAO:0000028 "OPC-Oligo (Mmus)" xsd:string
@@ -3725,8 +3696,7 @@ synonym: "21 MB Dopa" EXACT []
 synonym: "215 SNc-VTA-RAmb Foxa1 Dopa" EXACT []
 synonym: "Slc6a3 (Mmus), Ntn1 (Mmus) expressing neuron of brain (Mus musculus)" EXACT []
 is_a: BFO:0000002
-is_a: CL:2000029
-relationship: RO:0002100 MBA:997
+is_a: CL:0000540
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020902
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021609
@@ -3746,8 +3716,7 @@ synonym: "216 MB-MY Tph2 Glut-Sero" EXACT []
 synonym: "22 MB-HB Sero" EXACT []
 synonym: "Gata3 (Mmus), Lmx1b (Mmus) expressing neuron of brain (Mus musculus)" EXACT []
 is_a: BFO:0000002
-is_a: CL:2000029
-relationship: RO:0002100 MBA:997
+is_a: CL:0000540
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000015619
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000038765
@@ -4799,7 +4768,6 @@ name: subcortical astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Aqp4 (Mmus), Cd38 (Mmus), Agt (Mmus), Itih3 (Mmus). Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in subclass:318 Astro-NT NN (CS20230722_SUBC_318)." []
 synonym: "318 Astro-NT NN" EXACT []
 synonym: "Aqp4 (Mmus), Cd38 (Mmus), Agt (Mmus), Itih3 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
-is_a: CL:0000029
 is_a: CL:0000127
 is_a: PCL:0110030 ! Astro-Epen cell (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000006522
@@ -4821,7 +4789,6 @@ name: telencephalic astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), Lhx2 (Mmus), Gpc5 (Mmus), Nr2f1 (Mmus). Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in subclass:319 Astro-TE NN (CS20230722_SUBC_319)." []
 synonym: "319 Astro-TE NN" EXACT []
 synonym: "Gja1 (Mmus), Lhx2 (Mmus), Gpc5 (Mmus), Nr2f1 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
-is_a: CL:0000029
 is_a: CL:0000127
 is_a: PCL:0110030 ! Astro-Epen cell (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000000247
@@ -4843,7 +4810,6 @@ name: olfactory areas astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), Hs3st3a1 (Mmus). Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in subclass:320 Astro-OLF NN (CS20230722_SUBC_320)." []
 synonym: "320 Astro-OLF NN" EXACT []
 synonym: "Gja1 (Mmus), Hs3st3a1 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
-is_a: CL:0000029
 is_a: CL:0000127
 is_a: PCL:0110030 ! Astro-Epen cell (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000047759
@@ -4861,6 +4827,7 @@ name: Astroependymal NN cell (Mmus)
 def: "A cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gfap (Mmus), Slit2 (Mmus), Slc7a11 (Mmus), Zic4 (Mmus). Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in subclass:321 Astroependymal NN (CS20230722_SUBC_321)." []
 synonym: "321 Astroependymal NN" EXACT []
 synonym: "Gfap (Mmus), Slit2 (Mmus), Slc7a11 (Mmus), Zic4 (Mmus) expressing cell of brain (Mus musculus)" EXACT []
+is_a: BFO:0000002
 is_a: PCL:0110030 ! Astro-Epen cell (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020932
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000027737
@@ -4915,7 +4882,6 @@ name: oligodendrocyte precursor cell (Mmus))
 def: "A oligodendrocyte precursor cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pdgfra (Mmus). Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in subclass:326 OPC NN (CS20230722_SUBC_326)." []
 synonym: "326 OPC NN" EXACT []
 synonym: "Pdgfra (Mmus) expressing oligodendrocyte precursor cell of brain (Mus musculus)" EXACT []
-is_a: CL:0000029
 is_a: CL:0002453
 is_a: PCL:0110031 ! OPC-Oligo cell (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029231
@@ -4931,7 +4897,6 @@ name: oligodendrocyte (Mmus)
 def: "A oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cldn11 (Mmus), Gjc3 (Mmus). Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in subclass:327 Oligo NN (CS20230722_SUBC_327)." []
 synonym: "327 Oligo NN" EXACT []
 synonym: "Cldn11 (Mmus), Gjc3 (Mmus) expressing oligodendrocyte of brain (Mus musculus)" EXACT []
-is_a: CL:0000029
 is_a: CL:0000128
 is_a: PCL:0110031 ! OPC-Oligo cell (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000037625
@@ -4958,9 +4923,7 @@ name: vascular leptomeningeal cell (Mmus)
 def: "A vascular leptomeningeal cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Apod (Mmus), Slc6a13 (Mmus). Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in subclass:330 VLMC NN (CS20230722_SUBC_330)." []
 synonym: "330 VLMC NN" EXACT []
 synonym: "Apod (Mmus), Slc6a13 (Mmus) expressing vascular leptomeningeal cell of brain (Mus musculus)" EXACT []
-is_a: CL:2000029
 is_a: CL:4023051
-relationship: RO:0002100 MBA:997
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022548
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000030108
@@ -23752,8 +23715,6 @@ synonym: "32 OEC" EXACT []
 synonym: "328 OEC NN" EXACT []
 synonym: "Apod (Mmus), Npy (Mmus) expressing olfactory ensheathing cell of brain (Mus musculus)" EXACT []
 is_a: CL:0011028
-is_a: CL:2000029
-relationship: RO:0002100 MBA:997
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022548
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029819
@@ -23772,9 +23733,7 @@ def: "A arachnoid barrier cell of the Mus musculus brain. It is distinguished fr
 synonym: "1186 ABC NN_1" EXACT []
 synonym: "329 ABC NN" EXACT []
 synonym: "Thbd (Mmus), Ccn3 (Mmus) expressing arachnoid barrier cell of brain (Mus musculus)" EXACT []
-is_a: CL:2000029
 is_a: CL:4023097
-relationship: RO:0002100 MBA:997
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000037362
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000074743
@@ -23833,9 +23792,7 @@ def: "A border associated macrophage of the Mus musculus brain. It is distinguis
 synonym: "1195 BAM NN_1" EXACT []
 synonym: "335 BAM NN" EXACT []
 synonym: "Mrc1 (Mmus), Maf (Mmus) expressing border associated macrophage of brain (Mus musculus)" EXACT []
-is_a: CL:2000029
 is_a: CL:4042003
-relationship: RO:0002100 MBA:997
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026712
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000055435
@@ -82970,8 +82927,6 @@ synonym: "2564 HY Gnrh1 Glut_1" EXACT []
 synonym: "Gnrh1 (Mmus) expressing neuron of brain (Mus musculus)" EXACT []
 is_a: BFO:0000002
 is_a: CL:0000679
-is_a: CL:2000029
-relationship: RO:0002100 MBA:997
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000015812
 relationship: RO:0015004 PCL:0125444 ! Marker set of HY Gnrh1 Glut (Mouse).
@@ -128445,12 +128400,9 @@ synonym: "25 Pineal Glut" EXACT []
 synonym: "262 Pineal Crx Glut" EXACT []
 synonym: "4606 Pineal Crx Glut_1" EXACT []
 synonym: "Cngb3 (Mmus), Ush2a (Mmus) expressing pinealocyte of brain (Mus musculus)" EXACT []
-is_a: CL:0000165
 is_a: CL:0000652 {evidence="http://identifiers.org/ensembl/ENSMUSG00000020182", evidence="http://identifiers.org/ensembl/ENSMUSG00000030500", evidence="http://identifiers.org/ensembl/ENSMUSG00000070570"}
-is_a: CL:0000679
-is_a: CL:2000029
-relationship: RO:0002100 MBA:997
 relationship: RO:0002162 NCBITaxon:10090
+relationship: RO:0002215 GO:0061535 {comment="Inferred to be glutamate secretion, neurotransmission based on expression of Ddc, Slc17a6, Slc17a7"}
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026609
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000056494
 relationship: RO:0015004 PCL:0127486 ! Marker set of pinealocyte (Mouse).
@@ -143040,7 +142992,6 @@ synonym: "1157 Bergmann NN_1" EXACT []
 synonym: "316 Bergmann NN" EXACT []
 synonym: "5206 Bergmann NN_1" EXACT []
 synonym: "Gpr37l1 (Mmus), Ctxn3 (Mmus) expressing Bergmann glial cell of brain (Mus musculus)" EXACT []
-is_a: CL:0000029
 is_a: CL:0000644 {evidence="http://identifiers.org/ensembl/ENSMUSG00000053279"}
 is_a: PCL:0110030 ! Astro-Epen cell (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026424
@@ -143067,7 +143018,6 @@ synonym: "1158 Astro-CB NN_1" EXACT []
 synonym: "317 Astro-CB NN" EXACT []
 synonym: "5207 Astro-CB NN_1" EXACT []
 synonym: "Dao (Mmus), Efemp1 (Mmus) expressing astrocyte of the cerebellum of brain (Mus musculus)" EXACT []
-is_a: CL:0000029
 is_a: CL:0002603 {evidence="http://identifiers.org/ensembl/ENSMUSG00000053279"}
 is_a: PCL:0110030 ! Astro-Epen cell (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020467
@@ -143370,8 +143320,9 @@ name: Astro-TE NN_1 Jph4 astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Myoc (Mmus), Sptbn2 (Mmus), Alpk1 (Mmus). It is distinguished from other Astro-TE NN_1 cells by expression of Myoc, Jph4, Alpk1. It is glutamatergic. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in cluster:5221 Astro-TE NN_1 (CS20230722_CLUS_5221)." []
 synonym: "5221 Astro-TE NN_1" EXACT []
 synonym: "Myoc (Mmus), Sptbn2 (Mmus), Alpk1 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
-is_a: CL:0000679
+is_a: CL:0000151
 is_a: PCL:0111731 ! Astro-TE NN_1 astrocyte (Mmus)
+relationship: RO:0002215 GO:0061535 {comment="Inferred to be glutamate secretion, neurotransmission based on expression of Aldh1a1, Slc17a7"}
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026697
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000028028
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000067889
@@ -143876,10 +143827,10 @@ name: Tanycyte NN_2 Mylk3 alpha1-tanycyte (Mmus)
 def: "A alpha1-tanycyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Dynlrb2 (Mmus), Mylk3 (Mmus), Sfta3-ps (Mmus). It is distinguished from other Tanycyte NN_2 cells by expression of Mylk3. It is glutamatergic. These cells are are located in the Hypothalamus, in or close to the regions: Periventricular hypothalamic nucleus, intermediate part. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in cluster:5245 Tanycyte NN_2 (CS20230722_CLUS_5245)." []
 synonym: "5245 Tanycyte NN_2" EXACT []
 synonym: "Dynlrb2 (Mmus), Mylk3 (Mmus), Sfta3-ps (Mmus) expressing alpha1-tanycyte of brain (Mus musculus)" EXACT []
-is_a: CL:0000679
 is_a: CL:1100001
 is_a: CL:4042017 {evidence="http://identifiers.org/ensembl/ENSMUSG00000019935"}
 is_a: PCL:0111743 ! Tanycyte NN_2 tanycyte (Mmus)
+relationship: RO:0002215 GO:0061535 {comment="Inferred to be glutamate secretion, neurotransmission based on expression of Slc17a8"}
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031698
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000034467
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000112343
@@ -143959,7 +143910,6 @@ name: Tanycyte NN_2 Col25a1 beta1-tanycyte (Mmus)
 def: "A beta1-tanycyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr50 (Mmus), Frzb (Mmus), Foxd2os (Mmus). It is distinguished from other Tanycyte NN_2 cells by expression of Col25a1, C230072F16Rik. These cells are are located in the Hypothalamus, in or close to the regions: third ventricle, Arcuate hypothalamic nucleus. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in cluster:5249 Tanycyte NN_2 (CS20230722_CLUS_5249)." []
 synonym: "5249 Tanycyte NN_2" EXACT []
 synonym: "Gpr50 (Mmus), Frzb (Mmus), Foxd2os (Mmus) expressing beta1-tanycyte of brain (Mus musculus)" EXACT []
-is_a: CL:0000165
 is_a: CL:4042019
 is_a: PCL:0111743 ! Tanycyte NN_2 tanycyte (Mmus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000027004
@@ -144307,10 +144257,9 @@ name: CHOR NN_1 Slc17a8 choroid plexus epithelial cell (Mmus)
 def: "A choroid plexus epithelial cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 2900040C04Rik (Mmus), Slc17a8 (Mmus). It is distinguished from other CHOR NN cells by expression of Slc17a8. It is glutamatergic. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in cluster:5265 CHOR NN_1 (CS20230722_CLUS_5265)." []
 synonym: "2900040C04Rik (Mmus), Slc17a8 (Mmus) expressing choroid plexus epithelial cell of brain (Mus musculus)" EXACT []
 synonym: "5265 CHOR NN_1" EXACT []
-is_a: CL:0000029
-is_a: CL:0000679
 is_a: CL:0000686
 is_a: PCL:0111748 ! choroid plexus epithelial cell (Mmus)
+relationship: RO:0002215 GO:0061535 {comment="Inferred to be glutamate secretion, neurotransmission based on expression of Slc17a8"}
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019935
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000115625
 relationship: RO:0015004 PCL:0128145 ! Marker set of CHOR NN_1 Slc17a8 (Mouse).
@@ -144901,8 +144850,9 @@ name: OEC NN_1 Rasgef1c olfactory ensheathing cell (Mmus)
 def: "A olfactory ensheathing cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Apod (Mmus), Mybpc1 (Mmus), Rasgef1c (Mmus). It is distinguished from other OEC cells by expression of Rasgef1c. It is glutamatergic. Standard transcriptomic reference data for this class can be found at https://purl.brain-bican.org/taxonomy/CCN20230722 in cluster:5292 OEC NN_1 (CS20230722_CLUS_5292)." []
 synonym: "5292 OEC NN_1" EXACT []
 synonym: "Apod (Mmus), Mybpc1 (Mmus), Rasgef1c (Mmus) expressing olfactory ensheathing cell of brain (Mus musculus)" EXACT []
-is_a: CL:0000679
+is_a: CL:0000151
 is_a: PCL:0111755 ! OEC olfactory ensheathing cell (Mmus)
+relationship: RO:0002215 GO:0061535 {comment="Inferred to be glutamate secretion, neurotransmission based on expression of Slc17a7"}
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020061
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020374
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022548
@@ -145127,9 +145077,7 @@ def: "A brain pericyte of the Mus musculus brain. It is distinguished from other
 synonym: "5304 Peri NN_1" EXACT []
 synonym: "Vtn (Mmus), Rgs5 (Mmus), Slc22a8 (Mmus) expressing brain pericyte of brain (Mus musculus)" EXACT []
 is_a: BFO:0000002
-is_a: CL:2000029
 is_a: CL:2000043
-relationship: RO:0002100 MBA:997
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000017344
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026678
@@ -145156,9 +145104,7 @@ def: "A brain pericyte of the Mus musculus brain. It is distinguished from other
 synonym: "5305 Peri NN_1" EXACT []
 synonym: "Adap2 (Mmus), Kcnj8 (Mmus), Col3a1 (Mmus) expressing brain pericyte of brain (Mus musculus)" EXACT []
 is_a: BFO:0000002
-is_a: CL:2000029
 is_a: CL:2000043
-relationship: RO:0002100 MBA:997
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020709
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026043
@@ -145179,8 +145125,6 @@ def: "A vascular associated smooth muscle cell of the Mus musculus brain. It is 
 synonym: "5306 SMC NN_1" EXACT []
 synonym: "Myl9 (Mmus), Olfr558 (Mmus), Grm7 (Mmus) expressing vascular associated smooth muscle cell of brain (Mus musculus)" EXACT []
 is_a: CL:0000359
-is_a: CL:2000029
-relationship: RO:0002100 MBA:997
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000056755
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000067818
@@ -145206,8 +145150,6 @@ def: "A vascular associated smooth muscle cell of the Mus musculus brain. It is 
 synonym: "5307 SMC NN_1" EXACT []
 synonym: "Acta2 (Mmus), Otogl (Mmus) expressing vascular associated smooth muscle cell of brain (Mus musculus)" EXACT []
 is_a: CL:0000359
-is_a: CL:2000029
-relationship: RO:0002100 MBA:997
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000035783
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000091455
@@ -145231,8 +145173,6 @@ def: "A vascular associated smooth muscle cell of the Mus musculus brain. It is 
 synonym: "5308 SMC NN_1" EXACT []
 synonym: "Acta2 (Mmus), Fn1 (Mmus) expressing vascular associated smooth muscle cell of brain (Mus musculus)" EXACT []
 is_a: CL:0000359
-is_a: CL:2000029
-relationship: RO:0002100 MBA:997
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026193
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000035783
@@ -145254,8 +145194,6 @@ def: "A endothelial cell of the Mus musculus brain. It is distinguished from oth
 synonym: "5309 Endo NN_1" EXACT []
 synonym: "Ly6c1 (Mmus), Alpl (Mmus) expressing endothelial cell of brain (Mus musculus)" EXACT []
 is_a: CL:0000115
-is_a: CL:2000029
-relationship: RO:0002100 MBA:997
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000028766
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000079018
@@ -145277,8 +145215,6 @@ def: "A endothelial cell of the Mus musculus brain. It is distinguished from oth
 synonym: "5310 Endo NN_1" EXACT []
 synonym: "Slco1a4 (Mmus), Adgrl4 (Mmus) expressing endothelial cell of brain (Mus musculus)" EXACT []
 is_a: CL:0000115
-is_a: CL:2000029
-relationship: RO:0002100 MBA:997
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000030237
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039167
@@ -145302,8 +145238,6 @@ def: "A endothelial cell of the Mus musculus brain. It is distinguished from oth
 synonym: "5311 Endo NN_1" EXACT []
 synonym: "Slco1a4 (Mmus), Fmo2 (Mmus) expressing endothelial cell of brain (Mus musculus)" EXACT []
 is_a: CL:0000115
-is_a: CL:2000029
-relationship: RO:0002100 MBA:997
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000030237
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000040170
@@ -145329,8 +145263,6 @@ synonym: "334 Microglia NN" EXACT []
 synonym: "5312 Microglia NN_1" EXACT []
 synonym: "C1qa (Mmus), Tmem119 (Mmus) expressing microglial cell of brain (Mus musculus)" EXACT []
 is_a: CL:0000129
-is_a: CL:2000029
-relationship: RO:0002100 MBA:997
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000036887
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000054675

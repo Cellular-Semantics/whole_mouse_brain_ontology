@@ -96,6 +96,7 @@ def generate_ind_template(taxonomy_file_path, output_filepath):
                            'Aliases': "A oboInOwl:hasRelatedSynonym SPLIT=|",
                            'Rank': "A 'cell_type_rank' SPLIT=|",
                            'Atlas_url': "AT 'ABC atlas reference'^^xsd:anyURI",
+                           'Atlas_url_label': ">A rdfs:label",
                            }
     dl = [robot_template_seed]
 
@@ -129,6 +130,7 @@ def generate_ind_template(taxonomy_file_path, output_filepath):
         if atlas_payloads.get(o["cell_set_accession"]):
             d["Atlas_url"] = "https://knowledge.brain-map.org/abcatlas#" + atlas_payloads.get(
                 o["cell_set_accession"])
+            d["Atlas_url_label"] = "Reference data on Allen Brain Cell Atlas"
 
         dl.append(d)
     robot_template = pd.DataFrame.from_records(dl)
