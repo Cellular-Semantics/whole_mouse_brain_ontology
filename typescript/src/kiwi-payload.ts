@@ -47,8 +47,8 @@ function generateScRNAseqFrame(annotation: any): Visualization {
 function generateMerFishFrame(annotation: any): Visualization {
   const { metadataFilters, categoryId } = generateMetadataFilters(annotation);
   return {
-    dataCollectionId: 'ZI3RR0FXL3HYXGVE2S5',
-    plotId: 'FYY4OM2LU5J0YOF07DR',
+    dataCollectionId: 'K9JN23P24KQCGK9U75A',
+    plotId: 'SY3SLMNPID3C68MGS8V',
     metadataFilters: metadataFilters,
     camera: {
       projection: 'WEB_IMAGE',
@@ -69,12 +69,12 @@ function generateMerFishFrame(annotation: any): Visualization {
       transparency: 0.5,
       isTransparent: false,
     },
-    visualizationId: '4STCSZBXHYOI0JUUA3M',
+    visualizationId: '6MT7UC6ETYECBWF50PK',
     projectId: 'LVDBJAW8BI5YSS1QUBG',
     quantitativeFilters: [],
     annotation: {
-      referenceId: 'TLOKWCL95RU03D9PETG',
-      featureTypeReferenceId: 'TFQFLNEP3V222Y88C64',
+      referenceId: 'none',
+      featureTypeReferenceId: 'none',
       isInFront: true,
       fill: { option: 'NONE', color: '#000000', opacity: 100 },
       stroke: { option: 'DEFAULT', color: '#000000', opacity: 100 },

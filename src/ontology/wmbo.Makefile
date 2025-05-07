@@ -117,7 +117,7 @@ mirror/ensmusg.owl: ../templates/ensmusg.tsv .FORCE
 $(COMPONENTSDIR)/wmb_taxonomy.owl:
 	#wget https://raw.githubusercontent.com/brain-bican/whole_mouse_brain_taxonomy/refs/heads/main/CCN20230722.rdf -O $(TMPDIR)/CCN20230722.rdf
 	wget https://raw.githubusercontent.com/brain-bican/whole_mouse_brain_taxonomy/refs/heads/cloud-rltbl/CCN20230722.rdf -O $(TMPDIR)/CCN20230722.rdf
-	$(ROBOT) query --input $(TMPDIR)/CCN20230722.rdf --update ../sparql/delete_taxonomy_annotations.ru --update ../sparql/inject_fix_taxonomy_properties.ru --output $@
+	$(ROBOT) query --input $(TMPDIR)/CCN20230722.rdf --update ../sparql/delete_taxonomy_annotations.ru --update ../sparql/inject_fix_taxonomy_properties.ru --update ../sparql/delete_author_annotation_fields.ru --output $@
 
 # merge all templates except application specific ones
 .PHONY: $(COMPONENTSDIR)/all_templates.owl

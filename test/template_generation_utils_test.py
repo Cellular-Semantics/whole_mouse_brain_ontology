@@ -8,7 +8,7 @@ from dendrogram_tools import cas_json_2_nodes_n_edges, read_json_file
 from nomenclature_tools import nomenclature_2_nodes_n_edges
 from template_generation_utils import get_synonyms_from_taxonomy, get_synonym_pairs, \
     PAIR_SEPARATOR, OR_SEPARATOR, read_taxonomy_config, get_subtrees, read_dendrogram_tree, \
-    find_singleton_chains, generate_dendrogram_tree, read_one_concept_one_name_tsv
+    find_singleton_chains, generate_dendrogram_tree, read_one_concept_one_name_tsv, get_class_membership_dict
 
 PATH_DENDROGRAM_JSON = os.path.join(os.path.dirname(os.path.realpath(__file__)), "./test_data/CCN202002013.json")
 PATH_NOMENCLATURE_CSV = os.path.join(os.path.dirname(os.path.realpath(__file__)),
@@ -178,7 +178,7 @@ class TemplateUtilsTest(unittest.TestCase):
     #     dend_tree = read_dendrogram_tree(dend_path)
     #
     #     subtrees = get_subtrees(dend_tree, read_taxonomy_config("CCN202002013"))
-    # 
+    #
     #     path = os.path.join(os.path.dirname(os.path.realpath(__file__)), "./test_data/alias_report.tsv")
     #
     #     with open(path, mode='w') as out:
@@ -254,6 +254,17 @@ class TemplateUtilsTest(unittest.TestCase):
         diff = rows_set.difference(label_chain)
         for item in diff:
             print(item)
+
+    def test_class_membership(self):
+        dend = cas_json_2_nodes_n_edges(PATH_MOUSE_CAS)
+        dend_tree = generate_dendrogram_tree(dend)
+        membership = get_class_membership_dict(dend_tree)
+
+        self.assertEqual(6896, len(membership.keys()))
+        self.assertEqual("CS20230722_CLAS_01", membership["CS20230722_CLAS_01"])
+        self.assertEqual("CS20230722_CLAS_01", membership["CS20230722_SUBC_001"])
+        self.assertEqual("CS20230722_CLAS_01", membership["CS20230722_SUPT_0001"])
+        self.assertEqual("CS20230722_CLAS_01", membership["CS20230722_CLUS_0001"])
 
 
 if __name__ == '__main__':

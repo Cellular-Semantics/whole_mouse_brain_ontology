@@ -647,3 +647,26 @@ def format_cell_label(cell_label, node, all_labels, generated_labels, is_collaps
     if "none" in formatted_name.lower():
         raise ValueError("Name contains 'none': " + cell_label)
     return formatted_name
+
+
+def get_class_membership_dict(dend_tree):
+    """
+    Returns a dictionary of class membership for each node in the dendrogram tree.
+    Args:
+        dend_tree: networkx directed graph that represents the taxonomy
+
+    Returns: dictionary of class membership for each node in the dendrogram tree
+    """
+    membership = {}
+    for node in dend_tree.nodes():
+        current = node
+        # Traverse up the tree until a node with no predecessors is found
+        while True:
+            predecessors = list(dend_tree.predecessors(current))
+            if not predecessors or (len(predecessors) == 1 and predecessors[0] == ""):
+                root = current
+                break
+            # If multiple, choose the first predecessor arbitrarily
+            current = predecessors[0]
+        membership[node] = root
+    return membership

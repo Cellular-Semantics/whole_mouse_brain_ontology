@@ -11,7 +11,7 @@ from dendrogram_tools import cas_json_2_nodes_n_edges, read_json_file
 from template_generation_utils import get_synonyms_from_taxonomy, read_taxonomy_config, \
     get_subtrees, generate_dendrogram_tree, read_taxonomy_details_yaml, read_csv_to_dict,\
     read_csv, read_gene_data, read_markers, get_gross_cell_type, merge_tables, read_allen_descriptions, \
-    extract_taxonomy_name_from_path, get_collapsed_nodes, read_one_concept_one_name_tsv, format_cell_label
+    extract_taxonomy_name_from_path, get_collapsed_nodes, read_one_concept_one_name_tsv, format_cell_label, get_class_membership_dict
 from disclaimer_generator import (get_anatomical_location_inconsistencies, get_location_symbols,
                                   get_neurotransmitter_inconsistencies)
 from nomenclature_tools import nomenclature_2_nodes_n_edges
@@ -66,6 +66,7 @@ def generate_ind_template(taxonomy_file_path, output_filepath):
     id_factory = PCLIdFactory(read_json_file(taxonomy_file_path))
     dend_tree = generate_dendrogram_tree(dend)
     nodes_to_collapse = get_collapsed_nodes(dend_tree, all_nodes)
+    class_membership = get_class_membership_dict(dend_tree)
 
     excluded_classes = get_excluded_classes(taxon)
     atlas_payloads = read_abc_urls(ABC_URLS_MAPPING)
@@ -95,8 +96,11 @@ def generate_ind_template(taxonomy_file_path, output_filepath):
                            'Comment': "A rdfs:comment",
                            'Aliases': "A oboInOwl:hasRelatedSynonym SPLIT=|",
                            'Rank': "A 'cell_type_rank' SPLIT=|",
-                           'Atlas_url': "AT 'ABC atlas reference'^^xsd:anyURI",
+                           'Atlas_url': "A rdfs:seeAlso",
                            'Atlas_url_label': ">A rdfs:label",
+                           'Matrix_url': "A rdfs:seeAlso",
+                           'Matrix_url_label': ">A rdfs:label",
+                           'Matrix_url_comment': ">A rdfs:comment",
                            }
     dl = [robot_template_seed]
 
@@ -131,6 +135,16 @@ def generate_ind_template(taxonomy_file_path, output_filepath):
             d["Atlas_url"] = "https://knowledge.brain-map.org/abcatlas#" + atlas_payloads.get(
                 o["cell_set_accession"])
             d["Atlas_url_label"] = "Reference data on Allen Brain Cell Atlas"
+        d["Matrix_url"] = "https://purl.brain-bican.org/taxonomy/CCN20230722/" + class_membership[o["cell_set_accession"]] + ".h5ad"
+        d["Matrix_url_label"] = "h5ad data file for " + class_membership[o["cell_set_accession"]]
+        d["Matrix_url_comment"] = "Warning large data file!"
+
+        if "author_annotation_fields" in o:
+            for k, v in o["author_annotation_fields"].items():
+                if v and str(v).lower() != "none":
+                    d[k] = v
+                    if k not in robot_template_seed.keys():
+                        robot_template_seed[k] = "A https://purl.brain-bican.org/taxonomy/CCN20230722#" + k.replace(" ", "_").replace(".", "_")
 
         dl.append(d)
     robot_template = pd.DataFrame.from_records(dl)
@@ -151,6 +165,7 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
         name_curations = read_one_concept_one_name_tsv(NAME_CURATION_MAPPING)
         # subtrees = get_subtrees(dend_tree, taxonomy_config)
         all_pref_labels = get_all_unique_cell_labels(dend, nodes_to_collapse, all_names, name_curations)
+        class_membership = get_class_membership_dict(dend_tree)
 
         gene_db = read_gene_dbs(TEMPLATES_FOLDER_PATH)
         ns_forest_markers = read_nsforest_markers_dataframe()
@@ -161,11 +176,13 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
         mba_labels = get_mba_labels_map()
         anatomical_loc_inconsistencies = get_anatomical_location_inconsistencies(CLUSTER_ANNOTATIONS_PATH)
         nt_inconsistencies = get_neurotransmitter_inconsistencies(CLUSTER_ANNOTATIONS_PATH)
+        atlas_payloads = read_abc_urls(ABC_URLS_MAPPING)
 
         class_seed = ['defined_class',
                       'prefLabel',
                       'Taxonomy_label',
                       'Alias_citations',
+                      'Short_form_citation',
                       'Synonyms_from_taxonomy',
                       'Gross_cell_type',
                       'Taxon',
@@ -194,7 +211,11 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                       'MBA_text',
                       'Subclass_markers',
                       'Location_disclaimer',
-                      'NT_disclaimer'
+                      'NT_disclaimer',
+                      'Atlas_url',
+                      'Atlas_url_label',
+                      'Matrix_url',
+                      'Class_name'
                       ]
         class_template = []
         obsolete_template = []
@@ -228,14 +249,17 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                 if collapsed:
                     cluster_id = "|".join(node["chain"])
                 d['Cluster_IDs'] = cluster_id
-                d['Labelset'] = node['labelset']
+                d['Labelset'] = node['labelset'].capitalize()
                 d['Dataset_url'] = "https://purl.brain-bican.org/taxonomy/CCN20230722"
+                reference_paper = "https://doi.org/10.1038/s41586-023-06812-z"
                 if 'rationale_dois' in node and node['rationale_dois']:
-                    alias_citations = [citation.strip() for citation in node['rationale_dois']
-                                       if citation and citation.strip()]
+                    alias_citations = {citation.strip() for citation in node['rationale_dois']
+                                       if citation and citation.strip()}
+                    alias_citations.add(reference_paper)
                     d["Alias_citations"] = "|".join(alias_citations)
                 else:
-                    d["Alias_citations"] = ""
+                    d["Alias_citations"] = reference_paper
+                d["Short_form_citation"] = "Yao et al. (2023), Whole Mouse Brain"
                 if node.get('parent_cell_set_accession'):
                     d['Parent_label'] = all_pref_labels[node['parent_cell_set_accession']]
                 markers_str = node["author_annotation_fields"].get(f"{node['labelset']}.markers.combo", "")
@@ -304,9 +328,14 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                     ccf_broad_freq = cluster_annotations[node['cell_set_accession']]["CCF_broad.freq"]
                     ccf_acronym_freq = cluster_annotations[node['cell_set_accession']]["CCF_acronym.freq"]
 
-                    index = 1
-                    index = populate_mba_relations(ccf_broad_freq, BROAD_REGION, d, index, mba_symbols, mba_labels, missed_regions)
-                    populate_mba_relations(ccf_acronym_freq, ACRONYM_REGION, d, index, mba_symbols, mba_labels, missed_regions)
+                    # BROAD_REGION:
+                    broad_mbas, mba_text = populate_mba_relations(ccf_broad_freq, BROAD_REGION, d, 1, mba_symbols, mba_labels, missed_regions)
+                    d['MBA'] = "|".join(broad_mbas)
+                    d['MBA_text'] = ", ".join(mba_text)
+                    # ACRONYM_REGION:
+                    acronym_mbas, mba_text = populate_mba_relations(ccf_acronym_freq, ACRONYM_REGION, d, len(broad_mbas) + 1, mba_symbols, mba_labels, missed_regions, broad_mbas)
+                    acronym_mbas = [acronym_mba for acronym_mba in acronym_mbas if acronym_mba not in broad_mbas]
+                    d['CCF_acronym_freq'] = "|".join(acronym_mbas)
 
                 d['MBA_assay'] = "EFO:0008992"
                 for missed_region in missed_regions:
@@ -329,6 +358,15 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                 if node["cell_set_accession"] in nt_inconsistencies:
                     inconsistent_nts = nt_inconsistencies[node["cell_set_accession"]]
                     d["NT_disclaimer"] = "Warning: Despite its name, {name} does not secrete the neurotransmitter {nt}, as assessed by expression of multiple marker genes.".format(name=d["prefLabel"], nt=", ".join(inconsistent_nts))
+
+                if atlas_payloads.get(o["cell_set_accession"]):
+                    d["Atlas_url"] = "https://knowledge.brain-map.org/abcatlas#" + atlas_payloads.get(
+                        o["cell_set_accession"])
+                    d["Atlas_url_label"] = "Reference data on Allen Brain Cell Atlas"
+
+                d["Matrix_url"] = "https://purl.brain-bican.org/taxonomy/CCN20230722/" + \
+                                  class_membership[node["cell_set_accession"]] + ".h5ad"
+                d["Class_name"] = class_membership[node["cell_set_accession"]]
 
                 for k in class_seed:
                     if not (k in d.keys()):
@@ -409,19 +447,41 @@ def get_unique_cell_label(o, node, generated_labels, all_names, name_curations, 
     return cell_label
 
 
-def populate_mba_relations(ccf_broad_freq, approach, d, index, mba_symbols, mba_labels, missed_regions):
+def populate_mba_relations(ccf_text, approach, d, index, mba_symbols, mba_labels, missed_regions, existing_mbas=None):
+    """
+
+    Args:
+        ccf_text: ccf_broad_freq or ccf_acronym_freq text
+        approach: broad vs acronym
+        d: data node
+        index: MBA id index offset
+        mba_symbols: dict of MBA symbols - ids
+        mba_labels: dict of MBA ids - labels
+        missed_regions: regions couldn't be mapped
+        existing_mbas: list of existing mbas to avoid duplication
+
+    Returns: list of mba ids and mba percentage text
+
+    """
+    if existing_mbas is None:
+        existing_mbas = []
     regions = [{"region": item.split(":")[0].strip(),
                 "percentage": float(item.split(":")[1].strip()) if ":" in item else 0}
-               for item in ccf_broad_freq.split(",")]
+               for item in ccf_text.split(",")]
     mbas = []
     mba_text = []
     for region in regions:
-        if region["percentage"] >= 0.05 and region["region"] != "NA":
-            if region["region"] in mba_symbols:
-                mbas.append(mba_symbols[region["region"]])
-                mba_text.append(mba_labels[mba_symbols[region["region"]]] + " (" + region["region"] + ", " + str(region["percentage"]) + ")")
-            else:
-                missed_regions.add(region["region"])
+        if region["percentage"] >= 0.05:
+            region_label = str(region["region"]).strip()
+            if region_label.lower() == "na":
+                region_label = 'root'  # handle NA as brain
+            if mba_symbols.get(region_label) not in existing_mbas:
+                if region_label in mba_symbols:
+                    mbas.append(mba_symbols[region_label])
+                    mba_text.append(mba_labels[mba_symbols[region_label]] + " (" + str(region["region"]) + ", " + str(region["percentage"]) + ")")
+                    region["mba_id"] = mba_symbols[region_label]
+                else:
+                    missed_regions.add(region["region"])
 
     # Sort mbas and mba_text together
     sorted_pairs = sorted(zip(mbas, mba_text))
@@ -429,15 +489,11 @@ def populate_mba_relations(ccf_broad_freq, approach, d, index, mba_symbols, mba_
 
     for i, mba in enumerate(mbas, start=index):
         d['MBA_' + str(i)] = mba
-        d['MBA_' + str(i) + '_cell_percentage'] = regions[i - index]["percentage"]
+        region = [reg for reg in regions if reg.get("mba_id") == mba][0]
+        d['MBA_' + str(i) + '_cell_percentage'] = region["percentage"]
         d['MBA_' + str(i) + '_comment'] = "Location assignment based on {}.".format(approach)
 
-    if approach == BROAD_REGION:
-        d['MBA'] = "|".join(mbas)
-        d['MBA_text'] = ", ".join(mba_text)
-    elif approach == ACRONYM_REGION:
-        d['CCF_acronym_freq'] = "|".join(mbas)
-    return index
+    return mbas, mba_text
 
 
 def generate_curated_class_template(taxonomy_file_path, output_filepath):
