@@ -154,8 +154,8 @@ data_vars:
   Matrix_url: "xsd:string"
   Short_form_citation: "xsd:string"
   Class_name: "xsd:string"
-  marker_gene_set_confidence_score: "xsd:float"
-  ws_marker_gene_set_confidence_score: "xsd:float"
+  marker_gene_set_confidence: "xsd:float"
+  ws_marker_gene_set_confidence: "xsd:float"
   nsforest_marker_gene_set_1_confidence: "xsd:float"
   nsforest_marker_gene_set_2_confidence: "xsd:float"
 
@@ -415,13 +415,13 @@ annotations:
     vars:
       - prefLabel
       - Taxon_abbv
-  - annotationProperty: 'has minimal marker'
-    multi_clause:
-      sep: " "
-      clauses:
-        - text: "%s"
-          vars:
-            - Minimal_markers
+#  - annotationProperty: 'has minimal marker'
+#    multi_clause:
+#      sep: " "
+#      clauses:
+#        - text: "%s"
+#          vars:
+#            - Minimal_markers
   - annotationProperty: rdfsComment
     multi_clause:
       sep: " "
@@ -655,14 +655,14 @@ annotations:
       - annotationProperty: fbetaConfidenceScore
         text: "%s"
         vars:
-          - marker_gene_set_confidence_score
+          - marker_gene_set_confidence
   - annotationProperty: has_marker_set
     var: ws_marker_gene_set
     annotations:
       - annotationProperty: fbetaConfidenceScore
         text: "%s"
         vars:
-          - ws_marker_gene_set_confidence_score
+          - ws_marker_gene_set_confidence
   - annotationProperty: has_marker_set
     var: nsforest_marker_gene_set_1
     annotations:

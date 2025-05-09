@@ -1161,7 +1161,7 @@ def generate_nsforest_marker_gene_set_template(taxonomy_file_path, output_filepa
                     d['recall'] = filtered_df['recall'].values[0]
                     d['Algorithm'] = "NSforest"
                     d['Source'] = "NSforest"
-                    d['Reference'] = "https://doi.org/10.5281/zenodo.11165918"
+                    d['Reference'] = "https://doi.org/10.1101/2020.09.23.308932"
                     d['Cell_label'] = o['cell_label']
                     d['Labelset'] = o['labelset']
                     if d['defined_class'] in atlas_payloads:
