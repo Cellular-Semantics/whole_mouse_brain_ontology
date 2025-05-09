@@ -8,7 +8,7 @@ import { decodeKiwiPayload, encodeAsKiwiQuery} from './kiwi-url-utils';
  * @param annotation - The annotation object containing labelset and cell_label.
  * @returns The generated scRNAseq frame object.
  */
-function generateScRNAseqFrame(annotation: any): Visualization {
+function generateScRNAseqFrame(annotation: any, genes_filter: string[] = []): Visualization {
   const { metadataFilters, categoryId } = generateMetadataFilters(annotation);
   return {
     dataCollectionId: 'AP8JNN5LYABGVMGKY1B',
@@ -19,7 +19,7 @@ function generateScRNAseqFrame(annotation: any): Visualization {
       center: { x: 6.2308759689331055, y: 4.501317501068115 },
       size: { x: 63.66279983520508, y: 41.63688659667969 },
     },
-    genes: [],
+    genes: genes_filter.map(g => ({ symbol: g })),
     colorBy: {
       mode: 'METADATA',
       value: categoryId ?? undefined,
@@ -44,7 +44,7 @@ function generateScRNAseqFrame(annotation: any): Visualization {
 * @param annotation - The annotation object containing labelset and cell_label.
 * @returns The generated MerFish frame object.
 */
-function generateMerFishFrame(annotation: any): Visualization {
+function generateMerFishFrame(annotation: any, genes_filter: string[] = []): Visualization {
   const { metadataFilters, categoryId } = generateMetadataFilters(annotation);
   return {
     dataCollectionId: 'K9JN23P24KQCGK9U75A',
@@ -62,7 +62,7 @@ function generateMerFishFrame(annotation: any): Visualization {
       hideUnselected: false,
       offsetIndex: 0,
     },
-    genes: [],
+    genes: genes_filter.map(g => ({ symbol: g })),
     colorBy: {
       mode: 'METADATA',
       value: categoryId ?? undefined,
@@ -125,9 +125,9 @@ function generateMetadataFilters(annotation: any) {
  * @param annotation - The annotation object containing labelset and cell_label.
  * @returns The generated ExplorePageInitPayload object.
  */
-function createPayload(annotation: any): ExplorePageInitPayload {
-  const scRNAseqFrame = generateScRNAseqFrame(annotation);
-  const merFishFrame = generateMerFishFrame(annotation);
+export function createPayload(annotation: any, genes_filter: string[] = []): ExplorePageInitPayload {
+  const scRNAseqFrame = generateScRNAseqFrame(annotation, genes_filter);
+  const merFishFrame = generateMerFishFrame(annotation, genes_filter);
 
   return {
     frames: [scRNAseqFrame, merFishFrame],
@@ -140,7 +140,7 @@ function createPayload(annotation: any): ExplorePageInitPayload {
  * @param outputPathArg - The path where the payload dictionary will be written.
  * @param payloadDictionary - The dictionary containing payloads to write.
  */
-function writePayloadToFile(outputPathArg: string, payloadDictionary: Record<string, any>): void {
+export function writePayloadToFile(outputPathArg: string, payloadDictionary: Record<string, any>): void {
   const outputPath = resolve(outputPathArg);
   writeFileSync(outputPath, JSON.stringify(payloadDictionary, null, 2), 'utf8');
   console.log(`Payload dictionary written to ${outputPath}`);

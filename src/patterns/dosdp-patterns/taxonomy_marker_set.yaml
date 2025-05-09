@@ -22,17 +22,29 @@ data_vars:
   Marker_set_of: "xsd:string"
   Species_abbv: "xsd:string"
   FBeta_confidence_score: "xsd:float"
+  precision: "xsd:float"
+  recall: "xsd:float"
   Algorithm: "xsd:string"
+  Source: "xsd:string"
+  Reference: "xsd:anyURI"
+  Markers_label: "xsd:string"
+  Atlas_url: "xsd:anyURI"
+  Atlas_url_label: "xsd:string"
 
 annotationProperties:
   fbetaConfidenceScore: "STATO:0000663"
+  has_precision: "STATO:0000416"
+  has_recall: "PCL:0010068"
   algorithm: "IAO:0000064"
+  hasDbXref: "oboInOwl:hasDbXref"
+  seeAlso: "rdfs:seeAlso"
+  rdfsLabel: "rdfs:label"
 
 name:
-   text: "Marker set of %s (%s)."
+   text: "%s (%s)."
    vars:
-      - Marker_set_of
-      - Species_abbv
+      - Markers_label
+      - Source
 
 logical_axioms:
    - axiom_type: subClassOf
@@ -56,7 +68,28 @@ annotations:
     text: "%s"
     vars:
       - FBeta_confidence_score
+  - annotationProperty: has_precision
+    text: "%s"
+    vars:
+      - precision
+  - annotationProperty: has_recall
+    text: "%s"
+    vars:
+      - recall
   - annotationProperty: algorithm
     text: "%s"
     vars:
       - Algorithm
+  - annotationProperty: hasDbXref
+    text: "%s"
+    vars:
+      - Reference
+  - annotationProperty: seeAlso
+    text: "%s"
+    vars:
+      - Atlas_url
+    annotations:
+      - annotationProperty: rdfsLabel
+        text: "%s"
+        vars:
+          - Atlas_url_label

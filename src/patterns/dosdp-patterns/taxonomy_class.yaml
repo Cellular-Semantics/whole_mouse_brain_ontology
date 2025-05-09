@@ -20,7 +20,7 @@ relations:
   has_soma_location: "RO:0002100"
   bearer_of: "RO:0000053"
   has_exemplar_data: "RO:0015001"
-  has_characterizing_marker_set: "RO:0015004"
+#  has_characterizing_marker_set: "RO:0015004"
   capable_of: "RO:0002215"
 
 annotationProperties:
@@ -38,6 +38,8 @@ annotationProperties:
   cell_ratio: "PCL:0010065"
   'has minimal marker': "PCL:0010066"
   evidence: "oboInOwl:evidence"
+  has_marker_set: "PCL:0010067"
+  fbetaConfidenceScore: "STATO:0000663"
 
 list_vars:
   Expresses: "'thing'"
@@ -49,7 +51,6 @@ list_vars:
   NT: "'thing'"
   NT_markers: "'sequence_feature'"
   Individuals: "'thing'"
-  nsforest_marker_gene_sets: "'thing'"
 
 vars:
   Classification: "'cell'"
@@ -59,7 +60,11 @@ vars:
   Projection_type: "'projection type'"
   part_of: "'thing'"
   has_soma_location: "'thing'"
+  evidence_marker_gene_set: "'thing'"
   marker_gene_set: "'thing'"
+  ws_marker_gene_set: "'thing'"
+  nsforest_marker_gene_set_1: "'thing'"
+  nsforest_marker_gene_set_2: "'thing'"
   CL: "'cell'"
   Nomenclature_Layers: "'layer of neocortex'"
   Nomenclature_Projection: "'projection type'"
@@ -149,6 +154,10 @@ data_vars:
   Matrix_url: "xsd:string"
   Short_form_citation: "xsd:string"
   Class_name: "xsd:string"
+  marker_gene_set_confidence_score: "xsd:float"
+  ws_marker_gene_set_confidence_score: "xsd:float"
+  nsforest_marker_gene_set_1_confidence: "xsd:float"
+  nsforest_marker_gene_set_2_confidence: "xsd:float"
 
 internal_vars:
   - var_name: Minimal_markers_cat
@@ -332,17 +341,17 @@ logical_axioms:
      text: "'has_soma_location' some %s"
      vars:
        - Nomenclature_Layers
-   - axiom_type: subClassOf
-     text: "'has_characterizing_marker_set' some %s"
-     vars:
-        - marker_gene_set
-   - axiom_type: subClassOf
-     multi_clause:
-       sep: " and "
-       clauses:
-         - text: "'has_characterizing_marker_set' some %s"
-           vars:
-             - nsforest_marker_gene_sets
+#   - axiom_type: subClassOf
+#     text: "'has_characterizing_marker_set' some %s"
+#     vars:
+#        - marker_gene_set
+#   - axiom_type: subClassOf
+#     multi_clause:
+#       sep: " and "
+#       clauses:
+#         - text: "'has_characterizing_marker_set' some %s"
+#           vars:
+#             - nsforest_marker_gene_sets
    - axiom_type: subClassOf
      multi_clause:
        sep: " and "
@@ -638,3 +647,33 @@ annotations:
           - MBA_15_cell_percentage
       - annotationProperty: assay
         var: MBA_assay
+  - annotationProperty: has_marker_set
+    var: evidence_marker_gene_set
+  - annotationProperty: has_marker_set
+    var: marker_gene_set
+    annotations:
+      - annotationProperty: fbetaConfidenceScore
+        text: "%s"
+        vars:
+          - marker_gene_set_confidence_score
+  - annotationProperty: has_marker_set
+    var: ws_marker_gene_set
+    annotations:
+      - annotationProperty: fbetaConfidenceScore
+        text: "%s"
+        vars:
+          - ws_marker_gene_set_confidence_score
+  - annotationProperty: has_marker_set
+    var: nsforest_marker_gene_set_1
+    annotations:
+      - annotationProperty: fbetaConfidenceScore
+        text: "%s"
+        vars:
+          - nsforest_marker_gene_set_1_confidence
+  - annotationProperty: has_marker_set
+    var: nsforest_marker_gene_set_2
+    annotations:
+      - annotationProperty: fbetaConfidenceScore
+        text: "%s"
+        vars:
+          - nsforest_marker_gene_set_2_confidence
