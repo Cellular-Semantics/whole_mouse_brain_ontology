@@ -3,7 +3,11 @@ import os
 import csv
 import networkx as nx
 import json
-import sys
+import copy
+import re
+
+from pandas.core.common import all_none
+
 import pcl_id_factory
 
 from dendrogram_tools import tree_recurse
@@ -375,7 +379,7 @@ def read_markers(marker_path, gene_names):
 #     return gross_cell_type
 
 def get_gross_cell_type(_id, nodes):
-    gross_cell_type = 'CL:0000540'
+    gross_cell_type = 'CL:0000000'
     for node in nodes:
         if _id == node['cell_set_accession']:
             if 'cell_ontology_term_id' in node:
@@ -417,9 +421,10 @@ def merge_tables(base_tsv, extension_tsv, output_filepath):
 
             row = list()
             for column in merged_headers:
-                row.append(row_data[column])
+                row.append(row_data.get(column, ""))
 
-            writer.writerow(row)
+            if not extension[key].get("Exclude_from_ontology", "False").strip().lower() == "true":
+                writer.writerow(row)
 
 
 def migrate_manual_curations(source_tsv, target_tsv, migrate_columns, output_filepath, use_accession_ids=False):
@@ -491,3 +496,177 @@ def extract_taxonomy_name_from_path(taxonomy_file_path):
         raise ValueError("Unsupported taxonomy file extension. Should be csv or json, but was: " +
                          path_parts[len(path_parts) - 1].split(".")[1])
     return str(taxon)
+
+def find_singleton_chains(treex):
+    """
+    Finds the node chains composed of linked nodes who has only one child in the given networkx tree (DiGraph).
+    Args:
+        treex: networkx directed graph that represents the taxonomy
+    """
+    def _follow_chain(start):
+        chain = [start]
+        while treex.out_degree(chain[-1]) == 1:
+            next_node = next(iter(treex.successors(chain[-1])))
+            chain.append(next_node)
+        return chain
+
+    chains = []
+
+    # pick roots
+    roots = [n for n in treex.nodes if treex.in_degree(n) == 0]
+    # pick all branch starts: nodes whose parent has multiple children
+    branch_starts = [
+        node for node in treex.nodes
+        if any(treex.out_degree(pred) > 1 for pred in treex.predecessors(node))
+    ]
+
+    search_roots = roots + branch_starts
+    for root in search_roots:
+        chain = _follow_chain(root)
+        if len(chain) > 1:
+            chains.append(chain)
+
+    return chains
+
+def get_collapsed_nodes(dend_tree, all_nodes):
+    """
+    The WMB taxonomy has many cases where there are multiple terms referring to the same set of
+    cells. The Cell Ontology requires one name per concept. Returns the list of nodes that should
+    be collapsed into a single node along with the node to be collapsed into (merged chain node).
+
+    Requirement: https://github.com/Cellular-Semantics/whole_mouse_brain_ontology/issues/46
+    Args:
+        dend_tree: networkx DiGraph representing the taxonomy
+        all_nodes: list of all nodes in the dendrogram
+
+    Returns: dictionary of nodes to be collapsed into a single node. Value is the node to be
+    collapsed into which is the deep merged node of the chain.
+    """
+    collapse_dict = {}
+    chains = find_singleton_chains(dend_tree)
+    for chain in chains:
+        merged_node = copy.deepcopy(all_nodes[chain[-1]])
+        for node_index in reversed(chain[:-1]):
+            merged_node = deep_merge_dicts(merged_node, all_nodes[node_index])
+        # use the cell_label and label set of the highest node in the chain
+        merged_node['taxonomy_cell_label'] = merged_node['cell_label']
+        merged_node['cell_label'] = all_nodes[chain[0]]['cell_label']
+        merged_node['parent_cell_set_accession'] = all_nodes[chain[0]].get('parent_cell_set_accession')
+        merged_node['chain'] = chain
+        for node_to_collapse in chain:
+            collapse_dict[node_to_collapse] = merged_node
+
+
+    return collapse_dict
+
+def deep_merge_dicts(base, updates):
+    """
+    Merges two dictionaries deeply. If a key exists in both dictionaries, the value in the updates dictionary is used.
+    Args:
+        base: base dictionary
+        updates: dictionary to update the base dictionary
+
+    Returns: merged dictionary
+    """
+    for key, value in updates.items():
+        if isinstance(value, dict) and key in base and isinstance(base[key], dict):
+            deep_merge_dicts(base[key], value)
+        else:
+            if key in base:
+                if base[key] in ["", None, "None"]:
+                    base[key] = value
+            else:
+                base[key] = value
+    return base
+
+
+def read_one_concept_one_name_tsv(file_path):
+    """
+    Reads the one_concept_one_name tsv file and returns a dict of old cell set names mapped to the curated one.
+    Args:
+        file_path: path to the one_concept_one_name tsv file
+
+    Returns: dict of old cell set names mapped to the curated one
+    """
+    records = dict()
+    with open(file_path) as fd:
+        rd = csv.reader(fd, delimiter="\t", quotechar='"')
+        headers = next(rd)
+        if 'preferred_name' in headers:
+            preferred_name_index = headers.index('preferred_name')
+        elif 'Preferred Name' in headers:
+            preferred_name_index = headers.index('Preferred Name')
+        else:
+            raise ValueError("Preferred name column not found in the one_concept_one_name file.")
+        for row in rd:
+            preferred_name = row[preferred_name_index]
+            if preferred_name:
+                for index in range(preferred_name_index):
+                    if row[index]:
+                        records[row[index]] = preferred_name
+    return records
+
+
+def format_cell_label(cell_label, node, all_labels, generated_labels, is_collapsed=False, fail_on_duplicate=True):
+    """
+    Formats the cell labels to remove the heading numbers and making label unique by applying markers
+    Args:
+        cell_label: current name to format
+        node: all cell set data
+        all_labels: all cell set names in the taxonomy
+        generated_labels: all labels added to ontology
+        is_collapsed: if the cell set is part of a compressed chain
+        fail_on_duplicate: if True, raises an error if a unique name can't be found
+
+    Returns: formatted cell label
+    """
+    # remove the heading numbers
+    m = re.match("^0*([1-9][0-9]*) (.+)$", cell_label)
+    if m:
+        formatted_name = m.group(2).strip()
+    else:
+        formatted_name = cell_label.strip()
+    will_be_unique =  len([cell_label for cell_label in all_labels if cell_label.endswith(formatted_name)]) <= 1
+    if not is_collapsed and str(node["labelset"]).lower() == "cluster" and not will_be_unique:
+        marker_properties = ["cluster.markers.combo _within subclass_", "cluster.markers.combo", "cluster.TF.markers.combo", "supertype.markers.combo _within subclass_", "supertype.markers.combo"]
+        unified_markers = []
+        author_annotations = node["author_annotation_fields"]
+        for marker_property in marker_properties:
+            if marker_property in author_annotations and author_annotations[marker_property] != "None":
+                unified_markers.extend([marker.strip() for marker in author_annotations[marker_property].split(",") if marker.strip() not in unified_markers])
+        # apply one of the unified markers at a time till the name is unique
+        for marker in unified_markers:
+            # if len(marker) <= 8:
+            if marker not in formatted_name:
+                new_name = formatted_name + " " + marker
+                if new_name not in generated_labels:
+                    formatted_name = new_name
+                    break
+    if fail_on_duplicate and formatted_name in generated_labels:
+        raise ValueError("Couldn't find a unique name for: " + cell_label + " - " + node["cell_set_accession"])
+    if "none" in formatted_name.lower():
+        raise ValueError("Name contains 'none': " + cell_label)
+    return formatted_name
+
+
+def get_class_membership_dict(dend_tree):
+    """
+    Returns a dictionary of class membership for each node in the dendrogram tree.
+    Args:
+        dend_tree: networkx directed graph that represents the taxonomy
+
+    Returns: dictionary of class membership for each node in the dendrogram tree
+    """
+    membership = {}
+    for node in dend_tree.nodes():
+        current = node
+        # Traverse up the tree until a node with no predecessors is found
+        while True:
+            predecessors = list(dend_tree.predecessors(current))
+            if not predecessors or (len(predecessors) == 1 and predecessors[0] == ""):
+                root = current
+                break
+            # If multiple, choose the first predecessor arbitrarily
+            current = predecessors[0]
+        membership[node] = root
+    return membership

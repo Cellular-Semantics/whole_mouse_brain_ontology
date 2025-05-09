@@ -1,4 +1,5 @@
 Prefix(:=<http://purl.obolibrary.org/obo/PCL_>)
+Prefix(IAO:=<http://purl.obolibrary.org/obo/IAO_>)
 Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
@@ -10,11 +11,48 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 Ontology(<http://purl.obolibrary.org/obo/WMBO.owl>
 Import(<http://purl.obolibrary.org/obo/helper.owl>)
-Import(<http://purl.obolibrary.org/obo/pcl/imports/merged_import.owl>)
 Import(<http://purl.obolibrary.org/obo/bdscratch/patterns/definitions.owl>)
 Import(<http://purl.obolibrary.org/obo/components/all_templates.owl>)
-Annotation(dce:title "Full Mouse Brain Ontology")
+Import(<http://purl.obolibrary.org/obo/pcl/imports/merged_import.owl>)
+Annotation(<http://purl.obolibrary.org/obo/IAO_0000700> <http://purl.obolibrary.org/obo/PCL_0110001>)
+Annotation(<http://purl.obolibrary.org/obo/IAO_0000700> <http://purl.obolibrary.org/obo/PCL_0110002>)
+Annotation(<http://purl.obolibrary.org/obo/IAO_0000700> <http://purl.obolibrary.org/obo/PCL_0110003>)
+Annotation(<http://purl.obolibrary.org/obo/IAO_0000700> <http://purl.obolibrary.org/obo/PCL_0110004>)
+Annotation(<http://purl.obolibrary.org/obo/IAO_0000700> <http://purl.obolibrary.org/obo/PCL_0110005>)
+Annotation(<http://purl.obolibrary.org/obo/IAO_0000700> <http://purl.obolibrary.org/obo/PCL_0110006>)
+Annotation(<http://purl.obolibrary.org/obo/IAO_0000700> <http://purl.obolibrary.org/obo/PCL_0110007>)
+Annotation(<http://purl.obolibrary.org/obo/IAO_0000700> <http://purl.obolibrary.org/obo/PCL_0110008>)
+Annotation(<http://purl.obolibrary.org/obo/IAO_0000700> <http://purl.obolibrary.org/obo/PCL_0110009>)
+Annotation(<http://purl.obolibrary.org/obo/IAO_0000700> <http://purl.obolibrary.org/obo/PCL_0110010>)
+Annotation(<http://purl.obolibrary.org/obo/IAO_0000700> <http://purl.obolibrary.org/obo/PCL_0110011>)
+Annotation(<http://purl.obolibrary.org/obo/IAO_0000700> <http://purl.obolibrary.org/obo/PCL_0110012>)
+Annotation(<http://purl.obolibrary.org/obo/IAO_0000700> <http://purl.obolibrary.org/obo/PCL_0110013>)
+Annotation(<http://purl.obolibrary.org/obo/IAO_0000700> <http://purl.obolibrary.org/obo/PCL_0110014>)
+Annotation(<http://purl.obolibrary.org/obo/IAO_0000700> <http://purl.obolibrary.org/obo/PCL_0110016>)
+Annotation(<http://purl.obolibrary.org/obo/IAO_0000700> <http://purl.obolibrary.org/obo/PCL_0110017>)
+Annotation(<http://purl.obolibrary.org/obo/IAO_0000700> <http://purl.obolibrary.org/obo/PCL_0110018>)
+Annotation(<http://purl.obolibrary.org/obo/IAO_0000700> <http://purl.obolibrary.org/obo/PCL_0110019>)
+Annotation(<http://purl.obolibrary.org/obo/IAO_0000700> <http://purl.obolibrary.org/obo/PCL_0110020>)
+Annotation(<http://purl.obolibrary.org/obo/IAO_0000700> <http://purl.obolibrary.org/obo/PCL_0110023>)
+Annotation(<http://purl.obolibrary.org/obo/IAO_0000700> <http://purl.obolibrary.org/obo/PCL_0110024>)
+Annotation(<http://purl.obolibrary.org/obo/IAO_0000700> <http://purl.obolibrary.org/obo/PCL_0110026>)
+Annotation(<http://purl.obolibrary.org/obo/IAO_0000700> <http://purl.obolibrary.org/obo/PCL_0110027>)
+Annotation(<http://purl.obolibrary.org/obo/IAO_0000700> <http://purl.obolibrary.org/obo/PCL_0110028>)
+Annotation(<http://purl.obolibrary.org/obo/IAO_0000700> <http://purl.obolibrary.org/obo/PCL_0110029>)
+Annotation(<http://purl.obolibrary.org/obo/IAO_0000700> <http://purl.obolibrary.org/obo/PCL_0110030>)
+Annotation(<http://purl.obolibrary.org/obo/IAO_0000700> <http://purl.obolibrary.org/obo/PCL_0110031>)
+Annotation(<http://purl.obolibrary.org/obo/IAO_0000700> <http://purl.obolibrary.org/obo/PCL_0110275>)
+Annotation(<http://purl.obolibrary.org/obo/IAO_0000700> <http://purl.obolibrary.org/obo/PCL_0110276>)
+Annotation(<http://purl.obolibrary.org/obo/IAO_0000700> <http://purl.obolibrary.org/obo/PCL_0110390>)
+Annotation(<http://purl.obolibrary.org/obo/IAO_0000700> <http://purl.obolibrary.org/obo/PCL_0111755>)
+Annotation(<http://purl.obolibrary.org/obo/IAO_0000700> <http://purl.obolibrary.org/obo/PCL_0111756>)
+Annotation(<http://purl.obolibrary.org/obo/IAO_0000700> <http://purl.obolibrary.org/obo/PCL_0111765>)
+Annotation(<http://purl.obolibrary.org/obo/IAO_0000700> <http://purl.obolibrary.org/obo/PCL_0114944>)
+Annotation(<http://purl.obolibrary.org/obo/IAO_0000700> <http://purl.obolibrary.org/obo/PCL_0116986>)
+Annotation(<http://purl.obolibrary.org/obo/IAO_0000700> <http://purl.obolibrary.org/obo/PCL_0117692>)
+Annotation(dcterms:description "A data-driven cell-type ontology of the whole mouse brain.")
 Annotation(dcterms:license <http://creativecommons.org/licenses/by/4.0/>)
+Annotation(dcterms:title "Whole Mouse Brain Ontology")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000099>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_4023119>))
@@ -23,19 +61,22 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0070002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0070007>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PCL_0010001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PCL_0010002>))
-#Declaration(Class(<http://purl.obolibrary.org/obo/PCL_1000002>))
-#Declaration(Class(<http://purl.obolibrary.org/obo/PCL_1000004>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PR_P60041>))
-Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000956>))
 Declaration(Class(<http://purl.obolibrary.org/obo/SO_0001260>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000956>))
 Declaration(Class(<http://www.ebi.ac.uk/efo/EFO_0008992>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002100>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002215>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002292>))
-Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0015004>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0015001>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0015002>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0015003>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0015004>))
+Declaration(AnnotationProperty(rdfs:seeAlso))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/STATO_0000663>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/STATO_0000416>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000064>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000028>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010051>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010052>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010053>))
@@ -49,21 +90,32 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010060>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010061>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010062>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010063>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010064>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010065>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000028>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010066>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010067>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010068>))
 Declaration(AnnotationProperty(dce:contributor))
 Declaration(AnnotationProperty(dce:description))
 Declaration(AnnotationProperty(dce:title))
-Declaration(AnnotationProperty(dcterms:license))
-Declaration(AnnotationProperty(dcterms:title))
-Declaration(AnnotationProperty(dcterms:provenance))
 Declaration(AnnotationProperty(dcterms:description))
-Declaration(AnnotationProperty(dcterms:subject))
+Declaration(AnnotationProperty(dcterms:license))
+Declaration(AnnotationProperty(dcterms:provenance))
 Declaration(AnnotationProperty(dcterms:relation))
+Declaration(AnnotationProperty(dcterms:subject))
+Declaration(AnnotationProperty(dcterms:title))
 ############################
 #   Annotation Properties
 ############################
+
+AnnotationAssertion(rdfs:label rdfs:seeAlso "seeAlso")
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/STATO_0000663> "F-beta score")
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/STATO_0000416> "precision")
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000064> "algorithm")
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000028> "symbol")
 
 # Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010051> (cell_type_rank)
 
@@ -113,18 +165,25 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010061> "nuc
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010062> "fbeta_confidence_score")
 
-# Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010063> (some soma located in)
+# Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010063> (some_soma_located_in)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010063> "some_soma_located_in")
-
-# Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010064> (assay_label)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010064> "assay_label")
 
 # Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010065> (cell_ratio)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010065> "cell_ratio")
 
+# Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010066> (has minimal marker)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010066> "has minimal marker")
+
+# Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010067> (has_marker_set)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010067> "has_marker_set")
+
+# Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010068> (recall)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010068> "recall")
 
 ############################
 #   Object Properties
@@ -142,20 +201,35 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002215> "capa
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002292> "expresses")
 
+# Object Property: <http://purl.obolibrary.org/obo/RO_0015001> (has exemplar data)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0015001> "has exemplar data")
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0015002> (exemplar data of)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0015002> "exemplar data of")
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0015003> (subcluster of)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0015003> "subcluster of")
+
 # Object Property: <http://purl.obolibrary.org/obo/RO_0015004> (has characterizing marker set)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0015004> "has characterizing marker set")
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000028> "symbol")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0015001> "has exemplar data")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0015002> "exemplar data of")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0015003> "subcluster of")
+
 
 ############################
 #   Classes
 ############################
 
-AnnotationAssertion(rdfs:label <http://www.ebi.ac.uk/efo/EFO_0008992> "MERFISH")
+# Class: <http://purl.obolibrary.org/obo/SO_0001260> (sequence_collection)
+
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SO_0001260> "sequence_collection")
+
+# Class: <http://www.ebi.ac.uk/efo/EFO_0008992> (MERFISH)
+
+AnnotationAssertion(rdfs:label <http://www.ebi.ac.uk/efo/EFO_0008992> "MERFISH")
+
 
 )
