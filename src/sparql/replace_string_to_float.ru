@@ -15,7 +15,7 @@ INSERT {
 }
 
 WHERE {
-    VALUES ?property {obo:PCL_0010065 obo:STATO_0000663}
+    VALUES ?property {obo:PCL_0010065 obo:STATO_0000663 obo:STATO_0000416 obo:PCL_0010068}
     ?sub ?property ?value .
     FILTER(Datatype(?value)!=xsd:float)
     BIND(xsd:float(?value) as ?new_value)

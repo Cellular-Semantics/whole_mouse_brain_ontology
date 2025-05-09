@@ -21,6 +21,8 @@ OWL_OBSOLETE_CLASS_FILES = $(patsubst %, components/%_obsolete_class.owl, $(JOBS
 OWL_CLASS_HOMOLOGOUS_FILES = $(patsubst %, components/%_class_homologous.owl, $(JOBS))
 OWL_MARKER_SET_FILES = $(patsubst %, components/%_marker_set.owl, $(JOBS))
 OWL_NSF_MARKER_SET_FILES = $(patsubst %, components/%_nsforest_marker_set.owl, $(JOBS))
+OWL_WS_MARKER_SET_FILES = $(patsubst %, components/%_within_subclass_marker_set.owl, $(JOBS))
+OWL_EVIDENCE_MARKER_SET_FILES = $(patsubst %, components/%_evidence_marker_set.owl, $(JOBS))
 GENE_FILES = $(patsubst %, mirror/%.owl, $(GENE_LIST))
 OWL_APP_SPECIFIC_FILES = $(patsubst %, components/%_app_specific.owl, $(JOBS))
 OWL_DATASET_FILES = $(patsubst %, components/%_dataset.owl, $(JOBS))
@@ -31,7 +33,7 @@ PCL_LEGACY_FILE = components/pcl-legacy.owl
 OWL_OBSOLETE_INDVS = $(patsubst %, components/%_obsolete_indvs.owl, $(JOBS))
 OWL_OBSOLETE_TAXONOMY_FILE = components/taxonomies_obsolete.owl
 
-CLEANFILES=$(MAIN_FILES) $(SRCMERGED) $(EDIT_PREPROCESSED) $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_OBSOLETE_CLASS_FILES) $(OWL_MARKER_SET_FILES) $(OWL_NSF_MARKER_SET_FILES) $(COMPONENTSDIR)/wmb_taxonomy.owl
+CLEANFILES=$(MAIN_FILES) $(SRCMERGED) $(EDIT_PREPROCESSED) $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_OBSOLETE_CLASS_FILES) $(OWL_MARKER_SET_FILES) $(OWL_NSF_MARKER_SET_FILES) $(OWL_WS_MARKER_SET_FILES) $(OWL_EVIDENCE_MARKER_SET_FILES) $(COMPONENTSDIR)/wmb_taxonomy.owl
 
 # overriding to add prefixes
 $(PATTERNDIR)/pattern.owl: $(ALL_PATTERN_FILES)
@@ -99,6 +101,12 @@ $(PATTERNDIR)/data/default/%_marker_set.txt: $(PATTERNDIR)/data/default/%_marker
 $(PATTERNDIR)/data/default/%_nsforest_marker_set.txt: $(PATTERNDIR)/data/default/%_nsforest_marker_set.tsv .FORCE
 	if [ $(PAT) = true ]; then $(DOSDPT) terms --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_marker_set.yaml --obo-prefixes=true --prefixes=template_prefixes.yaml --outfile=$@; fi
 
+$(PATTERNDIR)/data/default/%_within_subclass_marker_set.txt: $(PATTERNDIR)/data/default/%_within_subclass_marker_set.tsv .FORCE
+	if [ $(PAT) = true ]; then $(DOSDPT) terms --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_marker_set.yaml --obo-prefixes=true --prefixes=template_prefixes.yaml --outfile=$@; fi
+
+$(PATTERNDIR)/data/default/%_evidence_marker_set.txt: $(PATTERNDIR)/data/default/%_evidence_marker_set.tsv .FORCE
+	if [ $(PAT) = true ]; then $(DOSDPT) terms --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_marker_set.yaml --obo-prefixes=true --prefixes=template_prefixes.yaml --outfile=$@; fi
+
 #$(PATTERNDIR)/data/default/Protein2GeneExpression.txt: $(PATTERNDIR)/data/default/Protein2GeneExpression.tsv .FORCE
 #	if [ $(PAT) = true ]; then $(DOSDPT) terms --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/Protein2GeneExpression.yaml --obo-prefixes=true --prefixes=template_prefixes.yaml --outfile=$@; fi
 
@@ -121,7 +129,7 @@ $(COMPONENTSDIR)/wmb_taxonomy.owl:
 
 # merge all templates except application specific ones
 .PHONY: $(COMPONENTSDIR)/all_templates.owl
-$(COMPONENTSDIR)/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_OBSOLETE_CLASS_FILES) $(OWL_MARKER_SET_FILES) $(OWL_NSF_MARKER_SET_FILES) $(COMPONENTSDIR)/wmb_taxonomy.owl
+$(COMPONENTSDIR)/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_OBSOLETE_CLASS_FILES) $(OWL_MARKER_SET_FILES) $(OWL_NSF_MARKER_SET_FILES) $(OWL_WS_MARKER_SET_FILES) $(OWL_EVIDENCE_MARKER_SET_FILES) $(COMPONENTSDIR)/wmb_taxonomy.owl
 	$(ROBOT) merge $(patsubst %, -i %, $(filter-out $(OWL_APP_SPECIFIC_FILES), $^)) \
 	 --collapse-import-closure false \
 	 annotate --ontology-iri ${BDS_BASE}$@  \
@@ -160,6 +168,16 @@ components/%_marker_set.owl: $(PATTERNDIR)/data/default/%_marker_set.tsv $(PATTE
         --ontology=$(SRC) --obo-prefixes=true --outfile=$@
 
 components/%_nsforest_marker_set.owl: $(PATTERNDIR)/data/default/%_nsforest_marker_set.tsv $(PATTERNDIR)/dosdp-patterns/taxonomy_marker_set.yaml $(SRC)
+	$(DOSDPT) generate --catalog=catalog-v001.xml --prefixes=template_prefixes.yaml \
+        --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_marker_set.yaml \
+        --ontology=$(SRC) --obo-prefixes=true --outfile=$@
+
+components/%_within_subclass_marker_set.owl: $(PATTERNDIR)/data/default/%_within_subclass_marker_set.tsv $(PATTERNDIR)/dosdp-patterns/taxonomy_marker_set.yaml $(SRC)
+	$(DOSDPT) generate --catalog=catalog-v001.xml --prefixes=template_prefixes.yaml \
+        --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_marker_set.yaml \
+        --ontology=$(SRC) --obo-prefixes=true --outfile=$@
+
+components/%_evidence_marker_set.owl: $(PATTERNDIR)/data/default/%_evidence_marker_set.tsv $(PATTERNDIR)/dosdp-patterns/taxonomy_marker_set.yaml $(SRC)
 	$(DOSDPT) generate --catalog=catalog-v001.xml --prefixes=template_prefixes.yaml \
         --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_marker_set.yaml \
         --ontology=$(SRC) --obo-prefixes=true --outfile=$@

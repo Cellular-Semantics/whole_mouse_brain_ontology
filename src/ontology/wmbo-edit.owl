@@ -72,6 +72,10 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0015001>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0015002>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0015003>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0015004>))
+Declaration(AnnotationProperty(rdfs:seeAlso))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/STATO_0000663>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/STATO_0000416>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000064>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000028>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010051>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010052>))
@@ -88,6 +92,8 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010062>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010063>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010065>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010066>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010067>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010068>))
 Declaration(AnnotationProperty(dce:contributor))
 Declaration(AnnotationProperty(dce:description))
 Declaration(AnnotationProperty(dce:title))
@@ -100,9 +106,14 @@ Declaration(AnnotationProperty(dcterms:title))
 ############################
 #   Annotation Properties
 ############################
+
 AnnotationAssertion(rdfs:label rdfs:seeAlso "seeAlso")
 
-# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000028> (symbol)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/STATO_0000663> "F-beta score")
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/STATO_0000416> "precision")
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000064> "algorithm")
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000028> "symbol")
 
@@ -165,6 +176,14 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010065> "cel
 # Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010066> (has minimal marker)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010066> "has minimal marker")
+
+# Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010067> (has_marker_set)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010067> "has_marker_set")
+
+# Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010068> (recall)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010068> "recall")
 
 ############################
 #   Object Properties

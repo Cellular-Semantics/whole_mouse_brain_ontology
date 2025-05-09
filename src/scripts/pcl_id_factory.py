@@ -50,6 +50,8 @@ class PCLIdFactory:
         self.dataset_id_start = id_range + 1
         self.marker_set_id_start = round_up_to_nearest(self.dataset_id_start + 50, 2)
         self.nsf_marker_set_start = round_up_to_nearest( int(self.marker_set_id_start + (annotation_count * 1.5)) , 1)
+        self.ws_marker_set_id_start = round_up_to_nearest( int(self.nsf_marker_set_start + (annotation_count * 1.5)) , 1)
+        self.evidence_marker_set_id_start = round_up_to_nearest( int(self.ws_marker_set_id_start + (annotation_count * 1.5)) , 1)
 
 
     def get_class_id(self, accession_id):
@@ -114,6 +116,24 @@ class PCLIdFactory:
 
         return str(pcl_id).zfill(7)
 
+
+    def get_ws_marker_gene_set_id(self, accession_id):
+        """
+        Generates a PCL id for the given accession id. Parses taxonomy id from accession id and based on taxonomy's order
+        in the 'taxonomy_details.yaml' finds the allocated id range for the taxonomy. Generates a PCL id displaced by the
+        node_id in the within subclass marker gene set range.
+        Args:
+            accession_id: cell set accession id
+
+        Returns: seven digit PCL id as string
+        """
+        node_id, labelset = parse_accession_id(accession_id)
+        class_id = self.class_ranges[labelset] + node_id
+        marker_set_id_displacement = self.ws_marker_set_id_start - ID_RANGE_BASE
+        pcl_id = class_id + marker_set_id_displacement
+
+        return str(pcl_id).zfill(7)
+
     def get_nsf_marker_gene_set_id(self, accession_id):
         """
         Generates a PCL id for the given accession id. Parses taxonomy id from accession id and based on taxonomy's order
@@ -127,6 +147,24 @@ class PCLIdFactory:
         node_id, labelset = parse_accession_id(accession_id)
         class_id = self.class_ranges[labelset] + node_id
         marker_set_id_displacement = self.nsf_marker_set_start - ID_RANGE_BASE
+        pcl_id = class_id + marker_set_id_displacement
+
+        return str(pcl_id).zfill(7)
+
+
+    def get_evidence_marker_gene_set_id(self, accession_id):
+        """
+        Generates a PCL id for the given accession id. Parses taxonomy id from accession id and based on taxonomy's order
+        in the 'taxonomy_details.yaml' finds the allocated id range for the taxonomy. Generates a PCL id displaced by the
+        node_id in the evidence marker gene set range.
+        Args:
+            accession_id: cell set accession id
+
+        Returns: seven digit PCL id as string
+        """
+        node_id, labelset = parse_accession_id(accession_id)
+        class_id = self.class_ranges[labelset] + node_id
+        marker_set_id_displacement = self.evidence_marker_set_id_start - ID_RANGE_BASE
         pcl_id = class_id + marker_set_id_displacement
 
         return str(pcl_id).zfill(7)

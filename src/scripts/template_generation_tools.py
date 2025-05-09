@@ -44,6 +44,10 @@ CROSS_SPECIES_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)),
                                   "../dendrograms/nomenclature_table_CCN202002270.csv")
 NAME_CURATION_MAPPING = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../dendrograms/supplementary/version2/one_concept_one_name_curation.tsv")
 ABC_URLS_MAPPING = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../dendrograms/CCN20230722_abc_urls.json")
+ABC_URLS_MARKER_SET_MAPPING = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../dendrograms/CCN20230722_abc_urls_marker_set.json")
+ABC_URLS_NSF_MAPPING = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../dendrograms/CCN20230722_abc_urls_nsforest_marker_set.json")
+ABC_URLS_WS_MAPPING = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../dendrograms/CCN20230722_abc_urls_ws_marker_set.json")
+ABC_URLS_EVIDENCE_MAPPING = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../dendrograms/CCN20230722_abc_urls_evidence_marker_set.json")
 
 # centralized data files
 ALLEN_DESCRIPTIONS_PATH = "{}/{}/All Descriptions_{}.json"
@@ -168,6 +172,8 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
         class_membership = get_class_membership_dict(dend_tree)
 
         gene_db = read_gene_dbs(TEMPLATES_FOLDER_PATH)
+        author_markers = read_author_markers_dataframe()
+        author_local_markers = read_author_local_markers_dataframe()
         ns_forest_markers = read_nsforest_markers_dataframe()
 
         cluster_annotations = read_csv_to_dict(CLUSTER_ANNOTATIONS_PATH, id_column_name="cell_set_accession.cluster")[1]
@@ -206,7 +212,15 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                       'CL',
                       'Nomenclature_Layers',
                       'Nomenclature_Projection',
+                      'evidence_marker_gene_set',
                       'marker_gene_set',
+                      'marker_gene_set_confidence',
+                      'ws_marker_gene_set',
+                      'ws_marker_gene_set_confidence',
+                      'nsforest_marker_gene_set_1',
+                      'nsforest_marker_gene_set_1_confidence',
+                      'nsforest_marker_gene_set_2',
+                      'nsforest_marker_gene_set_2_confidence',
                       'MBA',
                       'MBA_text',
                       'Subclass_markers',
@@ -215,7 +229,7 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                       'Atlas_url',
                       'Atlas_url_label',
                       'Matrix_url',
-                      'Class_name'
+                      'Class_name',
                       ]
         class_template = []
         obsolete_template = []
@@ -275,30 +289,8 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                 d['part_of'] = ''
                 d['has_soma_location'] = taxonomy_config['Brain_region'][0]
 
-                d['aligned_alias'] = ""
-                if node.get('marker_gene_evidence'):
-                    d['marker_gene_set'] = PCL_PREFIX + id_factory.get_marker_gene_set_id(node['cell_set_accession'])
-                elif  ("author_annotation_fields" in node and
-                       node["author_annotation_fields"].get(f"{node['labelset']}.markers.combo") and
-                       str(node["author_annotation_fields"].get(f"{node['labelset']}.markers.combo", "")).lower() != "none"):
-                    d['marker_gene_set'] = PCL_PREFIX + id_factory.get_marker_gene_set_id(
-                        node['cell_set_accession'])
-                else:
-                    d['marker_gene_set'] = ""
-
-                d['nsforest_marker_gene_sets'] = ""
-                if not collapsed:
-                    filtered_df = ns_forest_markers[ns_forest_markers['clusterName'] == o['cell_label']]
-                    if not filtered_df.empty:
-                        d['nsforest_marker_gene_sets'] = PCL_PREFIX + id_factory.get_nsf_marker_gene_set_id(node['cell_set_accession'])
-                else:
-                    marker_sets = []
-                    for collapsed_accession in node['chain']:
-                        collapsed_node = all_nodes[collapsed_accession]
-                        filtered_df = ns_forest_markers[ns_forest_markers['clusterName'] == collapsed_node['cell_label']]
-                        if not filtered_df.empty:
-                            marker_sets.append(PCL_PREFIX + id_factory.get_nsf_marker_gene_set_id(collapsed_node['cell_set_accession']))
-                    d['nsforest_marker_gene_sets'] = "|".join(marker_sets)
+                associate_marker_sets(all_nodes, author_local_markers, author_markers, collapsed, d,
+                                      id_factory, node, ns_forest_markers, o)
 
                 if "cell_ontology_term_id" in node and node["cell_ontology_term_id"]:
                     d['CL'] = node["cell_ontology_term_id"]
@@ -395,6 +387,71 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
             obsolete_filepath = output_filepath.replace("_base.tsv", "_obsolete.tsv")
             class_obsolete_template = pd.DataFrame.from_records(obsolete_template)
             class_obsolete_template.to_csv(obsolete_filepath, sep="\t", index=False)
+
+
+def associate_marker_sets(all_nodes, author_local_markers, author_markers, collapsed, d, id_factory,
+                          node, ns_forest_markers, o):
+    """
+    Associates the following marker sets to the node:
+    - evidence_marker_gene_set
+    - marker_gene_set
+    - within_subclass_marker_gene_set
+    - nsforest_marker_gene_sets
+    Args:
+        all_nodes:
+        author_local_markers:
+        author_markers:
+        collapsed:
+        d:
+        id_factory:
+        node:
+        ns_forest_markers:
+        o:
+
+    Returns:
+    """
+    d['aligned_alias'] = ""
+    if node.get('marker_gene_evidence'):
+        d['evidence_marker_gene_set'] = PCL_PREFIX + id_factory.get_evidence_marker_gene_set_id(
+            node['cell_set_accession'])
+    if ("author_annotation_fields" in node and
+            node["author_annotation_fields"].get(f"{node['labelset']}.markers.combo") and
+            str(node["author_annotation_fields"].get(f"{node['labelset']}.markers.combo",
+                                                     "")).lower() != "none"):
+        d['marker_gene_set'] = PCL_PREFIX + id_factory.get_marker_gene_set_id(
+            node['cell_set_accession'])
+        filtered_df = author_markers[author_markers['clusterName'] == o['cell_label']]
+        if not filtered_df.empty:
+            d['marker_gene_set_confidence'] = filtered_df['f_score'].values[0]
+    if ("author_annotation_fields" in node and
+            node["author_annotation_fields"].get(
+                f"{node['labelset']}.markers.combo _within subclass_") and
+            str(node["author_annotation_fields"].get(
+                f"{node['labelset']}.markers.combo _within subclass_", "")).lower() != "none"):
+        d['ws_marker_gene_set'] = PCL_PREFIX + id_factory.get_ws_marker_gene_set_id(
+            node['cell_set_accession'])
+        filtered_df = author_local_markers[author_local_markers['clusterName'] == o['cell_label']]
+        if not filtered_df.empty:
+            d['ws_marker_gene_set_confidence'] = filtered_df['f_score'].values[0]
+    if not collapsed:
+        filtered_df = ns_forest_markers[ns_forest_markers['clusterName'] == o['cell_label']]
+        if not filtered_df.empty:
+            d['nsforest_marker_gene_set_1'] = PCL_PREFIX + id_factory.get_nsf_marker_gene_set_id(
+                node['cell_set_accession'])
+            d['nsforest_marker_gene_set_1_confidence'] = filtered_df['f_score'].values[0]
+    else:
+        index = 1
+        for collapsed_accession in node['chain']:
+            collapsed_node = all_nodes[collapsed_accession]
+            filtered_df = ns_forest_markers[
+                ns_forest_markers['clusterName'] == collapsed_node['cell_label']]
+            if not filtered_df.empty:
+                d['nsforest_marker_gene_set_' + str(
+                    index)] = PCL_PREFIX + id_factory.get_nsf_marker_gene_set_id(
+                    collapsed_node['cell_set_accession'])
+                d['nsforest_marker_gene_set_' + str(index) + '_confidence'] = \
+                filtered_df['f_score'].values[0]
+                index += 1
 
 
 def get_all_unique_cell_labels(dend, nodes_to_collapse, all_names, name_curations):
@@ -814,8 +871,10 @@ def generate_marker_gene_set_template(taxonomy_file_path, output_filepath):
         dend_tree = generate_dendrogram_tree(dend)
         nodes_to_collapse = get_collapsed_nodes(dend_tree, all_nodes)
         name_curations = read_one_concept_one_name_tsv(NAME_CURATION_MAPPING)
+        author_markers = read_author_markers_dataframe()
         all_pref_labels = get_all_unique_cell_labels(dend, nodes_to_collapse, all_names,
                                                      name_curations)
+        atlas_payloads = read_abc_urls(ABC_URLS_MARKER_SET_MAPPING)
 
         gene_db = read_gene_dbs(TEMPLATES_FOLDER_PATH)
 
@@ -827,7 +886,14 @@ def generate_marker_gene_set_template(taxonomy_file_path, output_filepath):
                       'Brain_region',
                       'Parent',
                       'FBeta_confidence_score',
-                      'Algorithm'
+                      'precision',
+                      'recall',
+                      'Algorithm',
+                      'Source',
+                      'Cell_label',
+                      'Labelset',
+                      'Atlas_url',
+                      'Atlas_url_label'
                       ]
         class_template = []
         processed_accessions = set()
@@ -853,6 +919,177 @@ def generate_marker_gene_set_template(taxonomy_file_path, output_filepath):
                     d['Parent'] = "SO:0001260"  # sequence collection
                     d['FBeta_confidence_score'] = ""
                     d['Algorithm'] = ""
+                    d['Source'] = "Yao"
+                    d['Reference'] = "https://doi.org/10.1038/s41586-023-06812-z"
+                    filtered_df = author_markers[author_markers['clusterName'] == o['cell_label']]
+                    if not filtered_df.empty:
+                        d['FBeta_confidence_score'] = filtered_df['f_score'].values[0]
+                        d['precision'] = filtered_df['precision'].values[0]
+                        d['recall'] = filtered_df['recall'].values[0]
+                    d['Cell_label'] = o['cell_label']
+                    d['Labelset'] = o['labelset']
+                    if d['defined_class'] in atlas_payloads:
+                        d["Atlas_url"] = "https://knowledge.brain-map.org/abcatlas#" + atlas_payloads.get(d['defined_class'])
+                        d["Atlas_url_label"] = "markers in reference data on Allen Brain Cell Atlas"
+
+                    for k in class_seed:
+                        if not (k in d.keys()):
+                            d[k] = ''
+                    class_template.append(d)
+                    processed_accessions.add(node['cell_set_accession'])
+
+        class_robot_template = pd.DataFrame.from_records(class_template)
+        class_robot_template.to_csv(output_filepath, sep="\t", index=False)
+
+def generate_within_subclass_marker_gene_set_template(taxonomy_file_path, output_filepath):
+    taxon = extract_taxonomy_name_from_path(taxonomy_file_path)
+    taxonomy_config = read_taxonomy_config(taxon)
+
+    if taxonomy_config:
+        dend = cas_json_2_nodes_n_edges(taxonomy_file_path)
+        all_nodes = {node['cell_set_accession']: node for node in dend['nodes']}
+        all_names = {node['cell_label']: node for node in dend['nodes']}
+        id_factory = PCLIdFactory(read_json_file(taxonomy_file_path))
+        dend_tree = generate_dendrogram_tree(dend)
+        nodes_to_collapse = get_collapsed_nodes(dend_tree, all_nodes)
+        name_curations = read_one_concept_one_name_tsv(NAME_CURATION_MAPPING)
+        author_local_markers = read_author_local_markers_dataframe()
+        all_pref_labels = get_all_unique_cell_labels(dend, nodes_to_collapse, all_names,
+                                                     name_curations)
+        atlas_payloads = read_abc_urls(ABC_URLS_WS_MAPPING)
+
+        gene_db = read_gene_dbs(TEMPLATES_FOLDER_PATH)
+
+        class_seed = ['defined_class',
+                      'Marker_set_of',
+                      'Markers',
+                      'Markers_label',
+                      'Species_abbv',
+                      'Brain_region',
+                      'Parent',
+                      'FBeta_confidence_score',
+                      'precision',
+                      'recall',
+                      'Algorithm',
+                      'Source',
+                      'Cell_label',
+                      'Labelset',
+                      'Atlas_url',
+                      'Atlas_url_label'
+                      ]
+        class_template = []
+        processed_accessions = set()
+        for o in dend['nodes']:
+            node = o
+            if o['cell_set_accession'] in nodes_to_collapse:
+                node = nodes_to_collapse[o['cell_set_accession']]
+            if node.get('cell_set_accession') and node['cell_set_accession'] not in processed_accessions :
+                if ("author_annotation_fields" in node and
+                        node["author_annotation_fields"].get(f"{node['labelset']}.markers.combo _within subclass_", "") and
+                        str(node["author_annotation_fields"].get(f"{node['labelset']}.markers.combo _within subclass_", "")).lower() != "none"):
+                    d = dict()
+                    d['defined_class'] = PCL_BASE + id_factory.get_ws_marker_gene_set_id(node['cell_set_accession'])
+                    cell_set_label = all_pref_labels[node["cell_set_accession"]]
+                    d['Marker_set_of'] = cell_set_label
+                    markers_str = node["author_annotation_fields"].get(f"{node['labelset']}.markers.combo _within subclass_", "")
+                    markers_list = [marker.strip() for marker in markers_str.split(",")]
+                    d['Markers'] = "|".join([get_gene_id(gene_db, marker) for marker in markers_list if str(marker).lower() != "none"])
+                    d['Markers_label'] = node["author_annotation_fields"].get(f"{node['labelset']}.markers.combo _within subclass_", "")
+                    if 'Species_abbv' in taxonomy_config:
+                        d['Species_abbv'] = taxonomy_config['Species_abbv'][0]
+                    d['Brain_region'] = taxonomy_config['Brain_region'][0]
+                    d['Parent'] = "SO:0001260"  # sequence collection
+                    d['FBeta_confidence_score'] = ""
+                    d['Algorithm'] = ""
+                    d['Source'] = "Yao - within subclass"
+                    d['Reference'] = "https://doi.org/10.1038/s41586-023-06812-z"
+                    filtered_df = author_local_markers[author_local_markers['clusterName'] == o['cell_label']]
+                    if not filtered_df.empty:
+                        d['FBeta_confidence_score'] = filtered_df['f_score'].values[0]
+                        d['precision'] = filtered_df['precision'].values[0]
+                        d['recall'] = filtered_df['recall'].values[0]
+                    d['Cell_label'] = o['cell_label']
+                    d['Labelset'] = o['labelset']
+                    if d['defined_class'] in atlas_payloads:
+                        d["Atlas_url"] = "https://knowledge.brain-map.org/abcatlas#" + atlas_payloads.get(d['defined_class'])
+                        d["Atlas_url_label"] = "markers in reference data on Allen Brain Cell Atlas"
+
+                    for k in class_seed:
+                        if not (k in d.keys()):
+                            d[k] = ''
+                    class_template.append(d)
+                    processed_accessions.add(node['cell_set_accession'])
+
+        class_robot_template = pd.DataFrame.from_records(class_template)
+        class_robot_template.to_csv(output_filepath, sep="\t", index=False)
+
+
+def generate_evidence_marker_gene_set_template(taxonomy_file_path, output_filepath):
+    taxon = extract_taxonomy_name_from_path(taxonomy_file_path)
+    taxonomy_config = read_taxonomy_config(taxon)
+
+    if taxonomy_config:
+        dend = cas_json_2_nodes_n_edges(taxonomy_file_path)
+        all_nodes = {node['cell_set_accession']: node for node in dend['nodes']}
+        all_names = {node['cell_label']: node for node in dend['nodes']}
+        id_factory = PCLIdFactory(read_json_file(taxonomy_file_path))
+        dend_tree = generate_dendrogram_tree(dend)
+        nodes_to_collapse = get_collapsed_nodes(dend_tree, all_nodes)
+        name_curations = read_one_concept_one_name_tsv(NAME_CURATION_MAPPING)
+        all_pref_labels = get_all_unique_cell_labels(dend, nodes_to_collapse, all_names,
+                                                     name_curations)
+        atlas_payloads = read_abc_urls(ABC_URLS_EVIDENCE_MAPPING)
+
+        gene_db = read_gene_dbs(TEMPLATES_FOLDER_PATH)
+
+        class_seed = ['defined_class',
+                      'Marker_set_of',
+                      'Markers',
+                      'Markers_label',
+                      'Species_abbv',
+                      'Brain_region',
+                      'Parent',
+                      'FBeta_confidence_score',
+                      'precision',
+                      'recall',
+                      'Algorithm',
+                      'Source',
+                      'Cell_label',
+                      'Labelset',
+                      'Atlas_url',
+                      'Atlas_url_label'
+                      ]
+        class_template = []
+        processed_accessions = set()
+        for o in dend['nodes']:
+            node = o
+            if o['cell_set_accession'] in nodes_to_collapse:
+                node = nodes_to_collapse[o['cell_set_accession']]
+            if node.get('cell_set_accession') and node['cell_set_accession'] not in processed_accessions :
+                if "marker_gene_evidence" in node and node["marker_gene_evidence"]:
+                    d = dict()
+                    d['defined_class'] = PCL_BASE + id_factory.get_evidence_marker_gene_set_id(node['cell_set_accession'])
+                    cell_set_label = all_pref_labels[node["cell_set_accession"]]
+                    d['Marker_set_of'] = cell_set_label
+                    markers_list = [marker.strip() for marker in node["marker_gene_evidence"]]
+                    d['Markers'] = "|".join([get_gene_id(gene_db, marker) for marker in markers_list if str(marker).lower() != "none"])
+                    d['Markers_label'] = ", ".join(markers_list)
+                    if 'Species_abbv' in taxonomy_config:
+                        d['Species_abbv'] = taxonomy_config['Species_abbv'][0]
+                    d['Brain_region'] = taxonomy_config['Brain_region'][0]
+                    d['Parent'] = "SO:0001260"  # sequence collection
+                    d['FBeta_confidence_score'] = ""
+                    d['Algorithm'] = ""
+                    d['Source'] = "CAS evidence"
+                    d['Reference'] = ""
+                    d['FBeta_confidence_score'] = ""
+                    d['precision'] = ""
+                    d['recall'] = ""
+                    d['Cell_label'] = o['cell_label']
+                    d['Labelset'] = o['labelset']
+                    if d['defined_class'] in atlas_payloads:
+                        d["Atlas_url"] = "https://knowledge.brain-map.org/abcatlas#" + atlas_payloads.get(d['defined_class'])
+                        d["Atlas_url_label"] = "markers in reference data on Allen Brain Cell Atlas"
 
                     for k in class_seed:
                         if not (k in d.keys()):
@@ -879,6 +1116,7 @@ def generate_nsforest_marker_gene_set_template(taxonomy_file_path, output_filepa
         nsforest_markers = read_nsforest_markers_dataframe()
         all_pref_labels = get_all_unique_cell_labels(dend, nodes_to_collapse, all_names,
                                                      name_curations)
+        atlas_payloads = read_abc_urls(ABC_URLS_NSF_MAPPING)
 
         gene_db = read_gene_dbs(TEMPLATES_FOLDER_PATH)
 
@@ -890,7 +1128,14 @@ def generate_nsforest_marker_gene_set_template(taxonomy_file_path, output_filepa
                       'Brain_region',
                       'Parent',
                       'FBeta_confidence_score',
-                      'Algorithm'
+                      'precision',
+                      'recall',
+                      'Algorithm',
+                      'Source',
+                      'Cell_label',
+                      'Labelset',
+                      'Atlas_url',
+                      'Atlas_url_label'
                       ]
         class_template = []
         for o in dend['nodes']:
@@ -912,7 +1157,16 @@ def generate_nsforest_marker_gene_set_template(taxonomy_file_path, output_filepa
                     d['Brain_region'] = taxonomy_config['Brain_region'][0]
                     d['Parent'] = "SO:0001260"  # sequence collection
                     d['FBeta_confidence_score'] = filtered_df['f_score'].values[0]
+                    d['precision'] = filtered_df['PPV'].values[0]
+                    d['recall'] = filtered_df['recall'].values[0]
                     d['Algorithm'] = "NSforest"
+                    d['Source'] = "NSforest"
+                    d['Reference'] = "https://doi.org/10.1101/2020.09.23.308932"
+                    d['Cell_label'] = o['cell_label']
+                    d['Labelset'] = o['labelset']
+                    if d['defined_class'] in atlas_payloads:
+                        d["Atlas_url"] = "https://knowledge.brain-map.org/abcatlas#" + atlas_payloads.get(d['defined_class'])
+                        d["Atlas_url_label"] = "markers in reference data on Allen Brain Cell Atlas"
 
                     for k in class_seed:
                         if not (k in d.keys()):
@@ -921,6 +1175,39 @@ def generate_nsforest_marker_gene_set_template(taxonomy_file_path, output_filepa
 
         class_robot_template = pd.DataFrame.from_records(class_template)
         class_robot_template.to_csv(output_filepath, sep="\t", index=False)
+
+
+def read_author_markers_dataframe():
+    """
+    Author markers dataframe is read from the CSV file.
+    Returns: Author markers dataframe
+    """
+    author_marker_subclass_df = pd.read_csv(
+        os.path.join(os.path.dirname(os.path.realpath(__file__)),
+                     '../dendrograms/supplementary/version2/AP_WMB_evaluation_author_markers/subclass_results.csv'))
+    author_marker_supertype_df = pd.read_csv(
+        os.path.join(os.path.dirname(os.path.realpath(__file__)),
+                     '../dendrograms/supplementary/version2/AP_WMB_evaluation_author_markers/supertype_results.csv'))
+    author_marker_cluster_df = pd.read_csv(
+        os.path.join(os.path.dirname(os.path.realpath(__file__)),
+                     '../dendrograms/supplementary/version2/AP_WMB_evaluation_author_markers/cluster_results.csv'))
+    author_markers = pd.merge(author_marker_subclass_df, author_marker_supertype_df,
+                                how='outer')
+    author_markers = pd.merge(author_markers, author_marker_cluster_df,
+                                how='outer')
+    return author_markers
+
+
+def read_author_local_markers_dataframe():
+    """
+    Author local markers dataframe is read from the CSV file.
+    Returns: Author markers dataframe
+    """
+    author_local_markers = pd.read_csv(
+        os.path.join(os.path.dirname(os.path.realpath(__file__)),
+                     '../dendrograms/supplementary/version2/AP_WMB_evaluation_author_markers/local_cluster_results.csv'))
+
+    return author_local_markers
 
 
 def read_nsforest_markers_dataframe():
@@ -1101,7 +1388,8 @@ def read_abc_urls(file_path):
         dict: Dictionary with ABC URLs.
     """
     data_dict = {}
-    with open(file_path, 'r') as file:
-        data_dict = json.load(file)
+    if os.path.exists(file_path):
+        with open(file_path, 'r') as file:
+            data_dict = json.load(file)
     return data_dict
 
