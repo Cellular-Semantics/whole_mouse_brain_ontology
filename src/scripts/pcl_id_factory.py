@@ -1,40 +1,44 @@
 """
 Responsible with allocating stable PCL IDs for taxonomy nodes. Id ranges for taxonomies are allocated based on
-taxonomies order in the 'taxonomy_details.yaml' configuration file. Automatic ID range allocation starts from
-#ID_RANGE_BASE and allocates 400 IDs for classes and 600 IDs for individuals
+taxonomies order in the 'taxonomy_details.yaml' configuration file.
+Automatic ID range allocation starts from #ID_RANGE_BASE and allocates id spaces to entities based on their count in the taxonomy + some spare space.
 
-ID range allocation logic is as follows
+ID range allocation logic is as follows:
+    (annotation count = 6905)
 
-    - 0010000 to 0010999  custom classes and properties (manually managed)
-    - 0011000 taxonomy1 individual # idle: now individuals use accession_id
-    - classes (for each labelset 1.5 times of annotation count)
-    - datasets (50)
-    - marker gene sets (annotation count * 1.5)
-    - NS Forest marker gene sets (annotation count * 1.5)
-    - spare id space
+    - 110000 to 110059 'CLAS' labelset classes + (%50 spare space)
+    - 110060 to 110569 'SUBC' labelset classes + (%50 spare space)
+    - 110570 to 112379 'SUPT' labelset classes + (%50 spare space)
+    - 112380 to 120370 'CLUS' labelset classes (%50 spare space)
+    - 120371 to 120499 dataset classes (50 + round up to nearest 100)
+    - 120500 to 130859 marker set (%50 spare space)
+    - 130860 to 141219 NS Forest marker set (%50 spare space)
+    - 141220 to 151579 Within subclass marker set (%50 spare space)
+    - 151580 to 159520 Evidence marker set (%50 spare space)
 
+Total allocated id space: 159520 - 110000 = 49520 ids
 """
 
-import yaml
-import os
-
-
-TAXONOMY_DETAILS_YAML = os.path.join(os.path.dirname(os.path.realpath(__file__)),
-                                     '../dendrograms/taxonomy_details.yaml')
+from base_id_factory import BaseIdFactory
 
 # Allocate IDs starting from PCL_0110000
 ID_RANGE_BASE = 110000
 
-LABELSET_SYMBOLS = { "CLAS": "class",
-                     "SUBC": "subclass",
-                     "SUPT": "supertype",
-                     "CLUS": "cluster" }
 
+class PCLIdFactory(BaseIdFactory):
 
-class PCLIdFactory:
+    PREFIXES = [
+        "http://purl.obolibrary.org/obo/PCL_", "PCL:", "PCL_",
+        "http://purl.obolibrary.org/obo/pcl/", "PCL_INDV:"
+    ]
+
+    LABELSET_SYMBOLS = {"CLAS": "class",
+                        "SUBC": "subclass",
+                        "SUPT": "supertype",
+                        "CLUS": "cluster"}
 
     def __init__(self, taxonomy):
-        self.taxonomies = read_taxonomy_details_yaml()
+        self.taxonomies = self.read_taxonomy_details_yaml()
         self.taxonomy_ids = [taxon["Taxonomy_id"] for taxon in self.taxonomies]
         ranked_labelsets = [labelset for labelset in taxonomy['labelsets'] if "rank" in labelset]
         self.labelsets = [labelset["name"] for labelset in sorted(ranked_labelsets, key=lambda x: x["rank"], reverse=True)]
@@ -46,12 +50,20 @@ class PCLIdFactory:
         for labelset in self.labelsets:
             self.class_ranges[labelset] = id_range
             id_range = id_range + int(sum(1 for node in taxonomy['annotations'] if node['labelset'] == labelset) * 1.5)  # %50 more than the number of nodes
-            id_range = round_up_to_nearest(id_range, 1)
+            id_range = self.round_up_to_nearest(id_range, 1)
         self.dataset_id_start = id_range + 1
-        self.marker_set_id_start = round_up_to_nearest(self.dataset_id_start + 50, 2)
-        self.nsf_marker_set_start = round_up_to_nearest( int(self.marker_set_id_start + (annotation_count * 1.5)) , 1)
-        self.ws_marker_set_id_start = round_up_to_nearest( int(self.nsf_marker_set_start + (annotation_count * 1.5)) , 1)
-        self.evidence_marker_set_id_start = round_up_to_nearest( int(self.ws_marker_set_id_start + (annotation_count * 1.5)) , 1)
+        self.marker_set_id_start = self.round_up_to_nearest(self.dataset_id_start + 50, 2)
+        self.nsf_marker_set_start = self.round_up_to_nearest( int(self.marker_set_id_start + (annotation_count * 1.5)) , 1)
+        self.ws_marker_set_id_start = self.round_up_to_nearest( int(self.nsf_marker_set_start + (annotation_count * 1.5)) , 1)
+        self.evidence_marker_set_id_start = self.round_up_to_nearest( int(self.ws_marker_set_id_start + (annotation_count * 1.5)) , 1)
+
+        # print(self.class_ranges)
+        # print("Dataset id range: " + str(self.dataset_id_start) + " to " + str(self.marker_set_id_start - 1))
+        # print("Marker set id range: " + str(self.marker_set_id_start) + " to " + str(self.nsf_marker_set_start - 1))
+        # print("NS Forest marker set id range: " + str(self.nsf_marker_set_start) + " to " + str(self.ws_marker_set_id_start - 1))
+        # print("Within subclass marker set id range: " + str(self.ws_marker_set_id_start) + " to " + str(self.evidence_marker_set_id_start - 1))
+        # evidence_marker_set_id_end = self.round_up_to_nearest( int(self.evidence_marker_set_id_start + (annotation_count * 1.15)) , 1)
+        # print("Evidence marker set id range: " + str(self.evidence_marker_set_id_start) + " to " + str(evidence_marker_set_id_end))
 
 
     def get_class_id(self, accession_id):
@@ -64,7 +76,7 @@ class PCLIdFactory:
 
         Returns: seven digit PCL id as string
         """
-        node_id, labelset = parse_accession_id(accession_id)
+        node_id, labelset = self.parse_accession_id(accession_id)
         pcl_id = self.class_ranges[labelset] + node_id
 
         return str(pcl_id).zfill(7)
@@ -109,7 +121,7 @@ class PCLIdFactory:
 
         Returns: seven digit PCL id as string
         """
-        node_id, labelset = parse_accession_id(accession_id)
+        node_id, labelset = self.parse_accession_id(accession_id)
         class_id = self.class_ranges[labelset] + node_id
         marker_set_id_displacement = self.marker_set_id_start - ID_RANGE_BASE
         pcl_id = class_id + marker_set_id_displacement
@@ -127,7 +139,7 @@ class PCLIdFactory:
 
         Returns: seven digit PCL id as string
         """
-        node_id, labelset = parse_accession_id(accession_id)
+        node_id, labelset = self.parse_accession_id(accession_id)
         class_id = self.class_ranges[labelset] + node_id
         marker_set_id_displacement = self.ws_marker_set_id_start - ID_RANGE_BASE
         pcl_id = class_id + marker_set_id_displacement
@@ -144,7 +156,7 @@ class PCLIdFactory:
 
         Returns: seven digit PCL id as string
         """
-        node_id, labelset = parse_accession_id(accession_id)
+        node_id, labelset = self.parse_accession_id(accession_id)
         class_id = self.class_ranges[labelset] + node_id
         marker_set_id_displacement = self.nsf_marker_set_start - ID_RANGE_BASE
         pcl_id = class_id + marker_set_id_displacement
@@ -162,31 +174,12 @@ class PCLIdFactory:
 
         Returns: seven digit PCL id as string
         """
-        node_id, labelset = parse_accession_id(accession_id)
+        node_id, labelset = self.parse_accession_id(accession_id)
         class_id = self.class_ranges[labelset] + node_id
         marker_set_id_displacement = self.evidence_marker_set_id_start - ID_RANGE_BASE
         pcl_id = class_id + marker_set_id_displacement
 
         return str(pcl_id).zfill(7)
-
-def read_taxonomy_details_yaml():
-    with open(r'%s' % TAXONOMY_DETAILS_YAML) as file:
-        documents = yaml.full_load(file)
-    return documents
-
-def parse_accession_id(accession_id):
-    """
-    Parses taxonomy id and node id from the accession id and returns node id and labelset name.
-    Args:
-        accession_id: cell set accession id (such as CS20230722_CLAS_01)
-
-    Returns: tuple of node_id and labelset name.
-    """
-    accession_parts = str(accession_id).split("_")
-    node_id = int(accession_parts[2].strip())
-    labelset_abbr = accession_parts[1].strip()
-
-    return node_id, LABELSET_SYMBOLS[labelset_abbr]
 
 
 # def get_reverse_id(pcl_id_str):
@@ -233,20 +226,3 @@ def is_pcl_id(id_str):
         or str(id_str).startswith("PCL:") or str(id_str).startswith("PCL_") \
         or str(id_str).startswith("http://purl.obolibrary.org/obo/pcl/") \
         or str(id_str).startswith("PCL_INDV:")
-
-
-def round_up_to_nearest(value, zeros=1):
-    """
-    Rounds up the given integer to the nearest bigger integer ending with the specified number of zeros.
-
-    Args:
-        value (int): The integer to be rounded up.
-        zeros (int): The number of trailing zeros for the rounding. Default is 1.
-
-    Returns:
-        int: The rounded integer.
-        round_up_to_nearest(123) -> 130
-        round_up_to_nearest(123, 2) -> 200
-    """
-    factor = 10 ** zeros
-    return ((value + factor - 1) // factor) * factor
