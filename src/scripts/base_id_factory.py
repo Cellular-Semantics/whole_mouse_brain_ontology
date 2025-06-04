@@ -68,7 +68,6 @@ class BaseIdFactory(ABC):
         labelset_abbr = accession_parts[1].strip()
 
         labelset_symbols = getattr(cls, "LABELSET_SYMBOLS", dict())
-        print(labelset_symbols)
         return node_id, labelset_symbols[labelset_abbr]
 
     @abstractmethod

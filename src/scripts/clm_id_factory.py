@@ -18,7 +18,7 @@ Total allocated id space: 5030760 - 5000000 = 30760 ids
 
 from base_id_factory import BaseIdFactory
 
-# Allocate IDs starting from CL_0110000
+# Allocate IDs starting from CLM_5000000
 ID_RANGE_BASE = 5000000
 
 

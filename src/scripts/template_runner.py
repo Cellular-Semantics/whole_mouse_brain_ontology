@@ -1,7 +1,6 @@
 from template_generation_tools import (generate_base_class_template, generate_curated_class_template, \
-    generate_ind_template, merge_class_templates, \
-    generate_cross_species_template, generate_taxonomies_template, generate_app_specific_template, \
-    generate_homologous_to_template, generate_marker_gene_set_template, generate_nsforest_marker_gene_set_template, \
+    generate_ind_template, merge_class_templates, generate_marker_gene_set_template,
+    generate_nsforest_marker_gene_set_template, \
     generate_within_subclass_marker_gene_set_template, generate_evidence_marker_gene_set_template)
 from marker_tools import generate_denormalised_marker_template, generate_allen_marker_template
 import argparse
