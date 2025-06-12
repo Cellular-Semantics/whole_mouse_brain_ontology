@@ -109,6 +109,7 @@ $(COMPONENTSDIR)/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_OBSOLE
 	 query --update ../sparql/replace_string_to_boolean.ru  \
 	 query --update ../sparql/unpack_subclass_of_intersection.ru  \
 	 query --update ../sparql/unpack_equivalentclass_intersection.ru  \
+	 query --update ../sparql/delete_has_exemplar_data_rel.ru \
 	 convert -f ofn	 -o $@
 
 .PRECIOUS: $(COMPONENTSDIR)/all_templates.owl
@@ -224,7 +225,9 @@ $(ONT)-pcl-comp.json: $(RELEASEDIR)/$(ONT)-pcl-comp.owl
 	jq -S 'walk(if type == "array" then sort else . end)' $@.tmp.json > $(RELEASEDIR)/$@ && rm $@.tmp.json
 
 $(TMPDIR)/cl_component_terms.txt: $(TMPDIR)/all_pattern_terms.txt
-	grep -E "^(http://purl\.obolibrary\.org/obo/CL_4|http://purl\.obolibrary\.org/obo/CLM_)" $< > $@
+	python ../scripts/cl_subset_terms.py -o $@
+	#grep -E "^(http://purl\.obolibrary\.org/obo/CL_4|http://purl\.obolibrary\.org/obo/CLM_5)" $< > $@
 
 $(RELEASEDIR)/$(ONT)-cl-comp.owl: $(ONT)-pcl-comp.owl $(TMPDIR)/cl_component_terms.txt
-	$(ROBOT) extract --method subset --input $(RELEASEDIR)/$(ONT)-pcl-comp.owl --term-file $(TMPDIR)/cl_component_terms.txt --term "BFO:0000050" --output $@
+	$(ROBOT) filter --input $(RELEASEDIR)/$(ONT)-pcl-comp.owl --term-file $(TMPDIR)/cl_component_terms.txt --select "annotations anonymous self" --signature true --trim false --output $@
+	#$(ROBOT) extract --method subset --input $(RELEASEDIR)/$(ONT)-pcl-comp.owl --term-file $(TMPDIR)/cl_component_terms.txt --term "BFO:0000050" --term "BFO:0000051" --output $@
