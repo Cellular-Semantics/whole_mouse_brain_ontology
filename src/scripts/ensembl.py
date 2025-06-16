@@ -2,11 +2,16 @@ import os
 import logging
 import csv
 import requests
+import sys
+import argparse
+import glob
 from pathlib import Path
+from typing import List
 import pandas as pd
 from template_generation_utils import read_csv, read_csv_to_dict, read_taxonomy_details_yaml, index_dendrogram
 from dendrogram_tools import cas_json_2_nodes_n_edges
 
+BATCH_SIZE = 500
 
 GENE_DB_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../templates/{}.tsv")
 
@@ -330,29 +335,167 @@ def encode_gene_list(genes):
 #     class_robot_template = pd.DataFrame.from_records(marker_records)
 #     class_robot_template.to_csv(output_file, sep="\t", index=False)
 
+def convert_ensembl_to_ncbi(ensemble_template, target_template):
+    """
+    Converts Ensembl gene IDs to NCBI gene IDs in the template.
+    Args:
+        ensemble_template: Path to the input Ensembl template file.
+        target_template: Path to the output NCBI template file.
+    """
+    with open(ensemble_template, mode='r', newline='') as ensembl_file:
+        ensembl_reader = csv.DictReader(ensembl_file, delimiter='\t')
+        with open(target_template, mode='w', newline='') as ncbi_file:
+            ncbi_writer = csv.writer(ncbi_file, delimiter='\t')
+            # Write the headers
+            ncbi_writer.writerow(['ID', 'TYPE', 'NAME'])
 
-# generates marker files
-# normalize_raw_markers("../markers/raw/Marmoset_NSForest_Markers.csv")
-# normalize_raw_markers("../markers/raw/Human_NSForest_Markers.csv")
-# normalize_raw_markers("../markers/raw/Human_MTG_NSForest_Markers.tsv")
-# normalize_raw_markers("../markers/raw/Mouse_NSForest_Markers.csv")
+            batch = []
+            success = 0
+            failure = 0
+            for row in ensembl_reader:
+                batch.append(row)
+                # Process each batch of x rows.
+                if len(batch) == BATCH_SIZE:
+                    bs, bf = process_batch_gene_conversion(batch, ncbi_writer)
+                    success += bs
+                    failure += bf
+                    batch = []
+            # Process any remaining rows
+            if batch:
+                bs, bf = process_batch_gene_conversion(batch, ncbi_writer)
+                success += bs
+                failure += bf
+            print("Success: " + str(success))
+            print("Fail: " + str(failure))
+
+def process_batch_gene_conversion(rows, writer):
+    """
+    Processes a batch of rows to convert Ensembl gene IDs to NCBI gene IDs using the Node Normalization Service.
+    Args:
+        rows: rows to process, each row should contain 'ID', 'TYPE', and 'NAME'.
+        writer: CSV writer to write the converted rows to the output file.
+    """
+    ensembl_ids = [row['ID'].strip() for row in rows]
+
+    print(ensembl_ids)
+    # Batch request to the normalization endpoint. It expects a JSON with a list of curies.
+    mapping, success, failure = get_ncbi_gene_ids(ensembl_ids)
+
+    # Fallback conversion if needed.
+    for row in rows:
+        ensembl_id = row['ID'].strip()
+        writer.writerow([mapping.get(ensembl_id), row['TYPE'], row['NAME']])
+    return success, failure
 
 
-# generates marker dosdp templates
-# generate_marker_template("201912131", "../patterns/data/bds/ensg_data.tsv")
-# generate_marker_template("201912132", "../patterns/data/bds/enscjag_data.tsv")
+def get_ncbi_gene_ids(ensembl_ids: List[str]):
+    response = requests.post(
+        'https://nodenormalization-sri.renci.org/get_normalized_nodes',
+        json={"curies": ensembl_ids}
+    )
+    # print(json.dumps(response.json(), indent=2))
+    mapping = {}
+    success = 0
+    failure = 0
+    if response.status_code == 200:
+        results = response.json()
+        print(results)
+        for ensembl_curie, data in results.items():
+            if str(ensembl_curie).startswith("ensembl:") and data:
+                # print(ensembl_curie)
+                # print(data)
+                ncbi_identifier = data.get("id").get("identifier", "")
+                if ncbi_identifier.startswith("NCBIGene:"):
+                    mapping[ensembl_curie] = ncbi_identifier
+                    success += 1
+                else:
+                    print(
+                        "Mapped identifier is not a valid NCBI Gene ID: " + ncbi_identifier + " for input " + ensembl_curie)
+                    failure += 1
+                    # raise ValueError("Mapped identifier is not a valid NCBI Gene ID: " + ncbi_identifier + " for input " + ensembl_curie)
+            else:
+                print(f"Failed to map {ensembl_curie} to NCBI Gene ID. Data: {data}")
+                failure += 1
+                # raise ValueError(f"Failed to map {ensembl_curie} to NCBI Gene ID. Data: {data}")
+    else:
+        # raise Exception(f"Failed to normalize nodes: {response.status_code} - {response.text}")
+        print(f"Failed to normalize nodes: {response.status_code} - {response.text}")
+        failure = failure + len(ensembl_ids)
+    return mapping, success, failure
 
-# fix_gene_database(GENE_DB_PATH.format("simple_human"), "entrez:")
-# fix_gene_database(GENE_DB_PATH.format("ensmusg"), "ensembl:")
 
-# fix_gene_database_species(GENE_DB_PATH.format("simple_human"))
-# fix_gene_database_species(GENE_DB_PATH.format("simple_marmoset"))
-# fix_gene_database_species(GENE_DB_PATH.format("ensmusg"))
+def main():
+    # generates marker files
+    # normalize_raw_markers("../markers/raw/Marmoset_NSForest_Markers.csv")
+    # normalize_raw_markers("../markers/raw/Human_NSForest_Markers.csv")
+    # normalize_raw_markers("../markers/raw/Human_MTG_NSForest_Markers.tsv")
+    # normalize_raw_markers("../markers/raw/Mouse_NSForest_Markers.csv")
 
-# markers provided by Brian don't have clusterName, add them
-# add_cluster_name_to_marker("../markers/CS202002013_markers.tsv")
 
-# add_mygene_synonyms(GENE_DB_PATH.format("simple_human"))
-# add_mygene_synonyms(GENE_DB_PATH.format("simple_marmoset"))
-# add_mygene_synonyms(GENE_DB_PATH.format("ensmusg"))
+    # generates marker dosdp templates
+    # generate_marker_template("201912131", "../patterns/data/bds/ensg_data.tsv")
+    # generate_marker_template("201912132", "../patterns/data/bds/enscjag_data.tsv")
 
+    # fix_gene_database(GENE_DB_PATH.format("simple_human"), "entrez:")
+    # fix_gene_database(GENE_DB_PATH.format("ensmusg"), "ensembl:")
+
+    # fix_gene_database_species(GENE_DB_PATH.format("simple_human"))
+    # fix_gene_database_species(GENE_DB_PATH.format("simple_marmoset"))
+    # fix_gene_database_species(GENE_DB_PATH.format("ensmusg"))
+
+    # markers provided by Brian don't have clusterName, add them
+    # add_cluster_name_to_marker("../markers/CS202002013_markers.tsv")
+
+    # add_mygene_synonyms(GENE_DB_PATH.format("simple_human"))
+    # add_mygene_synonyms(GENE_DB_PATH.format("simple_marmoset"))
+    # add_mygene_synonyms(GENE_DB_PATH.format("ensmusg"))
+
+    convert_ensembl_to_ncbi(GENE_DB_PATH.format("ensmusg"), GENE_DB_PATH.format("ncbigene_musculus"))
+    # pass
+
+def extract_ensembl_terms(patterns_dir, output_path):
+    """
+    Extracts unique gene ids from all marker set TSV files.
+    Args:
+        patterns_dir: dosdp templates data folder path.
+        output_path: terms text file path to write the unique gene ids.
+
+    Returns:
+    """
+    gene_ids = set()
+    tsv_files = glob.glob(os.path.join(patterns_dir, "*_marker_set.tsv"))
+    for marker_set_file in tsv_files:
+        with open(marker_set_file, mode="r", newline="") as f:
+            reader = csv.DictReader(f, delimiter="\t")
+            # Check if the file has a "Markers" column
+            if "Markers" not in reader.fieldnames:
+                continue
+            for row in reader:
+                markers = row.get("Markers", "")
+                if markers:
+                    for gene in markers.split("|"):
+                        gene_ids.add(gene.strip())
+
+    # Write each unique gene id to the output file
+    with open(output_path, mode="w", newline="") as out_file:
+        for gene in sorted(gene_ids):
+            out_file.write(gene + "\n")
+    print("Extracted", len(gene_ids), "unique gene ids")
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Run ensembl.py operations.")
+    parser.add_argument("command", nargs="?", default="", help="Command to run. Use 'terms' for terms extraction.")
+    parser.add_argument("-p", "--patterns_dir", dest="patterns_dir", help="DOSDP templates data folder path.")
+    parser.add_argument("-o", "--output", dest="output", help="Output file path for terms extraction.")
+    args = parser.parse_args()
+
+    if args.command == "terms":
+        if not args.patterns_dir:
+            print("Error: --patterns_dir parameter is required when using 'terms'.")
+            sys.exit(1)
+        if not args.output:
+            print("Error: --out parameter is required when using 'terms'.")
+            sys.exit(1)
+        extract_ensembl_terms(args.patterns_dir, args.output)
+    else:
+        main()

@@ -19,6 +19,7 @@ OWL_NSF_MARKER_SET_FILES = $(patsubst %, components/%_nsforest_marker_set.owl, $
 OWL_WS_MARKER_SET_FILES = $(patsubst %, components/%_within_subclass_marker_set.owl, $(JOBS))
 OWL_EVIDENCE_MARKER_SET_FILES = $(patsubst %, components/%_evidence_marker_set.owl, $(JOBS))
 GENE_FILES = $(patsubst %, mirror/%.owl, $(GENE_LIST))
+GENE_IMPORTS = $(patsubst %, $(IMPORTDIR)/%_import.owl, $(GENE_LIST))
 OWL_INFERRED_HIERARCHY_FILES = $(patsubst %, components/%_inferred_hierarchy.owl, $(JOBS))
 
 CLEANFILES=$(MAIN_FILES) $(SRCMERGED) $(EDIT_PREPROCESSED) $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_OBSOLETE_CLASS_FILES) $(OWL_MARKER_SET_FILES) $(OWL_NSF_MARKER_SET_FILES) $(OWL_WS_MARKER_SET_FILES) $(OWL_EVIDENCE_MARKER_SET_FILES) $(COMPONENTSDIR)/wmb_taxonomy.owl $(OWL_INFERRED_HIERARCHY_FILES)
@@ -39,9 +40,12 @@ $(IMPORTDIR)/%_import.owl: $(MIRRORDIR)/merged.owl $(IMPORTDIR)/%_terms_combined
 
 .PRECIOUS: $(IMPORTDIR)/%_import.owl
 
+imports/ensmusg_terms_combined.txt: mirror/ensmusg.owl
+	if [ $(IMP) = true ]; then python $(SCRIPTSDIR)/ensembl.py terms --patterns_dir $(PATTERNDIR)/data/default --out $@; fi
+
 $(IMPORTDIR)/ensmusg_import.owl: mirror/ensmusg.owl imports/ensmusg_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) query  -i $< --update ../sparql/inject-version-info.ru --update ../sparql/preprocess-module.ru \
-		extract -T imports/ensmusg_terms_combined.txt --force true --copy-ontology-annotations true --individuals exclude --method BOT \
+		extract -T imports/ensmusg_terms_combined.txt --prefixes template_prefixes.json --force true --copy-ontology-annotations true --individuals exclude --method BOT \
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
@@ -213,8 +217,8 @@ $(ONT).owl: $(ONT)-full.owl $(ONT)-pcl-comp.owl $(ONT)-pcl-comp.obo $(ONT)-pcl-c
 		convert -o $@.tmp.owl && mv $@.tmp.owl $@
 
 # Artifact that extends base with gene ontologies (used by PCL)
-$(ONT)-pcl-comp.owl:  $(ONT)-base.owl $(GENE_FILES)
-	$(ROBOT) merge -i $< $(patsubst %, -i %, $(GENE_FILES)) \
+$(ONT)-pcl-comp.owl:  $(ONT)-base.owl $(GENE_IMPORTS)
+	$(ROBOT) merge -i $< $(patsubst %, -i %, $(GENE_IMPORTS)) \
 	 	annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 		--output $(RELEASEDIR)/$@
 $(ONT)-pcl-comp.obo: $(RELEASEDIR)/$(ONT)-pcl-comp.owl
