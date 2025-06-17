@@ -6,10 +6,14 @@ import sys
 import argparse
 import glob
 from pathlib import Path
-from typing import List
+from typing import List, Dict
 import pandas as pd
 from template_generation_utils import read_csv, read_csv_to_dict, read_taxonomy_details_yaml, index_dendrogram
 from dendrogram_tools import cas_json_2_nodes_n_edges
+
+ENSEMBL_PREFIX = "ensembl:"
+
+NCBI_GENE_PREFIX = "NCBIGene:"
 
 BATCH_SIZE = 500
 
@@ -25,8 +29,12 @@ MARKER_COLUMNS = ["Marker1", "Marker2", "Marker3", "Marker4"]
 
 MARKER_COLUMNS_OPTIONAL = ["Marker5"]
 
+# https://mygene.info/v3/api#/
 MYGENE_ENDPOINT = "https://mygene.info/v3/gene/{geneid}?fields=alias%2Cother_names&dotfield=false"
 MYGENE_BATCH_ENDPOINT = "https://mygene.info/v3/gene?fields=alias%2Cother_names"
+
+MYGENE_ENSEMBL_TO_NCBI = "https://mygene.info/v3/gene?fields=entrezgene&dotfield=false"
+MYGENE_ENSEMBL_TO_NCBI_NAME = "https://mygene.info/v3/query?q={gene_symbol}&fields=entrezgene&entrezonly=true&species=10090&dotfield=false"
 
 log = logging.getLogger(__name__)
 
@@ -335,6 +343,52 @@ def encode_gene_list(genes):
 #     class_robot_template = pd.DataFrame.from_records(marker_records)
 #     class_robot_template.to_csv(output_file, sep="\t", index=False)
 
+def mygene_convert_ensembl_to_ncbi(genes: List[str]):
+    """
+    Finds matching NCBI gene ID for the given Ensembl gene ID using MyGene API.
+    Args:
+        genes: List of Ensembl gene IDs in the format "ensembl:ENSMUSG00000027790".
+
+    Return: list of ncbi genes
+    """
+    headers = {'accept': 'application/json', 'Content-Type': 'application/x-www-form-urlencoded'}
+    r = requests.post(MYGENE_ENSEMBL_TO_NCBI, data=(encode_gene_list(genes)), headers=headers)
+
+    mappings = dict()
+    if r.status_code == 200:
+        response = r.json()
+        for query in response:
+            gene_id = query["query"]
+            if "entrezgene" in query:
+                mappings[ENSEMBL_PREFIX + gene_id] = NCBI_GENE_PREFIX + query["entrezgene"]
+
+    return mappings
+
+def mygene_convert_ensembl_to_ncbi_by_symbol(gene_symbol: str):
+    """
+    Finds matching NCBI gene ID for the given Ensembl gene symbol using MyGene API. (Batch query API doesn't work for gene symbols, so making individual requests for now.)
+    Args:
+        gene_symbol: Ensembl gene symbol (name).
+
+    Return: ncbi gene
+    """
+    headers = {'accept': 'application/json', 'Content-Type': 'application/x-www-form-urlencoded'}
+    r = requests.get(MYGENE_ENSEMBL_TO_NCBI_NAME.format(gene_symbol=gene_symbol), headers=headers)
+
+    if r.status_code == 200:
+        response = r.json()
+        if "hits" in response:
+            if len(response["hits"]) > 0:
+                hit = response["hits"][0]
+                if "entrezgene" in hit:
+                    return NCBI_GENE_PREFIX + hit["entrezgene"]
+                else:
+                    print("No Entrez gene ID found for gene symbol: " + gene_symbol)
+            else:
+                print("No hits found for gene symbol: " + gene_symbol)
+
+    return None
+
 def convert_ensembl_to_ncbi(ensemble_template, target_template):
     """
     Converts Ensembl gene IDs to NCBI gene IDs in the template.
@@ -352,106 +406,95 @@ def convert_ensembl_to_ncbi(ensemble_template, target_template):
             batch = []
             success = 0
             failure = 0
+            total_batch_count = int(32287 / BATCH_SIZE)
+            current_batch = 0
             for row in ensembl_reader:
                 batch.append(row)
                 # Process each batch of x rows.
                 if len(batch) == BATCH_SIZE:
-                    bs, bf = process_batch_gene_conversion(batch, ncbi_writer)
+                    bs, bf = process_batch_gene_conversion(batch, ncbi_writer, retry_mygene=True, retry_mygene_by_symbol=True)
                     success += bs
                     failure += bf
                     batch = []
+                    current_batch += 1
+                    print("Processed batch {}/{}".format(current_batch, total_batch_count))
             # Process any remaining rows
             if batch:
-                bs, bf = process_batch_gene_conversion(batch, ncbi_writer)
+                bs, bf = process_batch_gene_conversion(batch, ncbi_writer, retry_mygene=True, retry_mygene_by_symbol=True)
                 success += bs
                 failure += bf
             print("Success: " + str(success))
             print("Fail: " + str(failure))
 
-def process_batch_gene_conversion(rows, writer):
+def process_batch_gene_conversion(rows, writer, retry_mygene: bool = False, retry_mygene_by_symbol: bool = False):
     """
     Processes a batch of rows to convert Ensembl gene IDs to NCBI gene IDs using the Node Normalization Service.
     Args:
         rows: rows to process, each row should contain 'ID', 'TYPE', and 'NAME'.
         writer: CSV writer to write the converted rows to the output file.
+        retry_mygene: bool, if True, will retry conversion using MyGene API for failed gene IDs.
+        retry_mygene_by_symbol: If True, will retry conversion using MyGene API by gene symbol for failed gene IDs. (In some cases, MyGene API returns no results for Ensembl IDs, but it can find them by gene symbol.)
     """
     ensembl_ids = [row['ID'].strip() for row in rows]
+    mapping, failed_genes = get_ncbi_gene_ids(ensembl_ids)
 
-    print(ensembl_ids)
-    # Batch request to the normalization endpoint. It expects a JSON with a list of curies.
-    mapping, success, failure = get_ncbi_gene_ids(ensembl_ids)
+    if retry_mygene:
+        print("Retrying with MyGene by ID for {num} genes".format(num=len(failed_genes)))
+        ncbi_gene_mapping = mygene_convert_ensembl_to_ncbi(failed_genes)
+        for mapping_key in ncbi_gene_mapping:
+            mapping[mapping_key] = ncbi_gene_mapping[mapping_key]
+            failed_genes.remove(mapping_key)
+        print("MyGene by ID mapping completed. Mapped {num} genes.".format(num=len(ncbi_gene_mapping)))
+
+    if retry_mygene_by_symbol:
+        print("Retrying with MyGene by symbol for {num} genes".format(num=len(failed_genes)))
+        # symbol-id dictionary
+        ensembl_symbols = {str(row['NAME']).replace("(Mmus)", "").strip() : row['ID'].strip() for row in rows if row['ID'].strip() in failed_genes}
+        success = 0
+        for gene_symbol in ensembl_symbols:
+            ncbi_gene = mygene_convert_ensembl_to_ncbi_by_symbol(gene_symbol)
+            if ncbi_gene:
+                ensembl_id = ensembl_symbols[gene_symbol]
+                mapping[ensembl_id] = ncbi_gene
+                failed_genes.remove(ensembl_id)
+                success += 1
+        print("MyGene by symbol mapping completed. Mapped {num} genes.".format(num=success))
 
     # Fallback conversion if needed.
     for row in rows:
         ensembl_id = row['ID'].strip()
-        writer.writerow([mapping.get(ensembl_id), row['TYPE'], row['NAME']])
-    return success, failure
+        # use ensembl id, if cannot find mapping
+        writer.writerow([mapping.get(ensembl_id, ensembl_id), row['TYPE'], row['NAME']])
+    return len(rows) - len(failed_genes), len(failed_genes)
 
 
-def get_ncbi_gene_ids(ensembl_ids: List[str]):
+def get_ncbi_gene_ids(ensembl_ids: List[str], retry_mygene: bool = False):
     response = requests.post(
         'https://nodenormalization-sri.renci.org/get_normalized_nodes',
         json={"curies": ensembl_ids}
     )
     # print(json.dumps(response.json(), indent=2))
     mapping = {}
-    success = 0
-    failure = 0
+    failed_genes = list()
     if response.status_code == 200:
         results = response.json()
-        print(results)
         for ensembl_curie, data in results.items():
             if str(ensembl_curie).startswith("ensembl:") and data:
-                # print(ensembl_curie)
-                # print(data)
                 ncbi_identifier = data.get("id").get("identifier", "")
-                if ncbi_identifier.startswith("NCBIGene:"):
+                if ncbi_identifier.startswith(NCBI_GENE_PREFIX):
                     mapping[ensembl_curie] = ncbi_identifier
-                    success += 1
                 else:
-                    print(
-                        "Mapped identifier is not a valid NCBI Gene ID: " + ncbi_identifier + " for input " + ensembl_curie)
-                    failure += 1
-                    # raise ValueError("Mapped identifier is not a valid NCBI Gene ID: " + ncbi_identifier + " for input " + ensembl_curie)
+                    failed_genes.append(ensembl_curie)
             else:
-                print(f"Failed to map {ensembl_curie} to NCBI Gene ID. Data: {data}")
-                failure += 1
-                # raise ValueError(f"Failed to map {ensembl_curie} to NCBI Gene ID. Data: {data}")
+                # print(f"Failed to map {ensembl_curie} to NCBI Gene ID. Data: {data}")
+                if ":" in ensembl_curie:
+                    failed_genes.append(ensembl_curie)
     else:
         # raise Exception(f"Failed to normalize nodes: {response.status_code} - {response.text}")
         print(f"Failed to normalize nodes: {response.status_code} - {response.text}")
-        failure = failure + len(ensembl_ids)
-    return mapping, success, failure
+        failed_genes.extend(ensembl_ids)
 
-
-def main():
-    # generates marker files
-    # normalize_raw_markers("../markers/raw/Marmoset_NSForest_Markers.csv")
-    # normalize_raw_markers("../markers/raw/Human_NSForest_Markers.csv")
-    # normalize_raw_markers("../markers/raw/Human_MTG_NSForest_Markers.tsv")
-    # normalize_raw_markers("../markers/raw/Mouse_NSForest_Markers.csv")
-
-
-    # generates marker dosdp templates
-    # generate_marker_template("201912131", "../patterns/data/bds/ensg_data.tsv")
-    # generate_marker_template("201912132", "../patterns/data/bds/enscjag_data.tsv")
-
-    # fix_gene_database(GENE_DB_PATH.format("simple_human"), "entrez:")
-    # fix_gene_database(GENE_DB_PATH.format("ensmusg"), "ensembl:")
-
-    # fix_gene_database_species(GENE_DB_PATH.format("simple_human"))
-    # fix_gene_database_species(GENE_DB_PATH.format("simple_marmoset"))
-    # fix_gene_database_species(GENE_DB_PATH.format("ensmusg"))
-
-    # markers provided by Brian don't have clusterName, add them
-    # add_cluster_name_to_marker("../markers/CS202002013_markers.tsv")
-
-    # add_mygene_synonyms(GENE_DB_PATH.format("simple_human"))
-    # add_mygene_synonyms(GENE_DB_PATH.format("simple_marmoset"))
-    # add_mygene_synonyms(GENE_DB_PATH.format("ensmusg"))
-
-    convert_ensembl_to_ncbi(GENE_DB_PATH.format("ensmusg"), GENE_DB_PATH.format("ncbigene_musculus"))
-    # pass
+    return mapping, failed_genes
 
 def extract_ensembl_terms(patterns_dir, output_path):
     """
@@ -481,6 +524,35 @@ def extract_ensembl_terms(patterns_dir, output_path):
         for gene in sorted(gene_ids):
             out_file.write(gene + "\n")
     print("Extracted", len(gene_ids), "unique gene ids")
+
+def main():
+    # generates marker files
+    # normalize_raw_markers("../markers/raw/Marmoset_NSForest_Markers.csv")
+    # normalize_raw_markers("../markers/raw/Human_NSForest_Markers.csv")
+    # normalize_raw_markers("../markers/raw/Human_MTG_NSForest_Markers.tsv")
+    # normalize_raw_markers("../markers/raw/Mouse_NSForest_Markers.csv")
+
+
+    # generates marker dosdp templates
+    # generate_marker_template("201912131", "../patterns/data/bds/ensg_data.tsv")
+    # generate_marker_template("201912132", "../patterns/data/bds/enscjag_data.tsv")
+
+    # fix_gene_database(GENE_DB_PATH.format("simple_human"), "entrez:")
+    # fix_gene_database(GENE_DB_PATH.format("ensmusg"), "ensembl:")
+
+    # fix_gene_database_species(GENE_DB_PATH.format("simple_human"))
+    # fix_gene_database_species(GENE_DB_PATH.format("simple_marmoset"))
+    # fix_gene_database_species(GENE_DB_PATH.format("ensmusg"))
+
+    # markers provided by Brian don't have clusterName, add them
+    # add_cluster_name_to_marker("../markers/CS202002013_markers.tsv")
+
+    # add_mygene_synonyms(GENE_DB_PATH.format("simple_human"))
+    # add_mygene_synonyms(GENE_DB_PATH.format("simple_marmoset"))
+    # add_mygene_synonyms(GENE_DB_PATH.format("ensmusg"))
+
+    convert_ensembl_to_ncbi(GENE_DB_PATH.format("CCNensmusg"), GENE_DB_PATH.format("ncbigene_musculus"))
+    # pass
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run ensembl.py operations.")

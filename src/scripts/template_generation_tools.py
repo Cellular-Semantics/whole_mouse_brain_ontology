@@ -1083,15 +1083,21 @@ def get_centralized_taxonomy_folder(taxonomy_config):
            + "_" + taxonomy_config["Taxonomy_id"]
 
 def get_gene_id(gene_db, gene_name):
+    gene_name = gene_name.strip()
+    gene_id = None
     if str(gene_name) in gene_db:
-        return gene_db[str(gene_name)]
+        gene_id = gene_db[str(gene_name)]
     else:
         # gene_db may have styling issues, so workaround
-        # TODO remove this workaround after fixing the gene_db
         for gene in gene_db:
             if gene_name.lower() in gene.lower():
-                return gene_db[gene]
-    raise Exception(f"Gene ID not found for gene: {gene_name}")
+                gene_id = gene_db[gene]
+    if gene_id:
+        if gene_id.startswith("ensembl:"):
+            print("Using Ensembl gene ID for gene: {}".format(gene_name))
+        return gene_id
+    else:
+        raise Exception(f"Gene ID not found for gene: {gene_name}")
 
 def get_mba_symbols_map():
     obo_in_owl = Namespace("http://www.geneontology.org/formats/oboInOwl#")
@@ -1140,7 +1146,8 @@ def read_gene_dbs(folder_path: str):
             file_path = os.path.join(folder_path, file_name)
             df = pd.read_csv(file_path, sep='\t')
             for _, row in df.iterrows():
-                gene_dict[row['NAME'].replace("(Mmus)", "").strip()] = row['ID']
+                if pd.notna(row['ID']):
+                    gene_dict[row['NAME'].replace("(Mmus)", "").strip()] = row['ID']
 
     return gene_dict
 
