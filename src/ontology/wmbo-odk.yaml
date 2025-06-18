@@ -44,7 +44,7 @@ import_group:
       use_base: TRUE
     - id: cl
       use_base: TRUE
-    - id: ensmusg
+    - id: genedb
       make_base: TRUE
     - id: ncbitaxon
       mirror_from: http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl

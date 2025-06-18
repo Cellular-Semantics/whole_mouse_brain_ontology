@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                cc82c9e1c136c6e5e7e1e8531c485aceaaf0064aedede05725652809b2e0f82c
+CONFIG_HASH=                2337259e9e33da555762155bc5e0b7fb4fad9aceb867ea0a63110df89a4ca841
 
 
 # ----------------------------------------
@@ -164,7 +164,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  pr go ro uberon pato cl ensmusg ncbitaxon mba
+IMPORTS =  pr go ro uberon pato cl genedb ncbitaxon mba
 
 IMPORT_ROOTS =  $(IMPORTDIR)/merged_import
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -516,12 +516,12 @@ mirror-cl: | $(TMPDIR)
 	$(ROBOT) convert -i $(TMPDIR)/cl-download.owl -o $(TMPDIR)/$@.owl
 
 
-## ONTOLOGY: ensmusg
-.PHONY: mirror-ensmusg
-.PRECIOUS: $(MIRRORDIR)/ensmusg.owl
-mirror-ensmusg: | $(TMPDIR)
-	curl -L $(OBOBASE)/ensmusg.owl --create-dirs -o $(TMPDIR)/ensmusg-download.owl --retry 4 --max-time 400 && \
-	$(ROBOT) remove -i $(TMPDIR)/ensmusg-download.owl --base-iri $(OBOBASE)/ENSMUSG --axioms external --preserve-structure false --trim false -o $(TMPDIR)/$@.owl
+## ONTOLOGY: genedb
+.PHONY: mirror-genedb
+.PRECIOUS: $(MIRRORDIR)/genedb.owl
+mirror-genedb: | $(TMPDIR)
+	curl -L $(OBOBASE)/genedb.owl --create-dirs -o $(TMPDIR)/genedb-download.owl --retry 4 --max-time 400 && \
+	$(ROBOT) remove -i $(TMPDIR)/genedb-download.owl --base-iri $(OBOBASE)/GENEDB --axioms external --preserve-structure false --trim false -o $(TMPDIR)/$@.owl
 
 
 ## ONTOLOGY: ncbitaxon

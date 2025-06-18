@@ -4,7 +4,7 @@
 ## changes here rather than in the main Makefile
 
 JOBS = CCN20230722
-GENE_LIST = ensmusg
+GENE_LIST = genedb
 BDS_BASE = http://purl.obolibrary.org/obo/
 ONTBASE=                    $(URIBASE)/pcl
 BICANBASE=                    https://purl.brain-bican.org/taxonomy
@@ -40,16 +40,16 @@ $(IMPORTDIR)/%_import.owl: $(MIRRORDIR)/merged.owl $(IMPORTDIR)/%_terms_combined
 
 .PRECIOUS: $(IMPORTDIR)/%_import.owl
 
-imports/ensmusg_terms_combined.txt: mirror/ensmusg.owl
+imports/genedb_terms_combined.txt: mirror/genedb.owl
 	if [ $(IMP) = true ]; then python $(SCRIPTSDIR)/ensembl.py terms --patterns_dir $(PATTERNDIR)/data/default --out $@; fi
 
-$(IMPORTDIR)/ensmusg_import.owl: mirror/ensmusg.owl imports/ensmusg_terms_combined.txt
+$(IMPORTDIR)/genedb_import.owl: mirror/genedb.owl imports/genedb_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) query  -i $< --update ../sparql/inject-version-info.ru --update ../sparql/preprocess-module.ru \
-		extract -T imports/ensmusg_terms_combined.txt --prefixes template_prefixes.json --force true --copy-ontology-annotations true --individuals exclude --method BOT \
+		extract -T imports/genedb_terms_combined.txt --prefixes template_prefixes.json --force true --copy-ontology-annotations true --individuals exclude --method BOT \
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
-.PRECIOUS: $(IMPORTDIR)/ensmusg_import.owl
+.PRECIOUS: $(IMPORTDIR)/genedb_import.owl
 
 # DISABLE automatic DOSDP pattern management. Manually managed below
 $(PATTERNDIR)/definitions.owl: $(TSV_CLASS_FILES)
@@ -93,7 +93,7 @@ $(TMPDIR)/%_class.tsv: ../patterns/data/default/%_class_base.tsv ../patterns/dat
 	python ../scripts/template_runner.py modifier --merge -i=$< -i2=$(word 2, $^) -o=$@
 
 # hard wiring for now.  Work on patsubst later
-mirror/ensmusg.owl: ../templates/ensmusg.tsv .FORCE
+mirror/genedb.owl: ../templates/genedb.tsv .FORCE
 	if [ $(MIR) = true ]; then $(ROBOT) template --input $(SRC) --template $< \
       --add-prefixes template_prefixes.json \
       annotate --ontology-iri ${BDS_BASE}$@ \
