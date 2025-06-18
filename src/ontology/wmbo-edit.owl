@@ -7,6 +7,7 @@ Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 Prefix(dcterms:=<http://purl.org/dc/terms/>)
+Prefix(obo:=<http://purl.obolibrary.org/obo/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/WMBO.owl>
@@ -103,6 +104,10 @@ Declaration(AnnotationProperty(dcterms:provenance))
 Declaration(AnnotationProperty(dcterms:relation))
 Declaration(AnnotationProperty(dcterms:subject))
 Declaration(AnnotationProperty(dcterms:title))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/CLM_0010001>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/CLM_0010002>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/CLM_0010003>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/CLM_0010004>))
 ############################
 #   Annotation Properties
 ############################
@@ -166,24 +171,31 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010061> "nuc
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010062> "fbeta_confidence_score")
 
 # Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010063> (some_soma_located_in)
+# Use CLM_0010001 instead
+# AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010063> "some_soma_located_in")
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010063> "some_soma_located_in")
-
-# Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010065> (cell_ratio)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010065> "cell_ratio")
-
-# Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010066> (has minimal marker)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010066> "has minimal marker")
+# Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010065> (obsolete cell_ratio)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010065> "obsolete cell_ratio")
+AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/PCL_0010065> "true"^^xsd:boolean)
+AnnotationAssertion(obo:IAO_0100001 <http://purl.obolibrary.org/obo/PCL_0010065> <http://purl.obolibrary.org/obo/CLM_0010002>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010067> (has_marker_set)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010067> "has_marker_set")
 
-# Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010068> (recall)
+#### Temporary CLM properties ####
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010068> "recall")
+# Annotation Property: <http://purl.obolibrary.org/obo/CLM_0010001> (some_soma_located_in)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CLM_0010001> "some_soma_located_in")
+
+# Annotation Property: <http://purl.obolibrary.org/obo/CLM_0010002> (cell_ratio)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CLM_0010002> "cell_ratio")
+
+# Annotation Property: <http://purl.obolibrary.org/obo/CLM_0010003> (has_marker_set)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CLM_0010003> "has_marker_set")
+
+# Annotation Property: <http://purl.obolibrary.org/obo/CLM_0010004> (recall)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CLM_0010004> "recall")
 
 ############################
 #   Object Properties

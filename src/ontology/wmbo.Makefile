@@ -212,7 +212,7 @@ mirror-uberon: | $(TMPDIR)
 	$(ROBOT) query -i $(TMPDIR)/$@.owl --update ../sparql/delete_uberon_disjointness.ru -o $(TMPDIR)/$@.owl
 
 # Release additional artifacts
-$(ONT).owl: $(ONT)-full.owl $(ONT)-pcl-comp.owl $(ONT)-pcl-comp.obo $(ONT)-pcl-comp.json $(RELEASEDIR)/$(ONT)-cl-comp.owl
+$(ONT).owl: $(ONT)-full.owl $(ONT)-pcl-comp.owl $(ONT)-pcl-comp.obo $(ONT)-pcl-comp.json $(RELEASEDIR)/$(ONT)-cl-comp.owl $(RELEASEDIR)/$(ONT)-cl-comp.obo $(RELEASEDIR)/$(ONT)-cl-comp.json
 	$(ROBOT) annotate --input $< --ontology-iri $(URIBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 		convert -o $@.tmp.owl && mv $@.tmp.owl $@
 
@@ -230,8 +230,14 @@ $(ONT)-pcl-comp.json: $(RELEASEDIR)/$(ONT)-pcl-comp.owl
 
 $(TMPDIR)/cl_component_terms.txt: $(TMPDIR)/all_pattern_terms.txt
 	python ../scripts/cl_subset_terms.py -o $@
-	#grep -E "^(http://purl\.obolibrary\.org/obo/CL_4|http://purl\.obolibrary\.org/obo/CLM_5)" $< > $@
 
-$(RELEASEDIR)/$(ONT)-cl-comp.owl: $(ONT)-pcl-comp.owl $(TMPDIR)/cl_component_terms.txt
-	$(ROBOT) filter --input $(RELEASEDIR)/$(ONT)-pcl-comp.owl --term-file $(TMPDIR)/cl_component_terms.txt --select "annotations anonymous self" --signature true --trim false --output $@
-	#$(ROBOT) extract --method subset --input $(RELEASEDIR)/$(ONT)-pcl-comp.owl --term-file $(TMPDIR)/cl_component_terms.txt --term "BFO:0000050" --term "BFO:0000051" --output $@
+# Artifact for CL that hosts only the validated component annotations (used by CL)
+$(RELEASEDIR)/$(ONT)-cl-comp.owl: $(ONT)-pcl-comp.owl $(TMPDIR)/cl_component_terms.txt wmbo-clm-edit.owl
+	$(ROBOT) filter --input $(RELEASEDIR)/$(ONT)-pcl-comp.owl --term-file $(TMPDIR)/cl_component_terms.txt --select "annotations anonymous self" --signature true --trim false  \
+	merge -i wmbo-clm-edit.owl --output $@
+$(RELEASEDIR)/$(ONT)-cl-comp.obo: $(RELEASEDIR)/$(ONT)-cl-comp.owl
+	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo && grep -v ^owl-axioms $@.tmp.obo > $@ && rm $@.tmp.obo
+$(RELEASEDIR)/$(ONT)-cl-comp.json: $(RELEASEDIR)/$(ONT)-cl-comp.owl
+	$(ROBOT) annotate --input $< --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+		convert --check false -f json -o $@.tmp.json &&\
+	jq -S 'walk(if type == "array" then sort else . end)' $@.tmp.json > $@ && rm $@.tmp.json

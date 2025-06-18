@@ -32,13 +32,13 @@ annotationProperties:
   hasDbXref: "oboInOwl:hasDbXref"
   symbol: "IAO:0000028"
   'has nsforest marker': "PCL:0010058"
-  some_soma_located_in: "PCL:0010063"
+  some_soma_located_in: "CLM:0010001"
 #  assay_label: "PCL:0010064"
   assay: "OBI:0000070"
-  cell_ratio: "PCL:0010065"
+  cell_ratio: "CLM:0010002"
   'has minimal marker': "PCL:0010066"
   evidence: "oboInOwl:evidence"
-  has_marker_set: "PCL:0010067"
+  has_marker_set: "CLM:0010003"
   fbetaConfidenceScore: "STATO:0000663"
 
 list_vars:

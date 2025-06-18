@@ -1,0 +1,1211 @@
+format-version: 1.2
+idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
+ontology: pcl/wmbo-pcl-comp
+
+[Term]
+id: CL:4300031
+name: OPC-Oligo cell (Mmus)
+def: "A cell of the Mus musculus brain. Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Class:31 OPC-Oligo." [https://doi.org/10.1038/s41586-023-06812-z]
+synonym: "31 OPC-Oligo" EXACT []
+is_a: CL:0000255
+relationship: RO:0002162 NCBITaxon:10090
+property_value: CLM:0010003 CLM:5007651 {STATO:0000663="0.8972486"}
+property_value: IAO:0000028 "OPC-Oligo (Mmus)" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIBMzEgT1BDLU9saWdvAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACAAAEAQECgazGjoGWFSADhGpN%2FYRYGE0ABQAGAQECRlMwMERYVjBUOVIxWDlGSjRRRQADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJTWTNTTE1OUElEM0M2OE1HUzhWAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgEzMSBPUEMtT2xpZ28AAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAAYBAQJGUzAwRFhWMFQ5UjFYOUZKNFFFAAN%2BAAAABAAACDZNVDdVQzZFVFlFQ0JXRjUwUEsACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA" xsd:string {name="Reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad" xsd:string {comment="Warning large data file!", name="h5ad data file for CS20230722_CLAS_31"}
+
+[Term]
+id: CL:4300366
+name: oligodendrocyte precursor cell (Mmus))
+def: "A oligodendrocyte precursor cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pdgfra (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:326 OPC NN." [https://doi.org/10.1038/s41586-023-06812-z]
+synonym: "326 OPC NN" EXACT []
+synonym: "Pdgfra (Mmus) expressing oligodendrocyte precursor cell of brain (Mus musculus)" EXACT []
+is_a: CL:0002453
+is_a: CL:4300031 ! OPC-Oligo cell (Mmus)
+property_value: CLM:0010003 CLM:5000366 {STATO:0000663="0.7124217"}
+property_value: CLM:0010003 CLM:5007986 {STATO:0000663="0.9503155"}
+property_value: IAO:0000028 "OPC NN (Mmus)" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzI2IE9QQyBOTgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAlFZNVM4S01PNUhMSlVGMFAwMEsAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACU1kzU0xNTlBJRDNDNjhNR1M4VgADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzI2IE9QQyBOTgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAlFZNVM4S01PNUhMSlVGMFAwMEsAA34AAAAEAAAINk1UN1VDNkVUWUVDQldGNTBQSwAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="Reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad" xsd:string {comment="Warning large data file!", name="h5ad data file for CS20230722_CLAS_31"}
+
+[Term]
+id: CL:4300367
+name: oligodendrocyte (Mmus)
+def: "A oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cldn11 (Mmus), Gjc3 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:327 Oligo NN." [https://doi.org/10.1038/s41586-023-06812-z]
+synonym: "327 Oligo NN" EXACT []
+synonym: "Cldn11 (Mmus), Gjc3 (Mmus) expressing oligodendrocyte of brain (Mus musculus)" EXACT []
+is_a: CL:0000128
+is_a: CL:4300031 ! OPC-Oligo cell (Mmus)
+property_value: CLM:0010003 CLM:5000367 {STATO:0000663="0.9230531"}
+property_value: CLM:0010003 CLM:5007987 {STATO:0000663="0.9235276"}
+property_value: IAO:0000028 "Oligo NN (Mmus)" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzI3IE9saWdvIE5OAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACAAAEAQECgazGjoGWFSADhGpN%2FYRYGE0ABQAGAQECUVk1UzhLTU81SExKVUYwUDAwSwADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJTWTNTTE1OUElEM0M2OE1HUzhWAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgEzMjcgT2xpZ28gTk4AAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAAYBAQJRWTVTOEtNTzVITEpVRjBQMDBLAAN%2BAAAABAAACDZNVDdVQzZFVFlFQ0JXRjUwUEsACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA" xsd:string {name="Reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad" xsd:string {comment="Warning large data file!", name="h5ad data file for CS20230722_CLAS_31"}
+
+[Term]
+id: CL:4301609
+name: OPC NN_1 oligodendrocyte precursor cell (Mmus)
+def: "A oligodendrocyte precursor cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pdgfra (Mmus), Olig1 (Mmus), Rmi2 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1179 OPC NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
+synonym: "1179 OPC NN_1" EXACT []
+synonym: "Pdgfra (Mmus), Olig1 (Mmus), Rmi2 (Mmus) expressing oligodendrocyte precursor cell of brain (Mus musculus)" EXACT []
+is_a: CL:4300366 ! oligodendrocyte precursor cell (Mmus))
+property_value: CLM:0010003 CLM:5001599 {STATO:0000663="0.5744681"}
+property_value: CLM:0010003 CLM:5016819
+property_value: IAO:0000028 "OPC NN_1 (Mmus)" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE3OSBPUEMgTk5fMQAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAjE1Qks0N0RDSU9GMVNMTFVXOVAAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACU1kzU0xNTlBJRDNDNjhNR1M4VgADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE3OSBPUEMgTk5fMQAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAjE1Qks0N0RDSU9GMVNMTFVXOVAAA34AAAAEAAAINk1UN1VDNkVUWUVDQldGNTBQSwAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="Reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad" xsd:string {comment="Warning large data file!", name="h5ad data file for CS20230722_CLAS_31"}
+
+[Term]
+id: CL:4301611
+name: COP NN_1 differentiation-committed oligodendrocyte precursor (Mmus)
+def: "A differentiation-committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Bmp4 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1181 COP NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
+synonym: "1181 COP NN_1" EXACT []
+synonym: "Gpr17 (Mmus), Bmp4 (Mmus) expressing differentiation-committed oligodendrocyte precursor of brain (Mus musculus)" EXACT []
+is_a: CL:4023059
+is_a: CL:4300367 ! oligodendrocyte (Mmus)
+property_value: CLM:0010003 CLM:5001601 {STATO:0000663="0.8684739"}
+property_value: CLM:0010003 CLM:5016821
+property_value: IAO:0000028 "COP NN_1 (Mmus)" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE4MSBDT1AgTk5fMQAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAjE1Qks0N0RDSU9GMVNMTFVXOVAAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACU1kzU0xNTlBJRDNDNjhNR1M4VgADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE4MSBDT1AgTk5fMQAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAjE1Qks0N0RDSU9GMVNMTFVXOVAAA34AAAAEAAAINk1UN1VDNkVUWUVDQldGNTBQSwAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="Reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad" xsd:string {comment="Warning large data file!", name="h5ad data file for CS20230722_CLAS_31"}
+
+[Term]
+id: CL:4301612
+name: NFOL NN_2 oligodendrocyte (Mmus)
+def: "A oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Ptprb (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1182 NFOL NN_2." [https://doi.org/10.1038/s41586-023-06812-z]
+synonym: "1182 NFOL NN_2" EXACT []
+synonym: "9630013A20Rik (Mmus), Ptprb (Mmus) expressing oligodendrocyte of brain (Mus musculus)" EXACT []
+is_a: CL:4300367 ! oligodendrocyte (Mmus)
+property_value: CLM:0010003 CLM:5001602 {STATO:0000663="0.6304985"}
+property_value: CLM:0010003 CLM:5016822
+property_value: IAO:0000028 "NFOL NN_2 (Mmus)" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE4MiBORk9MIE5OXzIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAAYBAQIxNUJLNDdEQ0lPRjFTTExVVzlQAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAlNZM1NMTU5QSUQzQzY4TUdTOFYAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACATExODIgTkZPTCBOTl8yAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQAGAQECMTVCSzQ3RENJT0YxU0xMVVc5UAADfgAAAAQAAAg2TVQ3VUM2RVRZRUNCV0Y1MFBLAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D" xsd:string {name="Reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad" xsd:string {comment="Warning large data file!", name="h5ad data file for CS20230722_CLAS_31"}
+
+[Term]
+id: CL:4301613
+name: MFOL NN_3 oligodendrocyte (Mmus)
+def: "A oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cldn11 (Mmus), Sec14l5 (Mmus), 9630013A20Rik (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1183 MFOL NN_3." [https://doi.org/10.1038/s41586-023-06812-z]
+synonym: "1183 MFOL NN_3" EXACT []
+synonym: "Cldn11 (Mmus), Sec14l5 (Mmus), 9630013A20Rik (Mmus) expressing oligodendrocyte of brain (Mus musculus)" EXACT []
+is_a: CL:4300367 ! oligodendrocyte (Mmus)
+property_value: CLM:0010003 CLM:5001603 {STATO:0000663="0.49418604"}
+property_value: CLM:0010003 CLM:5016823
+property_value: IAO:0000028 "MFOL NN_3 (Mmus)" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE4MyBNRk9MIE5OXzMAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAAYBAQIxNUJLNDdEQ0lPRjFTTExVVzlQAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAlNZM1NMTU5QSUQzQzY4TUdTOFYAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACATExODMgTUZPTCBOTl8zAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQAGAQECMTVCSzQ3RENJT0YxU0xMVVc5UAADfgAAAAQAAAg2TVQ3VUM2RVRZRUNCV0Y1MFBLAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D" xsd:string {name="Reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad" xsd:string {comment="Warning large data file!", name="h5ad data file for CS20230722_CLAS_31"}
+
+[Term]
+id: CL:4301614
+name: MOL NN_4 oligodendrocyte (Mmus)
+def: "A oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cldn11 (Mmus), Anln (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1184 MOL NN_4." [https://doi.org/10.1038/s41586-023-06812-z]
+synonym: "1184 MOL NN_4" EXACT []
+synonym: "Cldn11 (Mmus), Anln (Mmus) expressing oligodendrocyte of brain (Mus musculus)" EXACT []
+is_a: CL:4300367 ! oligodendrocyte (Mmus)
+property_value: CLM:0010003 CLM:5001604 {STATO:0000663="0.7853026"}
+property_value: CLM:0010003 CLM:5016824
+property_value: IAO:0000028 "MOL NN_4 (Mmus)" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE4NCBNT0wgTk5fNAAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAjE1Qks0N0RDSU9GMVNMTFVXOVAAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACU1kzU0xNTlBJRDNDNjhNR1M4VgADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE4NCBNT0wgTk5fNAAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAjE1Qks0N0RDSU9GMVNMTFVXOVAAA34AAAAEAAAINk1UN1VDNkVUWUVDQldGNTBQSwAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="Reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad" xsd:string {comment="Warning large data file!", name="h5ad data file for CS20230722_CLAS_31"}
+
+[Term]
+id: CL:4307086
+name: OPC NN_1 Neil3 oligodendrocyte precursor cell (Mmus)
+def: "A oligodendrocyte precursor cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pdgfra (Mmus), Pclaf (Mmus), Mki67 (Mmus), Foxg1 (Mmus). It is distinguished from other OPC NN_1 cells by expression of Neil3, Foxg1. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5266 OPC NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
+synonym: "5266 OPC NN_1" EXACT []
+synonym: "Pdgfra (Mmus), Pclaf (Mmus), Mki67 (Mmus), Foxg1 (Mmus) expressing oligodendrocyte precursor cell of brain (Mus musculus)" EXACT []
+is_a: CL:4301609 ! OPC NN_1 oligodendrocyte precursor cell (Mmus)
+property_value: CLM:0010001 MBA:315 {CLM:0010002="0.52", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.14", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010003 CLM:5007016 {STATO:0000663="0.40697673"}
+property_value: CLM:0010003 CLM:5022236 {STATO:0000663="0.40816328"}
+property_value: IAO:0000028 "OPC NN_1 Neil3 (Mmus)" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI2NiBPUEMgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACU1kzU0xNTlBJRDNDNjhNR1M4VgADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI2NiBPUEMgTk5fMQAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAINk1UN1VDNkVUWUVDQldGNTBQSwAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="Reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad" xsd:string {comment="Warning large data file!", name="h5ad data file for CS20230722_CLAS_31"}
+
+[Term]
+id: CL:4307087
+name: OPC NN_1 Irx2 oligodendrocyte precursor cell (Mmus)
+def: "A oligodendrocyte precursor cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pdgfra (Mmus), Pclaf (Mmus), Irx2 (Mmus). It is distinguished from other OPC NN_1 cells by expression of Neil3, Irx2. These cells are located in the Cerebellum, brain, Midbrain, Pons, Medulla . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5267 OPC NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
+synonym: "5267 OPC NN_1" EXACT []
+synonym: "Pdgfra (Mmus), Pclaf (Mmus), Irx2 (Mmus) expressing oligodendrocyte precursor cell of brain (Mus musculus)" EXACT []
+is_a: CL:4301609 ! OPC NN_1 oligodendrocyte precursor cell (Mmus)
+property_value: CLM:0010001 MBA:313 {CLM:0010002="0.21", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:354 {CLM:0010002="0.13", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:512 {CLM:0010002="0.14", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:771 {CLM:0010002="0.17", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.23", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010003 CLM:5007017 {STATO:0000663="0.7246377"}
+property_value: CLM:0010003 CLM:5022237 {STATO:0000663="0.6557377"}
+property_value: IAO:0000028 "OPC NN_1 Irx2 (Mmus)" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI2NyBPUEMgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACU1kzU0xNTlBJRDNDNjhNR1M4VgADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI2NyBPUEMgTk5fMQAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAINk1UN1VDNkVUWUVDQldGNTBQSwAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="Reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad" xsd:string {comment="Warning large data file!", name="h5ad data file for CS20230722_CLAS_31"}
+
+[Term]
+id: CL:4307088
+name: OPC NN_1 Mms22l oligodendrocyte precursor cell (Mmus)
+def: "A oligodendrocyte precursor cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pdgfra (Mmus), Olig1 (Mmus), Mms22l (Mmus), Top2a (Mmus). It is distinguished from other OPC NN_1 cells by expression of Mms22l, Foxg1, Top2a. These cells are located in the Isocortex, Olfactory areas, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5268 OPC NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
+synonym: "5268 OPC NN_1" EXACT []
+synonym: "Pdgfra (Mmus), Olig1 (Mmus), Mms22l (Mmus), Top2a (Mmus) expressing oligodendrocyte precursor cell of brain (Mus musculus)" EXACT []
+is_a: CL:4301609 ! OPC NN_1 oligodendrocyte precursor cell (Mmus)
+property_value: CLM:0010001 MBA:315 {CLM:0010002="0.53", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:698 {CLM:0010002="0.12", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010003 CLM:5007018 {STATO:0000663="0.18518518"}
+property_value: CLM:0010003 CLM:5022238 {STATO:0000663="0.18656716"}
+property_value: IAO:0000028 "OPC NN_1 Mms22l (Mmus)" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI2OCBPUEMgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACU1kzU0xNTlBJRDNDNjhNR1M4VgADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI2OCBPUEMgTk5fMQAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAINk1UN1VDNkVUWUVDQldGNTBQSwAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="Reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad" xsd:string {comment="Warning large data file!", name="h5ad data file for CS20230722_CLAS_31"}
+
+[Term]
+id: CL:4307089
+name: OPC NN_1 Col27a1 oligodendrocyte precursor cell (Mmus)
+def: "A oligodendrocyte precursor cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pdgfra (Mmus), Olig1 (Mmus), Col27a1 (Mmus). It is distinguished from other OPC NN_1 cells by expression of Col27a1. These cells are located in the Midbrain, Pons, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5269 OPC NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
+synonym: "5269 OPC NN_1" EXACT []
+synonym: "Pdgfra (Mmus), Olig1 (Mmus), Col27a1 (Mmus) expressing oligodendrocyte precursor cell of brain (Mus musculus)" EXACT []
+is_a: CL:4301609 ! OPC NN_1 oligodendrocyte precursor cell (Mmus)
+property_value: CLM:0010001 MBA:313 {CLM:0010002="0.17", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:771 {CLM:0010002="0.11", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.16", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010003 CLM:5007019 {STATO:0000663="0.38235295"}
+property_value: CLM:0010003 CLM:5022239 {STATO:0000663="0.41366908"}
+property_value: IAO:0000028 "OPC NN_1 Col27a1 (Mmus)" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI2OSBPUEMgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACU1kzU0xNTlBJRDNDNjhNR1M4VgADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI2OSBPUEMgTk5fMQAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAINk1UN1VDNkVUWUVDQldGNTBQSwAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="Reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad" xsd:string {comment="Warning large data file!", name="h5ad data file for CS20230722_CLAS_31"}
+
+[Term]
+id: CL:4307090
+name: OPC NN_1 Rmi2 oligodendrocyte precursor cell (Mmus)
+def: "A oligodendrocyte precursor cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pdgfra (Mmus), Olig1 (Mmus), Rmi2 (Mmus), Col27a1 (Mmus). It is distinguished from other OPC NN_1 cells by expression of Rmi2, Col27a1. These cells are located in the Hypothalamus, Midbrain, Pallidum, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5270 OPC NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
+synonym: "5270 OPC NN_1" EXACT []
+synonym: "Pdgfra (Mmus), Olig1 (Mmus), Rmi2 (Mmus), Col27a1 (Mmus) expressing oligodendrocyte precursor cell of brain (Mus musculus)" EXACT []
+is_a: CL:4301609 ! OPC NN_1 oligodendrocyte precursor cell (Mmus)
+property_value: CLM:0010001 MBA:1097 {CLM:0010002="0.17", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:313 {CLM:0010002="0.39", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:803 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010003 CLM:5007020 {STATO:0000663="0.0"}
+property_value: CLM:0010003 CLM:5022240 {STATO:0000663="0.37190083"}
+property_value: IAO:0000028 "OPC NN_1 Rmi2 (Mmus)" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3MCBPUEMgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACU1kzU0xNTlBJRDNDNjhNR1M4VgADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3MCBPUEMgTk5fMQAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAINk1UN1VDNkVUWUVDQldGNTBQSwAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="Reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad" xsd:string {comment="Warning large data file!", name="h5ad data file for CS20230722_CLAS_31"}
+
+[Term]
+id: CL:4307091
+name: OPC NN_2 oligodendrocyte precursor cell (Mmus)
+def: "A oligodendrocyte precursor cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pdgfra (Mmus), Cenpf (Mmus), Cenpa (Mmus). It is distinguished from other OPC NN cells by expression of Cenpa. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5271 OPC NN_2." [https://doi.org/10.1038/s41586-023-06812-z]
+synonym: "1180 OPC NN_2" EXACT []
+synonym: "5271 OPC NN_2" EXACT []
+synonym: "Pdgfra (Mmus), Cenpf (Mmus), Cenpa (Mmus) expressing oligodendrocyte precursor cell of brain (Mus musculus)" EXACT []
+is_a: CL:4300366 ! oligodendrocyte precursor cell (Mmus))
+property_value: CLM:0010001 MBA:315 {CLM:0010002="0.26", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.17", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010003 CLM:5007021 {STATO:0000663="0.7876712"}
+property_value: CLM:0010003 CLM:5022241
+property_value: IAO:0000028 "OPC NN_2 (Mmus)" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE4MCBPUEMgTk5fMgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAjE1Qks0N0RDSU9GMVNMTFVXOVAAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACU1kzU0xNTlBJRDNDNjhNR1M4VgADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE4MCBPUEMgTk5fMgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAjE1Qks0N0RDSU9GMVNMTFVXOVAAA34AAAAEAAAINk1UN1VDNkVUWUVDQldGNTBQSwAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="Reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad" xsd:string {comment="Warning large data file!", name="h5ad data file for CS20230722_CLAS_31"}
+
+[Term]
+id: CL:4307092
+name: COP NN_1 Rgcc differentiation-committed oligodendrocyte precursor (Mmus)
+def: "A differentiation-committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Bmp4 (Mmus), Zfp36l1 (Mmus). It is distinguished from other COP NN_1 cells by expression of Rgcc, Plpp4. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5272 COP NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
+synonym: "5272 COP NN_1" EXACT []
+synonym: "Gpr17 (Mmus), Bmp4 (Mmus), Zfp36l1 (Mmus) expressing differentiation-committed oligodendrocyte precursor of brain (Mus musculus)" EXACT []
+is_a: CL:4301611 ! COP NN_1 differentiation-committed oligodendrocyte precursor (Mmus)
+property_value: CLM:0010001 MBA:315 {CLM:0010002="0.22", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.2", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010003 CLM:5007022 {STATO:0000663="0.3888889"}
+property_value: CLM:0010003 CLM:5022242 {STATO:0000663="0.54347825"}
+property_value: IAO:0000028 "COP NN_1 Rgcc (Mmus)" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3MiBDT1AgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACU1kzU0xNTlBJRDNDNjhNR1M4VgADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3MiBDT1AgTk5fMQAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAINk1UN1VDNkVUWUVDQldGNTBQSwAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="Reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad" xsd:string {comment="Warning large data file!", name="h5ad data file for CS20230722_CLAS_31"}
+
+[Term]
+id: CL:4307093
+name: COP NN_1 9130019P16Rik differentiation-committed oligodendrocyte precursor (Mmus)
+def: "A differentiation-committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Gp1bb (Mmus), Pdzd2 (Mmus), Plekhg1 (Mmus). It is distinguished from other COP NN_1 cells by expression of Rgcc, 9130019P16Rik. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5273 COP NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
+synonym: "5273 COP NN_1" EXACT []
+synonym: "Gpr17 (Mmus), Gp1bb (Mmus), Pdzd2 (Mmus), Plekhg1 (Mmus) expressing differentiation-committed oligodendrocyte precursor of brain (Mus musculus)" EXACT []
+is_a: CL:4301611 ! COP NN_1 differentiation-committed oligodendrocyte precursor (Mmus)
+property_value: CLM:0010001 MBA:315 {CLM:0010002="0.33", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.2", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010003 CLM:5007023 {STATO:0000663="0.08064516"}
+property_value: CLM:0010003 CLM:5022243 {STATO:0000663="0.48245615"}
+property_value: IAO:0000028 "COP NN_1 9130019P16Rik (Mmus)" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3MyBDT1AgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACU1kzU0xNTlBJRDNDNjhNR1M4VgADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3MyBDT1AgTk5fMQAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAINk1UN1VDNkVUWUVDQldGNTBQSwAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="Reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad" xsd:string {comment="Warning large data file!", name="h5ad data file for CS20230722_CLAS_31"}
+
+[Term]
+id: CL:4307094
+name: COP NN_1 C1ql1 differentiation-committed oligodendrocyte precursor (Mmus)
+def: "A differentiation-committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Bgn (Mmus), Gstp1 (Mmus), C1ql1 (Mmus). It is distinguished from other COP NN_1 cells by expression of C1ql1, Gstp1. These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5274 COP NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
+synonym: "5274 COP NN_1" EXACT []
+synonym: "Gpr17 (Mmus), Bgn (Mmus), Gstp1 (Mmus), C1ql1 (Mmus) expressing differentiation-committed oligodendrocyte precursor of brain (Mus musculus)" EXACT []
+is_a: CL:4301611 ! COP NN_1 differentiation-committed oligodendrocyte precursor (Mmus)
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.41", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010003 CLM:5007024 {STATO:0000663="0.0"}
+property_value: CLM:0010003 CLM:5022244 {STATO:0000663="0.1724138"}
+property_value: IAO:0000028 "COP NN_1 C1ql1 (Mmus)" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3NCBDT1AgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACU1kzU0xNTlBJRDNDNjhNR1M4VgADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3NCBDT1AgTk5fMQAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAINk1UN1VDNkVUWUVDQldGNTBQSwAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="Reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad" xsd:string {comment="Warning large data file!", name="h5ad data file for CS20230722_CLAS_31"}
+
+[Term]
+id: CL:4307095
+name: COP NN_1 Bmp4 differentiation-committed oligodendrocyte precursor (Mmus)
+def: "A differentiation-committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Bmp4 (Mmus), Mob3b (Mmus). It is distinguished from other COP NN_1 cells by expression of Bmp4, Mob3b. These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5275 COP NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
+synonym: "5275 COP NN_1" EXACT []
+synonym: "9630013A20Rik (Mmus), Bmp4 (Mmus), Mob3b (Mmus) expressing differentiation-committed oligodendrocyte precursor of brain (Mus musculus)" EXACT []
+is_a: CL:4301611 ! COP NN_1 differentiation-committed oligodendrocyte precursor (Mmus)
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.37", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010003 CLM:5007025 {STATO:0000663="0.3539823"}
+property_value: CLM:0010003 CLM:5022245 {STATO:0000663="0.35135135"}
+property_value: IAO:0000028 "COP NN_1 Bmp4 (Mmus)" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3NSBDT1AgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACU1kzU0xNTlBJRDNDNjhNR1M4VgADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3NSBDT1AgTk5fMQAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAINk1UN1VDNkVUWUVDQldGNTBQSwAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="Reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad" xsd:string {comment="Warning large data file!", name="h5ad data file for CS20230722_CLAS_31"}
+
+[Term]
+id: CL:4307096
+name: COP NN_1 Vwc2 differentiation-committed oligodendrocyte precursor (Mmus)
+def: "A differentiation-committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Rab32 (Mmus), Opalin (Mmus). It is distinguished from other COP NN_1 cells by expression of Vwc2, Opalin. These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5276 COP NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
+synonym: "5276 COP NN_1" EXACT []
+synonym: "9630013A20Rik (Mmus), Rab32 (Mmus), Opalin (Mmus) expressing differentiation-committed oligodendrocyte precursor of brain (Mus musculus)" EXACT []
+is_a: CL:4301611 ! COP NN_1 differentiation-committed oligodendrocyte precursor (Mmus)
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.51", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010003 CLM:5007026 {STATO:0000663="0.31914893"}
+property_value: CLM:0010003 CLM:5022246 {STATO:0000663="0.0"}
+property_value: IAO:0000028 "COP NN_1 Vwc2 (Mmus)" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3NiBDT1AgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACU1kzU0xNTlBJRDNDNjhNR1M4VgADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3NiBDT1AgTk5fMQAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAINk1UN1VDNkVUWUVDQldGNTBQSwAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="Reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad" xsd:string {comment="Warning large data file!", name="h5ad data file for CS20230722_CLAS_31"}
+
+[Term]
+id: CL:4307097
+name: COP NN_1 Cck differentiation-committed oligodendrocyte precursor (Mmus)
+def: "A differentiation-committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Bmp4 (Mmus), Cck (Mmus), Ptger1 (Mmus). It is distinguished from other COP NN_1 cells by expression of Bmp4, Cck, Ptger1. These cells are located in the Isocortex, Olfactory areas, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5277 COP NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
+synonym: "5277 COP NN_1" EXACT []
+synonym: "9630013A20Rik (Mmus), Bmp4 (Mmus), Cck (Mmus), Ptger1 (Mmus) expressing differentiation-committed oligodendrocyte precursor of brain (Mus musculus)" EXACT []
+is_a: CL:4301611 ! COP NN_1 differentiation-committed oligodendrocyte precursor (Mmus)
+property_value: CLM:0010001 MBA:315 {CLM:0010002="0.54", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:698 {CLM:0010002="0.11", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010003 CLM:5007027 {STATO:0000663="0.22727273"}
+property_value: CLM:0010003 CLM:5022247 {STATO:0000663="0.27027026"}
+property_value: IAO:0000028 "COP NN_1 Cck (Mmus)" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3NyBDT1AgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACU1kzU0xNTlBJRDNDNjhNR1M4VgADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3NyBDT1AgTk5fMQAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAINk1UN1VDNkVUWUVDQldGNTBQSwAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="Reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad" xsd:string {comment="Warning large data file!", name="h5ad data file for CS20230722_CLAS_31"}
+
+[Term]
+id: CL:4307098
+name: NFOL NN_2 9630013A20Rik oligodendrocyte (Mmus)
+def: "A oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Grin2b (Mmus). It is distinguished from other NFOL NN_2 cells by expression of 9630013A20Rik, Grin2b. These cells are located in the Midbrain, Thalamus, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5278 NFOL NN_2." [https://doi.org/10.1038/s41586-023-06812-z]
+synonym: "5278 NFOL NN_2" EXACT []
+synonym: "9630013A20Rik (Mmus), Grin2b (Mmus) expressing oligodendrocyte of brain (Mus musculus)" EXACT []
+is_a: CL:4301612 ! NFOL NN_2 oligodendrocyte (Mmus)
+property_value: CLM:0010001 MBA:313 {CLM:0010002="0.31", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:549 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.12", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010003 CLM:5007028 {STATO:0000663="0.17482518"}
+property_value: CLM:0010003 CLM:5022248 {STATO:0000663="0.29801324"}
+property_value: IAO:0000028 "NFOL NN_2 9630013A20Rik (Mmus)" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3OCBORk9MIE5OXzIAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAlNZM1NMTU5QSUQzQzY4TUdTOFYAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACATUyNzggTkZPTCBOTl8yAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAg2TVQ3VUM2RVRZRUNCV0Y1MFBLAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D" xsd:string {name="Reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad" xsd:string {comment="Warning large data file!", name="h5ad data file for CS20230722_CLAS_31"}
+
+[Term]
+id: CL:4307099
+name: NFOL NN_2 Dbx2 oligodendrocyte (Mmus)
+def: "A oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Dbx2 (Mmus), Rassf10 (Mmus). It is distinguished from other NFOL NN_2 cells by expression of Dbx2, Rassf10. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5279 NFOL NN_2." [https://doi.org/10.1038/s41586-023-06812-z]
+synonym: "5279 NFOL NN_2" EXACT []
+synonym: "9630013A20Rik (Mmus), Dbx2 (Mmus), Rassf10 (Mmus) expressing oligodendrocyte of brain (Mus musculus)" EXACT []
+is_a: CL:4301612 ! NFOL NN_2 oligodendrocyte (Mmus)
+property_value: CLM:0010001 MBA:315 {CLM:0010002="0.24", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.25", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010003 CLM:5007029 {STATO:0000663="0.5392157"}
+property_value: CLM:0010003 CLM:5022249 {STATO:0000663="0.7281553"}
+property_value: IAO:0000028 "NFOL NN_2 Dbx2 (Mmus)" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3OSBORk9MIE5OXzIAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAlNZM1NMTU5QSUQzQzY4TUdTOFYAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACATUyNzkgTkZPTCBOTl8yAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAg2TVQ3VUM2RVRZRUNCV0Y1MFBLAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D" xsd:string {name="Reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad" xsd:string {comment="Warning large data file!", name="h5ad data file for CS20230722_CLAS_31"}
+
+[Term]
+id: CL:4307100
+name: NFOL NN_2 Rgs16 oligodendrocyte (Mmus)
+def: "A oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Rgs16 (Mmus), Rhbdl2 (Mmus). It is distinguished from other NFOL NN_2 cells by expression of Rgs16, Rhbdl2. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5280 NFOL NN_2." [https://doi.org/10.1038/s41586-023-06812-z]
+synonym: "5280 NFOL NN_2" EXACT []
+synonym: "9630013A20Rik (Mmus), Rgs16 (Mmus), Rhbdl2 (Mmus) expressing oligodendrocyte of brain (Mus musculus)" EXACT []
+is_a: CL:4301612 ! NFOL NN_2 oligodendrocyte (Mmus)
+property_value: CLM:0010001 MBA:315 {CLM:0010002="0.18", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.28", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010003 CLM:5007030 {STATO:0000663="0.32051283"}
+property_value: CLM:0010003 CLM:5022250 {STATO:0000663="0.4878049"}
+property_value: IAO:0000028 "NFOL NN_2 Rgs16 (Mmus)" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI4MCBORk9MIE5OXzIAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAlNZM1NMTU5QSUQzQzY4TUdTOFYAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACATUyODAgTkZPTCBOTl8yAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAg2TVQ3VUM2RVRZRUNCV0Y1MFBLAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D" xsd:string {name="Reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad" xsd:string {comment="Warning large data file!", name="h5ad data file for CS20230722_CLAS_31"}
+
+[Term]
+id: CL:4307101
+name: NFOL NN_2 Il23a oligodendrocyte (Mmus)
+def: "A oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Piezo2 (Mmus), Ptprb (Mmus). It is distinguished from other NFOL NN_2 cells by expression of Il23a, Opalin, Ptprb. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5281 NFOL NN_2." [https://doi.org/10.1038/s41586-023-06812-z]
+synonym: "5281 NFOL NN_2" EXACT []
+synonym: "9630013A20Rik (Mmus), Piezo2 (Mmus), Ptprb (Mmus) expressing oligodendrocyte of brain (Mus musculus)" EXACT []
+is_a: CL:4301612 ! NFOL NN_2 oligodendrocyte (Mmus)
+property_value: CLM:0010001 MBA:315 {CLM:0010002="0.19", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.3", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010003 CLM:5007031 {STATO:0000663="0.35714287"}
+property_value: CLM:0010003 CLM:5022251 {STATO:0000663="0.7368421"}
+property_value: IAO:0000028 "NFOL NN_2 Il23a (Mmus)" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI4MSBORk9MIE5OXzIAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAlNZM1NMTU5QSUQzQzY4TUdTOFYAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACATUyODEgTkZPTCBOTl8yAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAg2TVQ3VUM2RVRZRUNCV0Y1MFBLAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D" xsd:string {name="Reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad" xsd:string {comment="Warning large data file!", name="h5ad data file for CS20230722_CLAS_31"}
+
+[Term]
+id: CL:4307102
+name: MFOL NN_3 Cxcl12 oligodendrocyte (Mmus)
+def: "A oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Opalin (Mmus), Cxcl12 (Mmus), Efhd1 (Mmus). It is distinguished from other MFOL NN_3 cells by expression of Cxcl12, Efhd1. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5282 MFOL NN_3." [https://doi.org/10.1038/s41586-023-06812-z]
+synonym: "5282 MFOL NN_3" EXACT []
+synonym: "Opalin (Mmus), Cxcl12 (Mmus), Efhd1 (Mmus) expressing oligodendrocyte of brain (Mus musculus)" EXACT []
+is_a: CL:4301613 ! MFOL NN_3 oligodendrocyte (Mmus)
+property_value: CLM:0010001 MBA:315 {CLM:0010002="0.26", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.26", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010003 CLM:5007032 {STATO:0000663="0.4054054"}
+property_value: CLM:0010003 CLM:5022252 {STATO:0000663="0.5"}
+property_value: IAO:0000028 "MFOL NN_3 Cxcl12 (Mmus)" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI4MiBNRk9MIE5OXzMAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAlNZM1NMTU5QSUQzQzY4TUdTOFYAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACATUyODIgTUZPTCBOTl8zAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAg2TVQ3VUM2RVRZRUNCV0Y1MFBLAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D" xsd:string {name="Reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad" xsd:string {comment="Warning large data file!", name="h5ad data file for CS20230722_CLAS_31"}
+
+[Term]
+id: CL:4307103
+name: MFOL NN_3 Il23a oligodendrocyte (Mmus)
+def: "A oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Ppp1r14a (Mmus), Mroh3 (Mmus). It is distinguished from other MFOL NN_3 cells by expression of Il23a, Ppp1r14a. These cells are located in the Midbrain, Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5283 MFOL NN_3." [https://doi.org/10.1038/s41586-023-06812-z]
+synonym: "5283 MFOL NN_3" EXACT []
+synonym: "9630013A20Rik (Mmus), Ppp1r14a (Mmus), Mroh3 (Mmus) expressing oligodendrocyte of brain (Mus musculus)" EXACT []
+is_a: CL:4301613 ! MFOL NN_3 oligodendrocyte (Mmus)
+property_value: CLM:0010001 MBA:313 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:315 {CLM:0010002="0.17", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.29", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010003 CLM:5007033 {STATO:0000663="0.35714287"}
+property_value: CLM:0010003 CLM:5022253 {STATO:0000663="0.48387095"}
+property_value: IAO:0000028 "MFOL NN_3 Il23a (Mmus)" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI4MyBNRk9MIE5OXzMAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAlNZM1NMTU5QSUQzQzY4TUdTOFYAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACATUyODMgTUZPTCBOTl8zAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAg2TVQ3VUM2RVRZRUNCV0Y1MFBLAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D" xsd:string {name="Reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad" xsd:string {comment="Warning large data file!", name="h5ad data file for CS20230722_CLAS_31"}
+
+[Term]
+id: CL:4307104
+name: MOL NN_4 Plin3 oligodendrocyte (Mmus)
+def: "A oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Prr5l (Mmus), Hapln2 (Mmus), Enpp6 (Mmus), Grm7 (Mmus). It is distinguished from other MOL NN_4 cells by expression of Plin3, Grm7. These cells are located in the Medulla, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5284 MOL NN_4." [https://doi.org/10.1038/s41586-023-06812-z]
+synonym: "5284 MOL NN_4" EXACT []
+synonym: "Prr5l (Mmus), Hapln2 (Mmus), Enpp6 (Mmus), Grm7 (Mmus) expressing oligodendrocyte of brain (Mus musculus)" EXACT []
+is_a: CL:4301614 ! MOL NN_4 oligodendrocyte (Mmus)
+property_value: CLM:0010001 MBA:354 {CLM:0010002="0.11", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.37", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010003 CLM:5007034 {STATO:0000663="0.48507464"}
+property_value: CLM:0010003 CLM:5022254 {STATO:0000663="0.5"}
+property_value: IAO:0000028 "MOL NN_4 Plin3 (Mmus)" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI4NCBNT0wgTk5fNAAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACU1kzU0xNTlBJRDNDNjhNR1M4VgADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI4NCBNT0wgTk5fNAAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAINk1UN1VDNkVUWUVDQldGNTBQSwAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="Reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad" xsd:string {comment="Warning large data file!", name="h5ad data file for CS20230722_CLAS_31"}
+
+[Term]
+id: CL:4307105
+name: MOL NN_4 Spock3 oligodendrocyte (Mmus)
+def: "A oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cldn11 (Mmus), A230001M10Rik (Mmus), Spock3 (Mmus), Rhoj (Mmus). It is distinguished from other MOL NN_4 cells by expression of Spock3, Rhoj. These cells are located in the Midbrain, Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5285 MOL NN_4." [https://doi.org/10.1038/s41586-023-06812-z]
+synonym: "5285 MOL NN_4" EXACT []
+synonym: "Cldn11 (Mmus), A230001M10Rik (Mmus), Spock3 (Mmus), Rhoj (Mmus) expressing oligodendrocyte of brain (Mus musculus)" EXACT []
+is_a: CL:4301614 ! MOL NN_4 oligodendrocyte (Mmus)
+property_value: CLM:0010001 MBA:313 {CLM:0010002="0.14", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:315 {CLM:0010002="0.13", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.27", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010003 CLM:5007035 {STATO:0000663="0.24193548"}
+property_value: CLM:0010003 CLM:5022255 {STATO:0000663="0.32786885"}
+property_value: IAO:0000028 "MOL NN_4 Spock3 (Mmus)" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI4NSBNT0wgTk5fNAAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACU1kzU0xNTlBJRDNDNjhNR1M4VgADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI4NSBNT0wgTk5fNAAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAINk1UN1VDNkVUWUVDQldGNTBQSwAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="Reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad" xsd:string {comment="Warning large data file!", name="h5ad data file for CS20230722_CLAS_31"}
+
+[Term]
+id: CL:4307106
+name: MOL NN_4 Art3 oligodendrocyte (Mmus)
+def: "A oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Apod (Mmus), Klk6 (Mmus), Dlc1 (Mmus). It is distinguished from other MOL NN_4 cells by expression of Art3. These cells are located in the Medulla, Pons, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5286 MOL NN_4." [https://doi.org/10.1038/s41586-023-06812-z]
+synonym: "5286 MOL NN_4" EXACT []
+synonym: "Apod (Mmus), Klk6 (Mmus), Dlc1 (Mmus) expressing oligodendrocyte of brain (Mus musculus)" EXACT []
+is_a: CL:4301614 ! MOL NN_4 oligodendrocyte (Mmus)
+property_value: CLM:0010001 MBA:354 {CLM:0010002="0.17", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:771 {CLM:0010002="0.15", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.44", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010003 CLM:5007036 {STATO:0000663="0.7876712"}
+property_value: CLM:0010003 CLM:5022256 {STATO:0000663="0.94017094"}
+property_value: IAO:0000028 "MOL NN_4 Art3 (Mmus)" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI4NiBNT0wgTk5fNAAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACU1kzU0xNTlBJRDNDNjhNR1M4VgADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI4NiBNT0wgTk5fNAAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAINk1UN1VDNkVUWUVDQldGNTBQSwAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="Reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad" xsd:string {comment="Warning large data file!", name="h5ad data file for CS20230722_CLAS_31"}
+
+[Term]
+id: CL:4307107
+name: MOL NN_4 Il33 oligodendrocyte (Mmus)
+def: "A oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Opalin (Mmus), Grm3 (Mmus), Gm5087 (Mmus). It is distinguished from other MOL NN_4 cells by expression of Il33, Gm5087. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5287 MOL NN_4." [https://doi.org/10.1038/s41586-023-06812-z]
+synonym: "5287 MOL NN_4" EXACT []
+synonym: "Opalin (Mmus), Grm3 (Mmus), Gm5087 (Mmus) expressing oligodendrocyte of brain (Mus musculus)" EXACT []
+is_a: CL:4301614 ! MOL NN_4 oligodendrocyte (Mmus)
+property_value: CLM:0010001 MBA:315 {CLM:0010002="0.17", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.41", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010003 CLM:5007037 {STATO:0000663="0.33333334"}
+property_value: CLM:0010003 CLM:5022257 {STATO:0000663="0.34313726"}
+property_value: IAO:0000028 "MOL NN_4 Il33 (Mmus)" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI4NyBNT0wgTk5fNAAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACU1kzU0xNTlBJRDNDNjhNR1M4VgADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI4NyBNT0wgTk5fNAAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAINk1UN1VDNkVUWUVDQldGNTBQSwAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="Reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad" xsd:string {comment="Warning large data file!", name="h5ad data file for CS20230722_CLAS_31"}
+
+[Term]
+id: CL:4307108
+name: MOL NN_4 Sspo oligodendrocyte (Mmus)
+def: "A oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Mog (Mmus), Anln (Mmus), Gm32633 (Mmus). It is distinguished from other MOL NN_4 cells by expression of Sspo, Selenop. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5288 MOL NN_4." [https://doi.org/10.1038/s41586-023-06812-z]
+synonym: "5288 MOL NN_4" EXACT []
+synonym: "Mog (Mmus), Anln (Mmus), Gm32633 (Mmus) expressing oligodendrocyte of brain (Mus musculus)" EXACT []
+is_a: CL:4301614 ! MOL NN_4 oligodendrocyte (Mmus)
+property_value: CLM:0010001 MBA:315 {CLM:0010002="0.11", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.41", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010003 CLM:5007038 {STATO:0000663="0.36231884"}
+property_value: CLM:0010003 CLM:5022258 {STATO:0000663="0.43333334"}
+property_value: IAO:0000028 "MOL NN_4 Sspo (Mmus)" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI4OCBNT0wgTk5fNAAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACU1kzU0xNTlBJRDNDNjhNR1M4VgADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI4OCBNT0wgTk5fNAAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAINk1UN1VDNkVUWUVDQldGNTBQSwAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="Reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad" xsd:string {comment="Warning large data file!", name="h5ad data file for CS20230722_CLAS_31"}
+
+[Term]
+id: CLM:5000366
+name: Pdgfra (Yao).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/18595
+property_value: CLM:0010004 "0.91" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzI2IE9QQyBOTgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUBAVBkZ2ZyYQAABgEBAlFZNVM4S01PNUhMSlVGMFAwMEsAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACU1kzU0xNTlBJRDNDNjhNR1M4VgADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzI2IE9QQyBOTgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUBAVBkZ2ZyYQAABgEBAlFZNVM4S01PNUhMSlVGMFAwMEsAA34AAAAEAAAINk1UN1VDNkVUWUVDQldGNTBQSwAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.67574257" xsd:float
+property_value: STATO:0000663 "0.7124217" xsd:float
+
+[Term]
+id: CLM:5000367
+name: Cldn11,Gjc3 (Yao).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/118446
+relationship: BFO:0000051 https://identifiers.org/ncbigene/18417
+property_value: CLM:0010004 "0.7300613496932515" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzI3IE9saWdvIE5OAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACAAAEAQECgazGjoGWFSADhGpN%2FYRYGE0ABQIBQ2xkbjExAAABR2pjMwAABgEBAlFZNVM4S01PNUhMSlVGMFAwMEsAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACU1kzU0xNTlBJRDNDNjhNR1M4VgADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzI3IE9saWdvIE5OAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQIBQ2xkbjExAAABR2pjMwAABgEBAlFZNVM4S01PNUhMSlVGMFAwMEsAA34AAAAEAAAINk1UN1VDNkVUWUVDQldGNTBQSwAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.9883721" xsd:float
+property_value: STATO:0000663 "0.9230531" xsd:float
+
+[Term]
+id: CLM:5001599
+name: Pdgfra,Olig1,Rmi2 (Yao).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/18595
+relationship: BFO:0000051 https://identifiers.org/ncbigene/223970
+relationship: BFO:0000051 https://identifiers.org/ncbigene/50914
+property_value: CLM:0010004 "0.216" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE3OSBPUEMgTk5fMQAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUDAVBkZ2ZyYQAAAU9saWcxAAABUm1pMgAABgEBAjE1Qks0N0RDSU9GMVNMTFVXOVAAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACU1kzU0xNTlBJRDNDNjhNR1M4VgADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE3OSBPUEMgTk5fMQAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUDAVBkZ2ZyYQAAAU9saWcxAAABUm1pMgAABgEBAjE1Qks0N0RDSU9GMVNMTFVXOVAAA34AAAAEAAAINk1UN1VDNkVUWUVDQldGNTBQSwAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.9818182" xsd:float
+property_value: STATO:0000663 "0.5744681" xsd:float
+
+[Term]
+id: CLM:5001601
+name: Gpr17,Bmp4 (Yao).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/12159
+relationship: BFO:0000051 https://identifiers.org/ncbigene/574402
+property_value: CLM:0010004 "0.5766666666666667" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE4MSBDT1AgTk5fMQAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUCAUdwcjE3AAABQm1wNAAABgEBAjE1Qks0N0RDSU9GMVNMTFVXOVAAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACU1kzU0xNTlBJRDNDNjhNR1M4VgADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE4MSBDT1AgTk5fMQAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUCAUdwcjE3AAABQm1wNAAABgEBAjE1Qks0N0RDSU9GMVNMTFVXOVAAA34AAAAEAAAINk1UN1VDNkVUWUVDQldGNTBQSwAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.99425286" xsd:float
+property_value: STATO:0000663 "0.8684739" xsd:float
+
+[Term]
+id: CLM:5001602
+name: 9630013A20Rik,Ptprb (Yao).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/19263
+relationship: BFO:0000051 https://identifiers.org/ncbigene/319903
+property_value: CLM:0010004 "0.2606060606060606" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE4MiBORk9MIE5OXzIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAgE5NjMwMDEzQTIwUmlrAAABUHRwcmIAAAYBAQIxNUJLNDdEQ0lPRjFTTExVVzlQAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAlNZM1NMTU5QSUQzQzY4TUdTOFYAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACATExODIgTkZPTCBOTl8yAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQIBOTYzMDAxM0EyMFJpawAAAVB0cHJiAAAGAQECMTVCSzQ3RENJT0YxU0xMVVc5UAADfgAAAAQAAAg2TVQ3VUM2RVRZRUNCV0Y1MFBLAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.97727275" xsd:float
+property_value: STATO:0000663 "0.6304985" xsd:float
+
+[Term]
+id: CLM:5001603
+name: Cldn11,Sec14l5,9630013A20Rik (Yao).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/18417
+relationship: BFO:0000051 https://identifiers.org/ncbigene/319903
+relationship: BFO:0000051 https://identifiers.org/ncbigene/665119
+property_value: CLM:0010004 "0.17" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE4MyBNRk9MIE5OXzMAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAwFDbGRuMTEAAAFTZWMxNGw1AAABOTYzMDAxM0EyMFJpawAABgEBAjE1Qks0N0RDSU9GMVNMTFVXOVAAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACU1kzU0xNTlBJRDNDNjhNR1M4VgADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE4MyBNRk9MIE5OXzMAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAwFDbGRuMTEAAAFTZWMxNGw1AAABOTYzMDAxM0EyMFJpawAABgEBAjE1Qks0N0RDSU9GMVNMTFVXOVAAA34AAAAEAAAINk1UN1VDNkVUWUVDQldGNTBQSwAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.9444444" xsd:float
+property_value: STATO:0000663 "0.49418604" xsd:float
+
+[Term]
+id: CLM:5001604
+name: Cldn11,Anln (Yao).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/18417
+relationship: BFO:0000051 https://identifiers.org/ncbigene/68743
+property_value: CLM:0010004 "0.436" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE4NCBNT0wgTk5fNAAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUCAUNsZG4xMQAAAUFubG4AAAYBAQIxNUJLNDdEQ0lPRjFTTExVVzlQAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAlNZM1NMTU5QSUQzQzY4TUdTOFYAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACATExODQgTU9MIE5OXzQAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAgFDbGRuMTEAAAFBbmxuAAAGAQECMTVCSzQ3RENJT0YxU0xMVVc5UAADfgAAAAQAAAg2TVQ3VUM2RVRZRUNCV0Y1MFBLAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.981982" xsd:float
+property_value: STATO:0000663 "0.7853026" xsd:float
+
+[Term]
+id: CLM:5007016
+name: Pdgfra,Pclaf,Mki67,Foxg1 (Yao).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/15228
+relationship: BFO:0000051 https://identifiers.org/ncbigene/17345
+relationship: BFO:0000051 https://identifiers.org/ncbigene/18595
+relationship: BFO:0000051 https://identifiers.org/ncbigene/68026
+property_value: CLM:0010004 "0.14" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI2NiBPUEMgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUEAVBkZ2ZyYQAAAVBjbGFmAAABTWtpNjcAAAFGb3hnMQAABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACU1kzU0xNTlBJRDNDNjhNR1M4VgADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI2NiBPUEMgTk5fMQAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUEAVBkZ2ZyYQAAAVBjbGFmAAABTWtpNjcAAAFGb3hnMQAABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAINk1UN1VDNkVUWUVDQldGNTBQSwAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.7777778" xsd:float
+property_value: STATO:0000663 "0.40697673" xsd:float
+
+[Term]
+id: CLM:5007017
+name: Pdgfra,Pclaf,Irx2 (Yao).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/16372
+relationship: BFO:0000051 https://identifiers.org/ncbigene/18595
+relationship: BFO:0000051 https://identifiers.org/ncbigene/68026
+property_value: CLM:0010004 "0.4" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI2NyBPUEMgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUDAVBkZ2ZyYQAAAVBjbGFmAAABSXJ4MgAABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACU1kzU0xNTlBJRDNDNjhNR1M4VgADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI2NyBPUEMgTk5fMQAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUDAVBkZ2ZyYQAAAVBjbGFmAAABSXJ4MgAABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAINk1UN1VDNkVUWUVDQldGNTBQSwAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.90909094" xsd:float
+property_value: STATO:0000663 "0.7246377" xsd:float
+
+[Term]
+id: CLM:5007018
+name: Pdgfra,Olig1,Mms22l,Top2a (Yao).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/18595
+relationship: BFO:0000051 https://identifiers.org/ncbigene/212377
+relationship: BFO:0000051 https://identifiers.org/ncbigene/21973
+relationship: BFO:0000051 https://identifiers.org/ncbigene/50914
+property_value: CLM:0010004 "0.12" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI2OCBPUEMgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUEAVBkZ2ZyYQAAAU9saWcxAAABTW1zMjJsAAABVG9wMmEAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAlNZM1NMTU5QSUQzQzY4TUdTOFYAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACATUyNjggT1BDIE5OXzEAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFBAFQZGdmcmEAAAFPbGlnMQAAAU1tczIybAAAAVRvcDJhAAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAg2TVQ3VUM2RVRZRUNCV0Y1MFBLAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.21428572" xsd:float
+property_value: STATO:0000663 "0.18518518" xsd:float
+
+[Term]
+id: CLM:5007019
+name: Pdgfra,Olig1,Col27a1 (Yao).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/18595
+relationship: BFO:0000051 https://identifiers.org/ncbigene/373864
+relationship: BFO:0000051 https://identifiers.org/ncbigene/50914
+property_value: CLM:0010004 "0.26" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI2OSBPUEMgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUDAVBkZ2ZyYQAAAU9saWcxAAABQ29sMjdhMQAABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACU1kzU0xNTlBJRDNDNjhNR1M4VgADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI2OSBPUEMgTk5fMQAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUDAVBkZ2ZyYQAAAU9saWcxAAABQ29sMjdhMQAABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAINk1UN1VDNkVUWUVDQldGNTBQSwAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.43333334" xsd:float
+property_value: STATO:0000663 "0.38235295" xsd:float
+
+[Term]
+id: CLM:5007020
+name: Pdgfra,Olig1,Rmi2,Col27a1 (Yao).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/18595
+relationship: BFO:0000051 https://identifiers.org/ncbigene/223970
+relationship: BFO:0000051 https://identifiers.org/ncbigene/373864
+relationship: BFO:0000051 https://identifiers.org/ncbigene/50914
+property_value: CLM:0010004 "0.0" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3MCBPUEMgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUEAVBkZ2ZyYQAAAU9saWcxAAABUm1pMgAAAUNvbDI3YTEAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAlNZM1NMTU5QSUQzQzY4TUdTOFYAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACATUyNzAgT1BDIE5OXzEAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFBAFQZGdmcmEAAAFPbGlnMQAAAVJtaTIAAAFDb2wyN2ExAAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAg2TVQ3VUM2RVRZRUNCV0Y1MFBLAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.0" xsd:float
+property_value: STATO:0000663 "0.0" xsd:float
+
+[Term]
+id: CLM:5007021
+name: Pdgfra,Cenpf,Cenpa (Yao).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/108000
+relationship: BFO:0000051 https://identifiers.org/ncbigene/12615
+relationship: BFO:0000051 https://identifiers.org/ncbigene/18595
+property_value: CLM:0010004 "0.46" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE4MCBPUEMgTk5fMgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUDAVBkZ2ZyYQAAAUNlbnBmAAABQ2VucGEAAAYBAQIxNUJLNDdEQ0lPRjFTTExVVzlQAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAlNZM1NMTU5QSUQzQzY4TUdTOFYAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACATExODAgT1BDIE5OXzIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAwFQZGdmcmEAAAFDZW5wZgAAAUNlbnBhAAAGAQECMTVCSzQ3RENJT0YxU0xMVVc5UAADfgAAAAQAAAg2TVQ3VUM2RVRZRUNCV0Y1MFBLAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.9583333" xsd:float
+property_value: STATO:0000663 "0.7876712" xsd:float
+
+[Term]
+id: CLM:5007022
+name: Gpr17,Bmp4,Zfp36l1 (Yao).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/12159
+relationship: BFO:0000051 https://identifiers.org/ncbigene/12192
+relationship: BFO:0000051 https://identifiers.org/ncbigene/574402
+property_value: CLM:0010004 "0.14" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3MiBDT1AgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUDAUdwcjE3AAABQm1wNAAAAVpmcDM2bDEAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAlNZM1NMTU5QSUQzQzY4TUdTOFYAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACATUyNzIgQ09QIE5OXzEAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAwFHcHIxNwAAAUJtcDQAAAFaZnAzNmwxAAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAg2TVQ3VUM2RVRZRUNCV0Y1MFBLAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.7" xsd:float
+property_value: STATO:0000663 "0.3888889" xsd:float
+
+[Term]
+id: CLM:5007023
+name: Gpr17,Gp1bb,Pdzd2,Plekhg1 (Yao).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/14724
+relationship: BFO:0000051 https://identifiers.org/ncbigene/213783
+relationship: BFO:0000051 https://identifiers.org/ncbigene/574402
+relationship: BFO:0000051 https://identifiers.org/ncbigene/68070
+property_value: CLM:0010004 "0.02" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3MyBDT1AgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUEAUdwcjE3AAABR3AxYmIAAAFQZHpkMgAAAVBsZWtoZzEAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAlNZM1NMTU5QSUQzQzY4TUdTOFYAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACATUyNzMgQ09QIE5OXzEAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFBAFHcHIxNwAAAUdwMWJiAAABUGR6ZDIAAAFQbGVraGcxAAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAg2TVQ3VUM2RVRZRUNCV0Y1MFBLAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.33333334" xsd:float
+property_value: STATO:0000663 "0.08064516" xsd:float
+
+[Term]
+id: CLM:5007024
+name: Gpr17,Bgn,Gstp1,C1ql1 (Yao).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/12111
+relationship: BFO:0000051 https://identifiers.org/ncbigene/14870
+relationship: BFO:0000051 https://identifiers.org/ncbigene/23829
+relationship: BFO:0000051 https://identifiers.org/ncbigene/574402
+property_value: CLM:0010004 "0.0" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3NCBDT1AgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUEAUdwcjE3AAABQmduAAABR3N0cDEAAAFDMXFsMQAABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACU1kzU0xNTlBJRDNDNjhNR1M4VgADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3NCBDT1AgTk5fMQAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUEAUdwcjE3AAABQmduAAABR3N0cDEAAAFDMXFsMQAABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAINk1UN1VDNkVUWUVDQldGNTBQSwAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.0" xsd:float
+property_value: STATO:0000663 "0.0" xsd:float
+
+[Term]
+id: CLM:5007025
+name: 9630013A20Rik,Bmp4,Mob3b (Yao).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/12159
+relationship: BFO:0000051 https://identifiers.org/ncbigene/214944
+relationship: BFO:0000051 https://identifiers.org/ncbigene/319903
+property_value: CLM:0010004 "0.32" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3NSBDT1AgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUDATk2MzAwMTNBMjBSaWsAAAFCbXA0AAABTW9iM2IAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAlNZM1NMTU5QSUQzQzY4TUdTOFYAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACATUyNzUgQ09QIE5OXzEAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAwE5NjMwMDEzQTIwUmlrAAABQm1wNAAAAU1vYjNiAAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAg2TVQ3VUM2RVRZRUNCV0Y1MFBLAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.36363637" xsd:float
+property_value: STATO:0000663 "0.3539823" xsd:float
+
+[Term]
+id: CLM:5007026
+name: 9630013A20Rik,Rab32,Opalin (Yao).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/226115
+relationship: BFO:0000051 https://identifiers.org/ncbigene/319903
+relationship: BFO:0000051 https://identifiers.org/ncbigene/67844
+property_value: CLM:0010004 "0.12" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3NiBDT1AgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUDATk2MzAwMTNBMjBSaWsAAAFSYWIzMgAAAU9wYWxpbgAABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACU1kzU0xNTlBJRDNDNjhNR1M4VgADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3NiBDT1AgTk5fMQAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUDATk2MzAwMTNBMjBSaWsAAAFSYWIzMgAAAU9wYWxpbgAABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAINk1UN1VDNkVUWUVDQldGNTBQSwAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.54545456" xsd:float
+property_value: STATO:0000663 "0.31914893" xsd:float
+
+[Term]
+id: CLM:5007027
+name: 9630013A20Rik,Bmp4,Cck,Ptger1 (Yao).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/12159
+relationship: BFO:0000051 https://identifiers.org/ncbigene/12424
+relationship: BFO:0000051 https://identifiers.org/ncbigene/19216
+relationship: BFO:0000051 https://identifiers.org/ncbigene/319903
+property_value: CLM:0010004 "0.06" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3NyBDT1AgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUEATk2MzAwMTNBMjBSaWsAAAFCbXA0AAABQ2NrAAABUHRnZXIxAAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJTWTNTTE1OUElEM0M2OE1HUzhWAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgE1Mjc3IENPUCBOTl8xAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQQBOTYzMDAxM0EyMFJpawAAAUJtcDQAAAFDY2sAAAFQdGdlcjEAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACDZNVDdVQzZFVFlFQ0JXRjUwUEsACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.75" xsd:float
+property_value: STATO:0000663 "0.22727273" xsd:float
+
+[Term]
+id: CLM:5007028
+name: 9630013A20Rik,Grin2b (Yao).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/14812
+relationship: BFO:0000051 https://identifiers.org/ncbigene/319903
+property_value: CLM:0010004 "0.3333333333333333" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3OCBORk9MIE5OXzIAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAgE5NjMwMDEzQTIwUmlrAAABR3JpbjJiAAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJTWTNTTE1OUElEM0M2OE1HUzhWAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgE1Mjc4IE5GT0wgTk5fMgAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUCATk2MzAwMTNBMjBSaWsAAAFHcmluMmIAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACDZNVDdVQzZFVFlFQ0JXRjUwUEsACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.15625" xsd:float
+property_value: STATO:0000663 "0.17482518" xsd:float
+
+[Term]
+id: CLM:5007029
+name: 9630013A20Rik,Dbx2,Rassf10 (Yao).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/223843
+relationship: BFO:0000051 https://identifiers.org/ncbigene/319903
+relationship: BFO:0000051 https://identifiers.org/ncbigene/78748
+property_value: CLM:0010004 "0.22" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3OSBORk9MIE5OXzIAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAwE5NjMwMDEzQTIwUmlrAAABRGJ4MgAAAVJhc3NmMTAAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAlNZM1NMTU5QSUQzQzY4TUdTOFYAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACATUyNzkgTkZPTCBOTl8yAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQMBOTYzMDAxM0EyMFJpawAAAURieDIAAAFSYXNzZjEwAAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAg2TVQ3VUM2RVRZRUNCV0Y1MFBLAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.84615386" xsd:float
+property_value: STATO:0000663 "0.5392157" xsd:float
+
+[Term]
+id: CLM:5007030
+name: 9630013A20Rik,Rgs16,Rhbdl2 (Yao).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/19734
+relationship: BFO:0000051 https://identifiers.org/ncbigene/230726
+relationship: BFO:0000051 https://identifiers.org/ncbigene/319903
+property_value: CLM:0010004 "0.1" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI4MCBORk9MIE5OXzIAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAwE5NjMwMDEzQTIwUmlrAAABUmdzMTYAAAFSaGJkbDIAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAlNZM1NMTU5QSUQzQzY4TUdTOFYAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACATUyODAgTkZPTCBOTl8yAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQMBOTYzMDAxM0EyMFJpawAAAVJnczE2AAABUmhiZGwyAAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAg2TVQ3VUM2RVRZRUNCV0Y1MFBLAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.71428573" xsd:float
+property_value: STATO:0000663 "0.32051283" xsd:float
+
+[Term]
+id: CLM:5007031
+name: 9630013A20Rik,Piezo2,Ptprb (Yao).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/19263
+relationship: BFO:0000051 https://identifiers.org/ncbigene/319903
+relationship: BFO:0000051 https://identifiers.org/ncbigene/667742
+property_value: CLM:0010004 "0.1" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI4MSBORk9MIE5OXzIAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAwE5NjMwMDEzQTIwUmlrAAABUGllem8yAAABUHRwcmIAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAlNZM1NMTU5QSUQzQzY4TUdTOFYAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACATUyODEgTkZPTCBOTl8yAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQMBOTYzMDAxM0EyMFJpawAAAVBpZXpvMgAAAVB0cHJiAAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAg2TVQ3VUM2RVRZRUNCV0Y1MFBLAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "1.0" xsd:float
+property_value: STATO:0000663 "0.35714287" xsd:float
+
+[Term]
+id: CLM:5007032
+name: Opalin,Cxcl12,Efhd1 (Yao).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/20315
+relationship: BFO:0000051 https://identifiers.org/ncbigene/226115
+relationship: BFO:0000051 https://identifiers.org/ncbigene/98363
+property_value: CLM:0010004 "0.12" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI4MiBNRk9MIE5OXzMAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAwFPcGFsaW4AAAFDeGNsMTIAAAFFZmhkMQAABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACU1kzU0xNTlBJRDNDNjhNR1M4VgADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI4MiBNRk9MIE5OXzMAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAwFPcGFsaW4AAAFDeGNsMTIAAAFFZmhkMQAABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAINk1UN1VDNkVUWUVDQldGNTBQSwAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "1.0" xsd:float
+property_value: STATO:0000663 "0.4054054" xsd:float
+
+[Term]
+id: CLM:5007033
+name: 9630013A20Rik,Ppp1r14a,Mroh3 (Yao).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/319903
+relationship: BFO:0000051 https://identifiers.org/ncbigene/68458
+relationship: BFO:0000051 https://identifiers.org/ncbigene/76422
+property_value: CLM:0010004 "0.1" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI4MyBNRk9MIE5OXzMAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAwE5NjMwMDEzQTIwUmlrAAABUHBwMXIxNGEAAAFNcm9oMwAABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACU1kzU0xNTlBJRDNDNjhNR1M4VgADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI4MyBNRk9MIE5OXzMAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAwE5NjMwMDEzQTIwUmlrAAABUHBwMXIxNGEAAAFNcm9oMwAABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAINk1UN1VDNkVUWUVDQldGNTBQSwAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "1.0" xsd:float
+property_value: STATO:0000663 "0.35714287" xsd:float
+
+[Term]
+id: CLM:5007034
+name: Prr5l,Hapln2,Enpp6,Grm7 (Yao).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/108073
+relationship: BFO:0000051 https://identifiers.org/ncbigene/320981
+relationship: BFO:0000051 https://identifiers.org/ncbigene/72446
+relationship: BFO:0000051 https://identifiers.org/ncbigene/73940
+property_value: CLM:0010004 "0.26" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI4NCBNT0wgTk5fNAAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUEAVBycjVsAAABSGFwbG4yAAABRW5wcDYAAAFHcm03AAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJTWTNTTE1OUElEM0M2OE1HUzhWAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgE1Mjg0IE1PTCBOTl80AAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQQBUHJyNWwAAAFIYXBsbjIAAAFFbnBwNgAAAUdybTcAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACDZNVDdVQzZFVFlFQ0JXRjUwUEsACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.61904764" xsd:float
+property_value: STATO:0000663 "0.48507464" xsd:float
+
+[Term]
+id: CLM:5007035
+name: Cldn11,A230001M10Rik,Spock3,Rhoj (Yao).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/18417
+relationship: BFO:0000051 https://identifiers.org/ncbigene/319951
+relationship: BFO:0000051 https://identifiers.org/ncbigene/72902
+relationship: BFO:0000051 https://identifiers.org/ncbigene/80837
+property_value: CLM:0010004 "0.06" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI4NSBNT0wgTk5fNAAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUEAUNsZG4xMQAAAUEyMzAwMDFNMTBSaWsAAAFTcG9jazMAAAFSaG9qAAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJTWTNTTE1OUElEM0M2OE1HUzhWAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgE1Mjg1IE1PTCBOTl80AAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQQBQ2xkbjExAAABQTIzMDAwMU0xMFJpawAAAVNwb2NrMwAAAVJob2oAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACDZNVDdVQzZFVFlFQ0JXRjUwUEsACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "1.0" xsd:float
+property_value: STATO:0000663 "0.24193548" xsd:float
+
+[Term]
+id: CLM:5007036
+name: Apod,Klk6,Dlc1 (Yao).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/11815
+relationship: BFO:0000051 https://identifiers.org/ncbigene/19144
+relationship: BFO:0000051 https://identifiers.org/ncbigene/50768
+property_value: CLM:0010004 "0.46" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI4NiBNT0wgTk5fNAAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUDAUFwb2QAAAFLbGs2AAABRGxjMQAABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACU1kzU0xNTlBJRDNDNjhNR1M4VgADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI4NiBNT0wgTk5fNAAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUDAUFwb2QAAAFLbGs2AAABRGxjMQAABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAINk1UN1VDNkVUWUVDQldGNTBQSwAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.9583333" xsd:float
+property_value: STATO:0000663 "0.7876712" xsd:float
+
+[Term]
+id: CLM:5007037
+name: Opalin,Grm3,Gm5087 (Yao).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/108069
+relationship: BFO:0000051 https://identifiers.org/ncbigene/226115
+relationship: BFO:0000051 https://identifiers.org/ncbigene/328354
+property_value: CLM:0010004 "0.12" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI4NyBNT0wgTk5fNAAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUDAU9wYWxpbgAAAUdybTMAAAFHbTUwODcAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAlNZM1NMTU5QSUQzQzY4TUdTOFYAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACATUyODcgTU9MIE5OXzQAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAwFPcGFsaW4AAAFHcm0zAAABR201MDg3AAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAg2TVQ3VUM2RVRZRUNCV0Y1MFBLAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.6" xsd:float
+property_value: STATO:0000663 "0.33333334" xsd:float
+
+[Term]
+id: CLM:5007038
+name: Mog,Anln,Gm32633 (Yao).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/102635243
+relationship: BFO:0000051 https://identifiers.org/ncbigene/17441
+relationship: BFO:0000051 https://identifiers.org/ncbigene/68743
+property_value: CLM:0010004 "0.2" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI4OCBNT0wgTk5fNAAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUDAU1vZwAAAUFubG4AAAFHbTMyNjMzAAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJTWTNTTE1OUElEM0M2OE1HUzhWAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgE1Mjg4IE1PTCBOTl80AAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQMBTW9nAAABQW5sbgAAAUdtMzI2MzMAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACDZNVDdVQzZFVFlFQ0JXRjUwUEsACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.45454547" xsd:float
+property_value: STATO:0000663 "0.36231884" xsd:float
+
+[Term]
+id: CLM:5007651
+name: Olig1, Pllp (NSforest).
+xref: https://doi.org/10.1101/2020.09.23.308932
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/50914
+relationship: BFO:0000051 https://identifiers.org/ncbigene/67801
+property_value: CLM:0010004 "0.6609865470852018" xsd:string
+property_value: IAO:0000064 "NSforest" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIBMzEgT1BDLU9saWdvAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACAAAEAQECgazGjoGWFSADhGpN%2FYRYGE0ABQIBT2xpZzEAAAFQbGxwAAAGAQECRlMwMERYVjBUOVIxWDlGSjRRRQADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJTWTNTTE1OUElEM0M2OE1HUzhWAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgEzMSBPUEMtT2xpZ28AAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAgFPbGlnMQAAAVBsbHAAAAYBAQJGUzAwRFhWMFQ5UjFYOUZKNFFFAAN%2BAAAABAAACDZNVDdVQzZFVFlFQ0JXRjUwUEsACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.9852941" xsd:float
+property_value: STATO:0000663 "0.8972486" xsd:float
+
+[Term]
+id: CLM:5007986
+name: Gpr17, Pdgfra (NSforest).
+xref: https://doi.org/10.1101/2020.09.23.308932
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/18595
+relationship: BFO:0000051 https://identifiers.org/ncbigene/574402
+property_value: CLM:0010004 "0.8033333333333333" xsd:string
+property_value: IAO:0000064 "NSforest" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzI2IE9QQyBOTgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUCAUdwcjE3AAABUGRnZnJhAAAGAQECUVk1UzhLTU81SExKVUYwUDAwSwADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJTWTNTTE1OUElEM0M2OE1HUzhWAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgEzMjYgT1BDIE5OAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQIBR3ByMTcAAAFQZGdmcmEAAAYBAQJRWTVTOEtNTzVITEpVRjBQMDBLAAN%2BAAAABAAACDZNVDdVQzZFVFlFQ0JXRjUwUEsACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.9958678" xsd:float
+property_value: STATO:0000663 "0.9503155" xsd:float
+
+[Term]
+id: CLM:5007987
+name: Fa2h, Cldn11 (NSforest).
+xref: https://doi.org/10.1101/2020.09.23.308932
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/18417
+relationship: BFO:0000051 https://identifiers.org/ncbigene/338521
+property_value: CLM:0010004 "0.7349693251533742" xsd:string
+property_value: IAO:0000064 "NSforest" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzI3IE9saWdvIE5OAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACAAAEAQECgazGjoGWFSADhGpN%2FYRYGE0ABQIBRmEyaAAAAUNsZG4xMQAABgEBAlFZNVM4S01PNUhMSlVGMFAwMEsAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACU1kzU0xNTlBJRDNDNjhNR1M4VgADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzI3IE9saWdvIE5OAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQIBRmEyaAAAAUNsZG4xMQAABgEBAlFZNVM4S01PNUhMSlVGMFAwMEsAA34AAAAEAAAINk1UN1VDNkVUWUVDQldGNTBQSwAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.9868204" xsd:float
+property_value: STATO:0000663 "0.9235276" xsd:float
+
+[Term]
+id: CLM:5016819
+name: Ryr3 (Yao - within subclass).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/20192
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE3OSBPUEMgTk5fMQAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUBAVJ5cjMAAAYBAQIxNUJLNDdEQ0lPRjFTTExVVzlQAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAlNZM1NMTU5QSUQzQzY4TUdTOFYAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACATExNzkgT1BDIE5OXzEAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAQFSeXIzAAAGAQECMTVCSzQ3RENJT0YxU0xMVVc5UAADfgAAAAQAAAg2TVQ3VUM2RVRZRUNCV0Y1MFBLAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+
+[Term]
+id: CLM:5016821
+name: Bmp4 (Yao - within subclass).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/12159
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE4MSBDT1AgTk5fMQAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUBAUJtcDQAAAYBAQIxNUJLNDdEQ0lPRjFTTExVVzlQAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAlNZM1NMTU5QSUQzQzY4TUdTOFYAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACATExODEgQ09QIE5OXzEAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAQFCbXA0AAAGAQECMTVCSzQ3RENJT0YxU0xMVVc5UAADfgAAAAQAAAg2TVQ3VUM2RVRZRUNCV0Y1MFBLAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+
+[Term]
+id: CLM:5016822
+name: Egflam,Man1a (Yao - within subclass).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/17155
+relationship: BFO:0000051 https://identifiers.org/ncbigene/268780
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE4MiBORk9MIE5OXzIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAgFFZ2ZsYW0AAAFNYW4xYQAABgEBAjE1Qks0N0RDSU9GMVNMTFVXOVAAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACU1kzU0xNTlBJRDNDNjhNR1M4VgADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE4MiBORk9MIE5OXzIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAgFFZ2ZsYW0AAAFNYW4xYQAABgEBAjE1Qks0N0RDSU9GMVNMTFVXOVAAA34AAAAEAAAINk1UN1VDNkVUWUVDQldGNTBQSwAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+
+[Term]
+id: CLM:5016823
+name: Cxcl12,2210011C24Rik (Yao - within subclass).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/20315
+relationship: BFO:0000051 https://identifiers.org/ncbigene/70134
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE4MyBNRk9MIE5OXzMAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAgFDeGNsMTIAAAEyMjEwMDExQzI0UmlrAAAGAQECMTVCSzQ3RENJT0YxU0xMVVc5UAADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJTWTNTTE1OUElEM0M2OE1HUzhWAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgExMTgzIE1GT0wgTk5fMwAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUCAUN4Y2wxMgAAATIyMTAwMTFDMjRSaWsAAAYBAQIxNUJLNDdEQ0lPRjFTTExVVzlQAAN%2BAAAABAAACDZNVDdVQzZFVFlFQ0JXRjUwUEsACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+
+[Term]
+id: CLM:5016824
+name: Efhd1,Spock3 (Yao - within subclass).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/72902
+relationship: BFO:0000051 https://identifiers.org/ncbigene/98363
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE4NCBNT0wgTk5fNAAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUCAUVmaGQxAAABU3BvY2szAAAGAQECMTVCSzQ3RENJT0YxU0xMVVc5UAADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJTWTNTTE1OUElEM0M2OE1HUzhWAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgExMTg0IE1PTCBOTl80AAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQIBRWZoZDEAAAFTcG9jazMAAAYBAQIxNUJLNDdEQ0lPRjFTTExVVzlQAAN%2BAAAABAAACDZNVDdVQzZFVFlFQ0JXRjUwUEsACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+
+[Term]
+id: CLM:5022236
+name: Neil3,Foxg1 (Yao - within subclass).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/15228
+relationship: BFO:0000051 https://identifiers.org/ncbigene/234258
+property_value: CLM:0010004 "0.16" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI2NiBPUEMgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUCAU5laWwzAAABRm94ZzEAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAlNZM1NMTU5QSUQzQzY4TUdTOFYAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACATUyNjYgT1BDIE5OXzEAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAgFOZWlsMwAAAUZveGcxAAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAg2TVQ3VUM2RVRZRUNCV0Y1MFBLAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.6666667" xsd:float
+property_value: STATO:0000663 "0.40816328" xsd:float
+
+[Term]
+id: CLM:5022237
+name: Neil3,Irx2 (Yao - within subclass).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/16372
+relationship: BFO:0000051 https://identifiers.org/ncbigene/234258
+property_value: CLM:0010004 "0.32" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI2NyBPUEMgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUCAU5laWwzAAABSXJ4MgAABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACU1kzU0xNTlBJRDNDNjhNR1M4VgADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI2NyBPUEMgTk5fMQAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUCAU5laWwzAAABSXJ4MgAABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAINk1UN1VDNkVUWUVDQldGNTBQSwAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.8888889" xsd:float
+property_value: STATO:0000663 "0.6557377" xsd:float
+
+[Term]
+id: CLM:5022238
+name: Mms22l,Foxg1,Top2a (Yao - within subclass).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/15228
+relationship: BFO:0000051 https://identifiers.org/ncbigene/212377
+relationship: BFO:0000051 https://identifiers.org/ncbigene/21973
+property_value: CLM:0010004 "0.1" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI2OCBPUEMgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUDAU1tczIybAAAAUZveGcxAAABVG9wMmEAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAlNZM1NMTU5QSUQzQzY4TUdTOFYAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACATUyNjggT1BDIE5OXzEAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAwFNbXMyMmwAAAFGb3hnMQAAAVRvcDJhAAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAg2TVQ3VUM2RVRZRUNCV0Y1MFBLAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.23809524" xsd:float
+property_value: STATO:0000663 "0.18656716" xsd:float
+
+[Term]
+id: CLM:5022239
+name: Col27a1 (Yao - within subclass).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/373864
+property_value: CLM:0010004 "0.46" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI2OSBPUEMgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUBAUNvbDI3YTEAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAlNZM1NMTU5QSUQzQzY4TUdTOFYAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACATUyNjkgT1BDIE5OXzEAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAQFDb2wyN2ExAAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAg2TVQ3VUM2RVRZRUNCV0Y1MFBLAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.40350878" xsd:float
+property_value: STATO:0000663 "0.41366908" xsd:float
+
+[Term]
+id: CLM:5022240
+name: Rmi2,Col27a1 (Yao - within subclass).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/223970
+relationship: BFO:0000051 https://identifiers.org/ncbigene/373864
+property_value: CLM:0010004 "0.36" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3MCBPUEMgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUCAVJtaTIAAAFDb2wyN2ExAAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJTWTNTTE1OUElEM0M2OE1HUzhWAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgE1MjcwIE9QQyBOTl8xAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQIBUm1pMgAAAUNvbDI3YTEAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACDZNVDdVQzZFVFlFQ0JXRjUwUEsACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.375" xsd:float
+property_value: STATO:0000663 "0.37190083" xsd:float
+
+[Term]
+id: CLM:5022241
+name: Cenpa (Yao - within subclass).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/12615
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE4MCBPUEMgTk5fMgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUBAUNlbnBhAAAGAQECMTVCSzQ3RENJT0YxU0xMVVc5UAADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJTWTNTTE1OUElEM0M2OE1HUzhWAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgExMTgwIE9QQyBOTl8yAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQEBQ2VucGEAAAYBAQIxNUJLNDdEQ0lPRjFTTExVVzlQAAN%2BAAAABAAACDZNVDdVQzZFVFlFQ0JXRjUwUEsACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+
+[Term]
+id: CLM:5022242
+name: Rgcc,Plpp4 (Yao - within subclass).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/381925
+relationship: BFO:0000051 https://identifiers.org/ncbigene/66214
+property_value: CLM:0010004 "0.3" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3MiBDT1AgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUCAVJnY2MAAAFQbHBwNAAABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACU1kzU0xNTlBJRDNDNjhNR1M4VgADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3MiBDT1AgTk5fMQAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUCAVJnY2MAAAFQbHBwNAAABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAINk1UN1VDNkVUWUVDQldGNTBQSwAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.6818182" xsd:float
+property_value: STATO:0000663 "0.54347825" xsd:float
+
+[Term]
+id: CLM:5022243
+name: Rgcc,9130019P16Rik (Yao - within subclass).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/100042056
+relationship: BFO:0000051 https://identifiers.org/ncbigene/66214
+property_value: CLM:0010004 "0.22" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3MyBDT1AgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUCAVJnY2MAAAE5MTMwMDE5UDE2UmlrAAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJTWTNTTE1OUElEM0M2OE1HUzhWAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgE1MjczIENPUCBOTl8xAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQIBUmdjYwAAATkxMzAwMTlQMTZSaWsAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACDZNVDdVQzZFVFlFQ0JXRjUwUEsACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.6875" xsd:float
+property_value: STATO:0000663 "0.48245615" xsd:float
+
+[Term]
+id: CLM:5022244
+name: C1ql1,Gstp1 (Yao - within subclass).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/14870
+relationship: BFO:0000051 https://identifiers.org/ncbigene/23829
+property_value: CLM:0010004 "0.04" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3NCBDT1AgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUCAUMxcWwxAAABR3N0cDEAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAlNZM1NMTU5QSUQzQzY4TUdTOFYAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACATUyNzQgQ09QIE5OXzEAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAgFDMXFsMQAAAUdzdHAxAAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAg2TVQ3VUM2RVRZRUNCV0Y1MFBLAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "1.0" xsd:float
+property_value: STATO:0000663 "0.1724138" xsd:float
+
+[Term]
+id: CLM:5022245
+name: Bmp4,Mob3b (Yao - within subclass).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/12159
+relationship: BFO:0000051 https://identifiers.org/ncbigene/214944
+property_value: CLM:0010004 "0.52" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3NSBDT1AgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUCAUJtcDQAAAFNb2IzYgAABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACU1kzU0xNTlBJRDNDNjhNR1M4VgADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3NSBDT1AgTk5fMQAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUCAUJtcDQAAAFNb2IzYgAABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAINk1UN1VDNkVUWUVDQldGNTBQSwAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.325" xsd:float
+property_value: STATO:0000663 "0.35135135" xsd:float
+
+[Term]
+id: CLM:5022246
+name: Vwc2,Opalin (Yao - within subclass).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/226115
+relationship: BFO:0000051 https://identifiers.org/ncbigene/319922
+property_value: CLM:0010004 "0.0" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3NiBDT1AgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUCAVZ3YzIAAAFPcGFsaW4AAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAlNZM1NMTU5QSUQzQzY4TUdTOFYAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACATUyNzYgQ09QIE5OXzEAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAgFWd2MyAAABT3BhbGluAAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAg2TVQ3VUM2RVRZRUNCV0Y1MFBLAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.0" xsd:float
+property_value: STATO:0000663 "0.0" xsd:float
+
+[Term]
+id: CLM:5022247
+name: Bmp4,Cck,Ptger1 (Yao - within subclass).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/12159
+relationship: BFO:0000051 https://identifiers.org/ncbigene/12424
+relationship: BFO:0000051 https://identifiers.org/ncbigene/19216
+property_value: CLM:0010004 "0.08" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3NyBDT1AgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUDAUJtcDQAAAFDY2sAAAFQdGdlcjEAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAlNZM1NMTU5QSUQzQzY4TUdTOFYAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACATUyNzcgQ09QIE5OXzEAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAwFCbXA0AAABQ2NrAAABUHRnZXIxAAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAg2TVQ3VUM2RVRZRUNCV0Y1MFBLAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.6666667" xsd:float
+property_value: STATO:0000663 "0.27027026" xsd:float
+
+[Term]
+id: CLM:5022248
+name: 9630013A20Rik,Grin2b (Yao - within subclass).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/14812
+relationship: BFO:0000051 https://identifiers.org/ncbigene/319903
+property_value: CLM:0010004 "0.6" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3OCBORk9MIE5OXzIAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAgE5NjMwMDEzQTIwUmlrAAABR3JpbjJiAAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJTWTNTTE1OUElEM0M2OE1HUzhWAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgE1Mjc4IE5GT0wgTk5fMgAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUCATk2MzAwMTNBMjBSaWsAAAFHcmluMmIAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACDZNVDdVQzZFVFlFQ0JXRjUwUEsACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.2647059" xsd:float
+property_value: STATO:0000663 "0.29801324" xsd:float
+
+[Term]
+id: CLM:5022249
+name: Dbx2,Rassf10 (Yao - within subclass).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/223843
+relationship: BFO:0000051 https://identifiers.org/ncbigene/78748
+property_value: CLM:0010004 "0.6" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3OSBORk9MIE5OXzIAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAgFEYngyAAABUmFzc2YxMAAABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACU1kzU0xNTlBJRDNDNjhNR1M4VgADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3OSBORk9MIE5OXzIAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAgFEYngyAAABUmFzc2YxMAAABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAINk1UN1VDNkVUWUVDQldGNTBQSwAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.7692308" xsd:float
+property_value: STATO:0000663 "0.7281553" xsd:float
+
+[Term]
+id: CLM:5022250
+name: Rgs16,Rhbdl2 (Yao - within subclass).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/19734
+relationship: BFO:0000051 https://identifiers.org/ncbigene/230726
+property_value: CLM:0010004 "0.48" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI4MCBORk9MIE5OXzIAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAgFSZ3MxNgAAAVJoYmRsMgAABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACU1kzU0xNTlBJRDNDNjhNR1M4VgADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI4MCBORk9MIE5OXzIAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAgFSZ3MxNgAAAVJoYmRsMgAABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAINk1UN1VDNkVUWUVDQldGNTBQSwAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.48979592" xsd:float
+property_value: STATO:0000663 "0.4878049" xsd:float
+
+[Term]
+id: CLM:5022251
+name: Il23a,Opalin,Ptprb (Yao - within subclass).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/19263
+relationship: BFO:0000051 https://identifiers.org/ncbigene/226115
+relationship: BFO:0000051 https://identifiers.org/ncbigene/83430
+property_value: CLM:0010004 "0.56" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI4MSBORk9MIE5OXzIAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAwFJbDIzYQAAAU9wYWxpbgAAAVB0cHJiAAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJTWTNTTE1OUElEM0M2OE1HUzhWAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgE1MjgxIE5GT0wgTk5fMgAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUDAUlsMjNhAAABT3BhbGluAAABUHRwcmIAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACDZNVDdVQzZFVFlFQ0JXRjUwUEsACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.8" xsd:float
+property_value: STATO:0000663 "0.7368421" xsd:float
+
+[Term]
+id: CLM:5022252
+name: Cxcl12,Efhd1 (Yao - within subclass).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/20315
+relationship: BFO:0000051 https://identifiers.org/ncbigene/98363
+property_value: CLM:0010004 "0.22" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI4MiBNRk9MIE5OXzMAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAgFDeGNsMTIAAAFFZmhkMQAABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACU1kzU0xNTlBJRDNDNjhNR1M4VgADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI4MiBNRk9MIE5OXzMAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAgFDeGNsMTIAAAFFZmhkMQAABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAINk1UN1VDNkVUWUVDQldGNTBQSwAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.73333335" xsd:float
+property_value: STATO:0000663 "0.5" xsd:float
+
+[Term]
+id: CLM:5022253
+name: Il23a,Ppp1r14a (Yao - within subclass).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/68458
+relationship: BFO:0000051 https://identifiers.org/ncbigene/83430
+property_value: CLM:0010004 "0.36" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI4MyBNRk9MIE5OXzMAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAgFJbDIzYQAAAVBwcDFyMTRhAAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJTWTNTTE1OUElEM0M2OE1HUzhWAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgE1MjgzIE1GT0wgTk5fMwAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUCAUlsMjNhAAABUHBwMXIxNGEAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACDZNVDdVQzZFVFlFQ0JXRjUwUEsACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.5294118" xsd:float
+property_value: STATO:0000663 "0.48387095" xsd:float
+
+[Term]
+id: CLM:5022254
+name: Plin3,Grm7 (Yao - within subclass).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/108073
+relationship: BFO:0000051 https://identifiers.org/ncbigene/66905
+property_value: CLM:0010004 "0.22" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI4NCBNT0wgTk5fNAAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUCAVBsaW4zAAABR3JtNwAABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACU1kzU0xNTlBJRDNDNjhNR1M4VgADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI4NCBNT0wgTk5fNAAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUCAVBsaW4zAAABR3JtNwAABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAINk1UN1VDNkVUWUVDQldGNTBQSwAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.73333335" xsd:float
+property_value: STATO:0000663 "0.5" xsd:float
+
+[Term]
+id: CLM:5022255
+name: Spock3,Rhoj (Yao - within subclass).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/72902
+relationship: BFO:0000051 https://identifiers.org/ncbigene/80837
+property_value: CLM:0010004 "0.16" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI4NSBNT0wgTk5fNAAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUCAVNwb2NrMwAAAVJob2oAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAlNZM1NMTU5QSUQzQzY4TUdTOFYAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACATUyODUgTU9MIE5OXzQAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAgFTcG9jazMAAAFSaG9qAAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAg2TVQ3VUM2RVRZRUNCV0Y1MFBLAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.44444445" xsd:float
+property_value: STATO:0000663 "0.32786885" xsd:float
+
+[Term]
+id: CLM:5022256
+name: Art3 (Yao - within subclass).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/109979
+property_value: CLM:0010004 "0.88" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI4NiBNT0wgTk5fNAAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUBAUFydDMAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAlNZM1NMTU5QSUQzQzY4TUdTOFYAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACATUyODYgTU9MIE5OXzQAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAQFBcnQzAAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAg2TVQ3VUM2RVRZRUNCV0Y1MFBLAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.95652175" xsd:float
+property_value: STATO:0000663 "0.94017094" xsd:float
+
+[Term]
+id: CLM:5022257
+name: Il33,Gm5087 (Yao - within subclass).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/328354
+relationship: BFO:0000051 https://identifiers.org/ncbigene/77125
+property_value: CLM:0010004 "0.14" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI4NyBNT0wgTk5fNAAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUCAUlsMzMAAAFHbTUwODcAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAlNZM1NMTU5QSUQzQzY4TUdTOFYAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACATUyODcgTU9MIE5OXzQAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAgFJbDMzAAABR201MDg3AAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAg2TVQ3VUM2RVRZRUNCV0Y1MFBLAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.53846157" xsd:float
+property_value: STATO:0000663 "0.34313726" xsd:float
+
+[Term]
+id: CLM:5022258
+name: Sspo,Selenop (Yao - within subclass).
+xref: https://doi.org/10.1038/s41586-023-06812-z
+is_a: SO:0001260
+relationship: BFO:0000051 https://identifiers.org/ncbigene/20363
+relationship: BFO:0000051 https://identifiers.org/ncbigene/243369
+property_value: CLM:0010004 "0.26" xsd:string
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI4OCBNT0wgTk5fNAAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUCAVNzcG8AAAFTZWxlbm9wAAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJTWTNTTE1OUElEM0M2OE1HUzhWAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgE1Mjg4IE1PTCBOTl80AAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQIBU3NwbwAAAVNlbGVub3AAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACDZNVDdVQzZFVFlFQ0JXRjUwUEsACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: STATO:0000416 "0.52" xsd:float
+property_value: STATO:0000663 "0.43333334" xsd:float
+
