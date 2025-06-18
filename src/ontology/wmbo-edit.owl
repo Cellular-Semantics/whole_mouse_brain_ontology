@@ -170,18 +170,15 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010061> "nuc
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010062> "fbeta_confidence_score")
 
-# Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010063> (some_soma_located_in)
-# Use CLM_0010001 instead
-# AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010063> "some_soma_located_in")
+# Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010063> (obsolete some_soma_located_in)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010063> "obsolete some_soma_located_in")
+AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/PCL_0010063> "true"^^xsd:boolean)
+AnnotationAssertion(obo:IAO_0100001 <http://purl.obolibrary.org/obo/PCL_0010063> <http://purl.obolibrary.org/obo/CLM_0010001>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010065> (obsolete cell_ratio)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010065> "obsolete cell_ratio")
 AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/PCL_0010065> "true"^^xsd:boolean)
 AnnotationAssertion(obo:IAO_0100001 <http://purl.obolibrary.org/obo/PCL_0010065> <http://purl.obolibrary.org/obo/CLM_0010002>)
-
-# Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010067> (has_marker_set)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010067> "has_marker_set")
 
 #### Temporary CLM properties ####
 
