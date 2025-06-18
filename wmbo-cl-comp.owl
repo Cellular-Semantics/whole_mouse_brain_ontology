@@ -129,444 +129,6 @@
     
 
 
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000001504 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000001504"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000003746 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000003746"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000003974 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000003974"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000004894 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000004894"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000019464 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000019464"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000019832 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000019832"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000020154 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000020154"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000020914 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000020914"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000020950 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000020950"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000021127 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000021127"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000021835 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000021835"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000022018 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000022018"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000022197 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000022197"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000022548 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000022548"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000024197 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000024197"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000024810 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000024810"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000025383 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000025383"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000026255 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000026255"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000026475 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000026475"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000026605 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000026605"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000029177 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000029177"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000029231 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000029231"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000029797 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000029797"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000030209 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000030209"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000031004 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000031004"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000031375 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000031375"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000031523 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000031523"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000031775 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000031775"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000032532 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000032532"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000032841 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000032841"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000033579 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000033579"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000034842 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000034842"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000036777 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000036777"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000037166 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000037166"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000037625 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000037625"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000037991 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000037991"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000038173 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000038173"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000039396 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000039396"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000040204 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000040204"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000040624 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000040624"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000041482 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000041482"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000042961 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000042961"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000043333 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000043333"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000045532 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000045532"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000045608 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000045608"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000045672 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000045672"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000045751 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000045751"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000046160 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000046160"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000046768 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000046768"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000050063 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000050063"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000050121 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000050121"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000050761 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000050761"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000050830 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000050830"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000051729 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000051729"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000052229 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000052229"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000054162 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000054162"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000056755 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000056755"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000056966 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000056966"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000057378 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000057378"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000060803 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000060803"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000061353 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000061353"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000064373 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000064373"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000070366 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000070366"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000073067 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000073067"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000073910 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000073910"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000074217 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000074217"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000076439 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000076439"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000087230 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000087230"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000091712 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000091712"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000098132 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000098132"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000105891 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000105891"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000108393 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000108393"/>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000115529 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000115529"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/CLM_5000366 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLM_5000366">
@@ -574,7 +136,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000029231"/>
+                <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/18595"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:PCL_0010068 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.91</obo:PCL_0010068>
@@ -602,11 +164,11 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000037625"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/118446"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000056966"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/18417"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -636,15 +198,15 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000029231"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/18595"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000037991"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/223970"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000046160"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/50914"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -674,11 +236,11 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000021835"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/12159"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000052229"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/574402"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -708,11 +270,11 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000020154"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/19263"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000115529"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/319903"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -742,15 +304,15 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000037625"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/18417"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000091712"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/319903"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000115529"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/665119"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -780,11 +342,11 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000036777"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/18417"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000037625"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/68743"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -814,19 +376,19 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000020950"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/15228"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000029231"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/17345"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000031004"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/18595"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000040204"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/68026"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -856,15 +418,15 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000001504"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/16372"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000029231"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/18595"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000040204"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/68026"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -894,19 +456,19 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000020914"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/18595"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000029231"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/212377"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000045751"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/21973"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000046160"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/50914"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -936,15 +498,15 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000029231"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/18595"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000045672"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/373864"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000046160"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/50914"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -974,19 +536,19 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000029231"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/18595"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000037991"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/223970"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000045672"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/373864"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000046160"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/50914"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1016,15 +578,15 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000026605"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/108000"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000029177"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/12615"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000029231"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/18595"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1054,15 +616,15 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000021127"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/12159"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000021835"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/12192"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000052229"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/574402"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1092,19 +654,19 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000022197"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/14724"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000040624"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/213783"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000050761"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/574402"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000052229"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/68070"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1134,19 +696,19 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000031375"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/12111"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000045532"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/14870"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000052229"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/23829"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000060803"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/574402"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1176,15 +738,15 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000021835"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/12159"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000073910"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/214944"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000115529"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/319903"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1214,15 +776,15 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000019832"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/226115"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000050121"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/319903"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000115529"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/67844"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1252,19 +814,19 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000019464"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/12159"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000021835"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/12424"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000032532"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/19216"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000115529"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/319903"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1294,11 +856,11 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000030209"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/14812"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000115529"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/319903"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1328,15 +890,15 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000045608"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/223843"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000098132"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/319903"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000115529"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/78748"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1366,15 +928,15 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000026475"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/19734"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000043333"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/230726"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000115529"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/319903"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1404,15 +966,15 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000020154"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/19263"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000041482"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/319903"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000115529"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/667742"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1442,15 +1004,15 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000026255"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/20315"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000050121"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/226115"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000061353"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/98363"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1480,15 +1042,15 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000037166"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/319903"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000087230"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/68458"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000115529"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/76422"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1518,19 +1080,19 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000004894"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/108073"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000032841"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/320981"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000038173"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/72446"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000056755"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/73940"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1560,19 +1122,19 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000037625"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/18417"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000046768"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/319951"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000054162"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/72902"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000105891"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/80837"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1602,15 +1164,15 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000022548"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/11815"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000031523"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/19144"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000050063"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/50768"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1640,15 +1202,15 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000003974"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/108069"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000050121"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/226115"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000051729"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/328354"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1678,15 +1240,15 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000036777"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/102635243"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000076439"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/17441"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000108393"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/68743"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1716,11 +1278,11 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000031775"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/50914"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000046160"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/67801"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1751,11 +1313,11 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000029231"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/18595"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000052229"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/574402"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1786,11 +1348,11 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000033579"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/18417"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000037625"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/338521"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1819,7 +1381,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000057378"/>
+                <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/20192"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>https://doi.org/10.1038/s41586-023-06812-z</oboInOwl:hasDbXref>
@@ -1842,7 +1404,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000021835"/>
+                <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/12159"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>https://doi.org/10.1038/s41586-023-06812-z</oboInOwl:hasDbXref>
@@ -1867,11 +1429,11 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000003746"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/17155"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000042961"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/268780"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1898,11 +1460,11 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000061353"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/20315"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000074217"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/70134"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1929,11 +1491,11 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000026255"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/72902"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000054162"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/98363"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1960,11 +1522,11 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000020950"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/15228"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000039396"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/234258"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1994,11 +1556,11 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000001504"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/16372"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000039396"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/234258"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2028,15 +1590,15 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000020914"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/15228"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000020950"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/212377"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000045751"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/21973"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2064,7 +1626,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000045672"/>
+                <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/373864"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:PCL_0010068 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.46</obo:PCL_0010068>
@@ -2092,11 +1654,11 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000037991"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/223970"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000045672"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/373864"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2124,7 +1686,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000029177"/>
+                <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/12615"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>https://doi.org/10.1038/s41586-023-06812-z</oboInOwl:hasDbXref>
@@ -2149,11 +1711,11 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000022018"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/381925"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000070366"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/66214"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2183,11 +1745,11 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000022018"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/100042056"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000073067"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/66214"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2217,11 +1779,11 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000045532"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/14870"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000060803"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/23829"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2251,11 +1813,11 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000021835"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/12159"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000073910"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/214944"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2285,11 +1847,11 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000050121"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/226115"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000050830"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/319922"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2319,15 +1881,15 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000019464"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/12159"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000021835"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/12424"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000032532"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/19216"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2357,11 +1919,11 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000030209"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/14812"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000115529"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/319903"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2391,11 +1953,11 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000045608"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/223843"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000098132"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/78748"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2425,11 +1987,11 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000026475"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/19734"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000043333"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/230726"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2459,15 +2021,15 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000020154"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/19263"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000025383"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/226115"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000050121"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/83430"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2497,11 +2059,11 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000026255"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/20315"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000061353"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/98363"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2531,11 +2093,11 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000025383"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/68458"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000037166"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/83430"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2565,11 +2127,11 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000024197"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/108073"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000056755"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/66905"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2599,11 +2161,11 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000046768"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/72902"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000054162"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/80837"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2631,7 +2193,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000034842"/>
+                <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/109979"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:PCL_0010068 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.88</obo:PCL_0010068>
@@ -2659,11 +2221,11 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000024810"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/328354"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000051729"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/77125"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2693,11 +2255,11 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000029797"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/20363"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000064373"/>
+                        <owl:someValuesFrom rdf:resource="https://identifiers.org/ncbigene/243369"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -4700,6 +4262,444 @@
     <!-- http://purl.obolibrary.org/obo/SO_0001260 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0001260"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100042056 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100042056"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/102635243 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/102635243"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/108000 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/108000"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/108069 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/108069"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/108073 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/108073"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/109979 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/109979"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/11815 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/11815"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/118446 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/118446"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/12111 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/12111"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/12159 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/12159"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/12192 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/12192"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/12424 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/12424"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/12615 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/12615"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/14724 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/14724"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/14812 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/14812"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/14870 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/14870"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/15228 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/15228"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/16372 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/16372"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/17155 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/17155"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/17345 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/17345"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/17441 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/17441"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/18417 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/18417"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/18595 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/18595"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/19144 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/19144"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/19216 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/19216"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/19263 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/19263"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/19734 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/19734"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/20192 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/20192"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/20315 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/20315"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/20363 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/20363"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/212377 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/212377"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/213783 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/213783"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/214944 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/214944"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/21973 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/21973"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/223843 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/223843"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/223970 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/223970"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/226115 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/226115"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/230726 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/230726"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/234258 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/234258"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/23829 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/23829"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/243369 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/243369"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/268780 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/268780"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/319903 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/319903"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/319922 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/319922"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/319951 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/319951"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/320981 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/320981"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/328354 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/328354"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/338521 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/338521"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/373864 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/373864"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/381925 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/381925"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/50768 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/50768"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/50914 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/50914"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/574402 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/574402"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/66214 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/66214"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/665119 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/665119"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/667742 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/667742"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/66905 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/66905"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/67801 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/67801"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/67844 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/67844"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/68026 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/68026"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/68070 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/68070"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/68458 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/68458"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/68743 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/68743"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/70134 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/70134"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/72446 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/72446"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/72902 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/72902"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/73940 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/73940"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/76422 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/76422"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/77125 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/77125"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/78748 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/78748"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/80837 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/80837"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/83430 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/83430"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/98363 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/98363"/>
 </rdf:RDF>
 
 
