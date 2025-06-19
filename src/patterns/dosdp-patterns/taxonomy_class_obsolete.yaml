@@ -34,11 +34,13 @@ annotationProperties:
   assay_label: "PCL:0010064"
   cell_ratio: "CLM:0010002"
   deprecated: "owl:deprecated"
+  term_replaced_by: "IAO:0100001"
 
 vars:
   Gross_cell_type: "'cell'"
   Taxon: "'Vertebrata <vertebrates>'"
   Classification: "'cell'"
+  ReplacedBy: "'cell'"
 
 data_vars:
   prefLabel: "xsd:string"
@@ -82,3 +84,5 @@ annotations:
     text: "%s"
     vars:
       - Deprecated
+  - annotationProperty: term_replaced_by
+    var: ReplacedBy

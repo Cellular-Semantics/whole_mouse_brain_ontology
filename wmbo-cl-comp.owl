@@ -73,6 +73,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0100001 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0100001"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000070 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000070"/>
@@ -4708,6 +4714,110 @@
     <!-- https://identifiers.org/ncbigene/98363 -->
 
     <owl:Class rdf:about="https://identifiers.org/ncbigene/98363"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PCL_0110031">
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CL_4300031"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PCL_0110386">
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CL_4300366"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PCL_0110387">
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CL_4300367"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PCL_0111749">
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CL_4301609"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PCL_0111751">
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CL_4301611"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PCL_0111752">
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CL_4301612"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PCL_0111753">
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CL_4301613"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PCL_0111754">
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CL_4301614"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PCL_0117646">
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CL_4307086"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PCL_0117647">
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CL_4307087"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PCL_0117648">
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CL_4307088"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PCL_0117649">
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CL_4307089"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PCL_0117650">
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CL_4307090"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PCL_0117651">
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CL_4307091"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PCL_0117652">
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CL_4307092"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PCL_0117653">
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CL_4307093"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PCL_0117654">
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CL_4307094"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PCL_0117655">
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CL_4307095"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PCL_0117656">
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CL_4307096"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PCL_0117657">
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CL_4307097"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PCL_0117658">
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CL_4307098"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PCL_0117659">
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CL_4307099"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PCL_0117660">
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CL_4307100"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PCL_0117661">
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CL_4307101"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PCL_0117662">
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CL_4307102"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PCL_0117663">
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CL_4307103"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PCL_0117664">
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CL_4307104"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PCL_0117665">
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CL_4307105"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PCL_0117666">
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CL_4307106"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PCL_0117667">
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CL_4307107"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PCL_0117668">
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CL_4307108"/>
+    </rdf:Description>
 </rdf:RDF>
 
 

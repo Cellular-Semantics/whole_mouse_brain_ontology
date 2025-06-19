@@ -19,6 +19,7 @@
     "EFO": "http://www.ebi.ac.uk/efo/EFO_",
     "OBI": "http://purl.obolibrary.org/obo/OBI_",
     "CL": "http://purl.obolibrary.org/obo/CL_",
-    "CLM": "http://purl.obolibrary.org/obo/CLM_"
+    "CLM": "http://purl.obolibrary.org/obo/CLM_",
+    "IAO": "http://purl.obolibrary.org/obo/IAO_"
   }
 }

@@ -1,32 +1,63 @@
-defined_class	prefLabel	Comment	Deprecated	Gross_cell_type	Taxon	Taxon_abbv	Classification
-http://purl.obolibrary.org/obo/PCL_0110202	obsolete 142 HY Gnrh1 Glut	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000
-http://purl.obolibrary.org/obo/PCL_0110322	obsolete 262 Pineal Crx Glut	This term is obsoleted due to identical cell set chain compression.	true	CL:0000652	NCBITaxon:10090	Mmus	CL:0000000
-http://purl.obolibrary.org/obo/PCL_0110388	obsolete 328 OEC NN	This term is obsoleted due to identical cell set chain compression.	true	CL:0011028	NCBITaxon:10090	Mmus	CL:0000000
-http://purl.obolibrary.org/obo/PCL_0110669	obsolete 0099 L5 PPP Glut_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000
-http://purl.obolibrary.org/obo/PCL_0110672	obsolete 0102 NLOT Rho Glut_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000
-http://purl.obolibrary.org/obo/PCL_0111011	obsolete 0441 PVHd Gsc Gaba_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000
-http://purl.obolibrary.org/obo/PCL_0111071	obsolete 0501 BST-po Iigp1 Glut_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000
-http://purl.obolibrary.org/obo/PCL_0111198	obsolete 0628 HY Gnrh1 Glut_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000
-http://purl.obolibrary.org/obo/PCL_0111252	obsolete 0682 RN Spp1 Glut_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000
-http://purl.obolibrary.org/obo/PCL_0111351	obsolete 0781 PBG Mtnr1a Glut-Chol_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000
-http://purl.obolibrary.org/obo/PCL_0111352	obsolete 0782 PAG Tcf24 Glut_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000
-http://purl.obolibrary.org/obo/PCL_0111359	obsolete 0789 PAG Ucn Glut_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000
-http://purl.obolibrary.org/obo/PCL_0111522	obsolete 0952 MEV Ppp1r1c Glut_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000
-http://purl.obolibrary.org/obo/PCL_0111539	obsolete 0969 MARN-GRN Pyy Glut_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000
-http://purl.obolibrary.org/obo/PCL_0111540	obsolete 0970 MDRNv Lhx4 Qrfprl Glut_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000
-http://purl.obolibrary.org/obo/PCL_0111541	obsolete 0971 NTS Mbnl3 Glut_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000
-http://purl.obolibrary.org/obo/PCL_0111582	obsolete 1012 IO Fgl2 Glut_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000
-http://purl.obolibrary.org/obo/PCL_0111600	obsolete 1030 Pineal Crx Glut_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000652	NCBITaxon:10090	Mmus	CL:0000000
-http://purl.obolibrary.org/obo/PCL_0111613	obsolete 1043 PRNc Prox1 Brs3 Gly-Gaba_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000
-http://purl.obolibrary.org/obo/PCL_0111650	obsolete 1080 NLL-po Pax7 Gaba_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000
-http://purl.obolibrary.org/obo/PCL_0111651	obsolete 1081 POR Gata3 Gly-Gaba_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000
-http://purl.obolibrary.org/obo/PCL_0111652	obsolete 1082 POR Spp1 Gly-Gaba_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000
-http://purl.obolibrary.org/obo/PCL_0111687	obsolete 1117 CU-ECU Pax2 Gly-Gaba_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000
-http://purl.obolibrary.org/obo/PCL_0111697	obsolete 1127 MV Nr4a2 Gly-Gaba_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000
-http://purl.obolibrary.org/obo/PCL_0111698	obsolete 1128 MV Xdh Gly-Gaba_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000
-http://purl.obolibrary.org/obo/PCL_0111721	obsolete 1151 CBX MLI Cdh22 Gaba_1	This term is obsoleted due to identical cell set chain compression.	true	CL:4042035	NCBITaxon:10090	Mmus	CL:0000000
-http://purl.obolibrary.org/obo/PCL_0111727	obsolete 1157 Bergmann NN_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000644	NCBITaxon:10090	Mmus	CL:0000000
-http://purl.obolibrary.org/obo/PCL_0111728	obsolete 1158 Astro-CB NN_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0002603	NCBITaxon:10090	Mmus	CL:0000000
-http://purl.obolibrary.org/obo/PCL_0111747	obsolete 1177 Hypendymal NN_1	This term is obsoleted due to identical cell set chain compression.	true	CL:4023181	NCBITaxon:10090	Mmus	CL:0000000
-http://purl.obolibrary.org/obo/PCL_0111764	obsolete 1194 Microglia NN_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000129	NCBITaxon:10090	Mmus	CL:0000000
-http://purl.obolibrary.org/obo/PCL_0111766	obsolete 1196 Monocytes NN_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000576	NCBITaxon:10090	Mmus	CL:0000000
+defined_class	prefLabel	Comment	Deprecated	Gross_cell_type	Taxon	Taxon_abbv	Classification	ReplacedBy
+http://purl.obolibrary.org/obo/PCL_0110202	obsolete 142 HY Gnrh1 Glut	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000	
+http://purl.obolibrary.org/obo/PCL_0110322	obsolete 262 Pineal Crx Glut	This term is obsoleted due to identical cell set chain compression.	true	CL:0000652	NCBITaxon:10090	Mmus	CL:0000000	
+http://purl.obolibrary.org/obo/PCL_0110388	obsolete 328 OEC NN	This term is obsoleted due to identical cell set chain compression.	true	CL:0011028	NCBITaxon:10090	Mmus	CL:0000000	
+http://purl.obolibrary.org/obo/PCL_0110669	obsolete 0099 L5 PPP Glut_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000	
+http://purl.obolibrary.org/obo/PCL_0110672	obsolete 0102 NLOT Rho Glut_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000	
+http://purl.obolibrary.org/obo/PCL_0111011	obsolete 0441 PVHd Gsc Gaba_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000	
+http://purl.obolibrary.org/obo/PCL_0111071	obsolete 0501 BST-po Iigp1 Glut_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000	
+http://purl.obolibrary.org/obo/PCL_0111198	obsolete 0628 HY Gnrh1 Glut_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000	
+http://purl.obolibrary.org/obo/PCL_0111252	obsolete 0682 RN Spp1 Glut_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000	
+http://purl.obolibrary.org/obo/PCL_0111351	obsolete 0781 PBG Mtnr1a Glut-Chol_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000	
+http://purl.obolibrary.org/obo/PCL_0111352	obsolete 0782 PAG Tcf24 Glut_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000	
+http://purl.obolibrary.org/obo/PCL_0111359	obsolete 0789 PAG Ucn Glut_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000	
+http://purl.obolibrary.org/obo/PCL_0111522	obsolete 0952 MEV Ppp1r1c Glut_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000	
+http://purl.obolibrary.org/obo/PCL_0111539	obsolete 0969 MARN-GRN Pyy Glut_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000	
+http://purl.obolibrary.org/obo/PCL_0111540	obsolete 0970 MDRNv Lhx4 Qrfprl Glut_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000	
+http://purl.obolibrary.org/obo/PCL_0111541	obsolete 0971 NTS Mbnl3 Glut_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000	
+http://purl.obolibrary.org/obo/PCL_0111582	obsolete 1012 IO Fgl2 Glut_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000	
+http://purl.obolibrary.org/obo/PCL_0111600	obsolete 1030 Pineal Crx Glut_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000652	NCBITaxon:10090	Mmus	CL:0000000	
+http://purl.obolibrary.org/obo/PCL_0111613	obsolete 1043 PRNc Prox1 Brs3 Gly-Gaba_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000	
+http://purl.obolibrary.org/obo/PCL_0111650	obsolete 1080 NLL-po Pax7 Gaba_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000	
+http://purl.obolibrary.org/obo/PCL_0111651	obsolete 1081 POR Gata3 Gly-Gaba_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000	
+http://purl.obolibrary.org/obo/PCL_0111652	obsolete 1082 POR Spp1 Gly-Gaba_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000	
+http://purl.obolibrary.org/obo/PCL_0111687	obsolete 1117 CU-ECU Pax2 Gly-Gaba_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000	
+http://purl.obolibrary.org/obo/PCL_0111697	obsolete 1127 MV Nr4a2 Gly-Gaba_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000	
+http://purl.obolibrary.org/obo/PCL_0111698	obsolete 1128 MV Xdh Gly-Gaba_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000	
+http://purl.obolibrary.org/obo/PCL_0111721	obsolete 1151 CBX MLI Cdh22 Gaba_1	This term is obsoleted due to identical cell set chain compression.	true	CL:4042035	NCBITaxon:10090	Mmus	CL:0000000	
+http://purl.obolibrary.org/obo/PCL_0111727	obsolete 1157 Bergmann NN_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000644	NCBITaxon:10090	Mmus	CL:0000000	
+http://purl.obolibrary.org/obo/PCL_0111728	obsolete 1158 Astro-CB NN_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0002603	NCBITaxon:10090	Mmus	CL:0000000	
+http://purl.obolibrary.org/obo/PCL_0111747	obsolete 1177 Hypendymal NN_1	This term is obsoleted due to identical cell set chain compression.	true	CL:4023181	NCBITaxon:10090	Mmus	CL:0000000	
+http://purl.obolibrary.org/obo/PCL_0111764	obsolete 1194 Microglia NN_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000129	NCBITaxon:10090	Mmus	CL:0000000	
+http://purl.obolibrary.org/obo/PCL_0111766	obsolete 1196 Monocytes NN_1	This term is obsoleted due to identical cell set chain compression.	true	CL:0000576	NCBITaxon:10090	Mmus	CL:0000000	
+http://purl.obolibrary.org/obo/PCL_0110031	obsolete OPC-Oligo	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000000			CL:0000000	http://purl.obolibrary.org/obo/CL_4300031
+http://purl.obolibrary.org/obo/PCL_0110386	obsolete OPC NN	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0002453			CL:0000000	http://purl.obolibrary.org/obo/CL_4300366
+http://purl.obolibrary.org/obo/PCL_0110387	obsolete Oligo NN	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000128			CL:0000000	http://purl.obolibrary.org/obo/CL_4300367
+http://purl.obolibrary.org/obo/PCL_0111749	obsolete OPC NN_1	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0002453			CL:0000000	http://purl.obolibrary.org/obo/CL_4301609
+http://purl.obolibrary.org/obo/PCL_0117651	obsolete OPC NN_2	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0002453			CL:0000000	http://purl.obolibrary.org/obo/CL_4307091
+http://purl.obolibrary.org/obo/PCL_0111751	obsolete COP NN_1	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4023059			CL:0000000	http://purl.obolibrary.org/obo/CL_4301611
+http://purl.obolibrary.org/obo/PCL_0111752	obsolete NFOL NN_2	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000128			CL:0000000	http://purl.obolibrary.org/obo/CL_4301612
+http://purl.obolibrary.org/obo/PCL_0111753	obsolete MFOL NN_3	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000128			CL:0000000	http://purl.obolibrary.org/obo/CL_4301613
+http://purl.obolibrary.org/obo/PCL_0111754	obsolete MOL NN_4	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000128			CL:0000000	http://purl.obolibrary.org/obo/CL_4301614
+http://purl.obolibrary.org/obo/PCL_0117646	obsolete OPC NN_1 Neil3	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0002453			CL:0000000	http://purl.obolibrary.org/obo/CL_4307086
+http://purl.obolibrary.org/obo/PCL_0117647	obsolete OPC NN_1 Irx2	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0002453			CL:0000000	http://purl.obolibrary.org/obo/CL_4307087
+http://purl.obolibrary.org/obo/PCL_0117648	obsolete OPC NN_1 Mms22l	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0002453			CL:0000000	http://purl.obolibrary.org/obo/CL_4307088
+http://purl.obolibrary.org/obo/PCL_0117649	obsolete OPC NN_1 Col27a1	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0002453			CL:0000000	http://purl.obolibrary.org/obo/CL_4307089
+http://purl.obolibrary.org/obo/PCL_0117650	obsolete OPC NN_1 Rmi2	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0002453			CL:0000000	http://purl.obolibrary.org/obo/CL_4307090
+http://purl.obolibrary.org/obo/PCL_0117652	obsolete COP NN_1 Rgcc	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4023059			CL:0000000	http://purl.obolibrary.org/obo/CL_4307092
+http://purl.obolibrary.org/obo/PCL_0117653	obsolete COP NN_1 9130019P16Rik	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4023059			CL:0000000	http://purl.obolibrary.org/obo/CL_4307093
+http://purl.obolibrary.org/obo/PCL_0117654	obsolete COP NN_1 C1ql1	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4023059			CL:0000000	http://purl.obolibrary.org/obo/CL_4307094
+http://purl.obolibrary.org/obo/PCL_0117655	obsolete COP NN_1 Bmp4	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4023059			CL:0000000	http://purl.obolibrary.org/obo/CL_4307095
+http://purl.obolibrary.org/obo/PCL_0117656	obsolete COP NN_1 Vwc2	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4023059			CL:0000000	http://purl.obolibrary.org/obo/CL_4307096
+http://purl.obolibrary.org/obo/PCL_0117657	obsolete COP NN_1 Cck	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4023059			CL:0000000	http://purl.obolibrary.org/obo/CL_4307097
+http://purl.obolibrary.org/obo/PCL_0117658	obsolete NFOL NN_2 9630013A20Rik	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000128			CL:0000000	http://purl.obolibrary.org/obo/CL_4307098
+http://purl.obolibrary.org/obo/PCL_0117659	obsolete NFOL NN_2 Dbx2	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000128			CL:0000000	http://purl.obolibrary.org/obo/CL_4307099
+http://purl.obolibrary.org/obo/PCL_0117660	obsolete NFOL NN_2 Rgs16	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000128			CL:0000000	http://purl.obolibrary.org/obo/CL_4307100
+http://purl.obolibrary.org/obo/PCL_0117661	obsolete NFOL NN_2 Il23a	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000128			CL:0000000	http://purl.obolibrary.org/obo/CL_4307101
+http://purl.obolibrary.org/obo/PCL_0117662	obsolete MFOL NN_3 Cxcl12	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000128			CL:0000000	http://purl.obolibrary.org/obo/CL_4307102
+http://purl.obolibrary.org/obo/PCL_0117663	obsolete MFOL NN_3 Il23a	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000128			CL:0000000	http://purl.obolibrary.org/obo/CL_4307103
+http://purl.obolibrary.org/obo/PCL_0117664	obsolete MOL NN_4 Plin3	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000128			CL:0000000	http://purl.obolibrary.org/obo/CL_4307104
+http://purl.obolibrary.org/obo/PCL_0117665	obsolete MOL NN_4 Spock3	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000128			CL:0000000	http://purl.obolibrary.org/obo/CL_4307105
+http://purl.obolibrary.org/obo/PCL_0117666	obsolete MOL NN_4 Art3	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000128			CL:0000000	http://purl.obolibrary.org/obo/CL_4307106
+http://purl.obolibrary.org/obo/PCL_0117667	obsolete MOL NN_4 Il33	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000128			CL:0000000	http://purl.obolibrary.org/obo/CL_4307107
+http://purl.obolibrary.org/obo/PCL_0117668	obsolete MOL NN_4 Sspo	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000128			CL:0000000	http://purl.obolibrary.org/obo/CL_4307108

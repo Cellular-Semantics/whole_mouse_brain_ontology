@@ -253,6 +253,7 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
         class_template = []
         obsolete_template = []
         processed_accessions = set()
+        terms_moved_to_cl_subset = []
         for o in dend['nodes']:
             node = o
             if o['cell_set_accession'] in nodes_to_collapse:
@@ -396,6 +397,11 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                         d[k] = ''
                 class_template.append(d)
                 processed_accessions.add(node['cell_set_accession'])
+
+                if o['cell_set_accession'] in cl_subset:
+                    cloned = d.copy()
+                    cloned['cell_set_accession'] = node['cell_set_accession']
+                    terms_moved_to_cl_subset.append(cloned)
             else:
                 # process obsoleted classes due to chain compressing
                 if collapsed and o.get('cell_set_accession') not in processed_accessions:
@@ -410,7 +416,19 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                     d['Taxon_abbv'] = taxonomy_config['Gene_abbv'][0]
                     d['Comment'] = "This term is obsoleted due to identical cell set chain compression."
                     d['Classification'] = "CL:0000000"
+                    d['ReplacedBy'] = ""
                     obsolete_template.append(d)
+
+        for cl_obsolete in terms_moved_to_cl_subset:
+            obsolete_d = dict()
+            obsolete_d['defined_class'] = PCL_BASE + pcl_id_factory.get_class_id(cl_obsolete['cell_set_accession'])
+            obsolete_d['prefLabel'] = "obsolete " + cl_obsolete['prefLabel']
+            obsolete_d['Comment'] = "This PCL class is no longer in use; it has been relocated to CL."
+            obsolete_d['Deprecated'] = "true"
+            obsolete_d['Gross_cell_type'] = cl_obsolete['Gross_cell_type']
+            obsolete_d['Classification'] = "CL:0000000"
+            obsolete_d['ReplacedBy'] = cl_obsolete['defined_class']
+            obsolete_template.append(obsolete_d)
 
         class_robot_template = pd.DataFrame.from_records(class_template)
         class_robot_template.to_csv(output_filepath, sep="\t", index=False)
