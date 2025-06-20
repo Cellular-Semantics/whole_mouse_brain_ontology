@@ -233,7 +233,8 @@ $(TMPDIR)/cl_component_terms.txt: $(TMPDIR)/all_pattern_terms.txt
 
 # Artifact for CL that hosts only the validated component annotations (used by CL)
 $(RELEASEDIR)/$(ONT)-cl-comp.owl: $(ONT)-pcl-comp.owl $(TMPDIR)/cl_component_terms.txt wmbo-clm-edit.owl
-	$(ROBOT) filter --input $(RELEASEDIR)/$(ONT)-pcl-comp.owl --term-file $(TMPDIR)/cl_component_terms.txt --select "annotations anonymous self" --signature true --trim false  \
+	$(ROBOT) remove --input $(RELEASEDIR)/$(ONT)-pcl-comp.owl --select "<http://purl.obolibrary.org/obo/PCL_*>" --signature true \
+	filter --term-file $(TMPDIR)/cl_component_terms.txt --select "annotations anonymous self" --signature true --trim false  \
 	merge -i wmbo-clm-edit.owl --output $@
 $(RELEASEDIR)/$(ONT)-cl-comp.obo: $(RELEASEDIR)/$(ONT)-cl-comp.owl
 	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo && grep -v ^owl-axioms $@.tmp.obo > $@ && rm $@.tmp.obo
