@@ -26,7 +26,7 @@
     <!-- http://purl.obolibrary.org/obo/CLM_0010001 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/CLM_0010001">
-        <rdfs:label>some_soma_located_in</rdfs:label>
+        <rdfs:label>some soma located in</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -34,7 +34,7 @@
     <!-- http://purl.obolibrary.org/obo/CLM_0010002 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/CLM_0010002">
-        <rdfs:label>cell_ratio</rdfs:label>
+        <rdfs:label>cell ratio</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -42,7 +42,7 @@
     <!-- http://purl.obolibrary.org/obo/CLM_0010003 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/CLM_0010003">
-        <rdfs:label>has_marker_set</rdfs:label>
+        <rdfs:label>has marker set</rdfs:label>
     </owl:AnnotationProperty>
     
 

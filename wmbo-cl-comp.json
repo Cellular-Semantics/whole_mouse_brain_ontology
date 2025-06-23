@@ -518,10 +518,10 @@
         "basicPropertyValues": [
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2025-06-20"
+            "val": "2025-06-23"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/pcl/releases/2025-06-20/../../wmbo-cl-comp.json"
+        "version": "http://purl.obolibrary.org/obo/pcl/releases/2025-06-23/../../wmbo-cl-comp.json"
       },
       "nodes": [
         {
@@ -3907,19 +3907,19 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CLM_0010001",
-          "lbl": "some_soma_located_in",
+          "lbl": "some soma located in",
           "propertyType": "ANNOTATION",
           "type": "PROPERTY"
         },
         {
           "id": "http://purl.obolibrary.org/obo/CLM_0010002",
-          "lbl": "cell_ratio",
+          "lbl": "cell ratio",
           "propertyType": "ANNOTATION",
           "type": "PROPERTY"
         },
         {
           "id": "http://purl.obolibrary.org/obo/CLM_0010003",
-          "lbl": "has_marker_set",
+          "lbl": "has marker set",
           "propertyType": "ANNOTATION",
           "type": "PROPERTY"
         },
