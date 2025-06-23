@@ -20,14 +20,14 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/CLM_0010004>))
 #   Annotation Properties
 ############################
 
-# Annotation Property: <http://purl.obolibrary.org/obo/CLM_0010001> (some_soma_located_in)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CLM_0010001> "some_soma_located_in")
+# Annotation Property: <http://purl.obolibrary.org/obo/CLM_0010001> (some soma located in)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CLM_0010001> "some soma located in")
 
-# Annotation Property: <http://purl.obolibrary.org/obo/CLM_0010002> (cell_ratio)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CLM_0010002> "cell_ratio")
+# Annotation Property: <http://purl.obolibrary.org/obo/CLM_0010002> (cell ratio)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CLM_0010002> "cell ratio")
 
-# Annotation Property: <http://purl.obolibrary.org/obo/CLM_0010003> (has_marker_set)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CLM_0010003> "has_marker_set")
+# Annotation Property: <http://purl.obolibrary.org/obo/CLM_0010003> (has marker set)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CLM_0010003> "has marker set")
 
 # Annotation Property: <http://purl.obolibrary.org/obo/CLM_0010004> (recall)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CLM_0010004> "recall")
