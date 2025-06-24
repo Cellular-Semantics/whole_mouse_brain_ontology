@@ -2506,10 +2506,10 @@
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5001601"/>
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5016821"/>
         <obo:IAO_0000028>COP NN_1 (Mmus)</obo:IAO_0000028>
-        <obo:IAO_0000115>A differentiation-committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Bmp4 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1181 COP NN_1.</obo:IAO_0000115>
+        <obo:IAO_0000115>A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Bmp4 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1181 COP NN_1.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>1181 COP NN_1</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Gpr17 (Mmus), Bmp4 (Mmus) expressing differentiation-committed oligodendrocyte precursor of brain (Mus musculus)</oboInOwl:hasExactSynonym>
-        <rdfs:label>COP NN_1 differentiation-committed oligodendrocyte precursor (Mmus)</rdfs:label>
+        <oboInOwl:hasExactSynonym>Gpr17 (Mmus), Bmp4 (Mmus) expressing committed oligodendrocyte precursor of brain (Mus musculus)</oboInOwl:hasExactSynonym>
+        <rdfs:label>COP NN_1 committed oligodendrocyte precursor (Mmus)</rdfs:label>
         <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE4MSBDT1AgTk5fMQAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAjE1Qks0N0RDSU9GMVNMTFVXOVAAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACSFNZWlBaVzE2NjlVODIxQldZUAADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE4MSBDT1AgTk5fMQAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAjE1Qks0N0RDSU9GMVNMTFVXOVAAA34AAAAEAAAIVkZPRllQRlFHUktVRFFVWjNGRgAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBVExPS1dDTDk1UlUwM0Q5UEVURwACNzNHVlREWERFR0UyN00yWEpNVAADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D</rdfs:seeAlso>
         <rdfs:seeAlso>https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad</rdfs:seeAlso>
     </owl:Class>
@@ -2522,7 +2522,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4301611"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A differentiation-committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Bmp4 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1181 COP NN_1.</owl:annotatedTarget>
+        <owl:annotatedTarget>A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Bmp4 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1181 COP NN_1.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://doi.org/10.1038/s41586-023-06812-z</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -3130,10 +3130,10 @@
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5007022"/>
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5022242"/>
         <obo:IAO_0000028>COP NN_1 Rgcc (Mmus)</obo:IAO_0000028>
-        <obo:IAO_0000115>A differentiation-committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Bmp4 (Mmus), Zfp36l1 (Mmus). It is distinguished from other COP NN_1 cells by expression of Rgcc, Plpp4. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5272 COP NN_1.</obo:IAO_0000115>
+        <obo:IAO_0000115>A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Bmp4 (Mmus), Zfp36l1 (Mmus). It is distinguished from other COP NN_1 cells by expression of Rgcc, Plpp4. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5272 COP NN_1.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>5272 COP NN_1</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Gpr17 (Mmus), Bmp4 (Mmus), Zfp36l1 (Mmus) expressing differentiation-committed oligodendrocyte precursor of brain (Mus musculus)</oboInOwl:hasExactSynonym>
-        <rdfs:label>COP NN_1 Rgcc differentiation-committed oligodendrocyte precursor (Mmus)</rdfs:label>
+        <oboInOwl:hasExactSynonym>Gpr17 (Mmus), Bmp4 (Mmus), Zfp36l1 (Mmus) expressing committed oligodendrocyte precursor of brain (Mus musculus)</oboInOwl:hasExactSynonym>
+        <rdfs:label>COP NN_1 Rgcc committed oligodendrocyte precursor (Mmus)</rdfs:label>
         <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3MiBDT1AgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACSFNZWlBaVzE2NjlVODIxQldZUAADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3MiBDT1AgTk5fMQAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIVkZPRllQRlFHUktVRFFVWjNGRgAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBVExPS1dDTDk1UlUwM0Q5UEVURwACNzNHVlREWERFR0UyN00yWEpNVAADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D</rdfs:seeAlso>
         <rdfs:seeAlso>https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad</rdfs:seeAlso>
     </owl:Class>
@@ -3168,7 +3168,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4307092"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A differentiation-committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Bmp4 (Mmus), Zfp36l1 (Mmus). It is distinguished from other COP NN_1 cells by expression of Rgcc, Plpp4. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5272 COP NN_1.</owl:annotatedTarget>
+        <owl:annotatedTarget>A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Bmp4 (Mmus), Zfp36l1 (Mmus). It is distinguished from other COP NN_1 cells by expression of Rgcc, Plpp4. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5272 COP NN_1.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://doi.org/10.1038/s41586-023-06812-z</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -3196,10 +3196,10 @@
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5007023"/>
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5022243"/>
         <obo:IAO_0000028>COP NN_1 9130019P16Rik (Mmus)</obo:IAO_0000028>
-        <obo:IAO_0000115>A differentiation-committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Gp1bb (Mmus), Pdzd2 (Mmus), Plekhg1 (Mmus). It is distinguished from other COP NN_1 cells by expression of Rgcc, 9130019P16Rik. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5273 COP NN_1.</obo:IAO_0000115>
+        <obo:IAO_0000115>A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Gp1bb (Mmus), Pdzd2 (Mmus), Plekhg1 (Mmus). It is distinguished from other COP NN_1 cells by expression of Rgcc, 9130019P16Rik. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5273 COP NN_1.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>5273 COP NN_1</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Gpr17 (Mmus), Gp1bb (Mmus), Pdzd2 (Mmus), Plekhg1 (Mmus) expressing differentiation-committed oligodendrocyte precursor of brain (Mus musculus)</oboInOwl:hasExactSynonym>
-        <rdfs:label>COP NN_1 9130019P16Rik differentiation-committed oligodendrocyte precursor (Mmus)</rdfs:label>
+        <oboInOwl:hasExactSynonym>Gpr17 (Mmus), Gp1bb (Mmus), Pdzd2 (Mmus), Plekhg1 (Mmus) expressing committed oligodendrocyte precursor of brain (Mus musculus)</oboInOwl:hasExactSynonym>
+        <rdfs:label>COP NN_1 9130019P16Rik committed oligodendrocyte precursor (Mmus)</rdfs:label>
         <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3MyBDT1AgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACSFNZWlBaVzE2NjlVODIxQldZUAADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3MyBDT1AgTk5fMQAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIVkZPRllQRlFHUktVRFFVWjNGRgAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBVExPS1dDTDk1UlUwM0Q5UEVURwACNzNHVlREWERFR0UyN00yWEpNVAADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D</rdfs:seeAlso>
         <rdfs:seeAlso>https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad</rdfs:seeAlso>
     </owl:Class>
@@ -3234,7 +3234,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4307093"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A differentiation-committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Gp1bb (Mmus), Pdzd2 (Mmus), Plekhg1 (Mmus). It is distinguished from other COP NN_1 cells by expression of Rgcc, 9130019P16Rik. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5273 COP NN_1.</owl:annotatedTarget>
+        <owl:annotatedTarget>A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Gp1bb (Mmus), Pdzd2 (Mmus), Plekhg1 (Mmus). It is distinguished from other COP NN_1 cells by expression of Rgcc, 9130019P16Rik. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5273 COP NN_1.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://doi.org/10.1038/s41586-023-06812-z</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -3261,10 +3261,10 @@
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5007024"/>
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5022244"/>
         <obo:IAO_0000028>COP NN_1 C1ql1 (Mmus)</obo:IAO_0000028>
-        <obo:IAO_0000115>A differentiation-committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Bgn (Mmus), Gstp1 (Mmus), C1ql1 (Mmus). It is distinguished from other COP NN_1 cells by expression of C1ql1, Gstp1. These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5274 COP NN_1.</obo:IAO_0000115>
+        <obo:IAO_0000115>A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Bgn (Mmus), Gstp1 (Mmus), C1ql1 (Mmus). It is distinguished from other COP NN_1 cells by expression of C1ql1, Gstp1. These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5274 COP NN_1.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>5274 COP NN_1</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Gpr17 (Mmus), Bgn (Mmus), Gstp1 (Mmus), C1ql1 (Mmus) expressing differentiation-committed oligodendrocyte precursor of brain (Mus musculus)</oboInOwl:hasExactSynonym>
-        <rdfs:label>COP NN_1 C1ql1 differentiation-committed oligodendrocyte precursor (Mmus)</rdfs:label>
+        <oboInOwl:hasExactSynonym>Gpr17 (Mmus), Bgn (Mmus), Gstp1 (Mmus), C1ql1 (Mmus) expressing committed oligodendrocyte precursor of brain (Mus musculus)</oboInOwl:hasExactSynonym>
+        <rdfs:label>COP NN_1 C1ql1 committed oligodendrocyte precursor (Mmus)</rdfs:label>
         <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3NCBDT1AgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACSFNZWlBaVzE2NjlVODIxQldZUAADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3NCBDT1AgTk5fMQAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIVkZPRllQRlFHUktVRFFVWjNGRgAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBVExPS1dDTDk1UlUwM0Q5UEVURwACNzNHVlREWERFR0UyN00yWEpNVAADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D</rdfs:seeAlso>
         <rdfs:seeAlso>https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad</rdfs:seeAlso>
     </owl:Class>
@@ -3291,7 +3291,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4307094"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A differentiation-committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Bgn (Mmus), Gstp1 (Mmus), C1ql1 (Mmus). It is distinguished from other COP NN_1 cells by expression of C1ql1, Gstp1. These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5274 COP NN_1.</owl:annotatedTarget>
+        <owl:annotatedTarget>A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Bgn (Mmus), Gstp1 (Mmus), C1ql1 (Mmus). It is distinguished from other COP NN_1 cells by expression of C1ql1, Gstp1. These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5274 COP NN_1.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://doi.org/10.1038/s41586-023-06812-z</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -3318,10 +3318,10 @@
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5007025"/>
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5022245"/>
         <obo:IAO_0000028>COP NN_1 Bmp4 (Mmus)</obo:IAO_0000028>
-        <obo:IAO_0000115>A differentiation-committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Bmp4 (Mmus), Mob3b (Mmus). It is distinguished from other COP NN_1 cells by expression of Bmp4, Mob3b. These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5275 COP NN_1.</obo:IAO_0000115>
+        <obo:IAO_0000115>A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Bmp4 (Mmus), Mob3b (Mmus). It is distinguished from other COP NN_1 cells by expression of Bmp4, Mob3b. These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5275 COP NN_1.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>5275 COP NN_1</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>9630013A20Rik (Mmus), Bmp4 (Mmus), Mob3b (Mmus) expressing differentiation-committed oligodendrocyte precursor of brain (Mus musculus)</oboInOwl:hasExactSynonym>
-        <rdfs:label>COP NN_1 Bmp4 differentiation-committed oligodendrocyte precursor (Mmus)</rdfs:label>
+        <oboInOwl:hasExactSynonym>9630013A20Rik (Mmus), Bmp4 (Mmus), Mob3b (Mmus) expressing committed oligodendrocyte precursor of brain (Mus musculus)</oboInOwl:hasExactSynonym>
+        <rdfs:label>COP NN_1 Bmp4 committed oligodendrocyte precursor (Mmus)</rdfs:label>
         <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3NSBDT1AgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACSFNZWlBaVzE2NjlVODIxQldZUAADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3NSBDT1AgTk5fMQAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIVkZPRllQRlFHUktVRFFVWjNGRgAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBVExPS1dDTDk1UlUwM0Q5UEVURwACNzNHVlREWERFR0UyN00yWEpNVAADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D</rdfs:seeAlso>
         <rdfs:seeAlso>https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad</rdfs:seeAlso>
     </owl:Class>
@@ -3348,7 +3348,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4307095"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A differentiation-committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Bmp4 (Mmus), Mob3b (Mmus). It is distinguished from other COP NN_1 cells by expression of Bmp4, Mob3b. These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5275 COP NN_1.</owl:annotatedTarget>
+        <owl:annotatedTarget>A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Bmp4 (Mmus), Mob3b (Mmus). It is distinguished from other COP NN_1 cells by expression of Bmp4, Mob3b. These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5275 COP NN_1.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://doi.org/10.1038/s41586-023-06812-z</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -3375,10 +3375,10 @@
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5007026"/>
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5022246"/>
         <obo:IAO_0000028>COP NN_1 Vwc2 (Mmus)</obo:IAO_0000028>
-        <obo:IAO_0000115>A differentiation-committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Rab32 (Mmus), Opalin (Mmus). It is distinguished from other COP NN_1 cells by expression of Vwc2, Opalin. These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5276 COP NN_1.</obo:IAO_0000115>
+        <obo:IAO_0000115>A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Rab32 (Mmus), Opalin (Mmus). It is distinguished from other COP NN_1 cells by expression of Vwc2, Opalin. These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5276 COP NN_1.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>5276 COP NN_1</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>9630013A20Rik (Mmus), Rab32 (Mmus), Opalin (Mmus) expressing differentiation-committed oligodendrocyte precursor of brain (Mus musculus)</oboInOwl:hasExactSynonym>
-        <rdfs:label>COP NN_1 Vwc2 differentiation-committed oligodendrocyte precursor (Mmus)</rdfs:label>
+        <oboInOwl:hasExactSynonym>9630013A20Rik (Mmus), Rab32 (Mmus), Opalin (Mmus) expressing committed oligodendrocyte precursor of brain (Mus musculus)</oboInOwl:hasExactSynonym>
+        <rdfs:label>COP NN_1 Vwc2 committed oligodendrocyte precursor (Mmus)</rdfs:label>
         <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3NiBDT1AgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACSFNZWlBaVzE2NjlVODIxQldZUAADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3NiBDT1AgTk5fMQAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIVkZPRllQRlFHUktVRFFVWjNGRgAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBVExPS1dDTDk1UlUwM0Q5UEVURwACNzNHVlREWERFR0UyN00yWEpNVAADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D</rdfs:seeAlso>
         <rdfs:seeAlso>https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad</rdfs:seeAlso>
     </owl:Class>
@@ -3405,7 +3405,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4307096"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A differentiation-committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Rab32 (Mmus), Opalin (Mmus). It is distinguished from other COP NN_1 cells by expression of Vwc2, Opalin. These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5276 COP NN_1.</owl:annotatedTarget>
+        <owl:annotatedTarget>A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Rab32 (Mmus), Opalin (Mmus). It is distinguished from other COP NN_1 cells by expression of Vwc2, Opalin. These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5276 COP NN_1.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://doi.org/10.1038/s41586-023-06812-z</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -3434,10 +3434,10 @@
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5007027"/>
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5022247"/>
         <obo:IAO_0000028>COP NN_1 Cck (Mmus)</obo:IAO_0000028>
-        <obo:IAO_0000115>A differentiation-committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Bmp4 (Mmus), Cck (Mmus), Ptger1 (Mmus). It is distinguished from other COP NN_1 cells by expression of Bmp4, Cck, Ptger1. These cells are located in the Isocortex, Olfactory areas, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5277 COP NN_1.</obo:IAO_0000115>
+        <obo:IAO_0000115>A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Bmp4 (Mmus), Cck (Mmus), Ptger1 (Mmus). It is distinguished from other COP NN_1 cells by expression of Bmp4, Cck, Ptger1. These cells are located in the Isocortex, Olfactory areas, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5277 COP NN_1.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>5277 COP NN_1</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>9630013A20Rik (Mmus), Bmp4 (Mmus), Cck (Mmus), Ptger1 (Mmus) expressing differentiation-committed oligodendrocyte precursor of brain (Mus musculus)</oboInOwl:hasExactSynonym>
-        <rdfs:label>COP NN_1 Cck differentiation-committed oligodendrocyte precursor (Mmus)</rdfs:label>
+        <oboInOwl:hasExactSynonym>9630013A20Rik (Mmus), Bmp4 (Mmus), Cck (Mmus), Ptger1 (Mmus) expressing committed oligodendrocyte precursor of brain (Mus musculus)</oboInOwl:hasExactSynonym>
+        <rdfs:label>COP NN_1 Cck committed oligodendrocyte precursor (Mmus)</rdfs:label>
         <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3NyBDT1AgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACSFNZWlBaVzE2NjlVODIxQldZUAADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI3NyBDT1AgTk5fMQAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIVkZPRllQRlFHUktVRFFVWjNGRgAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBVExPS1dDTDk1UlUwM0Q5UEVURwACNzNHVlREWERFR0UyN00yWEpNVAADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D</rdfs:seeAlso>
         <rdfs:seeAlso>https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad</rdfs:seeAlso>
     </owl:Class>
@@ -3480,7 +3480,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4307097"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A differentiation-committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Bmp4 (Mmus), Cck (Mmus), Ptger1 (Mmus). It is distinguished from other COP NN_1 cells by expression of Bmp4, Cck, Ptger1. These cells are located in the Isocortex, Olfactory areas, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5277 COP NN_1.</owl:annotatedTarget>
+        <owl:annotatedTarget>A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Bmp4 (Mmus), Cck (Mmus), Ptger1 (Mmus). It is distinguished from other COP NN_1 cells by expression of Bmp4, Cck, Ptger1. These cells are located in the Isocortex, Olfactory areas, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5277 COP NN_1.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://doi.org/10.1038/s41586-023-06812-z</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>

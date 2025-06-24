@@ -57,10 +57,10 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 
 [Term]
 id: CL:4301611
-name: COP NN_1 differentiation-committed oligodendrocyte precursor (Mmus)
-def: "A differentiation-committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Bmp4 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1181 COP NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
+name: COP NN_1 committed oligodendrocyte precursor (Mmus)
+def: "A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Bmp4 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1181 COP NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1181 COP NN_1" EXACT []
-synonym: "Gpr17 (Mmus), Bmp4 (Mmus) expressing differentiation-committed oligodendrocyte precursor of brain (Mus musculus)" EXACT []
+synonym: "Gpr17 (Mmus), Bmp4 (Mmus) expressing committed oligodendrocyte precursor of brain (Mus musculus)" EXACT []
 is_a: CL:4023059
 is_a: CL:4300367 ! oligodendrocyte (Mmus)
 property_value: CLM:0010003 CLM:5001601 {STATO:0000663="0.8684739"}
@@ -208,11 +208,11 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 
 [Term]
 id: CL:4307092
-name: COP NN_1 Rgcc differentiation-committed oligodendrocyte precursor (Mmus)
-def: "A differentiation-committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Bmp4 (Mmus), Zfp36l1 (Mmus). It is distinguished from other COP NN_1 cells by expression of Rgcc, Plpp4. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5272 COP NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
+name: COP NN_1 Rgcc committed oligodendrocyte precursor (Mmus)
+def: "A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Bmp4 (Mmus), Zfp36l1 (Mmus). It is distinguished from other COP NN_1 cells by expression of Rgcc, Plpp4. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5272 COP NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5272 COP NN_1" EXACT []
-synonym: "Gpr17 (Mmus), Bmp4 (Mmus), Zfp36l1 (Mmus) expressing differentiation-committed oligodendrocyte precursor of brain (Mus musculus)" EXACT []
-is_a: CL:4301611 ! COP NN_1 differentiation-committed oligodendrocyte precursor (Mmus)
+synonym: "Gpr17 (Mmus), Bmp4 (Mmus), Zfp36l1 (Mmus) expressing committed oligodendrocyte precursor of brain (Mus musculus)" EXACT []
+is_a: CL:4301611 ! COP NN_1 committed oligodendrocyte precursor (Mmus)
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.22", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.2", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007022 {STATO:0000663="0.3888889"}
@@ -223,11 +223,11 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 
 [Term]
 id: CL:4307093
-name: COP NN_1 9130019P16Rik differentiation-committed oligodendrocyte precursor (Mmus)
-def: "A differentiation-committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Gp1bb (Mmus), Pdzd2 (Mmus), Plekhg1 (Mmus). It is distinguished from other COP NN_1 cells by expression of Rgcc, 9130019P16Rik. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5273 COP NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
+name: COP NN_1 9130019P16Rik committed oligodendrocyte precursor (Mmus)
+def: "A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Gp1bb (Mmus), Pdzd2 (Mmus), Plekhg1 (Mmus). It is distinguished from other COP NN_1 cells by expression of Rgcc, 9130019P16Rik. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5273 COP NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5273 COP NN_1" EXACT []
-synonym: "Gpr17 (Mmus), Gp1bb (Mmus), Pdzd2 (Mmus), Plekhg1 (Mmus) expressing differentiation-committed oligodendrocyte precursor of brain (Mus musculus)" EXACT []
-is_a: CL:4301611 ! COP NN_1 differentiation-committed oligodendrocyte precursor (Mmus)
+synonym: "Gpr17 (Mmus), Gp1bb (Mmus), Pdzd2 (Mmus), Plekhg1 (Mmus) expressing committed oligodendrocyte precursor of brain (Mus musculus)" EXACT []
+is_a: CL:4301611 ! COP NN_1 committed oligodendrocyte precursor (Mmus)
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.33", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.2", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007023 {STATO:0000663="0.08064516"}
@@ -238,11 +238,11 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 
 [Term]
 id: CL:4307094
-name: COP NN_1 C1ql1 differentiation-committed oligodendrocyte precursor (Mmus)
-def: "A differentiation-committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Bgn (Mmus), Gstp1 (Mmus), C1ql1 (Mmus). It is distinguished from other COP NN_1 cells by expression of C1ql1, Gstp1. These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5274 COP NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
+name: COP NN_1 C1ql1 committed oligodendrocyte precursor (Mmus)
+def: "A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Bgn (Mmus), Gstp1 (Mmus), C1ql1 (Mmus). It is distinguished from other COP NN_1 cells by expression of C1ql1, Gstp1. These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5274 COP NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5274 COP NN_1" EXACT []
-synonym: "Gpr17 (Mmus), Bgn (Mmus), Gstp1 (Mmus), C1ql1 (Mmus) expressing differentiation-committed oligodendrocyte precursor of brain (Mus musculus)" EXACT []
-is_a: CL:4301611 ! COP NN_1 differentiation-committed oligodendrocyte precursor (Mmus)
+synonym: "Gpr17 (Mmus), Bgn (Mmus), Gstp1 (Mmus), C1ql1 (Mmus) expressing committed oligodendrocyte precursor of brain (Mus musculus)" EXACT []
+is_a: CL:4301611 ! COP NN_1 committed oligodendrocyte precursor (Mmus)
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.41", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007024 {STATO:0000663="0.0"}
 property_value: CLM:0010003 CLM:5022244 {STATO:0000663="0.1724138"}
@@ -252,11 +252,11 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 
 [Term]
 id: CL:4307095
-name: COP NN_1 Bmp4 differentiation-committed oligodendrocyte precursor (Mmus)
-def: "A differentiation-committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Bmp4 (Mmus), Mob3b (Mmus). It is distinguished from other COP NN_1 cells by expression of Bmp4, Mob3b. These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5275 COP NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
+name: COP NN_1 Bmp4 committed oligodendrocyte precursor (Mmus)
+def: "A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Bmp4 (Mmus), Mob3b (Mmus). It is distinguished from other COP NN_1 cells by expression of Bmp4, Mob3b. These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5275 COP NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5275 COP NN_1" EXACT []
-synonym: "9630013A20Rik (Mmus), Bmp4 (Mmus), Mob3b (Mmus) expressing differentiation-committed oligodendrocyte precursor of brain (Mus musculus)" EXACT []
-is_a: CL:4301611 ! COP NN_1 differentiation-committed oligodendrocyte precursor (Mmus)
+synonym: "9630013A20Rik (Mmus), Bmp4 (Mmus), Mob3b (Mmus) expressing committed oligodendrocyte precursor of brain (Mus musculus)" EXACT []
+is_a: CL:4301611 ! COP NN_1 committed oligodendrocyte precursor (Mmus)
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.37", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007025 {STATO:0000663="0.3539823"}
 property_value: CLM:0010003 CLM:5022245 {STATO:0000663="0.35135135"}
@@ -266,11 +266,11 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 
 [Term]
 id: CL:4307096
-name: COP NN_1 Vwc2 differentiation-committed oligodendrocyte precursor (Mmus)
-def: "A differentiation-committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Rab32 (Mmus), Opalin (Mmus). It is distinguished from other COP NN_1 cells by expression of Vwc2, Opalin. These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5276 COP NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
+name: COP NN_1 Vwc2 committed oligodendrocyte precursor (Mmus)
+def: "A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Rab32 (Mmus), Opalin (Mmus). It is distinguished from other COP NN_1 cells by expression of Vwc2, Opalin. These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5276 COP NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5276 COP NN_1" EXACT []
-synonym: "9630013A20Rik (Mmus), Rab32 (Mmus), Opalin (Mmus) expressing differentiation-committed oligodendrocyte precursor of brain (Mus musculus)" EXACT []
-is_a: CL:4301611 ! COP NN_1 differentiation-committed oligodendrocyte precursor (Mmus)
+synonym: "9630013A20Rik (Mmus), Rab32 (Mmus), Opalin (Mmus) expressing committed oligodendrocyte precursor of brain (Mus musculus)" EXACT []
+is_a: CL:4301611 ! COP NN_1 committed oligodendrocyte precursor (Mmus)
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.51", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007026 {STATO:0000663="0.31914893"}
 property_value: CLM:0010003 CLM:5022246 {STATO:0000663="0.0"}
@@ -280,11 +280,11 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 
 [Term]
 id: CL:4307097
-name: COP NN_1 Cck differentiation-committed oligodendrocyte precursor (Mmus)
-def: "A differentiation-committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Bmp4 (Mmus), Cck (Mmus), Ptger1 (Mmus). It is distinguished from other COP NN_1 cells by expression of Bmp4, Cck, Ptger1. These cells are located in the Isocortex, Olfactory areas, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5277 COP NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
+name: COP NN_1 Cck committed oligodendrocyte precursor (Mmus)
+def: "A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Bmp4 (Mmus), Cck (Mmus), Ptger1 (Mmus). It is distinguished from other COP NN_1 cells by expression of Bmp4, Cck, Ptger1. These cells are located in the Isocortex, Olfactory areas, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5277 COP NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5277 COP NN_1" EXACT []
-synonym: "9630013A20Rik (Mmus), Bmp4 (Mmus), Cck (Mmus), Ptger1 (Mmus) expressing differentiation-committed oligodendrocyte precursor of brain (Mus musculus)" EXACT []
-is_a: CL:4301611 ! COP NN_1 differentiation-committed oligodendrocyte precursor (Mmus)
+synonym: "9630013A20Rik (Mmus), Bmp4 (Mmus), Cck (Mmus), Ptger1 (Mmus) expressing committed oligodendrocyte precursor of brain (Mus musculus)" EXACT []
+is_a: CL:4301611 ! COP NN_1 committed oligodendrocyte precursor (Mmus)
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.54", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:698 {CLM:0010002="0.11", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
