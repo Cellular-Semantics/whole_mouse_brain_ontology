@@ -518,10 +518,10 @@
         "basicPropertyValues": [
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2025-06-24"
+            "val": "2025-06-25"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/pcl/releases/2025-06-24/../../wmbo-cl-comp.json"
+        "version": "http://purl.obolibrary.org/obo/pcl/releases/2025-06-25/../../wmbo-cl-comp.json"
       },
       "nodes": [
         {
