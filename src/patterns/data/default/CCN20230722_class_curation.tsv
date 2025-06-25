@@ -357,7 +357,7 @@ http://purl.obolibrary.org/obo/CL_4301608	CS20230722_SUPT_1178	325 CHOR NN		chor
 http://purl.obolibrary.org/obo/CL_4300366	CS20230722_SUBC_326	326 OPC NN		oligodendrocyte precursor cell (Mmus)												
 http://purl.obolibrary.org/obo/CL_4300367	CS20230722_SUBC_327	327 Oligo NN		oligodendrocyte (Mmus)												
 http://purl.obolibrary.org/obo/CL_4301616	CS20230722_SUPT_1186	329 ABC NN		arachnoid barrier cell (Mmus)												
-http://purl.obolibrary.org/obo/CL_4300370	CS20230722_SUBC_330	330 VLMC NN		vascular leptomeningeal cell (Mmus)												
+http://purl.obolibrary.org/obo/CL_4300370	CS20230722_SUBC_330	330 VLMC NN
 http://purl.obolibrary.org/obo/PCL_0111761	CS20230722_SUPT_1191	331 Peri NN	TRUE													
 http://purl.obolibrary.org/obo/PCL_0111762	CS20230722_SUPT_1192	332 SMC NN	TRUE													
 http://purl.obolibrary.org/obo/PCL_0111763	CS20230722_SUPT_1193	333 Endo NN	TRUE													

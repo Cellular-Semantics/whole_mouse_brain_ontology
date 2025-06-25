@@ -704,6 +704,7 @@ def generate_marker_gene_set_template(taxonomy_file_path, output_filepath):
                       ]
         class_template = []
         processed_accessions = set()
+        marker_labels = dict()
         for o in dend['nodes']:
             node = o
             if o['cell_set_accession'] in nodes_to_collapse:
@@ -727,6 +728,12 @@ def generate_marker_gene_set_template(taxonomy_file_path, output_filepath):
                     markers_list = [marker.strip() for marker in markers_str.split(",")]
                     d['Markers'] = "|".join([get_gene_id(gene_db, marker) for marker in markers_list if str(marker).lower() != "none"])
                     d['Markers_label'] = node["author_annotation_fields"].get(f"{node['labelset']}.markers.combo", "")
+                    if d['Markers_label'] not in marker_labels:
+                        marker_labels[d['Markers_label']] = 1
+                    else:
+                        # avoid label conflicts by appending a number
+                        marker_labels[d['Markers_label']] += 1
+                        d['Markers_label'] = d['Markers_label'] + " " + str(marker_labels[d['Markers_label']])
                     if 'Species_abbv' in taxonomy_config:
                         d['Species_abbv'] = taxonomy_config['Species_abbv'][0]
                     d['Brain_region'] = taxonomy_config['Brain_region'][0]
@@ -795,6 +802,7 @@ def generate_within_subclass_marker_gene_set_template(taxonomy_file_path, output
                       ]
         class_template = []
         processed_accessions = set()
+        marker_labels = dict()
         for o in dend['nodes']:
             node = o
             if o['cell_set_accession'] in nodes_to_collapse:
@@ -818,6 +826,12 @@ def generate_within_subclass_marker_gene_set_template(taxonomy_file_path, output
                     markers_list = [marker.strip() for marker in markers_str.split(",")]
                     d['Markers'] = "|".join([get_gene_id(gene_db, marker) for marker in markers_list if str(marker).lower() != "none"])
                     d['Markers_label'] = node["author_annotation_fields"].get(f"{node['labelset']}.markers.combo _within subclass_", "")
+                    if d['Markers_label'] not in marker_labels:
+                        marker_labels[d['Markers_label']] = 1
+                    else:
+                        # avoid label conflicts by appending a number
+                        marker_labels[d['Markers_label']] += 1
+                        d['Markers_label'] = d['Markers_label'] + " " + str(marker_labels[d['Markers_label']])
                     if 'Species_abbv' in taxonomy_config:
                         d['Species_abbv'] = taxonomy_config['Species_abbv'][0]
                     d['Brain_region'] = taxonomy_config['Brain_region'][0]
@@ -886,6 +900,7 @@ def generate_evidence_marker_gene_set_template(taxonomy_file_path, output_filepa
                       ]
         class_template = []
         processed_accessions = set()
+        marker_labels = dict()
         for o in dend['nodes']:
             node = o
             if o['cell_set_accession'] in nodes_to_collapse:
@@ -906,6 +921,12 @@ def generate_evidence_marker_gene_set_template(taxonomy_file_path, output_filepa
                     markers_list = [marker.strip() for marker in node["marker_gene_evidence"]]
                     d['Markers'] = "|".join([get_gene_id(gene_db, marker) for marker in markers_list if str(marker).lower() != "none"])
                     d['Markers_label'] = ", ".join(markers_list)
+                    if d['Markers_label'] not in marker_labels:
+                        marker_labels[d['Markers_label']] = 1
+                    else:
+                        # avoid label conflicts by appending a number
+                        marker_labels[d['Markers_label']] += 1
+                        d['Markers_label'] = d['Markers_label'] + " " + str(marker_labels[d['Markers_label']])
                     if 'Species_abbv' in taxonomy_config:
                         d['Species_abbv'] = taxonomy_config['Species_abbv'][0]
                     d['Brain_region'] = taxonomy_config['Brain_region'][0]
@@ -972,6 +993,7 @@ def generate_nsforest_marker_gene_set_template(taxonomy_file_path, output_filepa
                       'Atlas_url_label'
                       ]
         class_template = []
+        marker_labels = dict()
         for o in dend['nodes']:
             node = o
             if o['cell_set_accession'] in nodes_to_collapse:
@@ -993,6 +1015,12 @@ def generate_nsforest_marker_gene_set_template(taxonomy_file_path, output_filepa
                     markers_list = ast.literal_eval(filtered_df['markers'].values[0])  # convert "['Vxn', 'C1ql3']" string to list
                     d['Markers'] = "|".join([get_gene_id(gene_db, marker) for marker in markers_list])
                     d['Markers_label'] = ", ".join(markers_list)
+                    if d['Markers_label'] not in marker_labels:
+                        marker_labels[d['Markers_label']] = 1
+                    else:
+                        # avoid label conflicts by appending a number
+                        marker_labels[d['Markers_label']] += 1
+                        d['Markers_label'] = d['Markers_label'] + " " + str(marker_labels[d['Markers_label']])
                     if 'Species_abbv' in taxonomy_config:
                         d['Species_abbv'] = taxonomy_config['Species_abbv'][0]
                     d['Brain_region'] = taxonomy_config['Brain_region'][0]
