@@ -345,10 +345,10 @@ http://purl.obolibrary.org/obo/CL_4300353	CS20230722_SUBC_313	313 CBX Purkinje G
 http://purl.obolibrary.org/obo/CL_4300354	CS20230722_SUBC_314	314 CB Granule Glut		cerebellar granule cell (Mmus)												
 http://purl.obolibrary.org/obo/CL_4301586	CS20230722_SUPT_1156	315 DCO UBC Glut		unipolar brush cell (Mmus)												
 http://purl.obolibrary.org/obo/CL_4307026	CS20230722_CLUS_5206	316 Bergmann NN		Bergman glial cell (Mmus)												
-http://purl.obolibrary.org/obo/CL_4307027	CS20230722_CLUS_5207	317 Astro-CB NN		cerebellar astrocyte (Mmus)	A transcriptomically defined type of astrocyte localized exclusively in the cerebellum beneath the Purkinje cell layer.											
-http://purl.obolibrary.org/obo/CL_4300358	CS20230722_SUBC_318	318 Astro-NT NN		subcortical astrocyte (Mmus)	A transcriptomically defined type of astrocyte located predominantly in the ventral and posterior subcortical areas											
-http://purl.obolibrary.org/obo/CL_4300359	CS20230722_SUBC_319	319 Astro-TE NN		astrocyte of cerebrum (Mmus)	A transcritpomically defined type of astrocytes primarily restricted to the dorsal regions of the cerebrum.											
-http://purl.obolibrary.org/obo/CL_4300360	CS20230722_SUBC_320	320 Astro-OLF NN		olfactory areas astrocyte (Mmus)	A transcriptomically defined type of astrocyte located exclusively in the olfactory areas.											
+http://purl.obolibrary.org/obo/CL_4307027	CS20230722_CLUS_5207	317 Astro-CB NN		cerebellar astrocyte (Mmus)	A transcriptomically defined type of astrocyte localized exclusively in the cerebellum beneath the Purkinje cell layer. It is distinguished from other cells in the brain by selective expression of Dao (Mmus), Efemp1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5207 Astro-CB NN_1.											
+http://purl.obolibrary.org/obo/CL_4300358	CS20230722_SUBC_318	318 Astro-NT NN		subcortical astrocyte (Mmus)	A transcriptomically defined type of astrocyte located predominantly in the ventral and posterior subcortical areas.   It is distinguished from other cells in the brain by selective expression of Aqp4 (Mmus), Cd38 (Mmus), Agt (Mmus), Itih3 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:318 Astro-NT NN.	non-telencephalic astrocyte										
+http://purl.obolibrary.org/obo/CL_4300359	CS20230722_SUBC_319	319 Astro-TE NN		astrocyte of cerebrum (Mmus)	A transcritpomically defined type of astrocytes primarily restricted to the dorsal regions of the cerebrum. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), Lhx2 (Mmus), Gpc5 (Mmus), Nr2f1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:319 Astro-TE NN.	telencephalic astrocyte										
+http://purl.obolibrary.org/obo/CL_4300360	CS20230722_SUBC_320	320 Astro-OLF NN		olfactory areas astrocyte (Mmus)	A transcriptomically defined type of astrocyte located exclusively in the olfactory areas. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), Hs3st3a1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:320 Astro-OLF NN.											
 http://purl.obolibrary.org/obo/PCL_0110381	CS20230722_SUBC_321	321 Astroependymal NN														
 http://purl.obolibrary.org/obo/CL_4300362	CS20230722_SUBC_322	322 Tanycyte NN		tanycyte (Mmus)												
 http://purl.obolibrary.org/obo/CL_4300363	CS20230722_SUBC_323	323 Ependymal NN		ependymal cell (Mmus)												
@@ -357,7 +357,7 @@ http://purl.obolibrary.org/obo/CL_4301608	CS20230722_SUPT_1178	325 CHOR NN		chor
 http://purl.obolibrary.org/obo/CL_4300366	CS20230722_SUBC_326	326 OPC NN		oligodendrocyte precursor cell (Mmus)												
 http://purl.obolibrary.org/obo/CL_4300367	CS20230722_SUBC_327	327 Oligo NN		oligodendrocyte (Mmus)												
 http://purl.obolibrary.org/obo/CL_4301616	CS20230722_SUPT_1186	329 ABC NN		arachnoid barrier cell (Mmus)												
-http://purl.obolibrary.org/obo/CL_4300370	CS20230722_SUBC_330	330 VLMC NN
+http://purl.obolibrary.org/obo/CL_4300370	CS20230722_SUBC_330	330 VLMC NN														
 http://purl.obolibrary.org/obo/PCL_0111761	CS20230722_SUPT_1191	331 Peri NN	TRUE													
 http://purl.obolibrary.org/obo/PCL_0111762	CS20230722_SUPT_1192	332 SMC NN	TRUE													
 http://purl.obolibrary.org/obo/PCL_0111763	CS20230722_SUPT_1193	333 Endo NN	TRUE													
