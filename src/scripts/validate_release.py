@@ -2,6 +2,8 @@ import sys
 import argparse
 import rdflib
 
+import pandas as pd
+
 def entities_resolved_in_definitions(graph):
     """
     Checks all definitions to ensure that all entity CURIEs are resolved to their labels.
@@ -23,6 +25,36 @@ def entities_resolved_in_definitions(graph):
         sys.exit(1)
     else:
         print("Ontology validated successfully.")
+
+
+def validate_cl_ontology_subset(graph):
+    # class collapsing making this calculation hard, use fixed number for now
+    # file_path = "../dendrograms/supplementary/version2/CL_ontology_subset.tsv"
+    # df = pd.read_csv(file_path, sep='\t', dtype=str)
+    # count_add_to_cl = df[df['Add_to_CL'].str.upper() == 'TRUE'].shape[0]
+    count_add_to_cl = 125
+
+    # Count terms where IRI starts with the given prefix
+    iri_prefix = "http://purl.obolibrary.org/obo/CL_43"
+    query = f"""
+        PREFIX owl: <http://www.w3.org/2002/07/owl#>
+        SELECT (COUNT(DISTINCT ?class) AS ?count)
+        WHERE {{
+            ?class a owl:Class .
+            FILTER(STRSTARTS(STR(?class), "{iri_prefix}"))
+        }}
+        """
+    results = list(graph.query(query))
+    count_iri = int(results[0]['count'])
+
+    # Compare the counts and report the result
+    if count_add_to_cl != count_iri:
+        print(
+            f"Mismatch: {count_add_to_cl} records with Add_to_CL = TRUE vs {count_iri} terms with IRI starting with the prefix.")
+        return False
+    else:
+        print("Validation successful: counts match.")
+        return True
 
 def load_ontology(file_path):
     g = rdflib.Graph()
@@ -46,6 +78,7 @@ def main():
     if args.command == "validate":
         graph = load_ontology(args.input)
         entities_resolved_in_definitions(graph)
+        validate_cl_ontology_subset(graph)
 
 if __name__ == "__main__":
     main()

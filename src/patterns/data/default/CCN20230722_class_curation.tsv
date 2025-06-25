@@ -13,7 +13,7 @@ http://purl.obolibrary.org/obo/PCL_0110011	CS20230722_CLAS_11	11 CNU-HYa GABA
 http://purl.obolibrary.org/obo/PCL_0110012	CS20230722_CLAS_12	12 HY GABA														
 http://purl.obolibrary.org/obo/PCL_0110013	CS20230722_CLAS_13	13 CNU-HYa Glut														
 http://purl.obolibrary.org/obo/PCL_0110014	CS20230722_CLAS_14	14 HY Glut														
-http://purl.obolibrary.org/obo/PCL_0114944	CS20230722_CLUS_2564	15 HY Gnrh1 Glut		hypothalamic gonadotropin-releasing hormone neuron (Mmus)												
+http://purl.obolibrary.org/obo/CL_4304384	CS20230722_CLUS_2564	15 HY Gnrh1 Glut		hypothalamic gonadotropin-releasing hormone neuron (Mmus)												
 http://purl.obolibrary.org/obo/PCL_0110016	CS20230722_CLAS_16	16 HY MM Glut														
 http://purl.obolibrary.org/obo/PCL_0110017	CS20230722_CLAS_17	17 MH-LH Glut														
 http://purl.obolibrary.org/obo/PCL_0110018	CS20230722_CLAS_18	18 TH Glut														
@@ -23,14 +23,14 @@ http://purl.obolibrary.org/obo/PCL_0110275	CS20230722_SUBC_215	21 MB Dopa		midbr
 http://purl.obolibrary.org/obo/PCL_0110276	CS20230722_SUBC_216	22 MB-HB Sero														
 http://purl.obolibrary.org/obo/PCL_0110023	CS20230722_CLAS_23	23 P Glut														
 http://purl.obolibrary.org/obo/PCL_0110024	CS20230722_CLAS_24	24 MY Glut														
-http://purl.obolibrary.org/obo/PCL_0116986	CS20230722_CLUS_4606	25 Pineal Glut		pinealocyte (Mmus)												
+http://purl.obolibrary.org/obo/CL_4306426	CS20230722_CLUS_4606	25 Pineal Glut		pinealocyte (Mmus)												
 http://purl.obolibrary.org/obo/PCL_0110026	CS20230722_CLAS_26	26 P GABA														
 http://purl.obolibrary.org/obo/PCL_0110027	CS20230722_CLAS_27	27 MY GABA														
-http://purl.obolibrary.org/obo/PCL_0110028	CS20230722_CLAS_28	28 CB GABA		cerebellar GABAergic neuron (Mmus)												
-http://purl.obolibrary.org/obo/PCL_0110029	CS20230722_CLAS_29	29 CB Glut		cerebellar glutamatergic neuron (Mmus)												
+http://purl.obolibrary.org/obo/CL_4300028	CS20230722_CLAS_28	28 CB GABA		cerebellar GABAergic neuron (Mmus)												
+http://purl.obolibrary.org/obo/CL_4300029	CS20230722_CLAS_29	29 CB Glut		cerebellar glutamatergic neuron (Mmus)												
 http://purl.obolibrary.org/obo/PCL_0110030	CS20230722_CLAS_30	30 Astro-Epen														
 http://purl.obolibrary.org/obo/CL_4300031	CS20230722_CLAS_31	31 OPC-Oligo														
-http://purl.obolibrary.org/obo/PCL_0111755	CS20230722_SUPT_1185	32 OEC		olfactory ensheathing cell (Mmus)												
+http://purl.obolibrary.org/obo/CL_4301615	CS20230722_SUPT_1185	32 OEC		olfactory ensheathing cell (Mmus)												
 http://purl.obolibrary.org/obo/PCL_0110033	CS20230722_CLAS_33	33 Vascular	TRUE													
 http://purl.obolibrary.org/obo/PCL_0110034	CS20230722_CLAS_34	34 Immune	TRUE													
 http://purl.obolibrary.org/obo/PCL_0110061	CS20230722_SUBC_001	001 CLA-EPd-CTX Car3 Glut														
@@ -93,8 +93,8 @@ http://purl.obolibrary.org/obo/PCL_0110117	CS20230722_SUBC_057	057 NDB-SI-MA-STR
 http://purl.obolibrary.org/obo/PCL_0110118	CS20230722_SUBC_058	058 PAL-STR Gaba-Chol														
 http://purl.obolibrary.org/obo/PCL_0110119	CS20230722_SUBC_059	059 GPe-SI Sox6 Cyp26b1 Gaba														
 http://purl.obolibrary.org/obo/PCL_0110120	CS20230722_SUBC_060	060 OT D3 Folh1 Gaba														
-http://purl.obolibrary.org/obo/PCL_0110121	CS20230722_SUBC_061	061 STR D1 Gaba														
-http://purl.obolibrary.org/obo/PCL_0110122	CS20230722_SUBC_062	062 STR D2 Gaba														
+http://purl.obolibrary.org/obo/CL_4300101	CS20230722_SUBC_061	061 STR D1 Gaba														
+http://purl.obolibrary.org/obo/CL_4300102	CS20230722_SUBC_062	062 STR D2 Gaba														
 http://purl.obolibrary.org/obo/PCL_0110123	CS20230722_SUBC_063	063 STR D1 Sema5a Gaba														
 http://purl.obolibrary.org/obo/PCL_0110124	CS20230722_SUBC_064	064 STR-PAL Chst9 Gaba														
 http://purl.obolibrary.org/obo/PCL_0110125	CS20230722_SUBC_065	065 IA Mgp Gaba														
@@ -336,33 +336,33 @@ http://purl.obolibrary.org/obo/PCL_0110364	CS20230722_SUBC_304	304 NTS-PARN Neur
 http://purl.obolibrary.org/obo/PCL_0110365	CS20230722_SUBC_305	305 SPVI-SPVC Sall3 Nfib Gly-Gaba														
 http://purl.obolibrary.org/obo/PCL_0110366	CS20230722_SUBC_306	306 SPVI-SPVC Sall3 Lhx1 Gly-Gaba														
 http://purl.obolibrary.org/obo/PCL_0111710	CS20230722_SUPT_1140	307 RO-RPA Pkd2l1 Gaba														
-http://purl.obolibrary.org/obo/PCL_0110368	CS20230722_SUBC_308	308 DCO Il22 Gly-Gaba														
-http://purl.obolibrary.org/obo/PCL_0110369	CS20230722_SUBC_309	309 CB PLI Gly-Gaba														
-http://purl.obolibrary.org/obo/PCL_0111718	CS20230722_SUPT_1148	310 CBX Golgi Gly-Gaba		cerebellar Golgi cell (Mmus)												
-http://purl.obolibrary.org/obo/PCL_0110371	CS20230722_SUBC_311	311 CBX MLI Megf11 Gaba														
-http://purl.obolibrary.org/obo/PCL_0117572	CS20230722_CLUS_5192	312 CBX MLI Cdh22 Gaba														
-http://purl.obolibrary.org/obo/PCL_0110373	CS20230722_SUBC_313	313 CBX Purkinje Gaba		Purkinje cell (Mmus)												
-http://purl.obolibrary.org/obo/PCL_0110374	CS20230722_SUBC_314	314 CB Granule Glut		cerebellar granule cell (Mmus)												
-http://purl.obolibrary.org/obo/PCL_0111726	CS20230722_SUPT_1156	315 DCO UBC Glut		unipolar brush cell (Mmus)												
-http://purl.obolibrary.org/obo/PCL_0117586	CS20230722_CLUS_5206	316 Bergmann NN		Bergman glial cell (Mmus)												
-http://purl.obolibrary.org/obo/PCL_0117587	CS20230722_CLUS_5207	317 Astro-CB NN		cerebellar astrocyte (Mmus)	A transcriptomically defined type of astrocyte localized exclusively in the cerebellum beneath the Purkinje cell layer.											
-http://purl.obolibrary.org/obo/PCL_0110378	CS20230722_SUBC_318	318 Astro-NT NN		subcortical astrocyte (Mmus)	A transcriptomically defined type of astrocyte located predominantly in the ventral and posterior subcortical areas											
-http://purl.obolibrary.org/obo/PCL_0110379	CS20230722_SUBC_319	319 Astro-TE NN		astrocyte of cerebrum (Mmus)	A transcritpomically defined type of astrocytes primarily restricted to the dorsal regions of the cerebrum.											
-http://purl.obolibrary.org/obo/PCL_0110380	CS20230722_SUBC_320	320 Astro-OLF NN		olfactory areas astrocyte (Mmus)	A transcriptomically defined type of astrocyte located exclusively in the olfactory areas.											
+http://purl.obolibrary.org/obo/CL_4300348	CS20230722_SUBC_308	308 DCO Il22 Gly-Gaba														
+http://purl.obolibrary.org/obo/CL_4300349	CS20230722_SUBC_309	309 CB PLI Gly-Gaba														
+http://purl.obolibrary.org/obo/CL_4301578	CS20230722_SUPT_1148	310 CBX Golgi Gly-Gaba		cerebellar Golgi cell (Mmus)												
+http://purl.obolibrary.org/obo/CL_4300351	CS20230722_SUBC_311	311 CBX MLI Megf11 Gaba														
+http://purl.obolibrary.org/obo/CL_4307012	CS20230722_CLUS_5192	312 CBX MLI Cdh22 Gaba														
+http://purl.obolibrary.org/obo/CL_4300353	CS20230722_SUBC_313	313 CBX Purkinje Gaba		Purkinje cell (Mmus)												
+http://purl.obolibrary.org/obo/CL_4300354	CS20230722_SUBC_314	314 CB Granule Glut		cerebellar granule cell (Mmus)												
+http://purl.obolibrary.org/obo/CL_4301586	CS20230722_SUPT_1156	315 DCO UBC Glut		unipolar brush cell (Mmus)												
+http://purl.obolibrary.org/obo/CL_4307026	CS20230722_CLUS_5206	316 Bergmann NN		Bergman glial cell (Mmus)												
+http://purl.obolibrary.org/obo/CL_4307027	CS20230722_CLUS_5207	317 Astro-CB NN		cerebellar astrocyte (Mmus)	A transcriptomically defined type of astrocyte localized exclusively in the cerebellum beneath the Purkinje cell layer.											
+http://purl.obolibrary.org/obo/CL_4300358	CS20230722_SUBC_318	318 Astro-NT NN		subcortical astrocyte (Mmus)	A transcriptomically defined type of astrocyte located predominantly in the ventral and posterior subcortical areas											
+http://purl.obolibrary.org/obo/CL_4300359	CS20230722_SUBC_319	319 Astro-TE NN		astrocyte of cerebrum (Mmus)	A transcritpomically defined type of astrocytes primarily restricted to the dorsal regions of the cerebrum.											
+http://purl.obolibrary.org/obo/CL_4300360	CS20230722_SUBC_320	320 Astro-OLF NN		olfactory areas astrocyte (Mmus)	A transcriptomically defined type of astrocyte located exclusively in the olfactory areas.											
 http://purl.obolibrary.org/obo/PCL_0110381	CS20230722_SUBC_321	321 Astroependymal NN														
-http://purl.obolibrary.org/obo/PCL_0110382	CS20230722_SUBC_322	322 Tanycyte NN		tanycyte (Mmus)												
-http://purl.obolibrary.org/obo/PCL_0110383	CS20230722_SUBC_323	323 Ependymal NN		ependymal cell (Mmus)												
-http://purl.obolibrary.org/obo/PCL_0117643	CS20230722_CLUS_5263	324 Hypendymal NN		hypendemal cell (Mmus)												
-http://purl.obolibrary.org/obo/PCL_0111748	CS20230722_SUPT_1178	325 CHOR NN		choroid plexus epithelial cell (Mmus)												
+http://purl.obolibrary.org/obo/CL_4300362	CS20230722_SUBC_322	322 Tanycyte NN		tanycyte (Mmus)												
+http://purl.obolibrary.org/obo/CL_4300363	CS20230722_SUBC_323	323 Ependymal NN		ependymal cell (Mmus)												
+http://purl.obolibrary.org/obo/CL_4307083	CS20230722_CLUS_5263	324 Hypendymal NN		hypendemal cell (Mmus)												
+http://purl.obolibrary.org/obo/CL_4301608	CS20230722_SUPT_1178	325 CHOR NN		choroid plexus epithelial cell (Mmus)												
 http://purl.obolibrary.org/obo/CL_4300366	CS20230722_SUBC_326	326 OPC NN		oligodendrocyte precursor cell (Mmus)												
 http://purl.obolibrary.org/obo/CL_4300367	CS20230722_SUBC_327	327 Oligo NN		oligodendrocyte (Mmus)												
-http://purl.obolibrary.org/obo/PCL_0111756	CS20230722_SUPT_1186	329 ABC NN		arachnoid barrier cell (Mmus)												
-http://purl.obolibrary.org/obo/PCL_0110390	CS20230722_SUBC_330	330 VLMC NN		vascular leptomeningeal cell (Mmus)												
+http://purl.obolibrary.org/obo/CL_4301616	CS20230722_SUPT_1186	329 ABC NN		arachnoid barrier cell (Mmus)												
+http://purl.obolibrary.org/obo/CL_4300370	CS20230722_SUBC_330	330 VLMC NN		vascular leptomeningeal cell (Mmus)												
 http://purl.obolibrary.org/obo/PCL_0111761	CS20230722_SUPT_1191	331 Peri NN	TRUE													
 http://purl.obolibrary.org/obo/PCL_0111762	CS20230722_SUPT_1192	332 SMC NN	TRUE													
 http://purl.obolibrary.org/obo/PCL_0111763	CS20230722_SUPT_1193	333 Endo NN	TRUE													
-http://purl.obolibrary.org/obo/PCL_0117692	CS20230722_CLUS_5312	334 Microglia NN		microglial cell (Mmus)												
-http://purl.obolibrary.org/obo/PCL_0111765	CS20230722_SUPT_1195	335 BAM NN		border associated macrophage (Mmus)												
+http://purl.obolibrary.org/obo/CL_4307132	CS20230722_CLUS_5312	334 Microglia NN		microglial cell (Mmus)												
+http://purl.obolibrary.org/obo/CL_4301625	CS20230722_SUPT_1195	335 BAM NN		border associated macrophage (Mmus)												
 http://purl.obolibrary.org/obo/PCL_0117695	CS20230722_CLUS_5315	336 Monocytes NN	TRUE													
 http://purl.obolibrary.org/obo/PCL_0111767	CS20230722_SUPT_1197	337 DC NN	TRUE													
 http://purl.obolibrary.org/obo/PCL_0110398	CS20230722_SUBC_338	338 Lymphoid NN	TRUE													
@@ -1430,43 +1430,43 @@ http://purl.obolibrary.org/obo/PCL_0111706	CS20230722_SUPT_1136	1136 SPVI-SPVC S
 http://purl.obolibrary.org/obo/PCL_0111707	CS20230722_SUPT_1137	1137 SPVI-SPVC Sall3 Nfib Gly-Gaba_2														
 http://purl.obolibrary.org/obo/PCL_0111708	CS20230722_SUPT_1138	1138 SPVI-SPVC Sall3 Lhx1 Gly-Gaba_1														
 http://purl.obolibrary.org/obo/PCL_0111709	CS20230722_SUPT_1139	1139 SPVI-SPVC Sall3 Lhx1 Gly-Gaba_2														
-http://purl.obolibrary.org/obo/PCL_0111711	CS20230722_SUPT_1141	1141 DCO Il22 Gly-Gaba_1														
-http://purl.obolibrary.org/obo/PCL_0117552	CS20230722_CLUS_5172	1142 DCO Il22 Gly-Gaba_2														
-http://purl.obolibrary.org/obo/PCL_0111713	CS20230722_SUPT_1143	1143 DCO Il22 Gly-Gaba_3														
-http://purl.obolibrary.org/obo/PCL_0111714	CS20230722_SUPT_1144	1144 CB PLI Gly-Gaba_1														
-http://purl.obolibrary.org/obo/PCL_0111715	CS20230722_SUPT_1145	1145 CB PLI Gly-Gaba_2														
-http://purl.obolibrary.org/obo/PCL_0111716	CS20230722_SUPT_1146	1146 CB PLI Gly-Gaba_3														
-http://purl.obolibrary.org/obo/PCL_0117565	CS20230722_CLUS_5185	1147 CB PLI Gly-Gaba_4														
-http://purl.obolibrary.org/obo/PCL_0111719	CS20230722_SUPT_1149	1149 CBX MLI Megf11 Gaba_1														
-http://purl.obolibrary.org/obo/PCL_0111720	CS20230722_SUPT_1150	1150 CBX MLI Megf11 Gaba_2														
-http://purl.obolibrary.org/obo/PCL_0111722	CS20230722_SUPT_1152	1152 CBX Purkinje Gaba_1														
-http://purl.obolibrary.org/obo/PCL_0111723	CS20230722_SUPT_1153	1153 CBX Purkinje Gaba_2														
-http://purl.obolibrary.org/obo/PCL_0111724	CS20230722_SUPT_1154	1154 CB Granule Glut_1														
-http://purl.obolibrary.org/obo/PCL_0111725	CS20230722_SUPT_1155	1155 CB Granule Glut_2														
-http://purl.obolibrary.org/obo/PCL_0111729	CS20230722_SUPT_1159	1159 Astro-NT NN_1														
-http://purl.obolibrary.org/obo/PCL_0111730	CS20230722_SUPT_1160	1160 Astro-NT NN_2														
-http://purl.obolibrary.org/obo/PCL_0111731	CS20230722_SUPT_1161	1161 Astro-TE NN_1														
-http://purl.obolibrary.org/obo/PCL_0111732	CS20230722_SUPT_1162	1162 Astro-TE NN_2														
-http://purl.obolibrary.org/obo/PCL_0111733	CS20230722_SUPT_1163	1163 Astro-TE NN_3														
-http://purl.obolibrary.org/obo/PCL_0117608	CS20230722_CLUS_5228	1164 Astro-TE NN_4														
-http://purl.obolibrary.org/obo/PCL_0111735	CS20230722_SUPT_1165	1165 Astro-TE NN_5														
-http://purl.obolibrary.org/obo/PCL_0111736	CS20230722_SUPT_1166	1166 Astro-OLF NN_1														
-http://purl.obolibrary.org/obo/PCL_0111737	CS20230722_SUPT_1167	1167 Astro-OLF NN_2														
-http://purl.obolibrary.org/obo/PCL_0111738	CS20230722_SUPT_1168	1168 Astro-OLF NN_3														
+http://purl.obolibrary.org/obo/CL_4301571	CS20230722_SUPT_1141	1141 DCO Il22 Gly-Gaba_1														
+http://purl.obolibrary.org/obo/CL_4306992	CS20230722_CLUS_5172	1142 DCO Il22 Gly-Gaba_2														
+http://purl.obolibrary.org/obo/CL_4301573	CS20230722_SUPT_1143	1143 DCO Il22 Gly-Gaba_3														
+http://purl.obolibrary.org/obo/CL_4301574	CS20230722_SUPT_1144	1144 CB PLI Gly-Gaba_1														
+http://purl.obolibrary.org/obo/CL_4301575	CS20230722_SUPT_1145	1145 CB PLI Gly-Gaba_2														
+http://purl.obolibrary.org/obo/CL_4301576	CS20230722_SUPT_1146	1146 CB PLI Gly-Gaba_3														
+http://purl.obolibrary.org/obo/CL_4307005	CS20230722_CLUS_5185	1147 CB PLI Gly-Gaba_4														
+http://purl.obolibrary.org/obo/CL_4301579	CS20230722_SUPT_1149	1149 CBX MLI Megf11 Gaba_1														
+http://purl.obolibrary.org/obo/CL_4301580	CS20230722_SUPT_1150	1150 CBX MLI Megf11 Gaba_2														
+http://purl.obolibrary.org/obo/CL_4301582	CS20230722_SUPT_1152	1152 CBX Purkinje Gaba_1														
+http://purl.obolibrary.org/obo/CL_4301583	CS20230722_SUPT_1153	1153 CBX Purkinje Gaba_2														
+http://purl.obolibrary.org/obo/CL_4301584	CS20230722_SUPT_1154	1154 CB Granule Glut_1														
+http://purl.obolibrary.org/obo/CL_4301585	CS20230722_SUPT_1155	1155 CB Granule Glut_2														
+http://purl.obolibrary.org/obo/CL_4301589	CS20230722_SUPT_1159	1159 Astro-NT NN_1														
+http://purl.obolibrary.org/obo/CL_4301590	CS20230722_SUPT_1160	1160 Astro-NT NN_2														
+http://purl.obolibrary.org/obo/CL_4301591	CS20230722_SUPT_1161	1161 Astro-TE NN_1														
+http://purl.obolibrary.org/obo/CL_4301592	CS20230722_SUPT_1162	1162 Astro-TE NN_2														
+http://purl.obolibrary.org/obo/CL_4301593	CS20230722_SUPT_1163	1163 Astro-TE NN_3														
+http://purl.obolibrary.org/obo/CL_4307048	CS20230722_CLUS_5228	1164 Astro-TE NN_4														
+http://purl.obolibrary.org/obo/CL_4301595	CS20230722_SUPT_1165	1165 Astro-TE NN_5														
+http://purl.obolibrary.org/obo/CL_4301596	CS20230722_SUPT_1166	1166 Astro-OLF NN_1														
+http://purl.obolibrary.org/obo/CL_4301597	CS20230722_SUPT_1167	1167 Astro-OLF NN_2														
+http://purl.obolibrary.org/obo/CL_4301598	CS20230722_SUPT_1168	1168 Astro-OLF NN_3														
 http://purl.obolibrary.org/obo/PCL_0111739	CS20230722_SUPT_1169	1169 Astroependymal NN_1														
 http://purl.obolibrary.org/obo/PCL_0117620	CS20230722_CLUS_5240	1170 Astroependymal NN_2														
 http://purl.obolibrary.org/obo/PCL_0111741	CS20230722_SUPT_1171	1171 Astroependymal NN_3														
-http://purl.obolibrary.org/obo/PCL_0111742	CS20230722_SUPT_1172	1172 Tanycyte NN_1														
-http://purl.obolibrary.org/obo/PCL_0111743	CS20230722_SUPT_1173	1173 Tanycyte NN_2														
-http://purl.obolibrary.org/obo/PCL_0117630	CS20230722_CLUS_5250	1174 Tanycyte NN_3	beta-2 tanycyte (Mmus)													
+http://purl.obolibrary.org/obo/CL_4301602	CS20230722_SUPT_1172	1172 Tanycyte NN_1														
+http://purl.obolibrary.org/obo/CL_4301603	CS20230722_SUPT_1173	1173 Tanycyte NN_2														
+http://purl.obolibrary.org/obo/CL_4307070	CS20230722_CLUS_5250	1174 Tanycyte NN_3	beta-2 tanycyte (Mmus)													
 http://purl.obolibrary.org/obo/PCL_0111745	CS20230722_SUPT_1175	1175 Ependymal NN_1														
 http://purl.obolibrary.org/obo/PCL_0111746	CS20230722_SUPT_1176	1176 Ependymal NN_2														
-http://purl.obolibrary.org/obo/CL_4301609	CS20230722_SUPT_1179	1179 OPC NN_1														
-http://purl.obolibrary.org/obo/CL_4307091	CS20230722_CLUS_5271	1180 OPC NN_2														
-http://purl.obolibrary.org/obo/CL_4301611	CS20230722_SUPT_1181	1181 COP NN_1														
-http://purl.obolibrary.org/obo/CL_4301612	CS20230722_SUPT_1182	1182 NFOL NN_2														
-http://purl.obolibrary.org/obo/CL_4301613	CS20230722_SUPT_1183	1183 MFOL NN_3														
-http://purl.obolibrary.org/obo/CL_4301614	CS20230722_SUPT_1184	1184 MOL NN_4														
+http://purl.obolibrary.org/obo/PCL_0111749	CS20230722_SUPT_1179	1179 OPC NN_1														
+http://purl.obolibrary.org/obo/PCL_0117651	CS20230722_CLUS_5271	1180 OPC NN_2														
+http://purl.obolibrary.org/obo/PCL_0111751	CS20230722_SUPT_1181	1181 COP NN_1														
+http://purl.obolibrary.org/obo/PCL_0111752	CS20230722_SUPT_1182	1182 NFOL NN_2														
+http://purl.obolibrary.org/obo/PCL_0111753	CS20230722_SUPT_1183	1183 MFOL NN_3														
+http://purl.obolibrary.org/obo/PCL_0111754	CS20230722_SUPT_1184	1184 MOL NN_4														
 http://purl.obolibrary.org/obo/PCL_0111757	CS20230722_SUPT_1187	1187 VLMC NN_1														
 http://purl.obolibrary.org/obo/PCL_0111758	CS20230722_SUPT_1188	1188 VLMC NN_2														
 http://purl.obolibrary.org/obo/PCL_0117682	CS20230722_CLUS_5302	1189 VLMC NN_3														
@@ -6513,46 +6513,46 @@ http://purl.obolibrary.org/obo/PCL_0117582	CS20230722_CLUS_5202	5202 DCO UBC Glu
 http://purl.obolibrary.org/obo/PCL_0117583	CS20230722_CLUS_5203	5203 DCO UBC Glut_1														
 http://purl.obolibrary.org/obo/PCL_0117584	CS20230722_CLUS_5204	5204 DCO UBC Glut_1														
 http://purl.obolibrary.org/obo/PCL_0117585	CS20230722_CLUS_5205	5205 DCO UBC Glut_1														
-http://purl.obolibrary.org/obo/PCL_0117588	CS20230722_CLUS_5208	5208 Astro-NT NN_1														
-http://purl.obolibrary.org/obo/PCL_0117589	CS20230722_CLUS_5209	5209 Astro-NT NN_1														
-http://purl.obolibrary.org/obo/PCL_0117590	CS20230722_CLUS_5210	5210 Astro-NT NN_1														
-http://purl.obolibrary.org/obo/PCL_0117591	CS20230722_CLUS_5211	5211 Astro-NT NN_1														
-http://purl.obolibrary.org/obo/PCL_0117592	CS20230722_CLUS_5212	5212 Astro-NT NN_1														
-http://purl.obolibrary.org/obo/PCL_0117593	CS20230722_CLUS_5213	5213 Astro-NT NN_1														
-http://purl.obolibrary.org/obo/PCL_0117594	CS20230722_CLUS_5214	5214 Astro-NT NN_2														
-http://purl.obolibrary.org/obo/PCL_0117595	CS20230722_CLUS_5215	5215 Astro-NT NN_2														
-http://purl.obolibrary.org/obo/PCL_0117596	CS20230722_CLUS_5216	5216 Astro-NT NN_2														
-http://purl.obolibrary.org/obo/PCL_0117597	CS20230722_CLUS_5217	5217 Astro-NT NN_2														
-http://purl.obolibrary.org/obo/PCL_0117598	CS20230722_CLUS_5218	5218 Astro-TE NN_1														
-http://purl.obolibrary.org/obo/PCL_0117599	CS20230722_CLUS_5219	5219 Astro-TE NN_1														
-http://purl.obolibrary.org/obo/PCL_0117600	CS20230722_CLUS_5220	5220 Astro-TE NN_1														
-http://purl.obolibrary.org/obo/PCL_0117601	CS20230722_CLUS_5221	5221 Astro-TE NN_1														
-http://purl.obolibrary.org/obo/PCL_0117602	CS20230722_CLUS_5222	5222 Astro-TE NN_2														
-http://purl.obolibrary.org/obo/PCL_0117603	CS20230722_CLUS_5223	5223 Astro-TE NN_2														
-http://purl.obolibrary.org/obo/PCL_0117604	CS20230722_CLUS_5224	5224 Astro-TE NN_3														
-http://purl.obolibrary.org/obo/PCL_0117605	CS20230722_CLUS_5225	5225 Astro-TE NN_3														
-http://purl.obolibrary.org/obo/PCL_0117606	CS20230722_CLUS_5226	5226 Astro-TE NN_3														
-http://purl.obolibrary.org/obo/PCL_0117607	CS20230722_CLUS_5227	5227 Astro-TE NN_3														
-http://purl.obolibrary.org/obo/PCL_0117609	CS20230722_CLUS_5229	5229 Astro-TE NN_5														
-http://purl.obolibrary.org/obo/PCL_0117610	CS20230722_CLUS_5230	5230 Astro-TE NN_5														
-http://purl.obolibrary.org/obo/PCL_0117611	CS20230722_CLUS_5231	5231 Astro-OLF NN_1														
-http://purl.obolibrary.org/obo/PCL_0117612	CS20230722_CLUS_5232	5232 Astro-OLF NN_1														
-http://purl.obolibrary.org/obo/PCL_0117613	CS20230722_CLUS_5233	5233 Astro-OLF NN_2														
-http://purl.obolibrary.org/obo/PCL_0117614	CS20230722_CLUS_5234	5234 Astro-OLF NN_2														
-http://purl.obolibrary.org/obo/PCL_0117615	CS20230722_CLUS_5235	5235 Astro-OLF NN_3														
-http://purl.obolibrary.org/obo/PCL_0117616	CS20230722_CLUS_5236	5236 Astro-OLF NN_3														
+http://purl.obolibrary.org/obo/CL_4307028	CS20230722_CLUS_5208	5208 Astro-NT NN_1														
+http://purl.obolibrary.org/obo/CL_4307029	CS20230722_CLUS_5209	5209 Astro-NT NN_1														
+http://purl.obolibrary.org/obo/CL_4307030	CS20230722_CLUS_5210	5210 Astro-NT NN_1														
+http://purl.obolibrary.org/obo/CL_4307031	CS20230722_CLUS_5211	5211 Astro-NT NN_1														
+http://purl.obolibrary.org/obo/CL_4307032	CS20230722_CLUS_5212	5212 Astro-NT NN_1														
+http://purl.obolibrary.org/obo/CL_4307033	CS20230722_CLUS_5213	5213 Astro-NT NN_1														
+http://purl.obolibrary.org/obo/CL_4307034	CS20230722_CLUS_5214	5214 Astro-NT NN_2														
+http://purl.obolibrary.org/obo/CL_4307035	CS20230722_CLUS_5215	5215 Astro-NT NN_2														
+http://purl.obolibrary.org/obo/CL_4307036	CS20230722_CLUS_5216	5216 Astro-NT NN_2														
+http://purl.obolibrary.org/obo/CL_4307037	CS20230722_CLUS_5217	5217 Astro-NT NN_2														
+http://purl.obolibrary.org/obo/CL_4307038	CS20230722_CLUS_5218	5218 Astro-TE NN_1														
+http://purl.obolibrary.org/obo/CL_4307039	CS20230722_CLUS_5219	5219 Astro-TE NN_1														
+http://purl.obolibrary.org/obo/CL_4307040	CS20230722_CLUS_5220	5220 Astro-TE NN_1														
+http://purl.obolibrary.org/obo/CL_4307041	CS20230722_CLUS_5221	5221 Astro-TE NN_1														
+http://purl.obolibrary.org/obo/CL_4307042	CS20230722_CLUS_5222	5222 Astro-TE NN_2														
+http://purl.obolibrary.org/obo/CL_4307043	CS20230722_CLUS_5223	5223 Astro-TE NN_2														
+http://purl.obolibrary.org/obo/CL_4307044	CS20230722_CLUS_5224	5224 Astro-TE NN_3														
+http://purl.obolibrary.org/obo/CL_4307045	CS20230722_CLUS_5225	5225 Astro-TE NN_3														
+http://purl.obolibrary.org/obo/CL_4307046	CS20230722_CLUS_5226	5226 Astro-TE NN_3														
+http://purl.obolibrary.org/obo/CL_4307047	CS20230722_CLUS_5227	5227 Astro-TE NN_3														
+http://purl.obolibrary.org/obo/CL_4307049	CS20230722_CLUS_5229	5229 Astro-TE NN_5														
+http://purl.obolibrary.org/obo/CL_4307050	CS20230722_CLUS_5230	5230 Astro-TE NN_5														
+http://purl.obolibrary.org/obo/CL_4307051	CS20230722_CLUS_5231	5231 Astro-OLF NN_1														
+http://purl.obolibrary.org/obo/CL_4307052	CS20230722_CLUS_5232	5232 Astro-OLF NN_1														
+http://purl.obolibrary.org/obo/CL_4307053	CS20230722_CLUS_5233	5233 Astro-OLF NN_2														
+http://purl.obolibrary.org/obo/CL_4307054	CS20230722_CLUS_5234	5234 Astro-OLF NN_2														
+http://purl.obolibrary.org/obo/CL_4307055	CS20230722_CLUS_5235	5235 Astro-OLF NN_3														
+http://purl.obolibrary.org/obo/CL_4307056	CS20230722_CLUS_5236	5236 Astro-OLF NN_3														
 http://purl.obolibrary.org/obo/PCL_0117617	CS20230722_CLUS_5237	5237 Astroependymal NN_1														
 http://purl.obolibrary.org/obo/PCL_0117618	CS20230722_CLUS_5238	5238 Astroependymal NN_1														
 http://purl.obolibrary.org/obo/PCL_0117619	CS20230722_CLUS_5239	5239 Astroependymal NN_1														
 http://purl.obolibrary.org/obo/PCL_0117621	CS20230722_CLUS_5241	5241 Astroependymal NN_3														
 http://purl.obolibrary.org/obo/PCL_0117622	CS20230722_CLUS_5242	5242 Astroependymal NN_3														
-http://purl.obolibrary.org/obo/PCL_0117623	CS20230722_CLUS_5243	5243 Tanycyte NN_1														
-http://purl.obolibrary.org/obo/PCL_0117624	CS20230722_CLUS_5244	5244 Tanycyte NN_1														
-http://purl.obolibrary.org/obo/PCL_0117625	CS20230722_CLUS_5245	5245 Tanycyte NN_2														
-http://purl.obolibrary.org/obo/PCL_0117626	CS20230722_CLUS_5246	5246 Tanycyte NN_2														
-http://purl.obolibrary.org/obo/PCL_0117627	CS20230722_CLUS_5247	5247 Tanycyte NN_2														
-http://purl.obolibrary.org/obo/PCL_0117628	CS20230722_CLUS_5248	5248 Tanycyte NN_2														
-http://purl.obolibrary.org/obo/PCL_0117629	CS20230722_CLUS_5249	5249 Tanycyte NN_2														
+http://purl.obolibrary.org/obo/CL_4307063	CS20230722_CLUS_5243	5243 Tanycyte NN_1														
+http://purl.obolibrary.org/obo/CL_4307064	CS20230722_CLUS_5244	5244 Tanycyte NN_1														
+http://purl.obolibrary.org/obo/CL_4307065	CS20230722_CLUS_5245	5245 Tanycyte NN_2														
+http://purl.obolibrary.org/obo/CL_4307066	CS20230722_CLUS_5246	5246 Tanycyte NN_2														
+http://purl.obolibrary.org/obo/CL_4307067	CS20230722_CLUS_5247	5247 Tanycyte NN_2														
+http://purl.obolibrary.org/obo/CL_4307068	CS20230722_CLUS_5248	5248 Tanycyte NN_2														
+http://purl.obolibrary.org/obo/CL_4307069	CS20230722_CLUS_5249	5249 Tanycyte NN_2														
 http://purl.obolibrary.org/obo/PCL_0117631	CS20230722_CLUS_5251	5251 Ependymal NN_1														
 http://purl.obolibrary.org/obo/PCL_0117632	CS20230722_CLUS_5252	5252 Ependymal NN_1														
 http://purl.obolibrary.org/obo/PCL_0117633	CS20230722_CLUS_5253	5253 Ependymal NN_1														
@@ -6565,8 +6565,8 @@ http://purl.obolibrary.org/obo/PCL_0117639	CS20230722_CLUS_5259	5259 Ependymal N
 http://purl.obolibrary.org/obo/PCL_0117640	CS20230722_CLUS_5260	5260 Ependymal NN_2														
 http://purl.obolibrary.org/obo/PCL_0117641	CS20230722_CLUS_5261	5261 Ependymal NN_2														
 http://purl.obolibrary.org/obo/PCL_0117642	CS20230722_CLUS_5262	5262 Ependymal NN_2														
-http://purl.obolibrary.org/obo/PCL_0117644	CS20230722_CLUS_5264	5264 CHOR NN_1														
-http://purl.obolibrary.org/obo/PCL_0117645	CS20230722_CLUS_5265	5265 CHOR NN_1														
+http://purl.obolibrary.org/obo/CL_4307084	CS20230722_CLUS_5264	5264 CHOR NN_1														
+http://purl.obolibrary.org/obo/CL_4307085	CS20230722_CLUS_5265	5265 CHOR NN_1														
 http://purl.obolibrary.org/obo/CL_4307086	CS20230722_CLUS_5266	5266 OPC NN_1														
 http://purl.obolibrary.org/obo/CL_4307087	CS20230722_CLUS_5267	5267 OPC NN_1														
 http://purl.obolibrary.org/obo/CL_4307088	CS20230722_CLUS_5268	5268 OPC NN_1														
@@ -6589,13 +6589,13 @@ http://purl.obolibrary.org/obo/CL_4307105	CS20230722_CLUS_5285	5285 MOL NN_4
 http://purl.obolibrary.org/obo/CL_4307106	CS20230722_CLUS_5286	5286 MOL NN_4														
 http://purl.obolibrary.org/obo/CL_4307107	CS20230722_CLUS_5287	5287 MOL NN_4														
 http://purl.obolibrary.org/obo/CL_4307108	CS20230722_CLUS_5288	5288 MOL NN_4														
-http://purl.obolibrary.org/obo/PCL_0117669	CS20230722_CLUS_5289	5289 OEC NN_1														
-http://purl.obolibrary.org/obo/PCL_0117670	CS20230722_CLUS_5290	5290 OEC NN_1														
-http://purl.obolibrary.org/obo/PCL_0117671	CS20230722_CLUS_5291	5291 OEC NN_1														
-http://purl.obolibrary.org/obo/PCL_0117672	CS20230722_CLUS_5292	5292 OEC NN_1														
-http://purl.obolibrary.org/obo/PCL_0117673	CS20230722_CLUS_5293	5293 ABC NN_1														
-http://purl.obolibrary.org/obo/PCL_0117674	CS20230722_CLUS_5294	5294 ABC NN_1														
-http://purl.obolibrary.org/obo/PCL_0117675	CS20230722_CLUS_5295	5295 ABC NN_1														
+http://purl.obolibrary.org/obo/CL_4307109	CS20230722_CLUS_5289	5289 OEC NN_1														
+http://purl.obolibrary.org/obo/CL_4307110	CS20230722_CLUS_5290	5290 OEC NN_1														
+http://purl.obolibrary.org/obo/CL_4307111	CS20230722_CLUS_5291	5291 OEC NN_1														
+http://purl.obolibrary.org/obo/CL_4307112	CS20230722_CLUS_5292	5292 OEC NN_1														
+http://purl.obolibrary.org/obo/CL_4307113	CS20230722_CLUS_5293	5293 ABC NN_1														
+http://purl.obolibrary.org/obo/CL_4307114	CS20230722_CLUS_5294	5294 ABC NN_1														
+http://purl.obolibrary.org/obo/CL_4307115	CS20230722_CLUS_5295	5295 ABC NN_1														
 http://purl.obolibrary.org/obo/PCL_0117676	CS20230722_CLUS_5296	5296 VLMC NN_1														
 http://purl.obolibrary.org/obo/PCL_0117677	CS20230722_CLUS_5297	5297 VLMC NN_1														
 http://purl.obolibrary.org/obo/PCL_0117678	CS20230722_CLUS_5298	5298 VLMC NN_1														
@@ -6610,8 +6610,8 @@ http://purl.obolibrary.org/obo/PCL_0117688	CS20230722_CLUS_5308	5308 SMC NN_1
 http://purl.obolibrary.org/obo/PCL_0117689	CS20230722_CLUS_5309	5309 Endo NN_1														
 http://purl.obolibrary.org/obo/PCL_0117690	CS20230722_CLUS_5310	5310 Endo NN_1														
 http://purl.obolibrary.org/obo/PCL_0117691	CS20230722_CLUS_5311	5311 Endo NN_1														
-http://purl.obolibrary.org/obo/PCL_0117693	CS20230722_CLUS_5313	5313 BAM NN_1														
-http://purl.obolibrary.org/obo/PCL_0117694	CS20230722_CLUS_5314	5314 BAM NN_1														
+http://purl.obolibrary.org/obo/CL_4307133	CS20230722_CLUS_5313	5313 BAM NN_1														
+http://purl.obolibrary.org/obo/CL_4307134	CS20230722_CLUS_5314	5314 BAM NN_1														
 http://purl.obolibrary.org/obo/PCL_0117696	CS20230722_CLUS_5316	5316 DC NN_1	TRUE													
 http://purl.obolibrary.org/obo/PCL_0117697	CS20230722_CLUS_5317	5317 DC NN_1	TRUE													
 http://purl.obolibrary.org/obo/PCL_0117698	CS20230722_CLUS_5318	5318 DC NN_1	TRUE													
