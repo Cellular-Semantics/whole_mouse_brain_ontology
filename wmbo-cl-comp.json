@@ -9959,7 +9959,7 @@
               }
             ],
             "definition": {
-              "val": "A transcriptomically defined type of astrocyte located predominantly in the ventral and posterior subcortical areas",
+              "val": "A transcriptomically defined type of astrocyte located predominantly in the ventral and posterior subcortical areas.   It is distinguished from other cells in the brain by selective expression of Aqp4 (Mmus), Cd38 (Mmus), Agt (Mmus), Itih3 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:318 Astro-NT NN.",
               "xrefs": [
                 "https://doi.org/10.1038/s41586-023-06812-z"
               ]
@@ -9972,6 +9972,10 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "Aqp4 (Mmus), Cd38 (Mmus), Agt (Mmus), Itih3 (Mmus) expressing astrocyte of brain (Mus musculus)"
+              },
+              {
+                "pred": "hasExactSynonym",
+                "val": "non-telencephalic astrocyte"
               }
             ]
           },
@@ -10004,7 +10008,7 @@
               }
             ],
             "definition": {
-              "val": "A transcritpomically defined type of astrocytes primarily restricted to the dorsal regions of the cerebrum.",
+              "val": "A transcritpomically defined type of astrocytes primarily restricted to the dorsal regions of the cerebrum. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), Lhx2 (Mmus), Gpc5 (Mmus), Nr2f1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:319 Astro-TE NN.",
               "xrefs": [
                 "https://doi.org/10.1038/s41586-023-06812-z"
               ]
@@ -10017,6 +10021,10 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "Gja1 (Mmus), Lhx2 (Mmus), Gpc5 (Mmus), Nr2f1 (Mmus) expressing astrocyte of brain (Mus musculus)"
+              },
+              {
+                "pred": "hasExactSynonym",
+                "val": "telencephalic astrocyte"
               }
             ]
           },
@@ -10049,7 +10057,7 @@
               }
             ],
             "definition": {
-              "val": "A transcriptomically defined type of astrocyte located exclusively in the olfactory areas.",
+              "val": "A transcriptomically defined type of astrocyte located exclusively in the olfactory areas. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), Hs3st3a1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:320 Astro-OLF NN.",
               "xrefs": [
                 "https://doi.org/10.1038/s41586-023-06812-z"
               ]
@@ -12087,7 +12095,7 @@
               }
             ],
             "definition": {
-              "val": "A transcriptomically defined type of astrocyte localized exclusively in the cerebellum beneath the Purkinje cell layer.",
+              "val": "A transcriptomically defined type of astrocyte localized exclusively in the cerebellum beneath the Purkinje cell layer. It is distinguished from other cells in the brain by selective expression of Dao (Mmus), Efemp1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5207 Astro-CB NN_1.",
               "xrefs": [
                 "https://doi.org/10.1038/s41586-023-06812-z"
               ]

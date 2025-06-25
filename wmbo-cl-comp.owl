@@ -9295,9 +9295,10 @@
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5000358"/>
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5007978"/>
         <obo:IAO_0000028>Astro-NT NN (Mmus)</obo:IAO_0000028>
-        <obo:IAO_0000115>A transcriptomically defined type of astrocyte located predominantly in the ventral and posterior subcortical areas</obo:IAO_0000115>
+        <obo:IAO_0000115>A transcriptomically defined type of astrocyte located predominantly in the ventral and posterior subcortical areas.   It is distinguished from other cells in the brain by selective expression of Aqp4 (Mmus), Cd38 (Mmus), Agt (Mmus), Itih3 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:318 Astro-NT NN.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>318 Astro-NT NN</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Aqp4 (Mmus), Cd38 (Mmus), Agt (Mmus), Itih3 (Mmus) expressing astrocyte of brain (Mus musculus)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>non-telencephalic astrocyte</oboInOwl:hasExactSynonym>
         <rdfs:label>subcortical astrocyte (Mmus)</rdfs:label>
         <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzE4IEFzdHJvLU5UIE5OAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACAAAEAQECgazGjoGWFSADhGpN%2FYRYGE0ABQAGAQECUVk1UzhLTU81SExKVUYwUDAwSwADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJIU1laUFpXMTY2OVU4MjFCV1lQAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgEzMTggQXN0cm8tTlQgTk4AAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAAYBAQJRWTVTOEtNTzVITEpVRjBQMDBLAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA</rdfs:seeAlso>
         <rdfs:seeAlso>https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad</rdfs:seeAlso>
@@ -9317,7 +9318,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4300358"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A transcriptomically defined type of astrocyte located predominantly in the ventral and posterior subcortical areas</owl:annotatedTarget>
+        <owl:annotatedTarget>A transcriptomically defined type of astrocyte located predominantly in the ventral and posterior subcortical areas.   It is distinguished from other cells in the brain by selective expression of Aqp4 (Mmus), Cd38 (Mmus), Agt (Mmus), Itih3 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:318 Astro-NT NN.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://doi.org/10.1038/s41586-023-06812-z</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -9350,9 +9351,10 @@
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5000359"/>
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5007979"/>
         <obo:IAO_0000028>Astro-TE NN (Mmus)</obo:IAO_0000028>
-        <obo:IAO_0000115>A transcritpomically defined type of astrocytes primarily restricted to the dorsal regions of the cerebrum.</obo:IAO_0000115>
+        <obo:IAO_0000115>A transcritpomically defined type of astrocytes primarily restricted to the dorsal regions of the cerebrum. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), Lhx2 (Mmus), Gpc5 (Mmus), Nr2f1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:319 Astro-TE NN.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>319 Astro-TE NN</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Gja1 (Mmus), Lhx2 (Mmus), Gpc5 (Mmus), Nr2f1 (Mmus) expressing astrocyte of brain (Mus musculus)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>telencephalic astrocyte</oboInOwl:hasExactSynonym>
         <rdfs:label>astrocyte of cerebrum (Mmus)</rdfs:label>
         <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzE5IEFzdHJvLVRFIE5OAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACAAAEAQECgazGjoGWFSADhGpN%2FYRYGE0ABQAGAQECUVk1UzhLTU81SExKVUYwUDAwSwADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJIU1laUFpXMTY2OVU4MjFCV1lQAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgEzMTkgQXN0cm8tVEUgTk4AAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAAYBAQJRWTVTOEtNTzVITEpVRjBQMDBLAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA</rdfs:seeAlso>
         <rdfs:seeAlso>https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad</rdfs:seeAlso>
@@ -9372,7 +9374,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4300359"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A transcritpomically defined type of astrocytes primarily restricted to the dorsal regions of the cerebrum.</owl:annotatedTarget>
+        <owl:annotatedTarget>A transcritpomically defined type of astrocytes primarily restricted to the dorsal regions of the cerebrum. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), Lhx2 (Mmus), Gpc5 (Mmus), Nr2f1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:319 Astro-TE NN.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://doi.org/10.1038/s41586-023-06812-z</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -9405,7 +9407,7 @@
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5000360"/>
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5007980"/>
         <obo:IAO_0000028>Astro-OLF NN (Mmus)</obo:IAO_0000028>
-        <obo:IAO_0000115>A transcriptomically defined type of astrocyte located exclusively in the olfactory areas.</obo:IAO_0000115>
+        <obo:IAO_0000115>A transcriptomically defined type of astrocyte located exclusively in the olfactory areas. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), Hs3st3a1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:320 Astro-OLF NN.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>320 Astro-OLF NN</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Gja1 (Mmus), Hs3st3a1 (Mmus) expressing astrocyte of brain (Mus musculus)</oboInOwl:hasExactSynonym>
         <rdfs:label>olfactory areas astrocyte (Mmus)</rdfs:label>
@@ -9427,7 +9429,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4300360"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A transcriptomically defined type of astrocyte located exclusively in the olfactory areas.</owl:annotatedTarget>
+        <owl:annotatedTarget>A transcriptomically defined type of astrocyte located exclusively in the olfactory areas. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), Hs3st3a1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:320 Astro-OLF NN.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://doi.org/10.1038/s41586-023-06812-z</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -11540,7 +11542,7 @@
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5007977"/>
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5022177"/>
         <obo:IAO_0000028>cerebellar astrocyte (Mmus)</obo:IAO_0000028>
-        <obo:IAO_0000115>A transcriptomically defined type of astrocyte localized exclusively in the cerebellum beneath the Purkinje cell layer.</obo:IAO_0000115>
+        <obo:IAO_0000115>A transcriptomically defined type of astrocyte localized exclusively in the cerebellum beneath the Purkinje cell layer. It is distinguished from other cells in the brain by selective expression of Dao (Mmus), Efemp1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5207 Astro-CB NN_1.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>1158 Astro-CB NN_1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>317 Astro-CB NN</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>5207 Astro-CB NN_1</oboInOwl:hasExactSynonym>
@@ -11594,7 +11596,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4307027"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A transcriptomically defined type of astrocyte localized exclusively in the cerebellum beneath the Purkinje cell layer.</owl:annotatedTarget>
+        <owl:annotatedTarget>A transcriptomically defined type of astrocyte localized exclusively in the cerebellum beneath the Purkinje cell layer. It is distinguished from other cells in the brain by selective expression of Dao (Mmus), Efemp1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5207 Astro-CB NN_1.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://doi.org/10.1038/s41586-023-06812-z</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>

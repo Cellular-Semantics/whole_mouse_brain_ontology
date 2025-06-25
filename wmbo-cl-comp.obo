@@ -141,9 +141,10 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 [Term]
 id: CL:4300358
 name: subcortical astrocyte (Mmus)
-def: "A transcriptomically defined type of astrocyte located predominantly in the ventral and posterior subcortical areas" [https://doi.org/10.1038/s41586-023-06812-z]
+def: "A transcriptomically defined type of astrocyte located predominantly in the ventral and posterior subcortical areas.   It is distinguished from other cells in the brain by selective expression of Aqp4 (Mmus), Cd38 (Mmus), Agt (Mmus), Itih3 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:318 Astro-NT NN." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "318 Astro-NT NN" EXACT []
 synonym: "Aqp4 (Mmus), Cd38 (Mmus), Agt (Mmus), Itih3 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
+synonym: "non-telencephalic astrocyte" EXACT []
 is_a: CL:0000127
 is_a: CL:0000255
 relationship: RO:0002162 NCBITaxon:10090
@@ -156,9 +157,10 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 [Term]
 id: CL:4300359
 name: astrocyte of cerebrum (Mmus)
-def: "A transcritpomically defined type of astrocytes primarily restricted to the dorsal regions of the cerebrum." [https://doi.org/10.1038/s41586-023-06812-z]
+def: "A transcritpomically defined type of astrocytes primarily restricted to the dorsal regions of the cerebrum. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), Lhx2 (Mmus), Gpc5 (Mmus), Nr2f1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:319 Astro-TE NN." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "319 Astro-TE NN" EXACT []
 synonym: "Gja1 (Mmus), Lhx2 (Mmus), Gpc5 (Mmus), Nr2f1 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
+synonym: "telencephalic astrocyte" EXACT []
 is_a: CL:0000127
 is_a: CL:0000255
 relationship: RO:0002162 NCBITaxon:10090
@@ -171,7 +173,7 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 [Term]
 id: CL:4300360
 name: olfactory areas astrocyte (Mmus)
-def: "A transcriptomically defined type of astrocyte located exclusively in the olfactory areas." [https://doi.org/10.1038/s41586-023-06812-z]
+def: "A transcriptomically defined type of astrocyte located exclusively in the olfactory areas. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), Hs3st3a1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:320 Astro-OLF NN." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "320 Astro-OLF NN" EXACT []
 synonym: "Gja1 (Mmus), Hs3st3a1 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:0000127
@@ -771,7 +773,7 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 [Term]
 id: CL:4307027
 name: cerebellar astrocyte (Mmus)
-def: "A transcriptomically defined type of astrocyte localized exclusively in the cerebellum beneath the Purkinje cell layer." [https://doi.org/10.1038/s41586-023-06812-z]
+def: "A transcriptomically defined type of astrocyte localized exclusively in the cerebellum beneath the Purkinje cell layer. It is distinguished from other cells in the brain by selective expression of Dao (Mmus), Efemp1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5207 Astro-CB NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1158 Astro-CB NN_1" EXACT []
 synonym: "317 Astro-CB NN" EXACT []
 synonym: "5207 Astro-CB NN_1" EXACT []
