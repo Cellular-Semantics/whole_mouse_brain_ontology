@@ -161,13 +161,14 @@ components/%_inferred_hierarchy.owl: $(COMPONENTSDIR)/%_indv.owl $(COMPONENTSDIR
 
 #TODO: removing unsat MBA classes and removing asserted equivalent classes restriction
 # 'remove --base-iri' constraint relaxed
+# reduce --preserve-annotated-axioms added
 # pcl id validator added
 $(ONT)-base.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(IMPORT_FILES) $(OWL_INFERRED_HIERARCHY_FILES)
 	$(ROBOT_RELEASE_IMPORT_MODE) \
 	merge $(patsubst %, -i %, $(OWL_INFERRED_HIERARCHY_FILES)) \
 	reason --reasoner ELK --exclude-tautologies structural --annotate-inferred-axioms False \
 	relax \
-	reduce -r ELK \
+	reduce -r ELK --preserve-annotated-axioms true \
 	remove --base-iri $(URIBASE)/WMBO --base-iri $(URIBASE)/PCL --base-iri $(URIBASE)/pcl/CS20230722 --base-iri $(BICANBASE)/CCN20230722 --base-iri $(URIBASE)/CL_4 --base-iri $(URIBASE)/CLM_5 --axioms external --preserve-structure false --trim false \
 	$(SHARED_ROBOT_COMMANDS) \
 	annotate --link-annotation http://purl.org/dc/elements/1.1/type http://purl.obolibrary.org/obo/IAO_8000001 \
@@ -178,17 +179,19 @@ $(ONT)-base.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(IMPORT_FILES) $(OWL_INFERRE
 
 # Full: The full artefacts with imports merged, reasoned.
 # -equivalent-classes-allowed asserted-only removed
+# reduce --preserve-annotated-axioms added
 $(ONT)-full.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(IMPORT_FILES) $(OWL_INFERRED_HIERARCHY_FILES)
 	$(ROBOT_RELEASE_IMPORT_MODE) \
   		merge $(patsubst %, -i %, $(OWL_INFERRED_HIERARCHY_FILES)) \
   		reason --reasoner ELK --exclude-tautologies structural \
 		relax \
-		reduce -r ELK \
+		reduce -r ELK --preserve-annotated-axioms true \
 		$(SHARED_ROBOT_COMMANDS) annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
 
 # foo-simple: (edit->reason,relax,reduce,drop imports, drop every axiom which contains an entity outside the "namespaces of interest")
 # drop every axiom: filter --term-file keep_terms.txt --trim true
 #	remove --select imports --trim false
+# reduce --preserve-annotated-axioms added
 # filter selector self constraint relaxed
 $(ONT)-simple.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(SIMPLESEED) $(IMPORT_FILES) $(OWL_INFERRED_HIERARCHY_FILES)
 	$(ROBOT_RELEASE_IMPORT_MODE) \
@@ -199,7 +202,7 @@ $(ONT)-simple.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(SIMPLESEED) $(IMPORT_FILE
 		remove --axioms equivalent \
 		relax \
 		filter --term-file $(SIMPLESEED) --select "annotations ontology anonymous self <http://purl.obolibrary.org/obo/PCL_*>" --select "<https://purl.brain-bican.org/taxonomy/*>" --select "<http://purl.obolibrary.org/obo/CL_4*>" --select "<http://purl.obolibrary.org/obo/CLM_5*>" --trim true --signature true \
-		reduce -r ELK \
+		reduce -r ELK --preserve-annotated-axioms true \
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru \
 		$(SHARED_ROBOT_COMMANDS) annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
 

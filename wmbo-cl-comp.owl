@@ -10959,6 +10959,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_4304384">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000540"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000679"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -10966,6 +10967,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:nodeID="genid1780"/>
         <obo:CLM_0010001 rdf:resource="https://purl.brain-bican.org/ontology/mbao/MBA_1097"/>
         <obo:CLM_0010001 rdf:resource="https://purl.brain-bican.org/ontology/mbao/MBA_258"/>
         <obo:CLM_0010001 rdf:resource="https://purl.brain-bican.org/ontology/mbao/MBA_564"/>
@@ -10988,6 +10990,24 @@
         <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIBMTUgSFkgR25yaDEgR2x1dAAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAkZTMDBEWFYwVDlSMVg5Rko0UUUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACSFNZWlBaVzE2NjlVODIxQldZUAADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIBMTUgSFkgR25yaDEgR2x1dAAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAkZTMDBEWFYwVDlSMVg5Rko0UUUAA34AAAAEAAAIVkZPRllQRlFHUktVRFFVWjNGRgAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBVExPS1dDTDk1UlUwM0Q5UEVURwACNzNHVlREWERFR0UyN00yWEpNVAADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D</rdfs:seeAlso>
         <rdfs:seeAlso>https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_15.h5ad</rdfs:seeAlso>
     </owl:Class>
+    <owl:Restriction rdf:nodeID="genid1780">
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0061535"/>
+    </owl:Restriction>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4304384"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_0000540"/>
+        <oboInOwl:evidence rdf:resource="https://identifiers.org/ncbigene/140919"/>
+        <oboInOwl:evidence rdf:resource="https://identifiers.org/ncbigene/14415"/>
+        <oboInOwl:evidence rdf:resource="https://identifiers.org/ncbigene/14417"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4304384"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid1780"/>
+        <rdfs:comment>Inferred to be glutamate secretion, neurotransmission based on expression of Gad1, Slc17a6, Gad2</rdfs:comment>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4304384"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/CLM_0010001"/>
@@ -11088,7 +11108,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf rdf:nodeID="genid1793"/>
+        <rdfs:subClassOf rdf:nodeID="genid1796"/>
         <obo:CLM_0010001 rdf:resource="https://purl.brain-bican.org/ontology/mbao/MBA_129"/>
         <obo:CLM_0010001 rdf:resource="https://purl.brain-bican.org/ontology/mbao/MBA_997"/>
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5006356"/>
@@ -11107,7 +11127,7 @@
         <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIBMjUgUGluZWFsIEdsdXQAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAAYBAQJGUzAwRFhWMFQ5UjFYOUZKNFFFAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAkhTWVpQWlcxNjY5VTgyMUJXWVAAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACATI1IFBpbmVhbCBHbHV0AAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQAGAQECRlMwMERYVjBUOVIxWDlGSjRRRQADfgAAAAQAAAhWRk9GWVBGUUdSS1VEUVVaM0ZGAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFUTE9LV0NMOTVSVTAzRDlQRVRHAAI3M0dWVERYREVHRTI3TTJYSk1UAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D</rdfs:seeAlso>
         <rdfs:seeAlso>https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_25.h5ad</rdfs:seeAlso>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid1793">
+    <owl:Restriction rdf:nodeID="genid1796">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0061535"/>
     </owl:Restriction>
@@ -11122,7 +11142,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4306426"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid1793"/>
+        <owl:annotatedTarget rdf:nodeID="genid1796"/>
         <rdfs:comment>Inferred to be glutamate secretion, neurotransmission based on expression of Ddc, Slc17a6, Slc17a7</rdfs:comment>
     </owl:Axiom>
     <owl:Axiom>
@@ -11182,6 +11202,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_4306992">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0008059"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4300348"/>
+        <rdfs:subClassOf rdf:nodeID="genid1805"/>
         <obo:CLM_0010001 rdf:resource="https://purl.brain-bican.org/ontology/mbao/MBA_1041"/>
         <obo:CLM_0010001 rdf:resource="https://purl.brain-bican.org/ontology/mbao/MBA_354"/>
         <obo:CLM_0010001 rdf:resource="https://purl.brain-bican.org/ontology/mbao/MBA_512"/>
@@ -11199,6 +11220,24 @@
         <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE0MiBEQ08gSWwyMiBHbHktR2FiYV8yAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACAAAEAQECgazGjoGWFSADhGpN%2FYRYGE0ABQAGAQECMTVCSzQ3RENJT0YxU0xMVVc5UAADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJIU1laUFpXMTY2OVU4MjFCV1lQAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgExMTQyIERDTyBJbDIyIEdseS1HYWJhXzIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAAYBAQIxNUJLNDdEQ0lPRjFTTExVVzlQAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA</rdfs:seeAlso>
         <rdfs:seeAlso>https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_28.h5ad</rdfs:seeAlso>
     </owl:Class>
+    <owl:Class rdf:nodeID="genid1805">
+        <owl:intersectionOf rdf:parseType="Collection">
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0061534"/>
+            </owl:Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0061537"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4306992"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid1805"/>
+        <rdfs:comment>Inferred to be gamma-aminobutyric acid secretion, neurotransmission, glycine secretion, neurotransmission based on expression of Slc32a1, Hdc, Slc6a5, Gad2, Gad1</rdfs:comment>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4306992"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/CLM_0010001"/>
@@ -11280,6 +11319,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_4307005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000617"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4300349"/>
+        <rdfs:subClassOf rdf:nodeID="genid1821"/>
         <obo:CLM_0010001 rdf:resource="https://purl.brain-bican.org/ontology/mbao/MBA_512"/>
         <obo:CLM_0010001 rdf:resource="https://purl.brain-bican.org/ontology/mbao/MBA_728"/>
         <obo:CLM_0010001 rdf:resource="https://purl.brain-bican.org/ontology/mbao/MBA_91"/>
@@ -11296,6 +11336,16 @@
         <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE0NyBDQiBQTEkgR2x5LUdhYmFfNAAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAjE1Qks0N0RDSU9GMVNMTFVXOVAAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACSFNZWlBaVzE2NjlVODIxQldZUAADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE0NyBDQiBQTEkgR2x5LUdhYmFfNAAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAjE1Qks0N0RDSU9GMVNMTFVXOVAAA34AAAAEAAAIVkZPRllQRlFHUktVRFFVWjNGRgAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBVExPS1dDTDk1UlUwM0Q5UEVURwACNzNHVlREWERFR0UyN00yWEpNVAADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D</rdfs:seeAlso>
         <rdfs:seeAlso>https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_28.h5ad</rdfs:seeAlso>
     </owl:Class>
+    <owl:Restriction rdf:nodeID="genid1821">
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0061534"/>
+    </owl:Restriction>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4307005"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid1821"/>
+        <rdfs:comment>Inferred to be gamma-aminobutyric acid secretion, neurotransmission based on expression of Gad1, Gad2, Slc32a1</rdfs:comment>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4307005"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/CLM_0010001"/>
@@ -11369,6 +11419,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_4307012">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4042035"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4300028"/>
+        <rdfs:subClassOf rdf:nodeID="genid1833"/>
         <obo:CLM_0010001 rdf:resource="https://purl.brain-bican.org/ontology/mbao/MBA_512"/>
         <obo:CLM_0010001 rdf:resource="https://purl.brain-bican.org/ontology/mbao/MBA_997"/>
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5006942"/>
@@ -11384,6 +11435,10 @@
         <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzEyIENCWCBNTEkgQ2RoMjIgR2FiYQAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAlFZNVM4S01PNUhMSlVGMFAwMEsAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACSFNZWlBaVzE2NjlVODIxQldZUAADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzEyIENCWCBNTEkgQ2RoMjIgR2FiYQAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAlFZNVM4S01PNUhMSlVGMFAwMEsAA34AAAAEAAAIVkZPRllQRlFHUktVRFFVWjNGRgAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBVExPS1dDTDk1UlUwM0Q5UEVURwACNzNHVlREWERFR0UyN00yWEpNVAADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D</rdfs:seeAlso>
         <rdfs:seeAlso>https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_28.h5ad</rdfs:seeAlso>
     </owl:Class>
+    <owl:Restriction rdf:nodeID="genid1833">
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0061534"/>
+    </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4307012"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
@@ -11391,6 +11446,12 @@
         <oboInOwl:evidence rdf:resource="https://identifiers.org/ncbigene/14415"/>
         <oboInOwl:evidence rdf:resource="https://identifiers.org/ncbigene/14417"/>
         <oboInOwl:evidence rdf:resource="https://identifiers.org/ncbigene/22348"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4307012"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid1833"/>
+        <rdfs:comment>Inferred to be gamma-aminobutyric acid secretion, neurotransmission based on expression of Gad1, Gad2, Slc32a1</rdfs:comment>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4307012"/>
@@ -12658,7 +12719,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_4307041">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000151"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4301591"/>
-        <rdfs:subClassOf rdf:nodeID="genid1957"/>
+        <rdfs:subClassOf rdf:nodeID="genid1970"/>
         <obo:CLM_0010001 rdf:resource="https://purl.brain-bican.org/ontology/mbao/MBA_315"/>
         <obo:CLM_0010001 rdf:resource="https://purl.brain-bican.org/ontology/mbao/MBA_997"/>
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5006971"/>
@@ -12671,14 +12732,14 @@
         <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTIyMSBBc3Ryby1URSBOTl8xAAAEAQECgazGjoGWFSADhGpN%2FYRYGE0ABQAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJIU1laUFpXMTY2OVU4MjFCV1lQAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgE1MjIxIEFzdHJvLVRFIE5OXzEAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA</rdfs:seeAlso>
         <rdfs:seeAlso>https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad</rdfs:seeAlso>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid1957">
+    <owl:Restriction rdf:nodeID="genid1970">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0061535"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4307041"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid1957"/>
+        <owl:annotatedTarget rdf:nodeID="genid1970"/>
         <rdfs:comment>Inferred to be glutamate secretion, neurotransmission based on expression of Aldh1a1, Slc17a7</rdfs:comment>
     </owl:Axiom>
     <owl:Axiom>
@@ -14133,7 +14194,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1100001"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4042017"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4301603"/>
-        <rdfs:subClassOf rdf:nodeID="genid2116"/>
+        <rdfs:subClassOf rdf:nodeID="genid2129"/>
         <obo:CLM_0010001 rdf:resource="https://purl.brain-bican.org/ontology/mbao/MBA_1097"/>
         <obo:CLM_0010001 rdf:resource="https://purl.brain-bican.org/ontology/mbao/MBA_118"/>
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5006995"/>
@@ -14146,7 +14207,7 @@
         <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI0NSBUYW55Y3l0ZSBOTl8yAAAEAQECgazGjoGWFSADhGpN%2FYRYGE0ABQAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJIU1laUFpXMTY2OVU4MjFCV1lQAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgE1MjQ1IFRhbnljeXRlIE5OXzIAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA</rdfs:seeAlso>
         <rdfs:seeAlso>https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad</rdfs:seeAlso>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid2116">
+    <owl:Restriction rdf:nodeID="genid2129">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0061535"/>
     </owl:Restriction>
@@ -14159,7 +14220,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4307065"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid2116"/>
+        <owl:annotatedTarget rdf:nodeID="genid2129"/>
         <rdfs:comment>Inferred to be glutamate secretion, neurotransmission based on expression of Slc17a8</rdfs:comment>
     </owl:Axiom>
     <owl:Axiom>
@@ -14838,7 +14899,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_4307085">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000686"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4301608"/>
-        <rdfs:subClassOf rdf:nodeID="genid2190"/>
+        <rdfs:subClassOf rdf:nodeID="genid2203"/>
         <obo:CLM_0010001 rdf:resource="https://purl.brain-bican.org/ontology/mbao/MBA_108"/>
         <obo:CLM_0010001 rdf:resource="https://purl.brain-bican.org/ontology/mbao/MBA_81"/>
         <obo:CLM_0010001 rdf:resource="https://purl.brain-bican.org/ontology/mbao/MBA_997"/>
@@ -14852,14 +14913,14 @@
         <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI2NSBDSE9SIE5OXzEAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAkhTWVpQWlcxNjY5VTgyMUJXWVAAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACATUyNjUgQ0hPUiBOTl8xAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhWRk9GWVBGUUdSS1VEUVVaM0ZGAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFUTE9LV0NMOTVSVTAzRDlQRVRHAAI3M0dWVERYREVHRTI3TTJYSk1UAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D</rdfs:seeAlso>
         <rdfs:seeAlso>https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad</rdfs:seeAlso>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid2190">
+    <owl:Restriction rdf:nodeID="genid2203">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0061535"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4307085"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid2190"/>
+        <owl:annotatedTarget rdf:nodeID="genid2203"/>
         <rdfs:comment>Inferred to be glutamate secretion, neurotransmission based on expression of Slc17a8</rdfs:comment>
     </owl:Axiom>
     <owl:Axiom>
@@ -16680,7 +16741,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_4307112">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000151"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4301615"/>
-        <rdfs:subClassOf rdf:nodeID="genid2386"/>
+        <rdfs:subClassOf rdf:nodeID="genid2399"/>
         <obo:CLM_0010001 rdf:resource="https://purl.brain-bican.org/ontology/mbao/MBA_997"/>
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5007042"/>
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5022262"/>
@@ -16692,14 +16753,14 @@
         <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI5MiBPRUMgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACSFNZWlBaVzE2NjlVODIxQldZUAADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI5MiBPRUMgTk5fMQAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIVkZPRllQRlFHUktVRFFVWjNGRgAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBVExPS1dDTDk1UlUwM0Q5UEVURwACNzNHVlREWERFR0UyN00yWEpNVAADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D</rdfs:seeAlso>
         <rdfs:seeAlso>https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_32.h5ad</rdfs:seeAlso>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid2386">
+    <owl:Restriction rdf:nodeID="genid2399">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0061535"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4307112"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid2386"/>
+        <owl:annotatedTarget rdf:nodeID="genid2399"/>
         <rdfs:comment>Inferred to be glutamate secretion, neurotransmission based on expression of Slc17a7</rdfs:comment>
     </owl:Axiom>
     <owl:Axiom>
@@ -17140,9 +17201,21 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GO_0061534 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0061534"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GO_0061535 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0061535"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0061537 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0061537"/>
     
 
 

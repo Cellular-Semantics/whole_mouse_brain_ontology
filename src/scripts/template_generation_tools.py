@@ -630,7 +630,10 @@ def generate_curated_class_template(taxonomy_file_path, output_filepath):
                                'Expresses_comment',
                                'Expresses_pub',
                                'Projection_type',
-                               'Layers',
+                               'Locations',
+                               'Neurotransmitters',
+                               'Neurotransmitters_comment',
+                               'Neurotransmitters_publication',
                                'Cross_species_text',
                                'Comment'
                                ]

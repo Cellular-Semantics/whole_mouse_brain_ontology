@@ -54,6 +54,27 @@
             "basicPropertyValues": [
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#evidence",
+                "val": "https://identifiers.org/ncbigene/140919"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#evidence",
+                "val": "https://identifiers.org/ncbigene/14415"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#evidence",
+                "val": "https://identifiers.org/ncbigene/14417"
+              }
+            ]
+          },
+          "obj": "http://purl.obolibrary.org/obo/CL_0000540",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CL_4304384"
+        },
+        {
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#evidence",
                 "val": "https://identifiers.org/ncbigene/14415"
               },
               {
@@ -101,6 +122,32 @@
             "basicPropertyValues": [
               {
                 "pred": "http://www.w3.org/2000/01/rdf-schema#comment",
+                "val": "Inferred to be gamma-aminobutyric acid secretion, neurotransmission based on expression of Gad1, Gad2, Slc32a1"
+              }
+            ]
+          },
+          "obj": "http://purl.obolibrary.org/obo/GO_0061534",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002215",
+          "sub": "http://purl.obolibrary.org/obo/CL_4307005"
+        },
+        {
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#comment",
+                "val": "Inferred to be gamma-aminobutyric acid secretion, neurotransmission based on expression of Gad1, Gad2, Slc32a1"
+              }
+            ]
+          },
+          "obj": "http://purl.obolibrary.org/obo/GO_0061534",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002215",
+          "sub": "http://purl.obolibrary.org/obo/CL_4307012"
+        },
+        {
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#comment",
                 "val": "Inferred to be glutamate secretion, neurotransmission based on expression of Aldh1a1, Slc17a7"
               }
             ]
@@ -121,6 +168,19 @@
           "obj": "http://purl.obolibrary.org/obo/GO_0061535",
           "pred": "http://purl.obolibrary.org/obo/RO_0002215",
           "sub": "http://purl.obolibrary.org/obo/CL_4306426"
+        },
+        {
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#comment",
+                "val": "Inferred to be glutamate secretion, neurotransmission based on expression of Gad1, Slc17a6, Gad2"
+              }
+            ]
+          },
+          "obj": "http://purl.obolibrary.org/obo/GO_0061535",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002215",
+          "sub": "http://purl.obolibrary.org/obo/CL_4304384"
         },
         {
           "meta": {
@@ -2497,10 +2557,10 @@
         "basicPropertyValues": [
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2025-06-25"
+            "val": "2025-06-30"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/pcl/releases/2025-06-25/../../wmbo-cl-comp.json"
+        "version": "http://purl.obolibrary.org/obo/pcl/releases/2025-06-30/../../wmbo-cl-comp.json"
       },
       "nodes": [
         {
@@ -16510,7 +16570,15 @@
           "type": "CLASS"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/GO_0061534",
+          "type": "CLASS"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/GO_0061535",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/GO_0061537",
           "type": "CLASS"
         },
         {

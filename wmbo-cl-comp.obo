@@ -650,8 +650,10 @@ synonym: "15 HY Gnrh1 Glut" EXACT []
 synonym: "2564 HY Gnrh1 Glut_1" EXACT []
 synonym: "Gnrh1 (Mmus) expressing neuron of brain (Mus musculus)" EXACT []
 is_a: BFO:0000002
+is_a: CL:0000540 {evidence="https://identifiers.org/ncbigene/140919", evidence="https://identifiers.org/ncbigene/14415", evidence="https://identifiers.org/ncbigene/14417"}
 is_a: CL:0000679
 relationship: RO:0002162 NCBITaxon:10090
+relationship: RO:0002215 GO:0061535 {comment="Inferred to be glutamate secretion, neurotransmission based on expression of Gad1, Slc17a6, Gad2"}
 property_value: CLM:0010001 MBA:1097 {CLM:0010002="0.22", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:258 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
 property_value: CLM:0010001 MBA:564 {CLM:0010002="0.25", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
@@ -699,6 +701,8 @@ synonym: "5172 DCO Il22 Gly-Gaba_2" EXACT []
 synonym: "Il22 (Mmus), Edaradd (Mmus) expressing neuron of brain (Mus musculus)" EXACT []
 is_a: CL:0008059
 is_a: CL:4300348 ! DCO Il22 Gly-Gaba neuron (Mmus)
+relationship: RO:0002215 GO:0061534 {comment="Inferred to be gamma-aminobutyric acid secretion, neurotransmission, glycine secretion, neurotransmission based on expression of Slc32a1, Hdc, Slc6a5, Gad2, Gad1"}
+relationship: RO:0002215 GO:0061537 {comment="Inferred to be gamma-aminobutyric acid secretion, neurotransmission, glycine secretion, neurotransmission based on expression of Slc32a1, Hdc, Slc6a5, Gad2, Gad1"}
 property_value: CLM:0010001 MBA:1041 {CLM:0010002="0.2", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
 property_value: CLM:0010001 MBA:354 {CLM:0010002="0.44", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:512 {CLM:0010002="0.25", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -720,6 +724,7 @@ synonym: "5185 CB PLI Gly-Gaba_4" EXACT []
 synonym: "Ly6d (Mmus), Kit (Mmus) expressing neuron of brain (Mus musculus)" EXACT []
 is_a: CL:0000617
 is_a: CL:4300349 ! CB PLI Gly-Gaba neuron (Mmus)
+relationship: RO:0002215 GO:0061534 {comment="Inferred to be gamma-aminobutyric acid secretion, neurotransmission based on expression of Gad1, Gad2, Slc32a1"}
 property_value: CLM:0010001 MBA:512 {CLM:0010002="0.76", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:728 {CLM:0010002="0.14", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
 property_value: CLM:0010001 MBA:91 {CLM:0010002="0.11", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
@@ -741,6 +746,7 @@ synonym: "5192 CBX MLI Cdh22 Gaba_1" EXACT []
 synonym: "Cdh1 (Mmus), Acvr1c (Mmus), Adamts15 (Mmus), Pax2 (Mmus) expressing molecular layer interneuron of brain (Mus musculus)" EXACT []
 is_a: CL:4042035 {evidence="https://identifiers.org/ncbigene/14415", evidence="https://identifiers.org/ncbigene/14417", evidence="https://identifiers.org/ncbigene/22348"}
 is_a: CL:4300028 ! cerebellar GABAergic neuron (Mmus)
+relationship: RO:0002215 GO:0061534 {comment="Inferred to be gamma-aminobutyric acid secretion, neurotransmission based on expression of Gad1, Gad2, Slc32a1"}
 property_value: CLM:0010001 MBA:512 {CLM:0010002="0.69", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.31", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5006942 {STATO:0000663="0.6132075"}
