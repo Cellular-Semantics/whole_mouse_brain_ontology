@@ -336,3 +336,7 @@ http://purl.obolibrary.org/obo/PCL_0111737	obsolete Astro-OLF NN_2	This PCL clas
 http://purl.obolibrary.org/obo/PCL_0111738	obsolete Astro-OLF NN_3	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000127			CL:0000000	http://purl.obolibrary.org/obo/CL_4301598
 http://purl.obolibrary.org/obo/PCL_0111742	obsolete Tanycyte NN_1	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0002085			CL:0000000	http://purl.obolibrary.org/obo/CL_4301602
 http://purl.obolibrary.org/obo/PCL_0111743	obsolete Tanycyte NN_2	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0002085			CL:0000000	http://purl.obolibrary.org/obo/CL_4301603
+http://purl.obolibrary.org/obo/PCL_0111751	obsolete COP NN_1	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4023059			CL:0000000	http://purl.obolibrary.org/obo/CL_4301611
+http://purl.obolibrary.org/obo/PCL_0111752	obsolete NFOL NN_2	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4072001			CL:0000000	http://purl.obolibrary.org/obo/CL_4301612
+http://purl.obolibrary.org/obo/PCL_0111753	obsolete MFOL NN_3	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4072002			CL:0000000	http://purl.obolibrary.org/obo/CL_4301613
+http://purl.obolibrary.org/obo/PCL_0111754	obsolete MOL NN_4	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4072003			CL:0000000	http://purl.obolibrary.org/obo/CL_4301614
