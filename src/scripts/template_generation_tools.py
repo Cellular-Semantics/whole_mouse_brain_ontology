@@ -81,7 +81,7 @@ def generate_ind_template(taxonomy_file_path, output_filepath):
 
     excluded_classes = get_excluded_classes(taxon)
     atlas_payloads = read_abc_urls(ABC_URLS_MAPPING)
-    cl_subset = get_cl_subset_nodes()
+    cl_subset = get_cl_subset_nodes(nodes_to_collapse)
 
     # dend_tree = generate_dendrogram_tree(dend)
     # taxonomy_config = read_taxonomy_config(taxon)
@@ -188,7 +188,7 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
         # subtrees = get_subtrees(dend_tree, taxonomy_config)
         all_pref_labels = get_all_unique_cell_labels(dend, nodes_to_collapse, all_names, name_curations)
         class_membership = get_class_membership_dict(dend_tree)
-        cl_subset = get_cl_subset_nodes()
+        cl_subset = get_cl_subset_nodes(nodes_to_collapse)
 
         gene_db = read_gene_dbs(TEMPLATES_FOLDER_PATH)
         author_markers = read_author_markers_dataframe()
@@ -614,7 +614,7 @@ def generate_curated_class_template(taxonomy_file_path, output_filepath):
         cl_id_factory = CLIdFactory(read_json_file(taxonomy_file_path))
         dend_tree = generate_dendrogram_tree(dend)
         nodes_to_collapse = get_collapsed_nodes(dend_tree, all_nodes)
-        cl_subset = get_cl_subset_nodes()
+        cl_subset = get_cl_subset_nodes(nodes_to_collapse)
 
         class_curation_seed = ['defined_class',
                                'cell_set_accession',
@@ -686,7 +686,7 @@ def generate_marker_gene_set_template(taxonomy_file_path, output_filepath):
         atlas_payloads = read_abc_urls(ABC_URLS_MARKER_SET_MAPPING)
 
         gene_db = read_gene_dbs(TEMPLATES_FOLDER_PATH)
-        cl_subset = get_cl_subset_nodes()
+        cl_subset = get_cl_subset_nodes(nodes_to_collapse)
 
         class_seed = ['defined_class',
                       'Marker_set_of',
@@ -784,7 +784,7 @@ def generate_within_subclass_marker_gene_set_template(taxonomy_file_path, output
         atlas_payloads = read_abc_urls(ABC_URLS_WS_MAPPING)
 
         gene_db = read_gene_dbs(TEMPLATES_FOLDER_PATH)
-        cl_subset = get_cl_subset_nodes()
+        cl_subset = get_cl_subset_nodes(nodes_to_collapse)
 
         class_seed = ['defined_class',
                       'Marker_set_of',
@@ -882,7 +882,7 @@ def generate_evidence_marker_gene_set_template(taxonomy_file_path, output_filepa
         atlas_payloads = read_abc_urls(ABC_URLS_EVIDENCE_MAPPING)
 
         gene_db = read_gene_dbs(TEMPLATES_FOLDER_PATH)
-        cl_subset = get_cl_subset_nodes()
+        cl_subset = get_cl_subset_nodes(nodes_to_collapse)
 
         class_seed = ['defined_class',
                       'Marker_set_of',
@@ -976,7 +976,7 @@ def generate_nsforest_marker_gene_set_template(taxonomy_file_path, output_filepa
         atlas_payloads = read_abc_urls(ABC_URLS_NSF_MAPPING)
 
         gene_db = read_gene_dbs(TEMPLATES_FOLDER_PATH)
-        cl_subset = get_cl_subset_nodes()
+        cl_subset = get_cl_subset_nodes(nodes_to_collapse)
 
         class_seed = ['defined_class',
                       'Marker_set_of',
@@ -1230,7 +1230,7 @@ def get_excluded_classes(taxonomy_id):
     with open(file_path, newline='') as fd:
         reader = csv.DictReader(fd, delimiter='\t')
         for row in reader:
-            if row.get("Exclude_from_ontology", "").strip().lower() == "true":
+            if row.get("Exclude_from_ontology", "") and row.get("Exclude_from_ontology", "").strip().lower() == "true":
                 excluded.append(row.get("defined_class", "").strip())
     return excluded
 
@@ -1248,13 +1248,13 @@ def read_abc_urls(file_path):
             data_dict = json.load(file)
     return data_dict
 
-def get_cl_subset_nodes():
+def get_cl_subset_nodes(nodes_to_collapse):
     """
     Reads the CL curation TSV file for the given taxonomy_id and returns a list of
     accession IDs where Add_toCL equals True (case insensitive).
 
     Args:
-
+        nodes_to_collapse: Dictionary of nodes to collapse, where keys are cell_set_accession.
     Returns:
         List of accession IDs for the nodes to be added to CL.
     """
@@ -1264,5 +1264,12 @@ def get_cl_subset_nodes():
         for row in reader:
             if row.get("Add_to_CL", "") and row.get("Add_to_CL", "").strip().lower() == "true":
                 cl_subset.append(row.get("cell_set_accession", "").strip())
+
+    # extend these with the compressed nodes
+    to_extend = []
+    for cl_candidate in cl_subset:
+        if cl_candidate in nodes_to_collapse:
+            to_extend.append(nodes_to_collapse[cl_candidate]['cell_set_accession'])
+    cl_subset.extend(to_extend)
     return cl_subset
 
