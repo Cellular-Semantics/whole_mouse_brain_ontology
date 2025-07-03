@@ -1,5 +1,7 @@
 format-version: 1.2
+idspace: CCN20230722 https://purl.brain-bican.org/taxonomy/CCN20230722# 
 idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
+idspace: skos http://www.w3.org/2004/02/skos/core# 
 ontology: pcl/wmbo-pcl-comp
 
 [Term]
@@ -7,7 +9,6 @@ id: CL:4300028
 name: cerebellar GABAergic neuron (Mmus)
 def: "A cerebellar neuron of the Mus musculus brain. Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Class:28 CB GABA." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "28 CB GABA" EXACT []
-is_a: BFO:0000002
 is_a: CL:0000617
 is_a: CL:1001611
 relationship: RO:0002100 MBA:512
@@ -23,7 +24,6 @@ id: CL:4300029
 name: cerebellar glutamatergic neuron (Mmus)
 def: "A cerebellum glutamatergic neuron of the Mus musculus brain. Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Class:29 CB Glut." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "29 CB Glut" EXACT []
-is_a: BFO:0000002
 is_a: CL:2000028
 relationship: RO:0002100 MBA:512
 relationship: RO:0002162 NCBITaxon:10090
@@ -52,8 +52,6 @@ def: "A direct pathway medium spiny neuron of the Mus musculus brain. It is dist
 synonym: "061 STR D1 Gaba" EXACT []
 synonym: "Prkch (Mmus), Slc32a1 (Mmus), Drd1 (Mmus) expressing direct pathway medium spiny neuron of brain (Mus musculus)" EXACT []
 is_a: CL:4023026
-is_a: CL:4023035
-relationship: RO:0002162 NCBITaxon:10090
 property_value: CLM:0010003 CLM:5000101 {STATO:0000663="0.70412517"}
 property_value: CLM:0010003 CLM:5007721 {STATO:0000663="0.71593535"}
 property_value: IAO:0000028 "STR D1 Gaba (Mmus)" xsd:string
@@ -67,8 +65,6 @@ def: "A indirect pathway medium spiny neuron of the Mus musculus brain. It is di
 synonym: "062 STR D2 Gaba" EXACT []
 synonym: "Adora2a (Mmus), Phactr1 (Mmus), Pcp4l1 (Mmus) expressing indirect pathway medium spiny neuron of brain (Mus musculus)" EXACT []
 is_a: CL:4023029
-is_a: CL:4023035
-relationship: RO:0002162 NCBITaxon:10090
 property_value: CLM:0010003 CLM:5000102 {STATO:0000663="0.6617923"}
 property_value: CLM:0010003 CLM:5007722 {STATO:0000663="0.8310593"}
 property_value: IAO:0000028 "STR D2 Gaba (Mmus)" xsd:string
@@ -154,8 +150,6 @@ synonym: "318 Astro-NT NN" EXACT []
 synonym: "Aqp4 (Mmus), Cd38 (Mmus), Agt (Mmus), Itih3 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 synonym: "non-telencephalic astrocyte" EXACT []
 is_a: CL:0000127
-is_a: CL:0000255
-relationship: RO:0002162 NCBITaxon:10090
 property_value: CLM:0010003 CLM:5000358 {STATO:0000663="0.4052198"}
 property_value: CLM:0010003 CLM:5007978 {STATO:0000663="0.6994048"}
 property_value: IAO:0000028 "Astro-NT NN (Mmus)" xsd:string
@@ -170,8 +164,6 @@ synonym: "319 Astro-TE NN" EXACT []
 synonym: "Gja1 (Mmus), Lhx2 (Mmus), Gpc5 (Mmus), Nr2f1 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 synonym: "telencephalic astrocyte" EXACT []
 is_a: CL:0000127
-is_a: CL:0000255
-relationship: RO:0002162 NCBITaxon:10090
 property_value: CLM:0010003 CLM:5000359 {STATO:0000663="0.03968254"}
 property_value: CLM:0010003 CLM:5007979 {STATO:0000663="0.58093345"}
 property_value: IAO:0000028 "Astro-TE NN (Mmus)" xsd:string
@@ -185,8 +177,6 @@ def: "A transcriptomically defined type of astrocyte located exclusively in the 
 synonym: "320 Astro-OLF NN" EXACT []
 synonym: "Gja1 (Mmus), Hs3st3a1 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:0000127
-is_a: CL:0000255
-relationship: RO:0002162 NCBITaxon:10090
 property_value: CLM:0010003 CLM:5000360 {STATO:0000663="0.67099565"}
 property_value: CLM:0010003 CLM:5007980 {STATO:0000663="0.6818182"}
 property_value: IAO:0000028 "Astro-OLF NN (Mmus)" xsd:string
@@ -199,9 +189,7 @@ name: tanycyte (Mmus)
 def: "A tanycyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr50 (Mmus), Apoe (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:322 Tanycyte NN." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "322 Tanycyte NN" EXACT []
 synonym: "Gpr50 (Mmus), Apoe (Mmus) expressing tanycyte of brain (Mus musculus)" EXACT []
-is_a: CL:0000255
 is_a: CL:0002085
-relationship: RO:0002162 NCBITaxon:10090
 property_value: CLM:0010003 CLM:5000362 {STATO:0000663="0.74880874"}
 property_value: CLM:0010003 CLM:5007982 {STATO:0000663="0.77756834"}
 property_value: IAO:0000028 "Tanycyte NN (Mmus)" xsd:string
@@ -215,8 +203,6 @@ def: "A ependymal cell of the Mus musculus brain. It is distinguished from other
 synonym: "323 Ependymal NN" EXACT []
 synonym: "Tmem212 (Mmus), Rarres2 (Mmus) expressing ependymal cell of brain (Mus musculus)" EXACT []
 is_a: CL:0000065
-is_a: CL:0000255
-relationship: RO:0002162 NCBITaxon:10090
 property_value: CLM:0010003 CLM:5000363 {STATO:0000663="0.9508816"}
 property_value: CLM:0010003 CLM:5007983 {STATO:0000663="0.97694635"}
 property_value: IAO:0000028 "Ependymal NN (Mmus)" xsd:string
@@ -590,9 +576,7 @@ def: "A choroid plexus epithelial cell of the Mus musculus brain. It is distingu
 synonym: "1178 CHOR NN_1" EXACT []
 synonym: "2900040C04Rik (Mmus) expressing choroid plexus epithelial cell of brain (Mus musculus)" EXACT []
 synonym: "325 CHOR NN" EXACT []
-is_a: CL:0000255
 is_a: CL:0000706
-relationship: RO:0002162 NCBITaxon:10090
 property_value: CLM:0010003 CLM:5001598 {STATO:0000663="0.99385244"}
 property_value: CLM:0010003 CLM:5007985 {STATO:0000663="0.9857724"}
 property_value: CLM:0010003 CLM:5016818
@@ -831,9 +815,7 @@ synonym: "1157 Bergmann NN_1" EXACT []
 synonym: "316 Bergmann NN" EXACT []
 synonym: "5206 Bergmann NN_1" EXACT []
 synonym: "Gpr37l1 (Mmus), Ctxn3 (Mmus) expressing Bergmann glial cell of brain (Mus musculus)" EXACT []
-is_a: CL:0000255
 is_a: CL:0000644 {evidence="https://identifiers.org/ncbigene/11668"}
-relationship: RO:0002162 NCBITaxon:10090
 property_value: CLM:0010001 MBA:512 {CLM:0010002="0.73", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.27", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5006956 {STATO:0000663="0.6818182"}
@@ -851,9 +833,7 @@ synonym: "1158 Astro-CB NN_1" EXACT []
 synonym: "317 Astro-CB NN" EXACT []
 synonym: "5207 Astro-CB NN_1" EXACT []
 synonym: "Dao (Mmus), Efemp1 (Mmus) expressing astrocyte of the cerebellum of brain (Mus musculus)" EXACT []
-is_a: CL:0000255
 is_a: CL:0002603 {evidence="https://identifiers.org/ncbigene/11668"}
-relationship: RO:0002162 NCBITaxon:10090
 property_value: CLM:0010001 MBA:512 {CLM:0010002="0.65", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:728 {CLM:0010002="0.14", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.34", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1501,9 +1481,7 @@ synonym: "1177 Hypendymal NN_1" EXACT []
 synonym: "324 Hypendymal NN" EXACT []
 synonym: "5263 Hypendymal NN_1" EXACT []
 synonym: "Sspo (Mmus), Wfdc2 (Mmus) expressing hypendymal cell of brain (Mus musculus)" EXACT []
-is_a: CL:0000255
 is_a: CL:4023181 {evidence="https://identifiers.org/ncbigene/15186"}
-relationship: RO:0002162 NCBITaxon:10090
 property_value: CLM:0010001 MBA:129 {CLM:0010002="0.48", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
 property_value: CLM:0010001 MBA:158 {CLM:0010002="0.11", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
 property_value: CLM:0010001 MBA:313 {CLM:0010002="0.32", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
