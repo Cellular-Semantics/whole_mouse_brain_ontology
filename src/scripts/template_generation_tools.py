@@ -125,6 +125,7 @@ def generate_ind_template(taxonomy_file_path, output_filepath):
             d['PrefLabel'] = o['cell_set_preferred_alias']
         else:
             d['PrefLabel'] = o['cell_label'] + " "+ o['cell_set_accession']
+        d['Label'] = d['PrefLabel']
         d['Entity Type'] = 'PCL:0010001'  # Cluster
         # d['Metadata'] = json.dumps(o)
         d['Synonyms'] = '|'.join(o.get('synonyms', []))
