@@ -31,12 +31,14 @@ def get_neurotransmitter_inconsistencies(cluster_annotations_path: str) -> dict:
     cluster_2_nt = cluster_nt_df.to_dict(orient='index')
     graph = get_wmb_taxonomy_graph()
 
-    # Choosing classes as roots.  Not bothering to check root status in graph.
     roots = [
         node
         for node, data in graph.nodes(data=True)
-        if data.get("labelset") == 'https://purl.brain-bican.org/taxonomy/CCN20230722/class'
+        if data.get("labelset") == 'https://purl.brain-bican.org/ontology/CCN20230722/class'
     ]
+    if len(roots) != 34:
+        raise ValueError("Unexpected number of roots found in the graph. Expected 34, found: " + str(len(roots)))
+
     # Run DFS from each root
     count = [0]
     inconsistencies = dict()
@@ -57,6 +59,7 @@ def get_wmb_taxonomy_graph():
     ont.parse(url, format="xml")
 
     graph = nx.DiGraph()
+    labelsets = set()
     # Step 3: Add triples from RDF graph to NetworkX graph for subcluster_of + labels for all nodes
     for subj, pred, obj in ont:
         if str(pred) == "http://purl.obolibrary.org/obo/RO_0015003":
@@ -67,6 +70,11 @@ def get_wmb_taxonomy_graph():
         if str(pred) == "https://purl.brain-bican.org/taxonomy/has_labelset":
             graph.add_node(subj)
             graph.nodes[subj]["labelset"] = str(obj)
+            labelsets.add(str(obj))
+
+    print(f"Labelsets found in the graph: {labelsets}")
+    if len(labelsets) != 5:
+        raise ValueError("Unexpected number of labelsets found in the graph. Expected 5, found: " + str(len(labelsets)))
     return graph
 
 
@@ -94,12 +102,12 @@ def dfs_traverse(graph, node, clusters_dict, inconsistencies, visited=None, out=
     for nt in nt_names.keys():
         if nt in graph.nodes[node].get('label'):
             out.add(nt)
-    if graph.nodes[node].get('labelset') == 'https://purl.brain-bican.org/taxonomy/CCN20230722/cluster':
+    if graph.nodes[node].get('labelset') == 'https://purl.brain-bican.org/ontology/CCN20230722/cluster':
         cluster_nts = clusters_dict[graph.nodes[node].get('label')]
         #print(cluster_nts)
         for nt in out:
             if not nt_names[nt] in str(cluster_nts['nt_type_combo_label']):
-                node_accession = node_id.replace("https://purl.brain-bican.org/taxonomy/CCN20230722/", "")
+                node_accession = node_id.replace("https://purl.brain-bican.org/ontology/CCN20230722/", "")
                 nts = inconsistencies.get(node_accession, [])
                 nts.append(nt)
                 inconsistencies[node_accession] = nts

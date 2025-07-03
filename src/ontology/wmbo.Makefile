@@ -22,7 +22,7 @@ GENE_FILES = $(patsubst %, mirror/%.owl, $(GENE_LIST))
 GENE_IMPORTS = $(patsubst %, $(IMPORTDIR)/%_import.owl, $(GENE_LIST))
 OWL_INFERRED_HIERARCHY_FILES = $(patsubst %, components/%_inferred_hierarchy.owl, $(JOBS))
 
-CLEANFILES=$(MAIN_FILES) $(SRCMERGED) $(EDIT_PREPROCESSED) $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_OBSOLETE_CLASS_FILES) $(OWL_MARKER_SET_FILES) $(OWL_NSF_MARKER_SET_FILES) $(OWL_WS_MARKER_SET_FILES) $(OWL_EVIDENCE_MARKER_SET_FILES) $(COMPONENTSDIR)/wmb_taxonomy.owl $(OWL_INFERRED_HIERARCHY_FILES)
+#CLEANFILES=$(MAIN_FILES) $(SRCMERGED) $(EDIT_PREPROCESSED) $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_OBSOLETE_CLASS_FILES) $(OWL_MARKER_SET_FILES) $(OWL_NSF_MARKER_SET_FILES) $(OWL_WS_MARKER_SET_FILES) $(OWL_EVIDENCE_MARKER_SET_FILES) $(COMPONENTSDIR)/wmb_taxonomy.owl $(OWL_INFERRED_HIERARCHY_FILES)
 
 # overriding to add prefixes
 $(PATTERNDIR)/pattern.owl: $(ALL_PATTERN_FILES)
@@ -113,8 +113,8 @@ $(COMPONENTSDIR)/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_OBSOLE
 	 query --update ../sparql/replace_string_to_boolean.ru  \
 	 query --update ../sparql/unpack_subclass_of_intersection.ru  \
 	 query --update ../sparql/unpack_equivalentclass_intersection.ru  \
-	 query --update ../sparql/delete_has_exemplar_data_rel.ru \
 	 convert -f ofn	 -o $@
+	 #	 query --update ../sparql/delete_has_exemplar_data_rel.ru \
 
 .PRECIOUS: $(COMPONENTSDIR)/all_templates.owl
 
@@ -165,7 +165,7 @@ components/%_inferred_hierarchy.owl: $(COMPONENTSDIR)/%_indv.owl $(COMPONENTSDIR
 # pcl id validator added
 $(ONT)-base.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(IMPORT_FILES) $(OWL_INFERRED_HIERARCHY_FILES)
 	$(ROBOT_RELEASE_IMPORT_MODE) \
-	merge $(patsubst %, -i %, $(OWL_INFERRED_HIERARCHY_FILES)) \
+	merge $(patsubst %, -i %, $(OWL_INFERRED_HIERARCHY_FILES)) $(patsubst %, -i %, $(OWL_FILES)) \
 	reason --reasoner ELK --exclude-tautologies structural --annotate-inferred-axioms False \
 	relax \
 	reduce -r ELK --preserve-annotated-axioms true \
@@ -233,13 +233,26 @@ $(ONT)-pcl-comp.json: $(RELEASEDIR)/$(ONT)-pcl-comp.owl
 	jq -S 'walk(if type == "array" then sort else . end)' $@.tmp.json > $(RELEASEDIR)/$@ && rm $@.tmp.json
 
 $(TMPDIR)/cl_component_terms.txt: $(TMPDIR)/all_pattern_terms.txt
-	python ../scripts/cl_subset_terms.py -o $@
+	python ../scripts/cl_subset_terms.py classes -o $@
+
+$(TMPDIR)/cl_indv_terms.txt: $(OWL_CLASS_FILES) $(TMPDIR)/cl_component_terms.txt
+	$(ROBOT) merge $(patsubst %, -i %, $(OWL_CLASS_FILES)) --output $(TMPDIR)/all_class.owl
+	python ../scripts/cl_subset_terms.py individuals -i $(TMPDIR)/all_class.owl -c $(TMPDIR)/cl_component_terms.txt -o $@
+
+$(TMPDIR)/cl_individuals.owl: $(OWL_FILES) $(TMPDIR)/cl_indv_terms.txt
+	$(ROBOT) --prefixes template_prefixes.json merge $(patsubst %, -i %, $(OWL_FILES)) \
+	filter --term-file $(TMPDIR)/cl_indv_terms.txt --select "self annotations" --trim false \
+	query --update ../sparql/delete_namedindividuals_without_rdf_type.ru --output $@.tmp.owl
+	python ../scripts/cl_subset_terms.py trim_indvs -i $@.tmp.owl -t $(TMPDIR)/cl_indv_terms.txt -o $@
 
 # Artifact for CL that hosts only the validated component annotations (used by CL)
-$(RELEASEDIR)/$(ONT)-cl-comp.owl: $(ONT)-pcl-comp.owl $(TMPDIR)/cl_component_terms.txt wmbo-clm-edit.owl
-	$(ROBOT) remove --input $(RELEASEDIR)/$(ONT)-pcl-comp.owl --select "<http://purl.obolibrary.org/obo/PCL_*>" --signature true \
+$(RELEASEDIR)/$(ONT)-cl-comp.owl: $(ONT)-pcl-comp.owl $(TMPDIR)/cl_component_terms.txt wmbo-cl-edit.owl $(TMPDIR)/cl_individuals.owl
+	$(ROBOT) remove --input $(RELEASEDIR)/$(ONT)-pcl-comp.owl --select "<http://purl.obolibrary.org/obo/PCL_*>" --select "<https://purl.brain-bican.org/taxonomy/CCN20230722/*>" --signature true \
 	filter --term-file $(TMPDIR)/cl_component_terms.txt --select "annotations anonymous self" --signature true --trim false  \
-	merge -i wmbo-clm-edit.owl --output $@
+	remove --select "<http://purl.obolibrary.org/obo/PCL_01*>" --signature true \
+	query --update ../sparql/delete_deprecated_pcl_terms.ru \
+	merge -i $(TMPDIR)/cl_individuals.owl \
+	merge -i wmbo-cl-edit.owl --output $@
 $(RELEASEDIR)/$(ONT)-cl-comp.obo: $(RELEASEDIR)/$(ONT)-cl-comp.owl
 	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo && grep -v ^owl-axioms $@.tmp.obo > $@ && rm $@.tmp.obo
 $(RELEASEDIR)/$(ONT)-cl-comp.json: $(RELEASEDIR)/$(ONT)-cl-comp.owl
