@@ -34,7 +34,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CLM_0010003> "has
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CLM_0010004> "recall")
 
 # Annotation Property: <http://purl.obolibrary.org/obo/CLM_0010005> (cluster id)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CLM_0010004> "cluster id")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CLM_0010005> "cluster id")
 
 # Author Annotation Properties
 AnnotationAssertion(rdfs:label <https://purl.brain-bican.org/taxonomy/CCN20230722#CCF_acronym_freq> "CCF acronym freq")

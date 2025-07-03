@@ -195,7 +195,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CLM_0010003> "has
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CLM_0010004> "recall")
 
 # Annotation Property: <http://purl.obolibrary.org/obo/CLM_0010005> (cluster id)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CLM_0010004> "cluster id")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CLM_0010005> "cluster id")
 
 ############################
 #   Object Properties
