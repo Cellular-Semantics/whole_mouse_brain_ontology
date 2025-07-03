@@ -10763,7 +10763,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4300349",
-          "lbl": "CB PLI Gly-Gaba Purkinje layer interneuron (Mmus)",
+          "lbl": "Purkinje layer interneuron (Mmus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -12452,7 +12452,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4301611",
-          "lbl": "COP NN_1 committed oligodendrocyte precursor (Mmus)",
+          "lbl": "commited oligodendrocyte precursor (Mmus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -12502,7 +12502,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4301612",
-          "lbl": "NFOL NN_2 newly formed oligodendrocyte (Mmus)",
+          "lbl": "newly formed oligodendrocyte",
           "meta": {
             "basicPropertyValues": [
               {
@@ -12552,7 +12552,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4301613",
-          "lbl": "MFOL NN_3 myelin-forming oligodendrocyte (Mmus)",
+          "lbl": "myelin-forming oligodendrocyte (Mmus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -12602,7 +12602,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4301614",
-          "lbl": "MOL NN_4 mature myelinating oligodendrocyte (Mmus)",
+          "lbl": "mature myelinating oligodendrocyte",
           "meta": {
             "basicPropertyValues": [
               {
@@ -13064,7 +13064,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4307005",
-          "lbl": "CB PLI Gly-Gaba_4 Purkinje layer interneuron (Mmus)",
+          "lbl": "CB PLI GABA Ly6d Purkinje layer interneuron",
           "meta": {
             "basicPropertyValues": [
               {
@@ -13107,6 +13107,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_28.h5ad"
               }
+            ],
+            "comments": [
+              "Warning: Despite its name, CB PLI Gly-Gaba_4 does not secrete the neurotransmitter Gly, as assessed by expression of multiple marker genes."
             ],
             "definition": {
               "val": "A Purkinje layer interneuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Ly6d (Mmus), Kit (Mmus). It is distinguished from other CB PLI Gly-Gaba cells by expression of Ly6d. It is GABAergic. These cells are located in the Cerebellum, brain , in or close to the regions: arbor vitae, Interposed nucleus, Nodulus (X) . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5185 CB PLI Gly-Gaba_4.",
@@ -15301,7 +15304,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4307067",
-          "lbl": "Tanycyte NN_2 Dscaml1 alpha2-tanycyte (Mmus)",
+          "lbl": "alpha2-tanycyte (Mmus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -15419,7 +15422,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4307069",
-          "lbl": "Tanycyte NN_2 Col25a1 beta1-tanycyte (Mmus)",
+          "lbl": "beta1-tancyte (Mmus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -15480,7 +15483,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4307070",
-          "lbl": "Tanycyte NN_3 beta2-tanycyte (Mmus)",
+          "lbl": "beta-2 tanycyte (Mmus)",
           "meta": {
             "basicPropertyValues": [
               {
