@@ -2,7 +2,7 @@ import sys
 import argparse
 import rdflib
 
-import pandas as pd
+from rdflib.namespace import RDFS
 
 def entities_resolved_in_definitions(graph):
     """
@@ -48,13 +48,12 @@ def validate_cl_ontology_subset(graph):
     count_iri = int(results[0]['count'])
 
     # Compare the counts and report the result
-    if count_iri >= count_add_to_cl :
+    if count_iri <= count_add_to_cl :
         print(
             f"Mismatch: {count_add_to_cl} records with Add_to_CL = TRUE vs {count_iri} terms with IRI starting with the prefix.")
-        return False
+        sys.exit(1)
     else:
         print("Validation successful: counts match.")
-        return True
 
 def load_ontology(file_path):
     g = rdflib.Graph()
@@ -64,6 +63,29 @@ def load_ontology(file_path):
         print(f"Error parsing ontology: {e}")
         sys.exit(1)
     return g
+
+def disclaimers_added(graph):
+    """
+    Checks if disclaimer texts have been added to the ontology.
+    Args:
+        graph: ontology graph to validate
+    """
+    location_disclaimer_count = 0
+    nt_disclaimer_count = 0
+    for subj, pred, obj in graph.triples((None, RDFS.comment, None)):
+        if "does not secrete the neurotransmitter" in str(obj):
+            nt_disclaimer_count += 1
+        if "does not have cells in" in str(obj):
+            location_disclaimer_count += 1
+
+    if nt_disclaimer_count == 0:
+        print("Error: NT disclaimer not found in the ontology.")
+        sys.exit(1)
+    elif location_disclaimer_count == 0:
+        print("Error: Location disclaimer not found in the ontology.")
+        sys.exit(1)
+    else:
+        print("Disclaimer validated successfully.")
 
 def main():
     parser = argparse.ArgumentParser(description="Ontology Validation Script")
@@ -79,6 +101,7 @@ def main():
         graph = load_ontology(args.input)
         entities_resolved_in_definitions(graph)
         validate_cl_ontology_subset(graph)
+        disclaimers_added(graph)
 
 if __name__ == "__main__":
     main()

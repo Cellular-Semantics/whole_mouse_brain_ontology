@@ -12502,7 +12502,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4301612",
-          "lbl": "newly formed oligodendrocyte",
+          "lbl": "newly formed oligodendrocyte (Mmus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -12602,7 +12602,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4301614",
-          "lbl": "mature myelinating oligodendrocyte",
+          "lbl": "mature myelinating oligodendrocyte (Mmus)",
           "meta": {
             "basicPropertyValues": [
               {

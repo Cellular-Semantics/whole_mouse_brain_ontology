@@ -6610,8 +6610,8 @@ http://purl.obolibrary.org/obo/PCL_0111745	CS20230722_SUPT_1175	1175 Ependymal N
 http://purl.obolibrary.org/obo/PCL_0111746	CS20230722_SUPT_1176	1176 Ependymal NN_2
 http://purl.obolibrary.org/obo/PCL_0111749	CS20230722_SUPT_1179	1179 OPC NN_1
 http://purl.obolibrary.org/obo/CL_4301611	CS20230722_SUPT_1181	1181 COP NN_1		commited oligodendrocyte precursor (Mmus)
-http://purl.obolibrary.org/obo/CL_4301612	CS20230722_SUPT_1182	1182 NFOL NN_2		newly formed oligodendrocyte
+http://purl.obolibrary.org/obo/CL_4301612	CS20230722_SUPT_1182	1182 NFOL NN_2		newly formed oligodendrocyte (Mmus)
 http://purl.obolibrary.org/obo/CL_4301613	CS20230722_SUPT_1183	1183 MFOL NN_3		myelin-forming oligodendrocyte (Mmus)
-http://purl.obolibrary.org/obo/CL_4301614	CS20230722_SUPT_1184	1184 MOL NN_4		mature myelinating oligodendrocyte
+http://purl.obolibrary.org/obo/CL_4301614	CS20230722_SUPT_1184	1184 MOL NN_4		mature myelinating oligodendrocyte (Mmus)
 http://purl.obolibrary.org/obo/PCL_0111757	CS20230722_SUPT_1187	1187 VLMC NN_1
 http://purl.obolibrary.org/obo/PCL_0111758	CS20230722_SUPT_1188	1188 VLMC NN_2

@@ -601,7 +601,7 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 
 [Term]
 id: CL:4301612
-name: newly formed oligodendrocyte
+name: newly formed oligodendrocyte (Mmus)
 def: "A newly formed oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Ptprb (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1182 NFOL NN_2." [https://doi.org/10.1038/s41586-023-06812-z, https://doi.org/10.1126/science.aaf6463]
 synonym: "1182 NFOL NN_2" EXACT []
 synonym: "9630013A20Rik (Mmus), Ptprb (Mmus) expressing newly formed oligodendrocyte of brain (Mus musculus)" EXACT []
@@ -631,7 +631,7 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 
 [Term]
 id: CL:4301614
-name: mature myelinating oligodendrocyte
+name: mature myelinating oligodendrocyte (Mmus)
 def: "A mature myelinating oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cldn11 (Mmus), Anln (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1184 MOL NN_4." [https://doi.org/10.1038/s41586-023-06812-z, https://doi.org/10.1126/science.aaf6463]
 synonym: "1184 MOL NN_4" EXACT []
 synonym: "Cldn11 (Mmus), Anln (Mmus) expressing mature myelinating oligodendrocyte of brain (Mus musculus)" EXACT []
@@ -1723,7 +1723,7 @@ name: NFOL NN_2 9630013A20Rik newly formed oligodendrocyte (Mmus)
 def: "A newly formed oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Grin2b (Mmus). It is distinguished from other NFOL NN_2 cells by expression of 9630013A20Rik, Grin2b. These cells are located in the Midbrain, Thalamus, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5278 NFOL NN_2." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5278 NFOL NN_2" EXACT []
 synonym: "9630013A20Rik (Mmus), Grin2b (Mmus) expressing newly formed oligodendrocyte of brain (Mus musculus)" EXACT []
-is_a: CL:4301612 ! newly formed oligodendrocyte
+is_a: CL:4301612 ! newly formed oligodendrocyte (Mmus)
 property_value: CLM:0010001 MBA:313 {CLM:0010002="0.31", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:549 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.12", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1739,7 +1739,7 @@ name: NFOL NN_2 Dbx2 newly formed oligodendrocyte (Mmus)
 def: "A newly formed oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Dbx2 (Mmus), Rassf10 (Mmus). It is distinguished from other NFOL NN_2 cells by expression of Dbx2, Rassf10. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5279 NFOL NN_2." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5279 NFOL NN_2" EXACT []
 synonym: "9630013A20Rik (Mmus), Dbx2 (Mmus), Rassf10 (Mmus) expressing newly formed oligodendrocyte of brain (Mus musculus)" EXACT []
-is_a: CL:4301612 ! newly formed oligodendrocyte
+is_a: CL:4301612 ! newly formed oligodendrocyte (Mmus)
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.24", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.25", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007029 {STATO:0000663="0.5392157"}
@@ -1754,7 +1754,7 @@ name: NFOL NN_2 Rgs16 newly formed oligodendrocyte (Mmus)
 def: "A newly formed oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Rgs16 (Mmus), Rhbdl2 (Mmus). It is distinguished from other NFOL NN_2 cells by expression of Rgs16, Rhbdl2. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5280 NFOL NN_2." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5280 NFOL NN_2" EXACT []
 synonym: "9630013A20Rik (Mmus), Rgs16 (Mmus), Rhbdl2 (Mmus) expressing newly formed oligodendrocyte of brain (Mus musculus)" EXACT []
-is_a: CL:4301612 ! newly formed oligodendrocyte
+is_a: CL:4301612 ! newly formed oligodendrocyte (Mmus)
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.18", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.28", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007030 {STATO:0000663="0.32051283"}
@@ -1769,7 +1769,7 @@ name: NFOL NN_2 Il23a newly formed oligodendrocyte (Mmus)
 def: "A newly formed oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Piezo2 (Mmus), Ptprb (Mmus). It is distinguished from other NFOL NN_2 cells by expression of Il23a, Opalin, Ptprb. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5281 NFOL NN_2." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5281 NFOL NN_2" EXACT []
 synonym: "9630013A20Rik (Mmus), Piezo2 (Mmus), Ptprb (Mmus) expressing newly formed oligodendrocyte of brain (Mus musculus)" EXACT []
-is_a: CL:4301612 ! newly formed oligodendrocyte
+is_a: CL:4301612 ! newly formed oligodendrocyte (Mmus)
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.19", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.3", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007031 {STATO:0000663="0.35714287"}
@@ -1815,7 +1815,7 @@ name: MOL NN_4 Plin3 mature myelinating oligodendrocyte (Mmus)
 def: "A mature myelinating oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Prr5l (Mmus), Hapln2 (Mmus), Enpp6 (Mmus), Grm7 (Mmus). It is distinguished from other MOL NN_4 cells by expression of Plin3, Grm7. These cells are located in the Medulla, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5284 MOL NN_4." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5284 MOL NN_4" EXACT []
 synonym: "Prr5l (Mmus), Hapln2 (Mmus), Enpp6 (Mmus), Grm7 (Mmus) expressing mature myelinating oligodendrocyte of brain (Mus musculus)" EXACT []
-is_a: CL:4301614 ! mature myelinating oligodendrocyte
+is_a: CL:4301614 ! mature myelinating oligodendrocyte (Mmus)
 property_value: CLM:0010001 MBA:354 {CLM:0010002="0.11", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.37", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007034 {STATO:0000663="0.48507464"}
@@ -1830,7 +1830,7 @@ name: MOL NN_4 Spock3 mature myelinating oligodendrocyte (Mmus)
 def: "A mature myelinating oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cldn11 (Mmus), A230001M10Rik (Mmus), Spock3 (Mmus), Rhoj (Mmus). It is distinguished from other MOL NN_4 cells by expression of Spock3, Rhoj. These cells are located in the Midbrain, Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5285 MOL NN_4." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5285 MOL NN_4" EXACT []
 synonym: "Cldn11 (Mmus), A230001M10Rik (Mmus), Spock3 (Mmus), Rhoj (Mmus) expressing mature myelinating oligodendrocyte of brain (Mus musculus)" EXACT []
-is_a: CL:4301614 ! mature myelinating oligodendrocyte
+is_a: CL:4301614 ! mature myelinating oligodendrocyte (Mmus)
 property_value: CLM:0010001 MBA:313 {CLM:0010002="0.14", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.13", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.27", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1846,7 +1846,7 @@ name: MOL NN_4 Art3 mature myelinating oligodendrocyte (Mmus)
 def: "A mature myelinating oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Apod (Mmus), Klk6 (Mmus), Dlc1 (Mmus). It is distinguished from other MOL NN_4 cells by expression of Art3. These cells are located in the Medulla, Pons, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5286 MOL NN_4." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5286 MOL NN_4" EXACT []
 synonym: "Apod (Mmus), Klk6 (Mmus), Dlc1 (Mmus) expressing mature myelinating oligodendrocyte of brain (Mus musculus)" EXACT []
-is_a: CL:4301614 ! mature myelinating oligodendrocyte
+is_a: CL:4301614 ! mature myelinating oligodendrocyte (Mmus)
 property_value: CLM:0010001 MBA:354 {CLM:0010002="0.17", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:771 {CLM:0010002="0.15", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.44", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1862,7 +1862,7 @@ name: MOL NN_4 Il33 mature myelinating oligodendrocyte (Mmus)
 def: "A mature myelinating oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Opalin (Mmus), Grm3 (Mmus), Gm5087 (Mmus). It is distinguished from other MOL NN_4 cells by expression of Il33, Gm5087. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5287 MOL NN_4." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5287 MOL NN_4" EXACT []
 synonym: "Opalin (Mmus), Grm3 (Mmus), Gm5087 (Mmus) expressing mature myelinating oligodendrocyte of brain (Mus musculus)" EXACT []
-is_a: CL:4301614 ! mature myelinating oligodendrocyte
+is_a: CL:4301614 ! mature myelinating oligodendrocyte (Mmus)
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.17", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.41", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007037 {STATO:0000663="0.33333334"}
@@ -1877,7 +1877,7 @@ name: MOL NN_4 Sspo mature myelinating oligodendrocyte (Mmus)
 def: "A mature myelinating oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Mog (Mmus), Anln (Mmus), Gm32633 (Mmus). It is distinguished from other MOL NN_4 cells by expression of Sspo, Selenop. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5288 MOL NN_4." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5288 MOL NN_4" EXACT []
 synonym: "Mog (Mmus), Anln (Mmus), Gm32633 (Mmus) expressing mature myelinating oligodendrocyte of brain (Mus musculus)" EXACT []
-is_a: CL:4301614 ! mature myelinating oligodendrocyte
+is_a: CL:4301614 ! mature myelinating oligodendrocyte (Mmus)
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.11", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.41", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007038 {STATO:0000663="0.36231884"}
