@@ -48,7 +48,7 @@ function generateMerFishFrame(annotation: any, genes_filter: string[] = []): Vis
   const { metadataFilters, categoryId } = generateMetadataFilters(annotation);
   return {
     dataCollectionId: 'K9JN23P24KQCGK9U75A',
-    plotId: 'SY3SLMNPID3C68MGS8V',
+    plotId: 'HSYZPZW1669U821BWYP',
     metadataFilters: metadataFilters,
     camera: {
       projection: 'WEB_IMAGE',
@@ -69,12 +69,12 @@ function generateMerFishFrame(annotation: any, genes_filter: string[] = []): Vis
       transparency: 0.5,
       isTransparent: false,
     },
-    visualizationId: '6MT7UC6ETYECBWF50PK',
+    visualizationId: 'VFOFYPFQGRKUDQUZ3FF',
     projectId: 'LVDBJAW8BI5YSS1QUBG',
     quantitativeFilters: [],
     annotation: {
-      referenceId: 'none',
-      featureTypeReferenceId: 'none',
+      referenceId: 'TLOKWCL95RU03D9PETG',
+      featureTypeReferenceId: '73GVTDXDEGE27M2XJMT',
       isInFront: true,
       fill: { option: 'NONE', color: '#000000', opacity: 100 },
       stroke: { option: 'DEFAULT', color: '#000000', opacity: 100 },

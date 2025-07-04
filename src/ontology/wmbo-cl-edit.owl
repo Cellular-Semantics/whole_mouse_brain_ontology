@@ -1,0 +1,83 @@
+Prefix(:=<http://purl.obolibrary.org/obo/PCL_>)
+Prefix(IAO:=<http://purl.obolibrary.org/obo/IAO_>)
+Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(dcterms:=<http://purl.org/dc/terms/>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/WMBO.owl>
+
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/CLM_0010001>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/CLM_0010002>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/CLM_0010003>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/CLM_0010004>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/CLM_0010005>))
+
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: <http://purl.obolibrary.org/obo/CLM_0010001> (some soma located in)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CLM_0010001> "some soma located in")
+
+# Annotation Property: <http://purl.obolibrary.org/obo/CLM_0010002> (cell ratio)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CLM_0010002> "cell ratio")
+
+# Annotation Property: <http://purl.obolibrary.org/obo/CLM_0010003> (has marker set)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CLM_0010003> "has marker set")
+
+# Annotation Property: <http://purl.obolibrary.org/obo/CLM_0010004> (recall)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CLM_0010004> "recall")
+
+# Annotation Property: <http://purl.obolibrary.org/obo/CLM_0010005> (cluster id)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CLM_0010005> "cluster id")
+
+# Author Annotation Properties
+AnnotationAssertion(rdfs:label <https://purl.brain-bican.org/taxonomy/CCN20230722#CCF_acronym_freq> "CCF acronym freq")
+AnnotationAssertion(rdfs:label <https://purl.brain-bican.org/taxonomy/CCN20230722#CCF_broad_freq> "CCF broad freq")
+AnnotationAssertion(rdfs:label <https://purl.brain-bican.org/taxonomy/CCN20230722#CTX_cluster_id> "CTX cluster id")
+AnnotationAssertion(rdfs:label <https://purl.brain-bican.org/taxonomy/CCN20230722#CTX_cluster_label> "CTX cluster label")
+AnnotationAssertion(rdfs:label <https://purl.brain-bican.org/taxonomy/CCN20230722#CTX_neighborhood_id> "CTX neighborhood id")
+AnnotationAssertion(rdfs:label <https://purl.brain-bican.org/taxonomy/CCN20230722#CTX_neighborhood_label> "CTX neighborhood label")
+AnnotationAssertion(rdfs:label <https://purl.brain-bican.org/taxonomy/CCN20230722#CTX_size> "CTX size")
+AnnotationAssertion(rdfs:label <https://purl.brain-bican.org/taxonomy/CCN20230722#CTX_subclass_id> "CTX subclass id")
+AnnotationAssertion(rdfs:label <https://purl.brain-bican.org/taxonomy/CCN20230722#CTX_subclass_label> "CTX subclass label")
+AnnotationAssertion(rdfs:label <https://purl.brain-bican.org/taxonomy/CCN20230722#CTX_supertype_id> "CTX supertype id")
+AnnotationAssertion(rdfs:label <https://purl.brain-bican.org/taxonomy/CCN20230722#CTX_supertype_label> "CTX supertype label")
+AnnotationAssertion(rdfs:label <https://purl.brain-bican.org/taxonomy/CCN20230722#Dark> "Dark")
+AnnotationAssertion(rdfs:label <https://purl.brain-bican.org/taxonomy/CCN20230722#F> "Female")
+AnnotationAssertion(rdfs:label <https://purl.brain-bican.org/taxonomy/CCN20230722#Glial> "Glial")
+AnnotationAssertion(rdfs:label <https://purl.brain-bican.org/taxonomy/CCN20230722#Light> "Light")
+AnnotationAssertion(rdfs:label <https://purl.brain-bican.org/taxonomy/CCN20230722#M> "Male")
+AnnotationAssertion(rdfs:label <https://purl.brain-bican.org/taxonomy/CCN20230722#Neuronal> "Neuronal")
+AnnotationAssertion(rdfs:label <https://purl.brain-bican.org/taxonomy/CCN20230722#anatomical_annotation> "anatomical annotation")
+AnnotationAssertion(rdfs:label <https://purl.brain-bican.org/taxonomy/CCN20230722#cluster_TF_markers_combo> "cluster TF markers combo")
+AnnotationAssertion(rdfs:label <https://purl.brain-bican.org/taxonomy/CCN20230722#cluster_markers_combo> "cluster markers combo")
+AnnotationAssertion(rdfs:label <https://purl.brain-bican.org/taxonomy/CCN20230722#cluster_markers_combo__within_subclass_> "cluster markers combo (within subclass)")
+AnnotationAssertion(rdfs:label <https://purl.brain-bican.org/taxonomy/CCN20230722#merfish_markers_combo> "merfish markers combo")
+AnnotationAssertion(rdfs:label <https://purl.brain-bican.org/taxonomy/CCN20230722#multiome_size> "multiome size")
+AnnotationAssertion(rdfs:label <https://purl.brain-bican.org/taxonomy/CCN20230722#neighborhood> "neighborhood")
+AnnotationAssertion(rdfs:label <https://purl.brain-bican.org/taxonomy/CCN20230722#np_markers> "np markers")
+AnnotationAssertion(rdfs:label <https://purl.brain-bican.org/taxonomy/CCN20230722#nt_markers> "nt markers")
+AnnotationAssertion(rdfs:label <https://purl.brain-bican.org/taxonomy/CCN20230722#nt_type_combo_label> "nt type combo label")
+AnnotationAssertion(rdfs:label <https://purl.brain-bican.org/taxonomy/CCN20230722#nt_type_label> "nt type label")
+AnnotationAssertion(rdfs:label <https://purl.brain-bican.org/taxonomy/CCN20230722#subclass_markers_combo> "subclass markers combo")
+AnnotationAssertion(rdfs:label <https://purl.brain-bican.org/taxonomy/CCN20230722#subclass_tf_markers_combo> "subclass tf markers combo")
+AnnotationAssertion(rdfs:label <https://purl.brain-bican.org/taxonomy/CCN20230722#supertype_markers_combo> "supertype markers combo")
+AnnotationAssertion(rdfs:label <https://purl.brain-bican.org/taxonomy/CCN20230722#supertype_markers_combo__within_subclass_> "supertype markers combo (within_subclass)")
+AnnotationAssertion(rdfs:label <https://purl.brain-bican.org/taxonomy/CCN20230722#v2_size> "v2 size")
+AnnotationAssertion(rdfs:label <https://purl.brain-bican.org/taxonomy/CCN20230722#v3_size> "v3 size")
+
+############################
+#   Object Properties
+############################
+
+############################
+#   Classes
+############################
+
+)

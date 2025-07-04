@@ -34,7 +34,7 @@ data_vars:
 annotationProperties:
   fbetaConfidenceScore: "STATO:0000663"
   has_precision: "STATO:0000416"
-  has_recall: "PCL:0010068"
+  has_recall: "CLM:0010004"
   algorithm: "IAO:0000064"
   hasDbXref: "oboInOwl:hasDbXref"
   seeAlso: "rdfs:seeAlso"

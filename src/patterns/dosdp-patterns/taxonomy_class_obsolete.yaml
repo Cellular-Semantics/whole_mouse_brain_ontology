@@ -30,15 +30,17 @@ annotationProperties:
   hasDbXref: "oboInOwl:hasDbXref"
   symbol: "IAO:0000028"
   'has nsforest marker': "PCL:0010058"
-  some_soma_located_in: "PCL:0010063"
+  some_soma_located_in: "CLM:0010001"
   assay_label: "PCL:0010064"
-  cell_ratio: "PCL:0010065"
+  cell_ratio: "CLM:0010002"
   deprecated: "owl:deprecated"
+  term_replaced_by: "IAO:0100001"
 
 vars:
   Gross_cell_type: "'cell'"
   Taxon: "'Vertebrata <vertebrates>'"
   Classification: "'cell'"
+  ReplacedBy: "'cell'"
 
 data_vars:
   prefLabel: "xsd:string"
@@ -82,3 +84,5 @@ annotations:
     text: "%s"
     vars:
       - Deprecated
+  - annotationProperty: term_replaced_by
+    var: ReplacedBy

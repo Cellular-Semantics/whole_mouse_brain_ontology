@@ -32,24 +32,25 @@ annotationProperties:
   hasDbXref: "oboInOwl:hasDbXref"
   symbol: "IAO:0000028"
   'has nsforest marker': "PCL:0010058"
-  some_soma_located_in: "PCL:0010063"
+  some_soma_located_in: "CLM:0010001"
 #  assay_label: "PCL:0010064"
   assay: "OBI:0000070"
-  cell_ratio: "PCL:0010065"
+  cell_ratio: "CLM:0010002"
   'has minimal marker': "PCL:0010066"
   evidence: "oboInOwl:evidence"
-  has_marker_set: "PCL:0010067"
+  has_marker_set: "CLM:0010003"
   fbetaConfidenceScore: "STATO:0000663"
 
 list_vars:
   Expresses: "'thing'"
   Minimal_markers: "'sequence_feature'"
   Allen_markers: "'sequence_feature'"
-  Layers: "'layer of neocortex'"
+  Locations: "'layer of neocortex'"
   MBA: "'thing'"
   CCF_acronym_freq: "'thing'"
   NT: "'thing'"
   NT_markers: "'sequence_feature'"
+  Neurotransmitters: "'thing'"
   Individuals: "'thing'"
 
 vars:
@@ -158,6 +159,8 @@ data_vars:
   ws_marker_gene_set_confidence: "xsd:float"
   nsforest_marker_gene_set_1_confidence: "xsd:float"
   nsforest_marker_gene_set_2_confidence: "xsd:float"
+  Neurotransmitters_comment: "xsd:string"
+  Neurotransmitters_publication: "xsd:string"
 
 internal_vars:
   - var_name: Minimal_markers_cat
@@ -170,8 +173,8 @@ internal_vars:
     apply:
       join:
         sep: ', '
-  - var_name: Cortical_layer_cat
-    input: Layers
+  - var_name: Locations_cat
+    input: Locations
     apply:
       join:
         sep: ' or '
@@ -390,6 +393,29 @@ logical_axioms:
          var: NT_marker_7
        - annotationProperty: evidence
          var: NT_marker_8
+   - axiom_type: subClassOf
+     multi_clause:
+       sep: " or "
+       clauses:
+         - text: "'has_soma_location' some %s"
+           vars:
+             - Locations
+   - axiom_type: subClassOf
+     multi_clause:
+       sep: " and "
+       clauses:
+         - text: "'capable_of' some %s"
+           vars:
+             - Neurotransmitters
+     annotations:
+       - annotationProperty: rdfsComment
+         text: "%s"
+         vars:
+           - Neurotransmitters_comment
+       - annotationProperty: hasDbXref
+         text: "%s"
+         vars:
+           - Neurotransmitters_publication
 
 annotations:
 #  - annotationProperty: skosPrefLabel
