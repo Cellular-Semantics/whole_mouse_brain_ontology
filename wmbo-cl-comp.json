@@ -7,7 +7,7 @@
             "basicPropertyValues": [
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#evidence",
-                "val": "https://identifiers.org/ncbigene/11668"
+                "val": "http://identifiers.org/ncbigene/11668"
               }
             ]
           },
@@ -20,7 +20,7 @@
             "basicPropertyValues": [
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#evidence",
-                "val": "https://identifiers.org/ncbigene/11668"
+                "val": "http://identifiers.org/ncbigene/11668"
               }
             ]
           },
@@ -33,15 +33,15 @@
             "basicPropertyValues": [
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#evidence",
-                "val": "https://identifiers.org/ncbigene/13195"
+                "val": "http://identifiers.org/ncbigene/13195"
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#evidence",
-                "val": "https://identifiers.org/ncbigene/140919"
+                "val": "http://identifiers.org/ncbigene/140919"
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#evidence",
-                "val": "https://identifiers.org/ncbigene/72961"
+                "val": "http://identifiers.org/ncbigene/72961"
               }
             ]
           },
@@ -54,15 +54,15 @@
             "basicPropertyValues": [
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#evidence",
-                "val": "https://identifiers.org/ncbigene/140919"
+                "val": "http://identifiers.org/ncbigene/140919"
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#evidence",
-                "val": "https://identifiers.org/ncbigene/14415"
+                "val": "http://identifiers.org/ncbigene/14415"
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#evidence",
-                "val": "https://identifiers.org/ncbigene/14417"
+                "val": "http://identifiers.org/ncbigene/14417"
               }
             ]
           },
@@ -75,15 +75,15 @@
             "basicPropertyValues": [
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#evidence",
-                "val": "https://identifiers.org/ncbigene/14415"
+                "val": "http://identifiers.org/ncbigene/14415"
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#evidence",
-                "val": "https://identifiers.org/ncbigene/14417"
+                "val": "http://identifiers.org/ncbigene/14417"
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#evidence",
-                "val": "https://identifiers.org/ncbigene/22348"
+                "val": "http://identifiers.org/ncbigene/22348"
               }
             ]
           },
@@ -96,7 +96,7 @@
             "basicPropertyValues": [
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#evidence",
-                "val": "https://identifiers.org/ncbigene/15186"
+                "val": "http://identifiers.org/ncbigene/15186"
               }
             ]
           },
@@ -109,7 +109,7 @@
             "basicPropertyValues": [
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#evidence",
-                "val": "https://identifiers.org/ncbigene/216227"
+                "val": "http://identifiers.org/ncbigene/216227"
               }
             ]
           },
@@ -272,6 +272,286 @@
           "obj": "http://purl.obolibrary.org/obo/GO_0061535",
           "pred": "http://purl.obolibrary.org/obo/RO_0002215",
           "sub": "http://purl.obolibrary.org/obo/CL_4307085"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/100043902",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5022181"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/100503592",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5022261"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/102632457",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5022187"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/102638227",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5007652"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/104010",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5016783"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/109979",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5022256"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/12159",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5016821"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/12615",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5022241"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/14281",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5022284"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/14399",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5007649"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/14399",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5016790"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/14432",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5016795"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/14652",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5022214"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/14714",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5004314"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/14714",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5007635"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/14714",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5007802"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/14714",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5019534"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/16840",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5022213"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/16956",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5016812"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/17068",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5022155"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/17219",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5022193"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/17926",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5016801"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/18488",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5016794"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/18545",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5000353"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/18595",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5000366"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/19051",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5022142"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/19144",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5024424"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/208936",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5022200"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/213435",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5022215"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/216227",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5022235"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/22139",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5016818"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/22774",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5022196"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/239337",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5022259"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/241489",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5022263"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/243369",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5029833"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/268527",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5016806"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/268816",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5022216"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/269019",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5022202"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/320784",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5016808"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/373864",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5022239"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/56744",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5016835"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/57915",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5022234"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/624549",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5022198"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/626082",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5016786"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/64085",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5022192"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/65969",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5022265"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/66402",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5016796"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/67473",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5016826"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/72893",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5001598"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/72893",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5007985"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/74563",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5022262"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/76747",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5022264"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/78754",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5022178"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/78896",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5022205"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/78896",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5022220"
+        },
+        {
+          "obj": "http://identifiers.org/ncbigene/96875",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/CLM_5007989"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/CL_0000065",
@@ -3114,286 +3394,6 @@
           "sub": "http://purl.obolibrary.org/obo/CLM_5029833"
         },
         {
-          "obj": "https://identifiers.org/ncbigene/100043902",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5022181"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/100503592",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5022261"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/102632457",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5022187"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/102638227",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5007652"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/104010",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5016783"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/109979",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5022256"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/12159",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5016821"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/12615",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5022241"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/14281",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5022284"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/14399",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5007649"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/14399",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5016790"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/14432",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5016795"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/14652",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5022214"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/14714",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5004314"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/14714",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5007635"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/14714",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5007802"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/14714",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5019534"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/16840",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5022213"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/16956",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5016812"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/17068",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5022155"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/17219",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5022193"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/17926",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5016801"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/18488",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5016794"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/18545",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5000353"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/18595",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5000366"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/19051",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5022142"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/19144",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5024424"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/208936",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5022200"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/213435",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5022215"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/216227",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5022235"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/22139",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5016818"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/22774",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5022196"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/239337",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5022259"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/241489",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5022263"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/243369",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5029833"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/268527",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5016806"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/268816",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5022216"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/269019",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5022202"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/320784",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5016808"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/373864",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5022239"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/56744",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5016835"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/57915",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5022234"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/624549",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5022198"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/626082",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5016786"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/64085",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5022192"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/65969",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5022265"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/66402",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5016796"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/67473",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5016826"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/72893",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5001598"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/72893",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5007985"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/74563",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5022262"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/76747",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5022264"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/78754",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5022178"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/78896",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5022205"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/78896",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5022220"
-        },
-        {
-          "obj": "https://identifiers.org/ncbigene/96875",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/CLM_5007989"
-        },
-        {
           "obj": "https://purl.brain-bican.org/ontology/mbao/MBA_512",
           "pred": "http://purl.obolibrary.org/obo/RO_0002100",
           "sub": "http://purl.obolibrary.org/obo/CL_4300028"
@@ -3889,10 +3889,10 @@
         "basicPropertyValues": [
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2025-07-03"
+            "val": "2025-07-07"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/pcl/releases/2025-07-03/../../wmbo-cl-comp.json"
+        "version": "http://purl.obolibrary.org/obo/pcl/releases/2025-07-07/../../wmbo-cl-comp.json"
       },
       "nodes": [
         {
@@ -28332,6 +28332,1314 @@
           "type": "CLASS"
         },
         {
+          "id": "http://identifiers.org/ncbigene/100040736",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/100042056",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/100043902",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/100503592",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/100504234",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/101100",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/101772",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/102632457",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/102635243",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/102638227",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/103978",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/104010",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/104174",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/104245",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/104798",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/107376",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/107626",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/108000",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/108068",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/108069",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/108073",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/109272",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/109648",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/109979",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/110648",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/110862",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/114873",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/11540",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/11606",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/11668",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/11682",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/116847",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/116849",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/11815",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/11816",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/11826",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/11829",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/118446",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/12111",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/12159",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/12161",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/12192",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/12259",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/12268",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/12290",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/12322",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/12374",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/12424",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/12494",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/12550",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/12615",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/12741",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/12951",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/12971",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/13051",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/13142",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/13176",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/13199",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/13371",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/13411",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/13488",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/13609",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/13618",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/13649",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/13865",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/14013",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/14165",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/14281",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/14360",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/14399",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/14400",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/14412",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/14432",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/14560",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/14580",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/14609",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/14652",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/14695",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/14699",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/14710",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/14714",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/14724",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/14765",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/14799",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/14800",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/14803",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/14811",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/14812",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/14813",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/14870",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/15221",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/15228",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/15364",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/15478",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/15483",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/16008",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/16011",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/16323",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/16372",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/16426",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/16572",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/16590",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/16840",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/16870",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/16956",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/17068",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/170790",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/171211",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/17132",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/171469",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/17155",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/17219",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/17300",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/17304",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/17345",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/17441",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/17533",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/17536",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/17926",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/18133",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/18417",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/18424",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/18479",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/18488",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/18504",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/18545",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/18553",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/18588",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/18595",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/18610",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/18755",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/19049",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/19051",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/19144",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/19216",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/19227",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/19263",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/19293",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/19734",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/20200",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/20284",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/20311",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/20315",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/20363",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/20377",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/20378",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/20440",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/20491",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/20743",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/208613",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/208898",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/208936",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/20963",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/210530",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/212377",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/213435",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/213783",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/21386",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/21416",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/21418",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/21419",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/214944",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/215378",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/216227",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/216616",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/216892",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/216961",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/218194",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/21824",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/21828",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/218772",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/21973",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/21990",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/22139",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/22283",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/223332",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/22348",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/223843",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/223970",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/224079",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/226115",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/226250",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/227580",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/22771",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/22774",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/228731",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/230726",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/231633",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/232174",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/232685",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/233537",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/234258",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/235130",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/237979",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/23829",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/23876",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/239337",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/239405",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/240479",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/241159",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/241489",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/242253",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/242425",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/242735",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/243369",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/243937",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/244954",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/245827",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/246049",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/26558",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/26563",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/268527",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/268709",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/268780",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/268816",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/269019",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/269275",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/269629",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/26968",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/270150",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/27428",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/276952",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/277468",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/278304",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/30952",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/319903",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/319922",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/319951",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/319984",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/320772",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/320784",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/320981",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/328354",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/329078",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/329274",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/333564",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/338521",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/373864",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/381112",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/381925",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/384071",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/407831",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/433022",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/50768",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/50779",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/50914",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/50929",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/51797",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/53896",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/54216",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/54612",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/56213",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/56410",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/56744",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/56747",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/57265",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/574402",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/57915",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/58187",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/58222",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/58807",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/59058",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/620376",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/624549",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/626082",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/629147",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/63830",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/64085",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/65969",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/66214",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/66240",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/66270",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/66353",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/66402",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/66425",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/665119",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/66540",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/66673",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/667742",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/66905",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/66977",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/67473",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/67701",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/67791",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/67801",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/67844",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/68026",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/68070",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/68178",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/68458",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/68743",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/69239",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/70134",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/71481",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/71660",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/72258",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/72446",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/72555",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/72893",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/72902",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/72927",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/73940",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/74145",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/74318",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/74563",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/75172",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/75396",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/75465",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/75823",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/76088",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/76422",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/76438",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/76453",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/76747",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/77018",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/77125",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/77808",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/78748",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/78754",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/78896",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/80837",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/83430",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/83453",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/83921",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/96875",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/98267",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://identifiers.org/ncbigene/98363",
+          "type": "CLASS"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/CL_0000000",
           "type": "CLASS"
         },
@@ -28525,1314 +29833,6 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/SO_0001260",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/100040736",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/100042056",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/100043902",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/100503592",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/100504234",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/101100",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/101772",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/102632457",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/102635243",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/102638227",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/103978",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/104010",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/104174",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/104245",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/104798",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/107376",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/107626",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/108000",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/108068",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/108069",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/108073",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/109272",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/109648",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/109979",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/110648",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/110862",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/114873",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/11540",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/11606",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/11668",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/11682",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/116847",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/116849",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/11815",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/11816",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/11826",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/11829",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/118446",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/12111",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/12159",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/12161",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/12192",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/12259",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/12268",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/12290",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/12322",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/12374",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/12424",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/12494",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/12550",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/12615",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/12741",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/12951",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/12971",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/13051",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/13142",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/13176",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/13199",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/13371",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/13411",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/13488",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/13609",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/13618",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/13649",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/13865",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/14013",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/14165",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/14281",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/14360",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/14399",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/14400",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/14412",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/14432",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/14560",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/14580",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/14609",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/14652",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/14695",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/14699",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/14710",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/14714",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/14724",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/14765",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/14799",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/14800",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/14803",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/14811",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/14812",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/14813",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/14870",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/15221",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/15228",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/15364",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/15478",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/15483",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/16008",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/16011",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/16323",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/16372",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/16426",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/16572",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/16590",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/16840",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/16870",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/16956",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/17068",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/170790",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/171211",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/17132",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/171469",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/17155",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/17219",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/17300",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/17304",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/17345",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/17441",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/17533",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/17536",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/17926",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/18133",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/18417",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/18424",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/18479",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/18488",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/18504",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/18545",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/18553",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/18588",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/18595",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/18610",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/18755",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/19049",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/19051",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/19144",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/19216",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/19227",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/19263",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/19293",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/19734",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/20200",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/20284",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/20311",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/20315",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/20363",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/20377",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/20378",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/20440",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/20491",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/20743",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/208613",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/208898",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/208936",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/20963",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/210530",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/212377",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/213435",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/213783",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/21386",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/21416",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/21418",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/21419",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/214944",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/215378",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/216227",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/216616",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/216892",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/216961",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/218194",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/21824",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/21828",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/218772",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/21973",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/21990",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/22139",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/22283",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/223332",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/22348",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/223843",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/223970",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/224079",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/226115",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/226250",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/227580",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/22771",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/22774",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/228731",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/230726",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/231633",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/232174",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/232685",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/233537",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/234258",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/235130",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/237979",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/23829",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/23876",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/239337",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/239405",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/240479",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/241159",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/241489",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/242253",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/242425",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/242735",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/243369",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/243937",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/244954",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/245827",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/246049",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/26558",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/26563",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/268527",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/268709",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/268780",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/268816",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/269019",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/269275",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/269629",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/26968",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/270150",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/27428",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/276952",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/277468",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/278304",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/30952",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/319903",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/319922",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/319951",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/319984",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/320772",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/320784",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/320981",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/328354",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/329078",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/329274",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/333564",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/338521",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/373864",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/381112",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/381925",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/384071",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/407831",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/433022",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/50768",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/50779",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/50914",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/50929",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/51797",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/53896",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/54216",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/54612",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/56213",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/56410",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/56744",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/56747",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/57265",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/574402",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/57915",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/58187",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/58222",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/58807",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/59058",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/620376",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/624549",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/626082",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/629147",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/63830",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/64085",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/65969",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/66214",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/66240",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/66270",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/66353",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/66402",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/66425",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/665119",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/66540",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/66673",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/667742",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/66905",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/66977",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/67473",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/67701",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/67791",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/67801",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/67844",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/68026",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/68070",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/68178",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/68458",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/68743",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/69239",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/70134",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/71481",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/71660",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/72258",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/72446",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/72555",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/72893",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/72902",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/72927",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/73940",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/74145",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/74318",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/74563",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/75172",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/75396",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/75465",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/75823",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/76088",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/76422",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/76438",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/76453",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/76747",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/77018",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/77125",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/77808",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/78748",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/78754",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/78896",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/80837",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/83430",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/83453",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/83921",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/96875",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/98267",
-          "type": "CLASS"
-        },
-        {
-          "id": "https://identifiers.org/ncbigene/98363",
           "type": "CLASS"
         },
         {
