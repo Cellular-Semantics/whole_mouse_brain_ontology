@@ -29674,6 +29674,18 @@
           "type": "PROPERTY"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/STATO_0000416",
+          "lbl": "precision",
+          "propertyType": "ANNOTATION",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/STATO_0000663",
+          "lbl": "F-beta score",
+          "propertyType": "ANNOTATION",
+          "type": "PROPERTY"
+        },
+        {
           "id": "https://purl.brain-bican.org/taxonomy/CCN20230722#CCF_acronym_freq",
           "lbl": "CCF acronym freq",
           "propertyType": "ANNOTATION",
@@ -31635,16 +31647,6 @@
         {
           "id": "http://purl.obolibrary.org/obo/RO_0015003",
           "propertyType": "OBJECT",
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/STATO_0000416",
-          "propertyType": "ANNOTATION",
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/STATO_0000663",
-          "propertyType": "ANNOTATION",
           "type": "PROPERTY"
         },
         {
