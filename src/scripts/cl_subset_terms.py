@@ -2,17 +2,21 @@ import argparse
 import csv
 import glob
 import os
+import yaml
 
 from rdflib import Graph
 
 PATTERNS_FOLDER = os.path.join(os.path.dirname(os.path.dirname(__file__)), "patterns", "data", "default")
 
+GENE_COLUMNS = ["NT_marker_1", "NT_marker_2", "NT_marker_3", "NT_marker_4", "NT_marker_5", "NT_marker_6", "NT_marker_7", "NT_marker_8", "Markers"]
+PREFIXES_YAML = os.path.join(os.path.dirname(os.path.dirname(__file__)), "ontology/template_prefixes.yaml")
 
-def collect_classes(data_folder):
+def collect_classes(data_folder, collect_genes=False):
     """
     Collects terms from TSV files in the specified folder that match the cl subset prefixes.
     Args:
         data_folder: DOSDP patterns data folder path.
+        collect_genes: If True, also collects gene terms from specified columns.
 
     Returns: The set of terms that match the cl subset prefixes.
     """
@@ -21,6 +25,7 @@ def collect_classes(data_folder):
         "http://purl.obolibrary.org/obo/CLM_",
     )
     tsv_files = glob.glob(os.path.join(data_folder, "*.tsv"))
+    template_prefixes = get_template_prefixes(PREFIXES_YAML)
 
     terms = set()
     for file in tsv_files:
@@ -33,11 +38,29 @@ def collect_classes(data_folder):
                     defined_class = row.get("defined_class", "")
                     if any(defined_class.startswith(prefix) for prefix in prefixes):
                         terms.add(defined_class)
+                        if collect_genes:
+                            for col in GENE_COLUMNS:
+                                #  collect gene terms and expand curies
+                                for gene in row.get(col, "").split("|"):
+                                    if ":" in gene:
+                                        prefix, local_id = gene.split(":", 1)
+                                        url = template_prefixes.get(prefix)
+                                        if url:
+                                            terms.add(f"{url}{local_id}")
+                                        else:
+                                            terms.add(gene)
+                                    else:
+                                        terms.add(gene)
+
         except Exception as e:
             print(f"Error reading '{file}': {e}")
 
     return terms
 
+def get_template_prefixes(prefixes_yaml):
+    with open(prefixes_yaml, 'r', encoding='utf-8') as f:
+        prefix_dict = yaml.safe_load(f)
+    return prefix_dict
 
 def create_seed_file(output_path, terms):
     """
@@ -170,7 +193,7 @@ def main():
     args = parser.parse_args()
 
     if args.command == "classes":
-        terms = collect_classes(PATTERNS_FOLDER)
+        terms = collect_classes(PATTERNS_FOLDER, collect_genes=True)
         create_seed_file(args.output, terms)
     elif args.command == "individuals":
         terms = collect_individuals(args.input, args.classes)
