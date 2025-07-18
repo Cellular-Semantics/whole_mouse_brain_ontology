@@ -251,7 +251,7 @@ $(RELEASEDIR)/$(ONT)-cl-comp.owl: $(ONT)-pcl-comp.owl $(TMPDIR)/cl_component_ter
 	$(ROBOT) remove --input $(RELEASEDIR)/$(ONT)-pcl-comp.owl --select "<http://purl.obolibrary.org/obo/PCL_*>" --select "<https://purl.brain-bican.org/taxonomy/CCN20230722/*>" --signature true \
 	filter --term-file $(TMPDIR)/cl_component_terms.txt --select "annotations anonymous self" --signature true --trim false  \
 	remove --select "<http://purl.obolibrary.org/obo/PCL_01*>" --signature true \
-	query --update ../sparql/delete_deprecated_pcl_terms.ru \
+	query --update ../sparql/delete_deprecated_pcl_terms.ru --update ../sparql/delete_multiple_gene_labels.ru \
 	merge -i $(TMPDIR)/cl_individuals.owl \
 	merge -i wmbo-cl-edit.owl --output $@
 $(RELEASEDIR)/$(ONT)-cl-comp.obo: $(RELEASEDIR)/$(ONT)-cl-comp.owl

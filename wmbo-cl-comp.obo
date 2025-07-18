@@ -3978,7 +3978,7 @@ id: CLM:5016786
 name: Gm20754 (Yao - within subclass).
 xref: https://doi.org/10.1038/s41586-023-06812-z
 is_a: SO:0001260
-relationship: BFO:0000051 http://identifiers.org/ncbigene/626082 ! Gm38353 (Mmus)
+relationship: BFO:0000051 http://identifiers.org/ncbigene/626082 ! Gm20754 (Mmus)
 
 [Term]
 id: CLM:5016788
@@ -5096,7 +5096,6 @@ is_a: SO:0000704
 [Term]
 id: http://identifiers.org/ncbigene/100503592
 name: A330076C08Rik (Mmus)
-name: Gm29676 (Mmus)
 is_a: SO:0000704
 
 [Term]
@@ -6427,7 +6426,6 @@ is_a: SO:0000704
 [Term]
 id: http://identifiers.org/ncbigene/626082
 name: Gm20754 (Mmus)
-name: Gm38353 (Mmus)
 is_a: SO:0000704
 
 [Term]

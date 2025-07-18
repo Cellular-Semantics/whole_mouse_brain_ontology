@@ -508,7 +508,6 @@
     <owl:Class rdf:about="http://identifiers.org/ncbigene/100503592">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>A330076C08Rik (Mmus)</rdfs:label>
-        <rdfs:label>Gm29676 (Mmus)</rdfs:label>
     </owl:Class>
     
 
@@ -2903,7 +2902,6 @@
     <owl:Class rdf:about="http://identifiers.org/ncbigene/626082">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>Gm20754 (Mmus)</rdfs:label>
-        <rdfs:label>Gm38353 (Mmus)</rdfs:label>
     </owl:Class>
     
 
