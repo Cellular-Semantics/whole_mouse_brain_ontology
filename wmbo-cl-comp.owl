@@ -97,17 +97,13 @@
 
     <!-- http://purl.obolibrary.org/obo/STATO_0000416 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/STATO_0000416">
-        <rdfs:label>precision</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/STATO_0000416"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/STATO_0000663 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/STATO_0000663">
-        <rdfs:label>F-beta score</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/STATO_0000663"/>
     
 
 

@@ -11,8 +11,8 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 Ontology(<http://purl.obolibrary.org/obo/WMBO.owl>
 
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/STATO_0000663>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/STATO_0000416>))
+# Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/STATO_0000663>))
+# Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/STATO_0000416>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/CLM_0010001>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/CLM_0010002>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/CLM_0010003>))
@@ -22,9 +22,9 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/CLM_0010005>))
 ############################
 #   Annotation Properties
 ############################
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/STATO_0000663> "F-beta score")
+# AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/STATO_0000663> "F-beta score")
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/STATO_0000416> "precision")
+# AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/STATO_0000416> "precision")
 
 # Annotation Property: <http://purl.obolibrary.org/obo/CLM_0010001> (some soma located in)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CLM_0010001> "some soma located in")
