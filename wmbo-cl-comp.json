@@ -5559,10 +5559,10 @@
         "basicPropertyValues": [
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2025-07-20"
+            "val": "2025-09-15"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/pcl/releases/2025-07-20/../../wmbo-cl-comp.json"
+        "version": "http://purl.obolibrary.org/obo/pcl/releases/2025-09-15/../../wmbo-cl-comp.json"
       },
       "nodes": [
         {
@@ -14871,7 +14871,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4307026",
-          "lbl": "Bergman glial cell (Mmus)",
+          "lbl": "Bergmann glial cell (Mmus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -14897,6 +14897,10 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
                 "val": "Bergman glial cell (Mmus)"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Bergmann glial cell (Mmus)"
               },
               {
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
