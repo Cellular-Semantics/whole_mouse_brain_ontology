@@ -811,6 +811,7 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 [Term]
 id: CL:4307026
 name: Bergman glial cell (Mmus)
+name: Bergmann glial cell (Mmus)
 def: "A Bergmann glial cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr37l1 (Mmus), Ctxn3 (Mmus). It is distinguished from other Astro-Epen cells by expression of Gpr37l1, Ctxn3. These cells are located in the Cerebellum, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5206 Bergmann NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1157 Bergmann NN_1" EXACT []
 synonym: "316 Bergmann NN" EXACT []
@@ -823,6 +824,7 @@ property_value: CLM:0010003 CLM:5006956 {STATO:0000663="0.6818182"}
 property_value: CLM:0010003 CLM:5007976 {STATO:0000663="0.8908046"}
 property_value: CLM:0010003 CLM:5022176
 property_value: IAO:0000028 "Bergman glial cell (Mmus)" xsd:string
+property_value: IAO:0000028 "Bergmann glial cell (Mmus)" xsd:string
 property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTIwNiBCZXJnbWFubiBOTl8xAAAEAQECgazGjoGWFSADhGpN%2FYRYGE0ABQAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJIU1laUFpXMTY2OVU4MjFCV1lQAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgE1MjA2IEJlcmdtYW5uIE5OXzEAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA" xsd:string {name="Reference data on Allen Brain Cell Atlas"}
 property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad" xsd:string {comment="Warning large data file!", name="h5ad data file for CS20230722_CLAS_30"}
 

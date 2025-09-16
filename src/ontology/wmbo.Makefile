@@ -107,7 +107,7 @@ $(COMPONENTSDIR)/wmb_taxonomy.owl:
 # merge all templates except application specific ones
 .PHONY: $(COMPONENTSDIR)/all_templates.owl
 $(COMPONENTSDIR)/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_OBSOLETE_CLASS_FILES) $(OWL_MARKER_SET_FILES) $(OWL_NSF_MARKER_SET_FILES) $(OWL_WS_MARKER_SET_FILES) $(OWL_EVIDENCE_MARKER_SET_FILES) $(COMPONENTSDIR)/wmb_taxonomy.owl
-		$(ROBOT) merge $(patsubst %, -i %, $(filter-out $(OWL_FILES), $^)) \
+		$(ROBOT) merge $(patsubst %, -i %, $^) \
 	 --collapse-import-closure false \
 	 annotate --ontology-iri ${BDS_BASE}$@  \
 	 query --update ../sparql/replace_string_to_float.ru  \
