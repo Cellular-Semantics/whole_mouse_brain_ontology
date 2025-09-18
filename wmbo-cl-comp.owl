@@ -15121,7 +15121,6 @@
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5006956"/>
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5007976"/>
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5022176"/>
-        <obo:IAO_0000028>Bergman glial cell (Mmus)</obo:IAO_0000028>
         <obo:IAO_0000028>Bergmann glial cell (Mmus)</obo:IAO_0000028>
         <obo:IAO_0000115>A Bergmann glial cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr37l1 (Mmus), Ctxn3 (Mmus). It is distinguished from other Astro-Epen cells by expression of Gpr37l1, Ctxn3. These cells are located in the Cerebellum, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5206 Bergmann NN_1.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>1157 Bergmann NN_1</oboInOwl:hasExactSynonym>
