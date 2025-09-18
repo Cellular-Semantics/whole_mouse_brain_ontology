@@ -810,7 +810,6 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 
 [Term]
 id: CL:4307026
-name: Bergman glial cell (Mmus)
 name: Bergmann glial cell (Mmus)
 def: "A Bergmann glial cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr37l1 (Mmus), Ctxn3 (Mmus). It is distinguished from other Astro-Epen cells by expression of Gpr37l1, Ctxn3. These cells are located in the Cerebellum, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5206 Bergmann NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1157 Bergmann NN_1" EXACT []
