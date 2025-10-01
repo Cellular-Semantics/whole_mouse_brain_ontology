@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-import requests
 from pathlib import Path
 import os
+import pandas as pd
 
 SHEET_ID = "1LkeHNxWd5eltpbbYzH2aocMpnZjpIS7PpwXFk9d5ggg"
 
@@ -47,15 +47,13 @@ for (tab_name, gid), rel_target in zip(TABS, TARGET_PATHS):
     out_name = strip_prefix(tab_name, "WMBO") or "sheet"
     out_file = out_dir / f"{out_name}.tsv"
 
-    # Download TSV directly
     url = f"https://docs.google.com/spreadsheets/d/{SHEET_ID}/export?format=tsv&gid={gid}"
-    with requests.get(url, timeout=60) as r:
-        r.raise_for_status()
-        # Normalize line endings to LF
-        # (Google often serves CRLF for Excel friendliness)
-        text = r.content.decode("utf-8", errors="replace")
-        text = text.replace("\r\n", "\n").replace("\r", "\n")
-        with open(out_file, "w", encoding="utf-8", newline="\n") as f:
-            f.write(text)
+    df = pd.read_csv(url, sep="\t")
+
+    if not df.empty:
+        first_col = df.columns[0]
+        df = df.sort_values(by=first_col, kind="mergesort", na_position="last")
+
+    df.to_csv(out_file, sep="\t", index=False, lineterminator="\n")
 
     print(f"Saved {out_file}")
