@@ -8,3 +8,4 @@ requests
 # pygraphviz
 rdflib
 levenshtein
+requests
