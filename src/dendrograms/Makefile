@@ -15,8 +15,10 @@ ABC_URLS_NSFOREST_MARKER_SET = $(patsubst %, ./%_abc_urls_nsforest_marker_set.js
 ABC_URLS_WS_MARKER_SET = $(patsubst %, ./%_abc_urls_ws_marker_set.json, $(JOBS))
 
 SHEETS_SCRIPT := ../scripts/google_sheets_to_tsv.py
+TAXONOMY_URL := https://raw.githubusercontent.com/brain-bican/whole_mouse_brain_taxonomy/main/CCN20230722.json
 
-all: sheets $(TEMPLATE_FILES) $(TEMPLATE_CLASS_BASE_FILES) $(TEMPLATE_CLASS_CURATION_FILES) \
+
+all: fetch-ccn sheets $(TEMPLATE_FILES) $(TEMPLATE_CLASS_BASE_FILES) $(TEMPLATE_CLASS_CURATION_FILES) \
 	$(TEMPLATE_MARKER_SET_FILES) $(TEMPLATE_NSFOREST_MARKER_SET_FILES) \
 	$(TEMPLATE_WS_MARKER_SET_FILES) $(TEMPLATE_EVIDENCE_MARKER_SET_FILES) \
 	$(ABC_URLS) $(ABC_URLS_MARKER_SET) $(ABC_URLS_EVIDENCE_MARKER_SET) \
@@ -27,8 +29,14 @@ sheets: $(SHEETS_SCRIPT)
 	@echo "==> Exporting Google Sheets tabs to TSV..."
 	@python $(SHEETS_SCRIPT)
 
-CCN20230722.json:
-	wget https://raw.githubusercontent.com/brain-bican/whole_mouse_brain_taxonomy/refs/heads/cloud-rltbl/CCN20230722.json -O $@
+.PHONY: fetch-ccn
+fetch-ccn: CCN20230722.json
+
+CCN20230722.json: FORCE
+	@echo "==> Checking for updates to CCN20230722.json (main)..."
+	@curl -fSL -z $@ "$(TAXONOMY_URL)" -o $@ && echo "Saved/updated $@" || echo "No change"
+
+FORCE:
 
 ../templates/%.tsv: %.json %_abc_urls.json ../patterns/data/default/%_class_curation.tsv
 	python ../scripts/template_runner.py generator -i $< -o $@
