@@ -12,16 +12,60 @@ The Whole Mouse Brain Ontology (WMBO) integrates anatomical location information
 - **Integration**: Uberon Ontology for standard anatomical terminology
 - **Reference**: https://atlas.brain-map.org/ - Allen Brain Atlas spatial reference
 
-### Spatial Data Sources
-- **Cell type locations**: Derived from scRNA-seq spatial mapping
-- **CCF coordinates**: Allen Common Coordinate Framework spatial assignments
-- **Broad regions**: High-level anatomical divisions
-- **Acronym regions**: Detailed anatomical subregions
+### Source Data Files
+
+#### 1. Core Cluster Annotation Data
+**File**: `src/dendrograms/supplementary/version2/cluster_annotation_CCN20230722.csv` (2.9MB)
+- **Content**: Primary spatial data for all cell clusters
+- **Key Fields**:
+  - `CCF_broad.freq`: Broad anatomical region frequencies (e.g., "Isocortex:0.57,CTXsp:0.21,OLF:0.2")
+  - `CCF_acronym.freq`: Detailed anatomical subregion frequencies (e.g., "EPd:0.11,OLF:0.11,SSs6a:0.1")
+  - `anatomical_annotation`: Expert anatomical location assignments
+  - `cluster_id_label`: Full cluster names with anatomical abbreviations
+- **Usage**: Primary source for CCF spatial assignments and anatomical validation
+
+#### 2. Cluster Membership Data
+**File**: `src/dendrograms/supplementary/version2/cluster_to_cluster_annotation_membership.csv` (2.2MB)
+- **Content**: Cell cluster metadata and cross-references
+- **Key Fields**:
+  - `cluster_annotation_term_label`: CS20230722_CLUS_XXXX identifiers
+  - `cluster_annotation_term_name`: Human-readable cluster names
+  - `number_of_cells`: Cell count per cluster
+- **Usage**: Links cluster identifiers to anatomical assignments
+
+#### 3. External Taxonomy Graph
+**Source**: `https://raw.githubusercontent.com/brain-bican/whole_mouse_brain_taxonomy/refs/heads/main/CCN20230722.rdf`
+- **Content**: Official BRAIN Initiative Cell Census Network taxonomy RDF
+- **Usage**: Hierarchical spatial relationships via RO:0015003 (has_soma_location)
+- **Validation**: Ensures 5 labelsets and proper spatial hierarchy
 
 ### Anatomical Validation Sources
-- **Mouse Brain Atlas Ontology (MBAO)**: `src/dendrograms/resources/mbao-base-materialized.owl`
-- **Uberon integration**: Standard anatomical ontology terms
-- **Manual curation**: Expert review of location assignments
+
+#### 1. Mouse Brain Atlas Ontology (Materialized)
+**File**: `src/dendrograms/resources/mbao-base-materialized.owl` (3.7MB)
+- **Content**: Materialized Allen Mouse Brain Atlas ontology with closure over part_of relationships
+- **Format**: OWL/XML format
+- **Usage**: SPARQL queries for anatomical term validation and hierarchy checking
+- **Function**: Validates anatomical abbreviations against official MBA structure
+
+#### 2. Uberon Integration
+- **Standard anatomical ontology terms**: Cross-species anatomical vocabulary
+- **Relationship properties**: BFO:0000050 (part_of), RO:0002100 (has_soma_location)
+- **Usage**: Standard compliance and cross-ontology mapping
+
+### Spatial Data Processing
+
+#### CCF Coordinate Framework Data
+- **Broad regions**: High-level anatomical divisions from CCF_broad.freq
+  - Example: "Isocortex:0.57" = 57% of cells in isocortex
+- **Acronym regions**: Detailed subregions from CCF_acronym.freq
+  - Example: "EPd:0.11,OLF:0.11,SSs6a:0.1" = distribution across specific nuclei
+- **Threshold**: Minimum 10% cell presence for region assignment (BRAIN_REGION_THRESHOLD = 0.1)
+
+#### Manual Anatomical Annotations
+- **Expert review**: Curator-assigned anatomical locations in `anatomical_annotation` field
+- **Examples**: "CLA-EPd-iCTX", "TPE-AI mostly", "iCTX"
+- **Quality control**: Cross-validation against CCF frequencies
 
 ## Processing Scripts
 

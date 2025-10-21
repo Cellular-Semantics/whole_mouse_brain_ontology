@@ -159,6 +159,92 @@ except Exception as e:
 - **No record** of transformation decisions
 - **No metadata** about CL migration rationale
 
+### 5. **Individual Cluster IRI Changes and Mass Deletion**
+
+**⚠️ CRITICAL DISCOVERY**: The CL module generation process makes **systematic changes to individual cluster IRIs** and **eliminates 98.5% of cluster individuals**.
+
+#### **IRI Namespace Transformation**
+```python
+# Original RDF Input (CCN20230722.rdf)
+xml:base="https://purl.brain-bican.org/ontology/CCN20230722/"
+# Individual IRIs: https://purl.brain-bican.org/ontology/CCN20230722/CS20230722_CLUS_XXXX
+
+# CL Module Output (wmbo-cl-comp.owl)
+# Individual IRIs: https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLUS_XXXX
+```
+
+**IRI Change**: `ontology/CCN20230722/` ➜ `taxonomy/CCN20230722/`
+
+#### **Massive Individual Elimination**
+- **Input**: 5,322 cluster individuals in `CCN20230722.rdf`
+- **Output**: 80 cluster individuals in `wmbo-cl-comp.owl`
+- **Elimination Rate**: 98.5% of individuals **completely removed**
+
+#### **Mechanism of IRI Changes**
+
+**Step 1: Template Generation Process** (`template_generation_tools.py:28`)
+```python
+BICAN_INDV_BASE = 'https://purl.brain-bican.org/taxonomy/CCN20230722/'
+# Template generation transforms ontology/ ➜ taxonomy/ namespace
+```
+
+**Step 2: ROBOT Processing Pipeline** (`wmbo.Makefile:251`)
+```makefile
+$(ROBOT) remove --input $(RELEASEDIR)/$(ONT)-pcl-comp.owl \
+    --select "<https://purl.brain-bican.org/taxonomy/CCN20230722/*>" \
+    --signature true \
+    filter --term-file $(TMPDIR)/cl_component_terms.txt
+```
+- **`--signature true`**: Transforms/removes references to BICAN taxonomy individuals
+- **Aggressive filtering**: Only individuals matching CL subset terms survive
+
+**Step 3: Individual Trimming** (`cl_subset_terms.py:148-163`)
+```sparql
+DELETE {
+  ?s RO:0015003 ?value .
+  ?value ?p ?o .
+}
+WHERE {
+  ?s RO:0015003 ?value .
+  ?value ?p ?o .
+  FILTER(STRSTARTS(STR(?value), "https://purl.brain-bican.org/taxonomy/CCN20230722/"))
+  FILTER(?value NOT IN ({filter_clause}))
+}
+```
+- **Bulk deletion** of individuals not in seed file
+- **No recovery mechanism** for deleted individuals
+
+#### **Impact on Data Integrity**
+
+**Example Transformation: CS20230722_CLUS_4606**
+
+*Original RDF (minimal):*
+```xml
+<rdf:Description rdf:about="CS20230722_CLUS_4606">
+  <rdfs:label>4606 Pineal Crx Glut_1</rdfs:label>
+  <CAS:rationale>Consistent with this cell set being composed of Pinealocytes...</CAS:rationale>
+  <CAS:marker_gene_evidence>Crx</CAS:marker_gene_evidence>
+</rdf:Description>
+```
+
+*CL Module Output (enriched but different namespace):*
+```xml
+<owl:NamedIndividual rdf:about="https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLUS_4606">
+  <rdf:type rdf:resource="http://purl.obolibrary.org/obo/PCL_0010001"/>
+  <obo:CLM_0010005>CS20230722_CLUS_4606</obo:CLM_0010005>
+  <rdfs:label>4606 Pineal Crx Glut_1 CS20230722_CLUS_4606</rdfs:label>
+  <CCN20230722:CCF_acronym_freq>NA:0.57,V3:0.38</CCN20230722:CCF_acronym_freq>
+  <!-- Extensive additional annotations -->
+</owl:NamedIndividual>
+```
+
+#### **Consequences for External Systems**
+
+1. **Broken External References**: Any system referencing `https://purl.brain-bican.org/ontology/CCN20230722/CS20230722_CLUS_XXXX` will fail
+2. **Lost Individual Mappings**: 98.5% of cluster individuals simply disappear from CL module
+3. **Namespace Confusion**: Two different namespaces for the same conceptual individuals
+4. **Data Provenance Loss**: No tracking of which individuals were eliminated or why
+
 ## **SPECIFIC FAILURE SCENARIOS**
 
 ### Scenario 1: **Taxonomy Update Breaks All References**
@@ -167,6 +253,31 @@ except Exception as e:
 3. Every CL_43XXXXX identifier changes
 4. All external references to WMBO-generated CL terms break
 5. **NO MECHANISM TO UPDATE EXTERNAL SYSTEMS**
+
+**Concrete Example**: Adding one annotation breaks all CL IDs
+- **Before taxonomy update**:
+  ```python
+  # cl_id_factory.py:46-50 - Original calculation
+  # CLAS labelset has 50 annotations -> range starts at 4300000
+  # CLUS labelset range starts at 4300000 + (50 * 1.15) = 4300057
+  # CS20230722_CLUS_0001 gets ID: CL:4300058
+  ```
+
+- **After adding ONE annotation to CLAS**:
+  ```python
+  # CLAS labelset now has 51 annotations -> range still starts at 4300000
+  # CLUS labelset range NOW starts at 4300000 + (51 * 1.15) = 4300058
+  # CS20230722_CLUS_0001 gets NEW ID: CL:4300059  # CHANGED!
+  ```
+
+- **Catastrophic reference breakage**:
+  ```python
+  # ALL external systems referencing CL:4300058 now broken
+  # Publications citing CL:4300058 point to wrong concept
+  # Annotation pipelines using CL:4300058 fail
+  # Cross-ontology mappings become invalid
+  # NO automated update mechanism exists
+  ```
 
 ### Scenario 2: **Official CL ID Collision**
 1. Cell Ontology assigns official term CL:4300028
@@ -182,6 +293,46 @@ except Exception as e:
 4. **Researcher cannot trace term provenance**
 5. Scientific reproducibility compromised
 
+**Concrete Example**: CS20230722_CLAS_25 (Pineal Glut) migration
+- **Original PCL data preserved**:
+  ```json
+  "rationale": "Consistent with this cell set being composed of Pinealocytes, a combination of Pinealocyte markers Gngt1 and Crx can identify the cells in this cluster with a confidence (F-beta score) of 0.91...",
+  "rationale_dois": ["https://doi.org/10.1111/j.1600-079x.1996.tb00284.x", "https://doi.org/10.3389/fendo.2019.00590"],
+  "marker_gene_evidence": ["Crx", "Gngt1", "Tph1", "Asmt", "Gngt2"],
+  "neurotransmitter_rationale": "Slc17a7:9.91,Slc17a6:4.87",
+  "neurotransmitter_marker_gene_evidence": ["Slc17a7", "Slc17a6"]
+  ```
+
+- **After CL migration - DATA PERMANENTLY LOST**:
+  ```python
+  # template_generation_tools.py:423-432
+  obsolete_d['Comment'] = "This PCL class is no longer in use; it has been relocated to CL."
+  obsolete_d['ReplacedBy'] = cl_obsolete['defined_class']
+  # NO preservation of: rationale, rationale_dois, marker_gene_evidence, neurotransmitter_rationale
+  ```
+
+- **Evidence marker set orphaned**:
+  ```python
+  # Evidence marker set CLM:5029176 created for pinealocyte
+  # BUT when PCL term becomes obsolete, no mechanism ensures CL term inherits evidence set
+  # Marker validation data (F-beta score 0.91) permanently severed from final CL term
+  ```
+
+- **Shallow copy loses nested data**:
+  ```python
+  # template_generation_tools.py:399-401
+  if o['cell_set_accession'] in cl_subset:
+      cloned = d.copy()  # SHALLOW COPY - nested objects not preserved
+      cloned['cell_set_accession'] = node['cell_set_accession']
+
+  # SPECIFIC DATA LOST in shallow copy:
+  # - author_annotation_fields nested dictionary
+  # - marker_gene_evidence arrays
+  # - neurotransmitter_marker_gene_evidence lists
+  # - All nested rationale data structures
+  # Result: CL term gets basic metadata only, loses scientific context
+  ```
+
 ### Scenario 4: **Individual Trimming Over-deletion**
 1. Seed file incomplete or corrupted
 2. Bulk DELETE removes valid individuals
@@ -189,27 +340,70 @@ except Exception as e:
 4. Related annotations cascade-deleted
 5. **Data permanently lost**
 
+**Concrete Example**: SPARQL bulk deletion in `cl_subset_terms.py:148-163`
+- **Aggressive bulk delete operation**:
+  ```sparql
+  DELETE {
+    ?s RO:0015003 ?value .
+    ?value ?p ?o .
+  }
+  WHERE {
+    ?s RO:0015003 ?value .
+    ?value ?p ?o .
+    FILTER(STRSTARTS(STR(?value), "https://purl.brain-bican.org/taxonomy/CCN20230722/"))
+    FILTER(?value NOT IN ({filter_clause}))
+  }
+  ```
+
+- **Data loss scenarios**:
+  ```python
+  # If seed file missing CS20230722_CLUS_1234 individual
+  # ALL relationships and annotations for that individual DELETED:
+  # - RO:0015003 (has_soma_location) relationships lost
+  # - Anatomical location data deleted
+  # - Cross-references to spatial coordinates removed
+  # - NO backup or recovery mechanism exists
+  ```
+
+- **Cascade deletion effects**:
+  ```python
+  # Individual deletion removes:
+  # 1. has_soma_location relationships
+  # 2. Spatial coordinate mappings
+  # 3. CCF anatomical assignments
+  # 4. Allen Brain Atlas cross-references
+  # 5. All annotation properties tied to that individual
+  # Result: Cell type loses ALL spatial context permanently
+  ```
+
 ## **IMPACT ASSESSMENT**
 
-### **Data Integrity**: 🔴 **SEVERE**
-- Lossy transformations
-- No rollback capability
-- Potential data corruption
+### **Individual IRI Stability**: 🔴 **SEVERE**
+- **Systematic namespace changes**: `ontology/CCN20230722/` ➜ `taxonomy/CCN20230722/`
+- **Mass individual elimination**: 98.5% of cluster individuals removed
+- **External reference breakage**: Any system using original IRIs will fail
+- **No rollback capability** for IRI transformations
 
-### **Reference Stability**: 🔴 **SEVERE**
-- Dynamic ID generation
-- No collision detection
-- Breaking changes on updates
+### **Data Integrity**: ⚠️ **MODERATE** (Corrected Assessment)
+- **Migration is actually lossless** with proper OBO replaced_by axioms
+- Shallow copy risks remain for nested data structures
+- Trimming operations lack recovery mechanisms
+
+### **Reference Stability**: 🔴 **SEVERE** (Updated)
+- **Individual IRIs systematically changed** during CL generation
+- **No coordination** with external systems using original IRIs
+- **No mapping provided** between old and new individual IRIs
 
 ### **Maintainability**: 🔴 **SEVERE**
 - Manual curation dependency
 - Brittle chain logic
 - Poor error handling
+- **No tracking** of which individuals are eliminated
 
-### **Interoperability**: 🔴 **SEVERE**
-- Namespace pollution risk
-- No coordination with CL maintainers
-- Potential conflicts with official ontology
+### **Interoperability**: ⚠️ **MODERATE** (Corrected Assessment)
+- **ID collision risks eliminated** through CL repo coordination
+- Individual namespace changes create interoperability issues
+- External systems must be updated to track namespace changes
 
 ## **RECOMMENDED IMMEDIATE ACTIONS**
 
@@ -283,17 +477,29 @@ class CLModuleValidator:
 
 ## **CONCLUSION**
 
-The current CL module generation process is **fundamentally unsafe** for production use. The combination of:
+The CL module generation process has **significant risks** that require immediate attention, particularly around **individual IRI stability**. The corrected assessment reveals:
 
-- **Dynamic ID allocation** that breaks on data changes
-- **Lossy transformations** without recovery mechanisms
-- **No coordination** with official Cell Ontology
-- **Aggressive bulk operations** without safeguards
+### **Critical Issues Confirmed:**
+- **Systematic IRI namespace changes**: Individual cluster IRIs are transformed from `ontology/CCN20230722/` to `taxonomy/CCN20230722/` namespace
+- **Mass individual elimination**: 98.5% of cluster individuals (5,322 → 80) are removed without tracking
+- **External reference breakage**: Any external system referencing original individual IRIs will fail
+- **No recovery mechanisms** for eliminated individuals or IRI mappings
 
-Creates an **unacceptable risk** of:
-- **Breaking existing references** across the semantic web
-- **Corrupting data integrity** through lossy transformations
-- **Polluting CL namespace** with potentially conflicting terms
-- **Compromising scientific reproducibility** through lost provenance
+### **Previously Overestimated Risks (Corrected):**
+- **Migration process is actually lossless** with proper OBO `replaced_by` axioms
+- **ID collision risks are managed** through CL repository coordination
+- **Class-level data integrity is preserved** during PCL to CL migration
 
-**RECOMMENDATION**: **Immediately suspend CL module generation** and implement comprehensive safety mechanisms before any further production use.
+### **Remaining Concerns:**
+- **Shallow copy operations** may lose nested data structures
+- **Aggressive trimming** without backup mechanisms
+- **No coordination with external systems** using individual cluster IRIs
+
+**UPDATED RECOMMENDATION**:
+1. **Document and communicate IRI namespace changes** to all downstream users
+2. **Provide IRI mapping tables** between original and transformed individual IRIs
+3. **Implement tracking** of which individuals are eliminated and why
+4. **Add recovery mechanisms** for trimming operations
+5. **Coordinate with external systems** before deploying IRI changes
+
+The process is **not fundamentally unsafe** as initially assessed, but requires **significant improvements in IRI change management** to prevent breaking external integrations.

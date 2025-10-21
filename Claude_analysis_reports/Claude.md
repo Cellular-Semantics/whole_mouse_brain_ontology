@@ -19,7 +19,7 @@ a tool_notes.md doc for reference in later sessions.
 You have available to you a container that allows you to run 
 make commands and to access tools called by those make commands
 (e.g ROBOT and DOSDP-tools), via
-`sh run.sh { some command }` . run.sh should also manage pulling the docker
+`sh ./src/ontology/run.sh { some command }` . run.sh should also manage pulling the docker
 container if it is not present.
 
 The repo is based the Ontology Development Kit (ODK), but has custom 
