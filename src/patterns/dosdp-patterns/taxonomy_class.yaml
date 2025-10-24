@@ -161,6 +161,7 @@ data_vars:
   nsforest_marker_gene_set_2_confidence: "xsd:float"
   Neurotransmitters_comment: "xsd:string"
   Neurotransmitters_publication: "xsd:string"
+  Rationale_comment: "xsd:string"
 
 internal_vars:
   - var_name: Minimal_markers_cat
@@ -254,6 +255,9 @@ def:
                   - Short_form_citation
                   - Labelset
                   - Taxonomy_label
+              - text: "\n %s"
+                vars:
+                  - Rationale_comment
 
 generated_synonyms:
    - text: "%s expressing %s of %s (%s)"

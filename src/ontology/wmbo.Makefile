@@ -92,6 +92,19 @@ $(PATTERNDIR)/data/default/%_evidence_marker_set.txt: $(PATTERNDIR)/data/default
 $(TMPDIR)/%_class.tsv: ../patterns/data/default/%_class_base.tsv ../patterns/data/default/%_class_curation.tsv
 	python ../scripts/template_runner.py modifier --merge -i=$< -i2=$(word 2, $^) -o=$@
 
+# override to remove own terms
+$(IMPORTDIR)/merged_import.owl: $(MIRRORDIR)/merged.owl $(IMPORTDIR)/merged_terms_combined.txt
+	if [ $(IMP) = true ]; then \
+  		python $(SCRIPTSDIR)/own_terms_cleaner.py --output $(TMPDIR)/own_terms.txt && \
+  		$(ROBOT) merge -i $< \
+		remove  --select "<http://www.informatics.jax.org/marker/MGI:*>" remove  --select "<http://purl.obolibrary.org/obo/OBA_*>" remove  --select "<http://purl.obolibrary.org/obo/ENVO_*>" remove  --select "<http://purl.obolibrary.org/obo/OBI_*>" remove  --select "<http://purl.obolibrary.org/obo/GOCHE_*>" remove  --select "<http://purl.obolibrary.org/obo/CARO_*>" remove  --select "<http://purl.obolibrary.org/obo/NCBITaxon_Union_*>" remove  --select "<http://www.genenames.org/cgi-bin/gene_symbol_report*>"  \
+		extract -T $(IMPORTDIR)/merged_terms_combined.txt --force true --copy-ontology-annotations true --individuals exclude --method BOT \
+		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) -T $(IMPORTDIR)/merged_terms_combined.txt --select complement --select annotation-properties \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
+		remove --term-file $(TMPDIR)/own_terms.txt \
+		$(ANNOTATE_CONVERT_FILE); \
+	fi
+
 # hard wiring for now.  Work on patsubst later
 mirror/genedb.owl: ../templates/genedb.tsv .FORCE
 	if [ $(MIR) = true ]; then $(ROBOT) template --input $(SRC) --template $< \
@@ -170,7 +183,7 @@ $(ONT)-base.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(IMPORT_FILES) $(OWL_INFERRE
 	reason --reasoner ELK --exclude-tautologies structural --annotate-inferred-axioms False \
 	relax \
 	reduce -r ELK --preserve-annotated-axioms true \
-	remove --base-iri $(URIBASE)/WMBO --base-iri $(URIBASE)/PCL --base-iri $(URIBASE)/pcl/CS20230722 --base-iri $(BICANBASE)/CCN20230722 --base-iri $(URIBASE)/CL_4 --base-iri $(URIBASE)/CLM_5 --axioms external --preserve-structure false --trim false \
+	remove --base-iri $(URIBASE)/WMBO --base-iri $(URIBASE)/PCL --base-iri $(URIBASE)/pcl/CS20230722 --base-iri $(BICANBASE)/CCN20230722 --base-iri https://purl.brain-bican.org/ontology/CCN20230722 --base-iri $(URIBASE)/CL_4 --base-iri $(URIBASE)/CLM_5 --axioms external --preserve-structure false --trim false \
 	$(SHARED_ROBOT_COMMANDS) \
 	annotate --link-annotation http://purl.org/dc/elements/1.1/type http://purl.obolibrary.org/obo/IAO_8000001 \
 		--ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
@@ -202,7 +215,7 @@ $(ONT)-simple.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(SIMPLESEED) $(IMPORT_FILE
 		relax \
 		remove --axioms equivalent \
 		relax \
-		filter --term-file $(SIMPLESEED) --select "annotations ontology anonymous self <http://purl.obolibrary.org/obo/PCL_*>" --select "<https://purl.brain-bican.org/taxonomy/*>" --select "<http://purl.obolibrary.org/obo/CL_4*>" --select "<http://purl.obolibrary.org/obo/CLM_5*>" --trim true --signature true \
+		filter --term-file $(SIMPLESEED) --select "annotations ontology anonymous self <http://purl.obolibrary.org/obo/PCL_*>" --select "<https://purl.brain-bican.org/taxonomy/*>" --select "<https://purl.brain-bican.org/ontology/*>" --select "<http://purl.obolibrary.org/obo/CL_4*>" --select "<http://purl.obolibrary.org/obo/CLM_5*>" --trim true --signature true \
 		reduce -r ELK --preserve-annotated-axioms true \
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru \
 		$(SHARED_ROBOT_COMMANDS) annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
@@ -248,7 +261,7 @@ $(TMPDIR)/cl_individuals.owl: $(OWL_FILES) $(TMPDIR)/cl_indv_terms.txt
 
 # Artifact for CL that hosts only the validated component annotations (used by CL)
 $(RELEASEDIR)/$(ONT)-cl-comp.owl: $(ONT)-pcl-comp.owl $(TMPDIR)/cl_component_terms.txt wmbo-cl-edit.owl $(TMPDIR)/cl_individuals.owl
-	$(ROBOT) remove --input $(RELEASEDIR)/$(ONT)-pcl-comp.owl --select "<http://purl.obolibrary.org/obo/PCL_*>" --select "<https://purl.brain-bican.org/taxonomy/CCN20230722/*>" --signature true \
+	$(ROBOT) remove --input $(RELEASEDIR)/$(ONT)-pcl-comp.owl --select "<http://purl.obolibrary.org/obo/PCL_*>" --select "<https://purl.brain-bican.org/taxonomy/CCN20230722/*>" --select "<https://purl.brain-bican.org/ontology/CCN20230722/*>" --signature true \
 	filter --term-file $(TMPDIR)/cl_component_terms.txt --select "annotations anonymous self" --signature true --trim false  \
 	remove --select "<http://purl.obolibrary.org/obo/PCL_01*>" --signature true \
 	query --update ../sparql/delete_deprecated_pcl_terms.ru --update ../sparql/delete_multiple_gene_labels.ru \

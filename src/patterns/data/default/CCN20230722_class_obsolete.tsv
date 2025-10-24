@@ -219,7 +219,7 @@ http://purl.obolibrary.org/obo/PCL_0111755	obsolete OEC	This PCL class is no lon
 http://purl.obolibrary.org/obo/PCL_0117552	obsolete DCO Il22 Gly-Gaba_2	This PCL class is no longer in use; it has been relocated to CL.	true	CL:1001611			CL:0000000	http://purl.obolibrary.org/obo/CL_4306992
 http://purl.obolibrary.org/obo/PCL_0117565	obsolete CB PLI Gly-Gaba_4	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4072102			CL:0000000	http://purl.obolibrary.org/obo/CL_4307005
 http://purl.obolibrary.org/obo/PCL_0117572	obsolete CBX MLI Cdh22 Gaba	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4042035			CL:0000000	http://purl.obolibrary.org/obo/CL_4307012
-http://purl.obolibrary.org/obo/PCL_0117586	obsolete Bergman glial cell	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000644			CL:0000000	http://purl.obolibrary.org/obo/CL_4307026
+http://purl.obolibrary.org/obo/PCL_0117586	obsolete Bergmann glial cell	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000644			CL:0000000	http://purl.obolibrary.org/obo/CL_4307026
 http://purl.obolibrary.org/obo/PCL_0117587	obsolete cerebellar astrocyte	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0002603			CL:0000000	http://purl.obolibrary.org/obo/CL_4307027
 http://purl.obolibrary.org/obo/PCL_0117588	obsolete Astro-NT NN_1 Galnt15	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000127			CL:0000000	http://purl.obolibrary.org/obo/CL_4307028
 http://purl.obolibrary.org/obo/PCL_0117589	obsolete Astro-NT NN_1 Slc36a2	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000127			CL:0000000	http://purl.obolibrary.org/obo/CL_4307029

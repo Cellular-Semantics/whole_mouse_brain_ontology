@@ -25,7 +25,7 @@ PCL_BASE = 'http://purl.obolibrary.org/obo/PCL_'
 CL_BASE = 'http://purl.obolibrary.org/obo/CL_'
 CLM_BASE = 'http://purl.obolibrary.org/obo/CLM_'
 PCL_INDV_BASE = 'http://purl.obolibrary.org/obo/pcl/'
-BICAN_INDV_BASE = 'https://purl.brain-bican.org/taxonomy/CCN20230722/'
+BICAN_INDV_BASE = 'https://purl.brain-bican.org/ontology/CCN20230722/'
 
 PCL_PREFIX = 'PCL:'
 
@@ -250,6 +250,7 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                       'Atlas_url_label',
                       'Matrix_url',
                       'Class_name',
+                      'Rationale_comment'
                       ]
         class_template = []
         obsolete_template = []
@@ -298,6 +299,8 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                 d['Labelset'] = node['labelset'].capitalize()
                 d['Dataset_url'] = "https://purl.brain-bican.org/taxonomy/CCN20230722"
                 reference_paper = "https://doi.org/10.1038/s41586-023-06812-z"
+                if node.get('rationale'):
+                    d["Rationale_comment"] = "Rationale for assigning this type to reference data: " + node.get('rationale').strip()
                 if 'rationale_dois' in node and node['rationale_dois']:
                     alias_citations = {citation.strip() for citation in node['rationale_dois']
                                        if citation and citation.strip()}
@@ -1176,7 +1179,8 @@ def get_mba_ontology():
     global mba_ontology
     if not mba_ontology:
         mba_ontology = Graph()
-        mba_ontology.parse('https://purl.brain-bican.org/ontology/mbao/mbao.owl', format="xml")
+        # mba_ontology.parse('https://purl.brain-bican.org/ontology/mbao/mbao.owl', format="xml")
+        mba_ontology.parse('https://raw.githubusercontent.com/brain-bican/mouse_brain_atlas_ontology/main/mbao.owl', format="xml")
     return mba_ontology
 
 def read_gene_dbs(folder_path: str):

@@ -114,14 +114,14 @@ def collect_individuals(ontology_path, class_seed_path):
         ?s rdfs:subClassOf ?restriction .
         ?restriction owl:onProperty <http://purl.obolibrary.org/obo/RO_0015001> ;
                      owl:hasValue ?value .
-        FILTER(STRSTARTS(STR(?value), "https://purl.brain-bican.org/taxonomy/CCN20230722/"))
+        FILTER(STRSTARTS(STR(?value), "https://purl.brain-bican.org/ontology/CCN20230722/"))
       }} UNION {{
         ?s owl:equivalentClass ?equiv .
         ?equiv owl:intersectionOf ?list .
         ?list rdf:rest*/rdf:first ?item .
         ?item owl:onProperty <http://purl.obolibrary.org/obo/RO_0015001> ;
                owl:hasValue ?value .
-        FILTER(STRSTARTS(STR(?value), "https://purl.brain-bican.org/taxonomy/CCN20230722/"))
+        FILTER(STRSTARTS(STR(?value), "https://purl.brain-bican.org/ontology/CCN20230722/"))
       }}
     }}
     """
@@ -154,7 +154,7 @@ def trim_dangling_individuals(ontology_path, indv_seed_path, output_path):
         WHERE {{
           ?s RO:0015003 ?value .
           ?value ?p ?o .
-          FILTER(STRSTARTS(STR(?value), "https://purl.brain-bican.org/taxonomy/CCN20230722/"))
+          FILTER(STRSTARTS(STR(?value), "https://purl.brain-bican.org/ontology/CCN20230722/"))
           FILTER(?value NOT IN ({filter_clause}))
         }} ;
     
