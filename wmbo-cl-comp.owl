@@ -5286,9 +5286,9 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:CLM_0010004>0.04</obo:CLM_0010004>
-        <obo:STATO_0000416 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</obo:STATO_0000416>
-        <obo:STATO_0000663 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1724138</obo:STATO_0000663>
+        <obo:CLM_0010004>0.26</obo:CLM_0010004>
+        <obo:STATO_0000416 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9285714</obo:STATO_0000416>
+        <obo:STATO_0000663 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6132075</obo:STATO_0000663>
         <oboInOwl:hasDbXref>https://doi.org/10.1038/s41586-023-06812-z</oboInOwl:hasDbXref>
         <rdfs:label>Cdh1,Acvr1c,Adamts15,Pax2 (Yao).</rdfs:label>
         <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTE5MiBDQlggTUxJIENkaDIyIEdhYmFfMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUEAUNkaDEAAAFBY3ZyMWMAAAFBZGFtdHMxNQAAAVBheDIAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAkhTWVpQWlcxNjY5VTgyMUJXWVAAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACATUxOTIgQ0JYIE1MSSBDZGgyMiBHYWJhXzEAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFBAFDZGgxAAABQWN2cjFjAAABQWRhbXRzMTUAAAFQYXgyAAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhWRk9GWVBGUUdSS1VEUVVaM0ZGAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFUTE9LV0NMOTVSVTAzRDlQRVRHAAI3M0dWVERYREVHRTI3TTJYSk1UAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D</rdfs:seeAlso>
@@ -5320,9 +5320,9 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:CLM_0010004>0.3</obo:CLM_0010004>
+        <obo:CLM_0010004>0.62</obo:CLM_0010004>
         <obo:STATO_0000416 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</obo:STATO_0000416>
-        <obo:STATO_0000663 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6818182</obo:STATO_0000663>
+        <obo:STATO_0000663 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8908046</obo:STATO_0000663>
         <oboInOwl:hasDbXref>https://doi.org/10.1038/s41586-023-06812-z</oboInOwl:hasDbXref>
         <rdfs:label>Gpr37l1,Ctxn3 (Yao).</rdfs:label>
         <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTIwNiBCZXJnbWFubiBOTl8xAAAEAQECgazGjoGWFSADhGpN%2FYRYGE0ABQIBR3ByMzdsMQAAAUN0eG4zAAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJIU1laUFpXMTY2OVU4MjFCV1lQAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgE1MjA2IEJlcmdtYW5uIE5OXzEAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAgFHcHIzN2wxAAABQ3R4bjMAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA</rdfs:seeAlso>
@@ -5354,9 +5354,9 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:CLM_0010004>0.12</obo:CLM_0010004>
-        <obo:STATO_0000416 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</obo:STATO_0000416>
-        <obo:STATO_0000663 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4054054</obo:STATO_0000663>
+        <obo:CLM_0010004>0.44</obo:CLM_0010004>
+        <obo:STATO_0000416 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7096774</obo:STATO_0000416>
+        <obo:STATO_0000663 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6321839</obo:STATO_0000663>
         <oboInOwl:hasDbXref>https://doi.org/10.1038/s41586-023-06812-z</oboInOwl:hasDbXref>
         <rdfs:label>Dao,Efemp1 (Yao).</rdfs:label>
         <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTIwNyBBc3Ryby1DQiBOTl8xAAAEAQECgazGjoGWFSADhGpN%2FYRYGE0ABQIBRGFvAAABRWZlbXAxAAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJIU1laUFpXMTY2OVU4MjFCV1lQAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgE1MjA3IEFzdHJvLUNCIE5OXzEAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAgFEYW8AAAFFZmVtcDEAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA</rdfs:seeAlso>
@@ -6850,9 +6850,9 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:CLM_0010004>0.7</obo:CLM_0010004>
+        <obo:CLM_0010004>0.58</obo:CLM_0010004>
         <obo:STATO_0000416 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</obo:STATO_0000416>
-        <obo:STATO_0000663 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.92105263</obo:STATO_0000663>
+        <obo:STATO_0000663 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.87349397</obo:STATO_0000663>
         <oboInOwl:hasDbXref>https://doi.org/10.1038/s41586-023-06812-z</oboInOwl:hasDbXref>
         <rdfs:label>Sspo,Wfdc2 (Yao).</rdfs:label>
         <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI2MyBIeXBlbmR5bWFsIE5OXzEAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAgFTc3BvAAABV2ZkYzIAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAkhTWVpQWlcxNjY5VTgyMUJXWVAAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACATUyNjMgSHlwZW5keW1hbCBOTl8xAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQIBU3NwbwAAAVdmZGMyAAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhWRk9GWVBGUUdSS1VEUVVaM0ZGAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFUTE9LV0NMOTVSVTAzRDlQRVRHAAI3M0dWVERYREVHRTI3TTJYSk1UAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D</rdfs:seeAlso>
@@ -9705,7 +9705,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>https://doi.org/10.1038/s41586-023-06812-z</oboInOwl:hasDbXref>
-        <rdfs:label>Sln 3 (Yao - within subclass).</rdfs:label>
+        <rdfs:label>Sln (Yao - within subclass).</rdfs:label>
         <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzE1IERDTyBVQkMgR2x1dAAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUBAVNsbiAzAAAGAQECUVk1UzhLTU81SExKVUYwUDAwSwADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJIU1laUFpXMTY2OVU4MjFCV1lQAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgEzMTUgRENPIFVCQyBHbHV0AAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQEBU2xuIDMAAAYBAQJRWTVTOEtNTzVITEpVRjBQMDBLAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA</rdfs:seeAlso>
     </owl:Class>
     <owl:Axiom>
@@ -10049,7 +10049,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>https://doi.org/10.1038/s41586-023-06812-z</oboInOwl:hasDbXref>
-        <rdfs:label>Ttr 2 (Yao - within subclass).</rdfs:label>
+        <rdfs:label>Ttr (Yao - within subclass).</rdfs:label>
         <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzI1IENIT1IgTk4AAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAQFUdHIgMgAABgEBAlFZNVM4S01PNUhMSlVGMFAwMEsAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACSFNZWlBaVzE2NjlVODIxQldZUAADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzI1IENIT1IgTk4AAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAQFUdHIgMgAABgEBAlFZNVM4S01PNUhMSlVGMFAwMEsAA34AAAAEAAAIVkZPRllQRlFHUktVRFFVWjNGRgAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBVExPS1dDTDk1UlUwM0Q5UEVURwACNzNHVlREWERFR0UyN00yWEpNVAADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D</rdfs:seeAlso>
     </owl:Class>
     <owl:Axiom>
@@ -10072,7 +10072,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>https://doi.org/10.1038/s41586-023-06812-z</oboInOwl:hasDbXref>
-        <rdfs:label>Bmp4 3 (Yao - within subclass).</rdfs:label>
+        <rdfs:label>Bmp4 (Yao - within subclass).</rdfs:label>
         <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE4MSBDT1AgTk5fMQAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUBAUJtcDQgMwAABgEBAjE1Qks0N0RDSU9GMVNMTFVXOVAAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACSFNZWlBaVzE2NjlVODIxQldZUAADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE4MSBDT1AgTk5fMQAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUBAUJtcDQgMwAABgEBAjE1Qks0N0RDSU9GMVNMTFVXOVAAA34AAAAEAAAIVkZPRllQRlFHUktVRFFVWjNGRgAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBVExPS1dDTDk1UlUwM0Q5UEVURwACNzNHVlREWERFR0UyN00yWEpNVAADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D</rdfs:seeAlso>
     </owl:Class>
     <owl:Axiom>
@@ -11337,7 +11337,7 @@
         <obo:STATO_0000416 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7878788</obo:STATO_0000416>
         <obo:STATO_0000663 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.71428573</obo:STATO_0000663>
         <oboInOwl:hasDbXref>https://doi.org/10.1038/s41586-023-06812-z</oboInOwl:hasDbXref>
-        <rdfs:label>Ecrg4 (Yao - within subclass).</rdfs:label>
+        <rdfs:label>Ecrg4 2 (Yao - within subclass).</rdfs:label>
         <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTIzNSBBc3Ryby1PTEYgTk5fMwAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUBAUVjcmc0AAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJIU1laUFpXMTY2OVU4MjFCV1lQAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgE1MjM1IEFzdHJvLU9MRiBOTl8zAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQEBRWNyZzQAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA</rdfs:seeAlso>
     </owl:Class>
     <owl:Axiom>
@@ -11603,7 +11603,7 @@
         <obo:STATO_0000416 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.44827586</obo:STATO_0000416>
         <obo:STATO_0000663 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.47619048</obo:STATO_0000663>
         <oboInOwl:hasDbXref>https://doi.org/10.1038/s41586-023-06812-z</oboInOwl:hasDbXref>
-        <rdfs:label>Ecrg4 2 (Yao - within subclass).</rdfs:label>
+        <rdfs:label>Ecrg4 (Yao - within subclass).</rdfs:label>
         <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI1MCBUYW55Y3l0ZSBOTl8zAAAEAQECgazGjoGWFSADhGpN%2FYRYGE0ABQEBRWNyZzQgMgAABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACSFNZWlBaVzE2NjlVODIxQldZUAADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI1MCBUYW55Y3l0ZSBOTl8zAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQEBRWNyZzQgMgAABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIVkZPRllQRlFHUktVRFFVWjNGRgAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBVExPS1dDTDk1UlUwM0Q5UEVURwACNzNHVlREWERFR0UyN00yWEpNVAADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D</rdfs:seeAlso>
     </owl:Class>
     <owl:Axiom>
@@ -13064,6 +13064,12 @@
     <!-- http://purl.obolibrary.org/obo/CL_0008059 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0008059"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0011006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0011006"/>
     
 
 
@@ -14615,7 +14621,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0008059"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011006"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4300349"/>
         <rdfs:subClassOf rdf:nodeID="genid1955"/>
         <rdfs:subClassOf>
@@ -14627,10 +14633,11 @@
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5001565"/>
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5016785"/>
         <obo:IAO_0000028>CB PLI Gly-Gaba_2 (Mmus)</obo:IAO_0000028>
-        <obo:IAO_0000115>A Purkinje layer interneuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pthlh (Mmus), Tfap2b (Mmus), Rspo2 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1145 CB PLI Gly-Gaba_2.</obo:IAO_0000115>
+        <obo:IAO_0000115>A Lugaro cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pthlh (Mmus), Tfap2b (Mmus), Rspo2 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1145 CB PLI Gly-Gaba_2.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>1145 CB PLI Gly-Gaba_2</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Pthlh (Mmus), Tfap2b (Mmus), Rspo2 (Mmus) expressing Purkinje layer interneuron of brain (Mus musculus)</oboInOwl:hasExactSynonym>
-        <rdfs:label>CB PLI Gly-Gaba_2 Purkinje layer interneuron (Mmus)</rdfs:label>
+        <oboInOwl:hasExactSynonym>Pthlh (Mmus), Tfap2b (Mmus), Rspo2 (Mmus) expressing Lugaro cell of brain (Mus musculus)</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Rationale for assigning this type to reference data: Mapping of this cell type is supported by analysis: https://github.com/Cellular-Semantics/cellular_semantics_notebooks</rdfs:comment>
+        <rdfs:label>CB PLI Gly-Gaba_2 Lugaro cell (Mmus)</rdfs:label>
         <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE0NSBDQiBQTEkgR2x5LUdhYmFfMgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAjE1Qks0N0RDSU9GMVNMTFVXOVAAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACSFNZWlBaVzE2NjlVODIxQldZUAADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE0NSBDQiBQTEkgR2x5LUdhYmFfMgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAjE1Qks0N0RDSU9GMVNMTFVXOVAAA34AAAAEAAAIVkZPRllQRlFHUktVRFFVWjNGRgAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBVExPS1dDTDk1UlUwM0Q5UEVURwACNzNHVlREWERFR0UyN00yWEpNVAADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D</rdfs:seeAlso>
         <rdfs:seeAlso>https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_28.h5ad</rdfs:seeAlso>
     </owl:Class>
@@ -14653,7 +14660,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4301575"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A Purkinje layer interneuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pthlh (Mmus), Tfap2b (Mmus), Rspo2 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1145 CB PLI Gly-Gaba_2.</owl:annotatedTarget>
+        <owl:annotatedTarget>A Lugaro cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pthlh (Mmus), Tfap2b (Mmus), Rspo2 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1145 CB PLI Gly-Gaba_2.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://doi.org/10.1038/s41586-023-06812-z</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -15955,9 +15962,10 @@
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5016821"/>
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5024421"/>
         <obo:IAO_0000028>COP NN_1 (Mmus)</obo:IAO_0000028>
-        <obo:IAO_0000115>A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Bmp4 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1181 COP NN_1. Rationale for assigning this type to reference data: Mapping of this cell set to a differentiation-committed oligodendrocyte is supported by spatial transcriptomic evidence and specific expression of Gpr17, Bmp4, Neu4, Fyn in the context of oligodendrocyte lineage cells.</obo:IAO_0000115>
+        <obo:IAO_0000115>A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Bmp4 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1181 COP NN_1.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>1181 COP NN_1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Gpr17 (Mmus), Bmp4 (Mmus) expressing committed oligodendrocyte precursor of brain (Mus musculus)</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Rationale for assigning this type to reference data: Mapping of this cell set to a differentiation-committed oligodendrocyte is supported by spatial transcriptomic evidence and specific expression of Gpr17, Bmp4, Neu4, Fyn in the context of oligodendrocyte lineage cells.</rdfs:comment>
         <rdfs:label>commited oligodendrocyte precursor (Mmus)</rdfs:label>
         <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE4MSBDT1AgTk5fMQAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAjE1Qks0N0RDSU9GMVNMTFVXOVAAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACSFNZWlBaVzE2NjlVODIxQldZUAADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE4MSBDT1AgTk5fMQAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAjE1Qks0N0RDSU9GMVNMTFVXOVAAA34AAAAEAAAIVkZPRllQRlFHUktVRFFVWjNGRgAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBVExPS1dDTDk1UlUwM0Q5UEVURwACNzNHVlREWERFR0UyN00yWEpNVAADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D</rdfs:seeAlso>
         <rdfs:seeAlso>https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad</rdfs:seeAlso>
@@ -15971,8 +15979,14 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4301611"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Bmp4 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1181 COP NN_1. Rationale for assigning this type to reference data: Mapping of this cell set to a differentiation-committed oligodendrocyte is supported by spatial transcriptomic evidence and specific expression of Gpr17, Bmp4, Neu4, Fyn in the context of oligodendrocyte lineage cells.</owl:annotatedTarget>
+        <owl:annotatedTarget>A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Bmp4 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1181 COP NN_1.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://doi.org/10.1038/s41586-023-06812-z</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://doi.org/10.1126/science.aaf6463</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4301611"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget>Rationale for assigning this type to reference data: Mapping of this cell set to a differentiation-committed oligodendrocyte is supported by spatial transcriptomic evidence and specific expression of Gpr17, Bmp4, Neu4, Fyn in the context of oligodendrocyte lineage cells.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://doi.org/10.1126/science.aaf6463</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -16017,9 +16031,10 @@
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5016822"/>
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5024422"/>
         <obo:IAO_0000028>NFOL NN_2 (Mmus)</obo:IAO_0000028>
-        <obo:IAO_0000115>A newly formed oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Ptprb (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1182 NFOL NN_2. Rationale for assigning this type to reference data: Mapping of this cell set to a newly formed oligodendrocyte is supported by spatial transcriptomic evidence and specific expression of Tcf7l2, Klk6, Cemip2, Casr in the context of oligodendrocyte lineage cells.</obo:IAO_0000115>
+        <obo:IAO_0000115>A newly formed oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Ptprb (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1182 NFOL NN_2.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>1182 NFOL NN_2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>9630013A20Rik (Mmus), Ptprb (Mmus) expressing newly formed oligodendrocyte of brain (Mus musculus)</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Rationale for assigning this type to reference data: Mapping of this cell set to a newly formed oligodendrocyte is supported by spatial transcriptomic evidence and specific expression of Tcf7l2, Klk6, Cemip2, Casr in the context of oligodendrocyte lineage cells.</rdfs:comment>
         <rdfs:label>newly formed oligodendrocyte (Mmus)</rdfs:label>
         <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE4MiBORk9MIE5OXzIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAAYBAQIxNUJLNDdEQ0lPRjFTTExVVzlQAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAkhTWVpQWlcxNjY5VTgyMUJXWVAAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACATExODIgTkZPTCBOTl8yAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQAGAQECMTVCSzQ3RENJT0YxU0xMVVc5UAADfgAAAAQAAAhWRk9GWVBGUUdSS1VEUVVaM0ZGAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFUTE9LV0NMOTVSVTAzRDlQRVRHAAI3M0dWVERYREVHRTI3TTJYSk1UAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D</rdfs:seeAlso>
         <rdfs:seeAlso>https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad</rdfs:seeAlso>
@@ -16033,8 +16048,14 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4301612"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A newly formed oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Ptprb (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1182 NFOL NN_2. Rationale for assigning this type to reference data: Mapping of this cell set to a newly formed oligodendrocyte is supported by spatial transcriptomic evidence and specific expression of Tcf7l2, Klk6, Cemip2, Casr in the context of oligodendrocyte lineage cells.</owl:annotatedTarget>
+        <owl:annotatedTarget>A newly formed oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Ptprb (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1182 NFOL NN_2.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://doi.org/10.1038/s41586-023-06812-z</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://doi.org/10.1126/science.aaf6463</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4301612"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget>Rationale for assigning this type to reference data: Mapping of this cell set to a newly formed oligodendrocyte is supported by spatial transcriptomic evidence and specific expression of Tcf7l2, Klk6, Cemip2, Casr in the context of oligodendrocyte lineage cells.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://doi.org/10.1126/science.aaf6463</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -16079,9 +16100,10 @@
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5016823"/>
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5024423"/>
         <obo:IAO_0000028>MFOL NN_3 (Mmus)</obo:IAO_0000028>
-        <obo:IAO_0000115>A myelin-forming oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cldn11 (Mmus), Sec14l5 (Mmus), 9630013A20Rik (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1183 MFOL NN_3. Rationale for assigning this type to reference data: Mapping of this cell set to a myelin-forming oligodendrocyte is supported by spatial transcriptomic evidence and specific expression of Ctps, Cldn11 in the context of oligodendrocyte lineage cells.</obo:IAO_0000115>
+        <obo:IAO_0000115>A myelin-forming oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cldn11 (Mmus), Sec14l5 (Mmus), 9630013A20Rik (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1183 MFOL NN_3.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>1183 MFOL NN_3</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Cldn11 (Mmus), Sec14l5 (Mmus), 9630013A20Rik (Mmus) expressing myelin-forming oligodendrocyte of brain (Mus musculus)</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Rationale for assigning this type to reference data: Mapping of this cell set to a myelin-forming oligodendrocyte is supported by spatial transcriptomic evidence and specific expression of Ctps, Cldn11 in the context of oligodendrocyte lineage cells.</rdfs:comment>
         <rdfs:label>myelin-forming oligodendrocyte (Mmus)</rdfs:label>
         <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE4MyBNRk9MIE5OXzMAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAAYBAQIxNUJLNDdEQ0lPRjFTTExVVzlQAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAkhTWVpQWlcxNjY5VTgyMUJXWVAAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACATExODMgTUZPTCBOTl8zAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQAGAQECMTVCSzQ3RENJT0YxU0xMVVc5UAADfgAAAAQAAAhWRk9GWVBGUUdSS1VEUVVaM0ZGAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFUTE9LV0NMOTVSVTAzRDlQRVRHAAI3M0dWVERYREVHRTI3TTJYSk1UAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D</rdfs:seeAlso>
         <rdfs:seeAlso>https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad</rdfs:seeAlso>
@@ -16095,8 +16117,14 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4301613"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A myelin-forming oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cldn11 (Mmus), Sec14l5 (Mmus), 9630013A20Rik (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1183 MFOL NN_3. Rationale for assigning this type to reference data: Mapping of this cell set to a myelin-forming oligodendrocyte is supported by spatial transcriptomic evidence and specific expression of Ctps, Cldn11 in the context of oligodendrocyte lineage cells.</owl:annotatedTarget>
+        <owl:annotatedTarget>A myelin-forming oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cldn11 (Mmus), Sec14l5 (Mmus), 9630013A20Rik (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1183 MFOL NN_3.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://doi.org/10.1038/s41586-023-06812-z</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://doi.org/10.1126/science.aaf6463</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4301613"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget>Rationale for assigning this type to reference data: Mapping of this cell set to a myelin-forming oligodendrocyte is supported by spatial transcriptomic evidence and specific expression of Ctps, Cldn11 in the context of oligodendrocyte lineage cells.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://doi.org/10.1126/science.aaf6463</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -16141,9 +16169,10 @@
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5016824"/>
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5024424"/>
         <obo:IAO_0000028>MOL NN_4 (Mmus)</obo:IAO_0000028>
-        <obo:IAO_0000115>A mature myelinating oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cldn11 (Mmus), Anln (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1184 MOL NN_4. Rationale for assigning this type to reference data: Mapping of this cell set to a mature myelinating oligodendrocyte is supported by spatial transcriptomic evidence and specific expression of Klk6 in the context of oligodendrocyte lineage cells.</obo:IAO_0000115>
+        <obo:IAO_0000115>A mature myelinating oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cldn11 (Mmus), Anln (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1184 MOL NN_4.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>1184 MOL NN_4</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Cldn11 (Mmus), Anln (Mmus) expressing mature myelinating oligodendrocyte of brain (Mus musculus)</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Rationale for assigning this type to reference data: Mapping of this cell set to a mature myelinating oligodendrocyte is supported by spatial transcriptomic evidence and specific expression of Klk6 in the context of oligodendrocyte lineage cells.</rdfs:comment>
         <rdfs:label>mature myelinating oligodendrocyte (Mmus)</rdfs:label>
         <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE4NCBNT0wgTk5fNAAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAjE1Qks0N0RDSU9GMVNMTFVXOVAAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACSFNZWlBaVzE2NjlVODIxQldZUAADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE4NCBNT0wgTk5fNAAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAjE1Qks0N0RDSU9GMVNMTFVXOVAAA34AAAAEAAAIVkZPRllQRlFHUktVRFFVWjNGRgAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBVExPS1dDTDk1UlUwM0Q5UEVURwACNzNHVlREWERFR0UyN00yWEpNVAADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D</rdfs:seeAlso>
         <rdfs:seeAlso>https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad</rdfs:seeAlso>
@@ -16157,8 +16186,14 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4301614"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A mature myelinating oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cldn11 (Mmus), Anln (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1184 MOL NN_4. Rationale for assigning this type to reference data: Mapping of this cell set to a mature myelinating oligodendrocyte is supported by spatial transcriptomic evidence and specific expression of Klk6 in the context of oligodendrocyte lineage cells.</owl:annotatedTarget>
+        <owl:annotatedTarget>A mature myelinating oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cldn11 (Mmus), Anln (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1184 MOL NN_4.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://doi.org/10.1038/s41586-023-06812-z</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://doi.org/10.1126/science.aaf6463</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4301614"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget>Rationale for assigning this type to reference data: Mapping of this cell set to a mature myelinating oligodendrocyte is supported by spatial transcriptomic evidence and specific expression of Klk6 in the context of oligodendrocyte lineage cells.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://doi.org/10.1126/science.aaf6463</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -16420,7 +16455,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf rdf:nodeID="genid2228"/>
+        <rdfs:subClassOf rdf:nodeID="genid2232"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0015001"/>
@@ -16449,7 +16484,7 @@
         <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIBMTUgSFkgR25yaDEgR2x1dAAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAkZTMDBEWFYwVDlSMVg5Rko0UUUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACSFNZWlBaVzE2NjlVODIxQldZUAADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIBMTUgSFkgR25yaDEgR2x1dAAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAkZTMDBEWFYwVDlSMVg5Rko0UUUAA34AAAAEAAAIVkZPRllQRlFHUktVRFFVWjNGRgAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBVExPS1dDTDk1UlUwM0Q5UEVURwACNzNHVlREWERFR0UyN00yWEpNVAADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D</rdfs:seeAlso>
         <rdfs:seeAlso>https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_15.h5ad</rdfs:seeAlso>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid2228">
+    <owl:Restriction rdf:nodeID="genid2232">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0061535"/>
     </owl:Restriction>
@@ -16464,7 +16499,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4304384"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid2228"/>
+        <owl:annotatedTarget rdf:nodeID="genid2232"/>
         <rdfs:comment>Inferred to be glutamate secretion, neurotransmission based on expression of Gad1, Slc17a6, Gad2</rdfs:comment>
     </owl:Axiom>
     <owl:Axiom>
@@ -16578,7 +16613,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf rdf:nodeID="genid2249"/>
+        <rdfs:subClassOf rdf:nodeID="genid2253"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0015001"/>
@@ -16593,17 +16628,18 @@
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5021576"/>
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5029176"/>
         <obo:IAO_0000028>pinealocyte (Mmus)</obo:IAO_0000028>
-        <obo:IAO_0000115>A pinealocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cngb3 (Mmus), Ush2a (Mmus). It is glutamatergic. These cells are located in the brain , in or close to the regions: third ventricle . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:4606 Pineal Crx Glut_1. Rationale for assigning this type to reference data: Consistent with this cell set being composed of Pinealocytes, a combination of Pinealocyte markers Gngt1 and Crx can identify the cells in this cluster with a confidence (F-beta score) of 0.91 in the context of glutamatergic cells (Pinealocytes release glutamate) from the hippocampal formation dissection (which includes the pineal gland).</obo:IAO_0000115>
+        <obo:IAO_0000115>A pinealocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cngb3 (Mmus), Ush2a (Mmus). It is glutamatergic. These cells are located in the brain , in or close to the regions: third ventricle . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:4606 Pineal Crx Glut_1.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>1030 Pineal Crx Glut_1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>25 Pineal Glut</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>262 Pineal Crx Glut</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>4606 Pineal Crx Glut_1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Cngb3 (Mmus), Ush2a (Mmus) expressing pinealocyte of brain (Mus musculus)</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Rationale for assigning this type to reference data: Consistent with this cell set being composed of Pinealocytes, a combination of Pinealocyte markers Gngt1 and Crx can identify the cells in this cluster with a confidence (F-beta score) of 0.91 in the context of glutamatergic cells (Pinealocytes release glutamate) from the hippocampal formation dissection (which includes the pineal gland).</rdfs:comment>
         <rdfs:label>pinealocyte (Mmus)</rdfs:label>
         <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIBMjUgUGluZWFsIEdsdXQAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAAYBAQJGUzAwRFhWMFQ5UjFYOUZKNFFFAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAkhTWVpQWlcxNjY5VTgyMUJXWVAAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACATI1IFBpbmVhbCBHbHV0AAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQAGAQECRlMwMERYVjBUOVIxWDlGSjRRRQADfgAAAAQAAAhWRk9GWVBGUUdSS1VEUVVaM0ZGAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFUTE9LV0NMOTVSVTAzRDlQRVRHAAI3M0dWVERYREVHRTI3TTJYSk1UAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D</rdfs:seeAlso>
         <rdfs:seeAlso>https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_25.h5ad</rdfs:seeAlso>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid2249">
+    <owl:Restriction rdf:nodeID="genid2253">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0061535"/>
     </owl:Restriction>
@@ -16618,7 +16654,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4306426"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid2249"/>
+        <owl:annotatedTarget rdf:nodeID="genid2253"/>
         <rdfs:comment>Inferred to be glutamate secretion, neurotransmission based on expression of Ddc, Slc17a6, Slc17a7</rdfs:comment>
     </owl:Axiom>
     <owl:Axiom>
@@ -16652,8 +16688,15 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4306426"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A pinealocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cngb3 (Mmus), Ush2a (Mmus). It is glutamatergic. These cells are located in the brain , in or close to the regions: third ventricle . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:4606 Pineal Crx Glut_1. Rationale for assigning this type to reference data: Consistent with this cell set being composed of Pinealocytes, a combination of Pinealocyte markers Gngt1 and Crx can identify the cells in this cluster with a confidence (F-beta score) of 0.91 in the context of glutamatergic cells (Pinealocytes release glutamate) from the hippocampal formation dissection (which includes the pineal gland).</owl:annotatedTarget>
+        <owl:annotatedTarget>A pinealocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cngb3 (Mmus), Ush2a (Mmus). It is glutamatergic. These cells are located in the brain , in or close to the regions: third ventricle . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:4606 Pineal Crx Glut_1.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://doi.org/10.1038/s41586-023-06812-z</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://doi.org/10.1111/j.1600-079x.1996.tb00284.x</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://doi.org/10.3389/fendo.2019.00590</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4306426"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget>Rationale for assigning this type to reference data: Consistent with this cell set being composed of Pinealocytes, a combination of Pinealocyte markers Gngt1 and Crx can identify the cells in this cluster with a confidence (F-beta score) of 0.91 in the context of glutamatergic cells (Pinealocytes release glutamate) from the hippocampal formation dissection (which includes the pineal gland).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://doi.org/10.1111/j.1600-079x.1996.tb00284.x</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>https://doi.org/10.3389/fendo.2019.00590</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -16688,7 +16731,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4300348"/>
-        <rdfs:subClassOf rdf:nodeID="genid2263"/>
+        <rdfs:subClassOf rdf:nodeID="genid2268"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0015001"/>
@@ -16712,7 +16755,7 @@
         <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTE3MiBEQ08gSWwyMiBHbHktR2FiYV8yAAAEAQECgazGjoGWFSADhGpN%2FYRYGE0ABQAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJIU1laUFpXMTY2OVU4MjFCV1lQAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgE1MTcyIERDTyBJbDIyIEdseS1HYWJhXzIAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA</rdfs:seeAlso>
         <rdfs:seeAlso>https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_28.h5ad</rdfs:seeAlso>
     </owl:Class>
-    <owl:Class rdf:nodeID="genid2263">
+    <owl:Class rdf:nodeID="genid2268">
         <owl:intersectionOf rdf:parseType="Collection">
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
@@ -16727,7 +16770,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4306992"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid2263"/>
+        <owl:annotatedTarget rdf:nodeID="genid2268"/>
         <rdfs:comment>Inferred to be gamma-aminobutyric acid secretion, neurotransmission, glycine secretion, neurotransmission based on expression of Slc32a1, Hdc, Slc6a5, Gad2, Gad1</rdfs:comment>
     </owl:Axiom>
     <owl:Axiom>
@@ -16827,7 +16870,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4300349"/>
-        <rdfs:subClassOf rdf:nodeID="genid2285"/>
+        <rdfs:subClassOf rdf:nodeID="genid2290"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0015001"/>
@@ -16851,14 +16894,14 @@
         <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTE4NSBDQiBQTEkgR2x5LUdhYmFfNAAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACSFNZWlBaVzE2NjlVODIxQldZUAADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTE4NSBDQiBQTEkgR2x5LUdhYmFfNAAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIVkZPRllQRlFHUktVRFFVWjNGRgAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBVExPS1dDTDk1UlUwM0Q5UEVURwACNzNHVlREWERFR0UyN00yWEpNVAADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D</rdfs:seeAlso>
         <rdfs:seeAlso>https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_28.h5ad</rdfs:seeAlso>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid2285">
+    <owl:Restriction rdf:nodeID="genid2290">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0061534"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4307005"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid2285"/>
+        <owl:annotatedTarget rdf:nodeID="genid2290"/>
         <rdfs:comment>Inferred to be gamma-aminobutyric acid secretion, neurotransmission based on expression of Gad1, Gad2, Slc32a1</rdfs:comment>
     </owl:Axiom>
     <owl:Axiom>
@@ -16951,7 +16994,7 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4042035"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4300028"/>
-        <rdfs:subClassOf rdf:nodeID="genid2303"/>
+        <rdfs:subClassOf rdf:nodeID="genid2308"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0015001"/>
@@ -16970,10 +17013,10 @@
         <oboInOwl:hasExactSynonym>5192 CBX MLI Cdh22 Gaba_1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Cdh1 (Mmus), Acvr1c (Mmus), Adamts15 (Mmus), Pax2 (Mmus) expressing molecular layer interneuron of brain (Mus musculus)</oboInOwl:hasExactSynonym>
         <rdfs:label>CBX MLI Cdh22 Gaba molecular layer interneuron (Mmus)</rdfs:label>
-        <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTE5MiBDQlggTUxJIENkaDIyIEdhYmFfMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACSFNZWlBaVzE2NjlVODIxQldZUAADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTE5MiBDQlggTUxJIENkaDIyIEdhYmFfMQAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIVkZPRllQRlFHUktVRFFVWjNGRgAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBVExPS1dDTDk1UlUwM0Q5UEVURwACNzNHVlREWERFR0UyN00yWEpNVAADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D</rdfs:seeAlso>
+        <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzEyIENCWCBNTEkgQ2RoMjIgR2FiYQAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAlFZNVM4S01PNUhMSlVGMFAwMEsAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACSFNZWlBaVzE2NjlVODIxQldZUAADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzEyIENCWCBNTEkgQ2RoMjIgR2FiYQAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAlFZNVM4S01PNUhMSlVGMFAwMEsAA34AAAAEAAAIVkZPRllQRlFHUktVRFFVWjNGRgAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBVExPS1dDTDk1UlUwM0Q5UEVURwACNzNHVlREWERFR0UyN00yWEpNVAADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D</rdfs:seeAlso>
         <rdfs:seeAlso>https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_28.h5ad</rdfs:seeAlso>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid2303">
+    <owl:Restriction rdf:nodeID="genid2308">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0061534"/>
     </owl:Restriction>
@@ -16988,7 +17031,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4307012"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid2303"/>
+        <owl:annotatedTarget rdf:nodeID="genid2308"/>
         <rdfs:comment>Inferred to be gamma-aminobutyric acid secretion, neurotransmission based on expression of Gad1, Gad2, Slc32a1</rdfs:comment>
     </owl:Axiom>
     <owl:Axiom>
@@ -17011,7 +17054,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4307012"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/CLM_0010003"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CLM_5006942"/>
-        <obo:STATO_0000663 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1724138</obo:STATO_0000663>
+        <obo:STATO_0000663 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6132075</obo:STATO_0000663>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4307012"/>
@@ -17028,7 +17071,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4307012"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-        <owl:annotatedTarget>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTE5MiBDQlggTUxJIENkaDIyIEdhYmFfMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACSFNZWlBaVzE2NjlVODIxQldZUAADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTE5MiBDQlggTUxJIENkaDIyIEdhYmFfMQAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIVkZPRllQRlFHUktVRFFVWjNGRgAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBVExPS1dDTDk1UlUwM0Q5UEVURwACNzNHVlREWERFR0UyN00yWEpNVAADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D</owl:annotatedTarget>
+        <owl:annotatedTarget>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzEyIENCWCBNTEkgQ2RoMjIgR2FiYQAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAlFZNVM4S01PNUhMSlVGMFAwMEsAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACSFNZWlBaVzE2NjlVODIxQldZUAADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzEyIENCWCBNTEkgQ2RoMjIgR2FiYQAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAlFZNVM4S01PNUhMSlVGMFAwMEsAA34AAAAEAAAIVkZPRllQRlFHUktVRFFVWjNGRgAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBVExPS1dDTDk1UlUwM0Q5UEVURwACNzNHVlREWERFR0UyN00yWEpNVAADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D</owl:annotatedTarget>
         <rdfs:label>Reference data on Allen Brain Cell Atlas</rdfs:label>
     </owl:Axiom>
     <owl:Axiom>
@@ -17074,7 +17117,7 @@
         <oboInOwl:hasExactSynonym>5206 Bergmann NN_1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Gpr37l1 (Mmus), Ctxn3 (Mmus) expressing Bergmann glial cell of brain (Mus musculus)</oboInOwl:hasExactSynonym>
         <rdfs:label>Bergmann glial cell (Mmus)</rdfs:label>
-        <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTIwNiBCZXJnbWFubiBOTl8xAAAEAQECgazGjoGWFSADhGpN%2FYRYGE0ABQAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJIU1laUFpXMTY2OVU4MjFCV1lQAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgE1MjA2IEJlcmdtYW5uIE5OXzEAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA</rdfs:seeAlso>
+        <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzE2IEJlcmdtYW5uIE5OAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACAAAEAQECgazGjoGWFSADhGpN%2FYRYGE0ABQAGAQECUVk1UzhLTU81SExKVUYwUDAwSwADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJIU1laUFpXMTY2OVU4MjFCV1lQAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgEzMTYgQmVyZ21hbm4gTk4AAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAAYBAQJRWTVTOEtNTzVITEpVRjBQMDBLAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA</rdfs:seeAlso>
         <rdfs:seeAlso>https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad</rdfs:seeAlso>
     </owl:Class>
     <owl:Axiom>
@@ -17103,7 +17146,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4307026"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/CLM_0010003"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CLM_5006956"/>
-        <obo:STATO_0000663 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6818182</obo:STATO_0000663>
+        <obo:STATO_0000663 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8908046</obo:STATO_0000663>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4307026"/>
@@ -17120,7 +17163,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4307026"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-        <owl:annotatedTarget>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTIwNiBCZXJnbWFubiBOTl8xAAAEAQECgazGjoGWFSADhGpN%2FYRYGE0ABQAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJIU1laUFpXMTY2OVU4MjFCV1lQAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgE1MjA2IEJlcmdtYW5uIE5OXzEAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA</owl:annotatedTarget>
+        <owl:annotatedTarget>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzE2IEJlcmdtYW5uIE5OAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACAAAEAQECgazGjoGWFSADhGpN%2FYRYGE0ABQAGAQECUVk1UzhLTU81SExKVUYwUDAwSwADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJIU1laUFpXMTY2OVU4MjFCV1lQAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgEzMTYgQmVyZ21hbm4gTk4AAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAAYBAQJRWTVTOEtNTzVITEpVRjBQMDBLAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA</owl:annotatedTarget>
         <rdfs:label>Reference data on Allen Brain Cell Atlas</rdfs:label>
     </owl:Axiom>
     <owl:Axiom>
@@ -17167,7 +17210,7 @@
         <oboInOwl:hasExactSynonym>5207 Astro-CB NN_1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Dao (Mmus), Efemp1 (Mmus) expressing astrocyte of the cerebellum of brain (Mus musculus)</oboInOwl:hasExactSynonym>
         <rdfs:label>cerebellar astrocyte (Mmus)</rdfs:label>
-        <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTIwNyBBc3Ryby1DQiBOTl8xAAAEAQECgazGjoGWFSADhGpN%2FYRYGE0ABQAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJIU1laUFpXMTY2OVU4MjFCV1lQAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgE1MjA3IEFzdHJvLUNCIE5OXzEAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA</rdfs:seeAlso>
+        <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzE3IEFzdHJvLUNCIE5OAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACAAAEAQECgazGjoGWFSADhGpN%2FYRYGE0ABQAGAQECUVk1UzhLTU81SExKVUYwUDAwSwADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJIU1laUFpXMTY2OVU4MjFCV1lQAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgEzMTcgQXN0cm8tQ0IgTk4AAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAAYBAQJRWTVTOEtNTzVITEpVRjBQMDBLAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA</rdfs:seeAlso>
         <rdfs:seeAlso>https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad</rdfs:seeAlso>
     </owl:Class>
     <owl:Axiom>
@@ -17204,7 +17247,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4307027"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/CLM_0010003"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CLM_5006957"/>
-        <obo:STATO_0000663 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4054054</obo:STATO_0000663>
+        <obo:STATO_0000663 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6321839</obo:STATO_0000663>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4307027"/>
@@ -17221,7 +17264,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4307027"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-        <owl:annotatedTarget>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTIwNyBBc3Ryby1DQiBOTl8xAAAEAQECgazGjoGWFSADhGpN%2FYRYGE0ABQAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJIU1laUFpXMTY2OVU4MjFCV1lQAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgE1MjA3IEFzdHJvLUNCIE5OXzEAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA</owl:annotatedTarget>
+        <owl:annotatedTarget>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzE3IEFzdHJvLUNCIE5OAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACAAAEAQECgazGjoGWFSADhGpN%2FYRYGE0ABQAGAQECUVk1UzhLTU81SExKVUYwUDAwSwADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJIU1laUFpXMTY2OVU4MjFCV1lQAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgEzMTcgQXN0cm8tQ0IgTk4AAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAAYBAQJRWTVTOEtNTzVITEpVRjBQMDBLAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA</owl:annotatedTarget>
         <rdfs:label>Reference data on Allen Brain Cell Atlas</rdfs:label>
     </owl:Axiom>
     <owl:Axiom>
@@ -18509,7 +18552,7 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000151"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4301591"/>
-        <rdfs:subClassOf rdf:nodeID="genid2520"/>
+        <rdfs:subClassOf rdf:nodeID="genid2525"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0015001"/>
@@ -18528,14 +18571,14 @@
         <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTIyMSBBc3Ryby1URSBOTl8xAAAEAQECgazGjoGWFSADhGpN%2FYRYGE0ABQAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJIU1laUFpXMTY2OVU4MjFCV1lQAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgE1MjIxIEFzdHJvLVRFIE5OXzEAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA</rdfs:seeAlso>
         <rdfs:seeAlso>https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad</rdfs:seeAlso>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid2520">
+    <owl:Restriction rdf:nodeID="genid2525">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0061535"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4307041"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid2520"/>
+        <owl:annotatedTarget rdf:nodeID="genid2525"/>
         <rdfs:comment>Inferred to be glutamate secretion, neurotransmission based on expression of Aldh1a1, Slc17a7</rdfs:comment>
     </owl:Axiom>
     <owl:Axiom>
@@ -20123,9 +20166,10 @@
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5006993"/>
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5022213"/>
         <obo:IAO_0000028>Tanycyte NN_1 Cnmd (Mmus)</obo:IAO_0000028>
-        <obo:IAO_0000115>A tanycyte of subfornical organ of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cnmd (Mmus), Sfta3-ps (Mmus). It is distinguished from other Tanycyte NN_1 cells by expression of Cnmd. These cells are located in the brain , in or close to the regions: choroid plexus, third ventricle . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5243 Tanycyte NN_1. Rationale for assigning this type to reference data: Mapping to tanycyte of subfornical organ based on spatial transcriptomics evidence.</obo:IAO_0000115>
+        <obo:IAO_0000115>A tanycyte of subfornical organ of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cnmd (Mmus), Sfta3-ps (Mmus). It is distinguished from other Tanycyte NN_1 cells by expression of Cnmd. These cells are located in the brain , in or close to the regions: choroid plexus, third ventricle . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5243 Tanycyte NN_1.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>5243 Tanycyte NN_1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Cnmd (Mmus), Sfta3-ps (Mmus) expressing tanycyte of subfornical organ of brain (Mus musculus)</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Rationale for assigning this type to reference data: Mapping to tanycyte of subfornical organ based on spatial transcriptomics evidence.</rdfs:comment>
         <rdfs:label>Tanycyte NN_1 Cnmd tanycyte of subfornical organ (Mmus)</rdfs:label>
         <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI0MyBUYW55Y3l0ZSBOTl8xAAAEAQECgazGjoGWFSADhGpN%2FYRYGE0ABQAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJIU1laUFpXMTY2OVU4MjFCV1lQAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgE1MjQzIFRhbnljeXRlIE5OXzEAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA</rdfs:seeAlso>
         <rdfs:seeAlso>https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad</rdfs:seeAlso>
@@ -20169,7 +20213,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4307063"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A tanycyte of subfornical organ of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cnmd (Mmus), Sfta3-ps (Mmus). It is distinguished from other Tanycyte NN_1 cells by expression of Cnmd. These cells are located in the brain , in or close to the regions: choroid plexus, third ventricle . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5243 Tanycyte NN_1. Rationale for assigning this type to reference data: Mapping to tanycyte of subfornical organ based on spatial transcriptomics evidence.</owl:annotatedTarget>
+        <owl:annotatedTarget>A tanycyte of subfornical organ of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cnmd (Mmus), Sfta3-ps (Mmus). It is distinguished from other Tanycyte NN_1 cells by expression of Cnmd. These cells are located in the brain , in or close to the regions: choroid plexus, third ventricle . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5243 Tanycyte NN_1.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://doi.org/10.1038/s41586-023-06812-z</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -20297,7 +20341,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_1100001"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4042017"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4301603"/>
-        <rdfs:subClassOf rdf:nodeID="genid2770"/>
+        <rdfs:subClassOf rdf:nodeID="genid2775"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0015001"/>
@@ -20316,7 +20360,7 @@
         <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI0NSBUYW55Y3l0ZSBOTl8yAAAEAQECgazGjoGWFSADhGpN%2FYRYGE0ABQAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJIU1laUFpXMTY2OVU4MjFCV1lQAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgE1MjQ1IFRhbnljeXRlIE5OXzIAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA</rdfs:seeAlso>
         <rdfs:seeAlso>https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad</rdfs:seeAlso>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid2770">
+    <owl:Restriction rdf:nodeID="genid2775">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0061535"/>
     </owl:Restriction>
@@ -20329,7 +20373,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4307065"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid2770"/>
+        <owl:annotatedTarget rdf:nodeID="genid2775"/>
         <rdfs:comment>Inferred to be glutamate secretion, neurotransmission based on expression of Slc17a8</rdfs:comment>
     </owl:Axiom>
     <owl:Axiom>
@@ -20932,13 +20976,14 @@
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5022233"/>
         <obo:CLM_0010003 rdf:resource="http://purl.obolibrary.org/obo/CLM_5029833"/>
         <obo:IAO_0000028>Hypendymal NN (Mmus)</obo:IAO_0000028>
-        <obo:IAO_0000115>A hypendymal cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Sspo (Mmus), Wfdc2 (Mmus). It is distinguished from other Astro-Epen cells by expression of Sspo, Wfdc2. These cells are located in the Midbrain, brain , in or close to the regions: third ventricle, posterior commissure, Subcommissural organ . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5263 Hypendymal NN_1. Rationale for assigning this type to reference data: Mapping of this cell set to the hypendemal cell type is supported by its location to the subcommisural organ (from spatial transcriptomics), its expression of Sspo and its general transcriptomic classification in a class (Astro-Epen) along with epdendymal cells, tanycytes and astrocytes.</obo:IAO_0000115>
+        <obo:IAO_0000115>A hypendymal cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Sspo (Mmus), Wfdc2 (Mmus). It is distinguished from other Astro-Epen cells by expression of Sspo, Wfdc2. These cells are located in the Midbrain, brain , in or close to the regions: third ventricle, posterior commissure, Subcommissural organ . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5263 Hypendymal NN_1.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>1177 Hypendymal NN_1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>324 Hypendymal NN</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>5263 Hypendymal NN_1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Sspo (Mmus), Wfdc2 (Mmus) expressing hypendymal cell of brain (Mus musculus)</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Rationale for assigning this type to reference data: Mapping of this cell set to the hypendemal cell type is supported by its location to the subcommisural organ (from spatial transcriptomics), its expression of Sspo and its general transcriptomic classification in a class (Astro-Epen) along with epdendymal cells, tanycytes and astrocytes.</rdfs:comment>
         <rdfs:label>hypendemal cell (Mmus)</rdfs:label>
-        <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI2MyBIeXBlbmR5bWFsIE5OXzEAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAkhTWVpQWlcxNjY5VTgyMUJXWVAAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACATUyNjMgSHlwZW5keW1hbCBOTl8xAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhWRk9GWVBGUUdSS1VEUVVaM0ZGAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFUTE9LV0NMOTVSVTAzRDlQRVRHAAI3M0dWVERYREVHRTI3TTJYSk1UAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D</rdfs:seeAlso>
+        <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzI0IEh5cGVuZHltYWwgTk4AAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAAYBAQJRWTVTOEtNTzVITEpVRjBQMDBLAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAkhTWVpQWlcxNjY5VTgyMUJXWVAAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACATMyNCBIeXBlbmR5bWFsIE5OAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQAGAQECUVk1UzhLTU81SExKVUYwUDAwSwADfgAAAAQAAAhWRk9GWVBGUUdSS1VEUVVaM0ZGAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFUTE9LV0NMOTVSVTAzRDlQRVRHAAI3M0dWVERYREVHRTI3TTJYSk1UAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D</rdfs:seeAlso>
         <rdfs:seeAlso>https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad</rdfs:seeAlso>
     </owl:Class>
     <owl:Axiom>
@@ -20991,7 +21036,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4307083"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/CLM_0010003"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CLM_5007013"/>
-        <obo:STATO_0000663 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.92105263</obo:STATO_0000663>
+        <obo:STATO_0000663 rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.87349397</obo:STATO_0000663>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4307083"/>
@@ -21002,14 +21047,20 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4307083"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A hypendymal cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Sspo (Mmus), Wfdc2 (Mmus). It is distinguished from other Astro-Epen cells by expression of Sspo, Wfdc2. These cells are located in the Midbrain, brain , in or close to the regions: third ventricle, posterior commissure, Subcommissural organ . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5263 Hypendymal NN_1. Rationale for assigning this type to reference data: Mapping of this cell set to the hypendemal cell type is supported by its location to the subcommisural organ (from spatial transcriptomics), its expression of Sspo and its general transcriptomic classification in a class (Astro-Epen) along with epdendymal cells, tanycytes and astrocytes.</owl:annotatedTarget>
+        <owl:annotatedTarget>A hypendymal cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Sspo (Mmus), Wfdc2 (Mmus). It is distinguished from other Astro-Epen cells by expression of Sspo, Wfdc2. These cells are located in the Midbrain, brain , in or close to the regions: third ventricle, posterior commissure, Subcommissural organ . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5263 Hypendymal NN_1.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>doi:10.3389/fncel.2015.00480</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>https://doi.org/10.1038/s41586-023-06812-z</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4307083"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget>Rationale for assigning this type to reference data: Mapping of this cell set to the hypendemal cell type is supported by its location to the subcommisural organ (from spatial transcriptomics), its expression of Sspo and its general transcriptomic classification in a class (Astro-Epen) along with epdendymal cells, tanycytes and astrocytes.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>doi:10.3389/fncel.2015.00480</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4307083"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-        <owl:annotatedTarget>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI2MyBIeXBlbmR5bWFsIE5OXzEAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAkhTWVpQWlcxNjY5VTgyMUJXWVAAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACATUyNjMgSHlwZW5keW1hbCBOTl8xAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhWRk9GWVBGUUdSS1VEUVVaM0ZGAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFUTE9LV0NMOTVSVTAzRDlQRVRHAAI3M0dWVERYREVHRTI3TTJYSk1UAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D</owl:annotatedTarget>
+        <owl:annotatedTarget>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzI0IEh5cGVuZHltYWwgTk4AAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAAYBAQJRWTVTOEtNTzVITEpVRjBQMDBLAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAkhTWVpQWlcxNjY5VTgyMUJXWVAAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACATMyNCBIeXBlbmR5bWFsIE5OAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQAGAQECUVk1UzhLTU81SExKVUYwUDAwSwADfgAAAAQAAAhWRk9GWVBGUUdSS1VEUVVaM0ZGAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFUTE9LV0NMOTVSVTAzRDlQRVRHAAI3M0dWVERYREVHRTI3TTJYSk1UAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D</owl:annotatedTarget>
         <rdfs:label>Reference data on Allen Brain Cell Atlas</rdfs:label>
     </owl:Axiom>
     <owl:Axiom>
@@ -21139,7 +21190,7 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000686"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4301608"/>
-        <rdfs:subClassOf rdf:nodeID="genid2885"/>
+        <rdfs:subClassOf rdf:nodeID="genid2891"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0015001"/>
@@ -21159,14 +21210,14 @@
         <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI2NSBDSE9SIE5OXzEAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAkhTWVpQWlcxNjY5VTgyMUJXWVAAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACATUyNjUgQ0hPUiBOTl8xAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhWRk9GWVBGUUdSS1VEUVVaM0ZGAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFUTE9LV0NMOTVSVTAzRDlQRVRHAAI3M0dWVERYREVHRTI3TTJYSk1UAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D</rdfs:seeAlso>
         <rdfs:seeAlso>https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad</rdfs:seeAlso>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid2885">
+    <owl:Restriction rdf:nodeID="genid2891">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0061535"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4307085"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid2885"/>
+        <owl:annotatedTarget rdf:nodeID="genid2891"/>
         <rdfs:comment>Inferred to be glutamate secretion, neurotransmission based on expression of Slc17a8</rdfs:comment>
     </owl:Axiom>
     <owl:Axiom>
@@ -23501,7 +23552,7 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000151"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4301615"/>
-        <rdfs:subClassOf rdf:nodeID="genid3223"/>
+        <rdfs:subClassOf rdf:nodeID="genid3229"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0015001"/>
@@ -23519,14 +23570,14 @@
         <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI5MiBPRUMgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACSFNZWlBaVzE2NjlVODIxQldZUAADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI5MiBPRUMgTk5fMQAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIVkZPRllQRlFHUktVRFFVWjNGRgAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBVExPS1dDTDk1UlUwM0Q5UEVURwACNzNHVlREWERFR0UyN00yWEpNVAADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D</rdfs:seeAlso>
         <rdfs:seeAlso>https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_32.h5ad</rdfs:seeAlso>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid3223">
+    <owl:Restriction rdf:nodeID="genid3229">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0061535"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4307112"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid3223"/>
+        <owl:annotatedTarget rdf:nodeID="genid3229"/>
         <rdfs:comment>Inferred to be glutamate secretion, neurotransmission based on expression of Slc17a7</rdfs:comment>
     </owl:Axiom>
     <owl:Axiom>
@@ -23832,7 +23883,7 @@
         <oboInOwl:hasExactSynonym>5312 Microglia NN_1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>C1qa (Mmus), Tmem119 (Mmus) expressing microglial cell of brain (Mus musculus)</oboInOwl:hasExactSynonym>
         <rdfs:label>microglial cell (Mmus)</rdfs:label>
-        <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTMxMiBNaWNyb2dsaWEgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACSFNZWlBaVzE2NjlVODIxQldZUAADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTMxMiBNaWNyb2dsaWEgTk5fMQAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIVkZPRllQRlFHUktVRFFVWjNGRgAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBVExPS1dDTDk1UlUwM0Q5UEVURwACNzNHVlREWERFR0UyN00yWEpNVAADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D</rdfs:seeAlso>
+        <rdfs:seeAlso>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzM0IE1pY3JvZ2xpYSBOTgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAlFZNVM4S01PNUhMSlVGMFAwMEsAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACSFNZWlBaVzE2NjlVODIxQldZUAADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzM0IE1pY3JvZ2xpYSBOTgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAlFZNVM4S01PNUhMSlVGMFAwMEsAA34AAAAEAAAIVkZPRllQRlFHUktVRFFVWjNGRgAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBVExPS1dDTDk1UlUwM0Q5UEVURwACNzNHVlREWERFR0UyN00yWEpNVAADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D</rdfs:seeAlso>
         <rdfs:seeAlso>https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_34.h5ad</rdfs:seeAlso>
     </owl:Class>
     <owl:Axiom>
@@ -23872,7 +23923,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_4307132"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-        <owl:annotatedTarget>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTMxMiBNaWNyb2dsaWEgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACSFNZWlBaVzE2NjlVODIxQldZUAADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTMxMiBNaWNyb2dsaWEgTk5fMQAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIVkZPRllQRlFHUktVRFFVWjNGRgAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBVExPS1dDTDk1UlUwM0Q5UEVURwACNzNHVlREWERFR0UyN00yWEpNVAADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D</owl:annotatedTarget>
+        <owl:annotatedTarget>https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzM0IE1pY3JvZ2xpYSBOTgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAlFZNVM4S01PNUhMSlVGMFAwMEsAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACSFNZWlBaVzE2NjlVODIxQldZUAADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzM0IE1pY3JvZ2xpYSBOTgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAlFZNVM4S01PNUhMSlVGMFAwMEsAA34AAAAEAAAIVkZPRllQRlFHUktVRFFVWjNGRgAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBVExPS1dDTDk1UlUwM0Q5UEVURwACNzNHVlREWERFR0UyN00yWEpNVAADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D</owl:annotatedTarget>
         <rdfs:label>Reference data on Allen Brain Cell Atlas</rdfs:label>
     </owl:Axiom>
     <owl:Axiom>

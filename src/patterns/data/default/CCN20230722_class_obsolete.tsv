@@ -1,8 +1,10 @@
 defined_class	prefLabel	Comment	Deprecated	Gross_cell_type	Taxon	Taxon_abbv	Classification	ReplacedBy
+http://purl.obolibrary.org/obo/PCL_0110388	obsolete 328 OEC NN	This term is obsoleted due to identical cell set chain compression.	true	CL:0011028	NCBITaxon:10090	Mmus	CL:0000000	
 http://purl.obolibrary.org/obo/PCL_0110084	obsolete 024 L5 PPP Glut	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000	
 http://purl.obolibrary.org/obo/PCL_0110086	obsolete 026 NLOT Rho Glut	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000	
 http://purl.obolibrary.org/obo/PCL_0110156	obsolete 096 PVHd Gsc Gaba	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000	
 http://purl.obolibrary.org/obo/PCL_0110170	obsolete 110 BST-po Iigp1 Glut	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000	
+http://purl.obolibrary.org/obo/PCL_0110172	obsolete 112 GPi Tbr1 Cngb3 Gaba-Glut	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000	
 http://purl.obolibrary.org/obo/PCL_0110202	obsolete 142 HY Gnrh1 Glut	This term is obsoleted due to identical cell set chain compression.	true	CL:0011111	NCBITaxon:10090	Mmus	CL:0000000	
 http://purl.obolibrary.org/obo/PCL_0110217	obsolete 157 RN Spp1 Glut	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000	
 http://purl.obolibrary.org/obo/PCL_0110243	obsolete 183 PBG Mtnr1a Glut-Chol	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000	
@@ -21,13 +23,6 @@ http://purl.obolibrary.org/obo/PCL_0110342	obsolete 282 POR Spp1 Gly-Gaba	This t
 http://purl.obolibrary.org/obo/PCL_0110357	obsolete 297 CU-ECU Pax2 Gly-Gaba	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000	
 http://purl.obolibrary.org/obo/PCL_0110361	obsolete 301 MV Nr4a2 Gly-Gaba	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000	
 http://purl.obolibrary.org/obo/PCL_0110362	obsolete 302 MV Xdh Gly-Gaba	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000	
-http://purl.obolibrary.org/obo/PCL_0110372	obsolete 312 CBX MLI Cdh22 Gaba	This term is obsoleted due to identical cell set chain compression.	true	CL:4042035	NCBITaxon:10090	Mmus	CL:0000000	
-http://purl.obolibrary.org/obo/PCL_0110376	obsolete 316 Bergmann NN	This term is obsoleted due to identical cell set chain compression.	true	CL:0000644	NCBITaxon:10090	Mmus	CL:0000000	
-http://purl.obolibrary.org/obo/PCL_0110377	obsolete 317 Astro-CB NN	This term is obsoleted due to identical cell set chain compression.	true	CL:0002603	NCBITaxon:10090	Mmus	CL:0000000	
-http://purl.obolibrary.org/obo/PCL_0110384	obsolete 324 Hypendymal NN	This term is obsoleted due to identical cell set chain compression.	true	CL:4023181	NCBITaxon:10090	Mmus	CL:0000000	
-http://purl.obolibrary.org/obo/PCL_0110388	obsolete 328 OEC NN	This term is obsoleted due to identical cell set chain compression.	true	CL:0011028	NCBITaxon:10090	Mmus	CL:0000000	
-http://purl.obolibrary.org/obo/PCL_0110394	obsolete 334 Microglia NN	This term is obsoleted due to identical cell set chain compression.	true	CL:0000129	NCBITaxon:10090	Mmus	CL:0000000	
-http://purl.obolibrary.org/obo/PCL_0110396	obsolete 336 Monocytes NN	This term is obsoleted due to identical cell set chain compression.	true	CL:0000576	NCBITaxon:10090	Mmus	CL:0000000	
 http://purl.obolibrary.org/obo/PCL_0110572	obsolete 0002 CLA-EPd-CTX Car3 Glut_2	This term is obsoleted due to identical cell set chain compression.	true	CL:0000540	NCBITaxon:10090	Mmus	CL:0000000	
 http://purl.obolibrary.org/obo/PCL_0110579	obsolete 0009 L5/6 IT TPE-ENT Glut_3	This term is obsoleted due to identical cell set chain compression.	true	CL:4023008	NCBITaxon:10090	Mmus	CL:0000000	
 http://purl.obolibrary.org/obo/PCL_0110580	obsolete 0010 L5/6 IT TPE-ENT Glut_4	This term is obsoleted due to identical cell set chain compression.	true	CL:4023008	NCBITaxon:10090	Mmus	CL:0000000	
@@ -210,17 +205,49 @@ http://purl.obolibrary.org/obo/PCL_0111768	obsolete 1198 B cells NN_1	This term 
 http://purl.obolibrary.org/obo/PCL_0111769	obsolete 1199 ILC NN_2	This term is obsoleted due to identical cell set chain compression.	true	CL:0000542	NCBITaxon:10090	Mmus	CL:0000000	
 http://purl.obolibrary.org/obo/PCL_0111770	obsolete 1200 NK cells NN_3	This term is obsoleted due to identical cell set chain compression.	true	CL:0000542	NCBITaxon:10090	Mmus	CL:0000000	
 http://purl.obolibrary.org/obo/PCL_0111771	obsolete 1201 T cells NN_4	This term is obsoleted due to identical cell set chain compression.	true	CL:0000542	NCBITaxon:10090	Mmus	CL:0000000	
-http://purl.obolibrary.org/obo/PCL_0114944	obsolete HY Gnrh1 Glut	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0011111			CL:0000000	http://purl.obolibrary.org/obo/CL_4304384
-http://purl.obolibrary.org/obo/PCL_0116986	obsolete pinealocyte	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000652			CL:0000000	http://purl.obolibrary.org/obo/CL_4306426
-http://purl.obolibrary.org/obo/PCL_0110028	obsolete CB GABA	This PCL class is no longer in use; it has been relocated to CL.	true	CL:1001611			CL:0000000	http://purl.obolibrary.org/obo/CL_4300028
+http://purl.obolibrary.org/obo/PCL_0110369	obsolete CB PLI Gly-Gaba	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4072102			CL:0000000	http://purl.obolibrary.org/obo/CL_4300349
+http://purl.obolibrary.org/obo/PCL_0111754	obsolete MOL NN_4	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4072003			CL:0000000	http://purl.obolibrary.org/obo/CL_4301614
+http://purl.obolibrary.org/obo/PCL_0111753	obsolete MFOL NN_3	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4072002			CL:0000000	http://purl.obolibrary.org/obo/CL_4301613
+http://purl.obolibrary.org/obo/PCL_0111752	obsolete NFOL NN_2	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4072001			CL:0000000	http://purl.obolibrary.org/obo/CL_4301612
+http://purl.obolibrary.org/obo/PCL_0110371	obsolete CBX MLI Megf11 Gaba	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4042035			CL:0000000	http://purl.obolibrary.org/obo/CL_4300351
+http://purl.obolibrary.org/obo/PCL_0117572	obsolete CBX MLI Cdh22 Gaba	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4042035			CL:0000000	http://purl.obolibrary.org/obo/CL_4307012
+http://purl.obolibrary.org/obo/PCL_0117630	obsolete Tanycyte NN_3	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4042020			CL:0000000	http://purl.obolibrary.org/obo/CL_4307070
+http://purl.obolibrary.org/obo/PCL_0117629	obsolete Tanycyte NN_2 Col25a1	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4042019			CL:0000000	http://purl.obolibrary.org/obo/CL_4307069
+http://purl.obolibrary.org/obo/PCL_0117627	obsolete Tanycyte NN_2 Dscaml1	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4042018			CL:0000000	http://purl.obolibrary.org/obo/CL_4307067
+http://purl.obolibrary.org/obo/PCL_0117625	obsolete Tanycyte NN_2 Mylk3	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4042017			CL:0000000	http://purl.obolibrary.org/obo/CL_4307065
+http://purl.obolibrary.org/obo/PCL_0117626	obsolete Tanycyte NN_2 Mroh5	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4042017			CL:0000000	http://purl.obolibrary.org/obo/CL_4307066
+http://purl.obolibrary.org/obo/PCL_0111765	obsolete BAM NN	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4042003			CL:0000000	http://purl.obolibrary.org/obo/CL_4301625
+http://purl.obolibrary.org/obo/PCL_0117643	obsolete Hypendymal NN	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4023181			CL:0000000	http://purl.obolibrary.org/obo/CL_4307083
+http://purl.obolibrary.org/obo/PCL_0111726	obsolete DCO UBC Glut	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4023161			CL:0000000	http://purl.obolibrary.org/obo/CL_4301586
+http://purl.obolibrary.org/obo/PCL_0111756	obsolete ABC NN	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4023097			CL:0000000	http://purl.obolibrary.org/obo/CL_4301616
+http://purl.obolibrary.org/obo/PCL_0111751	obsolete COP NN_1	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4023059			CL:0000000	http://purl.obolibrary.org/obo/CL_4301611
+http://purl.obolibrary.org/obo/PCL_0110390	obsolete VLMC NN	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4023051			CL:0000000	http://purl.obolibrary.org/obo/CL_4300370
+http://purl.obolibrary.org/obo/PCL_0110122	obsolete STR D2 Gaba	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4023029			CL:0000000	http://purl.obolibrary.org/obo/CL_4300102
+http://purl.obolibrary.org/obo/PCL_0110121	obsolete STR D1 Gaba	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4023026			CL:0000000	http://purl.obolibrary.org/obo/CL_4300101
 http://purl.obolibrary.org/obo/PCL_0110029	obsolete CB Glut	This PCL class is no longer in use; it has been relocated to CL.	true	CL:2000028			CL:0000000	http://purl.obolibrary.org/obo/CL_4300029
-http://purl.obolibrary.org/obo/PCL_0110031	obsolete OPC-Oligo	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000000			CL:0000000	http://purl.obolibrary.org/obo/CL_4300031
+http://purl.obolibrary.org/obo/PCL_0110028	obsolete CB GABA	This PCL class is no longer in use; it has been relocated to CL.	true	CL:1001611			CL:0000000	http://purl.obolibrary.org/obo/CL_4300028
+http://purl.obolibrary.org/obo/PCL_0114944	obsolete HY Gnrh1 Glut	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0011111			CL:0000000	http://purl.obolibrary.org/obo/CL_4304384
 http://purl.obolibrary.org/obo/PCL_0111755	obsolete OEC	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0011028			CL:0000000	http://purl.obolibrary.org/obo/CL_4301615
+http://purl.obolibrary.org/obo/PCL_0111715	obsolete CB PLI Gly-Gaba_2	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0011006			CL:0000000	http://purl.obolibrary.org/obo/CL_4301575
+http://purl.obolibrary.org/obo/PCL_0117623	obsolete Tanycyte NN_1 Cnmd	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0008042			CL:0000000	http://purl.obolibrary.org/obo/CL_4307063
+http://purl.obolibrary.org/obo/PCL_0117587	obsolete cerebellar astrocyte	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0002603			CL:0000000	http://purl.obolibrary.org/obo/CL_4307027
+http://purl.obolibrary.org/obo/PCL_0110386	obsolete OPC NN	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0002453			CL:0000000	http://purl.obolibrary.org/obo/CL_4300366
+http://purl.obolibrary.org/obo/PCL_0110382	obsolete Tanycyte NN	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0002085			CL:0000000	http://purl.obolibrary.org/obo/CL_4300362
+http://purl.obolibrary.org/obo/PCL_0110374	obsolete CB Granule Glut	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0001031			CL:0000000	http://purl.obolibrary.org/obo/CL_4300354
+http://purl.obolibrary.org/obo/PCL_0111748	obsolete CHOR NN	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000706			CL:0000000	http://purl.obolibrary.org/obo/CL_4301608
+http://purl.obolibrary.org/obo/PCL_0116986	obsolete pinealocyte	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000652			CL:0000000	http://purl.obolibrary.org/obo/CL_4306426
+http://purl.obolibrary.org/obo/PCL_0117586	obsolete Bergmann glial cell	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000644			CL:0000000	http://purl.obolibrary.org/obo/CL_4307026
+http://purl.obolibrary.org/obo/PCL_0117692	obsolete Microglia NN	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000129			CL:0000000	http://purl.obolibrary.org/obo/CL_4307132
+http://purl.obolibrary.org/obo/PCL_0110387	obsolete Oligo NN	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000128			CL:0000000	http://purl.obolibrary.org/obo/CL_4300367
+http://purl.obolibrary.org/obo/PCL_0110378	obsolete Astro-NT NN	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000127			CL:0000000	http://purl.obolibrary.org/obo/CL_4300358
+http://purl.obolibrary.org/obo/PCL_0110379	obsolete Astro-TE NN	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000127			CL:0000000	http://purl.obolibrary.org/obo/CL_4300359
+http://purl.obolibrary.org/obo/PCL_0110380	obsolete Astro-OLF NN	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000127			CL:0000000	http://purl.obolibrary.org/obo/CL_4300360
+http://purl.obolibrary.org/obo/PCL_0110373	obsolete CBX Purkinje Gaba	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000121			CL:0000000	http://purl.obolibrary.org/obo/CL_4300353
+http://purl.obolibrary.org/obo/PCL_0111718	obsolete CBX Golgi Gly-Gaba	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000119			CL:0000000	http://purl.obolibrary.org/obo/CL_4301578
+http://purl.obolibrary.org/obo/PCL_0110383	obsolete Ependymal NN	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000065			CL:0000000	http://purl.obolibrary.org/obo/CL_4300363
+http://purl.obolibrary.org/obo/PCL_0110031	obsolete OPC-Oligo	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000000			CL:0000000	http://purl.obolibrary.org/obo/CL_4300031
 http://purl.obolibrary.org/obo/PCL_0117552	obsolete DCO Il22 Gly-Gaba_2	This PCL class is no longer in use; it has been relocated to CL.	true	CL:1001611			CL:0000000	http://purl.obolibrary.org/obo/CL_4306992
 http://purl.obolibrary.org/obo/PCL_0117565	obsolete CB PLI Gly-Gaba_4	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4072102			CL:0000000	http://purl.obolibrary.org/obo/CL_4307005
-http://purl.obolibrary.org/obo/PCL_0117572	obsolete CBX MLI Cdh22 Gaba	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4042035			CL:0000000	http://purl.obolibrary.org/obo/CL_4307012
-http://purl.obolibrary.org/obo/PCL_0117586	obsolete Bergmann glial cell	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000644			CL:0000000	http://purl.obolibrary.org/obo/CL_4307026
-http://purl.obolibrary.org/obo/PCL_0117587	obsolete cerebellar astrocyte	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0002603			CL:0000000	http://purl.obolibrary.org/obo/CL_4307027
 http://purl.obolibrary.org/obo/PCL_0117588	obsolete Astro-NT NN_1 Galnt15	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000127			CL:0000000	http://purl.obolibrary.org/obo/CL_4307028
 http://purl.obolibrary.org/obo/PCL_0117589	obsolete Astro-NT NN_1 Slc36a2	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000127			CL:0000000	http://purl.obolibrary.org/obo/CL_4307029
 http://purl.obolibrary.org/obo/PCL_0117590	obsolete Astro-NT NN_1 Nuf2	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000127			CL:0000000	http://purl.obolibrary.org/obo/CL_4307030
@@ -250,15 +277,8 @@ http://purl.obolibrary.org/obo/PCL_0117613	obsolete Astro-OLF NN_2 Slc25a34	This
 http://purl.obolibrary.org/obo/PCL_0117614	obsolete Astro-OLF NN_2 Alk	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000127			CL:0000000	http://purl.obolibrary.org/obo/CL_4307054
 http://purl.obolibrary.org/obo/PCL_0117615	obsolete Astro-OLF NN_3 Ecrg4	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000127			CL:0000000	http://purl.obolibrary.org/obo/CL_4307055
 http://purl.obolibrary.org/obo/PCL_0117616	obsolete Astro-OLF NN_3 Sfrp1	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000127			CL:0000000	http://purl.obolibrary.org/obo/CL_4307056
-http://purl.obolibrary.org/obo/PCL_0117623	obsolete Tanycyte NN_1 Cnmd	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0008042			CL:0000000	http://purl.obolibrary.org/obo/CL_4307063
 http://purl.obolibrary.org/obo/PCL_0117624	obsolete Tanycyte NN_1 Glp1r	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0002085			CL:0000000	http://purl.obolibrary.org/obo/CL_4307064
-http://purl.obolibrary.org/obo/PCL_0117625	obsolete Tanycyte NN_2 Mylk3	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4042017			CL:0000000	http://purl.obolibrary.org/obo/CL_4307065
-http://purl.obolibrary.org/obo/PCL_0117626	obsolete Tanycyte NN_2 Mroh5	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4042017			CL:0000000	http://purl.obolibrary.org/obo/CL_4307066
-http://purl.obolibrary.org/obo/PCL_0117627	obsolete Tanycyte NN_2 Dscaml1	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4042018			CL:0000000	http://purl.obolibrary.org/obo/CL_4307067
 http://purl.obolibrary.org/obo/PCL_0117628	obsolete Tanycyte NN_2 Otx2	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0002085			CL:0000000	http://purl.obolibrary.org/obo/CL_4307068
-http://purl.obolibrary.org/obo/PCL_0117629	obsolete Tanycyte NN_2 Col25a1	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4042019			CL:0000000	http://purl.obolibrary.org/obo/CL_4307069
-http://purl.obolibrary.org/obo/PCL_0117630	obsolete Tanycyte NN_3	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4042020			CL:0000000	http://purl.obolibrary.org/obo/CL_4307070
-http://purl.obolibrary.org/obo/PCL_0117643	obsolete Hypendymal NN	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4023181			CL:0000000	http://purl.obolibrary.org/obo/CL_4307083
 http://purl.obolibrary.org/obo/PCL_0117644	obsolete CHOR NN_1 Tbc1d1	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000706			CL:0000000	http://purl.obolibrary.org/obo/CL_4307084
 http://purl.obolibrary.org/obo/PCL_0117645	obsolete CHOR NN_1 Slc17a8	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000706			CL:0000000	http://purl.obolibrary.org/obo/CL_4307085
 http://purl.obolibrary.org/obo/PCL_0117646	obsolete OPC NN_1 Neil3	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0002453			CL:0000000	http://purl.obolibrary.org/obo/CL_4307086
@@ -291,33 +311,12 @@ http://purl.obolibrary.org/obo/PCL_0117672	obsolete OEC NN_1 Rasgef1c	This PCL c
 http://purl.obolibrary.org/obo/PCL_0117673	obsolete ABC NN_1 Pde11a	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4023097			CL:0000000	http://purl.obolibrary.org/obo/CL_4307113
 http://purl.obolibrary.org/obo/PCL_0117674	obsolete ABC NN_1 Dapl1	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4023097			CL:0000000	http://purl.obolibrary.org/obo/CL_4307114
 http://purl.obolibrary.org/obo/PCL_0117675	obsolete ABC NN_1 Cubn	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4023097			CL:0000000	http://purl.obolibrary.org/obo/CL_4307115
-http://purl.obolibrary.org/obo/PCL_0117692	obsolete Microglia NN	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000129			CL:0000000	http://purl.obolibrary.org/obo/CL_4307132
 http://purl.obolibrary.org/obo/PCL_0117693	obsolete BAM NN_1 Mrc1	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4042003			CL:0000000	http://purl.obolibrary.org/obo/CL_4307133
 http://purl.obolibrary.org/obo/PCL_0117694	obsolete BAM NN_1 Fos	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4042003			CL:0000000	http://purl.obolibrary.org/obo/CL_4307134
-http://purl.obolibrary.org/obo/PCL_0110121	obsolete STR D1 Gaba	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4023026			CL:0000000	http://purl.obolibrary.org/obo/CL_4300101
-http://purl.obolibrary.org/obo/PCL_0110122	obsolete STR D2 Gaba	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4023029			CL:0000000	http://purl.obolibrary.org/obo/CL_4300102
 http://purl.obolibrary.org/obo/PCL_0110368	obsolete DCO Il22 Gly-Gaba	This PCL class is no longer in use; it has been relocated to CL.	true	CL:1001611			CL:0000000	http://purl.obolibrary.org/obo/CL_4300348
-http://purl.obolibrary.org/obo/PCL_0110369	obsolete CB PLI Gly-Gaba	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4072102			CL:0000000	http://purl.obolibrary.org/obo/CL_4300349
-http://purl.obolibrary.org/obo/PCL_0111718	obsolete CBX Golgi Gly-Gaba	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000119			CL:0000000	http://purl.obolibrary.org/obo/CL_4301578
-http://purl.obolibrary.org/obo/PCL_0110371	obsolete CBX MLI Megf11 Gaba	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4042035			CL:0000000	http://purl.obolibrary.org/obo/CL_4300351
-http://purl.obolibrary.org/obo/PCL_0110373	obsolete CBX Purkinje Gaba	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000121			CL:0000000	http://purl.obolibrary.org/obo/CL_4300353
-http://purl.obolibrary.org/obo/PCL_0110374	obsolete CB Granule Glut	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0001031			CL:0000000	http://purl.obolibrary.org/obo/CL_4300354
-http://purl.obolibrary.org/obo/PCL_0111726	obsolete DCO UBC Glut	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4023161			CL:0000000	http://purl.obolibrary.org/obo/CL_4301586
-http://purl.obolibrary.org/obo/PCL_0110378	obsolete Astro-NT NN	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000127			CL:0000000	http://purl.obolibrary.org/obo/CL_4300358
-http://purl.obolibrary.org/obo/PCL_0110379	obsolete Astro-TE NN	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000127			CL:0000000	http://purl.obolibrary.org/obo/CL_4300359
-http://purl.obolibrary.org/obo/PCL_0110380	obsolete Astro-OLF NN	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000127			CL:0000000	http://purl.obolibrary.org/obo/CL_4300360
-http://purl.obolibrary.org/obo/PCL_0110382	obsolete Tanycyte NN	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0002085			CL:0000000	http://purl.obolibrary.org/obo/CL_4300362
-http://purl.obolibrary.org/obo/PCL_0110383	obsolete Ependymal NN	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000065			CL:0000000	http://purl.obolibrary.org/obo/CL_4300363
-http://purl.obolibrary.org/obo/PCL_0111748	obsolete CHOR NN	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000706			CL:0000000	http://purl.obolibrary.org/obo/CL_4301608
-http://purl.obolibrary.org/obo/PCL_0110386	obsolete OPC NN	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0002453			CL:0000000	http://purl.obolibrary.org/obo/CL_4300366
-http://purl.obolibrary.org/obo/PCL_0110387	obsolete Oligo NN	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000128			CL:0000000	http://purl.obolibrary.org/obo/CL_4300367
-http://purl.obolibrary.org/obo/PCL_0111756	obsolete ABC NN	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4023097			CL:0000000	http://purl.obolibrary.org/obo/CL_4301616
-http://purl.obolibrary.org/obo/PCL_0110390	obsolete VLMC NN	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4023051			CL:0000000	http://purl.obolibrary.org/obo/CL_4300370
-http://purl.obolibrary.org/obo/PCL_0111765	obsolete BAM NN	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4042003			CL:0000000	http://purl.obolibrary.org/obo/CL_4301625
 http://purl.obolibrary.org/obo/PCL_0111711	obsolete DCO Il22 Gly-Gaba_1	This PCL class is no longer in use; it has been relocated to CL.	true	CL:1001611			CL:0000000	http://purl.obolibrary.org/obo/CL_4301571
 http://purl.obolibrary.org/obo/PCL_0111713	obsolete DCO Il22 Gly-Gaba_3	This PCL class is no longer in use; it has been relocated to CL.	true	CL:1001611			CL:0000000	http://purl.obolibrary.org/obo/CL_4301573
 http://purl.obolibrary.org/obo/PCL_0111714	obsolete CB PLI Gly-Gaba_1	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4072102			CL:0000000	http://purl.obolibrary.org/obo/CL_4301574
-http://purl.obolibrary.org/obo/PCL_0111715	obsolete CB PLI Gly-Gaba_2	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4072102			CL:0000000	http://purl.obolibrary.org/obo/CL_4301575
 http://purl.obolibrary.org/obo/PCL_0111716	obsolete CB PLI Gly-Gaba_3	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4072102			CL:0000000	http://purl.obolibrary.org/obo/CL_4301576
 http://purl.obolibrary.org/obo/PCL_0111719	obsolete CBX MLI Megf11 Gaba_1	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4042035			CL:0000000	http://purl.obolibrary.org/obo/CL_4301579
 http://purl.obolibrary.org/obo/PCL_0111720	obsolete CBX MLI Megf11 Gaba_2	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4042035			CL:0000000	http://purl.obolibrary.org/obo/CL_4301580
@@ -336,7 +335,3 @@ http://purl.obolibrary.org/obo/PCL_0111737	obsolete Astro-OLF NN_2	This PCL clas
 http://purl.obolibrary.org/obo/PCL_0111738	obsolete Astro-OLF NN_3	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0000127			CL:0000000	http://purl.obolibrary.org/obo/CL_4301598
 http://purl.obolibrary.org/obo/PCL_0111742	obsolete Tanycyte NN_1	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0002085			CL:0000000	http://purl.obolibrary.org/obo/CL_4301602
 http://purl.obolibrary.org/obo/PCL_0111743	obsolete Tanycyte NN_2	This PCL class is no longer in use; it has been relocated to CL.	true	CL:0002085			CL:0000000	http://purl.obolibrary.org/obo/CL_4301603
-http://purl.obolibrary.org/obo/PCL_0111751	obsolete COP NN_1	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4023059			CL:0000000	http://purl.obolibrary.org/obo/CL_4301611
-http://purl.obolibrary.org/obo/PCL_0111752	obsolete NFOL NN_2	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4072001			CL:0000000	http://purl.obolibrary.org/obo/CL_4301612
-http://purl.obolibrary.org/obo/PCL_0111753	obsolete MFOL NN_3	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4072002			CL:0000000	http://purl.obolibrary.org/obo/CL_4301613
-http://purl.obolibrary.org/obo/PCL_0111754	obsolete MOL NN_4	This PCL class is no longer in use; it has been relocated to CL.	true	CL:4072003			CL:0000000	http://purl.obolibrary.org/obo/CL_4301614

@@ -250,7 +250,8 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                       'Atlas_url_label',
                       'Matrix_url',
                       'Class_name',
-                      'Rationale_comment'
+                      'Rationale_comment',
+                      'Rationale_comment_dois'
                       ]
         class_template = []
         obsolete_template = []
@@ -304,6 +305,7 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                 if 'rationale_dois' in node and node['rationale_dois']:
                     alias_citations = {citation.strip() for citation in node['rationale_dois']
                                        if citation and citation.strip()}
+                    d["Rationale_comment_dois"] = "|".join(alias_citations.copy())
                     alias_citations.add(reference_paper)
                     d["Alias_citations"] = "|".join(alias_citations)
                 else:

@@ -103,6 +103,7 @@ data_list_vars:
   Alias_citations: "xsd:string"
   Cluster_IDs: "xsd:string"
   Subclass_markers: "xsd:string"
+  Rationale_comment_dois: "xsd:string"
 
 data_vars:
   prefLabel: "xsd:string"
@@ -255,9 +256,6 @@ def:
                   - Short_form_citation
                   - Labelset
                   - Taxonomy_label
-              - text: "\n %s"
-                vars:
-                  - Rationale_comment
 
 generated_synonyms:
    - text: "%s expressing %s of %s (%s)"
@@ -458,10 +456,16 @@ annotations:
       clauses:
         - text: '%s'
           vars:
+            - Rationale_comment
+        - text: '%s'
+          vars:
             - Location_disclaimer
         - text: '%s'
           vars:
             - NT_disclaimer
+    annotations:
+      - annotationProperty: hasDbXref
+        value: Rationale_comment_dois
   - annotationProperty: seeAlso
     text: "%s"
     vars:

@@ -28,7 +28,7 @@ sheets: $(SHEETS_SCRIPT)
 	@python $(SHEETS_SCRIPT)
 
 CCN20230722.json:
-	wget https://raw.githubusercontent.com/brain-bican/whole_mouse_brain_taxonomy/refs/heads/cloud-rltbl/CCN20230722.json -O $@
+	wget https://raw.githubusercontent.com/brain-bican/whole_mouse_brain_taxonomy/refs/heads/main/CCN20230722.json -O $@
 
 ../templates/%.tsv: %.json %_abc_urls.json ../patterns/data/default/%_class_curation.tsv
 	python ../scripts/template_runner.py generator -i $< -o $@

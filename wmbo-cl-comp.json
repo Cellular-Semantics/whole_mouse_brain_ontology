@@ -654,7 +654,7 @@
           "sub": "http://purl.obolibrary.org/obo/CL_4300348"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/CL_0008059",
+          "obj": "http://purl.obolibrary.org/obo/CL_0011006",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/CL_4301575"
         },
@@ -5559,10 +5559,10 @@
         "basicPropertyValues": [
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2025-10-24"
+            "val": "2025-10-27"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/pcl/releases/2025-10-24/../../wmbo-cl-comp.json"
+        "version": "http://purl.obolibrary.org/obo/pcl/releases/2025-10-27/../../wmbo-cl-comp.json"
       },
       "nodes": [
         {
@@ -7036,15 +7036,15 @@
             "basicPropertyValues": [
               {
                 "pred": "http://purl.obolibrary.org/obo/CLM_0010004",
-                "val": "0.04"
+                "val": "0.26"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/STATO_0000416",
-                "val": "1.0"
+                "val": "0.9285714"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/STATO_0000663",
-                "val": "0.1724138"
+                "val": "0.6132075"
               },
               {
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
@@ -7066,7 +7066,7 @@
             "basicPropertyValues": [
               {
                 "pred": "http://purl.obolibrary.org/obo/CLM_0010004",
-                "val": "0.3"
+                "val": "0.62"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/STATO_0000416",
@@ -7074,7 +7074,7 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/STATO_0000663",
-                "val": "0.6818182"
+                "val": "0.8908046"
               },
               {
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
@@ -7096,15 +7096,15 @@
             "basicPropertyValues": [
               {
                 "pred": "http://purl.obolibrary.org/obo/CLM_0010004",
-                "val": "0.12"
+                "val": "0.44"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/STATO_0000416",
-                "val": "1.0"
+                "val": "0.7096774"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/STATO_0000663",
-                "val": "0.4054054"
+                "val": "0.6321839"
               },
               {
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
@@ -8236,7 +8236,7 @@
             "basicPropertyValues": [
               {
                 "pred": "http://purl.obolibrary.org/obo/CLM_0010004",
-                "val": "0.7"
+                "val": "0.58"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/STATO_0000416",
@@ -8244,7 +8244,7 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/STATO_0000663",
-                "val": "0.92105263"
+                "val": "0.87349397"
               },
               {
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
@@ -10683,7 +10683,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CLM_5016796",
-          "lbl": "Sln 3 (Yao - within subclass).",
+          "lbl": "Sln (Yao - within subclass).",
           "meta": {
             "basicPropertyValues": [
               {
@@ -10899,7 +10899,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CLM_5016818",
-          "lbl": "Ttr 2 (Yao - within subclass).",
+          "lbl": "Ttr (Yao - within subclass).",
           "meta": {
             "basicPropertyValues": [
               {
@@ -10917,7 +10917,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CLM_5016821",
-          "lbl": "Bmp4 3 (Yao - within subclass).",
+          "lbl": "Bmp4 (Yao - within subclass).",
           "meta": {
             "basicPropertyValues": [
               {
@@ -12003,7 +12003,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CLM_5022205",
-          "lbl": "Ecrg4 (Yao - within subclass).",
+          "lbl": "Ecrg4 2 (Yao - within subclass).",
           "meta": {
             "basicPropertyValues": [
               {
@@ -12273,7 +12273,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CLM_5022220",
-          "lbl": "Ecrg4 2 (Yao - within subclass).",
+          "lbl": "Ecrg4 (Yao - within subclass).",
           "meta": {
             "basicPropertyValues": [
               {
@@ -14366,7 +14366,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4301575",
-          "lbl": "CB PLI Gly-Gaba_2 Purkinje layer interneuron (Mmus)",
+          "lbl": "CB PLI Gly-Gaba_2 Lugaro cell (Mmus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -14390,8 +14390,11 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_28.h5ad"
               }
             ],
+            "comments": [
+              "Rationale for assigning this type to reference data: Mapping of this cell type is supported by analysis: https://github.com/Cellular-Semantics/cellular_semantics_notebooks"
+            ],
             "definition": {
-              "val": "A Purkinje layer interneuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pthlh (Mmus), Tfap2b (Mmus), Rspo2 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1145 CB PLI Gly-Gaba_2.",
+              "val": "A Lugaro cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pthlh (Mmus), Tfap2b (Mmus), Rspo2 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1145 CB PLI Gly-Gaba_2.",
               "xrefs": [
                 "https://doi.org/10.1038/s41586-023-06812-z"
               ]
@@ -14403,7 +14406,7 @@
               },
               {
                 "pred": "hasExactSynonym",
-                "val": "Pthlh (Mmus), Tfap2b (Mmus), Rspo2 (Mmus) expressing Purkinje layer interneuron of brain (Mus musculus)"
+                "val": "Pthlh (Mmus), Tfap2b (Mmus), Rspo2 (Mmus) expressing Lugaro cell of brain (Mus musculus)"
               }
             ]
           },
@@ -15400,8 +15403,11 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad"
               }
             ],
+            "comments": [
+              "Rationale for assigning this type to reference data: Mapping of this cell set to a differentiation-committed oligodendrocyte is supported by spatial transcriptomic evidence and specific expression of Gpr17, Bmp4, Neu4, Fyn in the context of oligodendrocyte lineage cells."
+            ],
             "definition": {
-              "val": "A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Bmp4 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1181 COP NN_1. Rationale for assigning this type to reference data: Mapping of this cell set to a differentiation-committed oligodendrocyte is supported by spatial transcriptomic evidence and specific expression of Gpr17, Bmp4, Neu4, Fyn in the context of oligodendrocyte lineage cells.",
+              "val": "A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Bmp4 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1181 COP NN_1.",
               "xrefs": [
                 "https://doi.org/10.1038/s41586-023-06812-z",
                 "https://doi.org/10.1126/science.aaf6463"
@@ -15450,8 +15456,11 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad"
               }
             ],
+            "comments": [
+              "Rationale for assigning this type to reference data: Mapping of this cell set to a newly formed oligodendrocyte is supported by spatial transcriptomic evidence and specific expression of Tcf7l2, Klk6, Cemip2, Casr in the context of oligodendrocyte lineage cells."
+            ],
             "definition": {
-              "val": "A newly formed oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Ptprb (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1182 NFOL NN_2. Rationale for assigning this type to reference data: Mapping of this cell set to a newly formed oligodendrocyte is supported by spatial transcriptomic evidence and specific expression of Tcf7l2, Klk6, Cemip2, Casr in the context of oligodendrocyte lineage cells.",
+              "val": "A newly formed oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Ptprb (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1182 NFOL NN_2.",
               "xrefs": [
                 "https://doi.org/10.1038/s41586-023-06812-z",
                 "https://doi.org/10.1126/science.aaf6463"
@@ -15500,8 +15509,11 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad"
               }
             ],
+            "comments": [
+              "Rationale for assigning this type to reference data: Mapping of this cell set to a myelin-forming oligodendrocyte is supported by spatial transcriptomic evidence and specific expression of Ctps, Cldn11 in the context of oligodendrocyte lineage cells."
+            ],
             "definition": {
-              "val": "A myelin-forming oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cldn11 (Mmus), Sec14l5 (Mmus), 9630013A20Rik (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1183 MFOL NN_3. Rationale for assigning this type to reference data: Mapping of this cell set to a myelin-forming oligodendrocyte is supported by spatial transcriptomic evidence and specific expression of Ctps, Cldn11 in the context of oligodendrocyte lineage cells.",
+              "val": "A myelin-forming oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cldn11 (Mmus), Sec14l5 (Mmus), 9630013A20Rik (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1183 MFOL NN_3.",
               "xrefs": [
                 "https://doi.org/10.1038/s41586-023-06812-z",
                 "https://doi.org/10.1126/science.aaf6463"
@@ -15550,8 +15562,11 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad"
               }
             ],
+            "comments": [
+              "Rationale for assigning this type to reference data: Mapping of this cell set to a mature myelinating oligodendrocyte is supported by spatial transcriptomic evidence and specific expression of Klk6 in the context of oligodendrocyte lineage cells."
+            ],
             "definition": {
-              "val": "A mature myelinating oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cldn11 (Mmus), Anln (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1184 MOL NN_4. Rationale for assigning this type to reference data: Mapping of this cell set to a mature myelinating oligodendrocyte is supported by spatial transcriptomic evidence and specific expression of Klk6 in the context of oligodendrocyte lineage cells.",
+              "val": "A mature myelinating oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cldn11 (Mmus), Anln (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1184 MOL NN_4.",
               "xrefs": [
                 "https://doi.org/10.1038/s41586-023-06812-z",
                 "https://doi.org/10.1126/science.aaf6463"
@@ -15876,8 +15891,11 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_25.h5ad"
               }
             ],
+            "comments": [
+              "Rationale for assigning this type to reference data: Consistent with this cell set being composed of Pinealocytes, a combination of Pinealocyte markers Gngt1 and Crx can identify the cells in this cluster with a confidence (F-beta score) of 0.91 in the context of glutamatergic cells (Pinealocytes release glutamate) from the hippocampal formation dissection (which includes the pineal gland)."
+            ],
             "definition": {
-              "val": "A pinealocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cngb3 (Mmus), Ush2a (Mmus). It is glutamatergic. These cells are located in the brain , in or close to the regions: third ventricle . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:4606 Pineal Crx Glut_1. Rationale for assigning this type to reference data: Consistent with this cell set being composed of Pinealocytes, a combination of Pinealocyte markers Gngt1 and Crx can identify the cells in this cluster with a confidence (F-beta score) of 0.91 in the context of glutamatergic cells (Pinealocytes release glutamate) from the hippocampal formation dissection (which includes the pineal gland).",
+              "val": "A pinealocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cngb3 (Mmus), Ush2a (Mmus). It is glutamatergic. These cells are located in the brain , in or close to the regions: third ventricle . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:4606 Pineal Crx Glut_1.",
               "xrefs": [
                 "https://doi.org/10.1038/s41586-023-06812-z",
                 "https://doi.org/10.1111/j.1600-079x.1996.tb00284.x",
@@ -16085,7 +16103,7 @@
               },
               {
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
-                "val": "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTE5MiBDQlggTUxJIENkaDIyIEdhYmFfMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACSFNZWlBaVzE2NjlVODIxQldZUAADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTE5MiBDQlggTUxJIENkaDIyIEdhYmFfMQAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIVkZPRllQRlFHUktVRFFVWjNGRgAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBVExPS1dDTDk1UlUwM0Q5UEVURwACNzNHVlREWERFR0UyN00yWEpNVAADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D"
+                "val": "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzEyIENCWCBNTEkgQ2RoMjIgR2FiYQAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAlFZNVM4S01PNUhMSlVGMFAwMEsAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACSFNZWlBaVzE2NjlVODIxQldZUAADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzEyIENCWCBNTEkgQ2RoMjIgR2FiYQAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAlFZNVM4S01PNUhMSlVGMFAwMEsAA34AAAAEAAAIVkZPRllQRlFHUktVRFFVWjNGRgAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBVExPS1dDTDk1UlUwM0Q5UEVURwACNzNHVlREWERFR0UyN00yWEpNVAADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D"
               },
               {
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
@@ -16150,7 +16168,7 @@
               },
               {
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
-                "val": "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTIwNiBCZXJnbWFubiBOTl8xAAAEAQECgazGjoGWFSADhGpN%2FYRYGE0ABQAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJIU1laUFpXMTY2OVU4MjFCV1lQAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgE1MjA2IEJlcmdtYW5uIE5OXzEAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA"
+                "val": "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzE2IEJlcmdtYW5uIE5OAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACAAAEAQECgazGjoGWFSADhGpN%2FYRYGE0ABQAGAQECUVk1UzhLTU81SExKVUYwUDAwSwADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJIU1laUFpXMTY2OVU4MjFCV1lQAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgEzMTYgQmVyZ21hbm4gTk4AAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAAYBAQJRWTVTOEtNTzVITEpVRjBQMDBLAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA"
               },
               {
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
@@ -16219,7 +16237,7 @@
               },
               {
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
-                "val": "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTIwNyBBc3Ryby1DQiBOTl8xAAAEAQECgazGjoGWFSADhGpN%2FYRYGE0ABQAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJIU1laUFpXMTY2OVU4MjFCV1lQAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgE1MjA3IEFzdHJvLUNCIE5OXzEAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA"
+                "val": "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzE3IEFzdHJvLUNCIE5OAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACAAAEAQECgazGjoGWFSADhGpN%2FYRYGE0ABQAGAQECUVk1UzhLTU81SExKVUYwUDAwSwADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJIU1laUFpXMTY2OVU4MjFCV1lQAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgEzMTcgQXN0cm8tQ0IgTk4AAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAAYBAQJRWTVTOEtNTzVITEpVRjBQMDBLAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA"
               },
               {
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
@@ -18028,8 +18046,11 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
             ],
+            "comments": [
+              "Rationale for assigning this type to reference data: Mapping to tanycyte of subfornical organ based on spatial transcriptomics evidence."
+            ],
             "definition": {
-              "val": "A tanycyte of subfornical organ of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cnmd (Mmus), Sfta3-ps (Mmus). It is distinguished from other Tanycyte NN_1 cells by expression of Cnmd. These cells are located in the brain , in or close to the regions: choroid plexus, third ventricle . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5243 Tanycyte NN_1. Rationale for assigning this type to reference data: Mapping to tanycyte of subfornical organ based on spatial transcriptomics evidence.",
+              "val": "A tanycyte of subfornical organ of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cnmd (Mmus), Sfta3-ps (Mmus). It is distinguished from other Tanycyte NN_1 cells by expression of Cnmd. These cells are located in the brain , in or close to the regions: choroid plexus, third ventricle . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5243 Tanycyte NN_1.",
               "xrefs": [
                 "https://doi.org/10.1038/s41586-023-06812-z"
               ]
@@ -18517,15 +18538,18 @@
               },
               {
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
-                "val": "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI2MyBIeXBlbmR5bWFsIE5OXzEAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAkhTWVpQWlcxNjY5VTgyMUJXWVAAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACATUyNjMgSHlwZW5keW1hbCBOTl8xAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhWRk9GWVBGUUdSS1VEUVVaM0ZGAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFUTE9LV0NMOTVSVTAzRDlQRVRHAAI3M0dWVERYREVHRTI3TTJYSk1UAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D"
+                "val": "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzI0IEh5cGVuZHltYWwgTk4AAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAAYBAQJRWTVTOEtNTzVITEpVRjBQMDBLAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAkhTWVpQWlcxNjY5VTgyMUJXWVAAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACATMyNCBIeXBlbmR5bWFsIE5OAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQAGAQECUVk1UzhLTU81SExKVUYwUDAwSwADfgAAAAQAAAhWRk9GWVBGUUdSS1VEUVVaM0ZGAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFUTE9LV0NMOTVSVTAzRDlQRVRHAAI3M0dWVERYREVHRTI3TTJYSk1UAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D"
               },
               {
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
             ],
+            "comments": [
+              "Rationale for assigning this type to reference data: Mapping of this cell set to the hypendemal cell type is supported by its location to the subcommisural organ (from spatial transcriptomics), its expression of Sspo and its general transcriptomic classification in a class (Astro-Epen) along with epdendymal cells, tanycytes and astrocytes."
+            ],
             "definition": {
-              "val": "A hypendymal cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Sspo (Mmus), Wfdc2 (Mmus). It is distinguished from other Astro-Epen cells by expression of Sspo, Wfdc2. These cells are located in the Midbrain, brain , in or close to the regions: third ventricle, posterior commissure, Subcommissural organ . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5263 Hypendymal NN_1. Rationale for assigning this type to reference data: Mapping of this cell set to the hypendemal cell type is supported by its location to the subcommisural organ (from spatial transcriptomics), its expression of Sspo and its general transcriptomic classification in a class (Astro-Epen) along with epdendymal cells, tanycytes and astrocytes.",
+              "val": "A hypendymal cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Sspo (Mmus), Wfdc2 (Mmus). It is distinguished from other Astro-Epen cells by expression of Sspo, Wfdc2. These cells are located in the Midbrain, brain , in or close to the regions: third ventricle, posterior commissure, Subcommissural organ . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5263 Hypendymal NN_1.",
               "xrefs": [
                 "doi:10.3389/fncel.2015.00480",
                 "https://doi.org/10.1038/s41586-023-06812-z"
@@ -20323,7 +20347,7 @@
               },
               {
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
-                "val": "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTMxMiBNaWNyb2dsaWEgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACSFNZWlBaVzE2NjlVODIxQldZUAADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTMxMiBNaWNyb2dsaWEgTk5fMQAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIVkZPRllQRlFHUktVRFFVWjNGRgAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBVExPS1dDTDk1UlUwM0Q5UEVURwACNzNHVlREWERFR0UyN00yWEpNVAADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D"
+                "val": "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzM0IE1pY3JvZ2xpYSBOTgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAlFZNVM4S01PNUhMSlVGMFAwMEsAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACSFNZWlBaVzE2NjlVODIxQldZUAADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzM0IE1pY3JvZ2xpYSBOTgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAlFZNVM4S01PNUhMSlVGMFAwMEsAA34AAAAEAAAIVkZPRllQRlFHUktVRFFVWjNGRgAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBVExPS1dDTDk1UlUwM0Q5UEVURwACNzNHVlREWERFR0UyN00yWEpNVAADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D"
               },
               {
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
@@ -32969,6 +32993,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_0008059",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CL_0011006",
           "type": "CLASS"
         },
         {
