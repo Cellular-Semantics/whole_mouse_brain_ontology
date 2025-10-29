@@ -6,14 +6,11 @@ ontology: pcl/wmbo-pcl-comp
 
 [Term]
 id: CL:4300028
-name: cerebellar GABAergic neuron (Mmus)
+name: CB GABA cerebellar neuron (Mmus)
 def: "A cerebellar neuron of the Mus musculus brain. Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Class:28 CB GABA." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "28 CB GABA" EXACT []
-is_a: CL:0000617
 is_a: CL:1001611
-relationship: RO:0002100 MBA:512
 relationship: RO:0002162 NCBITaxon:10090
-relationship: RO:0002215 GO:0061534 {comment="All clusters in this set are inferred to be GABAergic from NT marker expression."}
 property_value: CLM:0010003 CLM:5007648 {STATO:0000663="0.62880975"}
 property_value: IAO:0000028 "CB GABA (Mmus)" xsd:string
 property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIBMjggQ0IgR0FCQQAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAkZTMDBEWFYwVDlSMVg5Rko0UUUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACSFNZWlBaVzE2NjlVODIxQldZUAADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIBMjggQ0IgR0FCQQAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAkZTMDBEWFYwVDlSMVg5Rko0UUUAA34AAAAEAAAIVkZPRllQRlFHUktVRFFVWjNGRgAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBVExPS1dDTDk1UlUwM0Q5UEVURwACNzNHVlREWERFR0UyN00yWEpNVAADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="Reference data on Allen Brain Cell Atlas"}
@@ -21,13 +18,11 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 
 [Term]
 id: CL:4300029
-name: cerebellar glutamatergic neuron (Mmus)
+name: CB Glut cerebellum glutamatergic neuron (Mmus)
 def: "A cerebellum glutamatergic neuron of the Mus musculus brain. Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Class:29 CB Glut." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "29 CB Glut" EXACT []
 is_a: CL:2000028
-relationship: RO:0002100 MBA:512
 relationship: RO:0002162 NCBITaxon:10090
-relationship: RO:0002215 GO:0061535 {comment="All clusters in this set are inferred to be glutamatergic from NT marker expression."}
 property_value: CLM:0010003 CLM:5007649 {STATO:0000663="0.7043236"}
 property_value: IAO:0000028 "CB Glut (Mmus)" xsd:string
 property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIBMjkgQ0IgR2x1dAAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUABgEBAkZTMDBEWFYwVDlSMVg5Rko0UUUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACSFNZWlBaVzE2NjlVODIxQldZUAADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIBMjkgQ0IgR2x1dAAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUABgEBAkZTMDBEWFYwVDlSMVg5Rko0UUUAA34AAAAEAAAIVkZPRllQRlFHUktVRFFVWjNGRgAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBVExPS1dDTDk1UlUwM0Q5UEVURwACNzNHVlREWERFR0UyN00yWEpNVAADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="Reference data on Allen Brain Cell Atlas"}
@@ -77,9 +72,7 @@ name: DCO Il22 Gly-Gaba cerebellar neuron (Mmus)
 def: "A cerebellar neuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Tmem204 (Mmus), Slc6a5 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:308 DCO Il22 Gly-Gaba." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "308 DCO Il22 Gly-Gaba" EXACT []
 synonym: "Tmem204 (Mmus), Slc6a5 (Mmus) expressing cerebellar neuron of brain (Mus musculus)" EXACT []
-is_a: CL:0008059
-is_a: CL:4300028 ! cerebellar GABAergic neuron (Mmus)
-relationship: RO:0002215 GO:0061537 {comment="All clusters under this cell set are inferred to be glycinergic based on neurotransmitter marker expression."}
+is_a: CL:4300028 ! CB GABA cerebellar neuron (Mmus)
 property_value: CLM:0010003 CLM:5000348 {STATO:0000663="0.49118388"}
 property_value: CLM:0010003 CLM:5007968 {STATO:0000663="0.5344828"}
 property_value: IAO:0000028 "DCO Il22 Gly-Gaba (Mmus)" xsd:string
@@ -88,12 +81,12 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 
 [Term]
 id: CL:4300349
-name: Purkinje layer interneuron (Mmus)
+name: CB PLI Gly-Gaba Purkinje layer interneuron (Mmus)
 def: "A Purkinje layer interneuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Rgs6 (Mmus), Slc6a5 (Mmus), Shisa9 (Mmus), Zic1 (Mmus), Bmp6 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:309 CB PLI Gly-Gaba." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "309 CB PLI Gly-Gaba" EXACT []
 synonym: "Rgs6 (Mmus), Slc6a5 (Mmus), Shisa9 (Mmus), Zic1 (Mmus), Bmp6 (Mmus) expressing Purkinje layer interneuron of brain (Mus musculus)" EXACT []
 is_a: CL:4072102
-is_a: CL:4300028 ! cerebellar GABAergic neuron (Mmus)
+is_a: CL:4300028 ! CB GABA cerebellar neuron (Mmus)
 property_value: CLM:0010003 CLM:5000349 {STATO:0000663="0.023094688"}
 property_value: CLM:0010003 CLM:5007969 {STATO:0000663="0.56375134"}
 property_value: IAO:0000028 "CB PLI Gly-Gaba (Mmus)" xsd:string
@@ -107,7 +100,7 @@ def: "A molecular layer interneuron of the Mus musculus brain. It is distinguish
 synonym: "311 CBX MLI Megf11 Gaba" EXACT []
 synonym: "Homer3 (Mmus), Tfap2b (Mmus), Sorcs3 (Mmus), Cacna1e (Mmus) expressing molecular layer interneuron of brain (Mus musculus)" EXACT []
 is_a: CL:4042035
-is_a: CL:4300028 ! cerebellar GABAergic neuron (Mmus)
+is_a: CL:4300028 ! CB GABA cerebellar neuron (Mmus)
 property_value: CLM:0010003 CLM:5000351 {STATO:0000663="0.24193548"}
 property_value: CLM:0010003 CLM:5007971 {STATO:0000663="0.6644144"}
 property_value: IAO:0000028 "CBX MLI Megf11 Gaba (Mmus)" xsd:string
@@ -116,12 +109,12 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 
 [Term]
 id: CL:4300353
-name: Purkinje cell (Mmus)
+name: CBX Purkinje Gaba Purkinje cell (Mmus)
 def: "A Purkinje cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pcp2 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:313 CBX Purkinje Gaba." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "313 CBX Purkinje Gaba" EXACT []
 synonym: "Pcp2 (Mmus) expressing Purkinje cell of brain (Mus musculus)" EXACT []
 is_a: CL:0000121
-is_a: CL:4300028 ! cerebellar GABAergic neuron (Mmus)
+is_a: CL:4300028 ! CB GABA cerebellar neuron (Mmus)
 property_value: CLM:0010003 CLM:5000353 {STATO:0000663="0.9569378"}
 property_value: CLM:0010003 CLM:5007973 {STATO:0000663="0.99375"}
 property_value: IAO:0000028 "CBX Purkinje Gaba (Mmus)" xsd:string
@@ -130,12 +123,12 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 
 [Term]
 id: CL:4300354
-name: cerebellar granule cell (Mmus)
+name: CB Granule Glut cerebellar granule cell (Mmus)
 def: "A cerebellar granule cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gabra6 (Mmus), Ror1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:314 CB Granule Glut." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "314 CB Granule Glut" EXACT []
 synonym: "Gabra6 (Mmus), Ror1 (Mmus) expressing cerebellar granule cell of brain (Mus musculus)" EXACT []
 is_a: CL:0001031
-is_a: CL:4300029 ! cerebellar glutamatergic neuron (Mmus)
+is_a: CL:4300029 ! CB Glut cerebellum glutamatergic neuron (Mmus)
 property_value: CLM:0010003 CLM:5000354 {STATO:0000663="0.62749004"}
 property_value: CLM:0010003 CLM:5007974 {STATO:0000663="0.8494624"}
 property_value: IAO:0000028 "CB Granule Glut (Mmus)" xsd:string
@@ -144,11 +137,10 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 
 [Term]
 id: CL:4300358
-name: subcortical astrocyte (Mmus)
-def: "A transcriptomically defined type of astrocyte located predominantly in the ventral and posterior subcortical areas.   It is distinguished from other cells in the brain by selective expression of Aqp4 (Mmus), Cd38 (Mmus), Agt (Mmus), Itih3 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:318 Astro-NT NN." [https://doi.org/10.1038/s41586-023-06812-z]
+name: Astro-NT NN astrocyte (Mmus)
+def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Aqp4 (Mmus), Cd38 (Mmus), Agt (Mmus), Itih3 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:318 Astro-NT NN." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "318 Astro-NT NN" EXACT []
 synonym: "Aqp4 (Mmus), Cd38 (Mmus), Agt (Mmus), Itih3 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
-synonym: "non-telencephalic astrocyte" EXACT []
 is_a: CL:0000127
 property_value: CLM:0010003 CLM:5000358 {STATO:0000663="0.4052198"}
 property_value: CLM:0010003 CLM:5007978 {STATO:0000663="0.6994048"}
@@ -158,11 +150,10 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 
 [Term]
 id: CL:4300359
-name: astrocyte of cerebrum (Mmus)
-def: "A transcritpomically defined type of astrocytes primarily restricted to the dorsal regions of the cerebrum. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), Lhx2 (Mmus), Gpc5 (Mmus), Nr2f1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:319 Astro-TE NN." [https://doi.org/10.1038/s41586-023-06812-z]
+name: Astro-TE NN astrocyte (Mmus)
+def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), Lhx2 (Mmus), Gpc5 (Mmus), Nr2f1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:319 Astro-TE NN." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "319 Astro-TE NN" EXACT []
 synonym: "Gja1 (Mmus), Lhx2 (Mmus), Gpc5 (Mmus), Nr2f1 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
-synonym: "telencephalic astrocyte" EXACT []
 is_a: CL:0000127
 property_value: CLM:0010003 CLM:5000359 {STATO:0000663="0.03968254"}
 property_value: CLM:0010003 CLM:5007979 {STATO:0000663="0.58093345"}
@@ -172,8 +163,8 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 
 [Term]
 id: CL:4300360
-name: olfactory areas astrocyte (Mmus)
-def: "A transcriptomically defined type of astrocyte located exclusively in the olfactory areas. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), Hs3st3a1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:320 Astro-OLF NN." [https://doi.org/10.1038/s41586-023-06812-z]
+name: Astro-OLF NN astrocyte (Mmus)
+def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), Hs3st3a1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:320 Astro-OLF NN." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "320 Astro-OLF NN" EXACT []
 synonym: "Gja1 (Mmus), Hs3st3a1 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:0000127
@@ -185,7 +176,7 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 
 [Term]
 id: CL:4300362
-name: tanycyte (Mmus)
+name: Tanycyte NN tanycyte (Mmus)
 def: "A tanycyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr50 (Mmus), Apoe (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:322 Tanycyte NN." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "322 Tanycyte NN" EXACT []
 synonym: "Gpr50 (Mmus), Apoe (Mmus) expressing tanycyte of brain (Mus musculus)" EXACT []
@@ -198,7 +189,7 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 
 [Term]
 id: CL:4300363
-name: ependymal cell (Mmus)
+name: Ependymal NN ependymal cell (Mmus)
 def: "A ependymal cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Tmem212 (Mmus), Rarres2 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:323 Ependymal NN." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "323 Ependymal NN" EXACT []
 synonym: "Tmem212 (Mmus), Rarres2 (Mmus) expressing ependymal cell of brain (Mus musculus)" EXACT []
@@ -211,7 +202,7 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 
 [Term]
 id: CL:4300366
-name: oligodendrocyte precursor cell (Mmus)
+name: OPC NN oligodendrocyte precursor cell (Mmus)
 def: "A oligodendrocyte precursor cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pdgfra (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:326 OPC NN." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "326 OPC NN" EXACT []
 synonym: "Pdgfra (Mmus) expressing oligodendrocyte precursor cell of brain (Mus musculus)" EXACT []
@@ -225,7 +216,7 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 
 [Term]
 id: CL:4300367
-name: oligodendrocyte (Mmus)
+name: Oligo NN oligodendrocyte (Mmus)
 def: "A oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cldn11 (Mmus), Gjc3 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:327 Oligo NN." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "327 Oligo NN" EXACT []
 synonym: "Cldn11 (Mmus), Gjc3 (Mmus) expressing oligodendrocyte of brain (Mus musculus)" EXACT []
@@ -244,7 +235,6 @@ def: "A vascular leptomeningeal cell of the Mus musculus brain. It is distinguis
 synonym: "330 VLMC NN" EXACT []
 synonym: "Apod (Mmus), Slc6a13 (Mmus) expressing vascular leptomeningeal cell of brain (Mus musculus)" EXACT []
 is_a: CL:4023051
-relationship: RO:0002162 NCBITaxon:10090
 property_value: CLM:0010003 CLM:5000370 {STATO:0000663="0.8806818"}
 property_value: CLM:0010003 CLM:5007990 {STATO:0000663="0.8556548"}
 property_value: IAO:0000028 "VLMC NN (Mmus)" xsd:string
@@ -283,7 +273,7 @@ name: CB PLI Gly-Gaba_1 Purkinje layer interneuron (Mmus)
 def: "A Purkinje layer interneuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Hmga2 (Mmus), Afap1l2 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1144 CB PLI Gly-Gaba_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1144 CB PLI Gly-Gaba_1" EXACT []
 synonym: "Hmga2 (Mmus), Afap1l2 (Mmus) expressing Purkinje layer interneuron of brain (Mus musculus)" EXACT []
-is_a: CL:4300349 ! Purkinje layer interneuron (Mmus)
+is_a: CL:4300349 ! CB PLI Gly-Gaba Purkinje layer interneuron (Mmus)
 property_value: CLM:0010003 CLM:5001564 {STATO:0000663="0.49407116"}
 property_value: CLM:0010003 CLM:5016784
 property_value: IAO:0000028 "CB PLI Gly-Gaba_1 (Mmus)" xsd:string
@@ -298,8 +288,7 @@ comment: Rationale for assigning this type to reference data: Mapping of this ce
 synonym: "1145 CB PLI Gly-Gaba_2" EXACT []
 synonym: "Pthlh (Mmus), Tfap2b (Mmus), Rspo2 (Mmus) expressing Lugaro cell of brain (Mus musculus)" EXACT []
 is_a: CL:0011006
-is_a: CL:4300349 ! Purkinje layer interneuron (Mmus)
-relationship: RO:0002215 GO:0061537 {comment="All clusters under this cell set are inferred to be glycinergic based on neurotransmitter marker expression."}
+is_a: CL:4300349 ! CB PLI Gly-Gaba Purkinje layer interneuron (Mmus)
 property_value: CLM:0010003 CLM:5001565 {STATO:0000663="0.74850297"}
 property_value: CLM:0010003 CLM:5016785
 property_value: IAO:0000028 "CB PLI Gly-Gaba_2 (Mmus)" xsd:string
@@ -312,7 +301,7 @@ name: CB PLI Gly-Gaba_3 Purkinje layer interneuron (Mmus)
 def: "A Purkinje layer interneuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pax2 (Mmus), C1ql3 (Mmus), Tfap2b (Mmus), Gabrb1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1146 CB PLI Gly-Gaba_3." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1146 CB PLI Gly-Gaba_3" EXACT []
 synonym: "Pax2 (Mmus), C1ql3 (Mmus), Tfap2b (Mmus), Gabrb1 (Mmus) expressing Purkinje layer interneuron of brain (Mus musculus)" EXACT []
-is_a: CL:4300349 ! Purkinje layer interneuron (Mmus)
+is_a: CL:4300349 ! CB PLI Gly-Gaba Purkinje layer interneuron (Mmus)
 property_value: CLM:0010003 CLM:5001566 {STATO:0000663="0.30487806"}
 property_value: CLM:0010003 CLM:5016786
 property_value: IAO:0000028 "CB PLI Gly-Gaba_3 (Mmus)" xsd:string
@@ -321,13 +310,13 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 
 [Term]
 id: CL:4301578
-name: cerebellar Golgi cell (Mmus)
+name: CBX Golgi Gly-Gaba cerebellar Golgi cell (Mmus)
 def: "A cerebellar Golgi cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Zfp385c (Mmus), Tfap2b (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1148 CBX Golgi Gly-Gaba_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1148 CBX Golgi Gly-Gaba_1" EXACT []
 synonym: "310 CBX Golgi Gly-Gaba" EXACT []
 synonym: "Zfp385c (Mmus), Tfap2b (Mmus) expressing cerebellar Golgi cell of brain (Mus musculus)" EXACT []
 is_a: CL:0000119
-is_a: CL:4300028 ! cerebellar GABAergic neuron (Mmus)
+is_a: CL:4300028 ! CB GABA cerebellar neuron (Mmus)
 property_value: CLM:0010003 CLM:5001568 {STATO:0000663="0.610687"}
 property_value: CLM:0010003 CLM:5007970 {STATO:0000663="0.87349397"}
 property_value: CLM:0010003 CLM:5016788
@@ -367,7 +356,7 @@ name: CBX Purkinje Gaba_1 Purkinje cell (Mmus)
 def: "A Purkinje cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pcp2 (Mmus), Stk17b (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1152 CBX Purkinje Gaba_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1152 CBX Purkinje Gaba_1" EXACT []
 synonym: "Pcp2 (Mmus), Stk17b (Mmus) expressing Purkinje cell of brain (Mus musculus)" EXACT []
-is_a: CL:4300353 ! Purkinje cell (Mmus)
+is_a: CL:4300353 ! CBX Purkinje Gaba Purkinje cell (Mmus)
 property_value: CLM:0010003 CLM:5001572 {STATO:0000663="0.608828"}
 property_value: CLM:0010003 CLM:5016792
 property_value: IAO:0000028 "CBX Purkinje Gaba_1 (Mmus)" xsd:string
@@ -379,7 +368,7 @@ id: CL:4301583
 name: CBX Purkinje Gaba_2 Purkinje cell (Mmus)
 def: "A Purkinje cell of the Mus musculus brain. Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1153 CBX Purkinje Gaba_2." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1153 CBX Purkinje Gaba_2" EXACT []
-is_a: CL:4300353 ! Purkinje cell (Mmus)
+is_a: CL:4300353 ! CBX Purkinje Gaba Purkinje cell (Mmus)
 property_value: CLM:0010003 CLM:5016793
 property_value: IAO:0000028 "CBX Purkinje Gaba_2 (Mmus)" xsd:string
 property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE1MyBDQlggUHVya2luamUgR2FiYV8yAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACAAAEAQECgazGjoGWFSADhGpN%2FYRYGE0ABQAGAQECMTVCSzQ3RENJT0YxU0xMVVc5UAADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJIU1laUFpXMTY2OVU4MjFCV1lQAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgExMTUzIENCWCBQdXJraW5qZSBHYWJhXzIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAAYBAQIxNUJLNDdEQ0lPRjFTTExVVzlQAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA" xsd:string {name="Reference data on Allen Brain Cell Atlas"}
@@ -391,7 +380,7 @@ name: CB Granule Glut_1 cerebellar granule cell (Mmus)
 def: "A cerebellar granule cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gabra6 (Mmus), Lmx1a (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1154 CB Granule Glut_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1154 CB Granule Glut_1" EXACT []
 synonym: "Gabra6 (Mmus), Lmx1a (Mmus) expressing cerebellar granule cell of brain (Mus musculus)" EXACT []
-is_a: CL:4300354 ! cerebellar granule cell (Mmus)
+is_a: CL:4300354 ! CB Granule Glut cerebellar granule cell (Mmus)
 property_value: CLM:0010003 CLM:5001574 {STATO:0000663="0.35714287"}
 property_value: CLM:0010003 CLM:5016794
 property_value: IAO:0000028 "CB Granule Glut_1 (Mmus)" xsd:string
@@ -404,7 +393,7 @@ name: CB Granule Glut_2 cerebellar granule cell (Mmus)
 def: "A cerebellar granule cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gabra6 (Mmus), Gap43 (Mmus), Rab37 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1155 CB Granule Glut_2." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1155 CB Granule Glut_2" EXACT []
 synonym: "Gabra6 (Mmus), Gap43 (Mmus), Rab37 (Mmus) expressing cerebellar granule cell of brain (Mus musculus)" EXACT []
-is_a: CL:4300354 ! cerebellar granule cell (Mmus)
+is_a: CL:4300354 ! CB Granule Glut cerebellar granule cell (Mmus)
 property_value: CLM:0010003 CLM:5001575 {STATO:0000663="0.24193548"}
 property_value: CLM:0010003 CLM:5016795
 property_value: IAO:0000028 "CB Granule Glut_2 (Mmus)" xsd:string
@@ -413,13 +402,13 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 
 [Term]
 id: CL:4301586
-name: unipolar brush cell (Mmus)
+name: DCO UBC Glut unipolar brush cell (Mmus)
 def: "A unipolar brush cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Sln (Mmus), Lmx1a (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1156 DCO UBC Glut_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1156 DCO UBC Glut_1" EXACT []
 synonym: "315 DCO UBC Glut" EXACT []
 synonym: "Sln (Mmus), Lmx1a (Mmus) expressing unipolar brush cell of brain (Mus musculus)" EXACT []
 is_a: CL:4023161
-is_a: CL:4300029 ! cerebellar glutamatergic neuron (Mmus)
+is_a: CL:4300029 ! CB Glut cerebellum glutamatergic neuron (Mmus)
 property_value: CLM:0010003 CLM:5001576 {STATO:0000663="0.5875"}
 property_value: CLM:0010003 CLM:5007975 {STATO:0000663="0.875"}
 property_value: CLM:0010003 CLM:5016796
@@ -433,7 +422,7 @@ name: Astro-NT NN_1 astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gfap (Mmus), Lhfpl3 (Mmus), Gria1 (Mmus), Hopx (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1159 Astro-NT NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1159 Astro-NT NN_1" EXACT []
 synonym: "Gfap (Mmus), Lhfpl3 (Mmus), Gria1 (Mmus), Hopx (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
-is_a: CL:4300358 ! subcortical astrocyte (Mmus)
+is_a: CL:4300358 ! Astro-NT NN astrocyte (Mmus)
 property_value: CLM:0010003 CLM:5001579 {STATO:0000663="0.14610389"}
 property_value: CLM:0010003 CLM:5016799
 property_value: IAO:0000028 "Astro-NT NN_1 (Mmus)" xsd:string
@@ -446,7 +435,7 @@ name: Astro-NT NN_2 astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), A330076C08Rik (Mmus), Itih3 (Mmus), Gria2 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1160 Astro-NT NN_2." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1160 Astro-NT NN_2" EXACT []
 synonym: "Gja1 (Mmus), A330076C08Rik (Mmus), Itih3 (Mmus), Gria2 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
-is_a: CL:4300358 ! subcortical astrocyte (Mmus)
+is_a: CL:4300358 ! Astro-NT NN astrocyte (Mmus)
 property_value: CLM:0010003 CLM:5001580 {STATO:0000663="0.3472222"}
 property_value: CLM:0010003 CLM:5016800
 property_value: IAO:0000028 "Astro-NT NN_2 (Mmus)" xsd:string
@@ -459,7 +448,7 @@ name: Astro-TE NN_1 astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Myoc (Mmus), Camk2a (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1161 Astro-TE NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1161 Astro-TE NN_1" EXACT []
 synonym: "Myoc (Mmus), Camk2a (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
-is_a: CL:4300359 ! astrocyte of cerebrum (Mmus)
+is_a: CL:4300359 ! Astro-TE NN astrocyte (Mmus)
 property_value: CLM:0010003 CLM:5001581 {STATO:0000663="0.19067797"}
 property_value: CLM:0010003 CLM:5016801
 property_value: IAO:0000028 "Astro-TE NN_1 (Mmus)" xsd:string
@@ -472,7 +461,7 @@ name: Astro-TE NN_2 astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Hepacam (Mmus), E330013P04Rik (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1162 Astro-TE NN_2." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1162 Astro-TE NN_2" EXACT []
 synonym: "Hepacam (Mmus), E330013P04Rik (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
-is_a: CL:4300359 ! astrocyte of cerebrum (Mmus)
+is_a: CL:4300359 ! Astro-TE NN astrocyte (Mmus)
 property_value: CLM:0010003 CLM:5001582 {STATO:0000663="0.5882353"}
 property_value: CLM:0010003 CLM:5016802
 property_value: IAO:0000028 "Astro-TE NN_2 (Mmus)" xsd:string
@@ -485,7 +474,7 @@ name: Astro-TE NN_3 astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), Grin2c (Mmus), Dcc (Mmus), Slc7a10 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1163 Astro-TE NN_3." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1163 Astro-TE NN_3" EXACT []
 synonym: "Gja1 (Mmus), Grin2c (Mmus), Dcc (Mmus), Slc7a10 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
-is_a: CL:4300359 ! astrocyte of cerebrum (Mmus)
+is_a: CL:4300359 ! Astro-TE NN astrocyte (Mmus)
 property_value: CLM:0010003 CLM:5001583 {STATO:0000663="0.33450705"}
 property_value: CLM:0010003 CLM:5016803
 property_value: IAO:0000028 "Astro-TE NN_3 (Mmus)" xsd:string
@@ -498,7 +487,7 @@ name: Astro-TE NN_5 astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), Thbs4 (Mmus), Kcnk10 (Mmus), Pak1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1165 Astro-TE NN_5." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1165 Astro-TE NN_5" EXACT []
 synonym: "Gja1 (Mmus), Thbs4 (Mmus), Kcnk10 (Mmus), Pak1 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
-is_a: CL:4300359 ! astrocyte of cerebrum (Mmus)
+is_a: CL:4300359 ! Astro-TE NN astrocyte (Mmus)
 property_value: CLM:0010003 CLM:5001585 {STATO:0000663="0.048076924"}
 property_value: CLM:0010003 CLM:5016805
 property_value: IAO:0000028 "Astro-TE NN_5 (Mmus)" xsd:string
@@ -511,7 +500,7 @@ name: Astro-OLF NN_1 astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Aqp4 (Mmus), Prss23 (Mmus), Igfbp2 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1166 Astro-OLF NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1166 Astro-OLF NN_1" EXACT []
 synonym: "Aqp4 (Mmus), Prss23 (Mmus), Igfbp2 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
-is_a: CL:4300360 ! olfactory areas astrocyte (Mmus)
+is_a: CL:4300360 ! Astro-OLF NN astrocyte (Mmus)
 property_value: CLM:0010003 CLM:5001586 {STATO:0000663="0.5113636"}
 property_value: CLM:0010003 CLM:5016806
 property_value: IAO:0000028 "Astro-OLF NN_1 (Mmus)" xsd:string
@@ -524,7 +513,7 @@ name: Astro-OLF NN_2 astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), Hs3st3a1 (Mmus), Slco1c1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1167 Astro-OLF NN_2." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1167 Astro-OLF NN_2" EXACT []
 synonym: "Gja1 (Mmus), Hs3st3a1 (Mmus), Slco1c1 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
-is_a: CL:4300360 ! olfactory areas astrocyte (Mmus)
+is_a: CL:4300360 ! Astro-OLF NN astrocyte (Mmus)
 property_value: CLM:0010003 CLM:5001587 {STATO:0000663="0.37280703"}
 property_value: CLM:0010003 CLM:5016807
 property_value: IAO:0000028 "Astro-OLF NN_2 (Mmus)" xsd:string
@@ -537,7 +526,7 @@ name: Astro-OLF NN_3 astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Ednrb (Mmus), Hs3st3a1 (Mmus), C230072F16Rik (Mmus), Gria2 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1168 Astro-OLF NN_3." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1168 Astro-OLF NN_3" EXACT []
 synonym: "Ednrb (Mmus), Hs3st3a1 (Mmus), C230072F16Rik (Mmus), Gria2 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
-is_a: CL:4300360 ! olfactory areas astrocyte (Mmus)
+is_a: CL:4300360 ! Astro-OLF NN astrocyte (Mmus)
 property_value: CLM:0010003 CLM:5001588 {STATO:0000663="0.1724138"}
 property_value: CLM:0010003 CLM:5016808
 property_value: IAO:0000028 "Astro-OLF NN_3 (Mmus)" xsd:string
@@ -550,7 +539,7 @@ name: Tanycyte NN_1 tanycyte (Mmus)
 def: "A tanycyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cnmd (Mmus), Lpl (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1172 Tanycyte NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1172 Tanycyte NN_1" EXACT []
 synonym: "Cnmd (Mmus), Lpl (Mmus) expressing tanycyte of brain (Mus musculus)" EXACT []
-is_a: CL:4300362 ! tanycyte (Mmus)
+is_a: CL:4300362 ! Tanycyte NN tanycyte (Mmus)
 property_value: CLM:0010003 CLM:5001592 {STATO:0000663="0.390625"}
 property_value: CLM:0010003 CLM:5016812
 property_value: IAO:0000028 "Tanycyte NN_1 (Mmus)" xsd:string
@@ -563,7 +552,7 @@ name: Tanycyte NN_2 tanycyte (Mmus)
 def: "A tanycyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr50 (Mmus), Ccdc170 (Mmus), Nkx2-4 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1173 Tanycyte NN_2." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1173 Tanycyte NN_2" EXACT []
 synonym: "Gpr50 (Mmus), Ccdc170 (Mmus), Nkx2-4 (Mmus) expressing tanycyte of brain (Mus musculus)" EXACT []
-is_a: CL:4300362 ! tanycyte (Mmus)
+is_a: CL:4300362 ! Tanycyte NN tanycyte (Mmus)
 property_value: CLM:0010003 CLM:5001593 {STATO:0000663="0.54086536"}
 property_value: CLM:0010003 CLM:5016813
 property_value: IAO:0000028 "Tanycyte NN_2 (Mmus)" xsd:string
@@ -572,7 +561,7 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 
 [Term]
 id: CL:4301608
-name: choroid plexus epithelial cell (Mmus)
+name: CHOR NN choroid plexus epithelial cell (Mmus)
 def: "A choroid plexus epithelial cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 2900040C04Rik (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1178 CHOR NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1178 CHOR NN_1" EXACT []
 synonym: "2900040C04Rik (Mmus) expressing choroid plexus epithelial cell of brain (Mus musculus)" EXACT []
@@ -587,13 +576,13 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 
 [Term]
 id: CL:4301611
-name: commited oligodendrocyte precursor (Mmus)
+name: COP NN_1 committed oligodendrocyte precursor (Mmus)
 def: "A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Bmp4 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1181 COP NN_1." [https://doi.org/10.1038/s41586-023-06812-z, https://doi.org/10.1126/science.aaf6463]
 comment: Rationale for assigning this type to reference data: Mapping of this cell set to a differentiation-committed oligodendrocyte is supported by spatial transcriptomic evidence and specific expression of Gpr17, Bmp4, Neu4, Fyn in the context of oligodendrocyte lineage cells. {xref="https://doi.org/10.1126/science.aaf6463"}
 synonym: "1181 COP NN_1" EXACT []
 synonym: "Gpr17 (Mmus), Bmp4 (Mmus) expressing committed oligodendrocyte precursor of brain (Mus musculus)" EXACT []
 is_a: CL:4023059
-is_a: CL:4300367 ! oligodendrocyte (Mmus)
+is_a: CL:4300367 ! Oligo NN oligodendrocyte (Mmus)
 property_value: CLM:0010003 CLM:5001601 {STATO:0000663="0.8684739"}
 property_value: CLM:0010003 CLM:5016821
 property_value: CLM:0010003 CLM:5024421
@@ -603,13 +592,13 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 
 [Term]
 id: CL:4301612
-name: newly formed oligodendrocyte (Mmus)
+name: NFOL NN_2 newly formed oligodendrocyte (Mmus)
 def: "A newly formed oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Ptprb (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1182 NFOL NN_2." [https://doi.org/10.1038/s41586-023-06812-z, https://doi.org/10.1126/science.aaf6463]
 comment: Rationale for assigning this type to reference data: Mapping of this cell set to a newly formed oligodendrocyte is supported by spatial transcriptomic evidence and specific expression of Tcf7l2, Klk6, Cemip2, Casr in the context of oligodendrocyte lineage cells. {xref="https://doi.org/10.1126/science.aaf6463"}
 synonym: "1182 NFOL NN_2" EXACT []
 synonym: "9630013A20Rik (Mmus), Ptprb (Mmus) expressing newly formed oligodendrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4072001
-is_a: CL:4300367 ! oligodendrocyte (Mmus)
+is_a: CL:4300367 ! Oligo NN oligodendrocyte (Mmus)
 property_value: CLM:0010003 CLM:5001602 {STATO:0000663="0.6304985"}
 property_value: CLM:0010003 CLM:5016822
 property_value: CLM:0010003 CLM:5024422
@@ -619,13 +608,13 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 
 [Term]
 id: CL:4301613
-name: myelin-forming oligodendrocyte (Mmus)
+name: MFOL NN_3 myelin-forming oligodendrocyte (Mmus)
 def: "A myelin-forming oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cldn11 (Mmus), Sec14l5 (Mmus), 9630013A20Rik (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1183 MFOL NN_3." [https://doi.org/10.1038/s41586-023-06812-z, https://doi.org/10.1126/science.aaf6463]
 comment: Rationale for assigning this type to reference data: Mapping of this cell set to a myelin-forming oligodendrocyte is supported by spatial transcriptomic evidence and specific expression of Ctps, Cldn11 in the context of oligodendrocyte lineage cells. {xref="https://doi.org/10.1126/science.aaf6463"}
 synonym: "1183 MFOL NN_3" EXACT []
 synonym: "Cldn11 (Mmus), Sec14l5 (Mmus), 9630013A20Rik (Mmus) expressing myelin-forming oligodendrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4072002
-is_a: CL:4300367 ! oligodendrocyte (Mmus)
+is_a: CL:4300367 ! Oligo NN oligodendrocyte (Mmus)
 property_value: CLM:0010003 CLM:5001603 {STATO:0000663="0.49418604"}
 property_value: CLM:0010003 CLM:5016823
 property_value: CLM:0010003 CLM:5024423
@@ -635,13 +624,13 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 
 [Term]
 id: CL:4301614
-name: mature myelinating oligodendrocyte (Mmus)
+name: MOL NN_4 mature myelinating oligodendrocyte (Mmus)
 def: "A mature myelinating oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cldn11 (Mmus), Anln (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1184 MOL NN_4." [https://doi.org/10.1038/s41586-023-06812-z, https://doi.org/10.1126/science.aaf6463]
 comment: Rationale for assigning this type to reference data: Mapping of this cell set to a mature myelinating oligodendrocyte is supported by spatial transcriptomic evidence and specific expression of Klk6 in the context of oligodendrocyte lineage cells. {xref="https://doi.org/10.1126/science.aaf6463"}
 synonym: "1184 MOL NN_4" EXACT []
 synonym: "Cldn11 (Mmus), Anln (Mmus) expressing mature myelinating oligodendrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4072003
-is_a: CL:4300367 ! oligodendrocyte (Mmus)
+is_a: CL:4300367 ! Oligo NN oligodendrocyte (Mmus)
 property_value: CLM:0010003 CLM:5001604 {STATO:0000663="0.7853026"}
 property_value: CLM:0010003 CLM:5016824
 property_value: CLM:0010003 CLM:5024424
@@ -651,7 +640,7 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 
 [Term]
 id: CL:4301615
-name: olfactory ensheathing cell (Mmus)
+name: OEC olfactory ensheathing cell (Mmus)
 def: "A olfactory ensheathing cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Apod (Mmus), Npy (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1185 OEC NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1185 OEC NN_1" EXACT []
 synonym: "32 OEC" EXACT []
@@ -669,13 +658,12 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 
 [Term]
 id: CL:4301616
-name: arachnoid barrier cell (Mmus)
+name: ABC NN arachnoid barrier cell (Mmus)
 def: "A arachnoid barrier cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Thbd (Mmus), Ccn3 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1186 ABC NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1186 ABC NN_1" EXACT []
 synonym: "329 ABC NN" EXACT []
 synonym: "Thbd (Mmus), Ccn3 (Mmus) expressing arachnoid barrier cell of brain (Mus musculus)" EXACT []
 is_a: CL:4023097
-relationship: RO:0002162 NCBITaxon:10090
 property_value: CLM:0010003 CLM:5001606 {STATO:0000663="0.8968254"}
 property_value: CLM:0010003 CLM:5007989 {STATO:0000663="0.93650794"}
 property_value: CLM:0010003 CLM:5016826
@@ -685,13 +673,12 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 
 [Term]
 id: CL:4301625
-name: border associated macrophage (Mmus)
+name: BAM NN border associated macrophage (Mmus)
 def: "A border associated macrophage of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Mrc1 (Mmus), Maf (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1195 BAM NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1195 BAM NN_1" EXACT []
 synonym: "335 BAM NN" EXACT []
 synonym: "Mrc1 (Mmus), Maf (Mmus) expressing border associated macrophage of brain (Mus musculus)" EXACT []
 is_a: CL:4042003
-relationship: RO:0002162 NCBITaxon:10090
 property_value: CLM:0010003 CLM:5001615 {STATO:0000663="0.9244792"}
 property_value: CLM:0010003 CLM:5007995 {STATO:0000663="0.982906"}
 property_value: CLM:0010003 CLM:5016835
@@ -701,7 +688,7 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 
 [Term]
 id: CL:4304384
-name: hypothalamic gonadotropin-releasing hormone neuron (Mmus)
+name: HY Gnrh1 Glut hypothalamic gonadotropin-releasing hormone neuron (Mmus)
 def: "A hypothalamic gonadotropin-releasing hormone neuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gnrh1 (Mmus). It is glutamatergic. These cells are located in the Hypothalamus, Olfactory areas, Pallidum, brain , in or close to the regions: Lateral septal nucleus, rostral (rostroventral) part, Medial septal nucleus, Diagonal band nucleus . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:2564 HY Gnrh1 Glut_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "0628 HY Gnrh1 Glut_1" EXACT []
 synonym: "142 HY Gnrh1 Glut" EXACT []
@@ -729,7 +716,7 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 
 [Term]
 id: CL:4306426
-name: pinealocyte (Mmus)
+name: pinealocyte pinealocyte (Mmus)
 def: "A pinealocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cngb3 (Mmus), Ush2a (Mmus). It is glutamatergic. These cells are located in the brain , in or close to the regions: third ventricle . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:4606 Pineal Crx Glut_1." [https://doi.org/10.1038/s41586-023-06812-z, https://doi.org/10.1111/j.1600-079x.1996.tb00284.x, https://doi.org/10.3389/fendo.2019.00590]
 comment: Rationale for assigning this type to reference data: Consistent with this cell set being composed of Pinealocytes, a combination of Pinealocyte markers Gngt1 and Crx can identify the cells in this cluster with a confidence (F-beta score) of 0.91 in the context of glutamatergic cells (Pinealocytes release glutamate) from the hippocampal formation dissection (which includes the pineal gland). {xref="https://doi.org/10.1111/j.1600-079x.1996.tb00284.x", xref="https://doi.org/10.3389/fendo.2019.00590"}
 synonym: "1030 Pineal Crx Glut_1" EXACT []
@@ -758,6 +745,7 @@ def: "A cerebellar neuron of the Mus musculus brain. It is distinguished from ot
 synonym: "1142 DCO Il22 Gly-Gaba_2" EXACT []
 synonym: "5172 DCO Il22 Gly-Gaba_2" EXACT []
 synonym: "Il22 (Mmus), Edaradd (Mmus) expressing cerebellar neuron of brain (Mus musculus)" EXACT []
+is_a: CL:0008059
 is_a: CL:4300348 ! DCO Il22 Gly-Gaba cerebellar neuron (Mmus)
 relationship: RO:0002215 GO:0061534 {comment="Inferred to be gamma-aminobutyric acid secretion, neurotransmission, glycine secretion, neurotransmission based on expression of Slc32a1, Hdc, Slc6a5, Gad2, Gad1"}
 relationship: RO:0002215 GO:0061537 {comment="Inferred to be gamma-aminobutyric acid secretion, neurotransmission, glycine secretion, neurotransmission based on expression of Slc32a1, Hdc, Slc6a5, Gad2, Gad1"}
@@ -775,13 +763,13 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 
 [Term]
 id: CL:4307005
-name: CB PLI GABA Ly6d Purkinje layer interneuron
+name: CB PLI Gly-Gaba_4 Purkinje layer interneuron (Mmus)
 def: "A Purkinje layer interneuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Ly6d (Mmus), Kit (Mmus). It is distinguished from other CB PLI Gly-Gaba cells by expression of Ly6d. It is GABAergic. These cells are located in the Cerebellum, brain , in or close to the regions: arbor vitae, Interposed nucleus, Nodulus (X) . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5185 CB PLI Gly-Gaba_4." [https://doi.org/10.1038/s41586-023-06812-z]
 comment: Warning: Despite its name, CB PLI Gly-Gaba_4 does not secrete the neurotransmitter Gly, as assessed by expression of multiple marker genes.
 synonym: "1147 CB PLI Gly-Gaba_4" EXACT []
 synonym: "5185 CB PLI Gly-Gaba_4" EXACT []
 synonym: "Ly6d (Mmus), Kit (Mmus) expressing Purkinje layer interneuron of brain (Mus musculus)" EXACT []
-is_a: CL:4300349 ! Purkinje layer interneuron (Mmus)
+is_a: CL:4300349 ! CB PLI Gly-Gaba Purkinje layer interneuron (Mmus)
 relationship: RO:0002215 GO:0061534 {comment="Inferred to be gamma-aminobutyric acid secretion, neurotransmission based on expression of Gad1, Gad2, Slc32a1"}
 property_value: CLM:0010001 MBA:512 {CLM:0010002="0.76", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:728 {CLM:0010002="0.14", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
@@ -803,7 +791,7 @@ synonym: "312 CBX MLI Cdh22 Gaba" EXACT []
 synonym: "5192 CBX MLI Cdh22 Gaba_1" EXACT []
 synonym: "Cdh1 (Mmus), Acvr1c (Mmus), Adamts15 (Mmus), Pax2 (Mmus) expressing molecular layer interneuron of brain (Mus musculus)" EXACT []
 is_a: CL:4042035 {evidence="http://identifiers.org/ncbigene/14415", evidence="http://identifiers.org/ncbigene/14417", evidence="http://identifiers.org/ncbigene/22348"}
-is_a: CL:4300028 ! cerebellar GABAergic neuron (Mmus)
+is_a: CL:4300028 ! CB GABA cerebellar neuron (Mmus)
 relationship: RO:0002215 GO:0061534 {comment="Inferred to be gamma-aminobutyric acid secretion, neurotransmission based on expression of Gad1, Gad2, Slc32a1"}
 property_value: CLM:0010001 MBA:512 {CLM:0010002="0.69", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.31", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -816,7 +804,7 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 
 [Term]
 id: CL:4307026
-name: Bergmann glial cell (Mmus)
+name: Bergmann glial cell Bergmann glial cell (Mmus)
 def: "A Bergmann glial cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr37l1 (Mmus), Ctxn3 (Mmus). It is distinguished from other Astro-Epen cells by expression of Gpr37l1, Ctxn3. These cells are located in the Cerebellum, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5206 Bergmann NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1157 Bergmann NN_1" EXACT []
 synonym: "316 Bergmann NN" EXACT []
@@ -834,8 +822,8 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 
 [Term]
 id: CL:4307027
-name: cerebellar astrocyte (Mmus)
-def: "A transcriptomically defined type of astrocyte localized exclusively in the cerebellum beneath the Purkinje cell layer. It is distinguished from other cells in the brain by selective expression of Dao (Mmus), Efemp1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5207 Astro-CB NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
+name: cerebellar astrocyte astrocyte of the cerebellum (Mmus)
+def: "A astrocyte of the cerebellum of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Dao (Mmus), Efemp1 (Mmus). It is distinguished from other Astro-Epen cells by expression of Dao, Efemp1. These cells are located in the Cerebellum, brain , in or close to the regions: arbor vitae . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5207 Astro-CB NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1158 Astro-CB NN_1" EXACT []
 synonym: "317 Astro-CB NN" EXACT []
 synonym: "5207 Astro-CB NN_1" EXACT []
@@ -1191,7 +1179,7 @@ def: "A astrocyte of the Mus musculus brain. It is distinguished from other cell
 synonym: "1164 Astro-TE NN_4" EXACT []
 synonym: "5228 Astro-TE NN_4" EXACT []
 synonym: "S1pr1 (Mmus), Thbs4 (Mmus), Gm29683 (Mmus), Slc39a12 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
-is_a: CL:4300359 ! astrocyte of cerebrum (Mmus)
+is_a: CL:4300359 ! Astro-TE NN astrocyte (Mmus)
 property_value: CLM:0010001 MBA:131 {CLM:0010002="0.13", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
 property_value: CLM:0010001 MBA:579 {CLM:0010002="0.14", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
 property_value: CLM:0010001 MBA:703 {CLM:0010002="0.25", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1411,7 +1399,7 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 
 [Term]
 id: CL:4307067
-name: alpha2-tanycyte (Mmus)
+name: Tanycyte NN_2 Dscaml1 alpha2-tanycyte (Mmus)
 def: "A alpha2-tanycyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pdzph1 (Mmus), Wdr63 (Mmus), Dscaml1 (Mmus), P3h2 (Mmus). It is distinguished from other Tanycyte NN_2 cells by expression of Dscaml1, P3h2. These cells are located in the Hypothalamus , in or close to the regions: Periventricular hypothalamic nucleus, posterior part, Arcuate hypothalamic nucleus . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5247 Tanycyte NN_2." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5247 Tanycyte NN_2" EXACT []
 synonym: "Pdzph1 (Mmus), Wdr63 (Mmus), Dscaml1 (Mmus), P3h2 (Mmus) expressing alpha2-tanycyte of brain (Mus musculus)" EXACT []
@@ -1445,7 +1433,7 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 
 [Term]
 id: CL:4307069
-name: beta1-tancyte (Mmus)
+name: Tanycyte NN_2 Col25a1 beta1-tanycyte (Mmus)
 def: "A beta1-tanycyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr50 (Mmus), Frzb (Mmus), Foxd2os (Mmus). It is distinguished from other Tanycyte NN_2 cells by expression of Col25a1, C230072F16Rik. These cells are located in the Hypothalamus, brain , in or close to the regions: third ventricle, Arcuate hypothalamic nucleus . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5249 Tanycyte NN_2." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5249 Tanycyte NN_2" EXACT []
 synonym: "Gpr50 (Mmus), Frzb (Mmus), Foxd2os (Mmus) expressing beta1-tanycyte of brain (Mus musculus)" EXACT []
@@ -1463,13 +1451,13 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 
 [Term]
 id: CL:4307070
-name: beta-2 tanycyte (Mmus)
+name: Tanycyte NN_3 beta2-tanycyte (Mmus)
 def: "A beta2-tanycyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Fndc3c1 (Mmus), Ecrg4 (Mmus). It is distinguished from other Tanycyte NN cells by expression of Ecrg4. These cells are located in the Hypothalamus, brain , in or close to the regions: Median eminence, third ventricle, Arcuate hypothalamic nucleus . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5250 Tanycyte NN_3." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1174 Tanycyte NN_3" EXACT []
 synonym: "5250 Tanycyte NN_3" EXACT []
 synonym: "Fndc3c1 (Mmus), Ecrg4 (Mmus) expressing beta2-tanycyte of brain (Mus musculus)" EXACT []
 is_a: CL:4042020
-is_a: CL:4300362 ! tanycyte (Mmus)
+is_a: CL:4300362 ! Tanycyte NN tanycyte (Mmus)
 property_value: CLM:0010001 MBA:10671 {CLM:0010002="0.46", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
 property_value: CLM:0010001 MBA:1097 {CLM:0010002="0.75", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:129 {CLM:0010002="0.19", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
@@ -1483,7 +1471,7 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 
 [Term]
 id: CL:4307083
-name: hypendemal cell (Mmus)
+name: Hypendymal NN hypendymal cell (Mmus)
 def: "A hypendymal cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Sspo (Mmus), Wfdc2 (Mmus). It is distinguished from other Astro-Epen cells by expression of Sspo, Wfdc2. These cells are located in the Midbrain, brain , in or close to the regions: third ventricle, posterior commissure, Subcommissural organ . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5263 Hypendymal NN_1." [doi:10.3389/fncel.2015.00480, https://doi.org/10.1038/s41586-023-06812-z]
 comment: Rationale for assigning this type to reference data: Mapping of this cell set to the hypendemal cell type is supported by its location to the subcommisural organ (from spatial transcriptomics), its expression of Sspo and its general transcriptomic classification in a class (Astro-Epen) along with epdendymal cells, tanycytes and astrocytes. {xref="doi:10.3389/fncel.2015.00480"}
 synonym: "1177 Hypendymal NN_1" EXACT []
@@ -1510,7 +1498,7 @@ name: CHOR NN_1 Tbc1d1 choroid plexus epithelial cell (Mmus)
 def: "A choroid plexus epithelial cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 2900040C04Rik (Mmus), Tbc1d1 (Mmus). It is distinguished from other CHOR NN cells by expression of Tbc1d1. These cells are located in the Cerebellum, brain , in or close to the regions: Paraflocculus, choroid plexus . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5264 CHOR NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "2900040C04Rik (Mmus), Tbc1d1 (Mmus) expressing choroid plexus epithelial cell of brain (Mus musculus)" EXACT []
 synonym: "5264 CHOR NN_1" EXACT []
-is_a: CL:4301608 ! choroid plexus epithelial cell (Mmus)
+is_a: CL:4301608 ! CHOR NN choroid plexus epithelial cell (Mmus)
 property_value: CLM:0010001 MBA:1041 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
 property_value: CLM:0010001 MBA:108 {CLM:0010002="0.49", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
 property_value: CLM:0010001 MBA:512 {CLM:0010002="0.24", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1528,7 +1516,7 @@ def: "A choroid plexus epithelial cell of the Mus musculus brain. It is distingu
 synonym: "2900040C04Rik (Mmus), Slc17a8 (Mmus) expressing choroid plexus epithelial cell of brain (Mus musculus)" EXACT []
 synonym: "5265 CHOR NN_1" EXACT []
 is_a: CL:0000686
-is_a: CL:4301608 ! choroid plexus epithelial cell (Mmus)
+is_a: CL:4301608 ! CHOR NN choroid plexus epithelial cell (Mmus)
 relationship: RO:0002215 GO:0061535 {comment="Inferred to be glutamate secretion, neurotransmission based on expression of Slc17a8"}
 property_value: CLM:0010001 MBA:108 {CLM:0010002="0.18", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
 property_value: CLM:0010001 MBA:81 {CLM:0010002="0.22", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
@@ -1545,7 +1533,7 @@ name: OPC NN_1 Neil3 oligodendrocyte precursor cell (Mmus)
 def: "A oligodendrocyte precursor cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pdgfra (Mmus), Pclaf (Mmus), Mki67 (Mmus), Foxg1 (Mmus). It is distinguished from other OPC NN_1 cells by expression of Neil3, Foxg1. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5266 OPC NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5266 OPC NN_1" EXACT []
 synonym: "Pdgfra (Mmus), Pclaf (Mmus), Mki67 (Mmus), Foxg1 (Mmus) expressing oligodendrocyte precursor cell of brain (Mus musculus)" EXACT []
-is_a: CL:4300366 ! oligodendrocyte precursor cell (Mmus)
+is_a: CL:4300366 ! OPC NN oligodendrocyte precursor cell (Mmus)
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.52", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.14", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007016 {STATO:0000663="0.40697673"}
@@ -1560,7 +1548,7 @@ name: OPC NN_1 Irx2 oligodendrocyte precursor cell (Mmus)
 def: "A oligodendrocyte precursor cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pdgfra (Mmus), Pclaf (Mmus), Irx2 (Mmus). It is distinguished from other OPC NN_1 cells by expression of Neil3, Irx2. These cells are located in the Cerebellum, brain, Midbrain, Pons, Medulla . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5267 OPC NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5267 OPC NN_1" EXACT []
 synonym: "Pdgfra (Mmus), Pclaf (Mmus), Irx2 (Mmus) expressing oligodendrocyte precursor cell of brain (Mus musculus)" EXACT []
-is_a: CL:4300366 ! oligodendrocyte precursor cell (Mmus)
+is_a: CL:4300366 ! OPC NN oligodendrocyte precursor cell (Mmus)
 property_value: CLM:0010001 MBA:313 {CLM:0010002="0.21", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:354 {CLM:0010002="0.13", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:512 {CLM:0010002="0.14", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1578,7 +1566,7 @@ name: OPC NN_1 Mms22l oligodendrocyte precursor cell (Mmus)
 def: "A oligodendrocyte precursor cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pdgfra (Mmus), Olig1 (Mmus), Mms22l (Mmus), Top2a (Mmus). It is distinguished from other OPC NN_1 cells by expression of Mms22l, Foxg1, Top2a. These cells are located in the Isocortex, Olfactory areas, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5268 OPC NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5268 OPC NN_1" EXACT []
 synonym: "Pdgfra (Mmus), Olig1 (Mmus), Mms22l (Mmus), Top2a (Mmus) expressing oligodendrocyte precursor cell of brain (Mus musculus)" EXACT []
-is_a: CL:4300366 ! oligodendrocyte precursor cell (Mmus)
+is_a: CL:4300366 ! OPC NN oligodendrocyte precursor cell (Mmus)
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.53", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:698 {CLM:0010002="0.12", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1594,7 +1582,7 @@ name: OPC NN_1 Col27a1 oligodendrocyte precursor cell (Mmus)
 def: "A oligodendrocyte precursor cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pdgfra (Mmus), Olig1 (Mmus), Col27a1 (Mmus). It is distinguished from other OPC NN_1 cells by expression of Col27a1. These cells are located in the Midbrain, Pons, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5269 OPC NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5269 OPC NN_1" EXACT []
 synonym: "Pdgfra (Mmus), Olig1 (Mmus), Col27a1 (Mmus) expressing oligodendrocyte precursor cell of brain (Mus musculus)" EXACT []
-is_a: CL:4300366 ! oligodendrocyte precursor cell (Mmus)
+is_a: CL:4300366 ! OPC NN oligodendrocyte precursor cell (Mmus)
 property_value: CLM:0010001 MBA:313 {CLM:0010002="0.17", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:771 {CLM:0010002="0.11", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.16", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1610,7 +1598,7 @@ name: OPC NN_1 Rmi2 oligodendrocyte precursor cell (Mmus)
 def: "A oligodendrocyte precursor cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pdgfra (Mmus), Olig1 (Mmus), Rmi2 (Mmus), Col27a1 (Mmus). It is distinguished from other OPC NN_1 cells by expression of Rmi2, Col27a1. These cells are located in the Hypothalamus, Midbrain, Pallidum, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5270 OPC NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5270 OPC NN_1" EXACT []
 synonym: "Pdgfra (Mmus), Olig1 (Mmus), Rmi2 (Mmus), Col27a1 (Mmus) expressing oligodendrocyte precursor cell of brain (Mus musculus)" EXACT []
-is_a: CL:4300366 ! oligodendrocyte precursor cell (Mmus)
+is_a: CL:4300366 ! OPC NN oligodendrocyte precursor cell (Mmus)
 property_value: CLM:0010001 MBA:1097 {CLM:0010002="0.17", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:313 {CLM:0010002="0.39", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:803 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1628,7 +1616,7 @@ def: "A oligodendrocyte precursor cell of the Mus musculus brain. It is distingu
 synonym: "1180 OPC NN_2" EXACT []
 synonym: "5271 OPC NN_2" EXACT []
 synonym: "Pdgfra (Mmus), Cenpf (Mmus), Cenpa (Mmus) expressing oligodendrocyte precursor cell of brain (Mus musculus)" EXACT []
-is_a: CL:4300366 ! oligodendrocyte precursor cell (Mmus)
+is_a: CL:4300366 ! OPC NN oligodendrocyte precursor cell (Mmus)
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.26", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.17", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007021 {STATO:0000663="0.6372549"}
@@ -1643,7 +1631,7 @@ name: COP NN_1 Rgcc committed oligodendrocyte precursor (Mmus)
 def: "A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Bmp4 (Mmus), Zfp36l1 (Mmus). It is distinguished from other COP NN_1 cells by expression of Rgcc, Plpp4. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5272 COP NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5272 COP NN_1" EXACT []
 synonym: "Gpr17 (Mmus), Bmp4 (Mmus), Zfp36l1 (Mmus) expressing committed oligodendrocyte precursor of brain (Mus musculus)" EXACT []
-is_a: CL:4301611 ! commited oligodendrocyte precursor (Mmus)
+is_a: CL:4301611 ! COP NN_1 committed oligodendrocyte precursor (Mmus)
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.22", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.2", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007022 {STATO:0000663="0.3888889"}
@@ -1658,7 +1646,7 @@ name: COP NN_1 9130019P16Rik committed oligodendrocyte precursor (Mmus)
 def: "A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Gp1bb (Mmus), Pdzd2 (Mmus), Plekhg1 (Mmus). It is distinguished from other COP NN_1 cells by expression of Rgcc, 9130019P16Rik. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5273 COP NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5273 COP NN_1" EXACT []
 synonym: "Gpr17 (Mmus), Gp1bb (Mmus), Pdzd2 (Mmus), Plekhg1 (Mmus) expressing committed oligodendrocyte precursor of brain (Mus musculus)" EXACT []
-is_a: CL:4301611 ! commited oligodendrocyte precursor (Mmus)
+is_a: CL:4301611 ! COP NN_1 committed oligodendrocyte precursor (Mmus)
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.33", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.2", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007023 {STATO:0000663="0.08064516"}
@@ -1673,7 +1661,7 @@ name: COP NN_1 C1ql1 committed oligodendrocyte precursor (Mmus)
 def: "A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Bgn (Mmus), Gstp1 (Mmus), C1ql1 (Mmus). It is distinguished from other COP NN_1 cells by expression of C1ql1, Gstp1. These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5274 COP NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5274 COP NN_1" EXACT []
 synonym: "Gpr17 (Mmus), Bgn (Mmus), Gstp1 (Mmus), C1ql1 (Mmus) expressing committed oligodendrocyte precursor of brain (Mus musculus)" EXACT []
-is_a: CL:4301611 ! commited oligodendrocyte precursor (Mmus)
+is_a: CL:4301611 ! COP NN_1 committed oligodendrocyte precursor (Mmus)
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.41", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007024 {STATO:0000663="0.0"}
 property_value: CLM:0010003 CLM:5022244 {STATO:0000663="0.1724138"}
@@ -1687,7 +1675,7 @@ name: COP NN_1 Bmp4 committed oligodendrocyte precursor (Mmus)
 def: "A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Bmp4 (Mmus), Mob3b (Mmus). It is distinguished from other COP NN_1 cells by expression of Bmp4, Mob3b. These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5275 COP NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5275 COP NN_1" EXACT []
 synonym: "9630013A20Rik (Mmus), Bmp4 (Mmus), Mob3b (Mmus) expressing committed oligodendrocyte precursor of brain (Mus musculus)" EXACT []
-is_a: CL:4301611 ! commited oligodendrocyte precursor (Mmus)
+is_a: CL:4301611 ! COP NN_1 committed oligodendrocyte precursor (Mmus)
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.37", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007025 {STATO:0000663="0.3539823"}
 property_value: CLM:0010003 CLM:5022245 {STATO:0000663="0.35135135"}
@@ -1701,7 +1689,7 @@ name: COP NN_1 Vwc2 committed oligodendrocyte precursor (Mmus)
 def: "A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Rab32 (Mmus), Opalin (Mmus). It is distinguished from other COP NN_1 cells by expression of Vwc2, Opalin. These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5276 COP NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5276 COP NN_1" EXACT []
 synonym: "9630013A20Rik (Mmus), Rab32 (Mmus), Opalin (Mmus) expressing committed oligodendrocyte precursor of brain (Mus musculus)" EXACT []
-is_a: CL:4301611 ! commited oligodendrocyte precursor (Mmus)
+is_a: CL:4301611 ! COP NN_1 committed oligodendrocyte precursor (Mmus)
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.51", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007026 {STATO:0000663="0.31914893"}
 property_value: CLM:0010003 CLM:5022246 {STATO:0000663="0.0"}
@@ -1715,7 +1703,7 @@ name: COP NN_1 Cck committed oligodendrocyte precursor (Mmus)
 def: "A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Bmp4 (Mmus), Cck (Mmus), Ptger1 (Mmus). It is distinguished from other COP NN_1 cells by expression of Bmp4, Cck, Ptger1. These cells are located in the Isocortex, Olfactory areas, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5277 COP NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5277 COP NN_1" EXACT []
 synonym: "9630013A20Rik (Mmus), Bmp4 (Mmus), Cck (Mmus), Ptger1 (Mmus) expressing committed oligodendrocyte precursor of brain (Mus musculus)" EXACT []
-is_a: CL:4301611 ! commited oligodendrocyte precursor (Mmus)
+is_a: CL:4301611 ! COP NN_1 committed oligodendrocyte precursor (Mmus)
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.54", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:698 {CLM:0010002="0.11", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1731,7 +1719,7 @@ name: NFOL NN_2 9630013A20Rik newly formed oligodendrocyte (Mmus)
 def: "A newly formed oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Grin2b (Mmus). It is distinguished from other NFOL NN_2 cells by expression of 9630013A20Rik, Grin2b. These cells are located in the Midbrain, Thalamus, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5278 NFOL NN_2." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5278 NFOL NN_2" EXACT []
 synonym: "9630013A20Rik (Mmus), Grin2b (Mmus) expressing newly formed oligodendrocyte of brain (Mus musculus)" EXACT []
-is_a: CL:4301612 ! newly formed oligodendrocyte (Mmus)
+is_a: CL:4301612 ! NFOL NN_2 newly formed oligodendrocyte (Mmus)
 property_value: CLM:0010001 MBA:313 {CLM:0010002="0.31", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:549 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.12", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1747,7 +1735,7 @@ name: NFOL NN_2 Dbx2 newly formed oligodendrocyte (Mmus)
 def: "A newly formed oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Dbx2 (Mmus), Rassf10 (Mmus). It is distinguished from other NFOL NN_2 cells by expression of Dbx2, Rassf10. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5279 NFOL NN_2." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5279 NFOL NN_2" EXACT []
 synonym: "9630013A20Rik (Mmus), Dbx2 (Mmus), Rassf10 (Mmus) expressing newly formed oligodendrocyte of brain (Mus musculus)" EXACT []
-is_a: CL:4301612 ! newly formed oligodendrocyte (Mmus)
+is_a: CL:4301612 ! NFOL NN_2 newly formed oligodendrocyte (Mmus)
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.24", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.25", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007029 {STATO:0000663="0.5392157"}
@@ -1762,7 +1750,7 @@ name: NFOL NN_2 Rgs16 newly formed oligodendrocyte (Mmus)
 def: "A newly formed oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Rgs16 (Mmus), Rhbdl2 (Mmus). It is distinguished from other NFOL NN_2 cells by expression of Rgs16, Rhbdl2. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5280 NFOL NN_2." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5280 NFOL NN_2" EXACT []
 synonym: "9630013A20Rik (Mmus), Rgs16 (Mmus), Rhbdl2 (Mmus) expressing newly formed oligodendrocyte of brain (Mus musculus)" EXACT []
-is_a: CL:4301612 ! newly formed oligodendrocyte (Mmus)
+is_a: CL:4301612 ! NFOL NN_2 newly formed oligodendrocyte (Mmus)
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.18", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.28", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007030 {STATO:0000663="0.32051283"}
@@ -1777,7 +1765,7 @@ name: NFOL NN_2 Il23a newly formed oligodendrocyte (Mmus)
 def: "A newly formed oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Piezo2 (Mmus), Ptprb (Mmus). It is distinguished from other NFOL NN_2 cells by expression of Il23a, Opalin, Ptprb. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5281 NFOL NN_2." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5281 NFOL NN_2" EXACT []
 synonym: "9630013A20Rik (Mmus), Piezo2 (Mmus), Ptprb (Mmus) expressing newly formed oligodendrocyte of brain (Mus musculus)" EXACT []
-is_a: CL:4301612 ! newly formed oligodendrocyte (Mmus)
+is_a: CL:4301612 ! NFOL NN_2 newly formed oligodendrocyte (Mmus)
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.19", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.3", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007031 {STATO:0000663="0.35714287"}
@@ -1792,7 +1780,7 @@ name: MFOL NN_3 Cxcl12 myelin-forming oligodendrocyte (Mmus)
 def: "A myelin-forming oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Opalin (Mmus), Cxcl12 (Mmus), Efhd1 (Mmus). It is distinguished from other MFOL NN_3 cells by expression of Cxcl12, Efhd1. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5282 MFOL NN_3." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5282 MFOL NN_3" EXACT []
 synonym: "Opalin (Mmus), Cxcl12 (Mmus), Efhd1 (Mmus) expressing myelin-forming oligodendrocyte of brain (Mus musculus)" EXACT []
-is_a: CL:4301613 ! myelin-forming oligodendrocyte (Mmus)
+is_a: CL:4301613 ! MFOL NN_3 myelin-forming oligodendrocyte (Mmus)
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.26", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.26", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007032 {STATO:0000663="0.4054054"}
@@ -1807,7 +1795,7 @@ name: MFOL NN_3 Il23a myelin-forming oligodendrocyte (Mmus)
 def: "A myelin-forming oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Ppp1r14a (Mmus), Mroh3 (Mmus). It is distinguished from other MFOL NN_3 cells by expression of Il23a, Ppp1r14a. These cells are located in the Midbrain, Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5283 MFOL NN_3." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5283 MFOL NN_3" EXACT []
 synonym: "9630013A20Rik (Mmus), Ppp1r14a (Mmus), Mroh3 (Mmus) expressing myelin-forming oligodendrocyte of brain (Mus musculus)" EXACT []
-is_a: CL:4301613 ! myelin-forming oligodendrocyte (Mmus)
+is_a: CL:4301613 ! MFOL NN_3 myelin-forming oligodendrocyte (Mmus)
 property_value: CLM:0010001 MBA:313 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.17", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.29", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1823,7 +1811,7 @@ name: MOL NN_4 Plin3 mature myelinating oligodendrocyte (Mmus)
 def: "A mature myelinating oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Prr5l (Mmus), Hapln2 (Mmus), Enpp6 (Mmus), Grm7 (Mmus). It is distinguished from other MOL NN_4 cells by expression of Plin3, Grm7. These cells are located in the Medulla, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5284 MOL NN_4." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5284 MOL NN_4" EXACT []
 synonym: "Prr5l (Mmus), Hapln2 (Mmus), Enpp6 (Mmus), Grm7 (Mmus) expressing mature myelinating oligodendrocyte of brain (Mus musculus)" EXACT []
-is_a: CL:4301614 ! mature myelinating oligodendrocyte (Mmus)
+is_a: CL:4301614 ! MOL NN_4 mature myelinating oligodendrocyte (Mmus)
 property_value: CLM:0010001 MBA:354 {CLM:0010002="0.11", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.37", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007034 {STATO:0000663="0.48507464"}
@@ -1838,7 +1826,7 @@ name: MOL NN_4 Spock3 mature myelinating oligodendrocyte (Mmus)
 def: "A mature myelinating oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cldn11 (Mmus), A230001M10Rik (Mmus), Spock3 (Mmus), Rhoj (Mmus). It is distinguished from other MOL NN_4 cells by expression of Spock3, Rhoj. These cells are located in the Midbrain, Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5285 MOL NN_4." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5285 MOL NN_4" EXACT []
 synonym: "Cldn11 (Mmus), A230001M10Rik (Mmus), Spock3 (Mmus), Rhoj (Mmus) expressing mature myelinating oligodendrocyte of brain (Mus musculus)" EXACT []
-is_a: CL:4301614 ! mature myelinating oligodendrocyte (Mmus)
+is_a: CL:4301614 ! MOL NN_4 mature myelinating oligodendrocyte (Mmus)
 property_value: CLM:0010001 MBA:313 {CLM:0010002="0.14", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.13", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.27", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1854,7 +1842,7 @@ name: MOL NN_4 Art3 mature myelinating oligodendrocyte (Mmus)
 def: "A mature myelinating oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Apod (Mmus), Klk6 (Mmus), Dlc1 (Mmus). It is distinguished from other MOL NN_4 cells by expression of Art3. These cells are located in the Medulla, Pons, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5286 MOL NN_4." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5286 MOL NN_4" EXACT []
 synonym: "Apod (Mmus), Klk6 (Mmus), Dlc1 (Mmus) expressing mature myelinating oligodendrocyte of brain (Mus musculus)" EXACT []
-is_a: CL:4301614 ! mature myelinating oligodendrocyte (Mmus)
+is_a: CL:4301614 ! MOL NN_4 mature myelinating oligodendrocyte (Mmus)
 property_value: CLM:0010001 MBA:354 {CLM:0010002="0.17", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:771 {CLM:0010002="0.15", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.44", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1870,7 +1858,7 @@ name: MOL NN_4 Il33 mature myelinating oligodendrocyte (Mmus)
 def: "A mature myelinating oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Opalin (Mmus), Grm3 (Mmus), Gm5087 (Mmus). It is distinguished from other MOL NN_4 cells by expression of Il33, Gm5087. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5287 MOL NN_4." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5287 MOL NN_4" EXACT []
 synonym: "Opalin (Mmus), Grm3 (Mmus), Gm5087 (Mmus) expressing mature myelinating oligodendrocyte of brain (Mus musculus)" EXACT []
-is_a: CL:4301614 ! mature myelinating oligodendrocyte (Mmus)
+is_a: CL:4301614 ! MOL NN_4 mature myelinating oligodendrocyte (Mmus)
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.17", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.41", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007037 {STATO:0000663="0.33333334"}
@@ -1885,7 +1873,7 @@ name: MOL NN_4 Sspo mature myelinating oligodendrocyte (Mmus)
 def: "A mature myelinating oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Mog (Mmus), Anln (Mmus), Gm32633 (Mmus). It is distinguished from other MOL NN_4 cells by expression of Sspo, Selenop. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5288 MOL NN_4." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5288 MOL NN_4" EXACT []
 synonym: "Mog (Mmus), Anln (Mmus), Gm32633 (Mmus) expressing mature myelinating oligodendrocyte of brain (Mus musculus)" EXACT []
-is_a: CL:4301614 ! mature myelinating oligodendrocyte (Mmus)
+is_a: CL:4301614 ! MOL NN_4 mature myelinating oligodendrocyte (Mmus)
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.11", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.41", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007038 {STATO:0000663="0.36231884"}
@@ -1900,7 +1888,7 @@ name: OEC NN_1 Adamts12 olfactory ensheathing cell (Mmus)
 def: "A olfactory ensheathing cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cldn5 (Mmus), Adamts12 (Mmus). It is distinguished from other OEC cells by expression of Adamts12. These cells are located in the brain , in or close to the regions: olfactory nerve layer of main olfactory bulb . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5289 OEC NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5289 OEC NN_1" EXACT []
 synonym: "Cldn5 (Mmus), Adamts12 (Mmus) expressing olfactory ensheathing cell of brain (Mus musculus)" EXACT []
-is_a: CL:4301615 ! olfactory ensheathing cell (Mmus)
+is_a: CL:4301615 ! OEC olfactory ensheathing cell (Mmus)
 property_value: CLM:0010001 MBA:1016 {CLM:0010002="0.15", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.89", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007039 {STATO:0000663="0.71428573"}
@@ -1915,7 +1903,7 @@ name: OEC NN_1 Gdpd4 olfactory ensheathing cell (Mmus)
 def: "A olfactory ensheathing cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Apod (Mmus), Aqp1 (Mmus), Cldn5 (Mmus). It is distinguished from other OEC cells by expression of Gdpd4, Cldn5. These cells are located in the brain , in or close to the regions: olfactory nerve layer of main olfactory bulb . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5290 OEC NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5290 OEC NN_1" EXACT []
 synonym: "Apod (Mmus), Aqp1 (Mmus), Cldn5 (Mmus) expressing olfactory ensheathing cell of brain (Mus musculus)" EXACT []
-is_a: CL:4301615 ! olfactory ensheathing cell (Mmus)
+is_a: CL:4301615 ! OEC olfactory ensheathing cell (Mmus)
 property_value: CLM:0010001 MBA:1016 {CLM:0010002="0.39", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.8", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007040 {STATO:0000663="0.49019608"}
@@ -1930,7 +1918,7 @@ name: OEC NN_1 A330076C08Rik olfactory ensheathing cell (Mmus)
 def: "A olfactory ensheathing cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Apod (Mmus), Mybpc1 (Mmus), Syk (Mmus). It is distinguished from other OEC cells by expression of A330076C08Rik. These cells are located in the Olfactory areas, brain , in or close to the regions: olfactory nerve layer of main olfactory bulb, Main olfactory bulb . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5291 OEC NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5291 OEC NN_1" EXACT []
 synonym: "Apod (Mmus), Mybpc1 (Mmus), Syk (Mmus) expressing olfactory ensheathing cell of brain (Mus musculus)" EXACT []
-is_a: CL:4301615 ! olfactory ensheathing cell (Mmus)
+is_a: CL:4301615 ! OEC olfactory ensheathing cell (Mmus)
 property_value: CLM:0010001 MBA:1016 {CLM:0010002="0.14", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
 property_value: CLM:0010001 MBA:507 {CLM:0010002="0.16", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
 property_value: CLM:0010001 MBA:698 {CLM:0010002="0.36", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1948,7 +1936,7 @@ def: "A olfactory ensheathing cell of the Mus musculus brain. It is distinguishe
 synonym: "5292 OEC NN_1" EXACT []
 synonym: "Apod (Mmus), Mybpc1 (Mmus), Rasgef1c (Mmus) expressing olfactory ensheathing cell of brain (Mus musculus)" EXACT []
 is_a: CL:0000151
-is_a: CL:4301615 ! olfactory ensheathing cell (Mmus)
+is_a: CL:4301615 ! OEC olfactory ensheathing cell (Mmus)
 relationship: RO:0002215 GO:0061535 {comment="Inferred to be glutamate secretion, neurotransmission based on expression of Slc17a7"}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.85", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007042 {STATO:0000663="0.09259259"}
@@ -1963,7 +1951,7 @@ name: ABC NN_1 Pde11a arachnoid barrier cell (Mmus)
 def: "A arachnoid barrier cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Slc47a1 (Mmus), Pde11a (Mmus). It is distinguished from other ABC NN cells by expression of Pde11a. These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5293 ABC NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5293 ABC NN_1" EXACT []
 synonym: "Slc47a1 (Mmus), Pde11a (Mmus) expressing arachnoid barrier cell of brain (Mus musculus)" EXACT []
-is_a: CL:4301616 ! arachnoid barrier cell (Mmus)
+is_a: CL:4301616 ! ABC NN arachnoid barrier cell (Mmus)
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.73", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007043 {STATO:0000663="0.6603774"}
 property_value: CLM:0010003 CLM:5022263 {STATO:0000663="0.7876712"}
@@ -1977,7 +1965,7 @@ name: ABC NN_1 Dapl1 arachnoid barrier cell (Mmus)
 def: "A arachnoid barrier cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Slc47a1 (Mmus), Dapl1 (Mmus). It is distinguished from other ABC NN cells by expression of Dapl1. These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5294 ABC NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5294 ABC NN_1" EXACT []
 synonym: "Slc47a1 (Mmus), Dapl1 (Mmus) expressing arachnoid barrier cell of brain (Mus musculus)" EXACT []
-is_a: CL:4301616 ! arachnoid barrier cell (Mmus)
+is_a: CL:4301616 ! ABC NN arachnoid barrier cell (Mmus)
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.76", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007044 {STATO:0000663="0.6818182"}
 property_value: CLM:0010003 CLM:5022264 {STATO:0000663="0.023364486"}
@@ -1991,7 +1979,7 @@ name: ABC NN_1 Cubn arachnoid barrier cell (Mmus)
 def: "A arachnoid barrier cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Prg4 (Mmus), Cubn (Mmus). It is distinguished from other ABC NN cells by expression of Cubn. These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5295 ABC NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5295 ABC NN_1" EXACT []
 synonym: "Prg4 (Mmus), Cubn (Mmus) expressing arachnoid barrier cell of brain (Mus musculus)" EXACT []
-is_a: CL:4301616 ! arachnoid barrier cell (Mmus)
+is_a: CL:4301616 ! ABC NN arachnoid barrier cell (Mmus)
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.74", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007045 {STATO:0000663="0.86419755"}
 property_value: CLM:0010003 CLM:5022265 {STATO:0000663="0.9"}
@@ -2001,14 +1989,13 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 
 [Term]
 id: CL:4307132
-name: microglial cell (Mmus)
+name: Microglia NN microglial cell (Mmus)
 def: "A microglial cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of C1qa (Mmus), Tmem119 (Mmus). It is distinguished from other Immune cells by expression of C1qa, Tmem119. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5312 Microglia NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1194 Microglia NN_1" EXACT []
 synonym: "334 Microglia NN" EXACT []
 synonym: "5312 Microglia NN_1" EXACT []
 synonym: "C1qa (Mmus), Tmem119 (Mmus) expressing microglial cell of brain (Mus musculus)" EXACT []
 is_a: CL:0000129
-relationship: RO:0002162 NCBITaxon:10090
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.29", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.17", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007062 {STATO:0000663="0.982906"}
@@ -2024,7 +2011,7 @@ name: BAM NN_1 Mrc1 border associated macrophage (Mmus)
 def: "A border associated macrophage of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Mrc1 (Mmus), Pf4 (Mmus). It is distinguished from other BAM NN cells by expression of Mrc1, Pf4. These cells are located in the Medulla, Cerebellum, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5313 BAM NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5313 BAM NN_1" EXACT []
 synonym: "Mrc1 (Mmus), Pf4 (Mmus) expressing border associated macrophage of brain (Mus musculus)" EXACT []
-is_a: CL:4301625 ! border associated macrophage (Mmus)
+is_a: CL:4301625 ! BAM NN border associated macrophage (Mmus)
 property_value: CLM:0010001 MBA:354 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:512 {CLM:0010002="0.13", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.34", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -2040,7 +2027,7 @@ name: BAM NN_1 Fos border associated macrophage (Mmus)
 def: "A border associated macrophage of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Mrc1 (Mmus), Pf4 (Mmus), Fos (Mmus). It is distinguished from other BAM NN cells by expression of Fos. These cells are located in the Isocortex, Cerebellum, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5314 BAM NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5314 BAM NN_1" EXACT []
 synonym: "Mrc1 (Mmus), Pf4 (Mmus), Fos (Mmus) expressing border associated macrophage of brain (Mus musculus)" EXACT []
-is_a: CL:4301625 ! border associated macrophage (Mmus)
+is_a: CL:4301625 ! BAM NN border associated macrophage (Mmus)
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.14", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:512 {CLM:0010002="0.16", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.26", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -2679,7 +2666,7 @@ relationship: BFO:0000051 http://identifiers.org/ncbigene/18504 ! Pax2 (Mmus)
 relationship: BFO:0000051 http://identifiers.org/ncbigene/235130 ! Adamts15 (Mmus)
 relationship: BFO:0000051 http://identifiers.org/ncbigene/269275 ! Acvr1c (Mmus)
 property_value: CLM:0010004 "0.26" xsd:string
-property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTE5MiBDQlggTUxJIENkaDIyIEdhYmFfMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUEAUNkaDEAAAFBY3ZyMWMAAAFBZGFtdHMxNQAAAVBheDIAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAkhTWVpQWlcxNjY5VTgyMUJXWVAAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACATUxOTIgQ0JYIE1MSSBDZGgyMiBHYWJhXzEAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFBAFDZGgxAAABQWN2cjFjAAABQWRhbXRzMTUAAAFQYXgyAAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhWRk9GWVBGUUdSS1VEUVVaM0ZGAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFUTE9LV0NMOTVSVTAzRDlQRVRHAAI3M0dWVERYREVHRTI3TTJYSk1UAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzEyIENCWCBNTEkgQ2RoMjIgR2FiYQAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUEAUNkaDEAAAFBY3ZyMWMAAAFBZGFtdHMxNQAAAVBheDIAAAYBAQJRWTVTOEtNTzVITEpVRjBQMDBLAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAkhTWVpQWlcxNjY5VTgyMUJXWVAAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACATMxMiBDQlggTUxJIENkaDIyIEdhYmEAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFBAFDZGgxAAABQWN2cjFjAAABQWRhbXRzMTUAAAFQYXgyAAAGAQECUVk1UzhLTU81SExKVUYwUDAwSwADfgAAAAQAAAhWRk9GWVBGUUdSS1VEUVVaM0ZGAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFUTE9LV0NMOTVSVTAzRDlQRVRHAAI3M0dWVERYREVHRTI3TTJYSk1UAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
 property_value: STATO:0000416 "0.9285714" xsd:float
 property_value: STATO:0000663 "0.6132075" xsd:float
 
@@ -2691,7 +2678,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ncbigene/171469 ! Gpr37l1 (Mmus)
 relationship: BFO:0000051 http://identifiers.org/ncbigene/629147 ! Ctxn3 (Mmus)
 property_value: CLM:0010004 "0.62" xsd:string
-property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTIwNiBCZXJnbWFubiBOTl8xAAAEAQECgazGjoGWFSADhGpN%2FYRYGE0ABQIBR3ByMzdsMQAAAUN0eG4zAAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJIU1laUFpXMTY2OVU4MjFCV1lQAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgE1MjA2IEJlcmdtYW5uIE5OXzEAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAgFHcHIzN2wxAAABQ3R4bjMAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzE2IEJlcmdtYW5uIE5OAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACAAAEAQECgazGjoGWFSADhGpN%2FYRYGE0ABQIBR3ByMzdsMQAAAUN0eG4zAAAGAQECUVk1UzhLTU81SExKVUYwUDAwSwADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJIU1laUFpXMTY2OVU4MjFCV1lQAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgEzMTYgQmVyZ21hbm4gTk4AAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAgFHcHIzN2wxAAABQ3R4bjMAAAYBAQJRWTVTOEtNTzVITEpVRjBQMDBLAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
 property_value: STATO:0000416 "1.0" xsd:float
 property_value: STATO:0000663 "0.8908046" xsd:float
 
@@ -2703,7 +2690,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ncbigene/13142 ! Dao (Mmus)
 relationship: BFO:0000051 http://identifiers.org/ncbigene/216616 ! Efemp1 (Mmus)
 property_value: CLM:0010004 "0.44" xsd:string
-property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTIwNyBBc3Ryby1DQiBOTl8xAAAEAQECgazGjoGWFSADhGpN%2FYRYGE0ABQIBRGFvAAABRWZlbXAxAAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJIU1laUFpXMTY2OVU4MjFCV1lQAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgE1MjA3IEFzdHJvLUNCIE5OXzEAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAgFEYW8AAAFFZmVtcDEAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzE3IEFzdHJvLUNCIE5OAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACAAAEAQECgazGjoGWFSADhGpN%2FYRYGE0ABQIBRGFvAAABRWZlbXAxAAAGAQECUVk1UzhLTU81SExKVUYwUDAwSwADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJIU1laUFpXMTY2OVU4MjFCV1lQAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgEzMTcgQXN0cm8tQ0IgTk4AAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAgFEYW8AAAFFZmVtcDEAAAYBAQJRWTVTOEtNTzVITEpVRjBQMDBLAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
 property_value: STATO:0000416 "0.7096774" xsd:float
 property_value: STATO:0000663 "0.6321839" xsd:float
 
@@ -3210,7 +3197,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ncbigene/243369 ! Sspo (Mmus)
 relationship: BFO:0000051 http://identifiers.org/ncbigene/67701 ! Wfdc2 (Mmus)
 property_value: CLM:0010004 "0.58" xsd:string
-property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI2MyBIeXBlbmR5bWFsIE5OXzEAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAgFTc3BvAAABV2ZkYzIAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAkhTWVpQWlcxNjY5VTgyMUJXWVAAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACATUyNjMgSHlwZW5keW1hbCBOTl8xAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQIBU3NwbwAAAVdmZGMyAAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhWRk9GWVBGUUdSS1VEUVVaM0ZGAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFUTE9LV0NMOTVSVTAzRDlQRVRHAAI3M0dWVERYREVHRTI3TTJYSk1UAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzI0IEh5cGVuZHltYWwgTk4AAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAgFTc3BvAAABV2ZkYzIAAAYBAQJRWTVTOEtNTzVITEpVRjBQMDBLAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAkhTWVpQWlcxNjY5VTgyMUJXWVAAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACATMyNCBIeXBlbmR5bWFsIE5OAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQIBU3NwbwAAAVdmZGMyAAAGAQECUVk1UzhLTU81SExKVUYwUDAwSwADfgAAAAQAAAhWRk9GWVBGUUdSS1VEUVVaM0ZGAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFUTE9LV0NMOTVSVTAzRDlQRVRHAAI3M0dWVERYREVHRTI3TTJYSk1UAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
 property_value: STATO:0000416 "1.0" xsd:float
 property_value: STATO:0000663 "0.87349397" xsd:float
 
@@ -3639,7 +3626,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ncbigene/12259 ! C1qa (Mmus)
 relationship: BFO:0000051 http://identifiers.org/ncbigene/231633 ! Tmem119 (Mmus)
 property_value: CLM:0010004 "0.92" xsd:string
-property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTMxMiBNaWNyb2dsaWEgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUCAUMxcWEAAAFUbWVtMTE5AAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJIU1laUFpXMTY2OVU4MjFCV1lQAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgE1MzEyIE1pY3JvZ2xpYSBOTl8xAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQIBQzFxYQAAAVRtZW0xMTkAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzM0IE1pY3JvZ2xpYSBOTgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUCAUMxcWEAAAFUbWVtMTE5AAAGAQECUVk1UzhLTU81SExKVUYwUDAwSwADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJIU1laUFpXMTY2OVU4MjFCV1lQAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgEzMzQgTWljcm9nbGlhIE5OAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQIBQzFxYQAAAVRtZW0xMTkAAAYBAQJRWTVTOEtNTzVITEpVRjBQMDBLAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
 property_value: STATO:0000416 "1.0" xsd:float
 property_value: STATO:0000663 "0.982906" xsd:float
 
@@ -4220,7 +4207,7 @@ name: Sln (Yao - within subclass).
 xref: https://doi.org/10.1038/s41586-023-06812-z
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ncbigene/66402 ! Sln (Mmus)
-property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzE1IERDTyBVQkMgR2x1dAAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUBAVNsbiAzAAAGAQECUVk1UzhLTU81SExKVUYwUDAwSwADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJIU1laUFpXMTY2OVU4MjFCV1lQAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgEzMTUgRENPIFVCQyBHbHV0AAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQEBU2xuIDMAAAYBAQJRWTVTOEtNTzVITEpVRjBQMDBLAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzE1IERDTyBVQkMgR2x1dAAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUBAVNsbgAABgEBAlFZNVM4S01PNUhMSlVGMFAwMEsAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACSFNZWlBaVzE2NjlVODIxQldZUAADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzE1IERDTyBVQkMgR2x1dAAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUBAVNsbgAABgEBAlFZNVM4S01PNUhMSlVGMFAwMEsAA34AAAAEAAAIVkZPRllQRlFHUktVRFFVWjNGRgAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBVExPS1dDTDk1UlUwM0Q5UEVURwACNzNHVlREWERFR0UyN00yWEpNVAADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
 
 [Term]
 id: CLM:5016799
@@ -4326,7 +4313,7 @@ name: Ttr (Yao - within subclass).
 xref: https://doi.org/10.1038/s41586-023-06812-z
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ncbigene/22139 ! Ttr (Mmus)
-property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzI1IENIT1IgTk4AAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAQFUdHIgMgAABgEBAlFZNVM4S01PNUhMSlVGMFAwMEsAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACSFNZWlBaVzE2NjlVODIxQldZUAADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzI1IENIT1IgTk4AAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAQFUdHIgMgAABgEBAlFZNVM4S01PNUhMSlVGMFAwMEsAA34AAAAEAAAIVkZPRllQRlFHUktVRFFVWjNGRgAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBVExPS1dDTDk1UlUwM0Q5UEVURwACNzNHVlREWERFR0UyN00yWEpNVAADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzI1IENIT1IgTk4AAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAQFUdHIAAAYBAQJRWTVTOEtNTzVITEpVRjBQMDBLAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAkhTWVpQWlcxNjY5VTgyMUJXWVAAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACATMyNSBDSE9SIE5OAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQEBVHRyAAAGAQECUVk1UzhLTU81SExKVUYwUDAwSwADfgAAAAQAAAhWRk9GWVBGUUdSS1VEUVVaM0ZGAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFUTE9LV0NMOTVSVTAzRDlQRVRHAAI3M0dWVERYREVHRTI3TTJYSk1UAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
 
 [Term]
 id: CLM:5016821
@@ -4334,7 +4321,7 @@ name: Bmp4 (Yao - within subclass).
 xref: https://doi.org/10.1038/s41586-023-06812-z
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ncbigene/12159 ! Bmp4 (Mmus)
-property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE4MSBDT1AgTk5fMQAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUBAUJtcDQgMwAABgEBAjE1Qks0N0RDSU9GMVNMTFVXOVAAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACSFNZWlBaVzE2NjlVODIxQldZUAADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE4MSBDT1AgTk5fMQAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUBAUJtcDQgMwAABgEBAjE1Qks0N0RDSU9GMVNMTFVXOVAAA34AAAAEAAAIVkZPRllQRlFHUktVRFFVWjNGRgAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBVExPS1dDTDk1UlUwM0Q5UEVURwACNzNHVlREWERFR0UyN00yWEpNVAADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIBMTE4MSBDT1AgTk5fMQAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUBAUJtcDQAAAYBAQIxNUJLNDdEQ0lPRjFTTExVVzlQAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAkhTWVpQWlcxNjY5VTgyMUJXWVAAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACATExODEgQ09QIE5OXzEAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAQFCbXA0AAAGAQECMTVCSzQ3RENJT0YxU0xMVVc5UAADfgAAAAQAAAhWRk9GWVBGUUdSS1VEUVVaM0ZGAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFUTE9LV0NMOTVSVTAzRDlQRVRHAAI3M0dWVERYREVHRTI3TTJYSk1UAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
 
 [Term]
 id: CLM:5016822
@@ -4436,7 +4423,7 @@ relationship: BFO:0000051 http://identifiers.org/ncbigene/12550 ! Cdh1 (Mmus)
 relationship: BFO:0000051 http://identifiers.org/ncbigene/18504 ! Pax2 (Mmus)
 relationship: BFO:0000051 http://identifiers.org/ncbigene/235130 ! Adamts15 (Mmus)
 relationship: BFO:0000051 http://identifiers.org/ncbigene/269275 ! Acvr1c (Mmus)
-property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTE5MiBDQlggTUxJIENkaDIyIEdhYmFfMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUEAUNkaDEAAAFBY3ZyMWMAAAFBZGFtdHMxNQAAAVBheDIAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAkhTWVpQWlcxNjY5VTgyMUJXWVAAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACATUxOTIgQ0JYIE1MSSBDZGgyMiBHYWJhXzEAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFBAFDZGgxAAABQWN2cjFjAAABQWRhbXRzMTUAAAFQYXgyAAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhWRk9GWVBGUUdSS1VEUVVaM0ZGAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFUTE9LV0NMOTVSVTAzRDlQRVRHAAI3M0dWVERYREVHRTI3TTJYSk1UAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzEyIENCWCBNTEkgQ2RoMjIgR2FiYQAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUEAUNkaDEAAAFBY3ZyMWMAAAFBZGFtdHMxNQAAAVBheDIAAAYBAQJRWTVTOEtNTzVITEpVRjBQMDBLAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAkhTWVpQWlcxNjY5VTgyMUJXWVAAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACATMxMiBDQlggTUxJIENkaDIyIEdhYmEAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFBAFDZGgxAAABQWN2cjFjAAABQWRhbXRzMTUAAAFQYXgyAAAGAQECUVk1UzhLTU81SExKVUYwUDAwSwADfgAAAAQAAAhWRk9GWVBGUUdSS1VEUVVaM0ZGAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFUTE9LV0NMOTVSVTAzRDlQRVRHAAI3M0dWVERYREVHRTI3TTJYSk1UAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
 
 [Term]
 id: CLM:5022176
@@ -4445,7 +4432,7 @@ xref: https://doi.org/10.1038/s41586-023-06812-z
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ncbigene/171469 ! Gpr37l1 (Mmus)
 relationship: BFO:0000051 http://identifiers.org/ncbigene/629147 ! Ctxn3 (Mmus)
-property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTIwNiBCZXJnbWFubiBOTl8xAAAEAQECgazGjoGWFSADhGpN%2FYRYGE0ABQIBR3ByMzdsMQAAAUN0eG4zAAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJIU1laUFpXMTY2OVU4MjFCV1lQAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgE1MjA2IEJlcmdtYW5uIE5OXzEAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAgFHcHIzN2wxAAABQ3R4bjMAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzE2IEJlcmdtYW5uIE5OAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACAAAEAQECgazGjoGWFSADhGpN%2FYRYGE0ABQIBR3ByMzdsMQAAAUN0eG4zAAAGAQECUVk1UzhLTU81SExKVUYwUDAwSwADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJIU1laUFpXMTY2OVU4MjFCV1lQAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgEzMTYgQmVyZ21hbm4gTk4AAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAgFHcHIzN2wxAAABQ3R4bjMAAAYBAQJRWTVTOEtNTzVITEpVRjBQMDBLAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
 
 [Term]
 id: CLM:5022177
@@ -4454,7 +4441,7 @@ xref: https://doi.org/10.1038/s41586-023-06812-z
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ncbigene/13142 ! Dao (Mmus)
 relationship: BFO:0000051 http://identifiers.org/ncbigene/216616 ! Efemp1 (Mmus)
-property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTIwNyBBc3Ryby1DQiBOTl8xAAAEAQECgazGjoGWFSADhGpN%2FYRYGE0ABQIBRGFvAAABRWZlbXAxAAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJIU1laUFpXMTY2OVU4MjFCV1lQAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgE1MjA3IEFzdHJvLUNCIE5OXzEAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAgFEYW8AAAFFZmVtcDEAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzE3IEFzdHJvLUNCIE5OAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACAAAEAQECgazGjoGWFSADhGpN%2FYRYGE0ABQIBRGFvAAABRWZlbXAxAAAGAQECUVk1UzhLTU81SExKVUYwUDAwSwADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJIU1laUFpXMTY2OVU4MjFCV1lQAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgEzMTcgQXN0cm8tQ0IgTk4AAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAgFEYW8AAAFFZmVtcDEAAAYBAQJRWTVTOEtNTzVITEpVRjBQMDBLAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
 
 [Term]
 id: CLM:5022178
@@ -4782,7 +4769,7 @@ xref: https://doi.org/10.1038/s41586-023-06812-z
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ncbigene/78896 ! Ecrg4 (Mmus)
 property_value: CLM:0010004 "0.52" xsd:string
-property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTIzNSBBc3Ryby1PTEYgTk5fMwAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUBAUVjcmc0AAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJIU1laUFpXMTY2OVU4MjFCV1lQAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgE1MjM1IEFzdHJvLU9MRiBOTl8zAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQEBRWNyZzQAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTIzNSBBc3Ryby1PTEYgTk5fMwAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUBAUVjcmc0IDIAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAkhTWVpQWlcxNjY5VTgyMUJXWVAAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACATUyMzUgQXN0cm8tT0xGIE5OXzMAAAQBAAKEUL8fg4IJfwOEoBqHhMQ92QQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAQFFY3JnNCAyAAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhWRk9GWVBGUUdSS1VEUVVaM0ZGAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFUTE9LV0NMOTVSVTAzRDlQRVRHAAI3M0dWVERYREVHRTI3TTJYSk1UAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
 property_value: STATO:0000416 "0.7878788" xsd:float
 property_value: STATO:0000663 "0.71428573" xsd:float
 
@@ -4885,7 +4872,7 @@ xref: https://doi.org/10.1038/s41586-023-06812-z
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ncbigene/78896 ! Ecrg4 (Mmus)
 property_value: CLM:0010004 "0.6341463414634146" xsd:string
-property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI1MCBUYW55Y3l0ZSBOTl8zAAAEAQECgazGjoGWFSADhGpN%2FYRYGE0ABQEBRWNyZzQgMgAABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIRzRJNEdGSlhKQjlBVFozUFRYMQAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBbm9uZQACbm9uZQADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAABSzlKTjIzUDI0S1FDR0s5VTc1QQACSFNZWlBaVzE2NjlVODIxQldZUAADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI1MCBUYW55Y3l0ZSBOTl8zAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQEBRWNyZzQgMgAABgEBAkNCR0MwVTMwVlY5SlBSNjBUSlUAA34AAAAEAAAIVkZPRllQRlFHUktVRFFVWjNGRgAJTFZEQkpBVzhCSTVZU1MxUVVCRwAKAAsBVExPS1dDTDk1UlUwM0Q5UEVURwACNzNHVlREWERFR0UyN00yWEpNVAADAQQBAAIjMDAwMDAwAAPIAQAFAQECIzAwMDAwMAADyAEAAAACAwA%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI1MCBUYW55Y3l0ZSBOTl8zAAAEAQECgazGjoGWFSADhGpN%2FYRYGE0ABQEBRWNyZzQAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAkhTWVpQWlcxNjY5VTgyMUJXWVAAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACATUyNTAgVGFueWN5dGUgTk5fMwAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUBAUVjcmc0AAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhWRk9GWVBGUUdSS1VEUVVaM0ZGAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFUTE9LV0NMOTVSVTAzRDlQRVRHAAI3M0dWVERYREVHRTI3TTJYSk1UAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
 property_value: STATO:0000416 "0.44827586" xsd:float
 property_value: STATO:0000663 "0.47619048" xsd:float
 
@@ -4896,7 +4883,7 @@ xref: https://doi.org/10.1038/s41586-023-06812-z
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ncbigene/243369 ! Sspo (Mmus)
 relationship: BFO:0000051 http://identifiers.org/ncbigene/67701 ! Wfdc2 (Mmus)
-property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI2MyBIeXBlbmR5bWFsIE5OXzEAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAgFTc3BvAAABV2ZkYzIAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAkhTWVpQWlcxNjY5VTgyMUJXWVAAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACATUyNjMgSHlwZW5keW1hbCBOTl8xAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQIBU3NwbwAAAVdmZGMyAAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhWRk9GWVBGUUdSS1VEUVVaM0ZGAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFUTE9LV0NMOTVSVTAzRDlQRVRHAAI3M0dWVERYREVHRTI3TTJYSk1UAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzI0IEh5cGVuZHltYWwgTk4AAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAgFTc3BvAAABV2ZkYzIAAAYBAQJRWTVTOEtNTzVITEpVRjBQMDBLAAN%2BAAAABAAACEc0STRHRkpYSkI5QVRaM1BUWDEACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAW5vbmUAAm5vbmUAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUs5Sk4yM1AyNEtRQ0dLOVU3NUEAAkhTWVpQWlcxNjY5VTgyMUJXWVAAAwQBRlMwMERYVjBUOVIxWDlGSjRRRQACAAABUVk1UzhLTU81SExKVUYwUDAwSwACATMyNCBIeXBlbmR5bWFsIE5OAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQIBU3NwbwAAAVdmZGMyAAAGAQECUVk1UzhLTU81SExKVUYwUDAwSwADfgAAAAQAAAhWRk9GWVBGUUdSS1VEUVVaM0ZGAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFUTE9LV0NMOTVSVTAzRDlQRVRHAAI3M0dWVERYREVHRTI3TTJYSk1UAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
 
 [Term]
 id: CLM:5022234
@@ -5281,7 +5268,7 @@ xref: https://doi.org/10.1038/s41586-023-06812-z
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ncbigene/12259 ! C1qa (Mmus)
 relationship: BFO:0000051 http://identifiers.org/ncbigene/231633 ! Tmem119 (Mmus)
-property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTMxMiBNaWNyb2dsaWEgTk5fMQAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUCAUMxcWEAAAFUbWVtMTE5AAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJIU1laUFpXMTY2OVU4MjFCV1lQAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgE1MzEyIE1pY3JvZ2xpYSBOTl8xAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQIBQzFxYQAAAVRtZW0xMTkAAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzM0IE1pY3JvZ2xpYSBOTgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEBAoGsxo6BlhUgA4RqTf2EWBhNAAUCAUMxcWEAAAFUbWVtMTE5AAAGAQECUVk1UzhLTU81SExKVUYwUDAwSwADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJIU1laUFpXMTY2OVU4MjFCV1lQAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgEzMzQgTWljcm9nbGlhIE5OAAABMTVCSzQ3RENJT0YxU0xMVVc5UAACAAABQ0JHQzBVMzBWVjlKUFI2MFRKVQACAAAEAQAChFC%2FH4OCCX8DhKAah4TEPdkEMk5RVElFN1RBTVA4UFFBSE80UAAFga%2BmSoHprA6BoIFHgJLV6AYABwAABQIBQzFxYQAAAVRtZW0xMTkAAAYBAQJRWTVTOEtNTzVITEpVRjBQMDBLAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
 
 [Term]
 id: CLM:5022283
@@ -5357,7 +5344,7 @@ id: CLM:5029833
 name: Sspo (CAS evidence).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ncbigene/243369 ! Sspo (Mmus)
-property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIAAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIBNTI2MyBIeXBlbmR5bWFsIE5OXzEAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAQFTc3BvAAAGAQECQ0JHQzBVMzBWVjlKUFI2MFRKVQADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJIU1laUFpXMTY2OVU4MjFCV1lQAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgE1MjYzIEh5cGVuZHltYWwgTk5fMQAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUBAVNzcG8AAAYBAQJDQkdDMFUzMFZWOUpQUjYwVEpVAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
+property_value: seeAlso "https://knowledge.brain-map.org/abcatlas#AQIBQVA4Sk5ONUxZQUJHVk1HS1kxQgACUTFOQ1dXUEc2RlowRE5JWEpCUQADBAFGUzAwRFhWMFQ5UjFYOUZKNFFFAAIAAAFRWTVTOEtNTzVITEpVRjBQMDBLAAIBMzI0IEh5cGVuZHltYWwgTk4AAAExNUJLNDdEQ0lPRjFTTExVVzlQAAIAAAFDQkdDMFUzMFZWOUpQUjYwVEpVAAIAAAQBAQKBrMaOgZYVIAOEak39hFgYTQAFAQFTc3BvAAAGAQECUVk1UzhLTU81SExKVUYwUDAwSwADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAFLOUpOMjNQMjRLUUNHSzlVNzVBAAJIU1laUFpXMTY2OVU4MjFCV1lQAAMEAUZTMDBEWFYwVDlSMVg5Rko0UUUAAgAAAVFZNVM4S01PNUhMSlVGMFAwMEsAAgEzMjQgSHlwZW5keW1hbCBOTgAAATE1Qks0N0RDSU9GMVNMTFVXOVAAAgAAAUNCR0MwVTMwVlY5SlBSNjBUSlUAAgAABAEAAoRQvx%2BDggl%2FA4SgGoeExD3ZBDJOUVRJRTdUQU1QOFBRQUhPNFAABYGvpkqB6awOgaCBR4CS1egGAAcAAAUBAVNzcG8AAAYBAQJRWTVTOEtNTzVITEpVRjBQMDBLAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAgMA" xsd:string {name="markers in reference data on Allen Brain Cell Atlas"}
 
 [Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000109994
