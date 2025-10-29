@@ -92,7 +92,7 @@ $(PATTERNDIR)/data/default/%_evidence_marker_set.txt: $(PATTERNDIR)/data/default
 $(TMPDIR)/%_class.tsv: ../patterns/data/default/%_class_base.tsv ../patterns/data/default/%_class_curation.tsv
 	python ../scripts/template_runner.py modifier --merge -i=$< -i2=$(word 2, $^) -o=$@
 
-# override to remove own terms
+# override to remove own terms from imports
 $(IMPORTDIR)/merged_import.owl: $(MIRRORDIR)/merged.owl $(IMPORTDIR)/merged_terms_combined.txt
 	if [ $(IMP) = true ]; then \
   		python $(SCRIPTSDIR)/own_terms_cleaner.py --output $(TMPDIR)/own_terms.txt && \
