@@ -122,6 +122,58 @@
             "basicPropertyValues": [
               {
                 "pred": "http://www.w3.org/2000/01/rdf-schema#comment",
+                "val": "All clusters in this set are inferred to be GABAergic from NT marker expression."
+              }
+            ]
+          },
+          "obj": "http://purl.obolibrary.org/obo/GO_0061534",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002215",
+          "sub": "http://purl.obolibrary.org/obo/CL_4300028"
+        },
+        {
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#comment",
+                "val": "All clusters in this set are inferred to be glutamatergic from NT marker expression."
+              }
+            ]
+          },
+          "obj": "http://purl.obolibrary.org/obo/GO_0061535",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002215",
+          "sub": "http://purl.obolibrary.org/obo/CL_4300029"
+        },
+        {
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#comment",
+                "val": "All clusters under this cell set are inferred to be glycinergic based on neurotransmitter marker expression."
+              }
+            ]
+          },
+          "obj": "http://purl.obolibrary.org/obo/GO_0061537",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002215",
+          "sub": "http://purl.obolibrary.org/obo/CL_4300348"
+        },
+        {
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#comment",
+                "val": "All clusters under this cell set are inferred to be glycinergic based on neurotransmitter marker expression."
+              }
+            ]
+          },
+          "obj": "http://purl.obolibrary.org/obo/GO_0061537",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002215",
+          "sub": "http://purl.obolibrary.org/obo/CL_4301575"
+        },
+        {
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#comment",
                 "val": "Inferred to be gamma-aminobutyric acid secretion, neurotransmission based on expression of Gad1, Gad2, Slc32a1"
               }
             ]
@@ -557,6 +609,11 @@
           "sub": "http://purl.obolibrary.org/obo/CL_4300031"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/CL_0000617",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CL_4300028"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/CL_0000679",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/CL_4304384"
@@ -594,7 +651,7 @@
         {
           "obj": "http://purl.obolibrary.org/obo/CL_0008059",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/CL_4306992"
+          "sub": "http://purl.obolibrary.org/obo/CL_4300348"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/CL_0011006",
@@ -1264,7 +1321,22 @@
         {
           "obj": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
           "pred": "http://purl.obolibrary.org/obo/RO_0002162",
+          "sub": "http://purl.obolibrary.org/obo/CL_4300370"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002162",
           "sub": "http://purl.obolibrary.org/obo/CL_4301615"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002162",
+          "sub": "http://purl.obolibrary.org/obo/CL_4301616"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002162",
+          "sub": "http://purl.obolibrary.org/obo/CL_4301625"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
@@ -1275,6 +1347,11 @@
           "obj": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
           "pred": "http://purl.obolibrary.org/obo/RO_0002162",
           "sub": "http://purl.obolibrary.org/obo/CL_4306426"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002162",
+          "sub": "http://purl.obolibrary.org/obo/CL_4307132"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/PCL_0010001",
@@ -5465,6 +5542,16 @@
           "obj": "https://purl.brain-bican.org/ontology/CCN20230722/CS20230722_SUPT_1195",
           "pred": "http://purl.obolibrary.org/obo/RO_0015003",
           "sub": "https://purl.brain-bican.org/ontology/CCN20230722/CS20230722_CLUS_5314"
+        },
+        {
+          "obj": "https://purl.brain-bican.org/ontology/mbao/MBA_512",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002100",
+          "sub": "http://purl.obolibrary.org/obo/CL_4300028"
+        },
+        {
+          "obj": "https://purl.brain-bican.org/ontology/mbao/MBA_512",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002100",
+          "sub": "http://purl.obolibrary.org/obo/CL_4300029"
         }
       ],
       "id": "http://purl.obolibrary.org/obo/pcl/../../wmbo-cl-comp.json",
@@ -5472,10 +5559,10 @@
         "basicPropertyValues": [
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2025-10-29"
+            "val": "2025-10-30"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/pcl/releases/2025-10-29/../../wmbo-cl-comp.json"
+        "version": "http://purl.obolibrary.org/obo/pcl/releases/2025-10-30/../../wmbo-cl-comp.json"
       },
       "nodes": [
         {
@@ -13350,7 +13437,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4300028",
-          "lbl": "CB GABA cerebellar neuron (Mmus)",
+          "lbl": "cerebellar GABAergic neuron (Mmus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -13387,7 +13474,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4300029",
-          "lbl": "CB Glut cerebellum glutamatergic neuron (Mmus)",
+          "lbl": "cerebellar glutamatergic neuron (Mmus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -13596,7 +13683,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4300349",
-          "lbl": "CB PLI Gly-Gaba Purkinje layer interneuron (Mmus)",
+          "lbl": "Purkinje layer interneuron (Mmus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -13686,7 +13773,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4300353",
-          "lbl": "CBX Purkinje Gaba Purkinje cell (Mmus)",
+          "lbl": "Purkinje cell (Mmus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -13731,7 +13818,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4300354",
-          "lbl": "CB Granule Glut cerebellar granule cell (Mmus)",
+          "lbl": "cerebellar granule cell (Mmus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -13776,7 +13863,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4300358",
-          "lbl": "Astro-NT NN astrocyte (Mmus)",
+          "lbl": "subcortical astrocyte (Mmus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -13801,7 +13888,7 @@
               }
             ],
             "definition": {
-              "val": "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Aqp4 (Mmus), Cd38 (Mmus), Agt (Mmus), Itih3 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:318 Astro-NT NN.",
+              "val": "A transcriptomically defined type of astrocyte located predominantly in the ventral and posterior subcortical areas.   It is distinguished from other cells in the brain by selective expression of Aqp4 (Mmus), Cd38 (Mmus), Agt (Mmus), Itih3 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:318 Astro-NT NN.",
               "xrefs": [
                 "https://doi.org/10.1038/s41586-023-06812-z"
               ]
@@ -13814,6 +13901,10 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "Aqp4 (Mmus), Cd38 (Mmus), Agt (Mmus), Itih3 (Mmus) expressing astrocyte of brain (Mus musculus)"
+              },
+              {
+                "pred": "hasExactSynonym",
+                "val": "non-telencephalic astrocyte"
               }
             ]
           },
@@ -13821,7 +13912,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4300359",
-          "lbl": "Astro-TE NN astrocyte (Mmus)",
+          "lbl": "astrocyte of cerebrum (Mmus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -13846,7 +13937,7 @@
               }
             ],
             "definition": {
-              "val": "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), Lhx2 (Mmus), Gpc5 (Mmus), Nr2f1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:319 Astro-TE NN.",
+              "val": "A transcritpomically defined type of astrocytes primarily restricted to the dorsal regions of the cerebrum. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), Lhx2 (Mmus), Gpc5 (Mmus), Nr2f1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:319 Astro-TE NN.",
               "xrefs": [
                 "https://doi.org/10.1038/s41586-023-06812-z"
               ]
@@ -13859,6 +13950,10 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "Gja1 (Mmus), Lhx2 (Mmus), Gpc5 (Mmus), Nr2f1 (Mmus) expressing astrocyte of brain (Mus musculus)"
+              },
+              {
+                "pred": "hasExactSynonym",
+                "val": "telencephalic astrocyte"
               }
             ]
           },
@@ -13866,7 +13961,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4300360",
-          "lbl": "Astro-OLF NN astrocyte (Mmus)",
+          "lbl": "olfactory areas astrocyte (Mmus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -13891,7 +13986,7 @@
               }
             ],
             "definition": {
-              "val": "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), Hs3st3a1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:320 Astro-OLF NN.",
+              "val": "A transcriptomically defined type of astrocyte located exclusively in the olfactory areas. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), Hs3st3a1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:320 Astro-OLF NN.",
               "xrefs": [
                 "https://doi.org/10.1038/s41586-023-06812-z"
               ]
@@ -13911,7 +14006,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4300362",
-          "lbl": "Tanycyte NN tanycyte (Mmus)",
+          "lbl": "tanycyte (Mmus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -13956,7 +14051,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4300363",
-          "lbl": "Ependymal NN ependymal cell (Mmus)",
+          "lbl": "ependymal cell (Mmus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -14001,7 +14096,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4300366",
-          "lbl": "OPC NN oligodendrocyte precursor cell (Mmus)",
+          "lbl": "oligodendrocyte precursor cell (Mmus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -14046,7 +14141,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4300367",
-          "lbl": "Oligo NN oligodendrocyte (Mmus)",
+          "lbl": "oligodendrocyte (Mmus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -14271,7 +14366,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4301575",
-          "lbl": "CB PLI Gly-Gaba_2 Lugaro cell (Mmus)",
+          "lbl": "Lugaro cell (Mmus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -14364,7 +14459,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4301578",
-          "lbl": "CBX Golgi Gly-Gaba cerebellar Golgi cell (Mmus)",
+          "lbl": "cerebellar Golgi cell (Mmus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -14679,7 +14774,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4301586",
-          "lbl": "DCO UBC Glut unipolar brush cell (Mmus)",
+          "lbl": "unipolar brush cell (Mmus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -15227,7 +15322,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4301608",
-          "lbl": "CHOR NN choroid plexus epithelial cell (Mmus)",
+          "lbl": "choroid plexus epithelial cell (Mmus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -15280,7 +15375,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4301611",
-          "lbl": "COP NN_1 committed oligodendrocyte precursor (Mmus)",
+          "lbl": "commited oligodendrocyte precursor (Mmus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -15333,7 +15428,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4301612",
-          "lbl": "NFOL NN_2 newly formed oligodendrocyte (Mmus)",
+          "lbl": "newly formed oligodendrocyte (Mmus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -15386,7 +15481,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4301613",
-          "lbl": "MFOL NN_3 myelin-forming oligodendrocyte (Mmus)",
+          "lbl": "myelin-forming oligodendrocyte (Mmus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -15439,7 +15534,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4301614",
-          "lbl": "MOL NN_4 mature myelinating oligodendrocyte (Mmus)",
+          "lbl": "mature myelinating oligodendrocyte (Mmus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -15492,7 +15587,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4301615",
-          "lbl": "OEC olfactory ensheathing cell (Mmus)",
+          "lbl": "olfactory ensheathing cell (Mmus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -15553,7 +15648,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4301616",
-          "lbl": "ABC NN arachnoid barrier cell (Mmus)",
+          "lbl": "arachnoid barrier cell (Mmus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -15606,7 +15701,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4301625",
-          "lbl": "BAM NN border associated macrophage (Mmus)",
+          "lbl": "border associated macrophage (Mmus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -15659,7 +15754,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4304384",
-          "lbl": "HY Gnrh1 Glut hypothalamic gonadotropin-releasing hormone neuron (Mmus)",
+          "lbl": "hypothalamic gonadotropin-releasing hormone neuron (Mmus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -15752,7 +15847,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4306426",
-          "lbl": "pinealocyte pinealocyte (Mmus)",
+          "lbl": "pinealocyte (Mmus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -15907,7 +16002,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4307005",
-          "lbl": "CB PLI Gly-Gaba_4 Purkinje layer interneuron (Mmus)",
+          "lbl": "CB PLI GABA Ly6d Purkinje layer interneuron",
           "meta": {
             "basicPropertyValues": [
               {
@@ -16044,7 +16139,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4307026",
-          "lbl": "Bergmann glial cell Bergmann glial cell (Mmus)",
+          "lbl": "Bergmann glial cell (Mmus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -16109,7 +16204,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4307027",
-          "lbl": "cerebellar astrocyte astrocyte of the cerebellum (Mmus)",
+          "lbl": "cerebellar astrocyte (Mmus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -16150,7 +16245,7 @@
               }
             ],
             "definition": {
-              "val": "A astrocyte of the cerebellum of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Dao (Mmus), Efemp1 (Mmus). It is distinguished from other Astro-Epen cells by expression of Dao, Efemp1. These cells are located in the Cerebellum, brain , in or close to the regions: arbor vitae . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5207 Astro-CB NN_1.",
+              "val": "A transcriptomically defined type of astrocyte localized exclusively in the cerebellum beneath the Purkinje cell layer. It is distinguished from other cells in the brain by selective expression of Dao (Mmus), Efemp1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5207 Astro-CB NN_1.",
               "xrefs": [
                 "https://doi.org/10.1038/s41586-023-06812-z"
               ]
@@ -18150,7 +18245,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4307067",
-          "lbl": "Tanycyte NN_2 Dscaml1 alpha2-tanycyte (Mmus)",
+          "lbl": "alpha2-tanycyte (Mmus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -18268,7 +18363,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4307069",
-          "lbl": "Tanycyte NN_2 Col25a1 beta1-tanycyte (Mmus)",
+          "lbl": "beta1-tancyte (Mmus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -18329,7 +18424,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4307070",
-          "lbl": "Tanycyte NN_3 beta2-tanycyte (Mmus)",
+          "lbl": "beta-2 tanycyte (Mmus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -18398,7 +18493,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4307083",
-          "lbl": "Hypendymal NN hypendymal cell (Mmus)",
+          "lbl": "hypendemal cell (Mmus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -20223,7 +20318,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_4307132",
-          "lbl": "Microglia NN microglial cell (Mmus)",
+          "lbl": "microglial cell (Mmus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -32757,6 +32852,11 @@
           "type": "PROPERTY"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/RO_0002100",
+          "propertyType": "OBJECT",
+          "type": "PROPERTY"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/RO_0002162",
           "propertyType": "OBJECT",
           "type": "PROPERTY"
@@ -32845,6 +32945,10 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/CL_0000255",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CL_0000617",
           "type": "CLASS"
         },
         {
@@ -33098,6 +33202,10 @@
         {
           "id": "https://purl.brain-bican.org/ontology/CCN20230722/CS20230722_SUPT_1177",
           "type": "INDIVIDUAL"
+        },
+        {
+          "id": "https://purl.brain-bican.org/ontology/mbao/MBA_512",
+          "type": "CLASS"
         }
       ]
     }
