@@ -238,9 +238,10 @@ def:
                 vars:
                   - Parent_label
                   - Subclass_markers_cat
-              - text: 'It is %s.'
+              - text: 'It is %s (inferred from expression of %s).'
                 vars:
                   - NT_label
+                  - NT_markers_cat
               - text: 'These cells are located in the %s'
                 vars:
                   - Atlas_loc_cat
@@ -257,13 +258,13 @@ def:
                   - Labelset
                   - Taxonomy_label
 
-generated_synonyms:
-   - text: "%s expressing %s of %s (%s)"
-     vars:
-        - Minimal_markers_cat
-        - Gross_cell_type
-        - Brain_region
-        - Taxon
+#generated_synonyms:
+#   - text: "%s expressing %s of %s (%s)"
+#     vars:
+#        - Minimal_markers_cat
+#        - Gross_cell_type
+#        - Brain_region
+#        - Taxon
 
 logical_axioms:
    - axiom_type: subClassOf

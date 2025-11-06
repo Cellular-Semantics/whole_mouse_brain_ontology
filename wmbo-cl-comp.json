@@ -5559,10 +5559,10 @@
         "basicPropertyValues": [
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2025-11-03"
+            "val": "2025-11-06"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/pcl/releases/2025-11-03/../../wmbo-cl-comp.json"
+        "version": "http://purl.obolibrary.org/obo/pcl/releases/2025-11-06/../../wmbo-cl-comp.json"
       },
       "nodes": [
         {
@@ -13582,10 +13582,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "061 STR D1 Gaba"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Prkch (Mmus), Slc32a1 (Mmus), Drd1 (Mmus) expressing direct pathway medium spiny neuron of brain (Mus musculus)"
               }
             ]
           },
@@ -13627,10 +13623,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "062 STR D2 Gaba"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Adora2a (Mmus), Phactr1 (Mmus), Pcp4l1 (Mmus) expressing indirect pathway medium spiny neuron of brain (Mus musculus)"
               }
             ]
           },
@@ -13672,10 +13664,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "308 DCO Il22 Gly-Gaba"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Tmem204 (Mmus), Slc6a5 (Mmus) expressing cerebellar neuron of brain (Mus musculus)"
               }
             ]
           },
@@ -13717,10 +13705,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "309 CB PLI Gly-Gaba"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Rgs6 (Mmus), Slc6a5 (Mmus), Shisa9 (Mmus), Zic1 (Mmus), Bmp6 (Mmus) expressing Purkinje layer interneuron of brain (Mus musculus)"
               }
             ]
           },
@@ -13762,10 +13746,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "311 CBX MLI Megf11 Gaba"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Homer3 (Mmus), Tfap2b (Mmus), Sorcs3 (Mmus), Cacna1e (Mmus) expressing molecular layer interneuron of brain (Mus musculus)"
               }
             ]
           },
@@ -13807,10 +13787,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "313 CBX Purkinje Gaba"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Pcp2 (Mmus) expressing Purkinje cell of brain (Mus musculus)"
               }
             ]
           },
@@ -13852,10 +13828,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "314 CB Granule Glut"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Gabra6 (Mmus), Ror1 (Mmus) expressing cerebellar granule cell of brain (Mus musculus)"
               }
             ]
           },
@@ -13897,10 +13869,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "318 Astro-NT NN"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Aqp4 (Mmus), Cd38 (Mmus), Agt (Mmus), Itih3 (Mmus) expressing astrocyte of brain (Mus musculus)"
               },
               {
                 "pred": "hasExactSynonym",
@@ -13949,10 +13917,6 @@
               },
               {
                 "pred": "hasExactSynonym",
-                "val": "Gja1 (Mmus), Lhx2 (Mmus), Gpc5 (Mmus), Nr2f1 (Mmus) expressing astrocyte of brain (Mus musculus)"
-              },
-              {
-                "pred": "hasExactSynonym",
                 "val": "telencephalic astrocyte"
               }
             ]
@@ -13995,10 +13959,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "320 Astro-OLF NN"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Gja1 (Mmus), Hs3st3a1 (Mmus) expressing astrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -14040,10 +14000,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "322 Tanycyte NN"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Gpr50 (Mmus), Apoe (Mmus) expressing tanycyte of brain (Mus musculus)"
               }
             ]
           },
@@ -14085,10 +14041,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "323 Ependymal NN"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Tmem212 (Mmus), Rarres2 (Mmus) expressing ependymal cell of brain (Mus musculus)"
               }
             ]
           },
@@ -14130,10 +14082,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "326 OPC NN"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Pdgfra (Mmus) expressing oligodendrocyte precursor cell of brain (Mus musculus)"
               }
             ]
           },
@@ -14175,10 +14123,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "327 Oligo NN"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Cldn11 (Mmus), Gjc3 (Mmus) expressing oligodendrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -14220,10 +14164,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "330 VLMC NN"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Apod (Mmus), Slc6a13 (Mmus) expressing vascular leptomeningeal cell of brain (Mus musculus)"
               }
             ]
           },
@@ -14265,10 +14205,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "1141 DCO Il22 Gly-Gaba_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Il22 (Mmus), Rftn1 (Mmus) expressing cerebellar neuron of brain (Mus musculus)"
               }
             ]
           },
@@ -14310,10 +14246,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "1143 DCO Il22 Gly-Gaba_3"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Fat2 (Mmus), Slc6a5 (Mmus), Cgnl1 (Mmus) expressing cerebellar neuron of brain (Mus musculus)"
               }
             ]
           },
@@ -14355,10 +14287,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "1144 CB PLI Gly-Gaba_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Hmga2 (Mmus), Afap1l2 (Mmus) expressing Purkinje layer interneuron of brain (Mus musculus)"
               }
             ]
           },
@@ -14403,10 +14331,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "1145 CB PLI Gly-Gaba_2"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Pthlh (Mmus), Tfap2b (Mmus), Rspo2 (Mmus) expressing Lugaro cell of brain (Mus musculus)"
               }
             ]
           },
@@ -14448,10 +14372,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "1146 CB PLI Gly-Gaba_3"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Pax2 (Mmus), C1ql3 (Mmus), Tfap2b (Mmus), Gabrb1 (Mmus) expressing Purkinje layer interneuron of brain (Mus musculus)"
               }
             ]
           },
@@ -14501,10 +14421,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "310 CBX Golgi Gly-Gaba"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Zfp385c (Mmus), Tfap2b (Mmus) expressing cerebellar Golgi cell of brain (Mus musculus)"
               }
             ]
           },
@@ -14546,10 +14462,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "1149 CBX MLI Megf11 Gaba_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Dnah11 (Mmus), Sla (Mmus), Gldc (Mmus), Sdk2 (Mmus) expressing molecular layer interneuron of brain (Mus musculus)"
               }
             ]
           },
@@ -14591,10 +14503,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "1150 CBX MLI Megf11 Gaba_2"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Gabra6 (Mmus), Pvalb (Mmus) expressing molecular layer interneuron of brain (Mus musculus)"
               }
             ]
           },
@@ -14636,10 +14544,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "1152 CBX Purkinje Gaba_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Pcp2 (Mmus), Stk17b (Mmus) expressing Purkinje cell of brain (Mus musculus)"
               }
             ]
           },
@@ -14718,10 +14622,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "1154 CB Granule Glut_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Gabra6 (Mmus), Lmx1a (Mmus) expressing cerebellar granule cell of brain (Mus musculus)"
               }
             ]
           },
@@ -14763,10 +14663,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "1155 CB Granule Glut_2"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Gabra6 (Mmus), Gap43 (Mmus), Rab37 (Mmus) expressing cerebellar granule cell of brain (Mus musculus)"
               }
             ]
           },
@@ -14816,10 +14712,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "315 DCO UBC Glut"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Sln (Mmus), Lmx1a (Mmus) expressing unipolar brush cell of brain (Mus musculus)"
               }
             ]
           },
@@ -14861,10 +14753,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "1159 Astro-NT NN_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Gfap (Mmus), Lhfpl3 (Mmus), Gria1 (Mmus), Hopx (Mmus) expressing astrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -14906,10 +14794,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "1160 Astro-NT NN_2"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Gja1 (Mmus), A330076C08Rik (Mmus), Itih3 (Mmus), Gria2 (Mmus) expressing astrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -14951,10 +14835,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "1161 Astro-TE NN_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Myoc (Mmus), Camk2a (Mmus) expressing astrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -14996,10 +14876,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "1162 Astro-TE NN_2"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Hepacam (Mmus), E330013P04Rik (Mmus) expressing astrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -15041,10 +14917,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "1163 Astro-TE NN_3"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Gja1 (Mmus), Grin2c (Mmus), Dcc (Mmus), Slc7a10 (Mmus) expressing astrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -15086,10 +14958,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "1165 Astro-TE NN_5"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Gja1 (Mmus), Thbs4 (Mmus), Kcnk10 (Mmus), Pak1 (Mmus) expressing astrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -15131,10 +14999,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "1166 Astro-OLF NN_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Aqp4 (Mmus), Prss23 (Mmus), Igfbp2 (Mmus) expressing astrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -15176,10 +15040,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "1167 Astro-OLF NN_2"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Gja1 (Mmus), Hs3st3a1 (Mmus), Slco1c1 (Mmus) expressing astrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -15221,10 +15081,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "1168 Astro-OLF NN_3"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Ednrb (Mmus), Hs3st3a1 (Mmus), C230072F16Rik (Mmus), Gria2 (Mmus) expressing astrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -15266,10 +15122,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "1172 Tanycyte NN_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Cnmd (Mmus), Lpl (Mmus) expressing tanycyte of brain (Mus musculus)"
               }
             ]
           },
@@ -15311,10 +15163,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "1173 Tanycyte NN_2"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Gpr50 (Mmus), Ccdc170 (Mmus), Nkx2-4 (Mmus) expressing tanycyte of brain (Mus musculus)"
               }
             ]
           },
@@ -15360,10 +15208,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "1178 CHOR NN_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "2900040C04Rik (Mmus) expressing choroid plexus epithelial cell of brain (Mus musculus)"
               },
               {
                 "pred": "hasExactSynonym",
@@ -15417,10 +15261,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "1181 COP NN_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Gpr17 (Mmus), Bmp4 (Mmus) expressing committed oligodendrocyte precursor of brain (Mus musculus)"
               }
             ]
           },
@@ -15470,10 +15310,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "1182 NFOL NN_2"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "9630013A20Rik (Mmus), Ptprb (Mmus) expressing newly formed oligodendrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -15523,10 +15359,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "1183 MFOL NN_3"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Cldn11 (Mmus), Sec14l5 (Mmus), 9630013A20Rik (Mmus) expressing myelin-forming oligodendrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -15576,10 +15408,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "1184 MOL NN_4"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Cldn11 (Mmus), Anln (Mmus) expressing mature myelinating oligodendrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -15637,10 +15465,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "328 OEC NN"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Apod (Mmus), Npy (Mmus) expressing olfactory ensheathing cell of brain (Mus musculus)"
               }
             ]
           },
@@ -15690,10 +15514,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "329 ABC NN"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Thbd (Mmus), Ccn3 (Mmus) expressing arachnoid barrier cell of brain (Mus musculus)"
               }
             ]
           },
@@ -15743,10 +15563,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "335 BAM NN"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Mrc1 (Mmus), Maf (Mmus) expressing border associated macrophage of brain (Mus musculus)"
               }
             ]
           },
@@ -15815,7 +15631,7 @@
               }
             ],
             "definition": {
-              "val": "A hypothalamic gonadotropin-releasing hormone neuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gnrh1 (Mmus). It is glutamatergic. These cells are located in the Hypothalamus, Olfactory areas, Pallidum, brain , in or close to the regions: Lateral septal nucleus, rostral (rostroventral) part, Medial septal nucleus, Diagonal band nucleus . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:2564 HY Gnrh1 Glut_1.",
+              "val": "A hypothalamic gonadotropin-releasing hormone neuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gnrh1 (Mmus). It is glutamatergic (inferred from expression of Gad1, Slc17a6, Gad2). These cells are located in the Hypothalamus, Olfactory areas, Pallidum, brain , in or close to the regions: Lateral septal nucleus, rostral (rostroventral) part, Medial septal nucleus, Diagonal band nucleus . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:2564 HY Gnrh1 Glut_1.",
               "xrefs": [
                 "https://doi.org/10.1038/s41586-023-06812-z"
               ]
@@ -15836,10 +15652,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "2564 HY Gnrh1 Glut_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Gnrh1 (Mmus) expressing hypothalamic gonadotropin-releasing hormone neuron of brain (Mus musculus)"
               }
             ]
           },
@@ -15895,7 +15707,7 @@
               "Rationale for assigning this type to reference data: Consistent with this cell set being composed of Pinealocytes, a combination of Pinealocyte markers Gngt1 and Crx can identify the cells in this cluster with a confidence (F-beta score) of 0.91 in the context of glutamatergic cells (Pinealocytes release glutamate) from the hippocampal formation dissection (which includes the pineal gland)."
             ],
             "definition": {
-              "val": "A pinealocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cngb3 (Mmus), Ush2a (Mmus). It is glutamatergic. These cells are located in the brain , in or close to the regions: third ventricle . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:4606 Pineal Crx Glut_1.",
+              "val": "A pinealocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cngb3 (Mmus), Ush2a (Mmus). It is glutamatergic (inferred from expression of Ddc, Slc17a6, Slc17a7). These cells are located in the brain , in or close to the regions: third ventricle . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:4606 Pineal Crx Glut_1.",
               "xrefs": [
                 "https://doi.org/10.1038/s41586-023-06812-z",
                 "https://doi.org/10.1111/j.1600-079x.1996.tb00284.x",
@@ -15918,10 +15730,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "4606 Pineal Crx Glut_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Cngb3 (Mmus), Ush2a (Mmus) expressing pinealocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -15978,7 +15786,7 @@
               }
             ],
             "definition": {
-              "val": "A cerebellar neuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Il22 (Mmus), Edaradd (Mmus). It is distinguished from other DCO Il22 Gly-Gaba cells by expression of Ppp1r17. It is GABAergic and glycinergic. These cells are located in the Medulla, Cerebellum, brain , in or close to the regions: Paraflocculus, arbor vitae, Dorsal cochlear nucleus . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5172 DCO Il22 Gly-Gaba_2.",
+              "val": "A cerebellar neuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Il22 (Mmus), Edaradd (Mmus). It is distinguished from other DCO Il22 Gly-Gaba cells by expression of Ppp1r17. It is GABAergic and glycinergic (inferred from expression of Slc32a1, Hdc, Slc6a5, Gad2, Gad1). These cells are located in the Medulla, Cerebellum, brain , in or close to the regions: Paraflocculus, arbor vitae, Dorsal cochlear nucleus . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5172 DCO Il22 Gly-Gaba_2.",
               "xrefs": [
                 "https://doi.org/10.1038/s41586-023-06812-z"
               ]
@@ -15991,10 +15799,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5172 DCO Il22 Gly-Gaba_2"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Il22 (Mmus), Edaradd (Mmus) expressing cerebellar neuron of brain (Mus musculus)"
               }
             ]
           },
@@ -16050,7 +15854,7 @@
               "Warning: Despite its name, CB PLI Gly-Gaba_4 does not secrete the neurotransmitter Gly, as assessed by expression of multiple marker genes."
             ],
             "definition": {
-              "val": "A Purkinje layer interneuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Ly6d (Mmus), Kit (Mmus). It is distinguished from other CB PLI Gly-Gaba cells by expression of Ly6d. It is GABAergic. These cells are located in the Cerebellum, brain , in or close to the regions: arbor vitae, Interposed nucleus, Nodulus (X) . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5185 CB PLI Gly-Gaba_4.",
+              "val": "A Purkinje layer interneuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Ly6d (Mmus), Kit (Mmus). It is distinguished from other CB PLI Gly-Gaba cells by expression of Ly6d. It is GABAergic (inferred from expression of Gad1, Gad2, Slc32a1). These cells are located in the Cerebellum, brain , in or close to the regions: arbor vitae, Interposed nucleus, Nodulus (X) . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5185 CB PLI Gly-Gaba_4.",
               "xrefs": [
                 "https://doi.org/10.1038/s41586-023-06812-z"
               ]
@@ -16063,10 +15867,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5185 CB PLI Gly-Gaba_4"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Ly6d (Mmus), Kit (Mmus) expressing Purkinje layer interneuron of brain (Mus musculus)"
               }
             ]
           },
@@ -16111,7 +15911,7 @@
               }
             ],
             "definition": {
-              "val": "A molecular layer interneuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cdh1 (Mmus), Acvr1c (Mmus), Adamts15 (Mmus), Pax2 (Mmus). It is distinguished from other CB GABA cells by expression of Cdh1, Acvr1c, Adamts15, Pax2. It is GABAergic. These cells are located in the Cerebellum, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5192 CBX MLI Cdh22 Gaba_1.",
+              "val": "A molecular layer interneuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cdh1 (Mmus), Acvr1c (Mmus), Adamts15 (Mmus), Pax2 (Mmus). It is distinguished from other CB GABA cells by expression of Cdh1, Acvr1c, Adamts15, Pax2. It is GABAergic (inferred from expression of Gad1, Gad2, Slc32a1). These cells are located in the Cerebellum, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5192 CBX MLI Cdh22 Gaba_1.",
               "xrefs": [
                 "https://doi.org/10.1038/s41586-023-06812-z"
               ]
@@ -16128,10 +15928,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5192 CBX MLI Cdh22 Gaba_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Cdh1 (Mmus), Acvr1c (Mmus), Adamts15 (Mmus), Pax2 (Mmus) expressing molecular layer interneuron of brain (Mus musculus)"
               }
             ]
           },
@@ -16193,10 +15989,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5206 Bergmann NN_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Gpr37l1 (Mmus), Ctxn3 (Mmus) expressing Bergmann glial cell of brain (Mus musculus)"
               }
             ]
           },
@@ -16262,10 +16054,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5207 Astro-CB NN_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Dao (Mmus), Efemp1 (Mmus) expressing astrocyte of the cerebellum of brain (Mus musculus)"
               }
             ]
           },
@@ -16319,10 +16107,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5208 Astro-NT NN_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Gfap (Mmus), Galnt15 (Mmus), Agt (Mmus) expressing astrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -16376,10 +16160,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5209 Astro-NT NN_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Gfap (Mmus), Slc36a2 (Mmus), Sfrp5 (Mmus) expressing astrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -16433,10 +16213,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5210 Astro-NT NN_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Gfap (Mmus), Sfrp5 (Mmus), Cldn10 (Mmus), Riiad1 (Mmus) expressing astrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -16494,10 +16270,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5211 Astro-NT NN_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Myoc (Mmus), Six3os1 (Mmus), Slc36a2 (Mmus) expressing astrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -16555,10 +16327,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5212 Astro-NT NN_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Agt (Mmus), Prss35 (Mmus), C4b (Mmus) expressing astrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -16628,10 +16396,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5213 Astro-NT NN_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Dao (Mmus), Mecom (Mmus), Fbln5 (Mmus), Prelp (Mmus) expressing astrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -16689,10 +16453,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5214 Astro-NT NN_2"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Gja1 (Mmus), A330076C08Rik (Mmus), Sfrp5 (Mmus), Gria2 (Mmus) expressing astrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -16746,10 +16506,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5215 Astro-NT NN_2"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Gja1 (Mmus), A330076C08Rik (Mmus), Otx2 (Mmus), Unc13c (Mmus) expressing astrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -16803,10 +16559,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5216 Astro-NT NN_2"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Slc7a10 (Mmus), Cyp26b1 (Mmus), Igfbp2 (Mmus), Shroom3 (Mmus) expressing astrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -16868,10 +16620,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5217 Astro-NT NN_2"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Aqp4 (Mmus), A330076C08Rik (Mmus), Fbln5 (Mmus), Mdga2 (Mmus) expressing astrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -16925,10 +16673,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5218 Astro-TE NN_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Myoc (Mmus), Lhx2 (Mmus), Kcne1l (Mmus), Alpk1 (Mmus) expressing astrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -16982,10 +16726,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5219 Astro-TE NN_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Gfap (Mmus), Ddn (Mmus), Myoc (Mmus), Rasl10b (Mmus) expressing astrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -17031,10 +16771,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5220 Astro-TE NN_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Myoc (Mmus), Dio2 (Mmus), Lncpint (Mmus) expressing astrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -17075,7 +16811,7 @@
               }
             ],
             "definition": {
-              "val": "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Myoc (Mmus), Sptbn2 (Mmus), Alpk1 (Mmus). It is distinguished from other Astro-TE NN_1 cells by expression of Myoc, Jph4, Alpk1. It is glutamatergic. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5221 Astro-TE NN_1.",
+              "val": "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Myoc (Mmus), Sptbn2 (Mmus), Alpk1 (Mmus). It is distinguished from other Astro-TE NN_1 cells by expression of Myoc, Jph4, Alpk1. It is glutamatergic (inferred from expression of Aldh1a1, Slc17a7). These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5221 Astro-TE NN_1.",
               "xrefs": [
                 "https://doi.org/10.1038/s41586-023-06812-z"
               ]
@@ -17084,10 +16820,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5221 Astro-TE NN_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Myoc (Mmus), Sptbn2 (Mmus), Alpk1 (Mmus) expressing astrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -17149,10 +16881,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5222 Astro-TE NN_2"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Gm6145 (Mmus), E330013P04Rik (Mmus), Slc39a12 (Mmus) expressing astrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -17210,10 +16938,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5223 Astro-TE NN_2"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Mcm6 (Mmus), Egfr (Mmus), Pcsk6 (Mmus) expressing astrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -17271,10 +16995,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5224 Astro-TE NN_3"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Gja1 (Mmus), Cxcl5 (Mmus), Ddn (Mmus) expressing astrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -17324,10 +17044,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5225 Astro-TE NN_3"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "S1pr1 (Mmus), Fam163a (Mmus), Kcnq3 (Mmus), Kcnq1ot1 (Mmus) expressing astrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -17385,10 +17101,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5226 Astro-TE NN_3"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "S1pr1 (Mmus), Ranbp3l (Mmus), Emx2os (Mmus), Zic4 (Mmus) expressing astrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -17446,10 +17158,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5227 Astro-TE NN_3"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "S1pr1 (Mmus), Crym (Mmus), Grin2c (Mmus) expressing astrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -17511,10 +17219,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5228 Astro-TE NN_4"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "S1pr1 (Mmus), Thbs4 (Mmus), Gm29683 (Mmus), Slc39a12 (Mmus) expressing astrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -17580,10 +17284,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5229 Astro-TE NN_5"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "S1pr1 (Mmus), Thbs4 (Mmus), Hs3st3a1 (Mmus), Sfrp1 (Mmus) expressing astrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -17649,10 +17349,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5230 Astro-TE NN_5"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "S1pr1 (Mmus), Adamts18 (Mmus), Crym (Mmus) expressing astrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -17706,10 +17402,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5231 Astro-OLF NN_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Gja1 (Mmus), Chrdl1 (Mmus), Ano1 (Mmus), Il33 (Mmus) expressing astrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -17767,10 +17459,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5232 Astro-OLF NN_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Aqp4 (Mmus), Prss23 (Mmus), Stk32a (Mmus) expressing astrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -17828,10 +17516,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5233 Astro-OLF NN_2"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Aqp4 (Mmus), Hs3st3a1 (Mmus), Slc25a34 (Mmus), C4b (Mmus) expressing astrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -17889,10 +17573,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5234 Astro-OLF NN_2"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "S1pr1 (Mmus), Chrdl1 (Mmus), Sfrp1 (Mmus), Atp13a4 (Mmus) expressing astrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -17942,10 +17622,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5235 Astro-OLF NN_3"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "C230072F16Rik (Mmus), Dipk1c (Mmus), Ecrg4 (Mmus) expressing astrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -17999,10 +17675,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5236 Astro-OLF NN_3"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "S1pr1 (Mmus), 6530411M01Rik (Mmus), Sfrp1 (Mmus), Aqp4 (Mmus) expressing astrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -18059,10 +17731,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5243 Tanycyte NN_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Cnmd (Mmus), Sfta3-ps (Mmus) expressing tanycyte of subfornical organ of brain (Mus musculus)"
               }
             ]
           },
@@ -18116,10 +17784,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5244 Tanycyte NN_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "C230072F16Rik (Mmus), Glp1r (Mmus) expressing tanycyte of brain (Mus musculus)"
               }
             ]
           },
@@ -18160,7 +17824,7 @@
               }
             ],
             "definition": {
-              "val": "A alpha1-tanycyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Dynlrb2 (Mmus), Mylk3 (Mmus), Sfta3-ps (Mmus). It is distinguished from other Tanycyte NN_2 cells by expression of Mylk3. It is glutamatergic. These cells are located in the Hypothalamus , in or close to the regions: Periventricular hypothalamic nucleus, intermediate part . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5245 Tanycyte NN_2.",
+              "val": "A alpha1-tanycyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Dynlrb2 (Mmus), Mylk3 (Mmus), Sfta3-ps (Mmus). It is distinguished from other Tanycyte NN_2 cells by expression of Mylk3. It is glutamatergic (inferred from expression of Slc17a8). These cells are located in the Hypothalamus , in or close to the regions: Periventricular hypothalamic nucleus, intermediate part . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5245 Tanycyte NN_2.",
               "xrefs": [
                 "https://doi.org/10.1038/s41586-023-06812-z"
               ]
@@ -18169,10 +17833,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5245 Tanycyte NN_2"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Dynlrb2 (Mmus), Mylk3 (Mmus), Sfta3-ps (Mmus) expressing alpha1-tanycyte of brain (Mus musculus)"
               }
             ]
           },
@@ -18234,10 +17894,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5246 Tanycyte NN_2"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Ccdc170 (Mmus), Nkx2-4 (Mmus), Dock8 (Mmus) expressing alpha1-tanycyte of brain (Mus musculus)"
               }
             ]
           },
@@ -18291,10 +17947,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5247 Tanycyte NN_2"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Pdzph1 (Mmus), Wdr63 (Mmus), Dscaml1 (Mmus), P3h2 (Mmus) expressing alpha2-tanycyte of brain (Mus musculus)"
               }
             ]
           },
@@ -18352,10 +18004,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5248 Tanycyte NN_2"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Ccdc146 (Mmus), Tbx3 (Mmus), Otx2 (Mmus) expressing tanycyte of brain (Mus musculus)"
               }
             ]
           },
@@ -18413,10 +18061,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5249 Tanycyte NN_2"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Gpr50 (Mmus), Frzb (Mmus), Foxd2os (Mmus) expressing beta1-tanycyte of brain (Mus musculus)"
               }
             ]
           },
@@ -18482,10 +18126,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5250 Tanycyte NN_3"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Fndc3c1 (Mmus), Ecrg4 (Mmus) expressing beta2-tanycyte of brain (Mus musculus)"
               }
             ]
           },
@@ -18567,10 +18207,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5263 Hypendymal NN_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Sspo (Mmus), Wfdc2 (Mmus) expressing hypendymal cell of brain (Mus musculus)"
               }
             ]
           },
@@ -18627,10 +18263,6 @@
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
-                "val": "2900040C04Rik (Mmus), Tbc1d1 (Mmus) expressing choroid plexus epithelial cell of brain (Mus musculus)"
-              },
-              {
-                "pred": "hasExactSynonym",
                 "val": "5264 CHOR NN_1"
               }
             ]
@@ -18676,16 +18308,12 @@
               }
             ],
             "definition": {
-              "val": "A choroid plexus epithelial cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 2900040C04Rik (Mmus), Slc17a8 (Mmus). It is distinguished from other CHOR NN cells by expression of Slc17a8. It is glutamatergic. These cells are located in the brain , in or close to the regions: choroid plexus, lateral ventricle . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5265 CHOR NN_1.",
+              "val": "A choroid plexus epithelial cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 2900040C04Rik (Mmus), Slc17a8 (Mmus). It is distinguished from other CHOR NN cells by expression of Slc17a8. It is glutamatergic (inferred from expression of Slc17a8). These cells are located in the brain , in or close to the regions: choroid plexus, lateral ventricle . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5265 CHOR NN_1.",
               "xrefs": [
                 "https://doi.org/10.1038/s41586-023-06812-z"
               ]
             },
             "synonyms": [
-              {
-                "pred": "hasExactSynonym",
-                "val": "2900040C04Rik (Mmus), Slc17a8 (Mmus) expressing choroid plexus epithelial cell of brain (Mus musculus)"
-              },
               {
                 "pred": "hasExactSynonym",
                 "val": "5265 CHOR NN_1"
@@ -18738,10 +18366,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5266 OPC NN_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Pdgfra (Mmus), Pclaf (Mmus), Mki67 (Mmus), Foxg1 (Mmus) expressing oligodendrocyte precursor cell of brain (Mus musculus)"
               }
             ]
           },
@@ -18803,10 +18427,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5267 OPC NN_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Pdgfra (Mmus), Pclaf (Mmus), Irx2 (Mmus) expressing oligodendrocyte precursor cell of brain (Mus musculus)"
               }
             ]
           },
@@ -18860,10 +18480,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5268 OPC NN_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Pdgfra (Mmus), Olig1 (Mmus), Mms22l (Mmus), Top2a (Mmus) expressing oligodendrocyte precursor cell of brain (Mus musculus)"
               }
             ]
           },
@@ -18917,10 +18533,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5269 OPC NN_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Pdgfra (Mmus), Olig1 (Mmus), Col27a1 (Mmus) expressing oligodendrocyte precursor cell of brain (Mus musculus)"
               }
             ]
           },
@@ -18978,10 +18590,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5270 OPC NN_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Pdgfra (Mmus), Olig1 (Mmus), Rmi2 (Mmus), Col27a1 (Mmus) expressing oligodendrocyte precursor cell of brain (Mus musculus)"
               }
             ]
           },
@@ -19035,10 +18643,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5271 OPC NN_2"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Pdgfra (Mmus), Cenpf (Mmus), Cenpa (Mmus) expressing oligodendrocyte precursor cell of brain (Mus musculus)"
               }
             ]
           },
@@ -19088,10 +18692,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5272 COP NN_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Gpr17 (Mmus), Bmp4 (Mmus), Zfp36l1 (Mmus) expressing committed oligodendrocyte precursor of brain (Mus musculus)"
               }
             ]
           },
@@ -19141,10 +18741,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5273 COP NN_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Gpr17 (Mmus), Gp1bb (Mmus), Pdzd2 (Mmus), Plekhg1 (Mmus) expressing committed oligodendrocyte precursor of brain (Mus musculus)"
               }
             ]
           },
@@ -19190,10 +18786,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5274 COP NN_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Gpr17 (Mmus), Bgn (Mmus), Gstp1 (Mmus), C1ql1 (Mmus) expressing committed oligodendrocyte precursor of brain (Mus musculus)"
               }
             ]
           },
@@ -19239,10 +18831,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5275 COP NN_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "9630013A20Rik (Mmus), Bmp4 (Mmus), Mob3b (Mmus) expressing committed oligodendrocyte precursor of brain (Mus musculus)"
               }
             ]
           },
@@ -19288,10 +18876,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5276 COP NN_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "9630013A20Rik (Mmus), Rab32 (Mmus), Opalin (Mmus) expressing committed oligodendrocyte precursor of brain (Mus musculus)"
               }
             ]
           },
@@ -19345,10 +18929,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5277 COP NN_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "9630013A20Rik (Mmus), Bmp4 (Mmus), Cck (Mmus), Ptger1 (Mmus) expressing committed oligodendrocyte precursor of brain (Mus musculus)"
               }
             ]
           },
@@ -19402,10 +18982,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5278 NFOL NN_2"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "9630013A20Rik (Mmus), Grin2b (Mmus) expressing newly formed oligodendrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -19455,10 +19031,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5279 NFOL NN_2"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "9630013A20Rik (Mmus), Dbx2 (Mmus), Rassf10 (Mmus) expressing newly formed oligodendrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -19508,10 +19080,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5280 NFOL NN_2"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "9630013A20Rik (Mmus), Rgs16 (Mmus), Rhbdl2 (Mmus) expressing newly formed oligodendrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -19561,10 +19129,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5281 NFOL NN_2"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "9630013A20Rik (Mmus), Piezo2 (Mmus), Ptprb (Mmus) expressing newly formed oligodendrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -19614,10 +19178,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5282 MFOL NN_3"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Opalin (Mmus), Cxcl12 (Mmus), Efhd1 (Mmus) expressing myelin-forming oligodendrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -19671,10 +19231,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5283 MFOL NN_3"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "9630013A20Rik (Mmus), Ppp1r14a (Mmus), Mroh3 (Mmus) expressing myelin-forming oligodendrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -19724,10 +19280,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5284 MOL NN_4"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Prr5l (Mmus), Hapln2 (Mmus), Enpp6 (Mmus), Grm7 (Mmus) expressing mature myelinating oligodendrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -19781,10 +19333,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5285 MOL NN_4"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Cldn11 (Mmus), A230001M10Rik (Mmus), Spock3 (Mmus), Rhoj (Mmus) expressing mature myelinating oligodendrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -19838,10 +19386,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5286 MOL NN_4"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Apod (Mmus), Klk6 (Mmus), Dlc1 (Mmus) expressing mature myelinating oligodendrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -19891,10 +19435,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5287 MOL NN_4"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Opalin (Mmus), Grm3 (Mmus), Gm5087 (Mmus) expressing mature myelinating oligodendrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -19944,10 +19484,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5288 MOL NN_4"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Mog (Mmus), Anln (Mmus), Gm32633 (Mmus) expressing mature myelinating oligodendrocyte of brain (Mus musculus)"
               }
             ]
           },
@@ -19997,10 +19533,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5289 OEC NN_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Cldn5 (Mmus), Adamts12 (Mmus) expressing olfactory ensheathing cell of brain (Mus musculus)"
               }
             ]
           },
@@ -20050,10 +19582,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5290 OEC NN_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Apod (Mmus), Aqp1 (Mmus), Cldn5 (Mmus) expressing olfactory ensheathing cell of brain (Mus musculus)"
               }
             ]
           },
@@ -20111,10 +19639,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5291 OEC NN_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Apod (Mmus), Mybpc1 (Mmus), Syk (Mmus) expressing olfactory ensheathing cell of brain (Mus musculus)"
               }
             ]
           },
@@ -20151,7 +19675,7 @@
               }
             ],
             "definition": {
-              "val": "A olfactory ensheathing cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Apod (Mmus), Mybpc1 (Mmus), Rasgef1c (Mmus). It is distinguished from other OEC cells by expression of Rasgef1c. It is glutamatergic. These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5292 OEC NN_1.",
+              "val": "A olfactory ensheathing cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Apod (Mmus), Mybpc1 (Mmus), Rasgef1c (Mmus). It is distinguished from other OEC cells by expression of Rasgef1c. It is glutamatergic (inferred from expression of Slc17a7). These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5292 OEC NN_1.",
               "xrefs": [
                 "https://doi.org/10.1038/s41586-023-06812-z"
               ]
@@ -20160,10 +19684,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5292 OEC NN_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Apod (Mmus), Mybpc1 (Mmus), Rasgef1c (Mmus) expressing olfactory ensheathing cell of brain (Mus musculus)"
               }
             ]
           },
@@ -20209,10 +19729,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5293 ABC NN_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Slc47a1 (Mmus), Pde11a (Mmus) expressing arachnoid barrier cell of brain (Mus musculus)"
               }
             ]
           },
@@ -20258,10 +19774,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5294 ABC NN_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Slc47a1 (Mmus), Dapl1 (Mmus) expressing arachnoid barrier cell of brain (Mus musculus)"
               }
             ]
           },
@@ -20307,10 +19819,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5295 ABC NN_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Prg4 (Mmus), Cubn (Mmus) expressing arachnoid barrier cell of brain (Mus musculus)"
               }
             ]
           },
@@ -20372,10 +19880,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5312 Microglia NN_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "C1qa (Mmus), Tmem119 (Mmus) expressing microglial cell of brain (Mus musculus)"
               }
             ]
           },
@@ -20429,10 +19933,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5313 BAM NN_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Mrc1 (Mmus), Pf4 (Mmus) expressing border associated macrophage of brain (Mus musculus)"
               }
             ]
           },
@@ -20486,10 +19986,6 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "5314 BAM NN_1"
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "Mrc1 (Mmus), Pf4 (Mmus), Fos (Mmus) expressing border associated macrophage of brain (Mus musculus)"
               }
             ]
           },

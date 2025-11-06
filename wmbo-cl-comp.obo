@@ -50,7 +50,6 @@ id: CL:4300101
 name: STR D1 Gaba direct pathway medium spiny neuron (Mmus)
 def: "A direct pathway medium spiny neuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Prkch (Mmus), Slc32a1 (Mmus), Drd1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:061 STR D1 Gaba." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "061 STR D1 Gaba" EXACT []
-synonym: "Prkch (Mmus), Slc32a1 (Mmus), Drd1 (Mmus) expressing direct pathway medium spiny neuron of brain (Mus musculus)" EXACT []
 is_a: CL:4023026
 property_value: CLM:0010003 CLM:5000101 {STATO:0000663="0.70412517"}
 property_value: CLM:0010003 CLM:5007721 {STATO:0000663="0.71593535"}
@@ -63,7 +62,6 @@ id: CL:4300102
 name: STR D2 Gaba indirect pathway medium spiny neuron (Mmus)
 def: "A indirect pathway medium spiny neuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Adora2a (Mmus), Phactr1 (Mmus), Pcp4l1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:062 STR D2 Gaba." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "062 STR D2 Gaba" EXACT []
-synonym: "Adora2a (Mmus), Phactr1 (Mmus), Pcp4l1 (Mmus) expressing indirect pathway medium spiny neuron of brain (Mus musculus)" EXACT []
 is_a: CL:4023029
 property_value: CLM:0010003 CLM:5000102 {STATO:0000663="0.6617923"}
 property_value: CLM:0010003 CLM:5007722 {STATO:0000663="0.8310593"}
@@ -76,7 +74,6 @@ id: CL:4300348
 name: DCO Il22 Gly-Gaba cerebellar neuron (Mmus)
 def: "A cerebellar neuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Tmem204 (Mmus), Slc6a5 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:308 DCO Il22 Gly-Gaba." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "308 DCO Il22 Gly-Gaba" EXACT []
-synonym: "Tmem204 (Mmus), Slc6a5 (Mmus) expressing cerebellar neuron of brain (Mus musculus)" EXACT []
 is_a: CL:0008059
 is_a: CL:4300028 ! cerebellar GABAergic neuron (Mmus)
 relationship: RO:0002215 GO:0061537 {comment="All clusters under this cell set are inferred to be glycinergic based on neurotransmitter marker expression."}
@@ -91,7 +88,6 @@ id: CL:4300349
 name: Purkinje layer interneuron (Mmus)
 def: "A Purkinje layer interneuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Rgs6 (Mmus), Slc6a5 (Mmus), Shisa9 (Mmus), Zic1 (Mmus), Bmp6 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:309 CB PLI Gly-Gaba." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "309 CB PLI Gly-Gaba" EXACT []
-synonym: "Rgs6 (Mmus), Slc6a5 (Mmus), Shisa9 (Mmus), Zic1 (Mmus), Bmp6 (Mmus) expressing Purkinje layer interneuron of brain (Mus musculus)" EXACT []
 is_a: CL:4072102
 is_a: CL:4300028 ! cerebellar GABAergic neuron (Mmus)
 property_value: CLM:0010003 CLM:5000349 {STATO:0000663="0.023094688"}
@@ -105,7 +101,6 @@ id: CL:4300351
 name: CBX MLI Megf11 Gaba molecular layer interneuron (Mmus)
 def: "A molecular layer interneuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Homer3 (Mmus), Tfap2b (Mmus), Sorcs3 (Mmus), Cacna1e (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:311 CBX MLI Megf11 Gaba." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "311 CBX MLI Megf11 Gaba" EXACT []
-synonym: "Homer3 (Mmus), Tfap2b (Mmus), Sorcs3 (Mmus), Cacna1e (Mmus) expressing molecular layer interneuron of brain (Mus musculus)" EXACT []
 is_a: CL:4042035
 is_a: CL:4300028 ! cerebellar GABAergic neuron (Mmus)
 property_value: CLM:0010003 CLM:5000351 {STATO:0000663="0.24193548"}
@@ -119,7 +114,6 @@ id: CL:4300353
 name: Purkinje cell (Mmus)
 def: "A Purkinje cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pcp2 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:313 CBX Purkinje Gaba." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "313 CBX Purkinje Gaba" EXACT []
-synonym: "Pcp2 (Mmus) expressing Purkinje cell of brain (Mus musculus)" EXACT []
 is_a: CL:0000121
 is_a: CL:4300028 ! cerebellar GABAergic neuron (Mmus)
 property_value: CLM:0010003 CLM:5000353 {STATO:0000663="0.9569378"}
@@ -133,7 +127,6 @@ id: CL:4300354
 name: cerebellar granule cell (Mmus)
 def: "A cerebellar granule cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gabra6 (Mmus), Ror1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:314 CB Granule Glut." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "314 CB Granule Glut" EXACT []
-synonym: "Gabra6 (Mmus), Ror1 (Mmus) expressing cerebellar granule cell of brain (Mus musculus)" EXACT []
 is_a: CL:0001031
 is_a: CL:4300029 ! cerebellar glutamatergic neuron (Mmus)
 property_value: CLM:0010003 CLM:5000354 {STATO:0000663="0.62749004"}
@@ -147,7 +140,6 @@ id: CL:4300358
 name: subcortical astrocyte (Mmus)
 def: "A transcriptomically defined type of astrocyte located predominantly in the ventral and posterior subcortical areas.   It is distinguished from other cells in the brain by selective expression of Aqp4 (Mmus), Cd38 (Mmus), Agt (Mmus), Itih3 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:318 Astro-NT NN." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "318 Astro-NT NN" EXACT []
-synonym: "Aqp4 (Mmus), Cd38 (Mmus), Agt (Mmus), Itih3 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 synonym: "non-telencephalic astrocyte" EXACT []
 is_a: CL:0000127
 property_value: CLM:0010003 CLM:5000358 {STATO:0000663="0.4052198"}
@@ -161,7 +153,6 @@ id: CL:4300359
 name: astrocyte of cerebrum (Mmus)
 def: "A transcritpomically defined type of astrocytes primarily restricted to the dorsal regions of the cerebrum. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), Lhx2 (Mmus), Gpc5 (Mmus), Nr2f1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:319 Astro-TE NN." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "319 Astro-TE NN" EXACT []
-synonym: "Gja1 (Mmus), Lhx2 (Mmus), Gpc5 (Mmus), Nr2f1 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 synonym: "telencephalic astrocyte" EXACT []
 is_a: CL:0000127
 property_value: CLM:0010003 CLM:5000359 {STATO:0000663="0.03968254"}
@@ -175,7 +166,6 @@ id: CL:4300360
 name: olfactory areas astrocyte (Mmus)
 def: "A transcriptomically defined type of astrocyte located exclusively in the olfactory areas. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), Hs3st3a1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:320 Astro-OLF NN." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "320 Astro-OLF NN" EXACT []
-synonym: "Gja1 (Mmus), Hs3st3a1 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:0000127
 property_value: CLM:0010003 CLM:5000360 {STATO:0000663="0.67099565"}
 property_value: CLM:0010003 CLM:5007980 {STATO:0000663="0.6818182"}
@@ -188,7 +178,6 @@ id: CL:4300362
 name: tanycyte (Mmus)
 def: "A tanycyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr50 (Mmus), Apoe (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:322 Tanycyte NN." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "322 Tanycyte NN" EXACT []
-synonym: "Gpr50 (Mmus), Apoe (Mmus) expressing tanycyte of brain (Mus musculus)" EXACT []
 is_a: CL:0002085
 property_value: CLM:0010003 CLM:5000362 {STATO:0000663="0.74880874"}
 property_value: CLM:0010003 CLM:5007982 {STATO:0000663="0.77756834"}
@@ -201,7 +190,6 @@ id: CL:4300363
 name: ependymal cell (Mmus)
 def: "A ependymal cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Tmem212 (Mmus), Rarres2 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:323 Ependymal NN." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "323 Ependymal NN" EXACT []
-synonym: "Tmem212 (Mmus), Rarres2 (Mmus) expressing ependymal cell of brain (Mus musculus)" EXACT []
 is_a: CL:0000065
 property_value: CLM:0010003 CLM:5000363 {STATO:0000663="0.9508816"}
 property_value: CLM:0010003 CLM:5007983 {STATO:0000663="0.97694635"}
@@ -214,7 +202,6 @@ id: CL:4300366
 name: oligodendrocyte precursor cell (Mmus)
 def: "A oligodendrocyte precursor cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pdgfra (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:326 OPC NN." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "326 OPC NN" EXACT []
-synonym: "Pdgfra (Mmus) expressing oligodendrocyte precursor cell of brain (Mus musculus)" EXACT []
 is_a: CL:0002453
 is_a: CL:4300031 ! OPC-Oligo cell (Mmus)
 property_value: CLM:0010003 CLM:5000366 {STATO:0000663="0.7124217"}
@@ -228,7 +215,6 @@ id: CL:4300367
 name: oligodendrocyte (Mmus)
 def: "A oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cldn11 (Mmus), Gjc3 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:327 Oligo NN." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "327 Oligo NN" EXACT []
-synonym: "Cldn11 (Mmus), Gjc3 (Mmus) expressing oligodendrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:0000128
 is_a: CL:4300031 ! OPC-Oligo cell (Mmus)
 property_value: CLM:0010003 CLM:5000367 {STATO:0000663="0.9230531"}
@@ -242,7 +228,6 @@ id: CL:4300370
 name: VLMC NN vascular leptomeningeal cell (Mmus)
 def: "A vascular leptomeningeal cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Apod (Mmus), Slc6a13 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:330 VLMC NN." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "330 VLMC NN" EXACT []
-synonym: "Apod (Mmus), Slc6a13 (Mmus) expressing vascular leptomeningeal cell of brain (Mus musculus)" EXACT []
 is_a: CL:4023051
 relationship: RO:0002162 NCBITaxon:10090
 property_value: CLM:0010003 CLM:5000370 {STATO:0000663="0.8806818"}
@@ -256,7 +241,6 @@ id: CL:4301571
 name: DCO Il22 Gly-Gaba_1 cerebellar neuron (Mmus)
 def: "A cerebellar neuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Il22 (Mmus), Rftn1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1141 DCO Il22 Gly-Gaba_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1141 DCO Il22 Gly-Gaba_1" EXACT []
-synonym: "Il22 (Mmus), Rftn1 (Mmus) expressing cerebellar neuron of brain (Mus musculus)" EXACT []
 is_a: CL:4300348 ! DCO Il22 Gly-Gaba cerebellar neuron (Mmus)
 property_value: CLM:0010003 CLM:5001561 {STATO:0000663="0.2741228"}
 property_value: CLM:0010003 CLM:5016781
@@ -269,7 +253,6 @@ id: CL:4301573
 name: DCO Il22 Gly-Gaba_3 cerebellar neuron (Mmus)
 def: "A cerebellar neuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Fat2 (Mmus), Slc6a5 (Mmus), Cgnl1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1143 DCO Il22 Gly-Gaba_3." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1143 DCO Il22 Gly-Gaba_3" EXACT []
-synonym: "Fat2 (Mmus), Slc6a5 (Mmus), Cgnl1 (Mmus) expressing cerebellar neuron of brain (Mus musculus)" EXACT []
 is_a: CL:4300348 ! DCO Il22 Gly-Gaba cerebellar neuron (Mmus)
 property_value: CLM:0010003 CLM:5001563 {STATO:0000663="0.4560811"}
 property_value: CLM:0010003 CLM:5016783
@@ -282,7 +265,6 @@ id: CL:4301574
 name: CB PLI Gly-Gaba_1 Purkinje layer interneuron (Mmus)
 def: "A Purkinje layer interneuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Hmga2 (Mmus), Afap1l2 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1144 CB PLI Gly-Gaba_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1144 CB PLI Gly-Gaba_1" EXACT []
-synonym: "Hmga2 (Mmus), Afap1l2 (Mmus) expressing Purkinje layer interneuron of brain (Mus musculus)" EXACT []
 is_a: CL:4300349 ! Purkinje layer interneuron (Mmus)
 property_value: CLM:0010003 CLM:5001564 {STATO:0000663="0.49407116"}
 property_value: CLM:0010003 CLM:5016784
@@ -296,7 +278,6 @@ name: Lugaro cell (Mmus)
 def: "A Lugaro cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pthlh (Mmus), Tfap2b (Mmus), Rspo2 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1145 CB PLI Gly-Gaba_2." [https://doi.org/10.1038/s41586-023-06812-z]
 comment: Rationale for assigning this type to reference data: Mapping of this cell type is supported by analysis: https://github.com/Cellular-Semantics/cellular_semantics_notebooks
 synonym: "1145 CB PLI Gly-Gaba_2" EXACT []
-synonym: "Pthlh (Mmus), Tfap2b (Mmus), Rspo2 (Mmus) expressing Lugaro cell of brain (Mus musculus)" EXACT []
 is_a: CL:0011006
 is_a: CL:4300349 ! Purkinje layer interneuron (Mmus)
 relationship: RO:0002215 GO:0061537 {comment="All clusters under this cell set are inferred to be glycinergic based on neurotransmitter marker expression."}
@@ -311,7 +292,6 @@ id: CL:4301576
 name: CB PLI Gly-Gaba_3 Purkinje layer interneuron (Mmus)
 def: "A Purkinje layer interneuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pax2 (Mmus), C1ql3 (Mmus), Tfap2b (Mmus), Gabrb1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1146 CB PLI Gly-Gaba_3." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1146 CB PLI Gly-Gaba_3" EXACT []
-synonym: "Pax2 (Mmus), C1ql3 (Mmus), Tfap2b (Mmus), Gabrb1 (Mmus) expressing Purkinje layer interneuron of brain (Mus musculus)" EXACT []
 is_a: CL:4300349 ! Purkinje layer interneuron (Mmus)
 property_value: CLM:0010003 CLM:5001566 {STATO:0000663="0.30487806"}
 property_value: CLM:0010003 CLM:5016786
@@ -325,7 +305,6 @@ name: cerebellar Golgi cell (Mmus)
 def: "A cerebellar Golgi cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Zfp385c (Mmus), Tfap2b (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1148 CBX Golgi Gly-Gaba_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1148 CBX Golgi Gly-Gaba_1" EXACT []
 synonym: "310 CBX Golgi Gly-Gaba" EXACT []
-synonym: "Zfp385c (Mmus), Tfap2b (Mmus) expressing cerebellar Golgi cell of brain (Mus musculus)" EXACT []
 is_a: CL:0000119
 is_a: CL:4300028 ! cerebellar GABAergic neuron (Mmus)
 property_value: CLM:0010003 CLM:5001568 {STATO:0000663="0.610687"}
@@ -340,7 +319,6 @@ id: CL:4301579
 name: CBX MLI Megf11 Gaba_1 molecular layer interneuron (Mmus)
 def: "A molecular layer interneuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Dnah11 (Mmus), Sla (Mmus), Gldc (Mmus), Sdk2 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1149 CBX MLI Megf11 Gaba_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1149 CBX MLI Megf11 Gaba_1" EXACT []
-synonym: "Dnah11 (Mmus), Sla (Mmus), Gldc (Mmus), Sdk2 (Mmus) expressing molecular layer interneuron of brain (Mus musculus)" EXACT []
 is_a: CL:4300351 ! CBX MLI Megf11 Gaba molecular layer interneuron (Mmus)
 property_value: CLM:0010003 CLM:5001569 {STATO:0000663="0.3030303"}
 property_value: CLM:0010003 CLM:5016789
@@ -353,7 +331,6 @@ id: CL:4301580
 name: CBX MLI Megf11 Gaba_2 molecular layer interneuron (Mmus)
 def: "A molecular layer interneuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gabra6 (Mmus), Pvalb (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1150 CBX MLI Megf11 Gaba_2." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1150 CBX MLI Megf11 Gaba_2" EXACT []
-synonym: "Gabra6 (Mmus), Pvalb (Mmus) expressing molecular layer interneuron of brain (Mus musculus)" EXACT []
 is_a: CL:4300351 ! CBX MLI Megf11 Gaba molecular layer interneuron (Mmus)
 property_value: CLM:0010003 CLM:5001570 {STATO:0000663="0.7986111"}
 property_value: CLM:0010003 CLM:5016790
@@ -366,7 +343,6 @@ id: CL:4301582
 name: CBX Purkinje Gaba_1 Purkinje cell (Mmus)
 def: "A Purkinje cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pcp2 (Mmus), Stk17b (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1152 CBX Purkinje Gaba_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1152 CBX Purkinje Gaba_1" EXACT []
-synonym: "Pcp2 (Mmus), Stk17b (Mmus) expressing Purkinje cell of brain (Mus musculus)" EXACT []
 is_a: CL:4300353 ! Purkinje cell (Mmus)
 property_value: CLM:0010003 CLM:5001572 {STATO:0000663="0.608828"}
 property_value: CLM:0010003 CLM:5016792
@@ -390,7 +366,6 @@ id: CL:4301584
 name: CB Granule Glut_1 cerebellar granule cell (Mmus)
 def: "A cerebellar granule cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gabra6 (Mmus), Lmx1a (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1154 CB Granule Glut_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1154 CB Granule Glut_1" EXACT []
-synonym: "Gabra6 (Mmus), Lmx1a (Mmus) expressing cerebellar granule cell of brain (Mus musculus)" EXACT []
 is_a: CL:4300354 ! cerebellar granule cell (Mmus)
 property_value: CLM:0010003 CLM:5001574 {STATO:0000663="0.35714287"}
 property_value: CLM:0010003 CLM:5016794
@@ -403,7 +378,6 @@ id: CL:4301585
 name: CB Granule Glut_2 cerebellar granule cell (Mmus)
 def: "A cerebellar granule cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gabra6 (Mmus), Gap43 (Mmus), Rab37 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1155 CB Granule Glut_2." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1155 CB Granule Glut_2" EXACT []
-synonym: "Gabra6 (Mmus), Gap43 (Mmus), Rab37 (Mmus) expressing cerebellar granule cell of brain (Mus musculus)" EXACT []
 is_a: CL:4300354 ! cerebellar granule cell (Mmus)
 property_value: CLM:0010003 CLM:5001575 {STATO:0000663="0.24193548"}
 property_value: CLM:0010003 CLM:5016795
@@ -417,7 +391,6 @@ name: unipolar brush cell (Mmus)
 def: "A unipolar brush cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Sln (Mmus), Lmx1a (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1156 DCO UBC Glut_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1156 DCO UBC Glut_1" EXACT []
 synonym: "315 DCO UBC Glut" EXACT []
-synonym: "Sln (Mmus), Lmx1a (Mmus) expressing unipolar brush cell of brain (Mus musculus)" EXACT []
 is_a: CL:4023161
 is_a: CL:4300029 ! cerebellar glutamatergic neuron (Mmus)
 property_value: CLM:0010003 CLM:5001576 {STATO:0000663="0.5875"}
@@ -432,7 +405,6 @@ id: CL:4301589
 name: Astro-NT NN_1 astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gfap (Mmus), Lhfpl3 (Mmus), Gria1 (Mmus), Hopx (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1159 Astro-NT NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1159 Astro-NT NN_1" EXACT []
-synonym: "Gfap (Mmus), Lhfpl3 (Mmus), Gria1 (Mmus), Hopx (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4300358 ! subcortical astrocyte (Mmus)
 property_value: CLM:0010003 CLM:5001579 {STATO:0000663="0.14610389"}
 property_value: CLM:0010003 CLM:5016799
@@ -445,7 +417,6 @@ id: CL:4301590
 name: Astro-NT NN_2 astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), A330076C08Rik (Mmus), Itih3 (Mmus), Gria2 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1160 Astro-NT NN_2." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1160 Astro-NT NN_2" EXACT []
-synonym: "Gja1 (Mmus), A330076C08Rik (Mmus), Itih3 (Mmus), Gria2 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4300358 ! subcortical astrocyte (Mmus)
 property_value: CLM:0010003 CLM:5001580 {STATO:0000663="0.3472222"}
 property_value: CLM:0010003 CLM:5016800
@@ -458,7 +429,6 @@ id: CL:4301591
 name: Astro-TE NN_1 astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Myoc (Mmus), Camk2a (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1161 Astro-TE NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1161 Astro-TE NN_1" EXACT []
-synonym: "Myoc (Mmus), Camk2a (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4300359 ! astrocyte of cerebrum (Mmus)
 property_value: CLM:0010003 CLM:5001581 {STATO:0000663="0.19067797"}
 property_value: CLM:0010003 CLM:5016801
@@ -471,7 +441,6 @@ id: CL:4301592
 name: Astro-TE NN_2 astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Hepacam (Mmus), E330013P04Rik (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1162 Astro-TE NN_2." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1162 Astro-TE NN_2" EXACT []
-synonym: "Hepacam (Mmus), E330013P04Rik (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4300359 ! astrocyte of cerebrum (Mmus)
 property_value: CLM:0010003 CLM:5001582 {STATO:0000663="0.5882353"}
 property_value: CLM:0010003 CLM:5016802
@@ -484,7 +453,6 @@ id: CL:4301593
 name: Astro-TE NN_3 astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), Grin2c (Mmus), Dcc (Mmus), Slc7a10 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1163 Astro-TE NN_3." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1163 Astro-TE NN_3" EXACT []
-synonym: "Gja1 (Mmus), Grin2c (Mmus), Dcc (Mmus), Slc7a10 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4300359 ! astrocyte of cerebrum (Mmus)
 property_value: CLM:0010003 CLM:5001583 {STATO:0000663="0.33450705"}
 property_value: CLM:0010003 CLM:5016803
@@ -497,7 +465,6 @@ id: CL:4301595
 name: Astro-TE NN_5 astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), Thbs4 (Mmus), Kcnk10 (Mmus), Pak1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1165 Astro-TE NN_5." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1165 Astro-TE NN_5" EXACT []
-synonym: "Gja1 (Mmus), Thbs4 (Mmus), Kcnk10 (Mmus), Pak1 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4300359 ! astrocyte of cerebrum (Mmus)
 property_value: CLM:0010003 CLM:5001585 {STATO:0000663="0.048076924"}
 property_value: CLM:0010003 CLM:5016805
@@ -510,7 +477,6 @@ id: CL:4301596
 name: Astro-OLF NN_1 astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Aqp4 (Mmus), Prss23 (Mmus), Igfbp2 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1166 Astro-OLF NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1166 Astro-OLF NN_1" EXACT []
-synonym: "Aqp4 (Mmus), Prss23 (Mmus), Igfbp2 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4300360 ! olfactory areas astrocyte (Mmus)
 property_value: CLM:0010003 CLM:5001586 {STATO:0000663="0.5113636"}
 property_value: CLM:0010003 CLM:5016806
@@ -523,7 +489,6 @@ id: CL:4301597
 name: Astro-OLF NN_2 astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), Hs3st3a1 (Mmus), Slco1c1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1167 Astro-OLF NN_2." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1167 Astro-OLF NN_2" EXACT []
-synonym: "Gja1 (Mmus), Hs3st3a1 (Mmus), Slco1c1 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4300360 ! olfactory areas astrocyte (Mmus)
 property_value: CLM:0010003 CLM:5001587 {STATO:0000663="0.37280703"}
 property_value: CLM:0010003 CLM:5016807
@@ -536,7 +501,6 @@ id: CL:4301598
 name: Astro-OLF NN_3 astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Ednrb (Mmus), Hs3st3a1 (Mmus), C230072F16Rik (Mmus), Gria2 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1168 Astro-OLF NN_3." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1168 Astro-OLF NN_3" EXACT []
-synonym: "Ednrb (Mmus), Hs3st3a1 (Mmus), C230072F16Rik (Mmus), Gria2 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4300360 ! olfactory areas astrocyte (Mmus)
 property_value: CLM:0010003 CLM:5001588 {STATO:0000663="0.1724138"}
 property_value: CLM:0010003 CLM:5016808
@@ -549,7 +513,6 @@ id: CL:4301602
 name: Tanycyte NN_1 tanycyte (Mmus)
 def: "A tanycyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cnmd (Mmus), Lpl (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1172 Tanycyte NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1172 Tanycyte NN_1" EXACT []
-synonym: "Cnmd (Mmus), Lpl (Mmus) expressing tanycyte of brain (Mus musculus)" EXACT []
 is_a: CL:4300362 ! tanycyte (Mmus)
 property_value: CLM:0010003 CLM:5001592 {STATO:0000663="0.390625"}
 property_value: CLM:0010003 CLM:5016812
@@ -562,7 +525,6 @@ id: CL:4301603
 name: Tanycyte NN_2 tanycyte (Mmus)
 def: "A tanycyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr50 (Mmus), Ccdc170 (Mmus), Nkx2-4 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1173 Tanycyte NN_2." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1173 Tanycyte NN_2" EXACT []
-synonym: "Gpr50 (Mmus), Ccdc170 (Mmus), Nkx2-4 (Mmus) expressing tanycyte of brain (Mus musculus)" EXACT []
 is_a: CL:4300362 ! tanycyte (Mmus)
 property_value: CLM:0010003 CLM:5001593 {STATO:0000663="0.54086536"}
 property_value: CLM:0010003 CLM:5016813
@@ -575,7 +537,6 @@ id: CL:4301608
 name: choroid plexus epithelial cell (Mmus)
 def: "A choroid plexus epithelial cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 2900040C04Rik (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1178 CHOR NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1178 CHOR NN_1" EXACT []
-synonym: "2900040C04Rik (Mmus) expressing choroid plexus epithelial cell of brain (Mus musculus)" EXACT []
 synonym: "325 CHOR NN" EXACT []
 is_a: CL:0000706
 property_value: CLM:0010003 CLM:5001598 {STATO:0000663="0.99385244"}
@@ -591,7 +552,6 @@ name: commited oligodendrocyte precursor (Mmus)
 def: "A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Bmp4 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1181 COP NN_1." [https://doi.org/10.1038/s41586-023-06812-z, https://doi.org/10.1126/science.aaf6463]
 comment: Rationale for assigning this type to reference data: Mapping of this cell set to a differentiation-committed oligodendrocyte is supported by spatial transcriptomic evidence and specific expression of Gpr17, Bmp4, Neu4, Fyn in the context of oligodendrocyte lineage cells. {xref="https://doi.org/10.1126/science.aaf6463"}
 synonym: "1181 COP NN_1" EXACT []
-synonym: "Gpr17 (Mmus), Bmp4 (Mmus) expressing committed oligodendrocyte precursor of brain (Mus musculus)" EXACT []
 is_a: CL:4023059
 is_a: CL:4300367 ! oligodendrocyte (Mmus)
 property_value: CLM:0010003 CLM:5001601 {STATO:0000663="0.8684739"}
@@ -607,7 +567,6 @@ name: newly formed oligodendrocyte (Mmus)
 def: "A newly formed oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Ptprb (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1182 NFOL NN_2." [https://doi.org/10.1038/s41586-023-06812-z, https://doi.org/10.1126/science.aaf6463]
 comment: Rationale for assigning this type to reference data: Mapping of this cell set to a newly formed oligodendrocyte is supported by spatial transcriptomic evidence and specific expression of Tcf7l2, Klk6, Cemip2, Casr in the context of oligodendrocyte lineage cells. {xref="https://doi.org/10.1126/science.aaf6463"}
 synonym: "1182 NFOL NN_2" EXACT []
-synonym: "9630013A20Rik (Mmus), Ptprb (Mmus) expressing newly formed oligodendrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4072001
 is_a: CL:4300367 ! oligodendrocyte (Mmus)
 property_value: CLM:0010003 CLM:5001602 {STATO:0000663="0.6304985"}
@@ -623,7 +582,6 @@ name: myelin-forming oligodendrocyte (Mmus)
 def: "A myelin-forming oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cldn11 (Mmus), Sec14l5 (Mmus), 9630013A20Rik (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1183 MFOL NN_3." [https://doi.org/10.1038/s41586-023-06812-z, https://doi.org/10.1126/science.aaf6463]
 comment: Rationale for assigning this type to reference data: Mapping of this cell set to a myelin-forming oligodendrocyte is supported by spatial transcriptomic evidence and specific expression of Ctps, Cldn11 in the context of oligodendrocyte lineage cells. {xref="https://doi.org/10.1126/science.aaf6463"}
 synonym: "1183 MFOL NN_3" EXACT []
-synonym: "Cldn11 (Mmus), Sec14l5 (Mmus), 9630013A20Rik (Mmus) expressing myelin-forming oligodendrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4072002
 is_a: CL:4300367 ! oligodendrocyte (Mmus)
 property_value: CLM:0010003 CLM:5001603 {STATO:0000663="0.49418604"}
@@ -639,7 +597,6 @@ name: mature myelinating oligodendrocyte (Mmus)
 def: "A mature myelinating oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cldn11 (Mmus), Anln (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1184 MOL NN_4." [https://doi.org/10.1038/s41586-023-06812-z, https://doi.org/10.1126/science.aaf6463]
 comment: Rationale for assigning this type to reference data: Mapping of this cell set to a mature myelinating oligodendrocyte is supported by spatial transcriptomic evidence and specific expression of Klk6 in the context of oligodendrocyte lineage cells. {xref="https://doi.org/10.1126/science.aaf6463"}
 synonym: "1184 MOL NN_4" EXACT []
-synonym: "Cldn11 (Mmus), Anln (Mmus) expressing mature myelinating oligodendrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4072003
 is_a: CL:4300367 ! oligodendrocyte (Mmus)
 property_value: CLM:0010003 CLM:5001604 {STATO:0000663="0.7853026"}
@@ -656,7 +613,6 @@ def: "A olfactory ensheathing cell of the Mus musculus brain. It is distinguishe
 synonym: "1185 OEC NN_1" EXACT []
 synonym: "32 OEC" EXACT []
 synonym: "328 OEC NN" EXACT []
-synonym: "Apod (Mmus), Npy (Mmus) expressing olfactory ensheathing cell of brain (Mus musculus)" EXACT []
 is_a: CL:0011028
 relationship: RO:0002162 NCBITaxon:10090
 property_value: CLM:0010003 CLM:5001605
@@ -673,7 +629,6 @@ name: arachnoid barrier cell (Mmus)
 def: "A arachnoid barrier cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Thbd (Mmus), Ccn3 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1186 ABC NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1186 ABC NN_1" EXACT []
 synonym: "329 ABC NN" EXACT []
-synonym: "Thbd (Mmus), Ccn3 (Mmus) expressing arachnoid barrier cell of brain (Mus musculus)" EXACT []
 is_a: CL:4023097
 relationship: RO:0002162 NCBITaxon:10090
 property_value: CLM:0010003 CLM:5001606 {STATO:0000663="0.8968254"}
@@ -689,7 +644,6 @@ name: border associated macrophage (Mmus)
 def: "A border associated macrophage of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Mrc1 (Mmus), Maf (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1195 BAM NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1195 BAM NN_1" EXACT []
 synonym: "335 BAM NN" EXACT []
-synonym: "Mrc1 (Mmus), Maf (Mmus) expressing border associated macrophage of brain (Mus musculus)" EXACT []
 is_a: CL:4042003
 relationship: RO:0002162 NCBITaxon:10090
 property_value: CLM:0010003 CLM:5001615 {STATO:0000663="0.9244792"}
@@ -702,12 +656,11 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 [Term]
 id: CL:4304384
 name: hypothalamic gonadotropin-releasing hormone neuron (Mmus)
-def: "A hypothalamic gonadotropin-releasing hormone neuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gnrh1 (Mmus). It is glutamatergic. These cells are located in the Hypothalamus, Olfactory areas, Pallidum, brain , in or close to the regions: Lateral septal nucleus, rostral (rostroventral) part, Medial septal nucleus, Diagonal band nucleus . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:2564 HY Gnrh1 Glut_1." [https://doi.org/10.1038/s41586-023-06812-z]
+def: "A hypothalamic gonadotropin-releasing hormone neuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gnrh1 (Mmus). It is glutamatergic (inferred from expression of Gad1, Slc17a6, Gad2). These cells are located in the Hypothalamus, Olfactory areas, Pallidum, brain , in or close to the regions: Lateral septal nucleus, rostral (rostroventral) part, Medial septal nucleus, Diagonal band nucleus . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:2564 HY Gnrh1 Glut_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "0628 HY Gnrh1 Glut_1" EXACT []
 synonym: "142 HY Gnrh1 Glut" EXACT []
 synonym: "15 HY Gnrh1 Glut" EXACT []
 synonym: "2564 HY Gnrh1 Glut_1" EXACT []
-synonym: "Gnrh1 (Mmus) expressing hypothalamic gonadotropin-releasing hormone neuron of brain (Mus musculus)" EXACT []
 is_a: CL:0000679
 is_a: CL:0011111 {evidence="http://identifiers.org/ncbigene/140919", evidence="http://identifiers.org/ncbigene/14415", evidence="http://identifiers.org/ncbigene/14417"}
 relationship: RO:0002162 NCBITaxon:10090
@@ -730,13 +683,12 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 [Term]
 id: CL:4306426
 name: pinealocyte (Mmus)
-def: "A pinealocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cngb3 (Mmus), Ush2a (Mmus). It is glutamatergic. These cells are located in the brain , in or close to the regions: third ventricle . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:4606 Pineal Crx Glut_1." [https://doi.org/10.1038/s41586-023-06812-z, https://doi.org/10.1111/j.1600-079x.1996.tb00284.x, https://doi.org/10.3389/fendo.2019.00590]
+def: "A pinealocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cngb3 (Mmus), Ush2a (Mmus). It is glutamatergic (inferred from expression of Ddc, Slc17a6, Slc17a7). These cells are located in the brain , in or close to the regions: third ventricle . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:4606 Pineal Crx Glut_1." [https://doi.org/10.1038/s41586-023-06812-z, https://doi.org/10.1111/j.1600-079x.1996.tb00284.x, https://doi.org/10.3389/fendo.2019.00590]
 comment: Rationale for assigning this type to reference data: Consistent with this cell set being composed of Pinealocytes, a combination of Pinealocyte markers Gngt1 and Crx can identify the cells in this cluster with a confidence (F-beta score) of 0.91 in the context of glutamatergic cells (Pinealocytes release glutamate) from the hippocampal formation dissection (which includes the pineal gland). {xref="https://doi.org/10.1111/j.1600-079x.1996.tb00284.x", xref="https://doi.org/10.3389/fendo.2019.00590"}
 synonym: "1030 Pineal Crx Glut_1" EXACT []
 synonym: "25 Pineal Glut" EXACT []
 synonym: "262 Pineal Crx Glut" EXACT []
 synonym: "4606 Pineal Crx Glut_1" EXACT []
-synonym: "Cngb3 (Mmus), Ush2a (Mmus) expressing pinealocyte of brain (Mus musculus)" EXACT []
 is_a: CL:0000652 {evidence="http://identifiers.org/ncbigene/13195", evidence="http://identifiers.org/ncbigene/140919", evidence="http://identifiers.org/ncbigene/72961"}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="Inferred to be glutamate secretion, neurotransmission based on expression of Ddc, Slc17a6, Slc17a7"}
@@ -754,10 +706,9 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 [Term]
 id: CL:4306992
 name: DCO Il22 Gly-Gaba_2 cerebellar neuron (Mmus)
-def: "A cerebellar neuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Il22 (Mmus), Edaradd (Mmus). It is distinguished from other DCO Il22 Gly-Gaba cells by expression of Ppp1r17. It is GABAergic and glycinergic. These cells are located in the Medulla, Cerebellum, brain , in or close to the regions: Paraflocculus, arbor vitae, Dorsal cochlear nucleus . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5172 DCO Il22 Gly-Gaba_2." [https://doi.org/10.1038/s41586-023-06812-z]
+def: "A cerebellar neuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Il22 (Mmus), Edaradd (Mmus). It is distinguished from other DCO Il22 Gly-Gaba cells by expression of Ppp1r17. It is GABAergic and glycinergic (inferred from expression of Slc32a1, Hdc, Slc6a5, Gad2, Gad1). These cells are located in the Medulla, Cerebellum, brain , in or close to the regions: Paraflocculus, arbor vitae, Dorsal cochlear nucleus . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5172 DCO Il22 Gly-Gaba_2." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1142 DCO Il22 Gly-Gaba_2" EXACT []
 synonym: "5172 DCO Il22 Gly-Gaba_2" EXACT []
-synonym: "Il22 (Mmus), Edaradd (Mmus) expressing cerebellar neuron of brain (Mus musculus)" EXACT []
 is_a: CL:4300348 ! DCO Il22 Gly-Gaba cerebellar neuron (Mmus)
 relationship: RO:0002215 GO:0061534 {comment="Inferred to be gamma-aminobutyric acid secretion, neurotransmission, glycine secretion, neurotransmission based on expression of Slc32a1, Hdc, Slc6a5, Gad2, Gad1"}
 relationship: RO:0002215 GO:0061537 {comment="Inferred to be gamma-aminobutyric acid secretion, neurotransmission, glycine secretion, neurotransmission based on expression of Slc32a1, Hdc, Slc6a5, Gad2, Gad1"}
@@ -776,11 +727,10 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 [Term]
 id: CL:4307005
 name: CB PLI GABA Ly6d Purkinje layer interneuron
-def: "A Purkinje layer interneuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Ly6d (Mmus), Kit (Mmus). It is distinguished from other CB PLI Gly-Gaba cells by expression of Ly6d. It is GABAergic. These cells are located in the Cerebellum, brain , in or close to the regions: arbor vitae, Interposed nucleus, Nodulus (X) . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5185 CB PLI Gly-Gaba_4." [https://doi.org/10.1038/s41586-023-06812-z]
+def: "A Purkinje layer interneuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Ly6d (Mmus), Kit (Mmus). It is distinguished from other CB PLI Gly-Gaba cells by expression of Ly6d. It is GABAergic (inferred from expression of Gad1, Gad2, Slc32a1). These cells are located in the Cerebellum, brain , in or close to the regions: arbor vitae, Interposed nucleus, Nodulus (X) . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5185 CB PLI Gly-Gaba_4." [https://doi.org/10.1038/s41586-023-06812-z]
 comment: Warning: Despite its name, CB PLI Gly-Gaba_4 does not secrete the neurotransmitter Gly, as assessed by expression of multiple marker genes.
 synonym: "1147 CB PLI Gly-Gaba_4" EXACT []
 synonym: "5185 CB PLI Gly-Gaba_4" EXACT []
-synonym: "Ly6d (Mmus), Kit (Mmus) expressing Purkinje layer interneuron of brain (Mus musculus)" EXACT []
 is_a: CL:4300349 ! Purkinje layer interneuron (Mmus)
 relationship: RO:0002215 GO:0061534 {comment="Inferred to be gamma-aminobutyric acid secretion, neurotransmission based on expression of Gad1, Gad2, Slc32a1"}
 property_value: CLM:0010001 MBA:512 {CLM:0010002="0.76", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -797,11 +747,10 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 [Term]
 id: CL:4307012
 name: CBX MLI Cdh22 Gaba molecular layer interneuron (Mmus)
-def: "A molecular layer interneuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cdh1 (Mmus), Acvr1c (Mmus), Adamts15 (Mmus), Pax2 (Mmus). It is distinguished from other CB GABA cells by expression of Cdh1, Acvr1c, Adamts15, Pax2. It is GABAergic. These cells are located in the Cerebellum, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5192 CBX MLI Cdh22 Gaba_1." [https://doi.org/10.1038/s41586-023-06812-z]
+def: "A molecular layer interneuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cdh1 (Mmus), Acvr1c (Mmus), Adamts15 (Mmus), Pax2 (Mmus). It is distinguished from other CB GABA cells by expression of Cdh1, Acvr1c, Adamts15, Pax2. It is GABAergic (inferred from expression of Gad1, Gad2, Slc32a1). These cells are located in the Cerebellum, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5192 CBX MLI Cdh22 Gaba_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1151 CBX MLI Cdh22 Gaba_1" EXACT []
 synonym: "312 CBX MLI Cdh22 Gaba" EXACT []
 synonym: "5192 CBX MLI Cdh22 Gaba_1" EXACT []
-synonym: "Cdh1 (Mmus), Acvr1c (Mmus), Adamts15 (Mmus), Pax2 (Mmus) expressing molecular layer interneuron of brain (Mus musculus)" EXACT []
 is_a: CL:4042035 {evidence="http://identifiers.org/ncbigene/14415", evidence="http://identifiers.org/ncbigene/14417", evidence="http://identifiers.org/ncbigene/22348"}
 is_a: CL:4300028 ! cerebellar GABAergic neuron (Mmus)
 relationship: RO:0002215 GO:0061534 {comment="Inferred to be gamma-aminobutyric acid secretion, neurotransmission based on expression of Gad1, Gad2, Slc32a1"}
@@ -821,7 +770,6 @@ def: "A Bergmann glial cell of the Mus musculus brain. It is distinguished from 
 synonym: "1157 Bergmann NN_1" EXACT []
 synonym: "316 Bergmann NN" EXACT []
 synonym: "5206 Bergmann NN_1" EXACT []
-synonym: "Gpr37l1 (Mmus), Ctxn3 (Mmus) expressing Bergmann glial cell of brain (Mus musculus)" EXACT []
 is_a: CL:0000644 {evidence="http://identifiers.org/ncbigene/11668"}
 property_value: CLM:0010001 MBA:512 {CLM:0010002="0.73", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.27", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -839,7 +787,6 @@ def: "A transcriptomically defined type of astrocyte localized exclusively in th
 synonym: "1158 Astro-CB NN_1" EXACT []
 synonym: "317 Astro-CB NN" EXACT []
 synonym: "5207 Astro-CB NN_1" EXACT []
-synonym: "Dao (Mmus), Efemp1 (Mmus) expressing astrocyte of the cerebellum of brain (Mus musculus)" EXACT []
 is_a: CL:0002603 {evidence="http://identifiers.org/ncbigene/11668"}
 property_value: CLM:0010001 MBA:512 {CLM:0010002="0.65", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:728 {CLM:0010002="0.14", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
@@ -856,7 +803,6 @@ id: CL:4307028
 name: Astro-NT NN_1 Galnt15 astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gfap (Mmus), Galnt15 (Mmus), Agt (Mmus). It is distinguished from other Astro-NT NN_1 cells by expression of Galnt15. These cells are located in the Cerebellum, brain , in or close to the regions: arbor vitae . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5208 Astro-NT NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5208 Astro-NT NN_1" EXACT []
-synonym: "Gfap (Mmus), Galnt15 (Mmus), Agt (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4301589 ! Astro-NT NN_1 astrocyte (Mmus)
 property_value: CLM:0010001 MBA:512 {CLM:0010002="0.32", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:728 {CLM:0010002="0.15", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
@@ -872,7 +818,6 @@ id: CL:4307029
 name: Astro-NT NN_1 Slc36a2 astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gfap (Mmus), Slc36a2 (Mmus), Sfrp5 (Mmus). It is distinguished from other Astro-NT NN_1 cells by expression of Slc36a2, Sfrp5. These cells are located in the Midbrain, Cerebellum, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5209 Astro-NT NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5209 Astro-NT NN_1" EXACT []
-synonym: "Gfap (Mmus), Slc36a2 (Mmus), Sfrp5 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4301589 ! Astro-NT NN_1 astrocyte (Mmus)
 property_value: CLM:0010001 MBA:313 {CLM:0010002="0.12", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:512 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -888,7 +833,6 @@ id: CL:4307030
 name: Astro-NT NN_1 Nuf2 astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gfap (Mmus), Sfrp5 (Mmus), Cldn10 (Mmus), Riiad1 (Mmus). It is distinguished from other Astro-NT NN_1 cells by expression of Nuf2, Shroom3. These cells are located in the Cerebellum, brain , in or close to the regions: arbor vitae . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5210 Astro-NT NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5210 Astro-NT NN_1" EXACT []
-synonym: "Gfap (Mmus), Sfrp5 (Mmus), Cldn10 (Mmus), Riiad1 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4301589 ! Astro-NT NN_1 astrocyte (Mmus)
 property_value: CLM:0010001 MBA:512 {CLM:0010002="0.26", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:728 {CLM:0010002="0.16", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
@@ -904,7 +848,6 @@ id: CL:4307031
 name: Astro-NT NN_1 Six3os1 astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Myoc (Mmus), Six3os1 (Mmus), Slc36a2 (Mmus). It is distinguished from other Astro-NT NN_1 cells by expression of Six3os1. These cells are located in the Striatum-like amygdalar nuclei, Olfactory areas, brain , in or close to the regions: Medial amygdalar nucleus . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5211 Astro-NT NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5211 Astro-NT NN_1" EXACT []
-synonym: "Myoc (Mmus), Six3os1 (Mmus), Slc36a2 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4301589 ! Astro-NT NN_1 astrocyte (Mmus)
 property_value: CLM:0010001 MBA:278 {CLM:0010002="0.12", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:403 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
@@ -921,7 +864,6 @@ id: CL:4307032
 name: Astro-NT NN_1 Kcnk10 astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Agt (Mmus), Prss35 (Mmus), C4b (Mmus). It is distinguished from other Astro-NT NN_1 cells by expression of Kcnk10, C4b. These cells are located in the Medulla, Cerebellum, brain , in or close to the regions: arbor vitae . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5212 Astro-NT NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5212 Astro-NT NN_1" EXACT []
-synonym: "Agt (Mmus), Prss35 (Mmus), C4b (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4301589 ! Astro-NT NN_1 astrocyte (Mmus)
 property_value: CLM:0010001 MBA:354 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:512 {CLM:0010002="0.21", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -938,7 +880,6 @@ id: CL:4307033
 name: Astro-NT NN_1 Mecom astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Dao (Mmus), Mecom (Mmus), Fbln5 (Mmus), Prelp (Mmus). It is distinguished from other Astro-NT NN_1 cells by expression of Mecom, Prelp. These cells are located in the Medulla, Cerebellum, brain , in or close to the regions: Ventral cochlear nucleus, Paraflocculus, Flocculus, Dorsal cochlear nucleus . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5213 Astro-NT NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5213 Astro-NT NN_1" EXACT []
-synonym: "Dao (Mmus), Mecom (Mmus), Fbln5 (Mmus), Prelp (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4301589 ! Astro-NT NN_1 astrocyte (Mmus)
 property_value: CLM:0010001 MBA:101 {CLM:0010002="0.35", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
 property_value: CLM:0010001 MBA:1041 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
@@ -958,7 +899,6 @@ id: CL:4307034
 name: Astro-NT NN_2 Fzd2 astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), A330076C08Rik (Mmus), Sfrp5 (Mmus), Gria2 (Mmus). It is distinguished from other Astro-NT NN_2 cells by expression of Fzd2, Gria2, Ttll3. These cells are located in the Midbrain, Thalamus, Pons , in or close to the regions: Midbrain reticular nucleus . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5214 Astro-NT NN_2." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5214 Astro-NT NN_2" EXACT []
-synonym: "Gja1 (Mmus), A330076C08Rik (Mmus), Sfrp5 (Mmus), Gria2 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4301590 ! Astro-NT NN_2 astrocyte (Mmus)
 property_value: CLM:0010001 MBA:128 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
 property_value: CLM:0010001 MBA:313 {CLM:0010002="0.56", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -975,7 +915,6 @@ id: CL:4307035
 name: Astro-NT NN_2 Sez6l astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), A330076C08Rik (Mmus), Otx2 (Mmus), Unc13c (Mmus). It is distinguished from other Astro-NT NN_2 cells by expression of Sez6l, Unc13c. These cells are located in the Thalamus , in or close to the regions: Posterior complex of the thalamus, Ventral posteromedial nucleus of the thalamus . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5215 Astro-NT NN_2." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5215 Astro-NT NN_2" EXACT []
-synonym: "Gja1 (Mmus), A330076C08Rik (Mmus), Otx2 (Mmus), Unc13c (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4301590 ! Astro-NT NN_2 astrocyte (Mmus)
 property_value: CLM:0010001 MBA:1020 {CLM:0010002="0.14", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
 property_value: CLM:0010001 MBA:549 {CLM:0010002="0.91", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -991,7 +930,6 @@ id: CL:4307036
 name: Astro-NT NN_2 Fam227b astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Slc7a10 (Mmus), Cyp26b1 (Mmus), Igfbp2 (Mmus), Shroom3 (Mmus). It is distinguished from other Astro-NT NN_2 cells by expression of Fam227b, Shroom3. These cells are located in the Midbrain, Medulla, Pons . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5216 Astro-NT NN_2." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5216 Astro-NT NN_2" EXACT []
-synonym: "Slc7a10 (Mmus), Cyp26b1 (Mmus), Igfbp2 (Mmus), Shroom3 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4301590 ! Astro-NT NN_2 astrocyte (Mmus)
 property_value: CLM:0010001 MBA:313 {CLM:0010002="0.19", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:354 {CLM:0010002="0.35", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1007,7 +945,6 @@ id: CL:4307037
 name: Astro-NT NN_2 Gm30524 astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Aqp4 (Mmus), A330076C08Rik (Mmus), Fbln5 (Mmus), Mdga2 (Mmus). It is distinguished from other Astro-NT NN_2 cells by expression of Gm30524. These cells are located in the Medulla, Cerebellum, brain , in or close to the regions: Ventral cochlear nucleus, arbor vitae . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5217 Astro-NT NN_2." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5217 Astro-NT NN_2" EXACT []
-synonym: "Aqp4 (Mmus), A330076C08Rik (Mmus), Fbln5 (Mmus), Mdga2 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4301590 ! Astro-NT NN_2 astrocyte (Mmus)
 property_value: CLM:0010001 MBA:101 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
 property_value: CLM:0010001 MBA:354 {CLM:0010002="0.33", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1025,7 +962,6 @@ id: CL:4307038
 name: Astro-TE NN_1 Myoc astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Myoc (Mmus), Lhx2 (Mmus), Kcne1l (Mmus), Alpk1 (Mmus). It is distinguished from other Astro-TE NN_1 cells by expression of Myoc, Kcne1l, Alpk1. These cells are located in the Isocortex, Olfactory areas, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5218 Astro-TE NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5218 Astro-TE NN_1" EXACT []
-synonym: "Myoc (Mmus), Lhx2 (Mmus), Kcne1l (Mmus), Alpk1 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4301591 ! Astro-TE NN_1 astrocyte (Mmus)
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.23", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:698 {CLM:0010002="0.15", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1041,7 +977,6 @@ id: CL:4307039
 name: Astro-TE NN_1 Rasl10b astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gfap (Mmus), Ddn (Mmus), Myoc (Mmus), Rasl10b (Mmus). It is distinguished from other Astro-TE NN_1 cells by expression of Rasl10b, Igfbp5. These cells are located in the Hippocampal region, Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5219 Astro-TE NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5219 Astro-TE NN_1" EXACT []
-synonym: "Gfap (Mmus), Ddn (Mmus), Myoc (Mmus), Rasl10b (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4301591 ! Astro-TE NN_1 astrocyte (Mmus)
 property_value: CLM:0010001 MBA:1080 {CLM:0010002="0.15", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.2", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1057,7 +992,6 @@ id: CL:4307040
 name: Astro-TE NN_1 Lncpint astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Myoc (Mmus), Dio2 (Mmus), Lncpint (Mmus). It is distinguished from other Astro-TE NN_1 cells by expression of Myoc, Lncpint. These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5220 Astro-TE NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5220 Astro-TE NN_1" EXACT []
-synonym: "Myoc (Mmus), Dio2 (Mmus), Lncpint (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4301591 ! Astro-TE NN_1 astrocyte (Mmus)
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.67", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5006970 {STATO:0000663="0.20588236"}
@@ -1069,9 +1003,8 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 [Term]
 id: CL:4307041
 name: Astro-TE NN_1 Jph4 astrocyte (Mmus)
-def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Myoc (Mmus), Sptbn2 (Mmus), Alpk1 (Mmus). It is distinguished from other Astro-TE NN_1 cells by expression of Myoc, Jph4, Alpk1. It is glutamatergic. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5221 Astro-TE NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
+def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Myoc (Mmus), Sptbn2 (Mmus), Alpk1 (Mmus). It is distinguished from other Astro-TE NN_1 cells by expression of Myoc, Jph4, Alpk1. It is glutamatergic (inferred from expression of Aldh1a1, Slc17a7). These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5221 Astro-TE NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5221 Astro-TE NN_1" EXACT []
-synonym: "Myoc (Mmus), Sptbn2 (Mmus), Alpk1 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:0000151
 is_a: CL:4301591 ! Astro-TE NN_1 astrocyte (Mmus)
 relationship: RO:0002215 GO:0061535 {comment="Inferred to be glutamate secretion, neurotransmission based on expression of Aldh1a1, Slc17a7"}
@@ -1088,7 +1021,6 @@ id: CL:4307042
 name: Astro-TE NN_2 Clstn2 astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gm6145 (Mmus), E330013P04Rik (Mmus), Slc39a12 (Mmus). It is distinguished from other Astro-TE NN_2 cells by expression of Clstn2. These cells are located in the Hippocampal region , in or close to the regions: Dentate gyrus, molecular layer, Dentate gyrus, polymorph layer, Field CA3, stratum oriens, Dentate gyrus, granule cell layer . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5222 Astro-TE NN_2." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5222 Astro-TE NN_2" EXACT []
-synonym: "Gm6145 (Mmus), E330013P04Rik (Mmus), Slc39a12 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4301592 ! Astro-TE NN_2 astrocyte (Mmus)
 property_value: CLM:0010001 MBA:10703 {CLM:0010002="0.19", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
 property_value: CLM:0010001 MBA:10704 {CLM:0010002="0.19", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
@@ -1106,7 +1038,6 @@ id: CL:4307043
 name: Astro-TE NN_2 Mcm6 astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Mcm6 (Mmus), Egfr (Mmus), Pcsk6 (Mmus). It is distinguished from other Astro-TE NN_2 cells by expression of Mcm6. These cells are located in the Hippocampal region , in or close to the regions: Dentate gyrus, molecular layer, Dentate gyrus, polymorph layer, Dentate gyrus, granule cell layer . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5223 Astro-TE NN_2." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5223 Astro-TE NN_2" EXACT []
-synonym: "Mcm6 (Mmus), Egfr (Mmus), Pcsk6 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4301592 ! Astro-TE NN_2 astrocyte (Mmus)
 property_value: CLM:0010001 MBA:10703 {CLM:0010002="0.26", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
 property_value: CLM:0010001 MBA:10704 {CLM:0010002="0.14", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
@@ -1123,7 +1054,6 @@ id: CL:4307044
 name: Astro-TE NN_3 Cxcl5 astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), Cxcl5 (Mmus), Ddn (Mmus). It is distinguished from other Astro-TE NN_3 cells by expression of Cxcl5, Kif5a. These cells are located in the Hippocampal region, Isocortex, Olfactory areas, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5224 Astro-TE NN_3." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5224 Astro-TE NN_3" EXACT []
-synonym: "Gja1 (Mmus), Cxcl5 (Mmus), Ddn (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4301593 ! Astro-TE NN_3 astrocyte (Mmus)
 property_value: CLM:0010001 MBA:1080 {CLM:0010002="0.17", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.32", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1140,7 +1070,6 @@ id: CL:4307045
 name: Astro-TE NN_3 Fam163a astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of S1pr1 (Mmus), Fam163a (Mmus), Kcnq3 (Mmus), Kcnq1ot1 (Mmus). It is distinguished from other Astro-TE NN_3 cells by expression of Fam163a, Nr2f1, Kcnq1ot1. These cells are located in the Isocortex, Olfactory areas . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5225 Astro-TE NN_3." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5225 Astro-TE NN_3" EXACT []
-synonym: "S1pr1 (Mmus), Fam163a (Mmus), Kcnq3 (Mmus), Kcnq1ot1 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4301593 ! Astro-TE NN_3 astrocyte (Mmus)
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.71", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:698 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1155,7 +1084,6 @@ id: CL:4307046
 name: Astro-TE NN_3 Zic4 astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of S1pr1 (Mmus), Ranbp3l (Mmus), Emx2os (Mmus), Zic4 (Mmus). It is distinguished from other Astro-TE NN_3 cells by expression of Zic4. These cells are located in the Lateral septal complex, Isocortex, Olfactory areas , in or close to the regions: Lateral septal nucleus, rostral (rostroventral) part . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5226 Astro-TE NN_3." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5226 Astro-TE NN_3" EXACT []
-synonym: "S1pr1 (Mmus), Ranbp3l (Mmus), Emx2os (Mmus), Zic4 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4301593 ! Astro-TE NN_3 astrocyte (Mmus)
 property_value: CLM:0010001 MBA:258 {CLM:0010002="0.29", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
 property_value: CLM:0010001 MBA:275 {CLM:0010002="0.39", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1172,7 +1100,6 @@ id: CL:4307047
 name: Astro-TE NN_3 Crym astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of S1pr1 (Mmus), Crym (Mmus), Grin2c (Mmus). It is distinguished from other Astro-TE NN_3 cells by expression of Crym, Gabbr2. These cells are located in the Striatum dorsal region, Striatum ventral region , in or close to the regions: Nucleus accumbens, Caudoputamen . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5227 Astro-TE NN_3." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5227 Astro-TE NN_3" EXACT []
-synonym: "S1pr1 (Mmus), Crym (Mmus), Grin2c (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4301593 ! Astro-TE NN_3 astrocyte (Mmus)
 property_value: CLM:0010001 MBA:485 {CLM:0010002="0.7", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:493 {CLM:0010002="0.2", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1190,7 +1117,6 @@ name: Astro-TE NN_4 astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of S1pr1 (Mmus), Thbs4 (Mmus), Gm29683 (Mmus), Slc39a12 (Mmus). It is distinguished from other Astro-TE NN cells by expression of Gm29683. These cells are located in the Cortical subplate, brain , in or close to the regions: Lateral amygdalar nucleus, external capsule . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5228 Astro-TE NN_4." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1164 Astro-TE NN_4" EXACT []
 synonym: "5228 Astro-TE NN_4" EXACT []
-synonym: "S1pr1 (Mmus), Thbs4 (Mmus), Gm29683 (Mmus), Slc39a12 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4300359 ! astrocyte of cerebrum (Mmus)
 property_value: CLM:0010001 MBA:131 {CLM:0010002="0.13", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
 property_value: CLM:0010001 MBA:579 {CLM:0010002="0.14", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
@@ -1207,7 +1133,6 @@ id: CL:4307049
 name: Astro-TE NN_5 Hs3st3a1 astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of S1pr1 (Mmus), Thbs4 (Mmus), Hs3st3a1 (Mmus), Sfrp1 (Mmus). It is distinguished from other Astro-TE NN_5 cells by expression of Hs3st3a1, Sfrp1. These cells are located in the Olfactory areas, brain , in or close to the regions: Anterior olfactory nucleus, corpus callosum, body, lateral ventricle, corpus callosum, anterior forceps . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5229 Astro-TE NN_5." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5229 Astro-TE NN_5" EXACT []
-synonym: "S1pr1 (Mmus), Thbs4 (Mmus), Hs3st3a1 (Mmus), Sfrp1 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4301595 ! Astro-TE NN_5 astrocyte (Mmus)
 property_value: CLM:0010001 MBA:159 {CLM:0010002="0.15", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
 property_value: CLM:0010001 MBA:484682516 {CLM:0010002="0.19", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
@@ -1226,7 +1151,6 @@ id: CL:4307050
 name: Astro-TE NN_5 Adamts18 astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of S1pr1 (Mmus), Adamts18 (Mmus), Crym (Mmus). It is distinguished from other Astro-TE NN_5 cells by expression of Adamts18. These cells are located in the Lateral septal complex, Striatum dorsal region, brain , in or close to the regions: Nucleus accumbens, Caudoputamen, lateral ventricle . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5230 Astro-TE NN_5." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5230 Astro-TE NN_5" EXACT []
-synonym: "S1pr1 (Mmus), Adamts18 (Mmus), Crym (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4301595 ! Astro-TE NN_5 astrocyte (Mmus)
 property_value: CLM:0010001 MBA:275 {CLM:0010002="0.12", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:485 {CLM:0010002="0.3", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1245,7 +1169,6 @@ id: CL:4307051
 name: Astro-OLF NN_1 Greb1 astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), Chrdl1 (Mmus), Ano1 (Mmus), Il33 (Mmus). It is distinguished from other Astro-OLF NN_1 cells by expression of Greb1, Il33. These cells are located in the Olfactory areas, brain , in or close to the regions: Main olfactory bulb . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5231 Astro-OLF NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5231 Astro-OLF NN_1" EXACT []
-synonym: "Gja1 (Mmus), Chrdl1 (Mmus), Ano1 (Mmus), Il33 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4301596 ! Astro-OLF NN_1 astrocyte (Mmus)
 property_value: CLM:0010001 MBA:507 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
 property_value: CLM:0010001 MBA:698 {CLM:0010002="0.32", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1261,7 +1184,6 @@ id: CL:4307052
 name: Astro-OLF NN_1 Stk32a astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Aqp4 (Mmus), Prss23 (Mmus), Stk32a (Mmus). It is distinguished from other Astro-OLF NN_1 cells by expression of Stk32a. These cells are located in the Olfactory areas, brain , in or close to the regions: olfactory nerve layer of main olfactory bulb, Main olfactory bulb . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5232 Astro-OLF NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5232 Astro-OLF NN_1" EXACT []
-synonym: "Aqp4 (Mmus), Prss23 (Mmus), Stk32a (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4301596 ! Astro-OLF NN_1 astrocyte (Mmus)
 property_value: CLM:0010001 MBA:1016 {CLM:0010002="0.31", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
 property_value: CLM:0010001 MBA:507 {CLM:0010002="0.26", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
@@ -1278,7 +1200,6 @@ id: CL:4307053
 name: Astro-OLF NN_2 Slc25a34 astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Aqp4 (Mmus), Hs3st3a1 (Mmus), Slc25a34 (Mmus), C4b (Mmus). It is distinguished from other Astro-OLF NN_2 cells by expression of Slc25a34, C4b. These cells are located in the Olfactory areas, brain , in or close to the regions: Main olfactory bulb, outer plexiform layer, Main olfactory bulb . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5233 Astro-OLF NN_2." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5233 Astro-OLF NN_2" EXACT []
-synonym: "Aqp4 (Mmus), Hs3st3a1 (Mmus), Slc25a34 (Mmus), C4b (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4301597 ! Astro-OLF NN_2 astrocyte (Mmus)
 property_value: CLM:0010001 MBA:244 {CLM:0010002="0.15", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
 property_value: CLM:0010001 MBA:507 {CLM:0010002="0.11", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
@@ -1295,7 +1216,6 @@ id: CL:4307054
 name: Astro-OLF NN_2 Alk astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of S1pr1 (Mmus), Chrdl1 (Mmus), Sfrp1 (Mmus), Atp13a4 (Mmus). It is distinguished from other Astro-OLF NN_2 cells by expression of Alk, Atp13a4. These cells are located in the Olfactory areas , in or close to the regions: Anterior olfactory nucleus, Main olfactory bulb, granule layer, Main olfactory bulb, mitral layer . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5234 Astro-OLF NN_2." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5234 Astro-OLF NN_2" EXACT []
-synonym: "S1pr1 (Mmus), Chrdl1 (Mmus), Sfrp1 (Mmus), Atp13a4 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4301597 ! Astro-OLF NN_2 astrocyte (Mmus)
 property_value: CLM:0010001 MBA:159 {CLM:0010002="0.29", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
 property_value: CLM:0010001 MBA:220 {CLM:0010002="0.29", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
@@ -1312,7 +1232,6 @@ id: CL:4307055
 name: Astro-OLF NN_3 Ecrg4 astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of C230072F16Rik (Mmus), Dipk1c (Mmus), Ecrg4 (Mmus). It is distinguished from other Astro-OLF NN_3 cells by expression of Ecrg4. These cells are located in the Olfactory areas , in or close to the regions: Main olfactory bulb, granule layer . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5235 Astro-OLF NN_3." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5235 Astro-OLF NN_3" EXACT []
-synonym: "C230072F16Rik (Mmus), Dipk1c (Mmus), Ecrg4 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4301598 ! Astro-OLF NN_3 astrocyte (Mmus)
 property_value: CLM:0010001 MBA:220 {CLM:0010002="0.63", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
 property_value: CLM:0010001 MBA:698 {CLM:0010002="0.9", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1327,7 +1246,6 @@ id: CL:4307056
 name: Astro-OLF NN_3 Sfrp1 astrocyte (Mmus)
 def: "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of S1pr1 (Mmus), 6530411M01Rik (Mmus), Sfrp1 (Mmus), Aqp4 (Mmus). It is distinguished from other Astro-OLF NN_3 cells by expression of Sfrp1, Aqp4. These cells are located in the Olfactory areas , in or close to the regions: Main olfactory bulb, granule layer, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5236 Astro-OLF NN_3." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5236 Astro-OLF NN_3" EXACT []
-synonym: "S1pr1 (Mmus), 6530411M01Rik (Mmus), Sfrp1 (Mmus), Aqp4 (Mmus) expressing astrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4301598 ! Astro-OLF NN_3 astrocyte (Mmus)
 property_value: CLM:0010001 MBA:220 {CLM:0010002="0.52", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
 property_value: CLM:0010001 MBA:698 {CLM:0010002="0.84", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1344,7 +1262,6 @@ name: Tanycyte NN_1 Cnmd tanycyte of subfornical organ (Mmus)
 def: "A tanycyte of subfornical organ of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cnmd (Mmus), Sfta3-ps (Mmus). It is distinguished from other Tanycyte NN_1 cells by expression of Cnmd. These cells are located in the brain , in or close to the regions: choroid plexus, third ventricle . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5243 Tanycyte NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 comment: Rationale for assigning this type to reference data: Mapping to tanycyte of subfornical organ based on spatial transcriptomics evidence.
 synonym: "5243 Tanycyte NN_1" EXACT []
-synonym: "Cnmd (Mmus), Sfta3-ps (Mmus) expressing tanycyte of subfornical organ of brain (Mus musculus)" EXACT []
 is_a: CL:0008042
 is_a: CL:4301602 ! Tanycyte NN_1 tanycyte (Mmus)
 property_value: CLM:0010001 MBA:108 {CLM:0010002="0.58", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
@@ -1361,7 +1278,6 @@ id: CL:4307064
 name: Tanycyte NN_1 Glp1r tanycyte (Mmus)
 def: "A tanycyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of C230072F16Rik (Mmus), Glp1r (Mmus). It is distinguished from other Tanycyte NN_1 cells by expression of Glp1r. These cells are located in the Hypothalamus, brain , in or close to the regions: Anteroventral periventricular nucleus . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5244 Tanycyte NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5244 Tanycyte NN_1" EXACT []
-synonym: "C230072F16Rik (Mmus), Glp1r (Mmus) expressing tanycyte of brain (Mus musculus)" EXACT []
 is_a: CL:4301602 ! Tanycyte NN_1 tanycyte (Mmus)
 property_value: CLM:0010001 MBA:1097 {CLM:0010002="0.34", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:272 {CLM:0010002="0.34", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
@@ -1375,9 +1291,8 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 [Term]
 id: CL:4307065
 name: Tanycyte NN_2 Mylk3 alpha1-tanycyte (Mmus)
-def: "A alpha1-tanycyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Dynlrb2 (Mmus), Mylk3 (Mmus), Sfta3-ps (Mmus). It is distinguished from other Tanycyte NN_2 cells by expression of Mylk3. It is glutamatergic. These cells are located in the Hypothalamus , in or close to the regions: Periventricular hypothalamic nucleus, intermediate part . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5245 Tanycyte NN_2." [https://doi.org/10.1038/s41586-023-06812-z]
+def: "A alpha1-tanycyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Dynlrb2 (Mmus), Mylk3 (Mmus), Sfta3-ps (Mmus). It is distinguished from other Tanycyte NN_2 cells by expression of Mylk3. It is glutamatergic (inferred from expression of Slc17a8). These cells are located in the Hypothalamus , in or close to the regions: Periventricular hypothalamic nucleus, intermediate part . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5245 Tanycyte NN_2." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5245 Tanycyte NN_2" EXACT []
-synonym: "Dynlrb2 (Mmus), Mylk3 (Mmus), Sfta3-ps (Mmus) expressing alpha1-tanycyte of brain (Mus musculus)" EXACT []
 is_a: CL:1100001
 is_a: CL:4042017 {evidence="http://identifiers.org/ncbigene/216227"}
 is_a: CL:4301603 ! Tanycyte NN_2 tanycyte (Mmus)
@@ -1395,7 +1310,6 @@ id: CL:4307066
 name: Tanycyte NN_2 Mroh5 alpha1-tanycyte (Mmus)
 def: "A alpha1-tanycyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Ccdc170 (Mmus), Nkx2-4 (Mmus), Dock8 (Mmus). It is distinguished from other Tanycyte NN_2 cells by expression of Mroh5. These cells are located in the Hypothalamus, brain , in or close to the regions: Periventricular hypothalamic nucleus, intermediate part, third ventricle, Arcuate hypothalamic nucleus . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5246 Tanycyte NN_2." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5246 Tanycyte NN_2" EXACT []
-synonym: "Ccdc170 (Mmus), Nkx2-4 (Mmus), Dock8 (Mmus) expressing alpha1-tanycyte of brain (Mus musculus)" EXACT []
 is_a: CL:4042017
 is_a: CL:4301603 ! Tanycyte NN_2 tanycyte (Mmus)
 property_value: CLM:0010001 MBA:1097 {CLM:0010002="0.73", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1414,7 +1328,6 @@ id: CL:4307067
 name: alpha2-tanycyte (Mmus)
 def: "A alpha2-tanycyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pdzph1 (Mmus), Wdr63 (Mmus), Dscaml1 (Mmus), P3h2 (Mmus). It is distinguished from other Tanycyte NN_2 cells by expression of Dscaml1, P3h2. These cells are located in the Hypothalamus , in or close to the regions: Periventricular hypothalamic nucleus, posterior part, Arcuate hypothalamic nucleus . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5247 Tanycyte NN_2." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5247 Tanycyte NN_2" EXACT []
-synonym: "Pdzph1 (Mmus), Wdr63 (Mmus), Dscaml1 (Mmus), P3h2 (Mmus) expressing alpha2-tanycyte of brain (Mus musculus)" EXACT []
 is_a: CL:4042018
 is_a: CL:4301603 ! Tanycyte NN_2 tanycyte (Mmus)
 property_value: CLM:0010001 MBA:1097 {CLM:0010002="0.94", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1431,7 +1344,6 @@ id: CL:4307068
 name: Tanycyte NN_2 Otx2 tanycyte (Mmus)
 def: "A tanycyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Ccdc146 (Mmus), Tbx3 (Mmus), Otx2 (Mmus). It is distinguished from other Tanycyte NN_2 cells by expression of Otx2, Nkx2-4. These cells are located in the Hypothalamus, brain , in or close to the regions: Periventricular hypothalamic nucleus, posterior part, third ventricle . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5248 Tanycyte NN_2." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5248 Tanycyte NN_2" EXACT []
-synonym: "Ccdc146 (Mmus), Tbx3 (Mmus), Otx2 (Mmus) expressing tanycyte of brain (Mus musculus)" EXACT []
 is_a: CL:4301603 ! Tanycyte NN_2 tanycyte (Mmus)
 property_value: CLM:0010001 MBA:1097 {CLM:0010002="0.69", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:126 {CLM:0010002="0.69", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
@@ -1448,7 +1360,6 @@ id: CL:4307069
 name: beta1-tancyte (Mmus)
 def: "A beta1-tanycyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr50 (Mmus), Frzb (Mmus), Foxd2os (Mmus). It is distinguished from other Tanycyte NN_2 cells by expression of Col25a1, C230072F16Rik. These cells are located in the Hypothalamus, brain , in or close to the regions: third ventricle, Arcuate hypothalamic nucleus . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5249 Tanycyte NN_2." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5249 Tanycyte NN_2" EXACT []
-synonym: "Gpr50 (Mmus), Frzb (Mmus), Foxd2os (Mmus) expressing beta1-tanycyte of brain (Mus musculus)" EXACT []
 is_a: CL:4042019
 is_a: CL:4301603 ! Tanycyte NN_2 tanycyte (Mmus)
 property_value: CLM:0010001 MBA:1097 {CLM:0010002="0.78", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1467,7 +1378,6 @@ name: beta-2 tanycyte (Mmus)
 def: "A beta2-tanycyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Fndc3c1 (Mmus), Ecrg4 (Mmus). It is distinguished from other Tanycyte NN cells by expression of Ecrg4. These cells are located in the Hypothalamus, brain , in or close to the regions: Median eminence, third ventricle, Arcuate hypothalamic nucleus . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5250 Tanycyte NN_3." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1174 Tanycyte NN_3" EXACT []
 synonym: "5250 Tanycyte NN_3" EXACT []
-synonym: "Fndc3c1 (Mmus), Ecrg4 (Mmus) expressing beta2-tanycyte of brain (Mus musculus)" EXACT []
 is_a: CL:4042020
 is_a: CL:4300362 ! tanycyte (Mmus)
 property_value: CLM:0010001 MBA:10671 {CLM:0010002="0.46", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
@@ -1489,7 +1399,6 @@ comment: Rationale for assigning this type to reference data: Mapping of this ce
 synonym: "1177 Hypendymal NN_1" EXACT []
 synonym: "324 Hypendymal NN" EXACT []
 synonym: "5263 Hypendymal NN_1" EXACT []
-synonym: "Sspo (Mmus), Wfdc2 (Mmus) expressing hypendymal cell of brain (Mus musculus)" EXACT []
 is_a: CL:4023181 {evidence="http://identifiers.org/ncbigene/15186"}
 property_value: CLM:0010001 MBA:129 {CLM:0010002="0.48", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
 property_value: CLM:0010001 MBA:158 {CLM:0010002="0.11", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
@@ -1508,7 +1417,6 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 id: CL:4307084
 name: CHOR NN_1 Tbc1d1 choroid plexus epithelial cell (Mmus)
 def: "A choroid plexus epithelial cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 2900040C04Rik (Mmus), Tbc1d1 (Mmus). It is distinguished from other CHOR NN cells by expression of Tbc1d1. These cells are located in the Cerebellum, brain , in or close to the regions: Paraflocculus, choroid plexus . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5264 CHOR NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
-synonym: "2900040C04Rik (Mmus), Tbc1d1 (Mmus) expressing choroid plexus epithelial cell of brain (Mus musculus)" EXACT []
 synonym: "5264 CHOR NN_1" EXACT []
 is_a: CL:4301608 ! choroid plexus epithelial cell (Mmus)
 property_value: CLM:0010001 MBA:1041 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
@@ -1524,8 +1432,7 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 [Term]
 id: CL:4307085
 name: CHOR NN_1 Slc17a8 choroid plexus epithelial cell (Mmus)
-def: "A choroid plexus epithelial cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 2900040C04Rik (Mmus), Slc17a8 (Mmus). It is distinguished from other CHOR NN cells by expression of Slc17a8. It is glutamatergic. These cells are located in the brain , in or close to the regions: choroid plexus, lateral ventricle . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5265 CHOR NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
-synonym: "2900040C04Rik (Mmus), Slc17a8 (Mmus) expressing choroid plexus epithelial cell of brain (Mus musculus)" EXACT []
+def: "A choroid plexus epithelial cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 2900040C04Rik (Mmus), Slc17a8 (Mmus). It is distinguished from other CHOR NN cells by expression of Slc17a8. It is glutamatergic (inferred from expression of Slc17a8). These cells are located in the brain , in or close to the regions: choroid plexus, lateral ventricle . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5265 CHOR NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5265 CHOR NN_1" EXACT []
 is_a: CL:0000686
 is_a: CL:4301608 ! choroid plexus epithelial cell (Mmus)
@@ -1544,7 +1451,6 @@ id: CL:4307086
 name: OPC NN_1 Neil3 oligodendrocyte precursor cell (Mmus)
 def: "A oligodendrocyte precursor cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pdgfra (Mmus), Pclaf (Mmus), Mki67 (Mmus), Foxg1 (Mmus). It is distinguished from other OPC NN_1 cells by expression of Neil3, Foxg1. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5266 OPC NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5266 OPC NN_1" EXACT []
-synonym: "Pdgfra (Mmus), Pclaf (Mmus), Mki67 (Mmus), Foxg1 (Mmus) expressing oligodendrocyte precursor cell of brain (Mus musculus)" EXACT []
 is_a: CL:4300366 ! oligodendrocyte precursor cell (Mmus)
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.52", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.14", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1559,7 +1465,6 @@ id: CL:4307087
 name: OPC NN_1 Irx2 oligodendrocyte precursor cell (Mmus)
 def: "A oligodendrocyte precursor cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pdgfra (Mmus), Pclaf (Mmus), Irx2 (Mmus). It is distinguished from other OPC NN_1 cells by expression of Neil3, Irx2. These cells are located in the Cerebellum, brain, Midbrain, Pons, Medulla . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5267 OPC NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5267 OPC NN_1" EXACT []
-synonym: "Pdgfra (Mmus), Pclaf (Mmus), Irx2 (Mmus) expressing oligodendrocyte precursor cell of brain (Mus musculus)" EXACT []
 is_a: CL:4300366 ! oligodendrocyte precursor cell (Mmus)
 property_value: CLM:0010001 MBA:313 {CLM:0010002="0.21", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:354 {CLM:0010002="0.13", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1577,7 +1482,6 @@ id: CL:4307088
 name: OPC NN_1 Mms22l oligodendrocyte precursor cell (Mmus)
 def: "A oligodendrocyte precursor cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pdgfra (Mmus), Olig1 (Mmus), Mms22l (Mmus), Top2a (Mmus). It is distinguished from other OPC NN_1 cells by expression of Mms22l, Foxg1, Top2a. These cells are located in the Isocortex, Olfactory areas, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5268 OPC NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5268 OPC NN_1" EXACT []
-synonym: "Pdgfra (Mmus), Olig1 (Mmus), Mms22l (Mmus), Top2a (Mmus) expressing oligodendrocyte precursor cell of brain (Mus musculus)" EXACT []
 is_a: CL:4300366 ! oligodendrocyte precursor cell (Mmus)
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.53", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:698 {CLM:0010002="0.12", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1593,7 +1497,6 @@ id: CL:4307089
 name: OPC NN_1 Col27a1 oligodendrocyte precursor cell (Mmus)
 def: "A oligodendrocyte precursor cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pdgfra (Mmus), Olig1 (Mmus), Col27a1 (Mmus). It is distinguished from other OPC NN_1 cells by expression of Col27a1. These cells are located in the Midbrain, Pons, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5269 OPC NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5269 OPC NN_1" EXACT []
-synonym: "Pdgfra (Mmus), Olig1 (Mmus), Col27a1 (Mmus) expressing oligodendrocyte precursor cell of brain (Mus musculus)" EXACT []
 is_a: CL:4300366 ! oligodendrocyte precursor cell (Mmus)
 property_value: CLM:0010001 MBA:313 {CLM:0010002="0.17", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:771 {CLM:0010002="0.11", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1609,7 +1512,6 @@ id: CL:4307090
 name: OPC NN_1 Rmi2 oligodendrocyte precursor cell (Mmus)
 def: "A oligodendrocyte precursor cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pdgfra (Mmus), Olig1 (Mmus), Rmi2 (Mmus), Col27a1 (Mmus). It is distinguished from other OPC NN_1 cells by expression of Rmi2, Col27a1. These cells are located in the Hypothalamus, Midbrain, Pallidum, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5270 OPC NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5270 OPC NN_1" EXACT []
-synonym: "Pdgfra (Mmus), Olig1 (Mmus), Rmi2 (Mmus), Col27a1 (Mmus) expressing oligodendrocyte precursor cell of brain (Mus musculus)" EXACT []
 is_a: CL:4300366 ! oligodendrocyte precursor cell (Mmus)
 property_value: CLM:0010001 MBA:1097 {CLM:0010002="0.17", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:313 {CLM:0010002="0.39", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1627,7 +1529,6 @@ name: OPC NN_2 oligodendrocyte precursor cell (Mmus)
 def: "A oligodendrocyte precursor cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pdgfra (Mmus), Cenpf (Mmus), Cenpa (Mmus). It is distinguished from other OPC NN cells by expression of Cenpa. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5271 OPC NN_2." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "1180 OPC NN_2" EXACT []
 synonym: "5271 OPC NN_2" EXACT []
-synonym: "Pdgfra (Mmus), Cenpf (Mmus), Cenpa (Mmus) expressing oligodendrocyte precursor cell of brain (Mus musculus)" EXACT []
 is_a: CL:4300366 ! oligodendrocyte precursor cell (Mmus)
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.26", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.17", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1642,7 +1543,6 @@ id: CL:4307092
 name: COP NN_1 Rgcc committed oligodendrocyte precursor (Mmus)
 def: "A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Bmp4 (Mmus), Zfp36l1 (Mmus). It is distinguished from other COP NN_1 cells by expression of Rgcc, Plpp4. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5272 COP NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5272 COP NN_1" EXACT []
-synonym: "Gpr17 (Mmus), Bmp4 (Mmus), Zfp36l1 (Mmus) expressing committed oligodendrocyte precursor of brain (Mus musculus)" EXACT []
 is_a: CL:4301611 ! commited oligodendrocyte precursor (Mmus)
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.22", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.2", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1657,7 +1557,6 @@ id: CL:4307093
 name: COP NN_1 9130019P16Rik committed oligodendrocyte precursor (Mmus)
 def: "A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Gp1bb (Mmus), Pdzd2 (Mmus), Plekhg1 (Mmus). It is distinguished from other COP NN_1 cells by expression of Rgcc, 9130019P16Rik. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5273 COP NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5273 COP NN_1" EXACT []
-synonym: "Gpr17 (Mmus), Gp1bb (Mmus), Pdzd2 (Mmus), Plekhg1 (Mmus) expressing committed oligodendrocyte precursor of brain (Mus musculus)" EXACT []
 is_a: CL:4301611 ! commited oligodendrocyte precursor (Mmus)
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.33", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.2", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1672,7 +1571,6 @@ id: CL:4307094
 name: COP NN_1 C1ql1 committed oligodendrocyte precursor (Mmus)
 def: "A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Bgn (Mmus), Gstp1 (Mmus), C1ql1 (Mmus). It is distinguished from other COP NN_1 cells by expression of C1ql1, Gstp1. These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5274 COP NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5274 COP NN_1" EXACT []
-synonym: "Gpr17 (Mmus), Bgn (Mmus), Gstp1 (Mmus), C1ql1 (Mmus) expressing committed oligodendrocyte precursor of brain (Mus musculus)" EXACT []
 is_a: CL:4301611 ! commited oligodendrocyte precursor (Mmus)
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.41", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007024 {STATO:0000663="0.0"}
@@ -1686,7 +1584,6 @@ id: CL:4307095
 name: COP NN_1 Bmp4 committed oligodendrocyte precursor (Mmus)
 def: "A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Bmp4 (Mmus), Mob3b (Mmus). It is distinguished from other COP NN_1 cells by expression of Bmp4, Mob3b. These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5275 COP NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5275 COP NN_1" EXACT []
-synonym: "9630013A20Rik (Mmus), Bmp4 (Mmus), Mob3b (Mmus) expressing committed oligodendrocyte precursor of brain (Mus musculus)" EXACT []
 is_a: CL:4301611 ! commited oligodendrocyte precursor (Mmus)
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.37", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007025 {STATO:0000663="0.3539823"}
@@ -1700,7 +1597,6 @@ id: CL:4307096
 name: COP NN_1 Vwc2 committed oligodendrocyte precursor (Mmus)
 def: "A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Rab32 (Mmus), Opalin (Mmus). It is distinguished from other COP NN_1 cells by expression of Vwc2, Opalin. These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5276 COP NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5276 COP NN_1" EXACT []
-synonym: "9630013A20Rik (Mmus), Rab32 (Mmus), Opalin (Mmus) expressing committed oligodendrocyte precursor of brain (Mus musculus)" EXACT []
 is_a: CL:4301611 ! commited oligodendrocyte precursor (Mmus)
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.51", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007026 {STATO:0000663="0.31914893"}
@@ -1714,7 +1610,6 @@ id: CL:4307097
 name: COP NN_1 Cck committed oligodendrocyte precursor (Mmus)
 def: "A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Bmp4 (Mmus), Cck (Mmus), Ptger1 (Mmus). It is distinguished from other COP NN_1 cells by expression of Bmp4, Cck, Ptger1. These cells are located in the Isocortex, Olfactory areas, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5277 COP NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5277 COP NN_1" EXACT []
-synonym: "9630013A20Rik (Mmus), Bmp4 (Mmus), Cck (Mmus), Ptger1 (Mmus) expressing committed oligodendrocyte precursor of brain (Mus musculus)" EXACT []
 is_a: CL:4301611 ! commited oligodendrocyte precursor (Mmus)
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.54", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:698 {CLM:0010002="0.11", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1730,7 +1625,6 @@ id: CL:4307098
 name: NFOL NN_2 9630013A20Rik newly formed oligodendrocyte (Mmus)
 def: "A newly formed oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Grin2b (Mmus). It is distinguished from other NFOL NN_2 cells by expression of 9630013A20Rik, Grin2b. These cells are located in the Midbrain, Thalamus, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5278 NFOL NN_2." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5278 NFOL NN_2" EXACT []
-synonym: "9630013A20Rik (Mmus), Grin2b (Mmus) expressing newly formed oligodendrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4301612 ! newly formed oligodendrocyte (Mmus)
 property_value: CLM:0010001 MBA:313 {CLM:0010002="0.31", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:549 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1746,7 +1640,6 @@ id: CL:4307099
 name: NFOL NN_2 Dbx2 newly formed oligodendrocyte (Mmus)
 def: "A newly formed oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Dbx2 (Mmus), Rassf10 (Mmus). It is distinguished from other NFOL NN_2 cells by expression of Dbx2, Rassf10. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5279 NFOL NN_2." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5279 NFOL NN_2" EXACT []
-synonym: "9630013A20Rik (Mmus), Dbx2 (Mmus), Rassf10 (Mmus) expressing newly formed oligodendrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4301612 ! newly formed oligodendrocyte (Mmus)
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.24", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.25", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1761,7 +1654,6 @@ id: CL:4307100
 name: NFOL NN_2 Rgs16 newly formed oligodendrocyte (Mmus)
 def: "A newly formed oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Rgs16 (Mmus), Rhbdl2 (Mmus). It is distinguished from other NFOL NN_2 cells by expression of Rgs16, Rhbdl2. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5280 NFOL NN_2." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5280 NFOL NN_2" EXACT []
-synonym: "9630013A20Rik (Mmus), Rgs16 (Mmus), Rhbdl2 (Mmus) expressing newly formed oligodendrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4301612 ! newly formed oligodendrocyte (Mmus)
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.18", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.28", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1776,7 +1668,6 @@ id: CL:4307101
 name: NFOL NN_2 Il23a newly formed oligodendrocyte (Mmus)
 def: "A newly formed oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Piezo2 (Mmus), Ptprb (Mmus). It is distinguished from other NFOL NN_2 cells by expression of Il23a, Opalin, Ptprb. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5281 NFOL NN_2." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5281 NFOL NN_2" EXACT []
-synonym: "9630013A20Rik (Mmus), Piezo2 (Mmus), Ptprb (Mmus) expressing newly formed oligodendrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4301612 ! newly formed oligodendrocyte (Mmus)
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.19", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.3", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1791,7 +1682,6 @@ id: CL:4307102
 name: MFOL NN_3 Cxcl12 myelin-forming oligodendrocyte (Mmus)
 def: "A myelin-forming oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Opalin (Mmus), Cxcl12 (Mmus), Efhd1 (Mmus). It is distinguished from other MFOL NN_3 cells by expression of Cxcl12, Efhd1. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5282 MFOL NN_3." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5282 MFOL NN_3" EXACT []
-synonym: "Opalin (Mmus), Cxcl12 (Mmus), Efhd1 (Mmus) expressing myelin-forming oligodendrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4301613 ! myelin-forming oligodendrocyte (Mmus)
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.26", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.26", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1806,7 +1696,6 @@ id: CL:4307103
 name: MFOL NN_3 Il23a myelin-forming oligodendrocyte (Mmus)
 def: "A myelin-forming oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Ppp1r14a (Mmus), Mroh3 (Mmus). It is distinguished from other MFOL NN_3 cells by expression of Il23a, Ppp1r14a. These cells are located in the Midbrain, Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5283 MFOL NN_3." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5283 MFOL NN_3" EXACT []
-synonym: "9630013A20Rik (Mmus), Ppp1r14a (Mmus), Mroh3 (Mmus) expressing myelin-forming oligodendrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4301613 ! myelin-forming oligodendrocyte (Mmus)
 property_value: CLM:0010001 MBA:313 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.17", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1822,7 +1711,6 @@ id: CL:4307104
 name: MOL NN_4 Plin3 mature myelinating oligodendrocyte (Mmus)
 def: "A mature myelinating oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Prr5l (Mmus), Hapln2 (Mmus), Enpp6 (Mmus), Grm7 (Mmus). It is distinguished from other MOL NN_4 cells by expression of Plin3, Grm7. These cells are located in the Medulla, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5284 MOL NN_4." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5284 MOL NN_4" EXACT []
-synonym: "Prr5l (Mmus), Hapln2 (Mmus), Enpp6 (Mmus), Grm7 (Mmus) expressing mature myelinating oligodendrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4301614 ! mature myelinating oligodendrocyte (Mmus)
 property_value: CLM:0010001 MBA:354 {CLM:0010002="0.11", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.37", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1837,7 +1725,6 @@ id: CL:4307105
 name: MOL NN_4 Spock3 mature myelinating oligodendrocyte (Mmus)
 def: "A mature myelinating oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cldn11 (Mmus), A230001M10Rik (Mmus), Spock3 (Mmus), Rhoj (Mmus). It is distinguished from other MOL NN_4 cells by expression of Spock3, Rhoj. These cells are located in the Midbrain, Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5285 MOL NN_4." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5285 MOL NN_4" EXACT []
-synonym: "Cldn11 (Mmus), A230001M10Rik (Mmus), Spock3 (Mmus), Rhoj (Mmus) expressing mature myelinating oligodendrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4301614 ! mature myelinating oligodendrocyte (Mmus)
 property_value: CLM:0010001 MBA:313 {CLM:0010002="0.14", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.13", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1853,7 +1740,6 @@ id: CL:4307106
 name: MOL NN_4 Art3 mature myelinating oligodendrocyte (Mmus)
 def: "A mature myelinating oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Apod (Mmus), Klk6 (Mmus), Dlc1 (Mmus). It is distinguished from other MOL NN_4 cells by expression of Art3. These cells are located in the Medulla, Pons, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5286 MOL NN_4." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5286 MOL NN_4" EXACT []
-synonym: "Apod (Mmus), Klk6 (Mmus), Dlc1 (Mmus) expressing mature myelinating oligodendrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4301614 ! mature myelinating oligodendrocyte (Mmus)
 property_value: CLM:0010001 MBA:354 {CLM:0010002="0.17", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:771 {CLM:0010002="0.15", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1869,7 +1755,6 @@ id: CL:4307107
 name: MOL NN_4 Il33 mature myelinating oligodendrocyte (Mmus)
 def: "A mature myelinating oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Opalin (Mmus), Grm3 (Mmus), Gm5087 (Mmus). It is distinguished from other MOL NN_4 cells by expression of Il33, Gm5087. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5287 MOL NN_4." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5287 MOL NN_4" EXACT []
-synonym: "Opalin (Mmus), Grm3 (Mmus), Gm5087 (Mmus) expressing mature myelinating oligodendrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4301614 ! mature myelinating oligodendrocyte (Mmus)
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.17", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.41", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1884,7 +1769,6 @@ id: CL:4307108
 name: MOL NN_4 Sspo mature myelinating oligodendrocyte (Mmus)
 def: "A mature myelinating oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Mog (Mmus), Anln (Mmus), Gm32633 (Mmus). It is distinguished from other MOL NN_4 cells by expression of Sspo, Selenop. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5288 MOL NN_4." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5288 MOL NN_4" EXACT []
-synonym: "Mog (Mmus), Anln (Mmus), Gm32633 (Mmus) expressing mature myelinating oligodendrocyte of brain (Mus musculus)" EXACT []
 is_a: CL:4301614 ! mature myelinating oligodendrocyte (Mmus)
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.11", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.41", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1899,7 +1783,6 @@ id: CL:4307109
 name: OEC NN_1 Adamts12 olfactory ensheathing cell (Mmus)
 def: "A olfactory ensheathing cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cldn5 (Mmus), Adamts12 (Mmus). It is distinguished from other OEC cells by expression of Adamts12. These cells are located in the brain , in or close to the regions: olfactory nerve layer of main olfactory bulb . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5289 OEC NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5289 OEC NN_1" EXACT []
-synonym: "Cldn5 (Mmus), Adamts12 (Mmus) expressing olfactory ensheathing cell of brain (Mus musculus)" EXACT []
 is_a: CL:4301615 ! olfactory ensheathing cell (Mmus)
 property_value: CLM:0010001 MBA:1016 {CLM:0010002="0.15", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.89", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1914,7 +1797,6 @@ id: CL:4307110
 name: OEC NN_1 Gdpd4 olfactory ensheathing cell (Mmus)
 def: "A olfactory ensheathing cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Apod (Mmus), Aqp1 (Mmus), Cldn5 (Mmus). It is distinguished from other OEC cells by expression of Gdpd4, Cldn5. These cells are located in the brain , in or close to the regions: olfactory nerve layer of main olfactory bulb . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5290 OEC NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5290 OEC NN_1" EXACT []
-synonym: "Apod (Mmus), Aqp1 (Mmus), Cldn5 (Mmus) expressing olfactory ensheathing cell of brain (Mus musculus)" EXACT []
 is_a: CL:4301615 ! olfactory ensheathing cell (Mmus)
 property_value: CLM:0010001 MBA:1016 {CLM:0010002="0.39", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.8", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -1929,7 +1811,6 @@ id: CL:4307111
 name: OEC NN_1 A330076C08Rik olfactory ensheathing cell (Mmus)
 def: "A olfactory ensheathing cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Apod (Mmus), Mybpc1 (Mmus), Syk (Mmus). It is distinguished from other OEC cells by expression of A330076C08Rik. These cells are located in the Olfactory areas, brain , in or close to the regions: olfactory nerve layer of main olfactory bulb, Main olfactory bulb . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5291 OEC NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5291 OEC NN_1" EXACT []
-synonym: "Apod (Mmus), Mybpc1 (Mmus), Syk (Mmus) expressing olfactory ensheathing cell of brain (Mus musculus)" EXACT []
 is_a: CL:4301615 ! olfactory ensheathing cell (Mmus)
 property_value: CLM:0010001 MBA:1016 {CLM:0010002="0.14", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
 property_value: CLM:0010001 MBA:507 {CLM:0010002="0.16", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
@@ -1944,9 +1825,8 @@ property_value: seeAlso "https://purl.brain-bican.org/taxonomy/CCN20230722/CS202
 [Term]
 id: CL:4307112
 name: OEC NN_1 Rasgef1c olfactory ensheathing cell (Mmus)
-def: "A olfactory ensheathing cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Apod (Mmus), Mybpc1 (Mmus), Rasgef1c (Mmus). It is distinguished from other OEC cells by expression of Rasgef1c. It is glutamatergic. These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5292 OEC NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
+def: "A olfactory ensheathing cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Apod (Mmus), Mybpc1 (Mmus), Rasgef1c (Mmus). It is distinguished from other OEC cells by expression of Rasgef1c. It is glutamatergic (inferred from expression of Slc17a7). These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5292 OEC NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5292 OEC NN_1" EXACT []
-synonym: "Apod (Mmus), Mybpc1 (Mmus), Rasgef1c (Mmus) expressing olfactory ensheathing cell of brain (Mus musculus)" EXACT []
 is_a: CL:0000151
 is_a: CL:4301615 ! olfactory ensheathing cell (Mmus)
 relationship: RO:0002215 GO:0061535 {comment="Inferred to be glutamate secretion, neurotransmission based on expression of Slc17a7"}
@@ -1962,7 +1842,6 @@ id: CL:4307113
 name: ABC NN_1 Pde11a arachnoid barrier cell (Mmus)
 def: "A arachnoid barrier cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Slc47a1 (Mmus), Pde11a (Mmus). It is distinguished from other ABC NN cells by expression of Pde11a. These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5293 ABC NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5293 ABC NN_1" EXACT []
-synonym: "Slc47a1 (Mmus), Pde11a (Mmus) expressing arachnoid barrier cell of brain (Mus musculus)" EXACT []
 is_a: CL:4301616 ! arachnoid barrier cell (Mmus)
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.73", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007043 {STATO:0000663="0.6603774"}
@@ -1976,7 +1855,6 @@ id: CL:4307114
 name: ABC NN_1 Dapl1 arachnoid barrier cell (Mmus)
 def: "A arachnoid barrier cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Slc47a1 (Mmus), Dapl1 (Mmus). It is distinguished from other ABC NN cells by expression of Dapl1. These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5294 ABC NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5294 ABC NN_1" EXACT []
-synonym: "Slc47a1 (Mmus), Dapl1 (Mmus) expressing arachnoid barrier cell of brain (Mus musculus)" EXACT []
 is_a: CL:4301616 ! arachnoid barrier cell (Mmus)
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.76", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007044 {STATO:0000663="0.6818182"}
@@ -1990,7 +1868,6 @@ id: CL:4307115
 name: ABC NN_1 Cubn arachnoid barrier cell (Mmus)
 def: "A arachnoid barrier cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Prg4 (Mmus), Cubn (Mmus). It is distinguished from other ABC NN cells by expression of Cubn. These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5295 ABC NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5295 ABC NN_1" EXACT []
-synonym: "Prg4 (Mmus), Cubn (Mmus) expressing arachnoid barrier cell of brain (Mus musculus)" EXACT []
 is_a: CL:4301616 ! arachnoid barrier cell (Mmus)
 property_value: CLM:0010001 MBA:997 {CLM:0010002="0.74", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007045 {STATO:0000663="0.86419755"}
@@ -2006,7 +1883,6 @@ def: "A microglial cell of the Mus musculus brain. It is distinguished from othe
 synonym: "1194 Microglia NN_1" EXACT []
 synonym: "334 Microglia NN" EXACT []
 synonym: "5312 Microglia NN_1" EXACT []
-synonym: "C1qa (Mmus), Tmem119 (Mmus) expressing microglial cell of brain (Mus musculus)" EXACT []
 is_a: CL:0000129
 relationship: RO:0002162 NCBITaxon:10090
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.29", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -2023,7 +1899,6 @@ id: CL:4307133
 name: BAM NN_1 Mrc1 border associated macrophage (Mmus)
 def: "A border associated macrophage of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Mrc1 (Mmus), Pf4 (Mmus). It is distinguished from other BAM NN cells by expression of Mrc1, Pf4. These cells are located in the Medulla, Cerebellum, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5313 BAM NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5313 BAM NN_1" EXACT []
-synonym: "Mrc1 (Mmus), Pf4 (Mmus) expressing border associated macrophage of brain (Mus musculus)" EXACT []
 is_a: CL:4301625 ! border associated macrophage (Mmus)
 property_value: CLM:0010001 MBA:354 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:512 {CLM:0010002="0.13", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
@@ -2039,7 +1914,6 @@ id: CL:4307134
 name: BAM NN_1 Fos border associated macrophage (Mmus)
 def: "A border associated macrophage of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Mrc1 (Mmus), Pf4 (Mmus), Fos (Mmus). It is distinguished from other BAM NN cells by expression of Fos. These cells are located in the Isocortex, Cerebellum, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5314 BAM NN_1." [https://doi.org/10.1038/s41586-023-06812-z]
 synonym: "5314 BAM NN_1" EXACT []
-synonym: "Mrc1 (Mmus), Pf4 (Mmus), Fos (Mmus) expressing border associated macrophage of brain (Mus musculus)" EXACT []
 is_a: CL:4301625 ! border associated macrophage (Mmus)
 property_value: CLM:0010001 MBA:315 {CLM:0010002="0.14", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010001 MBA:512 {CLM:0010002="0.16", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
