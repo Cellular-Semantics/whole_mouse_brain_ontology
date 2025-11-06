@@ -458,6 +458,8 @@ annotations:
         - text: '%s'
           vars:
             - Rationale_comment
+        - text: 'Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.'
+          vars: [ ]
         - text: '%s'
           vars:
             - Location_disclaimer

@@ -13457,6 +13457,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_28.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A cerebellar neuron of the Mus musculus brain. Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Class:28 CB GABA.",
               "xrefs": [
@@ -13494,6 +13497,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_29.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A cerebellum glutamatergic neuron of the Mus musculus brain. Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Class:29 CB Glut.",
               "xrefs": [
@@ -13530,6 +13536,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A cell of the Mus musculus brain. Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Class:31 OPC-Oligo.",
@@ -13572,6 +13581,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_09.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A direct pathway medium spiny neuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Prkch (Mmus), Slc32a1 (Mmus), Drd1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:061 STR D1 Gaba.",
               "xrefs": [
@@ -13612,6 +13624,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_09.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A indirect pathway medium spiny neuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Adora2a (Mmus), Phactr1 (Mmus), Pcp4l1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:062 STR D2 Gaba.",
@@ -13654,6 +13669,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_28.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A cerebellar neuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Tmem204 (Mmus), Slc6a5 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:308 DCO Il22 Gly-Gaba.",
               "xrefs": [
@@ -13694,6 +13712,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_28.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A Purkinje layer interneuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Rgs6 (Mmus), Slc6a5 (Mmus), Shisa9 (Mmus), Zic1 (Mmus), Bmp6 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:309 CB PLI Gly-Gaba.",
@@ -13736,6 +13757,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_28.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A molecular layer interneuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Homer3 (Mmus), Tfap2b (Mmus), Sorcs3 (Mmus), Cacna1e (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:311 CBX MLI Megf11 Gaba.",
               "xrefs": [
@@ -13776,6 +13800,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_28.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A Purkinje cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pcp2 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:313 CBX Purkinje Gaba.",
@@ -13818,6 +13845,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_29.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A cerebellar granule cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gabra6 (Mmus), Ror1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:314 CB Granule Glut.",
               "xrefs": [
@@ -13858,6 +13888,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A transcriptomically defined type of astrocyte located predominantly in the ventral and posterior subcortical areas.   It is distinguished from other cells in the brain by selective expression of Aqp4 (Mmus), Cd38 (Mmus), Agt (Mmus), Itih3 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:318 Astro-NT NN.",
@@ -13904,6 +13937,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A transcritpomically defined type of astrocytes primarily restricted to the dorsal regions of the cerebrum. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), Lhx2 (Mmus), Gpc5 (Mmus), Nr2f1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:319 Astro-TE NN.",
               "xrefs": [
@@ -13949,6 +13985,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A transcriptomically defined type of astrocyte located exclusively in the olfactory areas. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), Hs3st3a1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:320 Astro-OLF NN.",
               "xrefs": [
@@ -13989,6 +14028,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A tanycyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr50 (Mmus), Apoe (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:322 Tanycyte NN.",
@@ -14031,6 +14073,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A ependymal cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Tmem212 (Mmus), Rarres2 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:323 Ependymal NN.",
               "xrefs": [
@@ -14071,6 +14116,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A oligodendrocyte precursor cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pdgfra (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:326 OPC NN.",
@@ -14113,6 +14161,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cldn11 (Mmus), Gjc3 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:327 Oligo NN.",
               "xrefs": [
@@ -14153,6 +14204,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_33.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A vascular leptomeningeal cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Apod (Mmus), Slc6a13 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Subclass:330 VLMC NN.",
@@ -14195,6 +14249,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_28.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A cerebellar neuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Il22 (Mmus), Rftn1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1141 DCO Il22 Gly-Gaba_1.",
               "xrefs": [
@@ -14236,6 +14293,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_28.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A cerebellar neuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Fat2 (Mmus), Slc6a5 (Mmus), Cgnl1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1143 DCO Il22 Gly-Gaba_3.",
               "xrefs": [
@@ -14276,6 +14336,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_28.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A Purkinje layer interneuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Hmga2 (Mmus), Afap1l2 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1144 CB PLI Gly-Gaba_1.",
@@ -14319,7 +14382,7 @@
               }
             ],
             "comments": [
-              "Rationale for assigning this type to reference data: Mapping of this cell type is supported by analysis: https://github.com/Cellular-Semantics/cellular_semantics_notebooks"
+              "Rationale for assigning this type to reference data: Mapping of this cell type is supported by analysis: https://github.com/Cellular-Semantics/cellular_semantics_notebooks Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A Lugaro cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pthlh (Mmus), Tfap2b (Mmus), Rspo2 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1145 CB PLI Gly-Gaba_2.",
@@ -14361,6 +14424,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_28.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A Purkinje layer interneuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pax2 (Mmus), C1ql3 (Mmus), Tfap2b (Mmus), Gabrb1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1146 CB PLI Gly-Gaba_3.",
@@ -14407,6 +14473,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_28.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A cerebellar Golgi cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Zfp385c (Mmus), Tfap2b (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1148 CBX Golgi Gly-Gaba_1.",
               "xrefs": [
@@ -14452,6 +14521,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_28.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A molecular layer interneuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Dnah11 (Mmus), Sla (Mmus), Gldc (Mmus), Sdk2 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1149 CBX MLI Megf11 Gaba_1.",
               "xrefs": [
@@ -14492,6 +14564,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_28.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A molecular layer interneuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gabra6 (Mmus), Pvalb (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1150 CBX MLI Megf11 Gaba_2.",
@@ -14534,6 +14609,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_28.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A Purkinje cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pcp2 (Mmus), Stk17b (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1152 CBX Purkinje Gaba_1.",
               "xrefs": [
@@ -14570,6 +14648,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_28.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A Purkinje cell of the Mus musculus brain. Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1153 CBX Purkinje Gaba_2.",
@@ -14612,6 +14693,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_29.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A cerebellar granule cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gabra6 (Mmus), Lmx1a (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1154 CB Granule Glut_1.",
               "xrefs": [
@@ -14652,6 +14736,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_29.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A cerebellar granule cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gabra6 (Mmus), Gap43 (Mmus), Rab37 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1155 CB Granule Glut_2.",
@@ -14698,6 +14785,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_29.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A unipolar brush cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Sln (Mmus), Lmx1a (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1156 DCO UBC Glut_1.",
               "xrefs": [
@@ -14743,6 +14833,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gfap (Mmus), Lhfpl3 (Mmus), Gria1 (Mmus), Hopx (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1159 Astro-NT NN_1.",
               "xrefs": [
@@ -14783,6 +14876,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), A330076C08Rik (Mmus), Itih3 (Mmus), Gria2 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1160 Astro-NT NN_2.",
@@ -14825,6 +14921,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Myoc (Mmus), Camk2a (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1161 Astro-TE NN_1.",
               "xrefs": [
@@ -14865,6 +14964,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Hepacam (Mmus), E330013P04Rik (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1162 Astro-TE NN_2.",
@@ -14907,6 +15009,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), Grin2c (Mmus), Dcc (Mmus), Slc7a10 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1163 Astro-TE NN_3.",
               "xrefs": [
@@ -14947,6 +15052,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), Thbs4 (Mmus), Kcnk10 (Mmus), Pak1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1165 Astro-TE NN_5.",
@@ -14989,6 +15097,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Aqp4 (Mmus), Prss23 (Mmus), Igfbp2 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1166 Astro-OLF NN_1.",
               "xrefs": [
@@ -15029,6 +15140,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), Hs3st3a1 (Mmus), Slco1c1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1167 Astro-OLF NN_2.",
@@ -15071,6 +15185,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Ednrb (Mmus), Hs3st3a1 (Mmus), C230072F16Rik (Mmus), Gria2 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1168 Astro-OLF NN_3.",
               "xrefs": [
@@ -15112,6 +15229,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A tanycyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cnmd (Mmus), Lpl (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1172 Tanycyte NN_1.",
               "xrefs": [
@@ -15152,6 +15272,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A tanycyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr50 (Mmus), Ccdc170 (Mmus), Nkx2-4 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1173 Tanycyte NN_2.",
@@ -15197,6 +15320,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A choroid plexus epithelial cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 2900040C04Rik (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1178 CHOR NN_1.",
@@ -15248,7 +15374,7 @@
               }
             ],
             "comments": [
-              "Rationale for assigning this type to reference data: Mapping of this cell set to a differentiation-committed oligodendrocyte is supported by spatial transcriptomic evidence and specific expression of Gpr17, Bmp4, Neu4, Fyn in the context of oligodendrocyte lineage cells."
+              "Rationale for assigning this type to reference data: Mapping of this cell set to a differentiation-committed oligodendrocyte is supported by spatial transcriptomic evidence and specific expression of Gpr17, Bmp4, Neu4, Fyn in the context of oligodendrocyte lineage cells. Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Bmp4 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1181 COP NN_1.",
@@ -15297,7 +15423,7 @@
               }
             ],
             "comments": [
-              "Rationale for assigning this type to reference data: Mapping of this cell set to a newly formed oligodendrocyte is supported by spatial transcriptomic evidence and specific expression of Tcf7l2, Klk6, Cemip2, Casr in the context of oligodendrocyte lineage cells."
+              "Rationale for assigning this type to reference data: Mapping of this cell set to a newly formed oligodendrocyte is supported by spatial transcriptomic evidence and specific expression of Tcf7l2, Klk6, Cemip2, Casr in the context of oligodendrocyte lineage cells. Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A newly formed oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Ptprb (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1182 NFOL NN_2.",
@@ -15346,7 +15472,7 @@
               }
             ],
             "comments": [
-              "Rationale for assigning this type to reference data: Mapping of this cell set to a myelin-forming oligodendrocyte is supported by spatial transcriptomic evidence and specific expression of Ctps, Cldn11 in the context of oligodendrocyte lineage cells."
+              "Rationale for assigning this type to reference data: Mapping of this cell set to a myelin-forming oligodendrocyte is supported by spatial transcriptomic evidence and specific expression of Ctps, Cldn11 in the context of oligodendrocyte lineage cells. Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A myelin-forming oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cldn11 (Mmus), Sec14l5 (Mmus), 9630013A20Rik (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1183 MFOL NN_3.",
@@ -15395,7 +15521,7 @@
               }
             ],
             "comments": [
-              "Rationale for assigning this type to reference data: Mapping of this cell set to a mature myelinating oligodendrocyte is supported by spatial transcriptomic evidence and specific expression of Klk6 in the context of oligodendrocyte lineage cells."
+              "Rationale for assigning this type to reference data: Mapping of this cell set to a mature myelinating oligodendrocyte is supported by spatial transcriptomic evidence and specific expression of Klk6 in the context of oligodendrocyte lineage cells. Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A mature myelinating oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cldn11 (Mmus), Anln (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1184 MOL NN_4.",
@@ -15446,6 +15572,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_32.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A olfactory ensheathing cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Apod (Mmus), Npy (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1185 OEC NN_1.",
@@ -15500,6 +15629,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_33.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A arachnoid barrier cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Thbd (Mmus), Ccn3 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1186 ABC NN_1.",
               "xrefs": [
@@ -15548,6 +15680,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_34.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A border associated macrophage of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Mrc1 (Mmus), Maf (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Supertype:1195 BAM NN_1.",
@@ -15630,6 +15765,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_15.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A hypothalamic gonadotropin-releasing hormone neuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gnrh1 (Mmus). It is glutamatergic (inferred from expression of Gad1, Slc17a6, Gad2). These cells are located in the Hypothalamus, Olfactory areas, Pallidum, brain , in or close to the regions: Lateral septal nucleus, rostral (rostroventral) part, Medial septal nucleus, Diagonal band nucleus . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:2564 HY Gnrh1 Glut_1.",
               "xrefs": [
@@ -15704,7 +15842,7 @@
               }
             ],
             "comments": [
-              "Rationale for assigning this type to reference data: Consistent with this cell set being composed of Pinealocytes, a combination of Pinealocyte markers Gngt1 and Crx can identify the cells in this cluster with a confidence (F-beta score) of 0.91 in the context of glutamatergic cells (Pinealocytes release glutamate) from the hippocampal formation dissection (which includes the pineal gland)."
+              "Rationale for assigning this type to reference data: Consistent with this cell set being composed of Pinealocytes, a combination of Pinealocyte markers Gngt1 and Crx can identify the cells in this cluster with a confidence (F-beta score) of 0.91 in the context of glutamatergic cells (Pinealocytes release glutamate) from the hippocampal formation dissection (which includes the pineal gland). Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A pinealocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cngb3 (Mmus), Ush2a (Mmus). It is glutamatergic (inferred from expression of Ddc, Slc17a6, Slc17a7). These cells are located in the brain , in or close to the regions: third ventricle . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:4606 Pineal Crx Glut_1.",
@@ -15785,6 +15923,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_28.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A cerebellar neuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Il22 (Mmus), Edaradd (Mmus). It is distinguished from other DCO Il22 Gly-Gaba cells by expression of Ppp1r17. It is GABAergic and glycinergic (inferred from expression of Slc32a1, Hdc, Slc6a5, Gad2, Gad1). These cells are located in the Medulla, Cerebellum, brain , in or close to the regions: Paraflocculus, arbor vitae, Dorsal cochlear nucleus . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5172 DCO Il22 Gly-Gaba_2.",
               "xrefs": [
@@ -15851,7 +15992,7 @@
               }
             ],
             "comments": [
-              "Warning: Despite its name, CB PLI Gly-Gaba_4 does not secrete the neurotransmitter Gly, as assessed by expression of multiple marker genes."
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. Warning: Despite its name, CB PLI Gly-Gaba_4 does not secrete the neurotransmitter Gly, as assessed by expression of multiple marker genes."
             ],
             "definition": {
               "val": "A Purkinje layer interneuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Ly6d (Mmus), Kit (Mmus). It is distinguished from other CB PLI Gly-Gaba cells by expression of Ly6d. It is GABAergic (inferred from expression of Gad1, Gad2, Slc32a1). These cells are located in the Cerebellum, brain , in or close to the regions: arbor vitae, Interposed nucleus, Nodulus (X) . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5185 CB PLI Gly-Gaba_4.",
@@ -15909,6 +16050,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_28.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A molecular layer interneuron of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cdh1 (Mmus), Acvr1c (Mmus), Adamts15 (Mmus), Pax2 (Mmus). It is distinguished from other CB GABA cells by expression of Cdh1, Acvr1c, Adamts15, Pax2. It is GABAergic (inferred from expression of Gad1, Gad2, Slc32a1). These cells are located in the Cerebellum, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5192 CBX MLI Cdh22 Gaba_1.",
@@ -15970,6 +16114,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A Bergmann glial cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr37l1 (Mmus), Ctxn3 (Mmus). It is distinguished from other Astro-Epen cells by expression of Gpr37l1, Ctxn3. These cells are located in the Cerebellum, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5206 Bergmann NN_1.",
@@ -16036,6 +16183,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A transcriptomically defined type of astrocyte localized exclusively in the cerebellum beneath the Purkinje cell layer. It is distinguished from other cells in the brain by selective expression of Dao (Mmus), Efemp1 (Mmus). Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5207 Astro-CB NN_1.",
               "xrefs": [
@@ -16097,6 +16247,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gfap (Mmus), Galnt15 (Mmus), Agt (Mmus). It is distinguished from other Astro-NT NN_1 cells by expression of Galnt15. These cells are located in the Cerebellum, brain , in or close to the regions: arbor vitae . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5208 Astro-NT NN_1.",
               "xrefs": [
@@ -16150,6 +16303,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gfap (Mmus), Slc36a2 (Mmus), Sfrp5 (Mmus). It is distinguished from other Astro-NT NN_1 cells by expression of Slc36a2, Sfrp5. These cells are located in the Midbrain, Cerebellum, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5209 Astro-NT NN_1.",
               "xrefs": [
@@ -16202,6 +16358,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gfap (Mmus), Sfrp5 (Mmus), Cldn10 (Mmus), Riiad1 (Mmus). It is distinguished from other Astro-NT NN_1 cells by expression of Nuf2, Shroom3. These cells are located in the Cerebellum, brain , in or close to the regions: arbor vitae . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5210 Astro-NT NN_1.",
@@ -16260,6 +16419,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Myoc (Mmus), Six3os1 (Mmus), Slc36a2 (Mmus). It is distinguished from other Astro-NT NN_1 cells by expression of Six3os1. These cells are located in the Striatum-like amygdalar nuclei, Olfactory areas, brain , in or close to the regions: Medial amygdalar nucleus . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5211 Astro-NT NN_1.",
               "xrefs": [
@@ -16316,6 +16478,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Agt (Mmus), Prss35 (Mmus), C4b (Mmus). It is distinguished from other Astro-NT NN_1 cells by expression of Kcnk10, C4b. These cells are located in the Medulla, Cerebellum, brain , in or close to the regions: arbor vitae . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5212 Astro-NT NN_1.",
@@ -16386,6 +16551,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Dao (Mmus), Mecom (Mmus), Fbln5 (Mmus), Prelp (Mmus). It is distinguished from other Astro-NT NN_1 cells by expression of Mecom, Prelp. These cells are located in the Medulla, Cerebellum, brain , in or close to the regions: Ventral cochlear nucleus, Paraflocculus, Flocculus, Dorsal cochlear nucleus . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5213 Astro-NT NN_1.",
               "xrefs": [
@@ -16443,6 +16611,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), A330076C08Rik (Mmus), Sfrp5 (Mmus), Gria2 (Mmus). It is distinguished from other Astro-NT NN_2 cells by expression of Fzd2, Gria2, Ttll3. These cells are located in the Midbrain, Thalamus, Pons , in or close to the regions: Midbrain reticular nucleus . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5214 Astro-NT NN_2.",
               "xrefs": [
@@ -16496,6 +16667,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), A330076C08Rik (Mmus), Otx2 (Mmus), Unc13c (Mmus). It is distinguished from other Astro-NT NN_2 cells by expression of Sez6l, Unc13c. These cells are located in the Thalamus , in or close to the regions: Posterior complex of the thalamus, Ventral posteromedial nucleus of the thalamus . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5215 Astro-NT NN_2.",
               "xrefs": [
@@ -16548,6 +16722,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Slc7a10 (Mmus), Cyp26b1 (Mmus), Igfbp2 (Mmus), Shroom3 (Mmus). It is distinguished from other Astro-NT NN_2 cells by expression of Fam227b, Shroom3. These cells are located in the Midbrain, Medulla, Pons . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5216 Astro-NT NN_2.",
@@ -16610,6 +16787,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Aqp4 (Mmus), A330076C08Rik (Mmus), Fbln5 (Mmus), Mdga2 (Mmus). It is distinguished from other Astro-NT NN_2 cells by expression of Gm30524. These cells are located in the Medulla, Cerebellum, brain , in or close to the regions: Ventral cochlear nucleus, arbor vitae . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5217 Astro-NT NN_2.",
               "xrefs": [
@@ -16662,6 +16842,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Myoc (Mmus), Lhx2 (Mmus), Kcne1l (Mmus), Alpk1 (Mmus). It is distinguished from other Astro-TE NN_1 cells by expression of Myoc, Kcne1l, Alpk1. These cells are located in the Isocortex, Olfactory areas, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5218 Astro-TE NN_1.",
@@ -16716,6 +16899,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gfap (Mmus), Ddn (Mmus), Myoc (Mmus), Rasl10b (Mmus). It is distinguished from other Astro-TE NN_1 cells by expression of Rasl10b, Igfbp5. These cells are located in the Hippocampal region, Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5219 Astro-TE NN_1.",
               "xrefs": [
@@ -16760,6 +16946,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Myoc (Mmus), Dio2 (Mmus), Lncpint (Mmus). It is distinguished from other Astro-TE NN_1 cells by expression of Myoc, Lncpint. These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5220 Astro-TE NN_1.",
@@ -16809,6 +16998,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Myoc (Mmus), Sptbn2 (Mmus), Alpk1 (Mmus). It is distinguished from other Astro-TE NN_1 cells by expression of Myoc, Jph4, Alpk1. It is glutamatergic (inferred from expression of Aldh1a1, Slc17a7). These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5221 Astro-TE NN_1.",
@@ -16871,6 +17063,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gm6145 (Mmus), E330013P04Rik (Mmus), Slc39a12 (Mmus). It is distinguished from other Astro-TE NN_2 cells by expression of Clstn2. These cells are located in the Hippocampal region , in or close to the regions: Dentate gyrus, molecular layer, Dentate gyrus, polymorph layer, Field CA3, stratum oriens, Dentate gyrus, granule cell layer . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5222 Astro-TE NN_2.",
               "xrefs": [
@@ -16927,6 +17122,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Mcm6 (Mmus), Egfr (Mmus), Pcsk6 (Mmus). It is distinguished from other Astro-TE NN_2 cells by expression of Mcm6. These cells are located in the Hippocampal region , in or close to the regions: Dentate gyrus, molecular layer, Dentate gyrus, polymorph layer, Dentate gyrus, granule cell layer . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5223 Astro-TE NN_2.",
@@ -16985,6 +17183,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), Cxcl5 (Mmus), Ddn (Mmus). It is distinguished from other Astro-TE NN_3 cells by expression of Cxcl5, Kif5a. These cells are located in the Hippocampal region, Isocortex, Olfactory areas, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5224 Astro-TE NN_3.",
               "xrefs": [
@@ -17033,6 +17234,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of S1pr1 (Mmus), Fam163a (Mmus), Kcnq3 (Mmus), Kcnq1ot1 (Mmus). It is distinguished from other Astro-TE NN_3 cells by expression of Fam163a, Nr2f1, Kcnq1ot1. These cells are located in the Isocortex, Olfactory areas . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5225 Astro-TE NN_3.",
@@ -17091,6 +17295,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of S1pr1 (Mmus), Ranbp3l (Mmus), Emx2os (Mmus), Zic4 (Mmus). It is distinguished from other Astro-TE NN_3 cells by expression of Zic4. These cells are located in the Lateral septal complex, Isocortex, Olfactory areas , in or close to the regions: Lateral septal nucleus, rostral (rostroventral) part . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5226 Astro-TE NN_3.",
               "xrefs": [
@@ -17148,6 +17355,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of S1pr1 (Mmus), Crym (Mmus), Grin2c (Mmus). It is distinguished from other Astro-TE NN_3 cells by expression of Crym, Gabbr2. These cells are located in the Striatum dorsal region, Striatum ventral region , in or close to the regions: Nucleus accumbens, Caudoputamen . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5227 Astro-TE NN_3.",
               "xrefs": [
@@ -17204,6 +17414,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of S1pr1 (Mmus), Thbs4 (Mmus), Gm29683 (Mmus), Slc39a12 (Mmus). It is distinguished from other Astro-TE NN cells by expression of Gm29683. These cells are located in the Cortical subplate, brain , in or close to the regions: Lateral amygdalar nucleus, external capsule . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5228 Astro-TE NN_4.",
@@ -17274,6 +17487,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of S1pr1 (Mmus), Thbs4 (Mmus), Hs3st3a1 (Mmus), Sfrp1 (Mmus). It is distinguished from other Astro-TE NN_5 cells by expression of Hs3st3a1, Sfrp1. These cells are located in the Olfactory areas, brain , in or close to the regions: Anterior olfactory nucleus, corpus callosum, body, lateral ventricle, corpus callosum, anterior forceps . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5229 Astro-TE NN_5.",
               "xrefs": [
@@ -17339,6 +17555,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of S1pr1 (Mmus), Adamts18 (Mmus), Crym (Mmus). It is distinguished from other Astro-TE NN_5 cells by expression of Adamts18. These cells are located in the Lateral septal complex, Striatum dorsal region, brain , in or close to the regions: Nucleus accumbens, Caudoputamen, lateral ventricle . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5230 Astro-TE NN_5.",
               "xrefs": [
@@ -17391,6 +17610,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gja1 (Mmus), Chrdl1 (Mmus), Ano1 (Mmus), Il33 (Mmus). It is distinguished from other Astro-OLF NN_1 cells by expression of Greb1, Il33. These cells are located in the Olfactory areas, brain , in or close to the regions: Main olfactory bulb . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5231 Astro-OLF NN_1.",
@@ -17449,6 +17671,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Aqp4 (Mmus), Prss23 (Mmus), Stk32a (Mmus). It is distinguished from other Astro-OLF NN_1 cells by expression of Stk32a. These cells are located in the Olfactory areas, brain , in or close to the regions: olfactory nerve layer of main olfactory bulb, Main olfactory bulb . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5232 Astro-OLF NN_1.",
               "xrefs": [
@@ -17505,6 +17730,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Aqp4 (Mmus), Hs3st3a1 (Mmus), Slc25a34 (Mmus), C4b (Mmus). It is distinguished from other Astro-OLF NN_2 cells by expression of Slc25a34, C4b. These cells are located in the Olfactory areas, brain , in or close to the regions: Main olfactory bulb, outer plexiform layer, Main olfactory bulb . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5233 Astro-OLF NN_2.",
@@ -17563,6 +17791,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of S1pr1 (Mmus), Chrdl1 (Mmus), Sfrp1 (Mmus), Atp13a4 (Mmus). It is distinguished from other Astro-OLF NN_2 cells by expression of Alk, Atp13a4. These cells are located in the Olfactory areas , in or close to the regions: Anterior olfactory nucleus, Main olfactory bulb, granule layer, Main olfactory bulb, mitral layer . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5234 Astro-OLF NN_2.",
               "xrefs": [
@@ -17611,6 +17842,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of C230072F16Rik (Mmus), Dipk1c (Mmus), Ecrg4 (Mmus). It is distinguished from other Astro-OLF NN_3 cells by expression of Ecrg4. These cells are located in the Olfactory areas , in or close to the regions: Main olfactory bulb, granule layer . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5235 Astro-OLF NN_3.",
@@ -17664,6 +17898,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A astrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of S1pr1 (Mmus), 6530411M01Rik (Mmus), Sfrp1 (Mmus), Aqp4 (Mmus). It is distinguished from other Astro-OLF NN_3 cells by expression of Sfrp1, Aqp4. These cells are located in the Olfactory areas , in or close to the regions: Main olfactory bulb, granule layer, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5236 Astro-OLF NN_3.",
@@ -17719,7 +17956,7 @@
               }
             ],
             "comments": [
-              "Rationale for assigning this type to reference data: Mapping to tanycyte of subfornical organ based on spatial transcriptomics evidence."
+              "Rationale for assigning this type to reference data: Mapping to tanycyte of subfornical organ based on spatial transcriptomics evidence. Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A tanycyte of subfornical organ of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cnmd (Mmus), Sfta3-ps (Mmus). It is distinguished from other Tanycyte NN_1 cells by expression of Cnmd. These cells are located in the brain , in or close to the regions: choroid plexus, third ventricle . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5243 Tanycyte NN_1.",
@@ -17774,6 +18011,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A tanycyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of C230072F16Rik (Mmus), Glp1r (Mmus). It is distinguished from other Tanycyte NN_1 cells by expression of Glp1r. These cells are located in the Hypothalamus, brain , in or close to the regions: Anteroventral periventricular nucleus . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5244 Tanycyte NN_1.",
               "xrefs": [
@@ -17822,6 +18062,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A alpha1-tanycyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Dynlrb2 (Mmus), Mylk3 (Mmus), Sfta3-ps (Mmus). It is distinguished from other Tanycyte NN_2 cells by expression of Mylk3. It is glutamatergic (inferred from expression of Slc17a8). These cells are located in the Hypothalamus , in or close to the regions: Periventricular hypothalamic nucleus, intermediate part . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5245 Tanycyte NN_2.",
@@ -17884,6 +18127,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A alpha1-tanycyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Ccdc170 (Mmus), Nkx2-4 (Mmus), Dock8 (Mmus). It is distinguished from other Tanycyte NN_2 cells by expression of Mroh5. These cells are located in the Hypothalamus, brain , in or close to the regions: Periventricular hypothalamic nucleus, intermediate part, third ventricle, Arcuate hypothalamic nucleus . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5246 Tanycyte NN_2.",
               "xrefs": [
@@ -17936,6 +18182,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A alpha2-tanycyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pdzph1 (Mmus), Wdr63 (Mmus), Dscaml1 (Mmus), P3h2 (Mmus). It is distinguished from other Tanycyte NN_2 cells by expression of Dscaml1, P3h2. These cells are located in the Hypothalamus , in or close to the regions: Periventricular hypothalamic nucleus, posterior part, Arcuate hypothalamic nucleus . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5247 Tanycyte NN_2.",
@@ -17994,6 +18243,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A tanycyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Ccdc146 (Mmus), Tbx3 (Mmus), Otx2 (Mmus). It is distinguished from other Tanycyte NN_2 cells by expression of Otx2, Nkx2-4. These cells are located in the Hypothalamus, brain , in or close to the regions: Periventricular hypothalamic nucleus, posterior part, third ventricle . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5248 Tanycyte NN_2.",
               "xrefs": [
@@ -18050,6 +18302,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A beta1-tanycyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr50 (Mmus), Frzb (Mmus), Foxd2os (Mmus). It is distinguished from other Tanycyte NN_2 cells by expression of Col25a1, C230072F16Rik. These cells are located in the Hypothalamus, brain , in or close to the regions: third ventricle, Arcuate hypothalamic nucleus . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5249 Tanycyte NN_2.",
@@ -18111,6 +18366,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A beta2-tanycyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Fndc3c1 (Mmus), Ecrg4 (Mmus). It is distinguished from other Tanycyte NN cells by expression of Ecrg4. These cells are located in the Hypothalamus, brain , in or close to the regions: Median eminence, third ventricle, Arcuate hypothalamic nucleus . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5250 Tanycyte NN_3.",
@@ -18186,7 +18444,7 @@
               }
             ],
             "comments": [
-              "Rationale for assigning this type to reference data: Mapping of this cell set to the hypendemal cell type is supported by its location to the subcommisural organ (from spatial transcriptomics), its expression of Sspo and its general transcriptomic classification in a class (Astro-Epen) along with epdendymal cells, tanycytes and astrocytes."
+              "Rationale for assigning this type to reference data: Mapping of this cell set to the hypendemal cell type is supported by its location to the subcommisural organ (from spatial transcriptomics), its expression of Sspo and its general transcriptomic classification in a class (Astro-Epen) along with epdendymal cells, tanycytes and astrocytes. Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A hypendymal cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Sspo (Mmus), Wfdc2 (Mmus). It is distinguished from other Astro-Epen cells by expression of Sspo, Wfdc2. These cells are located in the Midbrain, brain , in or close to the regions: third ventricle, posterior commissure, Subcommissural organ . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5263 Hypendymal NN_1.",
@@ -18254,6 +18512,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A choroid plexus epithelial cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 2900040C04Rik (Mmus), Tbc1d1 (Mmus). It is distinguished from other CHOR NN cells by expression of Tbc1d1. These cells are located in the Cerebellum, brain , in or close to the regions: Paraflocculus, choroid plexus . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5264 CHOR NN_1.",
               "xrefs": [
@@ -18307,6 +18568,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_30.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A choroid plexus epithelial cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 2900040C04Rik (Mmus), Slc17a8 (Mmus). It is distinguished from other CHOR NN cells by expression of Slc17a8. It is glutamatergic (inferred from expression of Slc17a8). These cells are located in the brain , in or close to the regions: choroid plexus, lateral ventricle . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5265 CHOR NN_1.",
               "xrefs": [
@@ -18355,6 +18619,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A oligodendrocyte precursor cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pdgfra (Mmus), Pclaf (Mmus), Mki67 (Mmus), Foxg1 (Mmus). It is distinguished from other OPC NN_1 cells by expression of Neil3, Foxg1. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5266 OPC NN_1.",
@@ -18417,6 +18684,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A oligodendrocyte precursor cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pdgfra (Mmus), Pclaf (Mmus), Irx2 (Mmus). It is distinguished from other OPC NN_1 cells by expression of Neil3, Irx2. These cells are located in the Cerebellum, brain, Midbrain, Pons, Medulla . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5267 OPC NN_1.",
               "xrefs": [
@@ -18470,6 +18740,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A oligodendrocyte precursor cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pdgfra (Mmus), Olig1 (Mmus), Mms22l (Mmus), Top2a (Mmus). It is distinguished from other OPC NN_1 cells by expression of Mms22l, Foxg1, Top2a. These cells are located in the Isocortex, Olfactory areas, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5268 OPC NN_1.",
               "xrefs": [
@@ -18522,6 +18795,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A oligodendrocyte precursor cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pdgfra (Mmus), Olig1 (Mmus), Col27a1 (Mmus). It is distinguished from other OPC NN_1 cells by expression of Col27a1. These cells are located in the Midbrain, Pons, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5269 OPC NN_1.",
@@ -18580,6 +18856,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A oligodendrocyte precursor cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pdgfra (Mmus), Olig1 (Mmus), Rmi2 (Mmus), Col27a1 (Mmus). It is distinguished from other OPC NN_1 cells by expression of Rmi2, Col27a1. These cells are located in the Hypothalamus, Midbrain, Pallidum, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5270 OPC NN_1.",
               "xrefs": [
@@ -18628,6 +18907,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A oligodendrocyte precursor cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Pdgfra (Mmus), Cenpf (Mmus), Cenpa (Mmus). It is distinguished from other OPC NN cells by expression of Cenpa. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5271 OPC NN_2.",
@@ -18682,6 +18964,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Bmp4 (Mmus), Zfp36l1 (Mmus). It is distinguished from other COP NN_1 cells by expression of Rgcc, Plpp4. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5272 COP NN_1.",
               "xrefs": [
@@ -18731,6 +19016,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Gp1bb (Mmus), Pdzd2 (Mmus), Plekhg1 (Mmus). It is distinguished from other COP NN_1 cells by expression of Rgcc, 9130019P16Rik. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5273 COP NN_1.",
               "xrefs": [
@@ -18775,6 +19063,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Gpr17 (Mmus), Bgn (Mmus), Gstp1 (Mmus), C1ql1 (Mmus). It is distinguished from other COP NN_1 cells by expression of C1ql1, Gstp1. These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5274 COP NN_1.",
@@ -18821,6 +19112,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Bmp4 (Mmus), Mob3b (Mmus). It is distinguished from other COP NN_1 cells by expression of Bmp4, Mob3b. These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5275 COP NN_1.",
               "xrefs": [
@@ -18865,6 +19159,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Rab32 (Mmus), Opalin (Mmus). It is distinguished from other COP NN_1 cells by expression of Vwc2, Opalin. These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5276 COP NN_1.",
@@ -18919,6 +19216,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A committed oligodendrocyte precursor of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Bmp4 (Mmus), Cck (Mmus), Ptger1 (Mmus). It is distinguished from other COP NN_1 cells by expression of Bmp4, Cck, Ptger1. These cells are located in the Isocortex, Olfactory areas, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5277 COP NN_1.",
               "xrefs": [
@@ -18972,6 +19272,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A newly formed oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Grin2b (Mmus). It is distinguished from other NFOL NN_2 cells by expression of 9630013A20Rik, Grin2b. These cells are located in the Midbrain, Thalamus, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5278 NFOL NN_2.",
               "xrefs": [
@@ -19020,6 +19323,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A newly formed oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Dbx2 (Mmus), Rassf10 (Mmus). It is distinguished from other NFOL NN_2 cells by expression of Dbx2, Rassf10. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5279 NFOL NN_2.",
@@ -19070,6 +19376,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A newly formed oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Rgs16 (Mmus), Rhbdl2 (Mmus). It is distinguished from other NFOL NN_2 cells by expression of Rgs16, Rhbdl2. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5280 NFOL NN_2.",
               "xrefs": [
@@ -19119,6 +19428,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A newly formed oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Piezo2 (Mmus), Ptprb (Mmus). It is distinguished from other NFOL NN_2 cells by expression of Il23a, Opalin, Ptprb. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5281 NFOL NN_2.",
               "xrefs": [
@@ -19167,6 +19479,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A myelin-forming oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Opalin (Mmus), Cxcl12 (Mmus), Efhd1 (Mmus). It is distinguished from other MFOL NN_3 cells by expression of Cxcl12, Efhd1. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5282 MFOL NN_3.",
@@ -19221,6 +19536,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A myelin-forming oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of 9630013A20Rik (Mmus), Ppp1r14a (Mmus), Mroh3 (Mmus). It is distinguished from other MFOL NN_3 cells by expression of Il23a, Ppp1r14a. These cells are located in the Midbrain, Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5283 MFOL NN_3.",
               "xrefs": [
@@ -19269,6 +19587,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A mature myelinating oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Prr5l (Mmus), Hapln2 (Mmus), Enpp6 (Mmus), Grm7 (Mmus). It is distinguished from other MOL NN_4 cells by expression of Plin3, Grm7. These cells are located in the Medulla, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5284 MOL NN_4.",
@@ -19323,6 +19644,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A mature myelinating oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cldn11 (Mmus), A230001M10Rik (Mmus), Spock3 (Mmus), Rhoj (Mmus). It is distinguished from other MOL NN_4 cells by expression of Spock3, Rhoj. These cells are located in the Midbrain, Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5285 MOL NN_4.",
               "xrefs": [
@@ -19376,6 +19700,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A mature myelinating oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Apod (Mmus), Klk6 (Mmus), Dlc1 (Mmus). It is distinguished from other MOL NN_4 cells by expression of Art3. These cells are located in the Medulla, Pons, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5286 MOL NN_4.",
               "xrefs": [
@@ -19424,6 +19751,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A mature myelinating oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Opalin (Mmus), Grm3 (Mmus), Gm5087 (Mmus). It is distinguished from other MOL NN_4 cells by expression of Il33, Gm5087. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5287 MOL NN_4.",
@@ -19474,6 +19804,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_31.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A mature myelinating oligodendrocyte of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Mog (Mmus), Anln (Mmus), Gm32633 (Mmus). It is distinguished from other MOL NN_4 cells by expression of Sspo, Selenop. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5288 MOL NN_4.",
               "xrefs": [
@@ -19523,6 +19856,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_32.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A olfactory ensheathing cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Cldn5 (Mmus), Adamts12 (Mmus). It is distinguished from other OEC cells by expression of Adamts12. These cells are located in the brain , in or close to the regions: olfactory nerve layer of main olfactory bulb . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5289 OEC NN_1.",
               "xrefs": [
@@ -19571,6 +19907,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_32.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A olfactory ensheathing cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Apod (Mmus), Aqp1 (Mmus), Cldn5 (Mmus). It is distinguished from other OEC cells by expression of Gdpd4, Cldn5. These cells are located in the brain , in or close to the regions: olfactory nerve layer of main olfactory bulb . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5290 OEC NN_1.",
@@ -19629,6 +19968,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_32.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A olfactory ensheathing cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Apod (Mmus), Mybpc1 (Mmus), Syk (Mmus). It is distinguished from other OEC cells by expression of A330076C08Rik. These cells are located in the Olfactory areas, brain , in or close to the regions: olfactory nerve layer of main olfactory bulb, Main olfactory bulb . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5291 OEC NN_1.",
               "xrefs": [
@@ -19673,6 +20015,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_32.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A olfactory ensheathing cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Apod (Mmus), Mybpc1 (Mmus), Rasgef1c (Mmus). It is distinguished from other OEC cells by expression of Rasgef1c. It is glutamatergic (inferred from expression of Slc17a7). These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5292 OEC NN_1.",
@@ -19719,6 +20064,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_33.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A arachnoid barrier cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Slc47a1 (Mmus), Pde11a (Mmus). It is distinguished from other ABC NN cells by expression of Pde11a. These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5293 ABC NN_1.",
               "xrefs": [
@@ -19764,6 +20112,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_33.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A arachnoid barrier cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Slc47a1 (Mmus), Dapl1 (Mmus). It is distinguished from other ABC NN cells by expression of Dapl1. These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5294 ABC NN_1.",
               "xrefs": [
@@ -19808,6 +20159,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_33.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A arachnoid barrier cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Prg4 (Mmus), Cubn (Mmus). It is distinguished from other ABC NN cells by expression of Cubn. These cells are located in the brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5295 ABC NN_1.",
@@ -19861,6 +20215,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_34.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A microglial cell of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of C1qa (Mmus), Tmem119 (Mmus). It is distinguished from other Immune cells by expression of C1qa, Tmem119. These cells are located in the Isocortex, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5312 Microglia NN_1.",
@@ -19923,6 +20280,9 @@
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_34.h5ad"
               }
             ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
+            ],
             "definition": {
               "val": "A border associated macrophage of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Mrc1 (Mmus), Pf4 (Mmus). It is distinguished from other BAM NN cells by expression of Mrc1, Pf4. These cells are located in the Medulla, Cerebellum, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5313 BAM NN_1.",
               "xrefs": [
@@ -19975,6 +20335,9 @@
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://purl.brain-bican.org/taxonomy/CCN20230722/CS20230722_CLAS_34.h5ad"
               }
+            ],
+            "comments": [
+              "Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions."
             ],
             "definition": {
               "val": "A border associated macrophage of the Mus musculus brain. It is distinguished from other cells in the brain by selective expression of Mrc1 (Mmus), Pf4 (Mmus), Fos (Mmus). It is distinguished from other BAM NN cells by expression of Fos. These cells are located in the Isocortex, Cerebellum, brain . Reference transcriptomic data for this type can be found in the dataset/taxonomy - Yao et al. (2023), Whole Mouse Brain in cell set Cluster:5314 BAM NN_1.",
