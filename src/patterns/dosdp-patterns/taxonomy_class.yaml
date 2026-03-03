@@ -34,7 +34,7 @@ annotationProperties:
   'has nsforest marker': "PCL:0010058"
   some_soma_located_in: "CLM:0010001"
 #  assay_label: "PCL:0010064"
-  assay: "OBI:0000070"
+  assay: "<http://purl.org/ccf/assay_type>"
   cell_ratio: "CLM:0010002"
   'has minimal marker': "PCL:0010066"
   evidence: "oboInOwl:evidence"
