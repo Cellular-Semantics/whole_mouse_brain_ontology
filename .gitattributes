@@ -1,0 +1,2 @@
+wmbo-base.json filter=lfs diff=lfs merge=lfs -text
+src/ontology/components/all_templates.owl filter=lfs diff=lfs merge=lfs -text

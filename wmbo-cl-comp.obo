@@ -711,13 +711,13 @@ is_a: CL:0000679
 is_a: CL:0011111 {evidence="http://identifiers.org/ncbigene/140919", evidence="http://identifiers.org/ncbigene/14415", evidence="http://identifiers.org/ncbigene/14417"}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="Inferred to be glutamate secretion, neurotransmission based on expression of Gad1, Slc17a6, Gad2"}
-property_value: CLM:0010001 MBA:1097 {CLM:0010002="0.22", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:258 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:564 {CLM:0010002="0.25", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:596 {CLM:0010002="0.15", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:698 {CLM:0010002="0.11", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:803 {CLM:0010002="0.42", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.14", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:1097 {CLM:0010002="0.22", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:258 {CLM:0010002="0.1", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:564 {CLM:0010002="0.25", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:596 {CLM:0010002="0.15", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:698 {CLM:0010002="0.11", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:803 {CLM:0010002="0.42", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.14", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5004314
 property_value: CLM:0010003 CLM:5007635 {STATO:0000663="0.9917355"}
 property_value: CLM:0010003 CLM:5007802 {STATO:0000663="0.9917355"}
@@ -738,8 +738,8 @@ synonym: "4606 Pineal Crx Glut_1" EXACT []
 is_a: CL:0000652 {evidence="http://identifiers.org/ncbigene/13195", evidence="http://identifiers.org/ncbigene/140919", evidence="http://identifiers.org/ncbigene/72961"}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="Inferred to be glutamate secretion, neurotransmission based on expression of Ddc, Slc17a6, Slc17a7"}
-property_value: CLM:0010001 MBA:129 {CLM:0010002="0.38", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="1.0", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:129 {CLM:0010002="0.38", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="1.0", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5006356
 property_value: CLM:0010003 CLM:5007645 {STATO:0000663="0.9782609"}
 property_value: CLM:0010003 CLM:5007922 {STATO:0000663="0.9782609"}
@@ -759,12 +759,12 @@ synonym: "5172 DCO Il22 Gly-Gaba_2" EXACT []
 is_a: CL:4300348 ! DCO Il22 Gly-Gaba cerebellar neuron (Mmus)
 relationship: RO:0002215 GO:0061534 {comment="Inferred to be gamma-aminobutyric acid secretion, neurotransmission, glycine secretion, neurotransmission based on expression of Slc32a1, Hdc, Slc6a5, Gad2, Gad1"}
 relationship: RO:0002215 GO:0061537 {comment="Inferred to be gamma-aminobutyric acid secretion, neurotransmission, glycine secretion, neurotransmission based on expression of Slc32a1, Hdc, Slc6a5, Gad2, Gad1"}
-property_value: CLM:0010001 MBA:1041 {CLM:0010002="0.2", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:354 {CLM:0010002="0.44", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:512 {CLM:0010002="0.25", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:728 {CLM:0010002="0.16", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:96 {CLM:0010002="0.44", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.31", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:1041 {CLM:0010002="0.2", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:354 {CLM:0010002="0.44", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:512 {CLM:0010002="0.25", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:728 {CLM:0010002="0.16", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:96 {CLM:0010002="0.44", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.31", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5006922 {STATO:0000663="0.8910891"}
 property_value: CLM:0010003 CLM:5022142 {STATO:0000663="0.9292035"}
 property_value: IAO:0000028 "DCO Il22 Gly-Gaba_2 (Mmus)" xsd:string
@@ -780,11 +780,11 @@ synonym: "1147 CB PLI Gly-Gaba_4" EXACT []
 synonym: "5185 CB PLI Gly-Gaba_4" EXACT []
 is_a: CL:4300349 ! Purkinje layer interneuron (Mmus)
 relationship: RO:0002215 GO:0061534 {comment="Inferred to be gamma-aminobutyric acid secretion, neurotransmission based on expression of Gad1, Gad2, Slc32a1"}
-property_value: CLM:0010001 MBA:512 {CLM:0010002="0.76", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:728 {CLM:0010002="0.14", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:91 {CLM:0010002="0.11", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:968 {CLM:0010002="0.17", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.2", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:512 {CLM:0010002="0.76", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:728 {CLM:0010002="0.14", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:91 {CLM:0010002="0.11", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:968 {CLM:0010002="0.17", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.2", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5006935 {STATO:0000663="0.8"}
 property_value: CLM:0010003 CLM:5022155 {STATO:0000663="0.9459459"}
 property_value: IAO:0000028 "CB PLI Gly-Gaba_4 (Mmus)" xsd:string
@@ -802,8 +802,8 @@ synonym: "5192 CBX MLI Cdh22 Gaba_1" EXACT []
 is_a: CL:4042035 {evidence="http://identifiers.org/ncbigene/14415", evidence="http://identifiers.org/ncbigene/14417", evidence="http://identifiers.org/ncbigene/22348"}
 is_a: CL:4300028 ! cerebellar GABAergic neuron (Mmus)
 relationship: RO:0002215 GO:0061534 {comment="Inferred to be gamma-aminobutyric acid secretion, neurotransmission based on expression of Gad1, Gad2, Slc32a1"}
-property_value: CLM:0010001 MBA:512 {CLM:0010002="0.69", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.31", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:512 {CLM:0010002="0.69", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.31", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5006942 {STATO:0000663="0.6132075"}
 property_value: CLM:0010003 CLM:5007972 {STATO:0000663="0.5508475"}
 property_value: CLM:0010003 CLM:5022162
@@ -820,8 +820,8 @@ synonym: "1157 Bergmann NN_1" EXACT []
 synonym: "316 Bergmann NN" EXACT []
 synonym: "5206 Bergmann NN_1" EXACT []
 is_a: CL:0000644 {evidence="http://identifiers.org/ncbigene/11668"}
-property_value: CLM:0010001 MBA:512 {CLM:0010002="0.73", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.27", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:512 {CLM:0010002="0.73", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.27", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5006956 {STATO:0000663="0.8908046"}
 property_value: CLM:0010003 CLM:5007976 {STATO:0000663="0.8908046"}
 property_value: CLM:0010003 CLM:5022176
@@ -838,9 +838,9 @@ synonym: "1158 Astro-CB NN_1" EXACT []
 synonym: "317 Astro-CB NN" EXACT []
 synonym: "5207 Astro-CB NN_1" EXACT []
 is_a: CL:0002603 {evidence="http://identifiers.org/ncbigene/11668"}
-property_value: CLM:0010001 MBA:512 {CLM:0010002="0.65", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:728 {CLM:0010002="0.14", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.34", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:512 {CLM:0010002="0.65", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:728 {CLM:0010002="0.14", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.34", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5006957 {STATO:0000663="0.6321839"}
 property_value: CLM:0010003 CLM:5007977 {STATO:0000663="0.6849315"}
 property_value: CLM:0010003 CLM:5022177
@@ -855,9 +855,9 @@ def: "A astrocyte of the Mus musculus brain. It is distinguished from other cell
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5208 Astro-NT NN_1" EXACT []
 is_a: CL:4301589 ! Astro-NT NN_1 astrocyte (Mmus)
-property_value: CLM:0010001 MBA:512 {CLM:0010002="0.32", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:728 {CLM:0010002="0.15", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.57", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:512 {CLM:0010002="0.32", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:728 {CLM:0010002="0.15", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.57", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5006958 {STATO:0000663="0.3030303"}
 property_value: CLM:0010003 CLM:5022178 {STATO:0000663="0.74"}
 property_value: IAO:0000028 "Astro-NT NN_1 Galnt15 (Mmus)" xsd:string
@@ -871,9 +871,9 @@ def: "A astrocyte of the Mus musculus brain. It is distinguished from other cell
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5209 Astro-NT NN_1" EXACT []
 is_a: CL:4301589 ! Astro-NT NN_1 astrocyte (Mmus)
-property_value: CLM:0010001 MBA:313 {CLM:0010002="0.12", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:512 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.56", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:313 {CLM:0010002="0.12", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:512 {CLM:0010002="0.1", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.56", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5006959 {STATO:0000663="0.35714287"}
 property_value: CLM:0010003 CLM:5022179 {STATO:0000663="0.4878049"}
 property_value: IAO:0000028 "Astro-NT NN_1 Slc36a2 (Mmus)" xsd:string
@@ -887,9 +887,9 @@ def: "A astrocyte of the Mus musculus brain. It is distinguished from other cell
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5210 Astro-NT NN_1" EXACT []
 is_a: CL:4301589 ! Astro-NT NN_1 astrocyte (Mmus)
-property_value: CLM:0010001 MBA:512 {CLM:0010002="0.26", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:728 {CLM:0010002="0.16", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.51", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:512 {CLM:0010002="0.26", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:728 {CLM:0010002="0.16", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.51", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5006960 {STATO:0000663="0.27027026"}
 property_value: CLM:0010003 CLM:5022180 {STATO:0000663="0.4918033"}
 property_value: IAO:0000028 "Astro-NT NN_1 Nuf2 (Mmus)" xsd:string
@@ -903,10 +903,10 @@ def: "A astrocyte of the Mus musculus brain. It is distinguished from other cell
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5211 Astro-NT NN_1" EXACT []
 is_a: CL:4301589 ! Astro-NT NN_1 astrocyte (Mmus)
-property_value: CLM:0010001 MBA:278 {CLM:0010002="0.12", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:403 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:698 {CLM:0010002="0.14", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.48", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:278 {CLM:0010002="0.12", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:403 {CLM:0010002="0.1", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:698 {CLM:0010002="0.14", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.48", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5006961 {STATO:0000663="0.3030303"}
 property_value: CLM:0010003 CLM:5022181 {STATO:0000663="0.6097561"}
 property_value: IAO:0000028 "Astro-NT NN_1 Six3os1 (Mmus)" xsd:string
@@ -920,10 +920,10 @@ def: "A astrocyte of the Mus musculus brain. It is distinguished from other cell
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5212 Astro-NT NN_1" EXACT []
 is_a: CL:4301589 ! Astro-NT NN_1 astrocyte (Mmus)
-property_value: CLM:0010001 MBA:354 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:512 {CLM:0010002="0.21", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:728 {CLM:0010002="0.2", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.58", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:354 {CLM:0010002="0.1", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:512 {CLM:0010002="0.21", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:728 {CLM:0010002="0.2", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.58", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5006962 {STATO:0000663="0.16129032"}
 property_value: CLM:0010003 CLM:5022182 {STATO:0000663="0.16129032"}
 property_value: IAO:0000028 "Astro-NT NN_1 Kcnk10 (Mmus)" xsd:string
@@ -937,13 +937,13 @@ def: "A astrocyte of the Mus musculus brain. It is distinguished from other cell
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5213 Astro-NT NN_1" EXACT []
 is_a: CL:4301589 ! Astro-NT NN_1 astrocyte (Mmus)
-property_value: CLM:0010001 MBA:101 {CLM:0010002="0.35", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:1041 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:1049 {CLM:0010002="0.18", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:354 {CLM:0010002="0.5", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:512 {CLM:0010002="0.3", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:96 {CLM:0010002="0.14", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.2", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:101 {CLM:0010002="0.35", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:1041 {CLM:0010002="0.1", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:1049 {CLM:0010002="0.18", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:354 {CLM:0010002="0.5", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:512 {CLM:0010002="0.3", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:96 {CLM:0010002="0.14", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.2", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5006963 {STATO:0000663="0.5882353"}
 property_value: CLM:0010003 CLM:5022183 {STATO:0000663="0.5"}
 property_value: IAO:0000028 "Astro-NT NN_1 Mecom (Mmus)" xsd:string
@@ -957,10 +957,10 @@ def: "A astrocyte of the Mus musculus brain. It is distinguished from other cell
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5214 Astro-NT NN_2" EXACT []
 is_a: CL:4301590 ! Astro-NT NN_2 astrocyte (Mmus)
-property_value: CLM:0010001 MBA:128 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:313 {CLM:0010002="0.56", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:549 {CLM:0010002="0.11", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:771 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:128 {CLM:0010002="0.1", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:313 {CLM:0010002="0.56", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:549 {CLM:0010002="0.11", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:771 {CLM:0010002="0.1", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5006964 {STATO:0000663="0.2631579"}
 property_value: CLM:0010003 CLM:5022184 {STATO:0000663="0.3030303"}
 property_value: IAO:0000028 "Astro-NT NN_2 Fzd2 (Mmus)" xsd:string
@@ -974,9 +974,9 @@ def: "A astrocyte of the Mus musculus brain. It is distinguished from other cell
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5215 Astro-NT NN_2" EXACT []
 is_a: CL:4301590 ! Astro-NT NN_2 astrocyte (Mmus)
-property_value: CLM:0010001 MBA:1020 {CLM:0010002="0.14", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:549 {CLM:0010002="0.91", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:733 {CLM:0010002="0.17", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:1020 {CLM:0010002="0.14", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:549 {CLM:0010002="0.91", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:733 {CLM:0010002="0.17", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
 property_value: CLM:0010003 CLM:5006965 {STATO:0000663="0.24193548"}
 property_value: CLM:0010003 CLM:5022185 {STATO:0000663="0.44871795"}
 property_value: IAO:0000028 "Astro-NT NN_2 Sez6l (Mmus)" xsd:string
@@ -990,9 +990,9 @@ def: "A astrocyte of the Mus musculus brain. It is distinguished from other cell
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5216 Astro-NT NN_2" EXACT []
 is_a: CL:4301590 ! Astro-NT NN_2 astrocyte (Mmus)
-property_value: CLM:0010001 MBA:313 {CLM:0010002="0.19", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:354 {CLM:0010002="0.35", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:771 {CLM:0010002="0.27", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:313 {CLM:0010002="0.19", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:354 {CLM:0010002="0.35", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:771 {CLM:0010002="0.27", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5006966 {STATO:0000663="0.1724138"}
 property_value: CLM:0010003 CLM:5022186 {STATO:0000663="0.2857143"}
 property_value: IAO:0000028 "Astro-NT NN_2 Fam227b (Mmus)" xsd:string
@@ -1006,11 +1006,11 @@ def: "A astrocyte of the Mus musculus brain. It is distinguished from other cell
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5217 Astro-NT NN_2" EXACT []
 is_a: CL:4301590 ! Astro-NT NN_2 astrocyte (Mmus)
-property_value: CLM:0010001 MBA:101 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:354 {CLM:0010002="0.33", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:512 {CLM:0010002="0.26", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:728 {CLM:0010002="0.11", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.22", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:101 {CLM:0010002="0.1", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:354 {CLM:0010002="0.33", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:512 {CLM:0010002="0.26", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:728 {CLM:0010002="0.11", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.22", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5006967 {STATO:0000663="0.09259259"}
 property_value: CLM:0010003 CLM:5022187 {STATO:0000663="0.5555556"}
 property_value: IAO:0000028 "Astro-NT NN_2 Gm30524 (Mmus)" xsd:string
@@ -1024,9 +1024,9 @@ def: "A astrocyte of the Mus musculus brain. It is distinguished from other cell
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5218 Astro-TE NN_1" EXACT []
 is_a: CL:4301591 ! Astro-TE NN_1 astrocyte (Mmus)
-property_value: CLM:0010001 MBA:315 {CLM:0010002="0.23", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:698 {CLM:0010002="0.15", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.55", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:315 {CLM:0010002="0.23", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:698 {CLM:0010002="0.15", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.55", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5006968 {STATO:0000663="0.1724138"}
 property_value: CLM:0010003 CLM:5022188 {STATO:0000663="0.3030303"}
 property_value: IAO:0000028 "Astro-TE NN_1 Myoc (Mmus)" xsd:string
@@ -1040,9 +1040,9 @@ def: "A astrocyte of the Mus musculus brain. It is distinguished from other cell
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5219 Astro-TE NN_1" EXACT []
 is_a: CL:4301591 ! Astro-TE NN_1 astrocyte (Mmus)
-property_value: CLM:0010001 MBA:1080 {CLM:0010002="0.15", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:315 {CLM:0010002="0.2", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.42", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:1080 {CLM:0010002="0.15", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:315 {CLM:0010002="0.2", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.42", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5006969 {STATO:0000663="0.09259259"}
 property_value: CLM:0010003 CLM:5022189 {STATO:0000663="0.48319328"}
 property_value: IAO:0000028 "Astro-TE NN_1 Rasl10b (Mmus)" xsd:string
@@ -1056,7 +1056,7 @@ def: "A astrocyte of the Mus musculus brain. It is distinguished from other cell
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5220 Astro-TE NN_1" EXACT []
 is_a: CL:4301591 ! Astro-TE NN_1 astrocyte (Mmus)
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.67", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.67", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5006970 {STATO:0000663="0.20588236"}
 property_value: CLM:0010003 CLM:5022190 {STATO:0000663="0.1724138"}
 property_value: IAO:0000028 "Astro-TE NN_1 Lncpint (Mmus)" xsd:string
@@ -1072,8 +1072,8 @@ synonym: "5221 Astro-TE NN_1" EXACT []
 is_a: CL:0000151
 is_a: CL:4301591 ! Astro-TE NN_1 astrocyte (Mmus)
 relationship: RO:0002215 GO:0061535 {comment="Inferred to be glutamate secretion, neurotransmission based on expression of Aldh1a1, Slc17a7"}
-property_value: CLM:0010001 MBA:315 {CLM:0010002="0.19", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.76", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:315 {CLM:0010002="0.19", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.76", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5006971 {STATO:0000663="0.26595744"}
 property_value: CLM:0010003 CLM:5022191 {STATO:0000663="0.5797101"}
 property_value: IAO:0000028 "Astro-TE NN_1 Jph4 (Mmus)" xsd:string
@@ -1087,11 +1087,11 @@ def: "A astrocyte of the Mus musculus brain. It is distinguished from other cell
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5222 Astro-TE NN_2" EXACT []
 is_a: CL:4301592 ! Astro-TE NN_2 astrocyte (Mmus)
-property_value: CLM:0010001 MBA:10703 {CLM:0010002="0.19", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:10704 {CLM:0010002="0.19", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:1080 {CLM:0010002="0.97", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:486 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:632 {CLM:0010002="0.27", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:10703 {CLM:0010002="0.19", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:10704 {CLM:0010002="0.19", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:1080 {CLM:0010002="0.97", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:486 {CLM:0010002="0.1", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:632 {CLM:0010002="0.27", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
 property_value: CLM:0010003 CLM:5006972 {STATO:0000663="0.39215687"}
 property_value: CLM:0010003 CLM:5022192 {STATO:0000663="0.7758621"}
 property_value: IAO:0000028 "Astro-TE NN_2 Clstn2 (Mmus)" xsd:string
@@ -1105,10 +1105,10 @@ def: "A astrocyte of the Mus musculus brain. It is distinguished from other cell
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5223 Astro-TE NN_2" EXACT []
 is_a: CL:4301592 ! Astro-TE NN_2 astrocyte (Mmus)
-property_value: CLM:0010001 MBA:10703 {CLM:0010002="0.26", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:10704 {CLM:0010002="0.14", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:1080 {CLM:0010002="0.9", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:632 {CLM:0010002="0.27", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:10703 {CLM:0010002="0.26", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:10704 {CLM:0010002="0.14", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:1080 {CLM:0010002="0.9", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:632 {CLM:0010002="0.27", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
 property_value: CLM:0010003 CLM:5006973 {STATO:0000663="0.2777778"}
 property_value: CLM:0010003 CLM:5022193 {STATO:0000663="0.4878049"}
 property_value: IAO:0000028 "Astro-TE NN_2 Mcm6 (Mmus)" xsd:string
@@ -1122,10 +1122,10 @@ def: "A astrocyte of the Mus musculus brain. It is distinguished from other cell
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5224 Astro-TE NN_3" EXACT []
 is_a: CL:4301593 ! Astro-TE NN_3 astrocyte (Mmus)
-property_value: CLM:0010001 MBA:1080 {CLM:0010002="0.17", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:315 {CLM:0010002="0.32", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:698 {CLM:0010002="0.13", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.15", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:1080 {CLM:0010002="0.17", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:315 {CLM:0010002="0.32", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:698 {CLM:0010002="0.13", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.15", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5006974 {STATO:0000663="0.0"}
 property_value: CLM:0010003 CLM:5022194 {STATO:0000663="0.5851064"}
 property_value: IAO:0000028 "Astro-TE NN_3 Cxcl5 (Mmus)" xsd:string
@@ -1139,8 +1139,8 @@ def: "A astrocyte of the Mus musculus brain. It is distinguished from other cell
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5225 Astro-TE NN_3" EXACT []
 is_a: CL:4301593 ! Astro-TE NN_3 astrocyte (Mmus)
-property_value: CLM:0010001 MBA:315 {CLM:0010002="0.71", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:698 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:315 {CLM:0010002="0.71", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:698 {CLM:0010002="0.1", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5006975 {STATO:0000663="0.0862069"}
 property_value: CLM:0010003 CLM:5022195 {STATO:0000663="0.43650794"}
 property_value: IAO:0000028 "Astro-TE NN_3 Fam163a (Mmus)" xsd:string
@@ -1154,10 +1154,10 @@ def: "A astrocyte of the Mus musculus brain. It is distinguished from other cell
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5226 Astro-TE NN_3" EXACT []
 is_a: CL:4301593 ! Astro-TE NN_3 astrocyte (Mmus)
-property_value: CLM:0010001 MBA:258 {CLM:0010002="0.29", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:275 {CLM:0010002="0.39", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:315 {CLM:0010002="0.3", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:698 {CLM:0010002="0.19", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:258 {CLM:0010002="0.29", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:275 {CLM:0010002="0.39", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:315 {CLM:0010002="0.3", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:698 {CLM:0010002="0.19", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5006976 {STATO:0000663="0.0"}
 property_value: CLM:0010003 CLM:5022196 {STATO:0000663="0.5254777"}
 property_value: IAO:0000028 "Astro-TE NN_3 Zic4 (Mmus)" xsd:string
@@ -1171,10 +1171,10 @@ def: "A astrocyte of the Mus musculus brain. It is distinguished from other cell
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5227 Astro-TE NN_3" EXACT []
 is_a: CL:4301593 ! Astro-TE NN_3 astrocyte (Mmus)
-property_value: CLM:0010001 MBA:485 {CLM:0010002="0.7", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:493 {CLM:0010002="0.2", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:56 {CLM:0010002="0.15", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:672 {CLM:0010002="0.7", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:485 {CLM:0010002="0.7", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:493 {CLM:0010002="0.2", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:56 {CLM:0010002="0.15", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:672 {CLM:0010002="0.7", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
 property_value: CLM:0010003 CLM:5006977 {STATO:0000663="0.0"}
 property_value: CLM:0010003 CLM:5022197 {STATO:0000663="0.7017544"}
 property_value: IAO:0000028 "Astro-TE NN_3 Crym (Mmus)" xsd:string
@@ -1189,10 +1189,10 @@ comment: Location is inferred from registration of MerFish Data. Registration ma
 synonym: "1164 Astro-TE NN_4" EXACT []
 synonym: "5228 Astro-TE NN_4" EXACT []
 is_a: CL:4300359 ! astrocyte of cerebrum (Mmus)
-property_value: CLM:0010001 MBA:131 {CLM:0010002="0.13", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:579 {CLM:0010002="0.14", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:703 {CLM:0010002="0.25", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.55", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:131 {CLM:0010002="0.13", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:579 {CLM:0010002="0.14", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:703 {CLM:0010002="0.25", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.55", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5006978 {STATO:0000663="0.09259259"}
 property_value: CLM:0010003 CLM:5022198 {STATO:0000663="0.5102041"}
 property_value: IAO:0000028 "Astro-TE NN_4 (Mmus)" xsd:string
@@ -1206,12 +1206,12 @@ def: "A astrocyte of the Mus musculus brain. It is distinguished from other cell
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5229 Astro-TE NN_5" EXACT []
 is_a: CL:4301595 ! Astro-TE NN_5 astrocyte (Mmus)
-property_value: CLM:0010001 MBA:159 {CLM:0010002="0.15", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:484682516 {CLM:0010002="0.19", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:698 {CLM:0010002="0.39", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:81 {CLM:0010002="0.13", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:956 {CLM:0010002="0.11", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.58", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:159 {CLM:0010002="0.15", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:484682516 {CLM:0010002="0.19", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:698 {CLM:0010002="0.39", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:81 {CLM:0010002="0.13", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:956 {CLM:0010002="0.11", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.58", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5006979 {STATO:0000663="0.0"}
 property_value: CLM:0010003 CLM:5022199 {STATO:0000663="0.16129032"}
 property_value: IAO:0000028 "Astro-TE NN_5 Hs3st3a1 (Mmus)" xsd:string
@@ -1225,12 +1225,12 @@ def: "A astrocyte of the Mus musculus brain. It is distinguished from other cell
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5230 Astro-TE NN_5" EXACT []
 is_a: CL:4301595 ! Astro-TE NN_5 astrocyte (Mmus)
-property_value: CLM:0010001 MBA:275 {CLM:0010002="0.12", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:485 {CLM:0010002="0.3", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:56 {CLM:0010002="0.11", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:672 {CLM:0010002="0.3", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:81 {CLM:0010002="0.39", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.43", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:275 {CLM:0010002="0.12", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:485 {CLM:0010002="0.3", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:56 {CLM:0010002="0.11", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:672 {CLM:0010002="0.3", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:81 {CLM:0010002="0.39", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.43", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5006980 {STATO:0000663="0.09259259"}
 property_value: CLM:0010003 CLM:5022200 {STATO:0000663="0.7474227"}
 property_value: IAO:0000028 "Astro-TE NN_5 Adamts18 (Mmus)" xsd:string
@@ -1244,9 +1244,9 @@ def: "A astrocyte of the Mus musculus brain. It is distinguished from other cell
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5231 Astro-OLF NN_1" EXACT []
 is_a: CL:4301596 ! Astro-OLF NN_1 astrocyte (Mmus)
-property_value: CLM:0010001 MBA:507 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:698 {CLM:0010002="0.32", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.64", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:507 {CLM:0010002="0.1", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:698 {CLM:0010002="0.32", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.64", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5006981 {STATO:0000663="0.09259259"}
 property_value: CLM:0010003 CLM:5022201 {STATO:0000663="0.42372882"}
 property_value: IAO:0000028 "Astro-OLF NN_1 Greb1 (Mmus)" xsd:string
@@ -1260,10 +1260,10 @@ def: "A astrocyte of the Mus musculus brain. It is distinguished from other cell
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5232 Astro-OLF NN_1" EXACT []
 is_a: CL:4301596 ! Astro-OLF NN_1 astrocyte (Mmus)
-property_value: CLM:0010001 MBA:1016 {CLM:0010002="0.31", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:507 {CLM:0010002="0.26", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:698 {CLM:0010002="0.44", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.56", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:1016 {CLM:0010002="0.31", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:507 {CLM:0010002="0.26", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:698 {CLM:0010002="0.44", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.56", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5006982 {STATO:0000663="0.24193548"}
 property_value: CLM:0010003 CLM:5022202 {STATO:0000663="0.9"}
 property_value: IAO:0000028 "Astro-OLF NN_1 Stk32a (Mmus)" xsd:string
@@ -1277,10 +1277,10 @@ def: "A astrocyte of the Mus musculus brain. It is distinguished from other cell
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5233 Astro-OLF NN_2" EXACT []
 is_a: CL:4301597 ! Astro-OLF NN_2 astrocyte (Mmus)
-property_value: CLM:0010001 MBA:244 {CLM:0010002="0.15", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:507 {CLM:0010002="0.11", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:698 {CLM:0010002="0.44", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.51", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:244 {CLM:0010002="0.15", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:507 {CLM:0010002="0.11", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:698 {CLM:0010002="0.44", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.51", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5006983 {STATO:0000663="0.0"}
 property_value: CLM:0010003 CLM:5022203 {STATO:0000663="0.09259259"}
 property_value: IAO:0000028 "Astro-OLF NN_2 Slc25a34 (Mmus)" xsd:string
@@ -1294,10 +1294,10 @@ def: "A astrocyte of the Mus musculus brain. It is distinguished from other cell
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5234 Astro-OLF NN_2" EXACT []
 is_a: CL:4301597 ! Astro-OLF NN_2 astrocyte (Mmus)
-property_value: CLM:0010001 MBA:159 {CLM:0010002="0.29", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:220 {CLM:0010002="0.29", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:236 {CLM:0010002="0.14", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:698 {CLM:0010002="1.0", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:159 {CLM:0010002="0.29", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:220 {CLM:0010002="0.29", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:236 {CLM:0010002="0.14", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:698 {CLM:0010002="1.0", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5006984 {STATO:0000663="0.1724138"}
 property_value: CLM:0010003 CLM:5022204 {STATO:0000663="0.25641027"}
 property_value: IAO:0000028 "Astro-OLF NN_2 Alk (Mmus)" xsd:string
@@ -1311,8 +1311,8 @@ def: "A astrocyte of the Mus musculus brain. It is distinguished from other cell
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5235 Astro-OLF NN_3" EXACT []
 is_a: CL:4301598 ! Astro-OLF NN_3 astrocyte (Mmus)
-property_value: CLM:0010001 MBA:220 {CLM:0010002="0.63", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:698 {CLM:0010002="0.9", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:220 {CLM:0010002="0.63", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:698 {CLM:0010002="0.9", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5006985 {STATO:0000663="0.35714287"}
 property_value: CLM:0010003 CLM:5022205 {STATO:0000663="0.71428573"}
 property_value: IAO:0000028 "Astro-OLF NN_3 Ecrg4 (Mmus)" xsd:string
@@ -1326,9 +1326,9 @@ def: "A astrocyte of the Mus musculus brain. It is distinguished from other cell
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5236 Astro-OLF NN_3" EXACT []
 is_a: CL:4301598 ! Astro-OLF NN_3 astrocyte (Mmus)
-property_value: CLM:0010001 MBA:220 {CLM:0010002="0.52", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:698 {CLM:0010002="0.84", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.16", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:220 {CLM:0010002="0.52", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:698 {CLM:0010002="0.84", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.16", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
 property_value: CLM:0010003 CLM:5006986 {STATO:0000663="0.24193548"}
 property_value: CLM:0010003 CLM:5022206 {STATO:0000663="0.14705883"}
 property_value: IAO:0000028 "Astro-OLF NN_3 Sfrp1 (Mmus)" xsd:string
@@ -1343,9 +1343,9 @@ comment: Rationale for assigning this type to reference data: Mapping to tanycyt
 synonym: "5243 Tanycyte NN_1" EXACT []
 is_a: CL:0008042
 is_a: CL:4301602 ! Tanycyte NN_1 tanycyte (Mmus)
-property_value: CLM:0010001 MBA:108 {CLM:0010002="0.58", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:129 {CLM:0010002="0.24", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.88", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:108 {CLM:0010002="0.58", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:129 {CLM:0010002="0.24", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.88", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5006993 {STATO:0000663="0.82191783"}
 property_value: CLM:0010003 CLM:5022213 {STATO:0000663="0.9347826"}
 property_value: IAO:0000028 "Tanycyte NN_1 Cnmd (Mmus)" xsd:string
@@ -1359,9 +1359,9 @@ def: "A tanycyte of the Mus musculus brain. It is distinguished from other cells
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5244 Tanycyte NN_1" EXACT []
 is_a: CL:4301602 ! Tanycyte NN_1 tanycyte (Mmus)
-property_value: CLM:0010001 MBA:1097 {CLM:0010002="0.34", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:272 {CLM:0010002="0.34", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.61", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:1097 {CLM:0010002="0.34", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:272 {CLM:0010002="0.34", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.61", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5006994 {STATO:0000663="0.7017544"}
 property_value: CLM:0010003 CLM:5022214 {STATO:0000663="0.8208955"}
 property_value: IAO:0000028 "Tanycyte NN_1 Glp1r (Mmus)" xsd:string
@@ -1378,8 +1378,8 @@ is_a: CL:1100001
 is_a: CL:4042017 {evidence="http://identifiers.org/ncbigene/216227"}
 is_a: CL:4301603 ! Tanycyte NN_2 tanycyte (Mmus)
 relationship: RO:0002215 GO:0061535 {comment="Inferred to be glutamate secretion, neurotransmission based on expression of Slc17a8"}
-property_value: CLM:0010001 MBA:1097 {CLM:0010002="0.92", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:118 {CLM:0010002="0.88", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:1097 {CLM:0010002="0.92", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:118 {CLM:0010002="0.88", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
 property_value: CLM:0010003 CLM:5006995 {STATO:0000663="0.24193548"}
 property_value: CLM:0010003 CLM:5022215 {STATO:0000663="0.78313255"}
 property_value: IAO:0000028 "Tanycyte NN_2 Mylk3 (Mmus)" xsd:string
@@ -1394,11 +1394,11 @@ comment: Location is inferred from registration of MerFish Data. Registration ma
 synonym: "5246 Tanycyte NN_2" EXACT []
 is_a: CL:4042017
 is_a: CL:4301603 ! Tanycyte NN_2 tanycyte (Mmus)
-property_value: CLM:0010001 MBA:1097 {CLM:0010002="0.73", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:118 {CLM:0010002="0.47", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:129 {CLM:0010002="0.24", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:223 {CLM:0010002="0.11", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.27", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:1097 {CLM:0010002="0.73", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:118 {CLM:0010002="0.47", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:129 {CLM:0010002="0.24", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:223 {CLM:0010002="0.11", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.27", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5006996 {STATO:0000663="0.18292683"}
 property_value: CLM:0010003 CLM:5022216 {STATO:0000663="0.6321839"}
 property_value: IAO:0000028 "Tanycyte NN_2 Mroh5 (Mmus)" xsd:string
@@ -1413,9 +1413,9 @@ comment: Location is inferred from registration of MerFish Data. Registration ma
 synonym: "5247 Tanycyte NN_2" EXACT []
 is_a: CL:4042018
 is_a: CL:4301603 ! Tanycyte NN_2 tanycyte (Mmus)
-property_value: CLM:0010001 MBA:1097 {CLM:0010002="0.94", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:126 {CLM:0010002="0.29", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:223 {CLM:0010002="0.6", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:1097 {CLM:0010002="0.94", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:126 {CLM:0010002="0.29", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:223 {CLM:0010002="0.6", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
 property_value: CLM:0010003 CLM:5006997 {STATO:0000663="0.0"}
 property_value: CLM:0010003 CLM:5022217 {STATO:0000663="0.61403507"}
 property_value: IAO:0000028 "Tanycyte NN_2 Dscaml1 (Mmus)" xsd:string
@@ -1429,10 +1429,10 @@ def: "A tanycyte of the Mus musculus brain. It is distinguished from other cells
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5248 Tanycyte NN_2" EXACT []
 is_a: CL:4301603 ! Tanycyte NN_2 tanycyte (Mmus)
-property_value: CLM:0010001 MBA:1097 {CLM:0010002="0.69", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:126 {CLM:0010002="0.69", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:129 {CLM:0010002="0.31", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.31", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:1097 {CLM:0010002="0.69", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:126 {CLM:0010002="0.69", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:129 {CLM:0010002="0.31", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.31", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5006998 {STATO:0000663="0.44642857"}
 property_value: CLM:0010003 CLM:5022218 {STATO:0000663="0.5681818"}
 property_value: IAO:0000028 "Tanycyte NN_2 Otx2 (Mmus)" xsd:string
@@ -1447,10 +1447,10 @@ comment: Location is inferred from registration of MerFish Data. Registration ma
 synonym: "5249 Tanycyte NN_2" EXACT []
 is_a: CL:4042019
 is_a: CL:4301603 ! Tanycyte NN_2 tanycyte (Mmus)
-property_value: CLM:0010001 MBA:1097 {CLM:0010002="0.78", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:129 {CLM:0010002="0.22", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:223 {CLM:0010002="0.76", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.22", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:1097 {CLM:0010002="0.78", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:129 {CLM:0010002="0.22", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:223 {CLM:0010002="0.76", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.22", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5006999 {STATO:0000663="0.24193548"}
 property_value: CLM:0010003 CLM:5022219 {STATO:0000663="0.75842696"}
 property_value: IAO:0000028 "Tanycyte NN_2 Col25a1 (Mmus)" xsd:string
@@ -1466,11 +1466,11 @@ synonym: "1174 Tanycyte NN_3" EXACT []
 synonym: "5250 Tanycyte NN_3" EXACT []
 is_a: CL:4042020
 is_a: CL:4300362 ! tanycyte (Mmus)
-property_value: CLM:0010001 MBA:10671 {CLM:0010002="0.46", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:1097 {CLM:0010002="0.75", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:129 {CLM:0010002="0.19", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:223 {CLM:0010002="0.29", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.25", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:10671 {CLM:0010002="0.46", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:1097 {CLM:0010002="0.75", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:129 {CLM:0010002="0.19", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:223 {CLM:0010002="0.29", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.25", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007000 {STATO:0000663="0.7364341"}
 property_value: CLM:0010003 CLM:5022220 {STATO:0000663="0.47619048"}
 property_value: IAO:0000028 "Tanycyte NN_3 (Mmus)" xsd:string
@@ -1486,11 +1486,11 @@ synonym: "1177 Hypendymal NN_1" EXACT []
 synonym: "324 Hypendymal NN" EXACT []
 synonym: "5263 Hypendymal NN_1" EXACT []
 is_a: CL:4023181 {evidence="http://identifiers.org/ncbigene/15186"}
-property_value: CLM:0010001 MBA:129 {CLM:0010002="0.48", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:158 {CLM:0010002="0.11", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:313 {CLM:0010002="0.32", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:599626923 {CLM:0010002="0.23", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.68", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:129 {CLM:0010002="0.48", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:158 {CLM:0010002="0.11", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:313 {CLM:0010002="0.32", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:599626923 {CLM:0010002="0.23", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.68", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007013 {STATO:0000663="0.87349397"}
 property_value: CLM:0010003 CLM:5007984 {STATO:0000663="0.89805824"}
 property_value: CLM:0010003 CLM:5022233
@@ -1506,10 +1506,10 @@ def: "A choroid plexus epithelial cell of the Mus musculus brain. It is distingu
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5264 CHOR NN_1" EXACT []
 is_a: CL:4301608 ! choroid plexus epithelial cell (Mmus)
-property_value: CLM:0010001 MBA:1041 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:108 {CLM:0010002="0.49", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:512 {CLM:0010002="0.24", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.74", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:1041 {CLM:0010002="0.1", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:108 {CLM:0010002="0.49", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:512 {CLM:0010002="0.24", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.74", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007014 {STATO:0000663="0.6818182"}
 property_value: CLM:0010003 CLM:5022234 {STATO:0000663="0.9405941"}
 property_value: IAO:0000028 "CHOR NN_1 Tbc1d1 (Mmus)" xsd:string
@@ -1525,9 +1525,9 @@ synonym: "5265 CHOR NN_1" EXACT []
 is_a: CL:0000686
 is_a: CL:4301608 ! choroid plexus epithelial cell (Mmus)
 relationship: RO:0002215 GO:0061535 {comment="Inferred to be glutamate secretion, neurotransmission based on expression of Slc17a8"}
-property_value: CLM:0010001 MBA:108 {CLM:0010002="0.18", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:81 {CLM:0010002="0.22", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.81", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:108 {CLM:0010002="0.18", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:81 {CLM:0010002="0.22", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.81", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007015 {STATO:0000663="0.8227848"}
 property_value: CLM:0010003 CLM:5022235 {STATO:0000663="0.86206895"}
 property_value: IAO:0000028 "CHOR NN_1 Slc17a8 (Mmus)" xsd:string
@@ -1541,8 +1541,8 @@ def: "A oligodendrocyte precursor cell of the Mus musculus brain. It is distingu
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5266 OPC NN_1" EXACT []
 is_a: CL:4300366 ! oligodendrocyte precursor cell (Mmus)
-property_value: CLM:0010001 MBA:315 {CLM:0010002="0.52", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.14", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:315 {CLM:0010002="0.52", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.14", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007016 {STATO:0000663="0.40697673"}
 property_value: CLM:0010003 CLM:5022236 {STATO:0000663="0.40816328"}
 property_value: IAO:0000028 "OPC NN_1 Neil3 (Mmus)" xsd:string
@@ -1556,11 +1556,11 @@ def: "A oligodendrocyte precursor cell of the Mus musculus brain. It is distingu
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5267 OPC NN_1" EXACT []
 is_a: CL:4300366 ! oligodendrocyte precursor cell (Mmus)
-property_value: CLM:0010001 MBA:313 {CLM:0010002="0.21", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:354 {CLM:0010002="0.13", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:512 {CLM:0010002="0.14", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:771 {CLM:0010002="0.17", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.23", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:313 {CLM:0010002="0.21", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:354 {CLM:0010002="0.13", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:512 {CLM:0010002="0.14", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:771 {CLM:0010002="0.17", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.23", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007017 {STATO:0000663="0.7246377"}
 property_value: CLM:0010003 CLM:5022237 {STATO:0000663="0.6557377"}
 property_value: IAO:0000028 "OPC NN_1 Irx2 (Mmus)" xsd:string
@@ -1574,9 +1574,9 @@ def: "A oligodendrocyte precursor cell of the Mus musculus brain. It is distingu
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5268 OPC NN_1" EXACT []
 is_a: CL:4300366 ! oligodendrocyte precursor cell (Mmus)
-property_value: CLM:0010001 MBA:315 {CLM:0010002="0.53", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:698 {CLM:0010002="0.12", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:315 {CLM:0010002="0.53", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:698 {CLM:0010002="0.12", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.1", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007018 {STATO:0000663="0.18518518"}
 property_value: CLM:0010003 CLM:5022238 {STATO:0000663="0.18656716"}
 property_value: IAO:0000028 "OPC NN_1 Mms22l (Mmus)" xsd:string
@@ -1590,9 +1590,9 @@ def: "A oligodendrocyte precursor cell of the Mus musculus brain. It is distingu
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5269 OPC NN_1" EXACT []
 is_a: CL:4300366 ! oligodendrocyte precursor cell (Mmus)
-property_value: CLM:0010001 MBA:313 {CLM:0010002="0.17", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:771 {CLM:0010002="0.11", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.16", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:313 {CLM:0010002="0.17", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:771 {CLM:0010002="0.11", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.16", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007019 {STATO:0000663="0.38235295"}
 property_value: CLM:0010003 CLM:5022239 {STATO:0000663="0.41366908"}
 property_value: IAO:0000028 "OPC NN_1 Col27a1 (Mmus)" xsd:string
@@ -1606,10 +1606,10 @@ def: "A oligodendrocyte precursor cell of the Mus musculus brain. It is distingu
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5270 OPC NN_1" EXACT []
 is_a: CL:4300366 ! oligodendrocyte precursor cell (Mmus)
-property_value: CLM:0010001 MBA:1097 {CLM:0010002="0.17", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:313 {CLM:0010002="0.39", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:803 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:1097 {CLM:0010002="0.17", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:313 {CLM:0010002="0.39", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:803 {CLM:0010002="0.1", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.1", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007020 {STATO:0000663="0.0"}
 property_value: CLM:0010003 CLM:5022240 {STATO:0000663="0.37190083"}
 property_value: IAO:0000028 "OPC NN_1 Rmi2 (Mmus)" xsd:string
@@ -1624,8 +1624,8 @@ comment: Location is inferred from registration of MerFish Data. Registration ma
 synonym: "1180 OPC NN_2" EXACT []
 synonym: "5271 OPC NN_2" EXACT []
 is_a: CL:4300366 ! oligodendrocyte precursor cell (Mmus)
-property_value: CLM:0010001 MBA:315 {CLM:0010002="0.26", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.17", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:315 {CLM:0010002="0.26", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.17", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007021 {STATO:0000663="0.6372549"}
 property_value: CLM:0010003 CLM:5022241 {STATO:0000663="0.92105263"}
 property_value: IAO:0000028 "OPC NN_2 (Mmus)" xsd:string
@@ -1639,8 +1639,8 @@ def: "A committed oligodendrocyte precursor of the Mus musculus brain. It is dis
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5272 COP NN_1" EXACT []
 is_a: CL:4301611 ! commited oligodendrocyte precursor (Mmus)
-property_value: CLM:0010001 MBA:315 {CLM:0010002="0.22", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.2", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:315 {CLM:0010002="0.22", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.2", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007022 {STATO:0000663="0.3888889"}
 property_value: CLM:0010003 CLM:5022242 {STATO:0000663="0.54347825"}
 property_value: IAO:0000028 "COP NN_1 Rgcc (Mmus)" xsd:string
@@ -1654,8 +1654,8 @@ def: "A committed oligodendrocyte precursor of the Mus musculus brain. It is dis
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5273 COP NN_1" EXACT []
 is_a: CL:4301611 ! commited oligodendrocyte precursor (Mmus)
-property_value: CLM:0010001 MBA:315 {CLM:0010002="0.33", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.2", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:315 {CLM:0010002="0.33", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.2", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007023 {STATO:0000663="0.08064516"}
 property_value: CLM:0010003 CLM:5022243 {STATO:0000663="0.48245615"}
 property_value: IAO:0000028 "COP NN_1 9130019P16Rik (Mmus)" xsd:string
@@ -1669,7 +1669,7 @@ def: "A committed oligodendrocyte precursor of the Mus musculus brain. It is dis
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5274 COP NN_1" EXACT []
 is_a: CL:4301611 ! commited oligodendrocyte precursor (Mmus)
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.41", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.41", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007024 {STATO:0000663="0.0"}
 property_value: CLM:0010003 CLM:5022244 {STATO:0000663="0.1724138"}
 property_value: IAO:0000028 "COP NN_1 C1ql1 (Mmus)" xsd:string
@@ -1683,7 +1683,7 @@ def: "A committed oligodendrocyte precursor of the Mus musculus brain. It is dis
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5275 COP NN_1" EXACT []
 is_a: CL:4301611 ! commited oligodendrocyte precursor (Mmus)
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.37", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.37", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007025 {STATO:0000663="0.3539823"}
 property_value: CLM:0010003 CLM:5022245 {STATO:0000663="0.35135135"}
 property_value: IAO:0000028 "COP NN_1 Bmp4 (Mmus)" xsd:string
@@ -1697,7 +1697,7 @@ def: "A committed oligodendrocyte precursor of the Mus musculus brain. It is dis
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5276 COP NN_1" EXACT []
 is_a: CL:4301611 ! commited oligodendrocyte precursor (Mmus)
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.51", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.51", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007026 {STATO:0000663="0.31914893"}
 property_value: CLM:0010003 CLM:5022246 {STATO:0000663="0.0"}
 property_value: IAO:0000028 "COP NN_1 Vwc2 (Mmus)" xsd:string
@@ -1711,9 +1711,9 @@ def: "A committed oligodendrocyte precursor of the Mus musculus brain. It is dis
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5277 COP NN_1" EXACT []
 is_a: CL:4301611 ! commited oligodendrocyte precursor (Mmus)
-property_value: CLM:0010001 MBA:315 {CLM:0010002="0.54", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:698 {CLM:0010002="0.11", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:315 {CLM:0010002="0.54", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:698 {CLM:0010002="0.11", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.1", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007027 {STATO:0000663="0.22727273"}
 property_value: CLM:0010003 CLM:5022247 {STATO:0000663="0.27027026"}
 property_value: IAO:0000028 "COP NN_1 Cck (Mmus)" xsd:string
@@ -1727,9 +1727,9 @@ def: "A newly formed oligodendrocyte of the Mus musculus brain. It is distinguis
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5278 NFOL NN_2" EXACT []
 is_a: CL:4301612 ! newly formed oligodendrocyte (Mmus)
-property_value: CLM:0010001 MBA:313 {CLM:0010002="0.31", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:549 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.12", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:313 {CLM:0010002="0.31", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:549 {CLM:0010002="0.1", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.12", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007028 {STATO:0000663="0.17482518"}
 property_value: CLM:0010003 CLM:5022248 {STATO:0000663="0.29801324"}
 property_value: IAO:0000028 "NFOL NN_2 9630013A20Rik (Mmus)" xsd:string
@@ -1743,8 +1743,8 @@ def: "A newly formed oligodendrocyte of the Mus musculus brain. It is distinguis
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5279 NFOL NN_2" EXACT []
 is_a: CL:4301612 ! newly formed oligodendrocyte (Mmus)
-property_value: CLM:0010001 MBA:315 {CLM:0010002="0.24", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.25", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:315 {CLM:0010002="0.24", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.25", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007029 {STATO:0000663="0.5392157"}
 property_value: CLM:0010003 CLM:5022249 {STATO:0000663="0.7281553"}
 property_value: IAO:0000028 "NFOL NN_2 Dbx2 (Mmus)" xsd:string
@@ -1758,8 +1758,8 @@ def: "A newly formed oligodendrocyte of the Mus musculus brain. It is distinguis
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5280 NFOL NN_2" EXACT []
 is_a: CL:4301612 ! newly formed oligodendrocyte (Mmus)
-property_value: CLM:0010001 MBA:315 {CLM:0010002="0.18", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.28", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:315 {CLM:0010002="0.18", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.28", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007030 {STATO:0000663="0.32051283"}
 property_value: CLM:0010003 CLM:5022250 {STATO:0000663="0.4878049"}
 property_value: IAO:0000028 "NFOL NN_2 Rgs16 (Mmus)" xsd:string
@@ -1773,8 +1773,8 @@ def: "A newly formed oligodendrocyte of the Mus musculus brain. It is distinguis
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5281 NFOL NN_2" EXACT []
 is_a: CL:4301612 ! newly formed oligodendrocyte (Mmus)
-property_value: CLM:0010001 MBA:315 {CLM:0010002="0.19", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.3", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:315 {CLM:0010002="0.19", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.3", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007031 {STATO:0000663="0.35714287"}
 property_value: CLM:0010003 CLM:5022251 {STATO:0000663="0.7368421"}
 property_value: IAO:0000028 "NFOL NN_2 Il23a (Mmus)" xsd:string
@@ -1788,8 +1788,8 @@ def: "A myelin-forming oligodendrocyte of the Mus musculus brain. It is distingu
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5282 MFOL NN_3" EXACT []
 is_a: CL:4301613 ! myelin-forming oligodendrocyte (Mmus)
-property_value: CLM:0010001 MBA:315 {CLM:0010002="0.26", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.26", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:315 {CLM:0010002="0.26", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.26", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007032 {STATO:0000663="0.4054054"}
 property_value: CLM:0010003 CLM:5022252 {STATO:0000663="0.5"}
 property_value: IAO:0000028 "MFOL NN_3 Cxcl12 (Mmus)" xsd:string
@@ -1803,9 +1803,9 @@ def: "A myelin-forming oligodendrocyte of the Mus musculus brain. It is distingu
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5283 MFOL NN_3" EXACT []
 is_a: CL:4301613 ! myelin-forming oligodendrocyte (Mmus)
-property_value: CLM:0010001 MBA:313 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:315 {CLM:0010002="0.17", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.29", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:313 {CLM:0010002="0.1", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:315 {CLM:0010002="0.17", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.29", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007033 {STATO:0000663="0.35714287"}
 property_value: CLM:0010003 CLM:5022253 {STATO:0000663="0.48387095"}
 property_value: IAO:0000028 "MFOL NN_3 Il23a (Mmus)" xsd:string
@@ -1819,8 +1819,8 @@ def: "A mature myelinating oligodendrocyte of the Mus musculus brain. It is dist
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5284 MOL NN_4" EXACT []
 is_a: CL:4301614 ! mature myelinating oligodendrocyte (Mmus)
-property_value: CLM:0010001 MBA:354 {CLM:0010002="0.11", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.37", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:354 {CLM:0010002="0.11", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.37", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007034 {STATO:0000663="0.48507464"}
 property_value: CLM:0010003 CLM:5022254 {STATO:0000663="0.5"}
 property_value: IAO:0000028 "MOL NN_4 Plin3 (Mmus)" xsd:string
@@ -1834,9 +1834,9 @@ def: "A mature myelinating oligodendrocyte of the Mus musculus brain. It is dist
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5285 MOL NN_4" EXACT []
 is_a: CL:4301614 ! mature myelinating oligodendrocyte (Mmus)
-property_value: CLM:0010001 MBA:313 {CLM:0010002="0.14", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:315 {CLM:0010002="0.13", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.27", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:313 {CLM:0010002="0.14", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:315 {CLM:0010002="0.13", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.27", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007035 {STATO:0000663="0.24193548"}
 property_value: CLM:0010003 CLM:5022255 {STATO:0000663="0.32786885"}
 property_value: IAO:0000028 "MOL NN_4 Spock3 (Mmus)" xsd:string
@@ -1850,9 +1850,9 @@ def: "A mature myelinating oligodendrocyte of the Mus musculus brain. It is dist
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5286 MOL NN_4" EXACT []
 is_a: CL:4301614 ! mature myelinating oligodendrocyte (Mmus)
-property_value: CLM:0010001 MBA:354 {CLM:0010002="0.17", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:771 {CLM:0010002="0.15", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.44", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:354 {CLM:0010002="0.17", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:771 {CLM:0010002="0.15", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.44", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007036 {STATO:0000663="0.7876712"}
 property_value: CLM:0010003 CLM:5022256 {STATO:0000663="0.94017094"}
 property_value: IAO:0000028 "MOL NN_4 Art3 (Mmus)" xsd:string
@@ -1866,8 +1866,8 @@ def: "A mature myelinating oligodendrocyte of the Mus musculus brain. It is dist
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5287 MOL NN_4" EXACT []
 is_a: CL:4301614 ! mature myelinating oligodendrocyte (Mmus)
-property_value: CLM:0010001 MBA:315 {CLM:0010002="0.17", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.41", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:315 {CLM:0010002="0.17", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.41", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007037 {STATO:0000663="0.33333334"}
 property_value: CLM:0010003 CLM:5022257 {STATO:0000663="0.34313726"}
 property_value: IAO:0000028 "MOL NN_4 Il33 (Mmus)" xsd:string
@@ -1881,8 +1881,8 @@ def: "A mature myelinating oligodendrocyte of the Mus musculus brain. It is dist
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5288 MOL NN_4" EXACT []
 is_a: CL:4301614 ! mature myelinating oligodendrocyte (Mmus)
-property_value: CLM:0010001 MBA:315 {CLM:0010002="0.11", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.41", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:315 {CLM:0010002="0.11", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.41", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007038 {STATO:0000663="0.36231884"}
 property_value: CLM:0010003 CLM:5022258 {STATO:0000663="0.43333334"}
 property_value: IAO:0000028 "MOL NN_4 Sspo (Mmus)" xsd:string
@@ -1896,8 +1896,8 @@ def: "A olfactory ensheathing cell of the Mus musculus brain. It is distinguishe
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5289 OEC NN_1" EXACT []
 is_a: CL:4301615 ! olfactory ensheathing cell (Mmus)
-property_value: CLM:0010001 MBA:1016 {CLM:0010002="0.15", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.89", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:1016 {CLM:0010002="0.15", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.89", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007039 {STATO:0000663="0.71428573"}
 property_value: CLM:0010003 CLM:5022259 {STATO:0000663="0.7773109"}
 property_value: IAO:0000028 "OEC NN_1 Adamts12 (Mmus)" xsd:string
@@ -1911,8 +1911,8 @@ def: "A olfactory ensheathing cell of the Mus musculus brain. It is distinguishe
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5290 OEC NN_1" EXACT []
 is_a: CL:4301615 ! olfactory ensheathing cell (Mmus)
-property_value: CLM:0010001 MBA:1016 {CLM:0010002="0.39", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.8", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:1016 {CLM:0010002="0.39", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.8", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007040 {STATO:0000663="0.49019608"}
 property_value: CLM:0010003 CLM:5022260 {STATO:0000663="0.5479452"}
 property_value: IAO:0000028 "OEC NN_1 Gdpd4 (Mmus)" xsd:string
@@ -1926,10 +1926,10 @@ def: "A olfactory ensheathing cell of the Mus musculus brain. It is distinguishe
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5291 OEC NN_1" EXACT []
 is_a: CL:4301615 ! olfactory ensheathing cell (Mmus)
-property_value: CLM:0010001 MBA:1016 {CLM:0010002="0.14", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:507 {CLM:0010002="0.16", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF acronym region."}
-property_value: CLM:0010001 MBA:698 {CLM:0010002="0.36", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.64", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:1016 {CLM:0010002="0.14", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:507 {CLM:0010002="0.16", evidence="EFO:0008992", comment="Location assignment based on CCF acronym region."}
+property_value: CLM:0010001 MBA:698 {CLM:0010002="0.36", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.64", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007041 {STATO:0000663="0.44444445"}
 property_value: CLM:0010003 CLM:5022261 {STATO:0000663="0.77956986"}
 property_value: IAO:0000028 "OEC NN_1 A330076C08Rik (Mmus)" xsd:string
@@ -1945,7 +1945,7 @@ synonym: "5292 OEC NN_1" EXACT []
 is_a: CL:0000151
 is_a: CL:4301615 ! olfactory ensheathing cell (Mmus)
 relationship: RO:0002215 GO:0061535 {comment="Inferred to be glutamate secretion, neurotransmission based on expression of Slc17a7"}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.85", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.85", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007042 {STATO:0000663="0.09259259"}
 property_value: CLM:0010003 CLM:5022262 {STATO:0000663="0.46153846"}
 property_value: IAO:0000028 "OEC NN_1 Rasgef1c (Mmus)" xsd:string
@@ -1959,7 +1959,7 @@ def: "A arachnoid barrier cell of the Mus musculus brain. It is distinguished fr
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5293 ABC NN_1" EXACT []
 is_a: CL:4301616 ! arachnoid barrier cell (Mmus)
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.73", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.73", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007043 {STATO:0000663="0.6603774"}
 property_value: CLM:0010003 CLM:5022263 {STATO:0000663="0.7876712"}
 property_value: IAO:0000028 "ABC NN_1 Pde11a (Mmus)" xsd:string
@@ -1973,7 +1973,7 @@ def: "A arachnoid barrier cell of the Mus musculus brain. It is distinguished fr
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5294 ABC NN_1" EXACT []
 is_a: CL:4301616 ! arachnoid barrier cell (Mmus)
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.76", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.76", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007044 {STATO:0000663="0.6818182"}
 property_value: CLM:0010003 CLM:5022264 {STATO:0000663="0.023364486"}
 property_value: IAO:0000028 "ABC NN_1 Dapl1 (Mmus)" xsd:string
@@ -1987,7 +1987,7 @@ def: "A arachnoid barrier cell of the Mus musculus brain. It is distinguished fr
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5295 ABC NN_1" EXACT []
 is_a: CL:4301616 ! arachnoid barrier cell (Mmus)
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.74", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.74", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007045 {STATO:0000663="0.86419755"}
 property_value: CLM:0010003 CLM:5022265 {STATO:0000663="0.9"}
 property_value: IAO:0000028 "ABC NN_1 Cubn (Mmus)" xsd:string
@@ -2004,8 +2004,8 @@ synonym: "334 Microglia NN" EXACT []
 synonym: "5312 Microglia NN_1" EXACT []
 is_a: CL:0000129
 relationship: RO:0002162 NCBITaxon:10090
-property_value: CLM:0010001 MBA:315 {CLM:0010002="0.29", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.17", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:315 {CLM:0010002="0.29", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.17", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007062 {STATO:0000663="0.982906"}
 property_value: CLM:0010003 CLM:5007994 {STATO:0000663="0.9684685"}
 property_value: CLM:0010003 CLM:5022282
@@ -2020,9 +2020,9 @@ def: "A border associated macrophage of the Mus musculus brain. It is distinguis
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5313 BAM NN_1" EXACT []
 is_a: CL:4301625 ! border associated macrophage (Mmus)
-property_value: CLM:0010001 MBA:354 {CLM:0010002="0.1", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:512 {CLM:0010002="0.13", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.34", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:354 {CLM:0010002="0.1", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:512 {CLM:0010002="0.13", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.34", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007063 {STATO:0000663="0.5479452"}
 property_value: CLM:0010003 CLM:5022283 {STATO:0000663="0.16666667"}
 property_value: IAO:0000028 "BAM NN_1 Mrc1 (Mmus)" xsd:string
@@ -2036,9 +2036,9 @@ def: "A border associated macrophage of the Mus musculus brain. It is distinguis
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "5314 BAM NN_1" EXACT []
 is_a: CL:4301625 ! border associated macrophage (Mmus)
-property_value: CLM:0010001 MBA:315 {CLM:0010002="0.14", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:512 {CLM:0010002="0.16", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
-property_value: CLM:0010001 MBA:997 {CLM:0010002="0.26", OBI:0000070="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:315 {CLM:0010002="0.14", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:512 {CLM:0010002="0.16", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
+property_value: CLM:0010001 MBA:997 {CLM:0010002="0.26", evidence="EFO:0008992", comment="Location assignment based on CCF broad region."}
 property_value: CLM:0010003 CLM:5007064 {STATO:0000663="0.7746479"}
 property_value: CLM:0010003 CLM:5022284 {STATO:0000663="0.8695652"}
 property_value: IAO:0000028 "BAM NN_1 Fos (Mmus)" xsd:string

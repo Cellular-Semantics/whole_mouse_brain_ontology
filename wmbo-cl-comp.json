@@ -5559,10 +5559,10 @@
         "basicPropertyValues": [
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2025-11-06"
+            "val": "2026-03-09"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/pcl/releases/2025-11-06/../../wmbo-cl-comp.json"
+        "version": "http://purl.obolibrary.org/obo/pcl/releases/2026-03-09/../../wmbo-cl-comp.json"
       },
       "nodes": [
         {
@@ -32702,11 +32702,6 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/IAO_0100001",
-          "propertyType": "ANNOTATION",
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/OBI_0000070",
           "propertyType": "ANNOTATION",
           "type": "PROPERTY"
         },

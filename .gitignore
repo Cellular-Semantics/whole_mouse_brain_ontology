@@ -16,3 +16,10 @@ wmbo-base.owl
 /wmbo-cl-comp.owl
 
 .idea
+__pycache__/
+patterns/
+src/ontology/mirror/
+src/ontology/reports/
+src/ontology/tmp/
+src/ontology/components/*.owl
+!src/ontology/components/all_templates.owl
