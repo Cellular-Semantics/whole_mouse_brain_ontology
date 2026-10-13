@@ -23,7 +23,7 @@ Today a promoted term's label comes from the DOSDP template `"%s %s (%s)"`: taxo
 ## Decisions
 
 1. **The override replaces the whole name.** The final label comes verbatim from `defined_class_name` in the `WMBO_CCN20230722_class_curation` sheet, with no template parts appended. Every CL-promoted term gets one; no template-generated label ships in CL. The PCL terms are out of scope for now.
-2. **Taxonomy labels are left alone.** They are already exact synonyms (`Synonyms_from_taxonomy`), and the v2 label is added as a related synonym.
+2. **Taxonomy labels are left alone.** They are already exact synonyms (`Synonyms_from_taxonomy`), and the v2 label is added as an exact synonym (with a CCN20251031 xref).
 3. **Neurotransmitters in the name:**
    - Drop any NT mention that isn't supported by *all* v1 clusters under the term, using `neurotransmitter_accession`.
    - This applies to taxonomy tokens (Glut, Gaba, Gly, Chol, Dopa, Sero, Nora, Hist) and to NT meaning carried by the CL head term (e.g. "GABAergic neuron").
@@ -90,7 +90,7 @@ The agent works on the draft only where the rules leave something awkward: word 
 ### Step 6: Build and verify
 Rebuild. Check that:
 - every CL-promoted term's label equals its override;
-- the taxonomy label is an exact synonym and the v2 label a related synonym;
+- the taxonomy label and the v2 label are exact synonyms;
 - the Step 4 checks pass on the released `wmbo-cl-comp.obo`.
 
 ## Later: checking locations against Brain Cell KG

@@ -26,7 +26,6 @@ relations:
 annotationProperties:
   skosPrefLabel: "skos:prefLabel"
   hasExactSynonym: "oboInOwl:hasExactSynonym"
-  hasRelatedSynonym: "oboInOwl:hasRelatedSynonym"
   rdfsComment: "rdfs:comment"
   rdfsLabel: "rdfs:label"
   seeAlso: "rdfs:seeAlso"
@@ -108,7 +107,7 @@ data_list_vars:
   WMBv2_xref: "xsd:string"
 
 data_vars:
-  WMBv2_related_synonym: "xsd:string"
+  WMBv2_synonym: "xsd:string"
   prefLabel: "xsd:string"
   Taxonomy_label: "xsd:string"
   Parent_label: "xsd:string"
@@ -442,10 +441,10 @@ annotations:
         - text: "%s"
           vars:
             - Curated_synonyms
-  - annotationProperty: hasRelatedSynonym
+  - annotationProperty: hasExactSynonym
     text: "%s"
     vars:
-      - WMBv2_related_synonym
+      - WMBv2_synonym
     annotations:
       - annotationProperty: hasDbXref
         value: WMBv2_xref

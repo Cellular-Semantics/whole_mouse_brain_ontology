@@ -18,7 +18,7 @@ The WMBO build otherwise stays as it is: same v1 source, same ID factories, same
 
 ### Decisions already made
 - **Already-promoted terms (130 CL IDs):** these are never demoted. Any that fail the stability criteria are listed in the report for curator review.
-- **v2 name:** added as `oboInOwl:hasRelatedSynonym`, with an axiom-annotation `hasDbXref` pointing to the CCN20251031 accession. This needs one new column in the DOSDP pattern.
+- **v2 name:** added as `oboInOwl:hasExactSynonym` (changed from related on 2026-10-13: only terms judged sufficiently stable are promoted), with an axiom-annotation `hasDbXref` pointing to the CCN20251031 accession. This needs one new column in the DOSDP pattern.
 - **Scope:** a term must be both stable and CL-classifiable.
   - Subclass and supertype are the main targets.
   - Clusters are included only when triangulated, i.e. confirmed in Broad as well as v1 (tier S1 below).
@@ -190,9 +190,9 @@ For each row in `cl_lookup_queue.tsv`, use the OLS4 MCP tools, restricted to `on
    - `WMBv2_synonym` (the v2 label);
    - `WMBv2_xref` (`CCN20251031:CS20251031_…`, or whatever CURIE form the taxonomy RDF uses for accessions).
 3. **DOSDP pattern.** In `src/patterns/dosdp-patterns/taxonomy_class.yaml`:
-   - add a `hasRelatedSynonym: oboInOwl:hasRelatedSynonym` annotation property;
+   - reuse the existing `hasExactSynonym` annotation property;
    - add the two new vars to `data_vars`;
-   - add an annotation block that emits the related synonym with a nested `hasDbXref` axiom annotation. This follows the existing nested-annotation pattern used for `oboInOwl:evidence` on the `CL` subClassOf.
+   - add an annotation block that emits the exact synonym with a nested `hasDbXref` axiom annotation. This follows the existing nested-annotation pattern used for `oboInOwl:evidence` on the `CL` subClassOf.
 4. **Checks on the rest of the build.**
    - `wmbo-cl-comp` filters with `--select "annotations anonymous self"`, so the new annotations should carry through. This needs to be checked.
    - IDs are unaffected: the `CLIdFactory`/`PCLIdFactory` ranges depend only on v1 node counts, and new promotions get an obsolete PCL twin automatically.
@@ -214,7 +214,7 @@ For each row in `cl_lookup_queue.tsv`, use the OLS4 MCP tools, restricted to `on
    - Count of `CL:43` terms = 130 + the number of newly accepted terms.
    - No existing CL ID is missing.
    - Every CL term has an `is_a` to a CL term that is not in the generic list.
-   - Every newly promoted term has `synonym: "<v2 label>" RELATED [CCN20251031:…]`.
+   - Every newly promoted term has `synonym: "<v2 label>" EXACT [CCN20251031:…]`.
    - Every new promotion has an obsolete PCL twin in `wmbo-base`.
 4. Run `robot reason` / `robot report` on `wmbo-cl-comp.owl` to confirm there are no unsatisfiable classes and no new ERROR-level report items.
 
@@ -244,7 +244,7 @@ For each row in `cl_lookup_queue.tsv`, use the OLS4 MCP tools, restricted to `on
 15. **Synonym format.** v2 labels carry a numeric prefix and underscores, e.g. `0141 CLA-EPd-CTX_Car3_Glut 3`. Keep the label verbatim, strip the number, or both?
 16. **Which terms get the synonym.** Only promoted terms, as in the draft, or every WMBO term that has a good v2 match (F1 ≥ 0.8)? The second is cheap and would help users navigate from v2, but it touches the PCL content.
 17. **Cross-reference form.** Which CURIE should point to the v2 node: `CCN20251031:CS20251031_…`, or the accession IRI used in the taxonomy RDF? Check the prefix is registered in the ontology's prefix map.
-18. **Several v1 terms, one v2 node.** When more than one v1 term matches the same v2 node, the same related synonym lands on each of them. Is that acceptable, or should the synonym be added only for 1:1 matches?
+18. **Several v1 terms, one v2 node.** When more than one v1 term matches the same v2 node, the same exact synonym lands on each of them. Is that acceptable, or should the synonym be added only for 1:1 matches?
 
 ### Process and build
 19. **Sheet workflow.** Should the assessment columns go into the existing `WMBO_CL_ontology_subset` tab or a separate read-only tab? The first is convenient, but a sheet sync could overwrite script output.
