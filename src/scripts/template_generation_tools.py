@@ -1277,6 +1277,10 @@ def get_cl_subset_nodes(nodes_to_collapse):
     for cl_candidate in cl_subset:
         if cl_candidate in nodes_to_collapse:
             to_extend.append(nodes_to_collapse[cl_candidate]['cell_set_accession'])
+    # also the nodes compressed into a CL candidate, so the whole chain gets the same (CL/CLM) ids
+    for compressed_node, target in nodes_to_collapse.items():
+        if target['cell_set_accession'] in cl_subset:
+            to_extend.append(compressed_node)
     cl_subset.extend(to_extend)
     return cl_subset
 
