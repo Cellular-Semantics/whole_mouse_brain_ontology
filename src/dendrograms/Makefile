@@ -16,7 +16,9 @@ ABC_URLS_WS_MARKER_SET = $(patsubst %, ./%_abc_urls_ws_marker_set.json, $(JOBS))
 
 SHEETS_SCRIPT := ../scripts/google_sheets_to_tsv.py
 
-all: sheets $(TEMPLATE_FILES) $(TEMPLATE_CLASS_BASE_FILES) $(TEMPLATE_CLASS_CURATION_FILES) \
+# sheets is excluded from all: curation edits are currently made directly in the repo.
+# Run `make sheets` manually to re-import from Google Sheets.
+all: $(TEMPLATE_FILES) $(TEMPLATE_CLASS_BASE_FILES) $(TEMPLATE_CLASS_CURATION_FILES) \
 	$(TEMPLATE_MARKER_SET_FILES) $(TEMPLATE_NSFOREST_MARKER_SET_FILES) \
 	$(TEMPLATE_WS_MARKER_SET_FILES) $(TEMPLATE_EVIDENCE_MARKER_SET_FILES) \
 	$(ABC_URLS) $(ABC_URLS_MARKER_SET) $(ABC_URLS_EVIDENCE_MARKER_SET) \

@@ -16,8 +16,8 @@ TABS = [
 # If a path ends with a filename, we use its parent folder.
 TARGET_PATHS = [
     "src/patterns/data/default",
-    "src/dendrograms/supplementary/version2/one_concept_one_name_curation.tsv",
-    "src/dendrograms/supplementary/version2/one_concept_one_name_curation.tsv",
+    "src/dendrograms/supplementary/version2",
+    "src/dendrograms/supplementary/version2",
 ]
 
 # Base: repo root (script is in src/, so parents[1] is repo root)
