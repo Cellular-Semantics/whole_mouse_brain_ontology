@@ -104,8 +104,10 @@ data_list_vars:
   Cluster_IDs: "xsd:string"
   Subclass_markers: "xsd:string"
   Rationale_comment_dois: "xsd:string"
+  WMBv2_xref: "xsd:string"
 
 data_vars:
+  WMBv2_synonym: "xsd:string"
   prefLabel: "xsd:string"
   Taxonomy_label: "xsd:string"
   Parent_label: "xsd:string"
@@ -439,6 +441,13 @@ annotations:
         - text: "%s"
           vars:
             - Curated_synonyms
+  - annotationProperty: hasExactSynonym
+    text: "%s"
+    vars:
+      - WMBv2_synonym
+    annotations:
+      - annotationProperty: hasDbXref
+        value: WMBv2_xref
   - annotationProperty: symbol
     text: "%s (%s)"
     vars:
