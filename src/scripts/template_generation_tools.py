@@ -305,9 +305,10 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                 if 'rationale_dois' in node and node['rationale_dois']:
                     alias_citations = {citation.strip() for citation in node['rationale_dois']
                                        if citation and citation.strip()}
-                    d["Rationale_comment_dois"] = "|".join(alias_citations.copy())
+                    # sorted: set iteration order varies between runs (hash randomisation)
+                    d["Rationale_comment_dois"] = "|".join(sorted(alias_citations))
                     alias_citations.add(reference_paper)
-                    d["Alias_citations"] = "|".join(alias_citations)
+                    d["Alias_citations"] = "|".join(sorted(alias_citations))
                 else:
                     d["Alias_citations"] = reference_paper
                 d["Short_form_citation"] = "Yao et al. (2023), Whole Mouse Brain"
@@ -389,9 +390,11 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                     inconsistent_nts = nt_inconsistencies[node["cell_set_accession"]]
                     d["NT_disclaimer"] = "Warning: Despite its name, {name} does not secrete the neurotransmitter {nt}, as assessed by expression of multiple marker genes.".format(name=d["prefLabel"], nt=", ".join(inconsistent_nts))
 
-                if atlas_payloads.get(o["cell_set_accession"]):
-                    d["Atlas_url"] = "https://knowledge.brain-map.org/abcatlas#" + atlas_payloads.get(
-                        o["cell_set_accession"])
+                # first chain member (top-down) with an atlas link, whatever the order nodes are met in
+                atlas_accession = next((accession for accession in node.get("chain", [node["cell_set_accession"]])
+                                        if atlas_payloads.get(accession)), None)
+                if atlas_accession:
+                    d["Atlas_url"] = "https://knowledge.brain-map.org/abcatlas#" + atlas_payloads.get(atlas_accession)
                     d["Atlas_url_label"] = "Reference data on Allen Brain Cell Atlas"
 
                 d["Matrix_url"] = "https://purl.brain-bican.org/taxonomy/CCN20230722/" + \
@@ -408,22 +411,27 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                     cloned = d.copy()
                     cloned['cell_set_accession'] = node['cell_set_accession']
                     terms_moved_to_cl_subset.append(cloned)
-            else:
-                # process obsoleted classes due to chain compressing
-                if collapsed and o.get('cell_set_accession') not in processed_accessions:
-                    d = dict()
-                    d['defined_class'] = PCL_BASE + pcl_id_factory.get_class_id(o['cell_set_accession'])
-                    d['prefLabel'] = "obsolete " + o['cell_label']
-                    d['Comment'] = "This class is obsoleted due to chain compression."
-                    d['Deprecated'] = "true"
-                    d['Gross_cell_type'] = get_gross_cell_type(o['cell_set_accession'],
-                                                               dend['nodes'])
-                    d['Taxon'] = taxonomy_config['Species'][0]
-                    d['Taxon_abbv'] = taxonomy_config['Gene_abbv'][0]
-                    d['Comment'] = "This term is obsoleted due to identical cell set chain compression."
-                    d['Classification'] = "CL:0000000"
-                    d['ReplacedBy'] = ""
-                    obsolete_template.append(d)
+
+        # Obsoleted classes due to chain compression: every chain member except the chain's
+        # representative node, generated from the chains themselves so that the result does not
+        # depend on the order in which chain members are met (issue #129).
+        chains = {merged['cell_set_accession']: merged['chain'] for merged in nodes_to_collapse.values()}
+        for representative in sorted(chains):
+            for member_accession in chains[representative]:
+                if member_accession == representative:
+                    continue
+                member = all_nodes[member_accession]
+                d = dict()
+                d['defined_class'] = PCL_BASE + pcl_id_factory.get_class_id(member_accession)
+                d['prefLabel'] = "obsolete " + member['cell_label']
+                d['Deprecated'] = "true"
+                d['Gross_cell_type'] = get_gross_cell_type(member_accession, dend['nodes'])
+                d['Taxon'] = taxonomy_config['Species'][0]
+                d['Taxon_abbv'] = taxonomy_config['Gene_abbv'][0]
+                d['Comment'] = "This term is obsoleted due to identical cell set chain compression."
+                d['Classification'] = "CL:0000000"
+                d['ReplacedBy'] = ""
+                obsolete_template.append(d)
 
         for cl_obsolete in terms_moved_to_cl_subset:
             obsolete_d = dict()
@@ -467,6 +475,9 @@ def associate_marker_sets(all_nodes, author_local_markers, author_markers, colla
     Returns:
     """
     d['aligned_alias'] = ""
+    # The merged chain node carries its representative's marker fields, so look marker statistics up
+    # by the representative's own label, not by whichever chain member was met first (issue #129).
+    source = all_nodes.get(node['cell_set_accession'], o)
     if node.get('marker_gene_evidence'):
         d['evidence_marker_gene_set'] = id_prefix + id_factory.get_evidence_marker_gene_set_id(
             node['cell_set_accession'])
@@ -476,7 +487,7 @@ def associate_marker_sets(all_nodes, author_local_markers, author_markers, colla
                                                      "")).lower() != "none"):
         d['marker_gene_set'] = id_prefix + id_factory.get_marker_gene_set_id(
             node['cell_set_accession'])
-        filtered_df = author_markers[author_markers['clusterName'] == o['cell_label']]
+        filtered_df = author_markers[author_markers['clusterName'] == source['cell_label']]
         if not filtered_df.empty:
             d['marker_gene_set_confidence'] = filtered_df['f_score'].values[0]
     if ("author_annotation_fields" in node and
@@ -486,7 +497,7 @@ def associate_marker_sets(all_nodes, author_local_markers, author_markers, colla
                 f"{node['labelset']}.markers.combo _within subclass_", "")).lower() != "none"):
         d['ws_marker_gene_set'] = id_prefix + id_factory.get_ws_marker_gene_set_id(
             node['cell_set_accession'])
-        filtered_df = author_local_markers[author_local_markers['clusterName'] == o['cell_label']]
+        filtered_df = author_local_markers[author_local_markers['clusterName'] == source['cell_label']]
         if not filtered_df.empty:
             d['ws_marker_gene_set_confidence'] = filtered_df['f_score'].values[0]
     if not collapsed:
@@ -723,6 +734,7 @@ def generate_marker_gene_set_template(taxonomy_file_path, output_filepath):
                         node["author_annotation_fields"].get(f"{node['labelset']}.markers.combo", "") and
                         str(node["author_annotation_fields"].get(f"{node['labelset']}.markers.combo", "")).lower() != "none"):
                     d = dict()
+                    source = all_nodes[node['cell_set_accession']]  # representative's own node (issue #129)
                     if node['cell_set_accession'] in cl_subset:
                         id_factory = clm_id_factory
                         id_base = CLM_BASE
@@ -751,13 +763,13 @@ def generate_marker_gene_set_template(taxonomy_file_path, output_filepath):
                     d['Algorithm'] = ""
                     d['Source'] = "Yao"
                     d['Reference'] = "https://doi.org/10.1038/s41586-023-06812-z"
-                    filtered_df = author_markers[author_markers['clusterName'] == o['cell_label']]
+                    filtered_df = author_markers[author_markers['clusterName'] == source['cell_label']]
                     if not filtered_df.empty:
                         d['FBeta_confidence_score'] = filtered_df['f_score'].values[0]
                         d['precision'] = filtered_df['precision'].values[0]
                         d['recall'] = filtered_df['recall'].values[0]
-                    d['Cell_label'] = o['cell_label']
-                    d['Labelset'] = o['labelset']
+                    d['Cell_label'] = source['cell_label']
+                    d['Labelset'] = source['labelset']
                     if d['defined_class'] in atlas_payloads:
                         d["Atlas_url"] = "https://knowledge.brain-map.org/abcatlas#" + atlas_payloads.get(d['defined_class'])
                         d["Atlas_url_label"] = "markers in reference data on Allen Brain Cell Atlas"
@@ -821,6 +833,7 @@ def generate_within_subclass_marker_gene_set_template(taxonomy_file_path, output
                         node["author_annotation_fields"].get(f"{node['labelset']}.markers.combo _within subclass_", "") and
                         str(node["author_annotation_fields"].get(f"{node['labelset']}.markers.combo _within subclass_", "")).lower() != "none"):
                     d = dict()
+                    source = all_nodes[node['cell_set_accession']]  # representative's own node (issue #129)
                     if node['cell_set_accession'] in cl_subset:
                         id_factory = clm_id_factory
                         id_base = CLM_BASE
@@ -849,13 +862,13 @@ def generate_within_subclass_marker_gene_set_template(taxonomy_file_path, output
                     d['Algorithm'] = ""
                     d['Source'] = "Yao - within subclass"
                     d['Reference'] = "https://doi.org/10.1038/s41586-023-06812-z"
-                    filtered_df = author_local_markers[author_local_markers['clusterName'] == o['cell_label']]
+                    filtered_df = author_local_markers[author_local_markers['clusterName'] == source['cell_label']]
                     if not filtered_df.empty:
                         d['FBeta_confidence_score'] = filtered_df['f_score'].values[0]
                         d['precision'] = filtered_df['precision'].values[0]
                         d['recall'] = filtered_df['recall'].values[0]
-                    d['Cell_label'] = o['cell_label']
-                    d['Labelset'] = o['labelset']
+                    d['Cell_label'] = source['cell_label']
+                    d['Labelset'] = source['labelset']
                     if d['defined_class'] in atlas_payloads:
                         d["Atlas_url"] = "https://knowledge.brain-map.org/abcatlas#" + atlas_payloads.get(d['defined_class'])
                         d["Atlas_url_label"] = "markers in reference data on Allen Brain Cell Atlas"
@@ -917,6 +930,7 @@ def generate_evidence_marker_gene_set_template(taxonomy_file_path, output_filepa
             if node.get('cell_set_accession') and node['cell_set_accession'] not in processed_accessions :
                 if "marker_gene_evidence" in node and node["marker_gene_evidence"]:
                     d = dict()
+                    source = all_nodes[node['cell_set_accession']]  # representative's own node (issue #129)
                     if node['cell_set_accession'] in cl_subset:
                         id_factory = clm_id_factory
                         id_base = CLM_BASE
@@ -947,8 +961,8 @@ def generate_evidence_marker_gene_set_template(taxonomy_file_path, output_filepa
                     d['FBeta_confidence_score'] = ""
                     d['precision'] = ""
                     d['recall'] = ""
-                    d['Cell_label'] = o['cell_label']
-                    d['Labelset'] = o['labelset']
+                    d['Cell_label'] = source['cell_label']
+                    d['Labelset'] = source['labelset']
                     if d['defined_class'] in atlas_payloads:
                         d["Atlas_url"] = "https://knowledge.brain-map.org/abcatlas#" + atlas_payloads.get(d['defined_class'])
                         d["Atlas_url_label"] = "markers in reference data on Allen Brain Cell Atlas"
@@ -1272,15 +1286,15 @@ def get_cl_subset_nodes(nodes_to_collapse):
             if row.get("Add_to_CL", "") and row.get("Add_to_CL", "").strip().lower() == "true":
                 cl_subset.append(row.get("cell_set_accession", "").strip())
 
-    # extend these with the compressed nodes
+    # extend these with the compressed nodes: a chain is promoted as a whole, so every member of a
+    # chain containing a tagged node (not just its representative) is in the subset. Otherwise the
+    # CL/PCL decision depends on which chain member is met first (issue #129).
     to_extend = []
     for cl_candidate in cl_subset:
         if cl_candidate in nodes_to_collapse:
-            to_extend.append(nodes_to_collapse[cl_candidate]['cell_set_accession'])
-    # also the nodes compressed into a CL candidate, so the whole chain gets the same (CL/CLM) ids
-    for compressed_node, target in nodes_to_collapse.items():
-        if target['cell_set_accession'] in cl_subset:
-            to_extend.append(compressed_node)
+            chain_node = nodes_to_collapse[cl_candidate]
+            to_extend.append(chain_node['cell_set_accession'])
+            to_extend.extend(chain_node.get('chain', []))
     cl_subset.extend(to_extend)
-    return cl_subset
+    return list(dict.fromkeys(cl_subset))
 

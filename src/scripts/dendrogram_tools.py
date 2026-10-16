@@ -17,6 +17,9 @@ def cas_json_2_nodes_n_edges(path_to_json):
     j = read_json_file(path_to_json)
     out = {}
     tree_recurse(j, out)
+    # Canonical node order, so that generated templates do not depend on the order of annotations in
+    # the taxonomy JSON (see issue #129).
+    out['nodes'].sort(key=lambda node: node['cell_set_accession'])
     return out
 
 
