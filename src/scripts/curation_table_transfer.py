@@ -22,7 +22,7 @@ def read_tsv(filename):
 
 def write_tsv(filename, fieldnames, rows):
     with open(filename, "w", newline='', encoding='utf-8') as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames, delimiter='\t')
+        writer = csv.DictWriter(f, fieldnames=fieldnames, delimiter='\t', lineterminator='\n')
         writer.writeheader()
         writer.writerows(rows)
 
@@ -33,7 +33,11 @@ def merge_tables(old_file, new_file, output_file):
 
     ignore_cols = {"cell_set_accession", "defined_class", "Taxonomy_label"}
 
+    # keep curator-added columns that the generator doesn't emit (e.g. WMBv2_synonym)
+    output_fields = list(new_fields) + [col for col in old_fields if col not in new_fields]
+
     old_dict = {row["cell_set_accession"]: row for row in old_rows}
+    new_accessions = {row.get("cell_set_accession") for row in new_rows}
     # Process each new row: if annotation exists in old then copy over manual annotations
     for new_row in new_rows:
         cell_access = new_row.get("cell_set_accession")
@@ -44,14 +48,16 @@ def merge_tables(old_file, new_file, output_file):
             for col, value in old_row.items():
                 if col in ignore_cols:
                     continue
-                if col in new_fields:
-                    new_row[col] = value
-                else:
-                    logging.warning(
-                        "Column %s from old file is missing in new file (cell_set_accession: %s)",
-                        col, cell_access)
+                new_row[col] = value
+        for col in output_fields:
+            new_row.setdefault(col, "")
 
-    write_tsv(output_file, new_fields, new_rows)
+    for cell_access, old_row in old_dict.items():
+        if cell_access not in new_accessions:
+            logging.warning("Curation row dropped, cell set not in new taxonomy: %s (%s)",
+                            cell_access, old_row.get("Taxonomy_label"))
+
+    write_tsv(output_file, output_fields, new_rows)
 
 
 if __name__ == "__main__":

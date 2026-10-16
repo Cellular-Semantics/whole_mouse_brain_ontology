@@ -60,13 +60,14 @@ $(SUPPLEMENTARY)/version2/neurotransmitters.tsv:
 ../patterns/data/default/%_evidence_marker_set.tsv: %.json
 	python ../scripts/template_runner.py generator -ems -i $< -o $@
 
-prepare_npm: ../../typescript/dist/index.js
+# Install the versions pinned in typescript/package-lock.json and compile with that tsc
+# (a bare `npm install typescript` pulls the latest major, which may reject tsconfig.json).
+../../typescript/dist/index.js: ../../typescript/tsconfig.json $(wildcard ../../typescript/src/*.ts)
 	rm -rf ../../typescript/dist
-	npm install typescript
+	npm install --prefix ../../typescript
+	../../typescript/node_modules/.bin/tsc -p ../../typescript/tsconfig.json
 
-../../typescript/dist/index.js: prepare_npm ../../typescript/tsconfig.json  ../../typescript/src/index.ts
-	npm install --prefix ../../typescript typescript @types/node --save-dev
-	npx tsc -p ../../typescript/tsconfig.json
+../../typescript/dist/index_genes.js: ../../typescript/dist/index.js
 
 CCN20230722_abc_urls.json: ../../typescript/dist/index.js
 	node $< $@
