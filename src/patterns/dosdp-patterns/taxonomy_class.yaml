@@ -51,6 +51,7 @@ list_vars:
   NT: "'thing'"
   NT_markers: "'sequence_feature'"
   Neurotransmitters: "'thing'"
+  Shared_NT: "'thing'"
   Individuals: "'thing'"
 
 vars:
@@ -61,6 +62,7 @@ vars:
   Projection_type: "'projection type'"
   part_of: "'thing'"
   has_soma_location: "'thing'"
+  Derived_location: "'thing'"
   evidence_marker_gene_set: "'thing'"
   marker_gene_set: "'thing'"
   ws_marker_gene_set: "'thing'"
@@ -164,6 +166,8 @@ data_vars:
   nsforest_marker_gene_set_2_confidence: "xsd:float"
   Neurotransmitters_comment: "xsd:string"
   Neurotransmitters_publication: "xsd:string"
+  Derived_location_comment: "xsd:string"
+  Shared_NT_comment: "xsd:string"
   Rationale_comment: "xsd:string"
 
 internal_vars:
@@ -421,6 +425,27 @@ logical_axioms:
         text: "%s"
         vars:
           - Neurotransmitters_publication
+  - axiom_type: subClassOf
+    text: "'has_soma_location' some %s"
+    vars:
+      - Derived_location
+    annotations:
+      - annotationProperty: rdfsComment
+        text: "%s"
+        vars:
+          - Derived_location_comment
+  - axiom_type: subClassOf
+    multi_clause:
+      sep: " and "
+      clauses:
+        - text: "'capable_of' some %s"
+          vars:
+            - Shared_NT
+    annotations:
+      - annotationProperty: rdfsComment
+        text: "%s"
+        vars:
+          - Shared_NT_comment
 
 annotations:
   #  - annotationProperty: skosPrefLabel

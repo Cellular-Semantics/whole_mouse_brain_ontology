@@ -2,6 +2,7 @@ import pandas as pd
 import os
 import ast
 import csv
+import networkx as nx
 import json
 import logging
 from rdflib import Graph, Namespace
@@ -43,6 +44,10 @@ CLUSTER_ANNOTATIONS_PATH = os.path.join(os.path.dirname(os.path.realpath(__file_
 # NT_MAPPING = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../dendrograms/supplementary/version2/neurotransmitters.tsv")
 NT_SYMBOLS_MAPPING = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../dendrograms/supplementary/version2/Neurotransmitter_symbols_mapping.tsv")
 BRAIN_REGION_MAPPING = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../dendrograms/supplementary/Brain_region_mapping.tsv")
+# Soma location per cell set derived from MERFISH cell counts (generated outside the build, see the README
+# next to it); applied as has_soma_location to the CL subset only.
+DERIVED_SOMA_LOCATIONS = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../dendrograms/supplementary/version2/derived_soma_locations.tsv")
+NT_NOT_CALLED = "CS20230722_NEUR_NA"
 
 CROSS_SPECIES_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)),
                                   "../dendrograms/nomenclature_table_CCN202002270.csv")
@@ -198,6 +203,7 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
 
         cluster_annotations = read_csv_to_dict(CLUSTER_ANNOTATIONS_PATH, id_column_name="cell_set_accession.cluster")[1]
         nt_symbols_mapping = read_csv_to_dict(NT_SYMBOLS_MAPPING, delimiter="\t")[1]
+        derived_soma_locations = read_csv_to_dict(DERIVED_SOMA_LOCATIONS, delimiter="\t")[1]
         mba_symbols = get_mba_symbols_map()
         mba_labels = get_mba_labels_map()
         anatomical_loc_inconsistencies = get_anatomical_location_inconsistencies(CLUSTER_ANNOTATIONS_PATH)
@@ -251,7 +257,11 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                       'Matrix_url',
                       'Class_name',
                       'Rationale_comment',
-                      'Rationale_comment_dois'
+                      'Rationale_comment_dois',
+                      'Derived_location',
+                      'Derived_location_comment',
+                      'Shared_NT',
+                      'Shared_NT_comment'
                       ]
         class_template = []
         obsolete_template = []
@@ -354,6 +364,15 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                     if len(nt_marker_names) > 8:
                         raise ValueError("More than 8 NT markers found for cluster: " + node['cell_set_accession'])
 
+                if not d['NT']:
+                    d['Shared_NT'], d['Shared_NT_comment'] = get_shared_neurotransmitter(
+                        node['cell_set_accession'], dend_tree, all_nodes, nt_symbols_mapping)
+                if o['cell_set_accession'] in cl_subset:
+                    location = derived_soma_locations.get(node['cell_set_accession'], {})
+                    if location.get('location'):
+                        d['Derived_location'] = location['location']
+                        d['Derived_location_comment'] = location['comment']
+
                 missed_regions = set()
                 if node['cell_set_accession'] in cluster_annotations:
                     ccf_broad_freq = cluster_annotations[node['cell_set_accession']]["CCF_broad.freq"]
@@ -450,6 +469,42 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
             obsolete_filepath = output_filepath.replace("_base.tsv", "_obsolete.tsv")
             class_obsolete_template = pd.DataFrame.from_records(obsolete_template)
             class_obsolete_template.to_csv(obsolete_filepath, sep="\t", index=False)
+
+
+def get_shared_neurotransmitter(accession, dend_tree, all_nodes, nt_symbols_mapping):
+    """
+    Neurotransmitter(s) shared by every descendant cluster that has a neurotransmitter call, e.g. a supertype
+    whose clusters are GABA or GABA-Glyc is GABAergic. Clusters without a call are left out.
+    Args:
+        accession: cell set accession of a non-cluster node
+        dend_tree: networkx directed graph that represents the taxonomy
+        all_nodes: dict of all nodes by accession
+        nt_symbols_mapping: neurotransmitter symbols mapping (accession -> GO ids and labels)
+
+    Returns: ('|'-joined GO ids, comment), or ('', '') if there is nothing shared.
+    """
+    if accession not in dend_tree:
+        return "", ""
+    calls = [all_nodes[descendant].get('neurotransmitter_accession', '')
+             for descendant in nx.descendants(dend_tree, accession)
+             if all_nodes.get(descendant, {}).get('labelset') == 'cluster']
+    called = [call for call in calls if call and call != NT_NOT_CALLED and call in nt_symbols_mapping]
+    if not called:
+        return "", ""
+    go_labels = dict()
+    for call in set(called):
+        mapping = nt_symbols_mapping[call]
+        go_labels.update(zip(mapping["CELL TYPE NEUROTRANSMISSION ID"].split("|"), mapping["CELL TYPE LABEL"].split("|")))
+    shared = set.intersection(*[set(nt_symbols_mapping[call]["CELL TYPE NEUROTRANSMISSION ID"].split("|"))
+                                for call in set(called)])
+    if not shared:
+        return "", ""
+    shared = sorted(shared)
+    comment = "All {n} clusters in this cell set with a neurotransmitter assignment are {nt}".format(
+        n=len(called), nt=" and ".join(go_labels[go_id] for go_id in shared))
+    if len(called) < len(calls):
+        comment += " ({} clusters have no assignment)".format(len(calls) - len(called))
+    return "|".join(shared), comment + "."
 
 
 def associate_marker_sets(all_nodes, author_local_markers, author_markers, collapsed, d, id_factory,
@@ -1131,13 +1186,26 @@ def index_base_files(base_files):
 def merge_class_templates(base_tsv, curation_tsv, output_filepath):
     """
     Applies all columns of the curation_tsv to the base_tsv and generates a new merged class template in the
-    output_filepath.
+    output_filepath. Curated Locations replace the derived location of the base table (curated
+    Neurotransmitters are added to the shared neurotransmitter, as they don't conflict).
     Args:
         base_tsv: Path of the base table to add new columns.
         curation_tsv: Path of the manual curations' table
         output_filepath: Output file path
     """
     merge_tables(base_tsv, curation_tsv, output_filepath)
+    overrides = {"Locations": ["Derived_location", "Derived_location_comment"]}
+    with open(output_filepath) as merged_file:
+        rows = list(csv.reader(merged_file, delimiter="\t", quotechar='"'))
+    headers = rows[0]
+    for row in rows[1:]:
+        for curated, derived_columns in overrides.items():
+            if curated in headers and row[headers.index(curated)].strip():
+                for column in derived_columns:
+                    if column in headers:
+                        row[headers.index(column)] = ""
+    with open(output_filepath, mode='w') as out:
+        csv.writer(out, delimiter="\t", quotechar='"').writerows(rows)
 
 
 def get_centralized_taxonomy_folder(taxonomy_config):
