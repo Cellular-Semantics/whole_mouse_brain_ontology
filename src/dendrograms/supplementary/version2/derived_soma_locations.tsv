@@ -23,14 +23,14 @@ CS20230722_CLAS_21	21 MB Dopa	class	UBERON:0001891	midbrain	MBA:313	Midbrain		0.
 CS20230722_CLAS_22	22 MB-HB Sero	class	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	5861	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
 CS20230722_CLAS_23	23 P Glut	class			MBA:1065	Hindbrain	descendant(s) mostly outside Hindbrain, no region below grey matter holds them	0.8	52269	
 CS20230722_CLAS_24	24 MY Glut	class			MBA:1065	Hindbrain	descendant(s) mostly outside Hindbrain, no region below grey matter holds them	0.8	43571	
-CS20230722_CLAS_25	25 Pineal Glut	class			MBA:129	third ventricle	third ventricle is not grey matter	0.8	114	
+CS20230722_CLAS_25	25 Pineal Glut	class					pinealocytes: location from spatial registration is unreliable	0.8	114	
 CS20230722_CLAS_26	26 P GABA	class			V:brainstem	brainstem (Midbrain + Hindbrain)	descendant(s) mostly outside brainstem (Midbrain + Hindbrain), no region below grey matter holds them	0.8	28162	
 CS20230722_CLAS_27	27 MY GABA	class			MBA:1065	Hindbrain	descendant(s) mostly outside Hindbrain, no region below grey matter holds them	0.8	36280	
 CS20230722_CLAS_28	28 CB GABA	class	UBERON:0002028	hindbrain	V:hindbrain	hindbrain (Hindbrain + Cerebellum)	moved up from Cerebellum: descendant(s) mostly outside it	0.8	216415	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebellum; the broader hindbrain (Hindbrain + Cerebellum) is used because it also holds at least half of the cells of each of its descendant cell sets.
 CS20230722_CLAS_29	29 CB Glut	class	UBERON:0002028	hindbrain	V:hindbrain	hindbrain (Hindbrain + Cerebellum)	moved up from Cerebellum: descendant(s) mostly outside it	0.8	507008	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebellum; the broader hindbrain (Hindbrain + Cerebellum) is used because it also holds at least half of the cells of each of its descendant cell sets.
 CS20230722_CLAS_30	30 Astro-Epen	class						0.8	1102353	
 CS20230722_CLAS_31	31 OPC-Oligo	class						0.8	492254	
-CS20230722_CLAS_32	32 OEC	class			MBA:1016	olfactory nerve layer of main olfactory bulb	olfactory nerve layer of main olfactory bulb is not grey matter	0.8	23668	
+CS20230722_CLAS_32	32 OEC	class	UBERON:0005366	olfactory lobe	MBA:698	Olfactory areas		0.8	23668	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Olfactory areas (MBA:698).
 CS20230722_CLAS_33	33 Vascular	class						0.8	1084787	
 CS20230722_CLAS_34	34 Immune	class						0.8	256842	
 CS20230722_SUBC_001	001 CLA-EPd-CTX Car3 Glut	subclass	UBERON:0005343	cortical plate	MBA:695	Cortical plate		0.8	31608	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cortical plate (MBA:695).
@@ -61,7 +61,7 @@ CS20230722_SUBC_025	025 CA2-FC-IG Glut	subclass	UBERON:0005343	cortical plate	MB
 CS20230722_SUBC_026	026 NLOT Rho Glut	subclass	UBERON:0001893	telencephalon	MBA:567	Cerebrum		0.8	1602	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebrum (MBA:567).
 CS20230722_SUBC_027	027 L6b EPd Glut	subclass	UBERON:0000956	cerebral cortex	MBA:688	Cerebral cortex		0.8	4677	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebral cortex (MBA:688).
 CS20230722_SUBC_028	028 L6b/CT ENT Glut	subclass	UBERON:0005343	cortical plate	MBA:695	Cortical plate	moved up from Retrohippocampal region: descendant(s) mostly outside it	0.8	26334	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Retrohippocampal region; the broader Cortical plate (MBA:695) is used because it also holds at least half of the cells of each of its descendant cell sets.
-CS20230722_SUBC_029	029 L6b CTX Glut	subclass						0.8	14643	
+CS20230722_SUBC_029	029 L6b CTX Glut	subclass	UBERON:0005343	cortical plate	MBA:695	Cortical plate	moved up from Isocortex: descendant(s) mostly outside it	0.8	14643	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Isocortex; the broader Cortical plate (MBA:695) is used because it also holds at least half of the cells of each of its descendant cell sets.
 CS20230722_SUBC_030	030 L6 CT CTX Glut	subclass	UBERON:0005343	cortical plate	MBA:695	Cortical plate	moved up from Isocortex: descendant(s) mostly outside it	0.8	196203	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Isocortex; the broader Cortical plate (MBA:695) is used because it also holds at least half of the cells of each of its descendant cell sets.
 CS20230722_SUBC_031	031 CT SUB Glut	subclass	UBERON:0005343	cortical plate	MBA:695	Cortical plate		0.8	5904	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cortical plate (MBA:695).
 CS20230722_SUBC_032	032 L5 NP CTX Glut	subclass	UBERON:0001950	neocortex	MBA:315	Isocortex		0.8	34526	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Isocortex (MBA:315).
@@ -143,7 +143,7 @@ CS20230722_SUBC_107	107 DMH Hmx2 Gaba	subclass	UBERON:0001898	hypothalamus	MBA:1
 CS20230722_SUBC_108	108 ARH-PVp Tbx3 Gaba	subclass	UBERON:0001898	hypothalamus	MBA:1097	Hypothalamus		0.8	1730	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hypothalamus (MBA:1097).
 CS20230722_SUBC_109	109 LGv-ZI Otx2 Gaba	subclass	UBERON:0001894	diencephalon	MBA:1129	Interbrain		0.8	1691	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Interbrain (MBA:1129).
 CS20230722_SUBC_110	110 BST-po Iigp1 Glut	subclass	UBERON:0001890	forebrain	V:forebrain	forebrain (Cerebrum + Interbrain)		0.8	582	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in forebrain (Cerebrum + Interbrain).
-CS20230722_SUBC_111	111 TRS-BAC Sln Glut	subclass						0.8	5975	
+CS20230722_SUBC_111	111 TRS-BAC Sln Glut	subclass	UBERON:0001890	forebrain	V:forebrain	forebrain (Cerebrum + Interbrain)	moved up from Cerebral nuclei: descendant(s) mostly outside it	0.8	5975	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebral nuclei; the broader forebrain (Cerebrum + Interbrain) is used because it also holds at least half of the cells of each of its descendant cell sets.
 CS20230722_SUBC_112	112 GPi Tbr1 Cngb3 Gaba-Glut	subclass	UBERON:0001890	forebrain	V:forebrain	forebrain (Cerebrum + Interbrain)		0.8	197	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in forebrain (Cerebrum + Interbrain).
 CS20230722_SUBC_113	113 MEA-COA-BMA Ccdc42 Glut	subclass	UBERON:0001893	telencephalon	MBA:567	Cerebrum		0.8	10060	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebrum (MBA:567).
 CS20230722_SUBC_114	114 COAa-PAA-MEA Barhl2 Glut	subclass	UBERON:0001893	telencephalon	MBA:567	Cerebrum		0.8	8964	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebrum (MBA:567).
@@ -254,10 +254,10 @@ CS20230722_SUBC_218	218 PSV Lmx1a Trpv6 Glut	subclass	UBERON:0000988	pons	MBA:77
 CS20230722_SUBC_219	219 PB-SUT Tlx3 Lhx2 Glut	subclass	UBERON:0000988	pons	MBA:771	Pons		0.8	137	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons (MBA:771).
 CS20230722_SUBC_220	220 PB Pax5 Glut	subclass	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	727	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
 CS20230722_SUBC_221	221 LDT-PCG Vsx2 Lhx4 Glut	subclass	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	3538	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
-CS20230722_SUBC_222	222 PB Evx2 Glut	subclass	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	5804	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
+CS20230722_SUBC_222	222 PB Evx2 Glut	subclass			V:brainstem	brainstem (Midbrain + Hindbrain)	descendant(s) mostly outside brainstem (Midbrain + Hindbrain), no region below grey matter holds them	0.8	5804	
 CS20230722_SUBC_223	223 B-PB Nr4a2 Glut	subclass	UBERON:0000988	pons	MBA:771	Pons		0.8	376	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons (MBA:771).
 CS20230722_SUBC_224	224 PCG-PRNr Vsx2 Nkx6-1 Glut	subclass	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)	moved up from Hindbrain: descendant(s) mostly outside it	0.8	2522	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hindbrain; the broader brainstem (Midbrain + Hindbrain) is used because it also holds at least half of the cells of each of its descendant cell sets.
-CS20230722_SUBC_225	225 PRNc-NI-SG-RPO Vsx2 Nr4a2 Glut	subclass			MBA:771	Pons	descendant(s) mostly outside Pons, no region below grey matter holds them	0.8	1079	
+CS20230722_SUBC_225	225 PRNc-NI-SG-RPO Vsx2 Nr4a2 Glut	subclass	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)	moved up from Pons: descendant(s) mostly outside it	0.8	1079	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons; the broader brainstem (Midbrain + Hindbrain) is used because it also holds at least half of the cells of each of its descendant cell sets.
 CS20230722_SUBC_226	226 PRNc-PARN Tlx1 Glut	subclass	UBERON:0002028	hindbrain	MBA:1065	Hindbrain		0.8	437	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hindbrain (MBA:1065).
 CS20230722_SUBC_227	227 PB-PSV Phox2b Glut	subclass	UBERON:0002028	hindbrain	MBA:1065	Hindbrain		0.8	167	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hindbrain (MBA:1065).
 CS20230722_SUBC_228	228 PSV Pvalb Lhx2 Glut	subclass	UBERON:0000988	pons	MBA:771	Pons		0.8	6689	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons (MBA:771).
@@ -294,7 +294,7 @@ CS20230722_SUBC_258	258 SPVC Nmu Glut	subclass	UBERON:0001896	medulla oblongata	
 CS20230722_SUBC_259	259 MDRNd Bves Glut	subclass	UBERON:0001896	medulla oblongata	MBA:354	Medulla		0.8	133	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medulla (MBA:354).
 CS20230722_SUBC_260	260 MDRNv Crp Glut	subclass	UBERON:0001896	medulla oblongata	MBA:354	Medulla		0.8	43	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medulla (MBA:354).
 CS20230722_SUBC_261	261 HB Calcb Chol	subclass	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)	moved up from Hindbrain: descendant(s) mostly outside it	0.8	2809	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hindbrain; the broader brainstem (Midbrain + Hindbrain) is used because it also holds at least half of the cells of each of its descendant cell sets.
-CS20230722_SUBC_262	262 Pineal Crx Glut	subclass			MBA:129	third ventricle	third ventricle is not grey matter	0.8	114	
+CS20230722_SUBC_262	262 Pineal Crx Glut	subclass					pinealocytes: location from spatial registration is unreliable	0.8	114	
 CS20230722_SUBC_263	263 CS-RPO Meis2 Gaba	subclass	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)	moved up from Pons: descendant(s) mostly outside it	0.8	2336	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons; the broader brainstem (Midbrain + Hindbrain) is used because it also holds at least half of the cells of each of its descendant cell sets.
 CS20230722_SUBC_264	264 PRNc Otp Gly-Gaba	subclass	UBERON:0002028	hindbrain	MBA:1065	Hindbrain	moved up from Pons: descendant(s) mostly outside it	0.8	4189	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons; the broader Hindbrain (MBA:1065) is used because it also holds at least half of the cells of each of its descendant cell sets.
 CS20230722_SUBC_265	265 PB Sst Gly-Gaba	subclass	UBERON:0002028	hindbrain	MBA:1065	Hindbrain		0.8	421	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hindbrain (MBA:1065).
@@ -319,7 +319,7 @@ CS20230722_SUBC_283	283 PRP Otp Gly-Gaba	subclass	UBERON:0001896	medulla oblonga
 CS20230722_SUBC_284	284 GRN-IRN-MDRNd Ikzf1 Gly-Gaba	subclass	UBERON:0001896	medulla oblongata	MBA:354	Medulla		0.8	70	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medulla (MBA:354).
 CS20230722_SUBC_285	285 MY Lhx1 Gly-Gaba	subclass	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)	moved up from Hindbrain: descendant(s) mostly outside it	0.8	13235	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hindbrain; the broader brainstem (Midbrain + Hindbrain) is used because it also holds at least half of the cells of each of its descendant cell sets.
 CS20230722_SUBC_286	286 PPY-PGRNl Vip Glyc-Gaba	subclass	UBERON:0001896	medulla oblongata	MBA:354	Medulla		0.8	662	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medulla (MBA:354).
-CS20230722_SUBC_287	287 MV-SPIV-PRP Dmbx1 Gly-Gaba	subclass	UBERON:0002028	hindbrain	V:hindbrain	hindbrain (Hindbrain + Cerebellum)	moved up from Hindbrain: descendant(s) mostly outside it	0.8	1363	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hindbrain; the broader hindbrain (Hindbrain + Cerebellum) is used because it also holds at least half of the cells of each of its descendant cell sets.
+CS20230722_SUBC_287	287 MV-SPIV-PRP Dmbx1 Gly-Gaba	subclass	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)	moved up from Hindbrain: descendant(s) mostly outside it	0.8	1363	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hindbrain; the broader brainstem (Midbrain + Hindbrain) is used because it also holds at least half of the cells of each of its descendant cell sets.
 CS20230722_SUBC_288	288 MDRN Hoxb5 Ebf2 Gly-Gaba	subclass	UBERON:0001896	medulla oblongata	MBA:354	Medulla		0.8	407	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medulla (MBA:354).
 CS20230722_SUBC_289	289 MDRNd Prox1 Pax6 Gly-Gaba	subclass	UBERON:0001896	medulla oblongata	MBA:354	Medulla		0.8	46	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medulla (MBA:354).
 CS20230722_SUBC_290	290 MY Prox1 Lmo7 Gly-Gaba	subclass	UBERON:0002028	hindbrain	MBA:1065	Hindbrain		0.8	561	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hindbrain (MBA:1065).
@@ -355,12 +355,12 @@ CS20230722_SUBC_319	319 Astro-TE NN	subclass	UBERON:0001893	telencephalon	MBA:56
 CS20230722_SUBC_320	320 Astro-OLF NN	subclass	UBERON:0005366	olfactory lobe	MBA:698	Olfactory areas		0.8	21946	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Olfactory areas (MBA:698).
 CS20230722_SUBC_321	321 Astroependymal NN	subclass						0.8	4090	
 CS20230722_SUBC_322	322 Tanycyte NN	subclass	UBERON:0001898	hypothalamus	MBA:1097	Hypothalamus		0.8	2865	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hypothalamus (MBA:1097).
-CS20230722_SUBC_323	323 Ependymal NN	subclass			MBA:73	ventricular systems	ventricular systems is not grey matter	0.8	15494	
-CS20230722_SUBC_324	324 Hypendymal NN	subclass			MBA:129	third ventricle	third ventricle is not grey matter	0.8	404	
-CS20230722_SUBC_325	325 CHOR NN	subclass			MBA:108	choroid plexus	choroid plexus is not grey matter	0.8	11413	
+CS20230722_SUBC_323	323 Ependymal NN	subclass						0.8	15494	
+CS20230722_SUBC_324	324 Hypendymal NN	subclass	UBERON:0001891	midbrain	MBA:313	Midbrain		0.8	404	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313).
+CS20230722_SUBC_325	325 CHOR NN	subclass						0.8	11413	
 CS20230722_SUBC_326	326 OPC NN	subclass						0.8	203949	
 CS20230722_SUBC_327	327 Oligo NN	subclass						0.8	288305	
-CS20230722_SUBC_328	328 OEC NN	subclass			MBA:1016	olfactory nerve layer of main olfactory bulb	olfactory nerve layer of main olfactory bulb is not grey matter	0.8	23668	
+CS20230722_SUBC_328	328 OEC NN	subclass	UBERON:0005366	olfactory lobe	MBA:698	Olfactory areas		0.8	23668	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Olfactory areas (MBA:698).
 CS20230722_SUBC_329	329 ABC NN	subclass						0.8	21701	
 CS20230722_SUBC_330	330 VLMC NN	subclass						0.8	104730	
 CS20230722_SUBC_331	331 Peri NN	subclass						0.8	125101	
@@ -480,9 +480,9 @@ CS20230722_SUPT_0106	0106 L6b/CT ENT Glut_1	supertype	UBERON:0022230	retrohippoc
 CS20230722_SUPT_0107	0107 L6b/CT ENT Glut_2	supertype	UBERON:0005343	cortical plate	MBA:695	Cortical plate		0.8	2019	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cortical plate (MBA:695).
 CS20230722_SUPT_0108	0108 L6b/CT ENT Glut_3	supertype	UBERON:0005343	cortical plate	MBA:695	Cortical plate		0.8	1124	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cortical plate (MBA:695).
 CS20230722_SUPT_0109	0109 L6b/CT ENT Glut_4	supertype	UBERON:0022230	retrohippocampal region	MBA:822	Retrohippocampal region		0.8	13991	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Retrohippocampal region (MBA:822).
-CS20230722_SUPT_0110	0110 L6b CTX Glut_1	supertype						0.8	6080	
-CS20230722_SUPT_0111	0111 L6b CTX Glut_2	supertype						0.8	4629	
-CS20230722_SUPT_0112	0112 L6b CTX Glut_3	supertype						0.8	3114	
+CS20230722_SUPT_0110	0110 L6b CTX Glut_1	supertype	UBERON:0005343	cortical plate	MBA:695	Cortical plate	moved up from Isocortex: descendant(s) mostly outside it	0.8	6080	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Isocortex; the broader Cortical plate (MBA:695) is used because it also holds at least half of the cells of each of its descendant cell sets.
+CS20230722_SUPT_0111	0111 L6b CTX Glut_2	supertype	UBERON:0001950	neocortex	MBA:315	Isocortex		0.8	4629	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Isocortex (MBA:315).
+CS20230722_SUPT_0112	0112 L6b CTX Glut_3	supertype	UBERON:0001950	neocortex	MBA:315	Isocortex		0.8	3114	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Isocortex (MBA:315).
 CS20230722_SUPT_0113	0113 L6b CTX Glut_4	supertype	UBERON:0001950	neocortex	MBA:315	Isocortex		0.8	820	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Isocortex (MBA:315).
 CS20230722_SUPT_0114	0114 L6 CT CTX Glut_1	supertype	UBERON:0001950	neocortex	MBA:315	Isocortex		0.8	76466	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Isocortex (MBA:315).
 CS20230722_SUPT_0115	0115 L6 CT CTX Glut_2	supertype	UBERON:0001950	neocortex	MBA:315	Isocortex		0.8	77997	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Isocortex (MBA:315).
@@ -510,7 +510,7 @@ CS20230722_SUPT_0136	0136 DG Glut_1	supertype	UBERON:0000956	cerebral cortex	MBA
 CS20230722_SUPT_0137	0137 DG Glut_2	supertype	UBERON:0002421	hippocampal formation	MBA:1080	Hippocampal region		0.8	69099	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hippocampal region (MBA:1080).
 CS20230722_SUPT_0138	0138 DG Glut_3	supertype	UBERON:0002421	hippocampal formation	MBA:1080	Hippocampal region		0.8	1634	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hippocampal region (MBA:1080).
 CS20230722_SUPT_0139	0139 DG Glut_4	supertype	UBERON:0002421	hippocampal formation	MBA:1080	Hippocampal region		0.8	16083	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hippocampal region (MBA:1080).
-CS20230722_SUPT_0140	0140 DG-PIR Ex IMN_1	supertype			MBA:776	corpus callosum	corpus callosum is not grey matter	0.8	92	
+CS20230722_SUPT_0140	0140 DG-PIR Ex IMN_1	supertype	UBERON:0001893	telencephalon	MBA:567	Cerebrum		0.8	92	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebrum (MBA:567).
 CS20230722_SUPT_0141	0141 DG-PIR Ex IMN_2	supertype	UBERON:0002421	hippocampal formation	MBA:1080	Hippocampal region		0.8	3302	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hippocampal region (MBA:1080).
 CS20230722_SUPT_0142	0142 DG-PIR Ex IMN_3	supertype	UBERON:0000956	cerebral cortex	MBA:688	Cerebral cortex		0.8	1086	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebral cortex (MBA:688).
 CS20230722_SUPT_0143	0143 OB Meis2 Thsd7b Gaba_1	supertype	UBERON:0005366	olfactory lobe	MBA:698	Olfactory areas		0.8	11336	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Olfactory areas (MBA:698).
@@ -536,13 +536,13 @@ CS20230722_SUPT_0162	0162 OB Dopa-Gaba_1	supertype	UBERON:0005366	olfactory lobe
 CS20230722_SUPT_0163	0163 OB Dopa-Gaba_2	supertype	UBERON:0001893	telencephalon	MBA:567	Cerebrum		0.8	124	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebrum (MBA:567).
 CS20230722_SUPT_0164	0164 OB Dopa-Gaba_3	supertype	UBERON:0005366	olfactory lobe	MBA:698	Olfactory areas		0.8	673	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Olfactory areas (MBA:698).
 CS20230722_SUPT_0165	0165 OB Dopa-Gaba_4	supertype	UBERON:0005366	olfactory lobe	MBA:698	Olfactory areas		0.8	483	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Olfactory areas (MBA:698).
-CS20230722_SUPT_0166	0166 OB-STR-CTX Inh IMN_1	supertype						0.8	3889	
+CS20230722_SUPT_0166	0166 OB-STR-CTX Inh IMN_1	supertype	UBERON:0001893	telencephalon	MBA:567	Cerebrum		0.8	3889	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebrum (MBA:567).
 CS20230722_SUPT_0167	0167 OB-STR-CTX Inh IMN_2	supertype	UBERON:0005366	olfactory lobe	MBA:698	Olfactory areas		0.8	6097	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Olfactory areas (MBA:698).
-CS20230722_SUPT_0168	0168 OB-STR-CTX Inh IMN_3	supertype			MBA:776	corpus callosum	corpus callosum is not grey matter	0.8	1172	
+CS20230722_SUPT_0168	0168 OB-STR-CTX Inh IMN_3	supertype	UBERON:0001893	telencephalon	MBA:567	Cerebrum		0.8	1172	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebrum (MBA:567).
 CS20230722_SUPT_0169	0169 OB-STR-CTX Inh IMN_4	supertype	UBERON:0005366	olfactory lobe	MBA:698	Olfactory areas		0.8	11689	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Olfactory areas (MBA:698).
 CS20230722_SUPT_0170	0170 OB-STR-CTX Inh IMN_5	supertype	UBERON:0001893	telencephalon	MBA:567	Cerebrum		0.8	960	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebrum (MBA:567).
 CS20230722_SUPT_0171	0171 OB-STR-CTX Inh IMN_6	supertype	UBERON:0001893	telencephalon	MBA:567	Cerebrum		0.8	104	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebrum (MBA:567).
-CS20230722_SUPT_0172	0172 OB-STR-CTX Inh IMN_7	supertype			MBA:776	corpus callosum	corpus callosum is not grey matter	0.8	46	
+CS20230722_SUPT_0172	0172 OB-STR-CTX Inh IMN_7	supertype	UBERON:0000956	cerebral cortex	MBA:688	Cerebral cortex		0.8	46	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebral cortex (MBA:688).
 CS20230722_SUPT_0173	0173 Vip Gaba_1	supertype	UBERON:0005343	cortical plate	MBA:695	Cortical plate		0.8	4117	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cortical plate (MBA:695).
 CS20230722_SUPT_0174	0174 Vip Gaba_2	supertype	UBERON:0005343	cortical plate	MBA:695	Cortical plate		0.8	2729	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cortical plate (MBA:695).
 CS20230722_SUPT_0175	0175 Vip Gaba_3	supertype	UBERON:0005343	cortical plate	MBA:695	Cortical plate		0.8	2774	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cortical plate (MBA:695).
@@ -788,7 +788,7 @@ CS20230722_SUPT_0414	0414 PVR Six3 Sox3 Gaba_4	supertype	UBERON:0001890	forebrai
 CS20230722_SUPT_0415	0415 PVR Six3 Sox3 Gaba_5	supertype	UBERON:0001890	forebrain	V:forebrain	forebrain (Cerebrum + Interbrain)		0.8	259	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in forebrain (Cerebrum + Interbrain).
 CS20230722_SUPT_0416	0416 PVR Six3 Sox3 Gaba_6	supertype	UBERON:0001890	forebrain	V:forebrain	forebrain (Cerebrum + Interbrain)		0.8	195	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in forebrain (Cerebrum + Interbrain).
 CS20230722_SUPT_0417	0417 PVR Six3 Sox3 Gaba_7	supertype	UBERON:0001898	hypothalamus	MBA:1097	Hypothalamus		0.8	125	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hypothalamus (MBA:1097).
-CS20230722_SUPT_0418	0418 PVR Six3 Sox3 Gaba_8	supertype						0.8	209	
+CS20230722_SUPT_0418	0418 PVR Six3 Sox3 Gaba_8	supertype	UBERON:0001898	hypothalamus	MBA:1097	Hypothalamus		0.8	209	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hypothalamus (MBA:1097).
 CS20230722_SUPT_0419	0419 PVR Six3 Sox3 Gaba_9	supertype	UBERON:0001898	hypothalamus	MBA:1097	Hypothalamus		0.8	448	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hypothalamus (MBA:1097).
 CS20230722_SUPT_0420	0420 BST-MPN Six3 Nrgn Gaba_1	supertype	UBERON:0001898	hypothalamus	MBA:1097	Hypothalamus		0.8	409	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hypothalamus (MBA:1097).
 CS20230722_SUPT_0421	0421 BST-MPN Six3 Nrgn Gaba_2	supertype	UBERON:0001890	forebrain	V:forebrain	forebrain (Cerebrum + Interbrain)		0.8	221	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in forebrain (Cerebrum + Interbrain).
@@ -872,8 +872,8 @@ CS20230722_SUPT_0498	0498 LGv-ZI Otx2 Gaba_3	supertype	UBERON:0001890	forebrain	
 CS20230722_SUPT_0499	0499 LGv-ZI Otx2 Gaba_4	supertype	UBERON:0001894	diencephalon	MBA:1129	Interbrain		0.8	164	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Interbrain (MBA:1129).
 CS20230722_SUPT_0500	0500 LGv-ZI Otx2 Gaba_5	supertype	UBERON:0001894	diencephalon	MBA:1129	Interbrain		0.8	742	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Interbrain (MBA:1129).
 CS20230722_SUPT_0501	0501 BST-po Iigp1 Glut_1	supertype	UBERON:0001890	forebrain	V:forebrain	forebrain (Cerebrum + Interbrain)		0.8	582	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in forebrain (Cerebrum + Interbrain).
-CS20230722_SUPT_0502	0502 TRS-BAC Sln Glut_1	supertype						0.8	5104	
-CS20230722_SUPT_0503	0503 TRS-BAC Sln Glut_2	supertype						0.8	871	
+CS20230722_SUPT_0502	0502 TRS-BAC Sln Glut_1	supertype	UBERON:8440012	cerebral nuclei	MBA:623	Cerebral nuclei		0.8	5104	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebral nuclei (MBA:623).
+CS20230722_SUPT_0503	0503 TRS-BAC Sln Glut_2	supertype	UBERON:0001890	forebrain	V:forebrain	forebrain (Cerebrum + Interbrain)		0.8	871	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in forebrain (Cerebrum + Interbrain).
 CS20230722_SUPT_0504	0504 GPi Tbr1 Cngb3 Gaba-Glut_1	supertype	UBERON:0001890	forebrain	V:forebrain	forebrain (Cerebrum + Interbrain)		0.8	197	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in forebrain (Cerebrum + Interbrain).
 CS20230722_SUPT_0505	0505 MEA-COA-BMA Ccdc42 Glut_1	supertype	UBERON:0001893	telencephalon	MBA:567	Cerebrum		0.8	3233	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebrum (MBA:567).
 CS20230722_SUPT_0506	0506 MEA-COA-BMA Ccdc42 Glut_2	supertype	UBERON:0000956	cerebral cortex	MBA:688	Cerebral cortex		0.8	667	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebral cortex (MBA:688).
@@ -1286,7 +1286,7 @@ CS20230722_SUPT_0912	0912 LDT-PCG Vsx2 Lhx4 Glut_7	supertype	UBERON:0002298	brai
 CS20230722_SUPT_0913	0913 LDT-PCG Vsx2 Lhx4 Glut_8	supertype	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	438	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
 CS20230722_SUPT_0914	0914 PB Evx2 Glut_1	supertype	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	577	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
 CS20230722_SUPT_0915	0915 PB Evx2 Glut_2	supertype						0.8	914	
-CS20230722_SUPT_0916	0916 PB Evx2 Glut_3	supertype	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	1104	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
+CS20230722_SUPT_0916	0916 PB Evx2 Glut_3	supertype			V:brainstem	brainstem (Midbrain + Hindbrain)	descendant(s) mostly outside brainstem (Midbrain + Hindbrain), no region below grey matter holds them	0.8	1104	
 CS20230722_SUPT_0917	0917 PB Evx2 Glut_4	supertype	UBERON:0002028	hindbrain	V:hindbrain	hindbrain (Hindbrain + Cerebellum)		0.8	698	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in hindbrain (Hindbrain + Cerebellum).
 CS20230722_SUPT_0918	0918 PB Evx2 Glut_5	supertype	UBERON:0007634	parabrachial nucleus	MBA:867	Parabrachial nucleus		0.8	341	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Parabrachial nucleus (MBA:867).
 CS20230722_SUPT_0919	0919 PB Evx2 Glut_6	supertype	UBERON:0000988	pons	MBA:771	Pons		0.8	323	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons (MBA:771).
@@ -1303,7 +1303,7 @@ CS20230722_SUPT_0929	0929 PCG-PRNr Vsx2 Nkx6-1 Glut_5	supertype	UBERON:0002028	h
 CS20230722_SUPT_0930	0930 PCG-PRNr Vsx2 Nkx6-1 Glut_6	supertype	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	143	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
 CS20230722_SUPT_0931	0931 PRNc-NI-SG-RPO Vsx2 Nr4a2 Glut_1	supertype	UBERON:0000988	pons	MBA:771	Pons		0.8	227	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons (MBA:771).
 CS20230722_SUPT_0932	0932 PRNc-NI-SG-RPO Vsx2 Nr4a2 Glut_2	supertype	UBERON:0000988	pons	MBA:771	Pons		0.8	386	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons (MBA:771).
-CS20230722_SUPT_0933	0933 PRNc-NI-SG-RPO Vsx2 Nr4a2 Glut_3	supertype			MBA:771	Pons	descendant(s) mostly outside Pons, no region below grey matter holds them	0.8	332	
+CS20230722_SUPT_0933	0933 PRNc-NI-SG-RPO Vsx2 Nr4a2 Glut_3	supertype	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)	moved up from Pons: descendant(s) mostly outside it	0.8	332	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons; the broader brainstem (Midbrain + Hindbrain) is used because it also holds at least half of the cells of each of its descendant cell sets.
 CS20230722_SUPT_0934	0934 PRNc-NI-SG-RPO Vsx2 Nr4a2 Glut_4	supertype	UBERON:0002028	hindbrain	MBA:1065	Hindbrain		0.8	134	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hindbrain (MBA:1065).
 CS20230722_SUPT_0935	0935 PRNc-PARN Tlx1 Glut_1	supertype	UBERON:0002028	hindbrain	MBA:1065	Hindbrain		0.8	263	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hindbrain (MBA:1065).
 CS20230722_SUPT_0936	0936 PRNc-PARN Tlx1 Glut_2	supertype	UBERON:0002028	hindbrain	MBA:1065	Hindbrain		0.8	117	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hindbrain (MBA:1065).
@@ -1400,7 +1400,7 @@ CS20230722_SUPT_1026	1026 HB Calcb Chol_2	supertype	UBERON:0002298	brainstem	V:b
 CS20230722_SUPT_1027	1027 HB Calcb Chol_3	supertype	UBERON:0002028	hindbrain	MBA:1065	Hindbrain		0.8	806	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hindbrain (MBA:1065).
 CS20230722_SUPT_1028	1028 HB Calcb Chol_4	supertype	UBERON:0001896	medulla oblongata	MBA:354	Medulla		0.8	1406	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medulla (MBA:354).
 CS20230722_SUPT_1029	1029 HB Calcb Chol_5	supertype	UBERON:0001896	medulla oblongata	MBA:354	Medulla		0.8	277	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medulla (MBA:354).
-CS20230722_SUPT_1030	1030 Pineal Crx Glut_1	supertype			MBA:129	third ventricle	third ventricle is not grey matter	0.8	114	
+CS20230722_SUPT_1030	1030 Pineal Crx Glut_1	supertype					pinealocytes: location from spatial registration is unreliable	0.8	114	
 CS20230722_SUPT_1031	1031 CS-RPO Meis2 Gaba_1	supertype	UBERON:0000988	pons	MBA:771	Pons		0.8	657	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons (MBA:771).
 CS20230722_SUPT_1032	1032 CS-RPO Meis2 Gaba_2	supertype	UBERON:0000988	pons	MBA:771	Pons		0.8	336	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons (MBA:771).
 CS20230722_SUPT_1033	1033 CS-RPO Meis2 Gaba_3	supertype	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)	moved up from Pons: descendant(s) mostly outside it	0.8	582	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons; the broader brainstem (Midbrain + Hindbrain) is used because it also holds at least half of the cells of each of its descendant cell sets.
@@ -1421,7 +1421,7 @@ CS20230722_SUPT_1047	1047 CS-PRNr-DR En1 Sox2 Gaba_1	supertype	UBERON:0002298	br
 CS20230722_SUPT_1048	1048 CS-PRNr-DR En1 Sox2 Gaba_2	supertype	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	1361	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
 CS20230722_SUPT_1049	1049 LDT Fgf7 Gaba_1	supertype						0.8	203	
 CS20230722_SUPT_1050	1050 LDT-DTN Gata3 Nfix Gaba_1	supertype	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	944	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
-CS20230722_SUPT_1051	1051 LDT-DTN Gata3 Nfix Gaba_2	supertype						0.8	312	
+CS20230722_SUPT_1051	1051 LDT-DTN Gata3 Nfix Gaba_2	supertype	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	312	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
 CS20230722_SUPT_1052	1052 NI-RPO Gata3 Nr4a2 Gaba_1	supertype	UBERON:0000988	pons	MBA:771	Pons		0.8	277	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons (MBA:771).
 CS20230722_SUPT_1053	1053 NI-RPO Gata3 Nr4a2 Gaba_2	supertype	UBERON:0000988	pons	MBA:771	Pons		0.8	296	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons (MBA:771).
 CS20230722_SUPT_1054	1054 NI-RPO Gata3 Nr4a2 Gaba_3	supertype	UBERON:0000988	pons	MBA:771	Pons		0.8	36	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons (MBA:771).
@@ -1470,7 +1470,7 @@ CS20230722_SUPT_1096	1096 MY Lhx1 Gly-Gaba_8	supertype	UBERON:0002028	hindbrain	
 CS20230722_SUPT_1097	1097 MY Lhx1 Gly-Gaba_9	supertype	UBERON:0001896	medulla oblongata	MBA:354	Medulla		0.8	1065	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medulla (MBA:354).
 CS20230722_SUPT_1098	1098 PPY-PGRNl Vip Glyc-Gaba_1	supertype	UBERON:0001896	medulla oblongata	MBA:354	Medulla		0.8	662	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medulla (MBA:354).
 CS20230722_SUPT_1099	1099 MV-SPIV-PRP Dmbx1 Gly-Gaba_1	supertype	UBERON:0001896	medulla oblongata	MBA:354	Medulla		0.8	1018	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medulla (MBA:354).
-CS20230722_SUPT_1100	1100 MV-SPIV-PRP Dmbx1 Gly-Gaba_2	supertype						0.8	165	
+CS20230722_SUPT_1100	1100 MV-SPIV-PRP Dmbx1 Gly-Gaba_2	supertype	UBERON:0001896	medulla oblongata	MBA:370	Medulla, motor related		0.8	165	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medulla, motor related (MBA:370).
 CS20230722_SUPT_1101	1101 MV-SPIV-PRP Dmbx1 Gly-Gaba_3	supertype	UBERON:0002028	hindbrain	V:hindbrain	hindbrain (Hindbrain + Cerebellum)		0.8	180	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in hindbrain (Hindbrain + Cerebellum).
 CS20230722_SUPT_1102	1102 MDRN Hoxb5 Ebf2 Gly-Gaba_1	supertype	UBERON:0001896	medulla oblongata	MBA:354	Medulla		0.8	407	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medulla (MBA:354).
 CS20230722_SUPT_1103	1103 MDRNd Prox1 Pax6 Gly-Gaba_1	supertype	UBERON:0001896	medulla oblongata	MBA:354	Medulla		0.8	46	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medulla (MBA:354).
@@ -1542,12 +1542,12 @@ CS20230722_SUPT_1168	1168 Astro-OLF NN_3	supertype	UBERON:0005378	olfactory bulb
 CS20230722_SUPT_1169	1169 Astroependymal NN_1	supertype	UBERON:0001890	forebrain	V:forebrain	forebrain (Cerebrum + Interbrain)		0.8	3422	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in forebrain (Cerebrum + Interbrain).
 CS20230722_SUPT_1170	1170 Astroependymal NN_2	supertype	UBERON:0002028	hindbrain	V:hindbrain	hindbrain (Hindbrain + Cerebellum)		0.8	355	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in hindbrain (Hindbrain + Cerebellum).
 CS20230722_SUPT_1171	1171 Astroependymal NN_3	supertype	UBERON:0001891	midbrain	MBA:313	Midbrain		0.8	313	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313).
-CS20230722_SUPT_1172	1172 Tanycyte NN_1	supertype			MBA:73	ventricular systems	ventricular systems is not grey matter	0.8	283	
+CS20230722_SUPT_1172	1172 Tanycyte NN_1	supertype	UBERON:0001898	hypothalamus	MBA:1097	Hypothalamus		0.8	283	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hypothalamus (MBA:1097).
 CS20230722_SUPT_1173	1173 Tanycyte NN_2	supertype	UBERON:0002271	periventricular zone of hypothalamus	MBA:157	Periventricular zone		0.8	1828	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Periventricular zone (MBA:157).
 CS20230722_SUPT_1174	1174 Tanycyte NN_3	supertype	UBERON:0001898	hypothalamus	MBA:1097	Hypothalamus		0.8	754	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hypothalamus (MBA:1097).
-CS20230722_SUPT_1175	1175 Ependymal NN_1	supertype			MBA:73	ventricular systems	ventricular systems is not grey matter	0.8	14850	
-CS20230722_SUPT_1176	1176 Ependymal NN_2	supertype			MBA:73	ventricular systems	ventricular systems is not grey matter	0.8	644	
-CS20230722_SUPT_1177	1177 Hypendymal NN_1	supertype			MBA:129	third ventricle	third ventricle is not grey matter	0.8	404	
+CS20230722_SUPT_1175	1175 Ependymal NN_1	supertype						0.8	14850	
+CS20230722_SUPT_1176	1176 Ependymal NN_2	supertype						0.8	644	
+CS20230722_SUPT_1177	1177 Hypendymal NN_1	supertype	UBERON:0001891	midbrain	MBA:313	Midbrain		0.8	404	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313).
 CS20230722_SUPT_1178	1178 CHOR NN_1	supertype						0.8	0	
 CS20230722_SUPT_1179	1179 OPC NN_1	supertype						0.8	156452	
 CS20230722_SUPT_1180	1180 OPC NN_2	supertype						0.8	47497	
@@ -1555,11 +1555,11 @@ CS20230722_SUPT_1181	1181 COP NN_1	supertype						0.8	46022
 CS20230722_SUPT_1182	1182 NFOL NN_2	supertype						0.8	8124	
 CS20230722_SUPT_1183	1183 MFOL NN_3	supertype						0.8	3382	
 CS20230722_SUPT_1184	1184 MOL NN_4	supertype						0.8	230777	
-CS20230722_SUPT_1185	1185 OEC NN_1	supertype						0.8	20926	
+CS20230722_SUPT_1185	1185 OEC NN_1	supertype	UBERON:0005366	olfactory lobe	MBA:698	Olfactory areas		0.8	20926	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Olfactory areas (MBA:698).
 CS20230722_SUPT_1186	1186 ABC NN_1	supertype						0.8	21701	
 CS20230722_SUPT_1187	1187 VLMC NN_1	supertype						0.8	61351	
 CS20230722_SUPT_1188	1188 VLMC NN_2	supertype						0.8	42150	
-CS20230722_SUPT_1189	1189 VLMC NN_3	supertype			MBA:108	choroid plexus	choroid plexus is not grey matter	0.8	1071	
+CS20230722_SUPT_1189	1189 VLMC NN_3	supertype						0.8	1071	
 CS20230722_SUPT_1190	1190 VLMC NN_4	supertype	UBERON:0001898	hypothalamus	MBA:1097	Hypothalamus		0.8	158	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hypothalamus (MBA:1097).
 CS20230722_SUPT_1191	1191 Peri NN_1	supertype						0.8	125101	
 CS20230722_SUPT_1192	1192 SMC NN_1	supertype						0.8	55178	
@@ -1871,7 +1871,7 @@ CS20230722_CLUS_0296	0296 CA3 Glut_1	cluster	UBERON:0001954	Ammon's horn	MBA:375
 CS20230722_CLUS_0297	0297 CA3 Glut_1	cluster	UBERON:0003883	CA3 field of hippocampus	MBA:463	Field CA3		0.8	1929	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Field CA3 (MBA:463).
 CS20230722_CLUS_0298	0298 CA3 Glut_1	cluster	UBERON:0001954	Ammon's horn	MBA:375	Ammon's horn		0.8	207	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Ammon's horn (MBA:375).
 CS20230722_CLUS_0299	0299 CA3 Glut_1	cluster	UBERON:0001954	Ammon's horn	MBA:375	Ammon's horn		0.8	340	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Ammon's horn (MBA:375).
-CS20230722_CLUS_0300	0300 CA3 Glut_1	cluster						0.8	325	
+CS20230722_CLUS_0300	0300 CA3 Glut_1	cluster	UBERON:0000956	cerebral cortex	MBA:688	Cerebral cortex		0.8	325	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebral cortex (MBA:688).
 CS20230722_CLUS_0301	0301 CA3 Glut_1	cluster	UBERON:0001954	Ammon's horn	MBA:375	Ammon's horn		0.8	394	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Ammon's horn (MBA:375).
 CS20230722_CLUS_0302	0302 CA3 Glut_2	cluster	UBERON:0000956	cerebral cortex	MBA:688	Cerebral cortex		0.8	314	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebral cortex (MBA:688).
 CS20230722_CLUS_0303	0303 CA3 Glut_2	cluster	UBERON:0000956	cerebral cortex	MBA:688	Cerebral cortex		0.8	493	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebral cortex (MBA:688).
@@ -1971,7 +1971,7 @@ CS20230722_CLUS_0396	0396 SUB-ProS Glut_3	cluster	UBERON:0022230	retrohippocampa
 CS20230722_CLUS_0397	0397 SUB-ProS Glut_3	cluster	UBERON:0022230	retrohippocampal region	MBA:822	Retrohippocampal region		0.8	103	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Retrohippocampal region (MBA:822).
 CS20230722_CLUS_0398	0398 L5 PPP Glut_1	cluster	UBERON:0022230	retrohippocampal region	MBA:822	Retrohippocampal region		0.8	1088	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Retrohippocampal region (MBA:822).
 CS20230722_CLUS_0399	0399 CA2-FC-IG Glut_1	cluster	UBERON:0001954	Ammon's horn	MBA:375	Ammon's horn		0.8	2879	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Ammon's horn (MBA:375).
-CS20230722_CLUS_0400	0400 CA2-FC-IG Glut_2	cluster						0.8	540	
+CS20230722_CLUS_0400	0400 CA2-FC-IG Glut_2	cluster	UBERON:0005343	cortical plate	MBA:695	Cortical plate		0.8	540	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cortical plate (MBA:695).
 CS20230722_CLUS_0401	0401 CA2-FC-IG Glut_2	cluster	UBERON:0002421	hippocampal formation	MBA:1089	Hippocampal formation		0.8	1172	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hippocampal formation (MBA:1089).
 CS20230722_CLUS_0402	0402 NLOT Rho Glut_1	cluster	UBERON:0001893	telencephalon	MBA:567	Cerebrum		0.8	1602	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebrum (MBA:567).
 CS20230722_CLUS_0403	0403 L6b EPd Glut_1	cluster	UBERON:0000956	cerebral cortex	MBA:688	Cerebral cortex		0.8	633	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebral cortex (MBA:688).
@@ -1995,17 +1995,17 @@ CS20230722_CLUS_0420	0420 L6b/CT ENT Glut_3	cluster	UBERON:0005343	cortical plat
 CS20230722_CLUS_0421	0421 L6b/CT ENT Glut_4	cluster	UBERON:0022230	retrohippocampal region	MBA:822	Retrohippocampal region		0.8	11547	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Retrohippocampal region (MBA:822).
 CS20230722_CLUS_0422	0422 L6b/CT ENT Glut_4	cluster	UBERON:0022230	retrohippocampal region	MBA:822	Retrohippocampal region		0.8	1983	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Retrohippocampal region (MBA:822).
 CS20230722_CLUS_0423	0423 L6b/CT ENT Glut_4	cluster	UBERON:0022230	retrohippocampal region	MBA:822	Retrohippocampal region		0.8	461	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Retrohippocampal region (MBA:822).
-CS20230722_CLUS_0424	0424 L6b CTX Glut_1	cluster						0.8	745	
-CS20230722_CLUS_0425	0425 L6b CTX Glut_1	cluster						0.8	3510	
-CS20230722_CLUS_0426	0426 L6b CTX Glut_1	cluster						0.8	1825	
-CS20230722_CLUS_0427	0427 L6b CTX Glut_2	cluster						0.8	562	
-CS20230722_CLUS_0428	0428 L6b CTX Glut_2	cluster			MBA:1009	fiber tracts	fiber tracts is not grey matter	0.8	141	
-CS20230722_CLUS_0429	0429 L6b CTX Glut_2	cluster			MBA:1009	fiber tracts	fiber tracts is not grey matter	0.8	2492	
-CS20230722_CLUS_0430	0430 L6b CTX Glut_2	cluster						0.8	1434	
-CS20230722_CLUS_0431	0431 L6b CTX Glut_3	cluster						0.8	1048	
-CS20230722_CLUS_0432	0432 L6b CTX Glut_3	cluster						0.8	630	
-CS20230722_CLUS_0433	0433 L6b CTX Glut_3	cluster						0.8	972	
-CS20230722_CLUS_0434	0434 L6b CTX Glut_3	cluster						0.8	464	
+CS20230722_CLUS_0424	0424 L6b CTX Glut_1	cluster	UBERON:0005343	cortical plate	MBA:695	Cortical plate		0.8	745	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cortical plate (MBA:695).
+CS20230722_CLUS_0425	0425 L6b CTX Glut_1	cluster	UBERON:0001950	neocortex	MBA:315	Isocortex		0.8	3510	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Isocortex (MBA:315).
+CS20230722_CLUS_0426	0426 L6b CTX Glut_1	cluster	UBERON:0001950	neocortex	MBA:315	Isocortex		0.8	1825	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Isocortex (MBA:315).
+CS20230722_CLUS_0427	0427 L6b CTX Glut_2	cluster	UBERON:0005343	cortical plate	MBA:695	Cortical plate		0.8	562	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cortical plate (MBA:695).
+CS20230722_CLUS_0428	0428 L6b CTX Glut_2	cluster	UBERON:0001950	neocortex	MBA:315	Isocortex		0.8	141	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Isocortex (MBA:315).
+CS20230722_CLUS_0429	0429 L6b CTX Glut_2	cluster	UBERON:0001950	neocortex	MBA:315	Isocortex		0.8	2492	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Isocortex (MBA:315).
+CS20230722_CLUS_0430	0430 L6b CTX Glut_2	cluster	UBERON:0005343	cortical plate	MBA:695	Cortical plate		0.8	1434	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cortical plate (MBA:695).
+CS20230722_CLUS_0431	0431 L6b CTX Glut_3	cluster	UBERON:0005343	cortical plate	MBA:695	Cortical plate		0.8	1048	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cortical plate (MBA:695).
+CS20230722_CLUS_0432	0432 L6b CTX Glut_3	cluster	UBERON:0001950	neocortex	MBA:315	Isocortex		0.8	630	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Isocortex (MBA:315).
+CS20230722_CLUS_0433	0433 L6b CTX Glut_3	cluster	UBERON:0001950	neocortex	MBA:315	Isocortex		0.8	972	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Isocortex (MBA:315).
+CS20230722_CLUS_0434	0434 L6b CTX Glut_3	cluster	UBERON:0001950	neocortex	MBA:315	Isocortex		0.8	464	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Isocortex (MBA:315).
 CS20230722_CLUS_0435	0435 L6b CTX Glut_4	cluster	UBERON:0001950	neocortex	MBA:315	Isocortex		0.8	820	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Isocortex (MBA:315).
 CS20230722_CLUS_0436	0436 L6 CT CTX Glut_1	cluster	UBERON:0001950	neocortex	MBA:315	Isocortex		0.8	29207	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Isocortex (MBA:315).
 CS20230722_CLUS_0437	0437 L6 CT CTX Glut_1	cluster	UBERON:0001950	neocortex	MBA:315	Isocortex		0.8	6108	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Isocortex (MBA:315).
@@ -2082,7 +2082,7 @@ CS20230722_CLUS_0507	0507 DG Glut_2	cluster	UBERON:0002421	hippocampal formation
 CS20230722_CLUS_0508	0508 DG Glut_3	cluster	UBERON:0002421	hippocampal formation	MBA:1080	Hippocampal region		0.8	786	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hippocampal region (MBA:1080).
 CS20230722_CLUS_0509	0509 DG Glut_3	cluster	UBERON:0002421	hippocampal formation	MBA:1080	Hippocampal region		0.8	848	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hippocampal region (MBA:1080).
 CS20230722_CLUS_0510	0510 DG Glut_4	cluster	UBERON:0002421	hippocampal formation	MBA:1080	Hippocampal region		0.8	16083	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hippocampal region (MBA:1080).
-CS20230722_CLUS_0511	0511 DG-PIR Ex IMN_1	cluster			MBA:776	corpus callosum	corpus callosum is not grey matter	0.8	92	
+CS20230722_CLUS_0511	0511 DG-PIR Ex IMN_1	cluster	UBERON:0001893	telencephalon	MBA:567	Cerebrum		0.8	92	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebrum (MBA:567).
 CS20230722_CLUS_0512	0512 DG-PIR Ex IMN_2	cluster	UBERON:0002421	hippocampal formation	MBA:1080	Hippocampal region		0.8	533	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hippocampal region (MBA:1080).
 CS20230722_CLUS_0513	0513 DG-PIR Ex IMN_2	cluster	UBERON:0002421	hippocampal formation	MBA:1080	Hippocampal region		0.8	259	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hippocampal region (MBA:1080).
 CS20230722_CLUS_0514	0514 DG-PIR Ex IMN_2	cluster	UBERON:0002421	hippocampal formation	MBA:1080	Hippocampal region		0.8	788	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hippocampal region (MBA:1080).
@@ -2164,14 +2164,14 @@ CS20230722_CLUS_0589	0589 OB Dopa-Gaba_1	cluster	UBERON:0005366	olfactory lobe	M
 CS20230722_CLUS_0590	0590 OB Dopa-Gaba_2	cluster	UBERON:0001893	telencephalon	MBA:567	Cerebrum		0.8	124	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebrum (MBA:567).
 CS20230722_CLUS_0591	0591 OB Dopa-Gaba_3	cluster	UBERON:0005366	olfactory lobe	MBA:698	Olfactory areas		0.8	673	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Olfactory areas (MBA:698).
 CS20230722_CLUS_0592	0592 OB Dopa-Gaba_4	cluster	UBERON:0005366	olfactory lobe	MBA:698	Olfactory areas		0.8	483	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Olfactory areas (MBA:698).
-CS20230722_CLUS_0593	0593 OB-STR-CTX Inh IMN_1	cluster						0.8	81	
-CS20230722_CLUS_0594	0594 OB-STR-CTX Inh IMN_1	cluster						0.8	365	
-CS20230722_CLUS_0595	0595 OB-STR-CTX Inh IMN_1	cluster			MBA:776	corpus callosum	corpus callosum is not grey matter	0.8	222	
-CS20230722_CLUS_0596	0596 OB-STR-CTX Inh IMN_1	cluster			MBA:776	corpus callosum	corpus callosum is not grey matter	0.8	67	
-CS20230722_CLUS_0597	0597 OB-STR-CTX Inh IMN_1	cluster						0.8	318	
-CS20230722_CLUS_0598	0598 OB-STR-CTX Inh IMN_1	cluster						0.8	792	
-CS20230722_CLUS_0599	0599 OB-STR-CTX Inh IMN_1	cluster						0.8	864	
-CS20230722_CLUS_0600	0600 OB-STR-CTX Inh IMN_1	cluster						0.8	1180	
+CS20230722_CLUS_0593	0593 OB-STR-CTX Inh IMN_1	cluster	UBERON:0001893	telencephalon	MBA:567	Cerebrum		0.8	81	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebrum (MBA:567).
+CS20230722_CLUS_0594	0594 OB-STR-CTX Inh IMN_1	cluster	UBERON:0001893	telencephalon	MBA:567	Cerebrum		0.8	365	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebrum (MBA:567).
+CS20230722_CLUS_0595	0595 OB-STR-CTX Inh IMN_1	cluster	UBERON:0001893	telencephalon	MBA:567	Cerebrum		0.8	222	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebrum (MBA:567).
+CS20230722_CLUS_0596	0596 OB-STR-CTX Inh IMN_1	cluster	UBERON:0001893	telencephalon	MBA:567	Cerebrum		0.8	67	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebrum (MBA:567).
+CS20230722_CLUS_0597	0597 OB-STR-CTX Inh IMN_1	cluster	UBERON:0001893	telencephalon	MBA:567	Cerebrum		0.8	318	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebrum (MBA:567).
+CS20230722_CLUS_0598	0598 OB-STR-CTX Inh IMN_1	cluster	UBERON:0001893	telencephalon	MBA:567	Cerebrum		0.8	792	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebrum (MBA:567).
+CS20230722_CLUS_0599	0599 OB-STR-CTX Inh IMN_1	cluster	UBERON:0001893	telencephalon	MBA:567	Cerebrum		0.8	864	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebrum (MBA:567).
+CS20230722_CLUS_0600	0600 OB-STR-CTX Inh IMN_1	cluster	UBERON:0001893	telencephalon	MBA:567	Cerebrum		0.8	1180	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebrum (MBA:567).
 CS20230722_CLUS_0601	0601 OB-STR-CTX Inh IMN_2	cluster	UBERON:0005366	olfactory lobe	MBA:698	Olfactory areas		0.8	221	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Olfactory areas (MBA:698).
 CS20230722_CLUS_0602	0602 OB-STR-CTX Inh IMN_2	cluster	UBERON:0009951	main olfactory bulb	MBA:507	Main olfactory bulb		0.8	103	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Main olfactory bulb (MBA:507).
 CS20230722_CLUS_0603	0603 OB-STR-CTX Inh IMN_2	cluster	UBERON:0005378	olfactory bulb granule cell layer	MBA:220	Main olfactory bulb, granule layer		0.8	1113	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Main olfactory bulb, granule layer (MBA:220).
@@ -2179,9 +2179,9 @@ CS20230722_CLUS_0604	0604 OB-STR-CTX Inh IMN_2	cluster	UBERON:0005366	olfactory 
 CS20230722_CLUS_0605	0605 OB-STR-CTX Inh IMN_2	cluster	UBERON:0005366	olfactory lobe	MBA:698	Olfactory areas		0.8	2859	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Olfactory areas (MBA:698).
 CS20230722_CLUS_0606	0606 OB-STR-CTX Inh IMN_2	cluster	UBERON:0009951	main olfactory bulb	MBA:507	Main olfactory bulb		0.8	119	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Main olfactory bulb (MBA:507).
 CS20230722_CLUS_0607	0607 OB-STR-CTX Inh IMN_2	cluster	UBERON:0009951	main olfactory bulb	MBA:507	Main olfactory bulb		0.8	837	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Main olfactory bulb (MBA:507).
-CS20230722_CLUS_0608	0608 OB-STR-CTX Inh IMN_3	cluster			MBA:776	corpus callosum	corpus callosum is not grey matter	0.8	77	
-CS20230722_CLUS_0609	0609 OB-STR-CTX Inh IMN_3	cluster			MBA:776	corpus callosum	corpus callosum is not grey matter	0.8	1057	
-CS20230722_CLUS_0610	0610 OB-STR-CTX Inh IMN_3	cluster			MBA:81	lateral ventricle	lateral ventricle is not grey matter	0.8	38	
+CS20230722_CLUS_0608	0608 OB-STR-CTX Inh IMN_3	cluster	UBERON:0005366	olfactory lobe	MBA:698	Olfactory areas		0.8	77	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Olfactory areas (MBA:698).
+CS20230722_CLUS_0609	0609 OB-STR-CTX Inh IMN_3	cluster	UBERON:0001893	telencephalon	MBA:567	Cerebrum		0.8	1057	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebrum (MBA:567).
+CS20230722_CLUS_0610	0610 OB-STR-CTX Inh IMN_3	cluster	UBERON:0001893	telencephalon	MBA:567	Cerebrum		0.8	38	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebrum (MBA:567).
 CS20230722_CLUS_0611	0611 OB-STR-CTX Inh IMN_4	cluster	UBERON:0009951	main olfactory bulb	MBA:507	Main olfactory bulb		0.8	114	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Main olfactory bulb (MBA:507).
 CS20230722_CLUS_0612	0612 OB-STR-CTX Inh IMN_4	cluster	UBERON:0001893	telencephalon	MBA:567	Cerebrum		0.8	10780	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebrum (MBA:567).
 CS20230722_CLUS_0613	0613 OB-STR-CTX Inh IMN_4	cluster	UBERON:0005366	olfactory lobe	MBA:698	Olfactory areas		0.8	132	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Olfactory areas (MBA:698).
@@ -2193,7 +2193,7 @@ CS20230722_CLUS_0618	0618 OB-STR-CTX Inh IMN_5	cluster	UBERON:0001893	telencepha
 CS20230722_CLUS_0619	0619 OB-STR-CTX Inh IMN_5	cluster	UBERON:0005366	olfactory lobe	MBA:698	Olfactory areas		0.8	221	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Olfactory areas (MBA:698).
 CS20230722_CLUS_0620	0620 OB-STR-CTX Inh IMN_5	cluster	UBERON:0001893	telencephalon	MBA:567	Cerebrum		0.8	327	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebrum (MBA:567).
 CS20230722_CLUS_0621	0621 OB-STR-CTX Inh IMN_6	cluster	UBERON:0001893	telencephalon	MBA:567	Cerebrum		0.8	104	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebrum (MBA:567).
-CS20230722_CLUS_0622	0622 OB-STR-CTX Inh IMN_7	cluster			MBA:776	corpus callosum	corpus callosum is not grey matter	0.8	46	
+CS20230722_CLUS_0622	0622 OB-STR-CTX Inh IMN_7	cluster	UBERON:0000956	cerebral cortex	MBA:688	Cerebral cortex		0.8	46	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebral cortex (MBA:688).
 CS20230722_CLUS_0623	0623 Vip Gaba_1	cluster	UBERON:0005343	cortical plate	MBA:695	Cortical plate		0.8	1005	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cortical plate (MBA:695).
 CS20230722_CLUS_0624	0624 Vip Gaba_1	cluster	UBERON:0001950	neocortex	MBA:315	Isocortex		0.8	1984	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Isocortex (MBA:315).
 CS20230722_CLUS_0625	0625 Vip Gaba_1	cluster	UBERON:0000956	cerebral cortex	MBA:688	Cerebral cortex		0.8	1004	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebral cortex (MBA:688).
@@ -3099,7 +3099,7 @@ CS20230722_CLUS_1524	1524 PVR Six3 Sox3 Gaba_7	cluster						0.8	18
 CS20230722_CLUS_1525	1525 PVR Six3 Sox3 Gaba_7	cluster	UBERON:0001898	hypothalamus	MBA:1097	Hypothalamus		0.8	39	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hypothalamus (MBA:1097).
 CS20230722_CLUS_1526	1526 PVR Six3 Sox3 Gaba_7	cluster	UBERON:0001898	hypothalamus	MBA:1097	Hypothalamus		0.8	68	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hypothalamus (MBA:1097).
 CS20230722_CLUS_1527	1527 PVR Six3 Sox3 Gaba_8	cluster						0.8	14	
-CS20230722_CLUS_1528	1528 PVR Six3 Sox3 Gaba_8	cluster						0.8	135	
+CS20230722_CLUS_1528	1528 PVR Six3 Sox3 Gaba_8	cluster	UBERON:0001898	hypothalamus	MBA:141	Periventricular region		0.8	135	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Periventricular region (MBA:141).
 CS20230722_CLUS_1529	1529 PVR Six3 Sox3 Gaba_8	cluster	UBERON:0001898	hypothalamus	MBA:1097	Hypothalamus		0.8	38	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hypothalamus (MBA:1097).
 CS20230722_CLUS_1530	1530 PVR Six3 Sox3 Gaba_8	cluster						0.8	22	
 CS20230722_CLUS_1531	1531 PVR Six3 Sox3 Gaba_9	cluster	UBERON:0001898	hypothalamus	MBA:1097	Hypothalamus		0.8	36	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hypothalamus (MBA:1097).
@@ -3168,7 +3168,7 @@ CS20230722_CLUS_1593	1593 RT-ZI Gnb3 Gaba_3	cluster	UBERON:0001903	thalamic reti
 CS20230722_CLUS_1594	1594 RT-ZI Gnb3 Gaba_3	cluster						0.8	30	
 CS20230722_CLUS_1595	1595 RT-ZI Gnb3 Gaba_4	cluster	UBERON:0001890	forebrain	V:forebrain	forebrain (Cerebrum + Interbrain)		0.8	118	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in forebrain (Cerebrum + Interbrain).
 CS20230722_CLUS_1596	1596 RT-ZI Gnb3 Gaba_4	cluster	UBERON:0001890	forebrain	V:forebrain	forebrain (Cerebrum + Interbrain)		0.8	42	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in forebrain (Cerebrum + Interbrain).
-CS20230722_CLUS_1597	1597 RT-ZI Gnb3 Gaba_4	cluster			MBA:6	internal capsule	internal capsule is not grey matter	0.8	148	
+CS20230722_CLUS_1597	1597 RT-ZI Gnb3 Gaba_4	cluster	UBERON:0001890	forebrain	V:forebrain	forebrain (Cerebrum + Interbrain)		0.8	148	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in forebrain (Cerebrum + Interbrain).
 CS20230722_CLUS_1598	1598 RT-ZI Gnb3 Gaba_4	cluster	UBERON:0001890	forebrain	V:forebrain	forebrain (Cerebrum + Interbrain)		0.8	222	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in forebrain (Cerebrum + Interbrain).
 CS20230722_CLUS_1599	1599 RT-ZI Gnb3 Gaba_4	cluster	UBERON:0001894	diencephalon	MBA:1129	Interbrain		0.8	61	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Interbrain (MBA:1129).
 CS20230722_CLUS_1600	1600 RT-ZI Gnb3 Gaba_5	cluster	UBERON:0001897	dorsal plus ventral thalamus	MBA:856	Thalamus, polymodal association cortex related		0.8	419	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Thalamus, polymodal association cortex related (MBA:856).
@@ -3448,7 +3448,7 @@ CS20230722_CLUS_1873	1873 PVpo-VMPO-MPN Hmx2 Gaba_1	cluster	UBERON:0001898	hypot
 CS20230722_CLUS_1874	1874 PVpo-VMPO-MPN Hmx2 Gaba_1	cluster	UBERON:0001898	hypothalamus	MBA:1097	Hypothalamus		0.8	204	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hypothalamus (MBA:1097).
 CS20230722_CLUS_1875	1875 PVpo-VMPO-MPN Hmx2 Gaba_1	cluster	UBERON:0001898	hypothalamus	MBA:1097	Hypothalamus		0.8	51	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hypothalamus (MBA:1097).
 CS20230722_CLUS_1876	1876 PVpo-VMPO-MPN Hmx2 Gaba_1	cluster	UBERON:0001898	hypothalamus	MBA:1097	Hypothalamus		0.8	82	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hypothalamus (MBA:1097).
-CS20230722_CLUS_1877	1877 PVpo-VMPO-MPN Hmx2 Gaba_1	cluster						0.8	113	
+CS20230722_CLUS_1877	1877 PVpo-VMPO-MPN Hmx2 Gaba_1	cluster	UBERON:0001898	hypothalamus	MBA:1097	Hypothalamus		0.8	113	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hypothalamus (MBA:1097).
 CS20230722_CLUS_1878	1878 PVpo-VMPO-MPN Hmx2 Gaba_1	cluster	UBERON:0001898	hypothalamus	MBA:1097	Hypothalamus		0.8	73	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hypothalamus (MBA:1097).
 CS20230722_CLUS_1879	1879 PVpo-VMPO-MPN Hmx2 Gaba_1	cluster	UBERON:0001898	hypothalamus	MBA:1097	Hypothalamus		0.8	150	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hypothalamus (MBA:1097).
 CS20230722_CLUS_1880	1880 PVpo-VMPO-MPN Hmx2 Gaba_1	cluster						0.8	31	
@@ -3562,10 +3562,10 @@ CS20230722_CLUS_1987	1987 LGv-ZI Otx2 Gaba_5	cluster	UBERON:0001894	diencephalon
 CS20230722_CLUS_1988	1988 LGv-ZI Otx2 Gaba_5	cluster	UBERON:0001897	dorsal plus ventral thalamus	MBA:856	Thalamus, polymodal association cortex related		0.8	60	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Thalamus, polymodal association cortex related (MBA:856).
 CS20230722_CLUS_1989	1989 BST-po Iigp1 Glut_1	cluster	UBERON:0001890	forebrain	V:forebrain	forebrain (Cerebrum + Interbrain)		0.8	582	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in forebrain (Cerebrum + Interbrain).
 CS20230722_CLUS_1990	1990 TRS-BAC Sln Glut_1	cluster	UBERON:8440012	cerebral nuclei	MBA:623	Cerebral nuclei		0.8	4060	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebral nuclei (MBA:623).
-CS20230722_CLUS_1991	1991 TRS-BAC Sln Glut_1	cluster						0.8	698	
-CS20230722_CLUS_1992	1992 TRS-BAC Sln Glut_1	cluster						0.8	346	
-CS20230722_CLUS_1993	1993 TRS-BAC Sln Glut_2	cluster						0.8	634	
-CS20230722_CLUS_1994	1994 TRS-BAC Sln Glut_2	cluster						0.8	237	
+CS20230722_CLUS_1991	1991 TRS-BAC Sln Glut_1	cluster	UBERON:0001890	forebrain	V:forebrain	forebrain (Cerebrum + Interbrain)		0.8	698	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in forebrain (Cerebrum + Interbrain).
+CS20230722_CLUS_1992	1992 TRS-BAC Sln Glut_1	cluster	UBERON:0001890	forebrain	V:forebrain	forebrain (Cerebrum + Interbrain)		0.8	346	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in forebrain (Cerebrum + Interbrain).
+CS20230722_CLUS_1993	1993 TRS-BAC Sln Glut_2	cluster	UBERON:8440012	cerebral nuclei	MBA:623	Cerebral nuclei		0.8	634	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebral nuclei (MBA:623).
+CS20230722_CLUS_1994	1994 TRS-BAC Sln Glut_2	cluster	UBERON:0001890	forebrain	V:forebrain	forebrain (Cerebrum + Interbrain)		0.8	237	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in forebrain (Cerebrum + Interbrain).
 CS20230722_CLUS_1995	1995 GPi Tbr1 Cngb3 Gaba-Glut_1	cluster	UBERON:0001890	forebrain	V:forebrain	forebrain (Cerebrum + Interbrain)		0.8	56	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in forebrain (Cerebrum + Interbrain).
 CS20230722_CLUS_1996	1996 GPi Tbr1 Cngb3 Gaba-Glut_1	cluster	UBERON:0006514	pallidum	MBA:803	Pallidum		0.8	95	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pallidum (MBA:803).
 CS20230722_CLUS_1997	1997 GPi Tbr1 Cngb3 Gaba-Glut_1	cluster	UBERON:0001890	forebrain	V:forebrain	forebrain (Cerebrum + Interbrain)		0.8	46	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in forebrain (Cerebrum + Interbrain).
@@ -3660,7 +3660,7 @@ CS20230722_CLUS_2085	2085 AVPV-MEPO-SFO Tbr1 Glut_3	cluster	UBERON:0001890	foreb
 CS20230722_CLUS_2086	2086 AVPV-MEPO-SFO Tbr1 Glut_3	cluster	UBERON:0001898	hypothalamus	MBA:141	Periventricular region		0.8	49	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Periventricular region (MBA:141).
 CS20230722_CLUS_2087	2087 AVPV-MEPO-SFO Tbr1 Glut_3	cluster	UBERON:0001898	hypothalamus	MBA:141	Periventricular region		0.8	29	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Periventricular region (MBA:141).
 CS20230722_CLUS_2088	2088 AVPV-MEPO-SFO Tbr1 Glut_3	cluster	UBERON:0001898	hypothalamus	MBA:141	Periventricular region		0.8	37	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Periventricular region (MBA:141).
-CS20230722_CLUS_2089	2089 AVPV-MEPO-SFO Tbr1 Glut_3	cluster			MBA:73	ventricular systems	ventricular systems is not grey matter	0.8	104	
+CS20230722_CLUS_2089	2089 AVPV-MEPO-SFO Tbr1 Glut_3	cluster	UBERON:0001898	hypothalamus	MBA:141	Periventricular region		0.8	104	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Periventricular region (MBA:141).
 CS20230722_CLUS_2090	2090 AVPV-MEPO-SFO Tbr1 Glut_3	cluster	UBERON:0001898	hypothalamus	MBA:1097	Hypothalamus		0.8	55	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hypothalamus (MBA:1097).
 CS20230722_CLUS_2091	2091 AVPV-MEPO-SFO Tbr1 Glut_3	cluster	UBERON:0001890	forebrain	V:forebrain	forebrain (Cerebrum + Interbrain)		0.8	80	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in forebrain (Cerebrum + Interbrain).
 CS20230722_CLUS_2092	2092 AVPV-MEPO-SFO Tbr1 Glut_4	cluster	UBERON:0001898	hypothalamus	MBA:1097	Hypothalamus		0.8	139	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hypothalamus (MBA:1097).
@@ -4447,7 +4447,7 @@ CS20230722_CLUS_2872	2872 PAG-MRN Pou3f1 Glut_4	cluster	UBERON:0007415	nucleus o
 CS20230722_CLUS_2873	2873 PAG-MRN Pou3f1 Glut_4	cluster	UBERON:0001891	midbrain	MBA:313	Midbrain		0.8	67	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313).
 CS20230722_CLUS_2874	2874 PAG-MRN Pou3f1 Glut_5	cluster	UBERON:0001891	midbrain	MBA:313	Midbrain		0.8	43	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313).
 CS20230722_CLUS_2875	2875 PAG-MRN Pou3f1 Glut_5	cluster	UBERON:0001891	midbrain	MBA:313	Midbrain		0.8	59	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313).
-CS20230722_CLUS_2876	2876 PAG-MRN Pou3f1 Glut_5	cluster						0.8	61	
+CS20230722_CLUS_2876	2876 PAG-MRN Pou3f1 Glut_5	cluster	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	61	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
 CS20230722_CLUS_2877	2877 PAG-MRN Pou3f1 Glut_5	cluster	UBERON:0001891	midbrain	MBA:313	Midbrain		0.8	89	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313).
 CS20230722_CLUS_2878	2878 PAG-MRN Pou3f1 Glut_5	cluster	UBERON:0001891	midbrain	MBA:313	Midbrain		0.8	41	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313).
 CS20230722_CLUS_2879	2879 PAG-MRN Pou3f1 Glut_6	cluster	UBERON:0001891	midbrain	MBA:313	Midbrain		0.8	73	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313).
@@ -4575,7 +4575,7 @@ CS20230722_CLUS_3000	3000 SPA-SPFm-SPFp-POL-PIL-PoT Sp9 Glut_10	cluster						0.8
 CS20230722_CLUS_3001	3001 SPA-SPFm-SPFp-POL-PIL-PoT Sp9 Glut_10	cluster	UBERON:0001891	midbrain	MBA:313	Midbrain		0.8	49	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313).
 CS20230722_CLUS_3002	3002 SPA-SPFm-SPFp-POL-PIL-PoT Sp9 Glut_11	cluster						0.8	33	
 CS20230722_CLUS_3003	3003 SPA-SPFm-SPFp-POL-PIL-PoT Sp9 Glut_11	cluster						0.8	17	
-CS20230722_CLUS_3004	3004 SPA-SPFm-SPFp-POL-PIL-PoT Sp9 Glut_12	cluster			MBA:484682524	auditory radiation	auditory radiation is not grey matter	0.8	39	
+CS20230722_CLUS_3004	3004 SPA-SPFm-SPFp-POL-PIL-PoT Sp9 Glut_12	cluster	UBERON:0001894	diencephalon	MBA:1129	Interbrain		0.8	39	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Interbrain (MBA:1129).
 CS20230722_CLUS_3005	3005 SPA-SPFm-SPFp-POL-PIL-PoT Sp9 Glut_12	cluster	UBERON:0001898	hypothalamus	MBA:1097	Hypothalamus		0.8	26	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hypothalamus (MBA:1097).
 CS20230722_CLUS_3006	3006 SPA-SPFm-SPFp-POL-PIL-PoT Sp9 Glut_12	cluster						0.8	182	
 CS20230722_CLUS_3007	3007 PAG-SC Pou4f1 Zic1 Glut_1	cluster	UBERON:0001891	midbrain	MBA:323	Midbrain, motor related		0.8	79	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain, motor related (MBA:323).
@@ -4893,8 +4893,8 @@ CS20230722_CLUS_3318	3318 IC Tfap2d Maf Glut_6	cluster	UBERON:0001891	midbrain	M
 CS20230722_CLUS_3319	3319 IC Tfap2d Maf Glut_6	cluster	UBERON:0001946	inferior colliculus	MBA:4	Inferior colliculus		0.8	858	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Inferior colliculus (MBA:4).
 CS20230722_CLUS_3320	3320 CUN-PPN Evx2 Meis2 Glut_1	cluster						0.8	53	
 CS20230722_CLUS_3321	3321 CUN-PPN Evx2 Meis2 Glut_1	cluster	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	113	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
-CS20230722_CLUS_3322	3322 CUN-PPN Evx2 Meis2 Glut_1	cluster			MBA:616	Cuneiform nucleus	Cuneiform nucleus is not grey matter	0.8	70	
-CS20230722_CLUS_3323	3323 CUN-PPN Evx2 Meis2 Glut_1	cluster			MBA:616	Cuneiform nucleus	Cuneiform nucleus is not grey matter	0.8	83	
+CS20230722_CLUS_3322	3322 CUN-PPN Evx2 Meis2 Glut_1	cluster	UBERON:0001891	midbrain	MBA:313	Midbrain		0.8	70	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313).
+CS20230722_CLUS_3323	3323 CUN-PPN Evx2 Meis2 Glut_1	cluster	UBERON:0001891	midbrain	MBA:313	Midbrain		0.8	83	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313).
 CS20230722_CLUS_3324	3324 CUN-PPN Evx2 Meis2 Glut_1	cluster	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	53	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
 CS20230722_CLUS_3325	3325 CUN-PPN Evx2 Meis2 Glut_1	cluster	UBERON:0001891	midbrain	MBA:313	Midbrain		0.8	53	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313).
 CS20230722_CLUS_3326	3326 CUN-PPN Evx2 Meis2 Glut_1	cluster	UBERON:0001891	midbrain	MBA:313	Midbrain		0.8	124	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313).
@@ -4905,7 +4905,7 @@ CS20230722_CLUS_3330	3330 CUN-PPN Evx2 Meis2 Glut_1	cluster	UBERON:0001891	midbr
 CS20230722_CLUS_3331	3331 CUN-PPN Evx2 Meis2 Glut_1	cluster	UBERON:0001891	midbrain	MBA:313	Midbrain		0.8	172	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313).
 CS20230722_CLUS_3332	3332 CUN-PPN Evx2 Meis2 Glut_1	cluster	UBERON:0001891	midbrain	MBA:313	Midbrain		0.8	58	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313).
 CS20230722_CLUS_3333	3333 CUN-PPN Evx2 Meis2 Glut_1	cluster	UBERON:0001891	midbrain	MBA:313	Midbrain		0.8	150	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313).
-CS20230722_CLUS_3334	3334 CUN-PPN Evx2 Meis2 Glut_1	cluster			MBA:616	Cuneiform nucleus	Cuneiform nucleus is not grey matter	0.8	46	
+CS20230722_CLUS_3334	3334 CUN-PPN Evx2 Meis2 Glut_1	cluster	UBERON:0001891	midbrain	MBA:313	Midbrain		0.8	46	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313).
 CS20230722_CLUS_3335	3335 CUN-PPN Evx2 Meis2 Glut_1	cluster	UBERON:0001891	midbrain	MBA:313	Midbrain		0.8	174	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313).
 CS20230722_CLUS_3336	3336 CUN-PPN Evx2 Meis2 Glut_2	cluster	UBERON:0001891	midbrain	MBA:313	Midbrain		0.8	100	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313).
 CS20230722_CLUS_3337	3337 CUN-PPN Evx2 Meis2 Glut_2	cluster	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	84	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
@@ -4913,7 +4913,7 @@ CS20230722_CLUS_3338	3338 CUN-PPN Evx2 Meis2 Glut_3	cluster	UBERON:0002298	brain
 CS20230722_CLUS_3339	3339 CUN-PPN Evx2 Meis2 Glut_3	cluster	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	297	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
 CS20230722_CLUS_3340	3340 CUN-PPN Evx2 Meis2 Glut_3	cluster	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	60	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
 CS20230722_CLUS_3341	3341 CUN-PPN Evx2 Meis2 Glut_3	cluster	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	44	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
-CS20230722_CLUS_3342	3342 CUN-PPN Evx2 Meis2 Glut_4	cluster						0.8	45	
+CS20230722_CLUS_3342	3342 CUN-PPN Evx2 Meis2 Glut_4	cluster	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	45	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
 CS20230722_CLUS_3343	3343 CUN-PPN Evx2 Meis2 Glut_4	cluster	UBERON:0001891	midbrain	MBA:313	Midbrain		0.8	53	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313).
 CS20230722_CLUS_3344	3344 CUN-PPN Evx2 Meis2 Glut_4	cluster	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	151	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
 CS20230722_CLUS_3345	3345 CUN-PPN Evx2 Meis2 Glut_4	cluster	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	183	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
@@ -4977,7 +4977,7 @@ CS20230722_CLUS_3402	3402 PPN-CUN-PCG Otp En1 Gaba_3	cluster	UBERON:0002298	brai
 CS20230722_CLUS_3403	3403 PPN-CUN-PCG Otp En1 Gaba_3	cluster	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	107	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
 CS20230722_CLUS_3404	3404 PPN-CUN-PCG Otp En1 Gaba_3	cluster	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	122	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
 CS20230722_CLUS_3405	3405 PPN-CUN-PCG Otp En1 Gaba_3	cluster	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	35	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
-CS20230722_CLUS_3406	3406 PPN-CUN-PCG Otp En1 Gaba_3	cluster						0.8	96	
+CS20230722_CLUS_3406	3406 PPN-CUN-PCG Otp En1 Gaba_3	cluster	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	96	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
 CS20230722_CLUS_3407	3407 PPN-CUN-PCG Otp En1 Gaba_3	cluster	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	114	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
 CS20230722_CLUS_3408	3408 MRN-PPN-CUN Pax8 Gaba_1	cluster	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	76	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
 CS20230722_CLUS_3409	3409 MRN-PPN-CUN Pax8 Gaba_1	cluster	UBERON:0001891	midbrain	MBA:313	Midbrain		0.8	48	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313).
@@ -5205,7 +5205,7 @@ CS20230722_CLUS_3630	3630 PRT Tcf7l2 Gaba_4	cluster	UBERON:0001891	midbrain	MBA:
 CS20230722_CLUS_3631	3631 PRT Tcf7l2 Gaba_5	cluster	UBERON:0001891	midbrain	MBA:313	Midbrain		0.8	216	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313).
 CS20230722_CLUS_3632	3632 PRT Tcf7l2 Gaba_5	cluster	UBERON:0001891	midbrain	MBA:313	Midbrain		0.8	93	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313).
 CS20230722_CLUS_3633	3633 LGv-SPFp-SPFm Nkx2-2 Tcf7l2 Gaba_1	cluster	UBERON:0001891	midbrain	MBA:313	Midbrain		0.8	112	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313).
-CS20230722_CLUS_3634	3634 LGv-SPFp-SPFm Nkx2-2 Tcf7l2 Gaba_1	cluster						0.8	123	
+CS20230722_CLUS_3634	3634 LGv-SPFp-SPFm Nkx2-2 Tcf7l2 Gaba_1	cluster	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	123	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
 CS20230722_CLUS_3635	3635 LGv-SPFp-SPFm Nkx2-2 Tcf7l2 Gaba_1	cluster						0.8	169	
 CS20230722_CLUS_3636	3636 LGv-SPFp-SPFm Nkx2-2 Tcf7l2 Gaba_1	cluster						0.8	56	
 CS20230722_CLUS_3637	3637 LGv-SPFp-SPFm Nkx2-2 Tcf7l2 Gaba_1	cluster	UBERON:0001894	diencephalon	MBA:1129	Interbrain		0.8	46	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Interbrain (MBA:1129).
@@ -5459,7 +5459,7 @@ CS20230722_CLUS_3884	3884 MB-MY Tph2 Glut-Sero_1	cluster	UBERON:0002298	brainste
 CS20230722_CLUS_3885	3885 MB-MY Tph2 Glut-Sero_1	cluster	UBERON:0001891	midbrain	MBA:313	Midbrain		0.8	161	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313).
 CS20230722_CLUS_3886	3886 MB-MY Tph2 Glut-Sero_1	cluster	UBERON:0000988	pons	MBA:771	Pons		0.8	81	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons (MBA:771).
 CS20230722_CLUS_3887	3887 MB-MY Tph2 Glut-Sero_1	cluster	UBERON:0000988	pons	MBA:771	Pons		0.8	565	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons (MBA:771).
-CS20230722_CLUS_3888	3888 MB-MY Tph2 Glut-Sero_2	cluster						0.8	133	
+CS20230722_CLUS_3888	3888 MB-MY Tph2 Glut-Sero_2	cluster	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	133	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
 CS20230722_CLUS_3889	3889 MB-MY Tph2 Glut-Sero_2	cluster	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	89	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
 CS20230722_CLUS_3890	3890 MB-MY Tph2 Glut-Sero_2	cluster	UBERON:0000988	pons	MBA:771	Pons		0.8	320	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons (MBA:771).
 CS20230722_CLUS_3891	3891 MB-MY Tph2 Glut-Sero_2	cluster	UBERON:0001891	midbrain	MBA:313	Midbrain		0.8	51	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313).
@@ -5677,7 +5677,7 @@ CS20230722_CLUS_4102	4102 PCG-PRNr Vsx2 Nkx6-1 Glut_2	cluster	UBERON:0000988	pon
 CS20230722_CLUS_4103	4103 PCG-PRNr Vsx2 Nkx6-1 Glut_2	cluster	UBERON:0000988	pons	MBA:771	Pons		0.8	272	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons (MBA:771).
 CS20230722_CLUS_4104	4104 PCG-PRNr Vsx2 Nkx6-1 Glut_2	cluster	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	59	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
 CS20230722_CLUS_4105	4105 PCG-PRNr Vsx2 Nkx6-1 Glut_2	cluster	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	48	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
-CS20230722_CLUS_4106	4106 PCG-PRNr Vsx2 Nkx6-1 Glut_2	cluster						0.8	111	
+CS20230722_CLUS_4106	4106 PCG-PRNr Vsx2 Nkx6-1 Glut_2	cluster	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	111	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
 CS20230722_CLUS_4107	4107 PCG-PRNr Vsx2 Nkx6-1 Glut_2	cluster	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	295	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
 CS20230722_CLUS_4108	4108 PCG-PRNr Vsx2 Nkx6-1 Glut_2	cluster	UBERON:0000988	pons	MBA:771	Pons		0.8	90	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons (MBA:771).
 CS20230722_CLUS_4109	4109 PCG-PRNr Vsx2 Nkx6-1 Glut_2	cluster	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	67	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
@@ -5685,7 +5685,7 @@ CS20230722_CLUS_4110	4110 PCG-PRNr Vsx2 Nkx6-1 Glut_3	cluster						0.8	27
 CS20230722_CLUS_4111	4111 PCG-PRNr Vsx2 Nkx6-1 Glut_3	cluster	UBERON:0000988	pons	MBA:987	Pons, motor related		0.8	79	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons, motor related (MBA:987).
 CS20230722_CLUS_4112	4112 PCG-PRNr Vsx2 Nkx6-1 Glut_3	cluster	UBERON:0000988	pons	MBA:771	Pons		0.8	44	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons (MBA:771).
 CS20230722_CLUS_4113	4113 PCG-PRNr Vsx2 Nkx6-1 Glut_3	cluster						0.8	33	
-CS20230722_CLUS_4114	4114 PCG-PRNr Vsx2 Nkx6-1 Glut_3	cluster						0.8	52	
+CS20230722_CLUS_4114	4114 PCG-PRNr Vsx2 Nkx6-1 Glut_3	cluster	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	52	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
 CS20230722_CLUS_4115	4115 PCG-PRNr Vsx2 Nkx6-1 Glut_3	cluster	UBERON:0000988	pons	MBA:771	Pons		0.8	55	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons (MBA:771).
 CS20230722_CLUS_4116	4116 PCG-PRNr Vsx2 Nkx6-1 Glut_4	cluster	UBERON:0000988	pons	MBA:987	Pons, motor related		0.8	155	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons, motor related (MBA:987).
 CS20230722_CLUS_4117	4117 PCG-PRNr Vsx2 Nkx6-1 Glut_5	cluster	UBERON:0002028	hindbrain	MBA:1065	Hindbrain		0.8	187	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hindbrain (MBA:1065).
@@ -5703,7 +5703,7 @@ CS20230722_CLUS_4128	4128 PRNc-NI-SG-RPO Vsx2 Nr4a2 Glut_2	cluster						0.8	16
 CS20230722_CLUS_4129	4129 PRNc-NI-SG-RPO Vsx2 Nr4a2 Glut_2	cluster	UBERON:0000988	pons	MBA:771	Pons		0.8	79	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons (MBA:771).
 CS20230722_CLUS_4130	4130 PRNc-NI-SG-RPO Vsx2 Nr4a2 Glut_2	cluster	UBERON:0000988	pons	MBA:771	Pons		0.8	34	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons (MBA:771).
 CS20230722_CLUS_4131	4131 PRNc-NI-SG-RPO Vsx2 Nr4a2 Glut_2	cluster	UBERON:0000988	pons	MBA:771	Pons		0.8	159	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons (MBA:771).
-CS20230722_CLUS_4132	4132 PRNc-NI-SG-RPO Vsx2 Nr4a2 Glut_3	cluster						0.8	127	
+CS20230722_CLUS_4132	4132 PRNc-NI-SG-RPO Vsx2 Nr4a2 Glut_3	cluster	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	127	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
 CS20230722_CLUS_4133	4133 PRNc-NI-SG-RPO Vsx2 Nr4a2 Glut_3	cluster	UBERON:0000988	pons	MBA:771	Pons		0.8	205	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons (MBA:771).
 CS20230722_CLUS_4134	4134 PRNc-NI-SG-RPO Vsx2 Nr4a2 Glut_4	cluster	UBERON:0002028	hindbrain	MBA:1065	Hindbrain		0.8	64	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hindbrain (MBA:1065).
 CS20230722_CLUS_4135	4135 PRNc-NI-SG-RPO Vsx2 Nr4a2 Glut_4	cluster	UBERON:0002028	hindbrain	MBA:1065	Hindbrain		0.8	70	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hindbrain (MBA:1065).
@@ -5752,7 +5752,7 @@ CS20230722_CLUS_4177	4177 IPN-LDT Vsx2 Nkx6-1 Glut_1	cluster	UBERON:0001891	midb
 CS20230722_CLUS_4178	4178 IPN-LDT Vsx2 Nkx6-1 Glut_1	cluster	UBERON:0001891	midbrain	MBA:313	Midbrain		0.8	77	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313).
 CS20230722_CLUS_4179	4179 IPN-LDT Vsx2 Nkx6-1 Glut_1	cluster	UBERON:0001891	midbrain	MBA:313	Midbrain		0.8	33	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313).
 CS20230722_CLUS_4180	4180 IPN-LDT Vsx2 Nkx6-1 Glut_1	cluster						0.8	9	
-CS20230722_CLUS_4181	4181 IPN-LDT Vsx2 Nkx6-1 Glut_2	cluster						0.8	116	
+CS20230722_CLUS_4181	4181 IPN-LDT Vsx2 Nkx6-1 Glut_2	cluster	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	116	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
 CS20230722_CLUS_4182	4182 IPN-LDT Vsx2 Nkx6-1 Glut_2	cluster	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	42	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
 CS20230722_CLUS_4183	4183 IPN-LDT Vsx2 Nkx6-1 Glut_2	cluster	UBERON:0001891	midbrain	MBA:313	Midbrain		0.8	100	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313).
 CS20230722_CLUS_4184	4184 IPN-LDT Vsx2 Nkx6-1 Glut_2	cluster	UBERON:0001891	midbrain	MBA:323	Midbrain, motor related		0.8	24	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain, motor related (MBA:323).
@@ -5783,7 +5783,7 @@ CS20230722_CLUS_4208	4208 PRP-NI-PRNc-GRN Otp Glut_2	cluster						0.8	12
 CS20230722_CLUS_4209	4209 PRP-NI-PRNc-GRN Otp Glut_2	cluster	UBERON:0002028	hindbrain	MBA:1065	Hindbrain		0.8	252	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hindbrain (MBA:1065).
 CS20230722_CLUS_4210	4210 PRP-NI-PRNc-GRN Otp Glut_2	cluster	UBERON:0002028	hindbrain	MBA:1065	Hindbrain		0.8	147	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hindbrain (MBA:1065).
 CS20230722_CLUS_4211	4211 PRP-NI-PRNc-GRN Otp Glut_2	cluster	UBERON:0002028	hindbrain	MBA:1065	Hindbrain		0.8	114	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hindbrain (MBA:1065).
-CS20230722_CLUS_4212	4212 PRP-NI-PRNc-GRN Otp Glut_2	cluster						0.8	43	
+CS20230722_CLUS_4212	4212 PRP-NI-PRNc-GRN Otp Glut_2	cluster	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	43	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
 CS20230722_CLUS_4213	4213 PRP-NI-PRNc-GRN Otp Glut_3	cluster	UBERON:0000988	pons	MBA:771	Pons		0.8	72	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons (MBA:771).
 CS20230722_CLUS_4214	4214 PRP-NI-PRNc-GRN Otp Glut_3	cluster	UBERON:0000988	pons	MBA:771	Pons		0.8	46	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons (MBA:771).
 CS20230722_CLUS_4215	4215 PRP-NI-PRNc-GRN Otp Glut_3	cluster	UBERON:0000988	pons	MBA:771	Pons		0.8	66	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons (MBA:771).
@@ -5799,7 +5799,7 @@ CS20230722_CLUS_4224	4224 PRP-NI-PRNc-GRN Otp Glut_4	cluster	UBERON:0002028	hind
 CS20230722_CLUS_4225	4225 NTS Phox2b Glut_1	cluster	UBERON:0001722	medial vestibular nucleus	MBA:202	Medial vestibular nucleus		0.8	41	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medial vestibular nucleus (MBA:202).
 CS20230722_CLUS_4226	4226 NTS Phox2b Glut_1	cluster	UBERON:0001896	medulla oblongata	MBA:354	Medulla		0.8	57	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medulla (MBA:354).
 CS20230722_CLUS_4227	4227 NTS Phox2b Glut_1	cluster	UBERON:0001896	medulla oblongata	MBA:354	Medulla		0.8	194	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medulla (MBA:354).
-CS20230722_CLUS_4228	4228 NTS Phox2b Glut_1	cluster						0.8	59	
+CS20230722_CLUS_4228	4228 NTS Phox2b Glut_1	cluster	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	59	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
 CS20230722_CLUS_4229	4229 NTS Phox2b Glut_1	cluster	UBERON:0001896	medulla oblongata	MBA:354	Medulla		0.8	141	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medulla (MBA:354).
 CS20230722_CLUS_4230	4230 NTS Phox2b Glut_1	cluster	UBERON:0001896	medulla oblongata	MBA:354	Medulla		0.8	49	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medulla (MBA:354).
 CS20230722_CLUS_4231	4231 NTS Phox2b Glut_1	cluster	UBERON:0001896	medulla oblongata	MBA:354	Medulla		0.8	91	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medulla (MBA:354).
@@ -5843,7 +5843,7 @@ CS20230722_CLUS_4268	4268 NTS Phox2b Glut_5	cluster						0.8	17
 CS20230722_CLUS_4269	4269 NTS Phox2b Glut_5	cluster						0.8	31	
 CS20230722_CLUS_4270	4270 NTS Phox2b Glut_5	cluster	UBERON:0001896	medulla oblongata	MBA:354	Medulla		0.8	30	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medulla (MBA:354).
 CS20230722_CLUS_4271	4271 NTS Phox2b Glut_5	cluster	UBERON:0002673	vestibular nuclear complex	MBA:701	Vestibular nuclei		0.8	24	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Vestibular nuclei (MBA:701).
-CS20230722_CLUS_4272	4272 NTS Phox2b Glut_5	cluster						0.8	55	
+CS20230722_CLUS_4272	4272 NTS Phox2b Glut_5	cluster	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	55	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
 CS20230722_CLUS_4273	4273 NTS Phox2b Glut_5	cluster	UBERON:0001896	medulla oblongata	MBA:354	Medulla		0.8	30	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medulla (MBA:354).
 CS20230722_CLUS_4274	4274 NTS Phox2b Glut_5	cluster	UBERON:0001896	medulla oblongata	MBA:354	Medulla		0.8	43	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medulla (MBA:354).
 CS20230722_CLUS_4275	4275 NTS Phox2b Glut_5	cluster	UBERON:0009050	nucleus of solitary tract	MBA:651	Nucleus of the solitary tract		0.8	28	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Nucleus of the solitary tract (MBA:651).
@@ -6177,7 +6177,7 @@ CS20230722_CLUS_4602	4602 HB Calcb Chol_2	cluster	UBERON:0002298	brainstem	V:bra
 CS20230722_CLUS_4603	4603 HB Calcb Chol_3	cluster	UBERON:0002028	hindbrain	MBA:1065	Hindbrain		0.8	806	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hindbrain (MBA:1065).
 CS20230722_CLUS_4604	4604 HB Calcb Chol_4	cluster	UBERON:0001896	medulla oblongata	MBA:354	Medulla		0.8	1406	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medulla (MBA:354).
 CS20230722_CLUS_4605	4605 HB Calcb Chol_5	cluster	UBERON:0001896	medulla oblongata	MBA:354	Medulla		0.8	277	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medulla (MBA:354).
-CS20230722_CLUS_4606	4606 Pineal Crx Glut_1	cluster			MBA:129	third ventricle	third ventricle is not grey matter	0.8	114	
+CS20230722_CLUS_4606	4606 Pineal Crx Glut_1	cluster					pinealocytes: location from spatial registration is unreliable	0.8	114	
 CS20230722_CLUS_4607	4607 CS-RPO Meis2 Gaba_1	cluster	UBERON:0000988	pons	MBA:771	Pons		0.8	70	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons (MBA:771).
 CS20230722_CLUS_4608	4608 CS-RPO Meis2 Gaba_1	cluster	UBERON:0000988	pons	MBA:771	Pons		0.8	110	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons (MBA:771).
 CS20230722_CLUS_4609	4609 CS-RPO Meis2 Gaba_1	cluster	UBERON:0000988	pons	MBA:771	Pons		0.8	330	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons (MBA:771).
@@ -6265,7 +6265,7 @@ CS20230722_CLUS_4690	4690 CS-PRNr-DR En1 Sox2 Gaba_1	cluster	UBERON:0002298	brai
 CS20230722_CLUS_4691	4691 CS-PRNr-DR En1 Sox2 Gaba_1	cluster	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	77	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
 CS20230722_CLUS_4692	4692 CS-PRNr-DR En1 Sox2 Gaba_1	cluster	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	71	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
 CS20230722_CLUS_4693	4693 CS-PRNr-DR En1 Sox2 Gaba_1	cluster						0.8	13	
-CS20230722_CLUS_4694	4694 CS-PRNr-DR En1 Sox2 Gaba_2	cluster						0.8	200	
+CS20230722_CLUS_4694	4694 CS-PRNr-DR En1 Sox2 Gaba_2	cluster	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	200	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
 CS20230722_CLUS_4695	4695 CS-PRNr-DR En1 Sox2 Gaba_2	cluster	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	67	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
 CS20230722_CLUS_4696	4696 CS-PRNr-DR En1 Sox2 Gaba_2	cluster	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	95	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
 CS20230722_CLUS_4697	4697 CS-PRNr-DR En1 Sox2 Gaba_2	cluster	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	92	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
@@ -6612,7 +6612,7 @@ CS20230722_CLUS_5037	5037 PARN-MDRNd-NTS Gbx2 Gly-Gaba_2	cluster	UBERON:0001896	
 CS20230722_CLUS_5038	5038 PARN-MDRNd-NTS Gbx2 Gly-Gaba_3	cluster	UBERON:0001896	medulla oblongata	MBA:354	Medulla		0.8	36	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medulla (MBA:354).
 CS20230722_CLUS_5039	5039 PARN-MDRNd-NTS Gbx2 Gly-Gaba_3	cluster	UBERON:0001896	medulla oblongata	MBA:354	Medulla		0.8	38	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medulla (MBA:354).
 CS20230722_CLUS_5040	5040 PARN-MDRNd-NTS Gbx2 Gly-Gaba_3	cluster	UBERON:0001896	medulla oblongata	MBA:354	Medulla		0.8	106	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medulla (MBA:354).
-CS20230722_CLUS_5041	5041 PARN-MDRNd-NTS Gbx2 Gly-Gaba_3	cluster			MBA:852	Parvicellular reticular nucleus	Parvicellular reticular nucleus is not grey matter	0.8	44	
+CS20230722_CLUS_5041	5041 PARN-MDRNd-NTS Gbx2 Gly-Gaba_3	cluster	UBERON:0001896	medulla oblongata	MBA:354	Medulla		0.8	44	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medulla (MBA:354).
 CS20230722_CLUS_5042	5042 PARN-MDRNd-NTS Gbx2 Gly-Gaba_3	cluster	UBERON:0001896	medulla oblongata	MBA:354	Medulla		0.8	83	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medulla (MBA:354).
 CS20230722_CLUS_5043	5043 PARN-MDRNd-NTS Gbx2 Gly-Gaba_3	cluster	UBERON:0001896	medulla oblongata	MBA:354	Medulla		0.8	68	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medulla (MBA:354).
 CS20230722_CLUS_5044	5044 PARN-MDRNd-NTS Gbx2 Gly-Gaba_3	cluster	UBERON:0001896	medulla oblongata	MBA:354	Medulla		0.8	62	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medulla (MBA:354).
@@ -6809,7 +6809,7 @@ CS20230722_CLUS_5234	5234 Astro-OLF NN_2	cluster						0.8	0
 CS20230722_CLUS_5235	5235 Astro-OLF NN_3	cluster						0.8	0	
 CS20230722_CLUS_5236	5236 Astro-OLF NN_3	cluster	UBERON:0005378	olfactory bulb granule cell layer	MBA:220	Main olfactory bulb, granule layer		0.8	726	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Main olfactory bulb, granule layer (MBA:220).
 CS20230722_CLUS_5237	5237 Astroependymal NN_1	cluster						0.8	1394	
-CS20230722_CLUS_5238	5238 Astroependymal NN_1	cluster						0.8	297	
+CS20230722_CLUS_5238	5238 Astroependymal NN_1	cluster	UBERON:0001890	forebrain	V:forebrain	forebrain (Cerebrum + Interbrain)		0.8	297	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in forebrain (Cerebrum + Interbrain).
 CS20230722_CLUS_5239	5239 Astroependymal NN_1	cluster	UBERON:0001890	forebrain	V:forebrain	forebrain (Cerebrum + Interbrain)		0.8	1731	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in forebrain (Cerebrum + Interbrain).
 CS20230722_CLUS_5240	5240 Astroependymal NN_2	cluster	UBERON:0002028	hindbrain	V:hindbrain	hindbrain (Hindbrain + Cerebellum)		0.8	355	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in hindbrain (Hindbrain + Cerebellum).
 CS20230722_CLUS_5241	5241 Astroependymal NN_3	cluster	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	123	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
@@ -6822,19 +6822,19 @@ CS20230722_CLUS_5247	5247 Tanycyte NN_2	cluster						0.8	0
 CS20230722_CLUS_5248	5248 Tanycyte NN_2	cluster						0.8	0	
 CS20230722_CLUS_5249	5249 Tanycyte NN_2	cluster						0.8	0	
 CS20230722_CLUS_5250	5250 Tanycyte NN_3	cluster						0.8	0	
-CS20230722_CLUS_5251	5251 Ependymal NN_1	cluster			MBA:73	ventricular systems	ventricular systems is not grey matter	0.8	1347	
+CS20230722_CLUS_5251	5251 Ependymal NN_1	cluster						0.8	1347	
 CS20230722_CLUS_5252	5252 Ependymal NN_1	cluster						0.8	705	
-CS20230722_CLUS_5253	5253 Ependymal NN_1	cluster			MBA:73	ventricular systems	ventricular systems is not grey matter	0.8	1200	
-CS20230722_CLUS_5254	5254 Ependymal NN_1	cluster			MBA:73	ventricular systems	ventricular systems is not grey matter	0.8	42	
-CS20230722_CLUS_5255	5255 Ependymal NN_1	cluster			MBA:73	ventricular systems	ventricular systems is not grey matter	0.8	92	
-CS20230722_CLUS_5256	5256 Ependymal NN_1	cluster			MBA:73	ventricular systems	ventricular systems is not grey matter	0.8	8529	
-CS20230722_CLUS_5257	5257 Ependymal NN_1	cluster			MBA:129	third ventricle	third ventricle is not grey matter	0.8	869	
-CS20230722_CLUS_5258	5258 Ependymal NN_1	cluster			MBA:73	ventricular systems	ventricular systems is not grey matter	0.8	1945	
-CS20230722_CLUS_5259	5259 Ependymal NN_1	cluster			MBA:73	ventricular systems	ventricular systems is not grey matter	0.8	121	
-CS20230722_CLUS_5260	5260 Ependymal NN_2	cluster			MBA:73	ventricular systems	ventricular systems is not grey matter	0.8	253	
-CS20230722_CLUS_5261	5261 Ependymal NN_2	cluster			MBA:73	ventricular systems	ventricular systems is not grey matter	0.8	95	
+CS20230722_CLUS_5253	5253 Ependymal NN_1	cluster						0.8	1200	
+CS20230722_CLUS_5254	5254 Ependymal NN_1	cluster	UBERON:0004720	cerebellar vermis	MBA:645	Vermal regions		0.8	42	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Vermal regions (MBA:645).
+CS20230722_CLUS_5255	5255 Ependymal NN_1	cluster	UBERON:0002028	hindbrain	V:hindbrain	hindbrain (Hindbrain + Cerebellum)		0.8	92	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in hindbrain (Hindbrain + Cerebellum).
+CS20230722_CLUS_5256	5256 Ependymal NN_1	cluster						0.8	8529	
+CS20230722_CLUS_5257	5257 Ependymal NN_1	cluster						0.8	869	
+CS20230722_CLUS_5258	5258 Ependymal NN_1	cluster	UBERON:0001890	forebrain	V:forebrain	forebrain (Cerebrum + Interbrain)		0.8	1945	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in forebrain (Cerebrum + Interbrain).
+CS20230722_CLUS_5259	5259 Ependymal NN_1	cluster						0.8	121	
+CS20230722_CLUS_5260	5260 Ependymal NN_2	cluster						0.8	253	
+CS20230722_CLUS_5261	5261 Ependymal NN_2	cluster						0.8	95	
 CS20230722_CLUS_5262	5262 Ependymal NN_2	cluster						0.8	296	
-CS20230722_CLUS_5263	5263 Hypendymal NN_1	cluster			MBA:129	third ventricle	third ventricle is not grey matter	0.8	404	
+CS20230722_CLUS_5263	5263 Hypendymal NN_1	cluster	UBERON:0001891	midbrain	MBA:313	Midbrain		0.8	404	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313).
 CS20230722_CLUS_5264	5264 CHOR NN_1	cluster						0.8	0	
 CS20230722_CLUS_5265	5265 CHOR NN_1	cluster						0.8	0	
 CS20230722_CLUS_5266	5266 OPC NN_1	cluster	UBERON:0000956	cerebral cortex	MBA:688	Cerebral cortex		0.8	1079	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebral cortex (MBA:688).
@@ -6861,7 +6861,7 @@ CS20230722_CLUS_5286	5286 MOL NN_4	cluster						0.8	34755
 CS20230722_CLUS_5287	5287 MOL NN_4	cluster						0.8	12564	
 CS20230722_CLUS_5288	5288 MOL NN_4	cluster						0.8	2265	
 CS20230722_CLUS_5289	5289 OEC NN_1	cluster						0.8	0	
-CS20230722_CLUS_5290	5290 OEC NN_1	cluster			MBA:1016	olfactory nerve layer of main olfactory bulb	olfactory nerve layer of main olfactory bulb is not grey matter	0.8	7786	
+CS20230722_CLUS_5290	5290 OEC NN_1	cluster	UBERON:0005366	olfactory lobe	MBA:698	Olfactory areas		0.8	7786	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Olfactory areas (MBA:698).
 CS20230722_CLUS_5291	5291 OEC NN_1	cluster	UBERON:0005366	olfactory lobe	MBA:698	Olfactory areas		0.8	12476	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Olfactory areas (MBA:698).
 CS20230722_CLUS_5292	5292 OEC NN_1	cluster	UBERON:0005366	olfactory lobe	MBA:698	Olfactory areas		0.8	664	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Olfactory areas (MBA:698).
 CS20230722_CLUS_5293	5293 ABC NN_1	cluster						0.8	10874	
@@ -6873,7 +6873,7 @@ CS20230722_CLUS_5298	5298 VLMC NN_1	cluster						0.8	24556
 CS20230722_CLUS_5299	5299 VLMC NN_1	cluster						0.8	13701	
 CS20230722_CLUS_5300	5300 VLMC NN_2	cluster						0.8	4968	
 CS20230722_CLUS_5301	5301 VLMC NN_2	cluster						0.8	37182	
-CS20230722_CLUS_5302	5302 VLMC NN_3	cluster			MBA:108	choroid plexus	choroid plexus is not grey matter	0.8	1071	
+CS20230722_CLUS_5302	5302 VLMC NN_3	cluster						0.8	1071	
 CS20230722_CLUS_5303	5303 VLMC NN_4	cluster	UBERON:0001898	hypothalamus	MBA:1097	Hypothalamus		0.8	158	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hypothalamus (MBA:1097).
 CS20230722_CLUS_5304	5304 Peri NN_1	cluster						0.8	123383	
 CS20230722_CLUS_5305	5305 Peri NN_1	cluster						0.8	1718	

@@ -10,14 +10,15 @@ curation table replaces it (`merge_class_templates`).
 
 How a location is chosen:
 
-- Per MERFISH source, the most specific region holding at least `theta` (0.8) of the cell
-  set's cells in grey matter (`Basic cell groups and regions`, MBA:8). The two sources are
+- Per MERFISH source, the most specific grey-matter region holding at least `theta` (0.8) of
+  the cell set's cells in grey matter (`Basic cell groups and regions`, MBA:8). The two sources are
   combined by taking the most specific region containing both picks. Sources with fewer
   than 20 cells are skipped.
 - The top of the CCF tree is aligned with Uberon. CCF `Brain stem` includes the interbrain,
   unlike Uberon `brainstem`, so it isn't used. Three regions are added, with counts summed
-  from their parts: forebrain (Cerebrum + Interbrain), brainstem (Midbrain + Hindbrain) and
-  hindbrain (Hindbrain + Cerebellum), mapped to Uberon `forebrain`, `brainstem` and
+  from their parts: forebrain (Cerebrum + Interbrain), brainstem (Midbrain + Hindbrain, counted as
+  Brain stem minus Interbrain because some cells are only registered at Brain stem level)
+  and hindbrain (Hindbrain + Cerebellum), mapped to Uberon `forebrain`, `brainstem` and
   `hindbrain`.
 - The region is mapped to Uberon. Two CCF mappings are overridden: `Olfactory areas` →
   `olfactory lobe` (the CCF region includes the main olfactory bulb, which isn't part of
@@ -29,6 +30,8 @@ How a location is chosen:
   `28 CB GABA` gets hindbrain rather than cerebellum, because its `308 DCO Il22 Gly-Gaba`
   subclass is mostly in the cochlear nuclei. If only grey matter would do, or the region
   isn't grey matter, no location is given (`note` says why).
+- The pineal cell set (class `25 Pineal Glut` and its chain) gets no location: spatial
+  registration of pinealocytes isn't reliable.
 
 The table is generated outside the build, from the knowledge-graph export of cell counts
 per cell set and CCF region (`location_derivation/export_wmbo_locations.py` in the
