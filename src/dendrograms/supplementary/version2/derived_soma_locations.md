@@ -10,18 +10,25 @@ curation table replaces it (`merge_class_templates`).
 
 How a location is chosen:
 
-- Per MERFISH source, the deepest CCF region holding at least `theta` (0.8) of the cell
+- Per MERFISH source, the most specific region holding at least `theta` (0.8) of the cell
   set's cells in grey matter (`Basic cell groups and regions`, MBA:8). The two sources are
-  combined by taking their nearest common CCF ancestor. Sources with fewer than 20 cells
-  are skipped.
-- The CCF region is mapped to Uberon. Two mappings are overridden: `Olfactory areas` →
+  combined by taking the most specific region containing both picks. Sources with fewer
+  than 20 cells are skipped.
+- The top of the CCF tree is aligned with Uberon. CCF `Brain stem` includes the interbrain,
+  unlike Uberon `brainstem`, so it isn't used. Three regions are added, with counts summed
+  from their parts: forebrain (Cerebrum + Interbrain), brainstem (Midbrain + Hindbrain) and
+  hindbrain (Hindbrain + Cerebellum), mapped to Uberon `forebrain`, `brainstem` and
+  `hindbrain`.
+- The region is mapped to Uberon. Two CCF mappings are overridden: `Olfactory areas` →
   `olfactory lobe` (the CCF region includes the main olfactory bulb, which isn't part of
   `olfactory cortex`), and `Pallidum` → `pallidum`.
 - The CL product asserts the taxonomy hierarchy, so a restriction is inherited by every
-  descendant term. The location is therefore **withheld** (column `withheld`) when any
-  descendant with at least 50 cells has under half of its cells in the region, e.g. class
-  `28 CB GABA`, whose `308 DCO Il22 Gly-Gaba` subclass is mostly in the cochlear nuclei. It
-  is also withheld when the region isn't grey matter.
+  descendant term. When a descendant cell set (at least 50 cells) has under half of its
+  cells in the region, the location **moves up** to the most specific region that holds at
+  least half of the cells of every such descendant (`note` says so). For example, class
+  `28 CB GABA` gets hindbrain rather than cerebellum, because its `308 DCO Il22 Gly-Gaba`
+  subclass is mostly in the cochlear nuclei. If only grey matter would do, or the region
+  isn't grey matter, no location is given (`note` says why).
 
 The table is generated outside the build, from the knowledge-graph export of cell counts
 per cell set and CCF region (`location_derivation/export_wmbo_locations.py` in the
