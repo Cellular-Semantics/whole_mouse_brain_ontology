@@ -52,5 +52,9 @@ the KG commit they ran against are in `kg_location_cache/` (see its README). Reg
 table, and then the class_base template, when the method, the taxonomy or the cell counts
 change.
 
+The same target writes `supertype_subclass_locations.tsv`, the CCF regions holding a large share
+of each subclass and supertype's cells, for `some soma located in` annotations (see
+`supertype_subclass_locations.md`).
+
 Shared neurotransmitters (`Shared_NT`) need no table: the build computes them from the
 cluster neurotransmitter calls in the taxonomy (the NT shared by every cluster with a call).

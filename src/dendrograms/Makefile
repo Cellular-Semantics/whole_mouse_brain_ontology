@@ -46,6 +46,7 @@ KG_LOCATION_CACHE = $(SUPPLEMENTARY)/version2/kg_location_cache
 .PHONY: derived_soma_locations
 derived_soma_locations:
 	python ../scripts/derive_soma_locations.py -c $(KG_LOCATION_CACHE) -o $(SUPPLEMENTARY)/version2/derived_soma_locations.tsv
+	python ../scripts/supertype_subclass_locations.py -c $(KG_LOCATION_CACHE) -o $(SUPPLEMENTARY)/version2/supertype_subclass_locations.tsv
 
 # Refresh the cache. Needs a running Brain Cell KG (Neo4j on localhost:7474); KG_COMMIT is the
 # Brain_Cell_KG commit it was built from, e.g. make kg_location_cache KG_COMMIT=053320f...
