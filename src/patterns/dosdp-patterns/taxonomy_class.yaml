@@ -63,6 +63,7 @@ vars:
   part_of: "'thing'"
   has_soma_location: "'thing'"
   Derived_location: "'thing'"
+  Derived_part_of: "'thing'"
   evidence_marker_gene_set: "'thing'"
   marker_gene_set: "'thing'"
   ws_marker_gene_set: "'thing'"
@@ -429,6 +430,15 @@ logical_axioms:
     text: "'has_soma_location' some %s"
     vars:
       - Derived_location
+    annotations:
+      - annotationProperty: rdfsComment
+        text: "%s"
+        vars:
+          - Derived_location_comment
+  - axiom_type: subClassOf
+    text: "'part_of' some %s"
+    vars:
+      - Derived_part_of
     annotations:
       - annotationProperty: rdfsComment
         text: "%s"

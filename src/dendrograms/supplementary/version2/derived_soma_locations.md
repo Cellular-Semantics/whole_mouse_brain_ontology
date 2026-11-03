@@ -3,10 +3,16 @@
 Soma location of each CCN20230722 cell set, derived from MERFISH cell counts (Yao et al.
 2023, https://doi.org/10.1038/s41586-023-06812-z; Zhang et al. 2023,
 https://doi.org/10.1038/s41586-023-06808-9) registered to the Allen CCF and rolled up the
-CCF partonomy. The build (`generate_base_class_template`) writes `location` to the
-`Derived_location` column for CL-subset terms only, giving
-`SubClassOf has_soma_location some <location>`. A curated `Locations` value in the class
-curation table replaces it (`merge_class_templates`).
+CCF partonomy. The build (`generate_base_class_template`) writes `location` for CL-subset
+terms only:
+
+- cell sets in a class flagged `Neuronal` in the taxonomy: `Derived_location` column, giving
+  `SubClassOf has_soma_location some <location>`;
+- other (non-neuronal) cell sets: `Derived_part_of` column, giving
+  `SubClassOf part_of some <location>`, because `has_soma_location` has domain neuron.
+
+A curated `Locations` value in the class curation table replaces either
+(`merge_class_templates`).
 
 How a location is chosen:
 

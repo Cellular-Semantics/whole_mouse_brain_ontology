@@ -48,6 +48,11 @@ BRAIN_REGION_MAPPING = os.path.join(os.path.dirname(os.path.realpath(__file__)),
 # next to it); applied as has_soma_location to the CL subset only.
 DERIVED_SOMA_LOCATIONS = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../dendrograms/supplementary/version2/derived_soma_locations.tsv")
 NT_NOT_CALLED = "CS20230722_NEUR_NA"
+# Shared neurotransmitters are only given to cell sets in a class flagged Neuronal, plus these classes
+# (25 Pineal Glut: pinealocytes release glutamate, although they are not neurons). Derived locations of
+# cell sets outside neuronal classes are written as part_of rather than has_soma_location, whose domain
+# is neuron.
+SHARED_NT_EXTRA_CLASSES = {"CS20230722_CLAS_25"}
 
 CROSS_SPECIES_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)),
                                   "../dendrograms/nomenclature_table_CCN202002270.csv")
@@ -259,6 +264,7 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                       'Rationale_comment',
                       'Rationale_comment_dois',
                       'Derived_location',
+                      'Derived_part_of',
                       'Derived_location_comment',
                       'Shared_NT',
                       'Shared_NT_comment'
@@ -370,7 +376,10 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                 if o['cell_set_accession'] in cl_subset:
                     location = derived_soma_locations.get(node['cell_set_accession'], {})
                     if location.get('location'):
-                        d['Derived_location'] = location['location']
+                        if in_neuronal_class(node['cell_set_accession'], dend_tree, all_nodes):
+                            d['Derived_location'] = location['location']
+                        else:
+                            d['Derived_part_of'] = location['location']
                         d['Derived_location_comment'] = location['comment']
 
                 missed_regions = set()
@@ -474,7 +483,8 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
 def get_shared_neurotransmitter(accession, dend_tree, all_nodes, nt_symbols_mapping):
     """
     Neurotransmitter(s) shared by every descendant cluster that has a neurotransmitter call, e.g. a supertype
-    whose clusters are GABA or GABA-Glyc is GABAergic. Clusters without a call are left out.
+    whose clusters are GABA or GABA-Glyc is GABAergic. Clusters without a call are left out. Cell sets outside
+    neuronal classes get nothing (see SHARED_NT_EXTRA_CLASSES for the exception).
     Args:
         accession: cell set accession of a non-cluster node
         dend_tree: networkx directed graph that represents the taxonomy
@@ -483,7 +493,9 @@ def get_shared_neurotransmitter(accession, dend_tree, all_nodes, nt_symbols_mapp
 
     Returns: ('|'-joined GO ids, comment), or ('', '') if there is nothing shared.
     """
-    if accession not in dend_tree:
+    if accession not in dend_tree or not (in_neuronal_class(accession, dend_tree, all_nodes) or
+                                          get_class_accession(accession, dend_tree, all_nodes)
+                                          in SHARED_NT_EXTRA_CLASSES):
         return "", ""
     calls = [all_nodes[descendant].get('neurotransmitter_accession', '')
              for descendant in nx.descendants(dend_tree, accession)
@@ -505,6 +517,38 @@ def get_shared_neurotransmitter(accession, dend_tree, all_nodes, nt_symbols_mapp
     if len(called) < len(calls):
         comment += " ({} clusters have no assignment)".format(len(calls) - len(called))
     return "|".join(shared), comment + "."
+
+
+def get_class_accession(accession, dend_tree, all_nodes):
+    """
+    Accession of the taxonomy class the cell set belongs to (itself, if it is a class).
+    Args:
+        accession: cell set accession
+        dend_tree: networkx directed graph that represents the taxonomy
+        all_nodes: dict of all nodes by accession
+
+    Returns: class accession, or None if not found.
+    """
+    if accession not in dend_tree:
+        return None
+    for member in {accession} | nx.ancestors(dend_tree, accession):
+        if all_nodes.get(member, {}).get('labelset') == 'class':
+            return member
+    return None
+
+
+def in_neuronal_class(accession, dend_tree, all_nodes):
+    """
+    Whether the cell set belongs to a class flagged Neuronal in the taxonomy.
+    Args:
+        accession: cell set accession
+        dend_tree: networkx directed graph that represents the taxonomy
+        all_nodes: dict of all nodes by accession
+
+    Returns: True if neuronal, otherwise False.
+    """
+    class_node = all_nodes.get(get_class_accession(accession, dend_tree, all_nodes), {})
+    return (class_node.get('author_annotation_fields') or {}).get('Neuronal') == 'Y'
 
 
 def associate_marker_sets(all_nodes, author_local_markers, author_markers, collapsed, d, id_factory,
@@ -1186,7 +1230,7 @@ def index_base_files(base_files):
 def merge_class_templates(base_tsv, curation_tsv, output_filepath):
     """
     Applies all columns of the curation_tsv to the base_tsv and generates a new merged class template in the
-    output_filepath. Curated Locations replace the derived location of the base table (curated
+    output_filepath. Curated Locations replace the derived location or part_of of the base table (curated
     Neurotransmitters are added to the shared neurotransmitter, as they don't conflict).
     Args:
         base_tsv: Path of the base table to add new columns.
@@ -1194,7 +1238,7 @@ def merge_class_templates(base_tsv, curation_tsv, output_filepath):
         output_filepath: Output file path
     """
     merge_tables(base_tsv, curation_tsv, output_filepath)
-    overrides = {"Locations": ["Derived_location", "Derived_location_comment"]}
+    overrides = {"Locations": ["Derived_location", "Derived_part_of", "Derived_location_comment"]}
     with open(output_filepath) as merged_file:
         rows = list(csv.reader(merged_file, delimiter="\t", quotechar='"'))
     headers = rows[0]

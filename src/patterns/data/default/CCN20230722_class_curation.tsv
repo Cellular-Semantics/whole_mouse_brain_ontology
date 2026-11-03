@@ -26,8 +26,8 @@ http://purl.obolibrary.org/obo/PCL_0110024	CS20230722_CLAS_24	24 MY Glut
 http://purl.obolibrary.org/obo/CL_4306426	CS20230722_CLUS_4606	25 Pineal Glut		pinealocyte (Mmus)																6503 Pineal_Crx_Glut 1	CCN20251031:CS20251031_CLUS_6503	pinealocyte (Mmus)	existing curated defined_class_name kept	
 http://purl.obolibrary.org/obo/PCL_0110026	CS20230722_CLAS_26	26 P GABA																						
 http://purl.obolibrary.org/obo/PCL_0110027	CS20230722_CLAS_27	27 MY GABA																						
-http://purl.obolibrary.org/obo/CL_4300028	CS20230722_CLAS_28	28 CB GABA		cerebellar GABAergic neuron (Mmus)										MBA:512	GO:0061534	All clusters in this set are inferred to be GABAergic from NT marker expression.								
-http://purl.obolibrary.org/obo/CL_4300029	CS20230722_CLAS_29	29 CB Glut		cerebellar glutamatergic neuron (Mmus)										MBA:512	GO:0061535	All clusters in this set are inferred to be glutamatergic from NT marker expression.								
+http://purl.obolibrary.org/obo/CL_4300028	CS20230722_CLAS_28	28 CB GABA		cerebellar GABAergic neuron (Mmus)											GO:0061534	All clusters in this set are inferred to be GABAergic from NT marker expression.								
+http://purl.obolibrary.org/obo/CL_4300029	CS20230722_CLAS_29	29 CB Glut		cerebellar glutamatergic neuron (Mmus)											GO:0061535	All clusters in this set are inferred to be glutamatergic from NT marker expression.								
 http://purl.obolibrary.org/obo/PCL_0110030	CS20230722_CLAS_30	30 Astro-Epen																						
 http://purl.obolibrary.org/obo/CL_4300031	CS20230722_CLAS_31	31 OPC-Oligo																						
 http://purl.obolibrary.org/obo/CL_4301615	CS20230722_SUPT_1185	32 OEC		olfactory ensheathing cell (Mmus)																402 OEC_NN	CCN20251031:CS20251031_SUBC_0402	olfactory ensheathing cell (Mmus)	existing curated defined_class_name kept	
