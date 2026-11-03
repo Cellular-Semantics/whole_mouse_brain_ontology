@@ -23,11 +23,6 @@
       "rows": 732,
       "cypher": "MATCH (a)-[:part_of]->(b) WHERE a.curie STARTS WITH 'MBA:' AND b.curie STARTS WITH 'MBA:'\nRETURN a.curie, b.curie ORDER BY a.curie, b.curie"
     },
-    "mba_uberon": {
-      "file": "mba_uberon.tsv",
-      "rows": 566,
-      "cypher": "MATCH (a)-[:SUBCLASSOF]->(b) WHERE a.curie STARTS WITH 'MBA:' AND b.curie STARTS WITH 'UBERON:'\nRETURN a.curie, b.curie, b.label ORDER BY a.curie, b.curie"
-    },
     "mba_labels": {
       "file": "mba_labels.tsv",
       "rows": 821,

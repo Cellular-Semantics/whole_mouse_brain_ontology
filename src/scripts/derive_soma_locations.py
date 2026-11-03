@@ -1,7 +1,8 @@
 """Derive the soma location of each CCN20230722 cell set from MERFISH cell counts.
 
-Reads the Brain Cell KG cache written by kg_location_fetch.py and writes the table the template
-build reads (derived_soma_locations.tsv). The method is described in
+Reads the Brain Cell KG cache written by kg_location_fetch.py (cell counts, CCF partonomy and
+labels) and the CCF -> Uberon bridge in mbao, and writes the table the template build reads
+(derived_soma_locations.tsv). The method is described in
 ../dendrograms/supplementary/version2/derived_soma_locations.md:
 
   python derive_soma_locations.py -c ../dendrograms/supplementary/version2/kg_location_cache \
@@ -19,6 +20,7 @@ import csv
 import functools
 import gzip
 import os
+import xml.etree.ElementTree as ET
 
 THETA = 0.8
 MIN_CELLS = 20  # sources with fewer grey-matter cells than this are skipped
@@ -28,6 +30,7 @@ GREY = "MBA:8"  # Basic cell groups and regions: excludes fibre tracts and ventr
 UNINFORMATIVE = {"MBA:8", "MBA:997", None}  # grey matter, root
 LEVELS = {"class": 0, "subclass": 1, "supertype": 2, "cluster": 3}
 SOURCES = ("yao", "zhang")
+MBAO = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../dendrograms/resources/mbao-base-materialized.owl")
 
 # The CCF tree doesn't match Uberon at the top: its 'Brain stem' includes the interbrain and it
 # has no forebrain. Drop 'Brain stem' and add the Uberon groupings as virtual (V:) regions, with
@@ -43,10 +46,9 @@ VIRTUAL = {  # region: (label, added, subtracted, Uberon)
     "V:hindbrain": ("hindbrain (Hindbrain + Cerebellum)", ["MBA:1065", "MBA:512"], [],
                     ("UBERON:0002028", "hindbrain")),
 }
-# MBA regions whose Uberon mapping in the KB is wrong or ambiguous for this use
+# MBA regions whose mbao bridge is wrong for this use
 UBERON_OVERRIDE = {
     "MBA:698": ("UBERON:0005366", "olfactory lobe"),  # Olfactory areas includes MOB/AOB; 'olfactory cortex' doesn't
-    "MBA:803": ("UBERON:0006514", "pallidum"),        # also mapped to 'gray matter of telencephalon'
 }
 # Cell sets (and their descendants) whose soma location shouldn't come from registered MERFISH cells
 NO_LOCATION = {"WMB:CS20230722_CLAS_25": "pinealocytes: location from spatial registration is unreliable"}
@@ -58,19 +60,43 @@ def read_tsv(cache, fn):
         return list(csv.DictReader(f, delimiter="\t"))
 
 
+def read_mbao_bridge(path):
+    """{MBA region: (Uberon ID, label)} from mbao's bridge axioms,
+    MBA_n EquivalentTo UBERON_m and (part_of some NCBITaxon_10090).
+
+    Read from the axioms rather than from the reasoned hierarchy (e.g. the KG's SUBCLASSOF
+    edges), where regions also get generic Uberon superclasses such as 'brainstem nucleus'."""
+    ns = {"owl": "http://www.w3.org/2002/07/owl#", "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+          "rdfs": "http://www.w3.org/2000/01/rdf-schema#", "skos": "http://www.w3.org/2004/02/skos/core#"}
+    about = f"{{{ns['rdf']}}}about"
+    curie = lambda iri: iri.rsplit("/", 1)[-1].replace("_", ":", 1)
+    labels, bridge = {}, {}
+    for c in ET.parse(path).getroot().findall("owl:Class", ns):
+        iri = c.get(about, "")
+        if "/obo/UBERON_" in iri:
+            label = c.find("rdfs:label", ns)
+            label = c.find("skos:prefLabel", ns) if label is None else label
+            if label is not None:
+                labels[curie(iri)] = label.text
+        elif "/mbao/MBA_" in iri:
+            us = [d.get(about) for d in c.findall("owl:equivalentClass/owl:Class/owl:intersectionOf/rdf:Description", ns)
+                  if "/obo/UBERON_" in d.get(about, "")]
+            if len(us) > 1:
+                raise SystemExit(f"{curie(iri)} has more than one Uberon bridge: {us}")
+            if us:
+                bridge[curie(iri)] = curie(us[0])
+    return {m: (u, labels.get(u, "")) for m, u in bridge.items()}
+
+
 class Derivation:
-    def __init__(self, cache, theta):
+    def __init__(self, cache, theta, mbao=MBAO):
         self.theta = theta
         self.lab = {r["region"]: r["label"] for r in read_tsv(cache, "mba_labels.tsv")}
         parent = {}
         for r in read_tsv(cache, "mba_part_of.tsv"):
             if parent.setdefault(r["region"], r["parent"]) != r["parent"]:
                 raise SystemExit(f"{r['region']} has more than one CCF parent")
-        self.uberon = collections.defaultdict(list)
-        for r in read_tsv(cache, "mba_uberon.tsv"):
-            self.uberon[r["region"]].append((r["uberon"], r["uberon_label"]))
-
-        self.uberon_use = collections.Counter(u for us in self.uberon.values() for u, _ in us)
+        self.uberon = read_mbao_bridge(mbao)
 
         children = collections.defaultdict(set)
         for a, b in parent.items():
@@ -84,7 +110,7 @@ class Derivation:
         self.comp = {r: frozenset(below(r)) for r in self.lab}
         for v, (label, plus, minus, uberon) in VIRTUAL.items():
             self.lab[v] = label
-            self.uberon[v] = [uberon]
+            self.uberon[v] = uberon
             self.comp[v] = (frozenset().union(*(self.comp[p] for p in plus))
                             - frozenset().union(*(self.comp[m] for m in minus)))
         self.regions = sorted((r for r in self.comp if r not in EXCLUDE), key=lambda a: len(self.comp[a]))
@@ -173,14 +199,7 @@ class Derivation:
         if r in UBERON_OVERRIDE:
             return UBERON_OVERRIDE[r]
         # Walk up the CCF tree if the region has no Uberon mapping of its own
-        us = next((self.uberon[a] for a in (self.chain(r) if r else []) if self.uberon[a]), [])
-        if not us:
-            return None
-        # A region can map to several Uberon classes, some generic (e.g. 'brainstem nucleus' for
-        # thalamic nuclei). Prefer the one whose label matches the region's, then the most
-        # specific: the one fewest MBA regions map to.
-        return next(((x, l) for x, l in us if l.lower() == self.lab.get(r, "").lower()),
-                    min(us, key=lambda u: (self.uberon_use[u[0]], u[0])))
+        return next((self.uberon[a] for a in (self.chain(r) if r else []) if a in self.uberon), None)
 
     def location_for(self, c):
         """(uberon, label, note, region) for a cell set's soma location. uberon is empty when the
@@ -241,10 +260,11 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("-c", "--cache", required=True, help="directory written by kg_location_fetch.py")
     ap.add_argument("-o", "--output", required=True)
+    ap.add_argument("--mbao", default=MBAO, help="mbao OWL (RDF/XML) holding the CCF -> Uberon bridge")
     ap.add_argument("--theta", default=str(THETA))
     args = ap.parse_args()
 
-    rows = Derivation(args.cache, float(args.theta)).rows(args.theta)
+    rows = Derivation(args.cache, float(args.theta), args.mbao).rows(args.theta)
     with open(args.output, "w") as f:
         w = csv.DictWriter(f, fieldnames=list(rows[0]), delimiter="\t", lineterminator="\n")
         w.writeheader()

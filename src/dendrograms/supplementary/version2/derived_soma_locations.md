@@ -27,12 +27,11 @@ How a location is chosen:
   and hindbrain (Hindbrain + Cerebellum), mapped to Uberon `forebrain`, `brainstem` and
   `hindbrain`. In the table (`ccf_region`) these virtual regions have IDs `V:forebrain`,
   `V:brainstem` and `V:hindbrain`.
-- The region is mapped to Uberon. Where a region maps to several Uberon classes, the one whose
-  label matches the region's is used, otherwise the most specific (the one fewest CCF regions
-  map to), so thalamic and hypothalamic nuclei don't get generic classes such as `brainstem
-  nucleus`. A region with no mapping takes its nearest mapped CCF ancestor's. Two CCF mappings
-  are overridden: `Olfactory areas` → `olfactory lobe` (the CCF region includes the main
-  olfactory bulb, which isn't part of `olfactory cortex`), and `Pallidum` → `pallidum`.
+- The region is mapped to Uberon by mbao's bridge axioms (`MBA_n ≡ UBERON_m ⊓ part_of some
+  mouse`, one per region; `src/dendrograms/resources/mbao-base-materialized.owl`). A region with
+  no bridge takes its nearest bridged CCF ancestor's. One bridge is overridden: `Olfactory areas`
+  → `olfactory lobe` (the CCF region includes the main olfactory bulb, which isn't part of
+  `olfactory cortex`).
 - The CL product asserts the taxonomy hierarchy, so a restriction is inherited by every
   descendant term. When a descendant cell set (at least 50 cells) has under half of its
   cells in the region, the location **moves up** to the most specific region that holds at
@@ -46,7 +45,7 @@ How a location is chosen:
 The table is generated outside the main build by `src/scripts/derive_soma_locations.py`
 (`make derived_soma_locations` in `src/dendrograms`) from a cached export of the
 [Brain Cell KG](https://github.com/Cellular-Semantics/Brain_Cell_KG): cell counts per cell set
-and CCF region, the CCF partonomy and CCF → Uberon mappings. The cache, the Cypher queries and
+and CCF region, the CCF partonomy and CCF labels. The cache, the Cypher queries and
 the KG commit they ran against are in `kg_location_cache/` (see its README). Regenerate the
 table, and then the class_base template, when the method, the taxonomy or the cell counts
 change.

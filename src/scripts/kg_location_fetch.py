@@ -1,4 +1,5 @@
-"""Cache the inputs of derive_soma_locations.py from a Brain Cell KG Neo4j instance.
+"""Cache the inputs of derive_soma_locations.py from a Brain Cell KG Neo4j instance (all but the
+CCF -> Uberon bridge, which it reads from mbao).
 
 Brain Cell KG: https://github.com/Cellular-Semantics/Brain_Cell_KG. Run it locally
 (docker compose) at a known commit and pass that commit with --kg-commit, so the cache records
@@ -35,9 +36,6 @@ RETURN i.curie, l.curie, r.source, r.cell_count ORDER BY i.curie, l.curie"""),
     "mba_part_of": ("mba_part_of.tsv", ["region", "parent"], """
 MATCH (a)-[:part_of]->(b) WHERE a.curie STARTS WITH 'MBA:' AND b.curie STARTS WITH 'MBA:'
 RETURN a.curie, b.curie ORDER BY a.curie, b.curie"""),
-    "mba_uberon": ("mba_uberon.tsv", ["region", "uberon", "uberon_label"], """
-MATCH (a)-[:SUBCLASSOF]->(b) WHERE a.curie STARTS WITH 'MBA:' AND b.curie STARTS WITH 'UBERON:'
-RETURN a.curie, b.curie, b.label ORDER BY a.curie, b.curie"""),
     "mba_labels": ("mba_labels.tsv", ["region", "label"], """
 MATCH (a) WHERE a.curie STARTS WITH 'MBA:'
 RETURN a.curie, a.label ORDER BY a.curie"""),
