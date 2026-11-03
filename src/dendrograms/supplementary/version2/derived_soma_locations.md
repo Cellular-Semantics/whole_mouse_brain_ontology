@@ -39,8 +39,10 @@ How a location is chosen:
   `28 CB GABA` gets hindbrain rather than cerebellum, because its `308 DCO Il22 Gly-Gaba`
   subclass is mostly in the cochlear nuclei. If only grey matter would do, or the region
   isn't grey matter, no location is given (`note` says why).
-- The pineal cell set (class `25 Pineal Glut` and its chain) gets no location: spatial
-  registration of pinealocytes isn't reliable.
+- Some branches get no location because spatial registration doesn't locate their cells: the
+  pineal cell set (class `25 Pineal Glut` and its chain), and the cells lining the ventricles,
+  subclasses `322 Tanycyte NN` and `323 Ependymal NN` and their descendants, which registration
+  places at best adjacent to a region.
 
 The table is generated outside the main build by `src/scripts/derive_soma_locations.py`
 (`make derived_soma_locations` in `src/dendrograms`) from a cached export of the

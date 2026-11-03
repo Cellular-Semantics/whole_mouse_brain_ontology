@@ -51,7 +51,10 @@ UBERON_OVERRIDE = {
     "MBA:698": ("UBERON:0005366", "olfactory lobe"),  # Olfactory areas includes MOB/AOB; 'olfactory cortex' doesn't
 }
 # Cell sets (and their descendants) whose soma location shouldn't come from registered MERFISH cells
-NO_LOCATION = {"WMB:CS20230722_CLAS_25": "pinealocytes: location from spatial registration is unreliable"}
+VENTRICULAR = "cells lining the ventricles: spatially registered cells are at best adjacent to a region, not in it"
+NO_LOCATION = {"WMB:CS20230722_CLAS_25": "pinealocytes: location from spatial registration is unreliable",
+               "WMB:CS20230722_SUBC_322": f"tanycytes, {VENTRICULAR}",
+               "WMB:CS20230722_SUBC_323": f"ependymal cells, {VENTRICULAR}"}
 
 
 def read_tsv(cache, fn):

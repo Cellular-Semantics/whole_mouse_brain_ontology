@@ -354,8 +354,8 @@ CS20230722_SUBC_318	318 Astro-NT NN	subclass						0.8	390816
 CS20230722_SUBC_319	319 Astro-TE NN	subclass	UBERON:0001893	telencephalon	MBA:567	Cerebrum		0.8	489309	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebrum (MBA:567).
 CS20230722_SUBC_320	320 Astro-OLF NN	subclass	UBERON:0005366	olfactory lobe	MBA:698	Olfactory areas		0.8	21946	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Olfactory areas (MBA:698).
 CS20230722_SUBC_321	321 Astroependymal NN	subclass						0.8	4090	
-CS20230722_SUBC_322	322 Tanycyte NN	subclass	UBERON:0001898	hypothalamus	MBA:1097	Hypothalamus		0.8	2865	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hypothalamus (MBA:1097).
-CS20230722_SUBC_323	323 Ependymal NN	subclass						0.8	15494	
+CS20230722_SUBC_322	322 Tanycyte NN	subclass			MBA:1097	Hypothalamus	tanycytes, cells lining the ventricles: spatially registered cells are at best adjacent to a region, not in it	0.8	2865	
+CS20230722_SUBC_323	323 Ependymal NN	subclass					ependymal cells, cells lining the ventricles: spatially registered cells are at best adjacent to a region, not in it	0.8	15494	
 CS20230722_SUBC_324	324 Hypendymal NN	subclass	UBERON:0001891	midbrain	MBA:313	Midbrain		0.8	404	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313).
 CS20230722_SUBC_325	325 CHOR NN	subclass						0.8	11413	
 CS20230722_SUBC_326	326 OPC NN	subclass						0.8	203949	
@@ -1542,11 +1542,11 @@ CS20230722_SUPT_1168	1168 Astro-OLF NN_3	supertype	UBERON:0005378	olfactory bulb
 CS20230722_SUPT_1169	1169 Astroependymal NN_1	supertype	UBERON:0001890	forebrain	V:forebrain	forebrain (Cerebrum + Interbrain)		0.8	3422	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in forebrain (Cerebrum + Interbrain).
 CS20230722_SUPT_1170	1170 Astroependymal NN_2	supertype	UBERON:0002028	hindbrain	V:hindbrain	hindbrain (Hindbrain + Cerebellum)		0.8	355	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in hindbrain (Hindbrain + Cerebellum).
 CS20230722_SUPT_1171	1171 Astroependymal NN_3	supertype	UBERON:0001891	midbrain	MBA:313	Midbrain		0.8	313	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313).
-CS20230722_SUPT_1172	1172 Tanycyte NN_1	supertype	UBERON:0001898	hypothalamus	MBA:1097	Hypothalamus		0.8	283	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hypothalamus (MBA:1097).
-CS20230722_SUPT_1173	1173 Tanycyte NN_2	supertype	UBERON:0002271	periventricular zone of hypothalamus	MBA:157	Periventricular zone		0.8	1828	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Periventricular zone (MBA:157).
-CS20230722_SUPT_1174	1174 Tanycyte NN_3	supertype	UBERON:0001898	hypothalamus	MBA:1097	Hypothalamus		0.8	754	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hypothalamus (MBA:1097).
-CS20230722_SUPT_1175	1175 Ependymal NN_1	supertype						0.8	14850	
-CS20230722_SUPT_1176	1176 Ependymal NN_2	supertype						0.8	644	
+CS20230722_SUPT_1172	1172 Tanycyte NN_1	supertype			MBA:1097	Hypothalamus	tanycytes, cells lining the ventricles: spatially registered cells are at best adjacent to a region, not in it	0.8	283	
+CS20230722_SUPT_1173	1173 Tanycyte NN_2	supertype			MBA:157	Periventricular zone	tanycytes, cells lining the ventricles: spatially registered cells are at best adjacent to a region, not in it	0.8	1828	
+CS20230722_SUPT_1174	1174 Tanycyte NN_3	supertype			MBA:1097	Hypothalamus	tanycytes, cells lining the ventricles: spatially registered cells are at best adjacent to a region, not in it	0.8	754	
+CS20230722_SUPT_1175	1175 Ependymal NN_1	supertype					ependymal cells, cells lining the ventricles: spatially registered cells are at best adjacent to a region, not in it	0.8	14850	
+CS20230722_SUPT_1176	1176 Ependymal NN_2	supertype					ependymal cells, cells lining the ventricles: spatially registered cells are at best adjacent to a region, not in it	0.8	644	
 CS20230722_SUPT_1177	1177 Hypendymal NN_1	supertype	UBERON:0001891	midbrain	MBA:313	Midbrain		0.8	404	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313).
 CS20230722_SUPT_1178	1178 CHOR NN_1	supertype						0.8	0	
 CS20230722_SUPT_1179	1179 OPC NN_1	supertype						0.8	156452	
@@ -6814,26 +6814,26 @@ CS20230722_CLUS_5239	5239 Astroependymal NN_1	cluster	UBERON:0001890	forebrain	V
 CS20230722_CLUS_5240	5240 Astroependymal NN_2	cluster	UBERON:0002028	hindbrain	V:hindbrain	hindbrain (Hindbrain + Cerebellum)		0.8	355	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in hindbrain (Hindbrain + Cerebellum).
 CS20230722_CLUS_5241	5241 Astroependymal NN_3	cluster	UBERON:0002298	brainstem	V:brainstem	brainstem (Midbrain + Hindbrain)		0.8	123	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain).
 CS20230722_CLUS_5242	5242 Astroependymal NN_3	cluster	UBERON:0003040	central gray substance of midbrain	MBA:795	Periaqueductal gray		0.8	190	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Periaqueductal gray (MBA:795).
-CS20230722_CLUS_5243	5243 Tanycyte NN_1	cluster						0.8	0	
-CS20230722_CLUS_5244	5244 Tanycyte NN_1	cluster						0.8	0	
-CS20230722_CLUS_5245	5245 Tanycyte NN_2	cluster						0.8	0	
-CS20230722_CLUS_5246	5246 Tanycyte NN_2	cluster	UBERON:0002271	periventricular zone of hypothalamus	MBA:157	Periventricular zone		0.8	521	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Periventricular zone (MBA:157).
-CS20230722_CLUS_5247	5247 Tanycyte NN_2	cluster						0.8	0	
-CS20230722_CLUS_5248	5248 Tanycyte NN_2	cluster						0.8	0	
-CS20230722_CLUS_5249	5249 Tanycyte NN_2	cluster						0.8	0	
-CS20230722_CLUS_5250	5250 Tanycyte NN_3	cluster						0.8	0	
-CS20230722_CLUS_5251	5251 Ependymal NN_1	cluster						0.8	1347	
-CS20230722_CLUS_5252	5252 Ependymal NN_1	cluster						0.8	705	
-CS20230722_CLUS_5253	5253 Ependymal NN_1	cluster						0.8	1200	
-CS20230722_CLUS_5254	5254 Ependymal NN_1	cluster	UBERON:0004720	cerebellar vermis	MBA:645	Vermal regions		0.8	42	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Vermal regions (MBA:645).
-CS20230722_CLUS_5255	5255 Ependymal NN_1	cluster	UBERON:0002028	hindbrain	V:hindbrain	hindbrain (Hindbrain + Cerebellum)		0.8	92	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in hindbrain (Hindbrain + Cerebellum).
-CS20230722_CLUS_5256	5256 Ependymal NN_1	cluster						0.8	8529	
-CS20230722_CLUS_5257	5257 Ependymal NN_1	cluster						0.8	869	
-CS20230722_CLUS_5258	5258 Ependymal NN_1	cluster	UBERON:0001890	forebrain	V:forebrain	forebrain (Cerebrum + Interbrain)		0.8	1945	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in forebrain (Cerebrum + Interbrain).
-CS20230722_CLUS_5259	5259 Ependymal NN_1	cluster						0.8	121	
-CS20230722_CLUS_5260	5260 Ependymal NN_2	cluster						0.8	253	
-CS20230722_CLUS_5261	5261 Ependymal NN_2	cluster						0.8	95	
-CS20230722_CLUS_5262	5262 Ependymal NN_2	cluster						0.8	296	
+CS20230722_CLUS_5243	5243 Tanycyte NN_1	cluster					tanycytes, cells lining the ventricles: spatially registered cells are at best adjacent to a region, not in it	0.8	0	
+CS20230722_CLUS_5244	5244 Tanycyte NN_1	cluster					tanycytes, cells lining the ventricles: spatially registered cells are at best adjacent to a region, not in it	0.8	0	
+CS20230722_CLUS_5245	5245 Tanycyte NN_2	cluster					tanycytes, cells lining the ventricles: spatially registered cells are at best adjacent to a region, not in it	0.8	0	
+CS20230722_CLUS_5246	5246 Tanycyte NN_2	cluster			MBA:157	Periventricular zone	tanycytes, cells lining the ventricles: spatially registered cells are at best adjacent to a region, not in it	0.8	521	
+CS20230722_CLUS_5247	5247 Tanycyte NN_2	cluster					tanycytes, cells lining the ventricles: spatially registered cells are at best adjacent to a region, not in it	0.8	0	
+CS20230722_CLUS_5248	5248 Tanycyte NN_2	cluster					tanycytes, cells lining the ventricles: spatially registered cells are at best adjacent to a region, not in it	0.8	0	
+CS20230722_CLUS_5249	5249 Tanycyte NN_2	cluster					tanycytes, cells lining the ventricles: spatially registered cells are at best adjacent to a region, not in it	0.8	0	
+CS20230722_CLUS_5250	5250 Tanycyte NN_3	cluster					tanycytes, cells lining the ventricles: spatially registered cells are at best adjacent to a region, not in it	0.8	0	
+CS20230722_CLUS_5251	5251 Ependymal NN_1	cluster					ependymal cells, cells lining the ventricles: spatially registered cells are at best adjacent to a region, not in it	0.8	1347	
+CS20230722_CLUS_5252	5252 Ependymal NN_1	cluster					ependymal cells, cells lining the ventricles: spatially registered cells are at best adjacent to a region, not in it	0.8	705	
+CS20230722_CLUS_5253	5253 Ependymal NN_1	cluster					ependymal cells, cells lining the ventricles: spatially registered cells are at best adjacent to a region, not in it	0.8	1200	
+CS20230722_CLUS_5254	5254 Ependymal NN_1	cluster			MBA:645	Vermal regions	ependymal cells, cells lining the ventricles: spatially registered cells are at best adjacent to a region, not in it	0.8	42	
+CS20230722_CLUS_5255	5255 Ependymal NN_1	cluster			V:hindbrain	hindbrain (Hindbrain + Cerebellum)	ependymal cells, cells lining the ventricles: spatially registered cells are at best adjacent to a region, not in it	0.8	92	
+CS20230722_CLUS_5256	5256 Ependymal NN_1	cluster					ependymal cells, cells lining the ventricles: spatially registered cells are at best adjacent to a region, not in it	0.8	8529	
+CS20230722_CLUS_5257	5257 Ependymal NN_1	cluster					ependymal cells, cells lining the ventricles: spatially registered cells are at best adjacent to a region, not in it	0.8	869	
+CS20230722_CLUS_5258	5258 Ependymal NN_1	cluster			V:forebrain	forebrain (Cerebrum + Interbrain)	ependymal cells, cells lining the ventricles: spatially registered cells are at best adjacent to a region, not in it	0.8	1945	
+CS20230722_CLUS_5259	5259 Ependymal NN_1	cluster					ependymal cells, cells lining the ventricles: spatially registered cells are at best adjacent to a region, not in it	0.8	121	
+CS20230722_CLUS_5260	5260 Ependymal NN_2	cluster					ependymal cells, cells lining the ventricles: spatially registered cells are at best adjacent to a region, not in it	0.8	253	
+CS20230722_CLUS_5261	5261 Ependymal NN_2	cluster					ependymal cells, cells lining the ventricles: spatially registered cells are at best adjacent to a region, not in it	0.8	95	
+CS20230722_CLUS_5262	5262 Ependymal NN_2	cluster					ependymal cells, cells lining the ventricles: spatially registered cells are at best adjacent to a region, not in it	0.8	296	
 CS20230722_CLUS_5263	5263 Hypendymal NN_1	cluster	UBERON:0001891	midbrain	MBA:313	Midbrain		0.8	404	At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313).
 CS20230722_CLUS_5264	5264 CHOR NN_1	cluster						0.8	0	
 CS20230722_CLUS_5265	5265 CHOR NN_1	cluster						0.8	0	
