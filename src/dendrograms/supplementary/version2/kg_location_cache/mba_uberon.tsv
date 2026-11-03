@@ -1,0 +1,567 @@
+region	uberon	uberon_label
+MBA:1	UBERON:0014594	tuberomammillary nucleus ventral part
+MBA:100	UBERON:0002145	interpeduncular nucleus
+MBA:1000	UBERON:0035803	extrapyramidal tract system
+MBA:1004	UBERON:0006331	brainstem nucleus
+MBA:1004	UBERON:0007768	ventral premammillary nucleus
+MBA:1007	UBERON:0005350	lobule simplex
+MBA:1008	UBERON:0002704	metathalamus
+MBA:1008	UBERON:0006331	brainstem nucleus
+MBA:1009	UBERON:0000122	neuron projection bundle
+MBA:1009	UBERON:0011215	central nervous system cell part cluster
+MBA:101	UBERON:0002828	ventral cochlear nucleus
+MBA:1016	UBERON:0005978	olfactory bulb outer nerve layer
+MBA:1017	UBERON:0005348	ansiform lobule
+MBA:102	UBERON:0014169	nigrostriatal tract
+MBA:1020	UBERON:0002709	posterior nuclear complex of thalamus
+MBA:1022	UBERON:0002476	lateral globus pallidus
+MBA:1024	UBERON:0013118	sulcus of brain
+MBA:1031	UBERON:0002477	medial globus pallidus
+MBA:1033	UBERON:0005347	copula pyramidis
+MBA:1037	UBERON:0035971	postsubiculum
+MBA:1038	UBERON:0035876	primary somatosensory area barrel field layer 6a
+MBA:1041	UBERON:0005351	paraflocculus
+MBA:1044	UBERON:0002144	peripeduncular nucleus
+MBA:1044	UBERON:0007692	nucleus of thalamus
+MBA:1046	UBERON:0005395	cortical layer VI
+MBA:1047	UBERON:0035877	primary somatosensory area barrel field layer 4
+MBA:1048	UBERON:0002155	gigantocellular nucleus
+MBA:1049	UBERON:0001063	flocculus
+MBA:105	UBERON:0002782	medial superior olivary nucleus
+MBA:1052	UBERON:0002142	pedunculopontine tegmental nucleus
+MBA:1053	UBERON:8440000	cortical layer II/III
+MBA:1054	UBERON:0005395	cortical layer VI
+MBA:1056	UBERON:0005976	ansiform lobule crus I
+MBA:1057	UBERON:8440075	gustatory cortex
+MBA:106	UBERON:0002872	inferior salivatory nucleus
+MBA:1061	UBERON:0006331	brainstem nucleus
+MBA:1061	UBERON:0006848	posterior pretectal nucleus
+MBA:1061	UBERON:0009661	midbrain nucleus
+MBA:1061	UBERON:0014450	pretectal nucleus
+MBA:1064	UBERON:0005977	ansiform lobule crus II
+MBA:1065	UBERON:0002028	hindbrain
+MBA:1066	UBERON:8440000	cortical layer II/III
+MBA:10671	UBERON:0002197	median eminence of neurohypophysis
+MBA:1069	UBERON:8440025	parapyramidal nucleus
+MBA:107	UBERON:0005390	cortical layer I
+MBA:1070	UBERON:0035872	primary somatosensory area barrel field layer 5
+MBA:10703	UBERON:0004679	dentate gyrus molecular layer
+MBA:10704	UBERON:0002928	dentate gyrus polymorphic layer
+MBA:1072	UBERON:0002758	dorsal nucleus of medial geniculate body
+MBA:1072	UBERON:0006331	brainstem nucleus
+MBA:1073	UBERON:0002245	cerebellar hemisphere
+MBA:1079	UBERON:0002985	ventral nucleus of medial geniculate body
+MBA:1079	UBERON:0006331	brainstem nucleus
+MBA:108	UBERON:0002200	vasculature of head
+MBA:108	UBERON:0002307	choroid plexus of lateral ventricle
+MBA:1081	UBERON:8440003	cortical layer VIb
+MBA:1084	UBERON:0001953	presubiculum
+MBA:1088	UBERON:0002759	magnocellular nucleus of medial geniculate body
+MBA:1088	UBERON:0006331	brainstem nucleus
+MBA:1089	UBERON:0002421	hippocampal formation
+MBA:1092	UBERON:0014534	external medullary lamina of thalamus
+MBA:1093	UBERON:0002963	caudal pontine reticular nucleus
+MBA:1097	UBERON:0001898	hypothalamus
+MBA:1099	UBERON:0000052	fornix of brain
+MBA:1100	UBERON:0001944	pretectal region
+MBA:1100	UBERON:0019267	gray matter of midbrain
+MBA:1105	UBERON:0002884	intercalated amygdaloid nuclei
+MBA:1106	UBERON:8440000	cortical layer II/III
+MBA:1108	UBERON:0015599	genu of corpus callosum
+MBA:1113	UBERON:0035972	interanterodorsal nucleus of the thalamus
+MBA:1116	UBERON:0014915	genu of facial nerve
+MBA:1123	UBERON:0002163	inferior cerebellar peduncle
+MBA:1126	UBERON:0014593	tuberomammillary nucleus dorsal part
+MBA:1127	UBERON:8440000	cortical layer II/III
+MBA:1129	UBERON:0001894	diencephalon
+MBA:114	UBERON:0002779	lateral superior olivary nucleus
+MBA:1143	UBERON:0002956	granular layer of cerebellar cortex
+MBA:1144	UBERON:0002974	molecular layer of cerebellar cortex
+MBA:1145	UBERON:0002979	Purkinje cell layer of cerebellar cortex
+MBA:117	UBERON:0000959	optic chiasma
+MBA:118	UBERON:0006331	brainstem nucleus
+MBA:118	UBERON:8440008	periventricular hypothalamic nucleus, intermediate part
+MBA:12	UBERON:0006331	brainstem nucleus
+MBA:12	UBERON:0007414	nucleus of midbrain tegmentum
+MBA:12	UBERON:0009661	midbrain nucleus
+MBA:12	UBERON:0013736	interfascicular linear nucleus
+MBA:122	UBERON:0002971	periolivary nucleus
+MBA:125	UBERON:0001908	optic tract
+MBA:126	UBERON:0002708	posterior periventricular nucleus
+MBA:126	UBERON:0006331	brainstem nucleus
+MBA:127	UBERON:0002681	anteromedial nucleus of thalamus
+MBA:127	UBERON:0006331	brainstem nucleus
+MBA:128	UBERON:0007415	nucleus of midbrain reticular formation
+MBA:129	UBERON:0002286	third ventricle
+MBA:12993	UBERON:0005390	cortical layer I
+MBA:12994	UBERON:8440000	cortical layer II/III
+MBA:12995	UBERON:0005393	cortical layer IV
+MBA:12997	UBERON:0005395	cortical layer VI
+MBA:12998	UBERON:8440003	cortical layer VIb
+MBA:131	UBERON:0002886	lateral amygdaloid nucleus
+MBA:132	UBERON:8440003	cortical layer VIb
+MBA:133	UBERON:0002622	preoptic periventricular nucleus
+MBA:133	UBERON:0006331	brainstem nucleus
+MBA:133	UBERON:0006568	hypothalamic nucleus
+MBA:135	UBERON:0001719	nucleus ambiguus
+MBA:136	UBERON:0009777	intermediate reticular nucleus
+MBA:138	UBERON:0002736	lateral nuclear group of thalamus
+MBA:138	UBERON:0006331	brainstem nucleus
+MBA:140	UBERON:0002289	midbrain cerebral aqueduct
+MBA:145	UBERON:0002422	fourth ventricle
+MBA:146	UBERON:0007413	nucleus of pontine reticular formation
+MBA:147	UBERON:0002148	locus ceruleus
+MBA:148	UBERON:0005393	cortical layer IV
+MBA:149	UBERON:0001920	paraventricular nucleus of thalamus
+MBA:149	UBERON:0006331	brainstem nucleus
+MBA:15	UBERON:0002992	paratenial nucleus
+MBA:15	UBERON:0006331	brainstem nucleus
+MBA:151	UBERON:0004069	accessory olfactory bulb
+MBA:153	UBERON:0007656	lateral recess of fourth ventricle
+MBA:154	UBERON:8440028	Perihypoglossal nuclei
+MBA:155	UBERON:0002984	lateral dorsal nucleus
+MBA:155	UBERON:0006331	brainstem nucleus
+MBA:157	UBERON:0002271	periventricular zone of hypothalamus
+MBA:158	UBERON:0000936	posterior commissure
+MBA:159	UBERON:0002266	anterior olfactory nucleus
+MBA:162	UBERON:0002267	laterodorsal tegmental nucleus
+MBA:162	UBERON:0009662	hindbrain nucleus
+MBA:164	UBERON:0002291	central canal of spinal cord
+MBA:165	UBERON:0007412	midbrain raphe nuclei
+MBA:169	UBERON:0002160	nucleus prepositus
+MBA:170	UBERON:0002479	dorsal lateral geniculate nucleus
+MBA:170	UBERON:0006331	brainstem nucleus
+MBA:171	UBERON:0005390	cortical layer I
+MBA:173	UBERON:0001933	retrochiasmatic area
+MBA:177	UBERON:0002881	sublingual nucleus
+MBA:178	UBERON:0002480	ventral lateral geniculate nucleus
+MBA:178	UBERON:0006331	brainstem nucleus
+MBA:179	UBERON:0005395	cortical layer VI
+MBA:180	UBERON:8440000	cortical layer II/III
+MBA:181	UBERON:0001921	reuniens nucleus
+MBA:181	UBERON:0006331	brainstem nucleus
+MBA:186	UBERON:0001941	lateral habenular nucleus
+MBA:186	UBERON:0006331	brainstem nucleus
+MBA:188	UBERON:0007631	accessory olfactory bulb glomerular layer
+MBA:189	UBERON:0002955	rhomboidal nucleus
+MBA:189	UBERON:0006331	brainstem nucleus
+MBA:19	UBERON:0015793	induseum griseum
+MBA:190	UBERON:0002755	pyramidal decussation
+MBA:194	UBERON:0002430	lateral hypothalamic area
+MBA:195	UBERON:0005391	cortical layer II
+MBA:197	UBERON:0013734	rostral linear nucleus
+MBA:198	UBERON:0002755	pyramidal decussation
+MBA:201	UBERON:0035874	primary somatosensory area barrel field layer 2/3
+MBA:202	UBERON:0001722	medial vestibular nucleus
+MBA:204	UBERON:0015432	accessory olfactory bulb mitral cell layer
+MBA:206	UBERON:0002156	nucleus raphe magnus
+MBA:207	UBERON:0002162	area postrema
+MBA:209	UBERON:0007230	lateral vestibular nucleus
+MBA:210	UBERON:0001938	lateral mammillary nucleus
+MBA:210	UBERON:0006331	brainstem nucleus
+MBA:212	UBERON:0023934	olfactory bulb main glomerular layer
+MBA:214	UBERON:0001947	red nucleus
+MBA:217	UBERON:0007227	superior vestibular nucleus
+MBA:218	UBERON:0002983	lateral posterior nucleus of thalamus
+MBA:218	UBERON:0006331	brainstem nucleus
+MBA:219	UBERON:8440000	cortical layer II/III
+MBA:220	UBERON:0005378	olfactory bulb granule cell layer
+MBA:223	UBERON:0001932	arcuate nucleus of hypothalamus
+MBA:223	UBERON:0006331	brainstem nucleus
+MBA:225	UBERON:0001721	inferior vestibular nucleus
+MBA:226	UBERON:0001931	lateral preoptic nucleus
+MBA:226	UBERON:0006331	brainstem nucleus
+MBA:227	UBERON:8440003	cortical layer VIb
+MBA:228	UBERON:0005379	olfactory bulb internal plexiform layer
+MBA:229	UBERON:0009907	sensory root of trigeminal nerve
+MBA:23	UBERON:0002890	anterior amygdaloid area
+MBA:231	UBERON:0010036	anterior tegmental nucleus
+MBA:235	UBERON:0002154	lateral reticular nucleus
+MBA:236	UBERON:0004186	olfactory bulb mitral cell layer
+MBA:238	UBERON:0002047	pontine raphe nucleus
+MBA:239	UBERON:0002788	anterior nuclear group
+MBA:239	UBERON:0006331	brainstem nucleus
+MBA:242	UBERON:0002667	lateral septal nucleus
+MBA:246	UBERON:0011172	retrorubral area of midbrain reticular nucleus
+MBA:247	UBERON:0001393	auditory cortex
+MBA:254	UBERON:0013531	retrosplenial region
+MBA:255	UBERON:0002685	anteroventral nucleus of thalamus
+MBA:255	UBERON:0006331	brainstem nucleus
+MBA:262	UBERON:0001903	thalamic reticular nucleus
+MBA:262	UBERON:0006331	brainstem nucleus
+MBA:263	UBERON:0006331	brainstem nucleus
+MBA:263	UBERON:0006568	hypothalamic nucleus
+MBA:263	UBERON:0035974	anteroventral preoptic nucleus
+MBA:267	UBERON:0005395	cortical layer VI
+MBA:27	UBERON:0035975	intergeniculate leaflet of the lateral geniculate complex
+MBA:272	UBERON:0002690	anteroventral periventricular nucleus
+MBA:272	UBERON:0006331	brainstem nucleus
+MBA:275	UBERON:0007628	lateral septal complex
+MBA:278	UBERON:8440030	striatum-like amygdalar nuclei
+MBA:280	UBERON:0007632	Barrington's nucleus
+MBA:281	UBERON:0005390	cortical layer I
+MBA:286	UBERON:0002034	suprachiasmatic nucleus
+MBA:286	UBERON:0006331	brainstem nucleus
+MBA:290	UBERON:0002273	lateral zone of hypothalamus
+MBA:295	UBERON:0002887	basal amygdaloid nucleus
+MBA:30	UBERON:0006331	brainstem nucleus
+MBA:30	UBERON:8440007	periventricular hypothalamic nucleus, anterior part
+MBA:301	UBERON:0003029	stria terminalis
+MBA:304	UBERON:8440000	cortical layer II/III
+MBA:304325711	UBERON:0000966	retina
+MBA:307	UBERON:8440073	magnocellular reticular nucleus
+MBA:31	UBERON:0009835	anterior cingulate cortex
+MBA:310	UBERON:0001878	septofimbrial nucleus
+MBA:312782628	UBERON:0035890	postrhinal area
+MBA:312782632	UBERON:0005390	cortical layer I
+MBA:312782636	UBERON:8440000	cortical layer II/III
+MBA:312782648	UBERON:0005395	cortical layer VI
+MBA:312782652	UBERON:8440003	cortical layer VIb
+MBA:313	UBERON:0001891	midbrain
+MBA:315	UBERON:0001950	neocortex
+MBA:319	UBERON:0002889	medial part of basal amygdaloid nucleus
+MBA:322	UBERON:0008933	primary somatosensory cortex
+MBA:325	UBERON:0003033	suprageniculate nucleus of thalamus
+MBA:325	UBERON:0006331	brainstem nucleus
+MBA:325	UBERON:0015233	nucleus of dorsal thalamus
+MBA:326	UBERON:0002150	superior cerebellar peduncle
+MBA:329	UBERON:0010415	barrel cortex
+MBA:33	UBERON:0035892	primary visual area, layer 6a
+MBA:331	UBERON:0002206	mammillary body
+MBA:333	UBERON:0007630	septohippocampal nucleus
+MBA:336	UBERON:0002583	commissure of superior colliculus
+MBA:338	UBERON:0002219	subfornical organ
+MBA:342	UBERON:0003017	substantia innominata
+MBA:343	UBERON:0002298	brainstem
+MBA:347	UBERON:0007626	subparaventricular zone
+MBA:35	UBERON:0001715	oculomotor nuclear complex
+MBA:351	UBERON:0001880	bed nucleus of stria terminalis
+MBA:354	UBERON:0001896	medulla oblongata
+MBA:357	UBERON:0035570	tectothalamic tract
+MBA:358	UBERON:8440035	sublaterodorsal nucleus
+MBA:360	UBERON:8440000	cortical layer II/III
+MBA:362	UBERON:0002739	medial dorsal nucleus of thalamus
+MBA:362	UBERON:0006331	brainstem nucleus
+MBA:365	UBERON:0022236	peduncle of thalamus
+MBA:366	UBERON:0003031	submedial nucleus of thalamus
+MBA:366	UBERON:0006331	brainstem nucleus
+MBA:374	UBERON:0001965	substantia nigra pars compacta
+MBA:375	UBERON:0001954	Ammon's horn
+MBA:378	UBERON:0008934	secondary somatosensory cortex
+MBA:38	UBERON:0001930	paraventricular nucleus of hypothalamus
+MBA:38	UBERON:0006331	brainstem nucleus
+MBA:381	UBERON:0001966	substantia nigra pars reticulata
+MBA:382	UBERON:0003881	CA1 field of hippocampus
+MBA:385	UBERON:0002436	primary visual cortex
+MBA:391	UBERON:0014557	CA1 stratum lacunosum moleculare
+MBA:394	UBERON:0035893	anteromedial visual area
+MBA:395	UBERON:0002559	medullary reticular formation
+MBA:397	UBERON:0002615	ventral tegmental decussation
+MBA:398	UBERON:0002128	superior olivary complex
+MBA:399	UBERON:0014552	CA1 stratum oriens
+MBA:4	UBERON:0001946	inferior colliculus
+MBA:401	UBERON:0005393	cortical layer IV
+MBA:403	UBERON:0002892	medial amygdaloid nucleus
+MBA:406	UBERON:0006331	brainstem nucleus
+MBA:406	UBERON:0007692	nucleus of thalamus
+MBA:406	UBERON:0016641	subparafascicular nucleus
+MBA:407	UBERON:0014548	pyramidal layer of CA1
+MBA:409	UBERON:0035895	lateral visual area
+MBA:415	UBERON:0014554	CA1 stratum radiatum
+MBA:423	UBERON:0003882	CA2 field of hippocampus
+MBA:425	UBERON:0035897	posterolateral visual area
+MBA:431	UBERON:0014558	CA2 stratum lacunosum moleculare
+MBA:433	UBERON:0035913	anteromedial visual area, layer 5
+MBA:436	UBERON:0004680	body of fornix
+MBA:437	UBERON:0002873	interpolar part of spinal trigeminal nucleus
+MBA:438	UBERON:0014551	CA2 stratum oriens
+MBA:44	UBERON:8440033	infralimbic area
+MBA:441	UBERON:8440003	cortical layer VIb
+MBA:445	UBERON:0002591	oral part of spinal trigeminal nucleus
+MBA:446	UBERON:0014549	pyramidal layer of CA2
+MBA:452	UBERON:0002625	median preoptic nucleus
+MBA:452	UBERON:0006331	brainstem nucleus
+MBA:452	UBERON:0006568	hypothalamic nucleus
+MBA:453	UBERON:0008930	somatosensory cortex
+MBA:454	UBERON:0014555	CA2 stratum radiatum
+MBA:462	UBERON:0002149	superior salivatory nucleus
+MBA:463	UBERON:0003883	CA3 field of hippocampus
+MBA:466	UBERON:0007639	hippocampus alveus
+MBA:466	UBERON:0014532	white matter lamina of cerebral hemisphere
+MBA:467	UBERON:0002272	medial zone of hypothalamus
+MBA:470	UBERON:0001906	subthalamic nucleus
+MBA:470	UBERON:0006331	brainstem nucleus
+MBA:470	UBERON:0006568	hypothalamic nucleus
+MBA:471	UBERON:0014559	CA3 stratum lacunosum moleculare
+MBA:475	UBERON:0001927	medial geniculate body
+MBA:477	UBERON:0002435	striatum
+MBA:479	UBERON:0014560	CA3 stratum lucidum
+MBA:481	UBERON:0001881	island of Calleja
+MBA:482	UBERON:0003025	brachium of inferior colliculus
+MBA:483	UBERON:0001942	medial habenular nucleus
+MBA:483	UBERON:0006331	brainstem nucleus
+MBA:485	UBERON:0005382	dorsal striatum
+MBA:486	UBERON:0014553	CA3 stratum oriens
+MBA:491	UBERON:0001939	medial mammillary nucleus
+MBA:491	UBERON:0006331	brainstem nucleus
+MBA:493	UBERON:0005403	ventral striatum
+MBA:495	UBERON:0014550	pyramidal layer of CA3
+MBA:496	UBERON:0005390	cortical layer I
+MBA:500	UBERON:8440076	somatomotor area
+MBA:502	UBERON:0002191	subiculum
+MBA:504	UBERON:0014556	CA3 stratum radiatum
+MBA:506	UBERON:0002790	dorsal acoustic stria
+MBA:507	UBERON:0009951	main olfactory bulb
+MBA:51	UBERON:0002733	intralaminar nuclear group
+MBA:51	UBERON:0006331	brainstem nucleus
+MBA:512	UBERON:0002037	cerebellum
+MBA:515	UBERON:0002035	medial preoptic nucleus
+MBA:515	UBERON:0006331	brainstem nucleus
+MBA:519	UBERON:0002130	cerebellar nuclear complex
+MBA:523	UBERON:0007769	medial preoptic region
+MBA:525	UBERON:0001940	supramammillary nucleus
+MBA:525	UBERON:0006331	brainstem nucleus
+MBA:528	UBERON:0002129	cerebellar cortex
+MBA:533	UBERON:0035900	posteromedial visual area
+MBA:534	UBERON:8440036	supratrigeminal nucleus
+MBA:535	UBERON:0005391	cortical layer II
+MBA:536	UBERON:0002883	central amygdaloid nucleus
+MBA:541	UBERON:0035013	temporal cortex association area
+MBA:549	UBERON:0001897	dorsal plus ventral thalamus
+MBA:556	UBERON:8440000	cortical layer II/III
+MBA:557	UBERON:0001936	tuberomammillary nucleus
+MBA:557	UBERON:0006331	brainstem nucleus
+MBA:56	UBERON:0001882	nucleus accumbens
+MBA:564	UBERON:0001877	medial septal nucleus
+MBA:566	UBERON:0034989	amygdalopiriform transition area
+MBA:567	UBERON:0001893	telencephalon
+MBA:571	UBERON:0002705	midline nuclear group
+MBA:571	UBERON:0006331	brainstem nucleus
+MBA:572	UBERON:0005390	cortical layer I
+MBA:574	UBERON:0002147	reticulotegmental nucleus
+MBA:575	UBERON:0003036	central lateral nucleus
+MBA:575	UBERON:0006331	brainstem nucleus
+MBA:579	UBERON:0004545	external capsule of telencephalon
+MBA:580	UBERON:0036012	nucleus of the brachium of the inferior colliculus
+MBA:581	UBERON:0002977	triangular septal nucleus
+MBA:583	UBERON:0002023	claustrum of brain
+MBA:587	UBERON:0002044	ventral nucleus of posterior commissure
+MBA:589	UBERON:0015800	taenia tectum of brain
+MBA:593	UBERON:0005390	cortical layer I
+MBA:595	UBERON:0002138	habenulo-interpeduncular tract
+MBA:596	UBERON:0001879	nucleus of diagonal band
+MBA:599	UBERON:0001923	central medial nucleus
+MBA:599	UBERON:0006331	brainstem nucleus
+MBA:599626923	UBERON:0002139	subcommissural organ
+MBA:6	UBERON:0001887	internal capsule of telencephalon
+MBA:603	UBERON:0002310	hippocampus fimbria
+MBA:604	UBERON:0035973	nucleus incertus
+MBA:607	UBERON:0002610	cochlear nuclear complex
+MBA:611	UBERON:0001909	habenular commissure
+MBA:612	UBERON:0006331	brainstem nucleus
+MBA:612	UBERON:0006840	nucleus of lateral lemniscus
+MBA:612	UBERON:0009662	hindbrain nucleus
+MBA:614	UBERON:0002620	tuber cinereum
+MBA:616	UBERON:0002696	cuneiform nucleus
+MBA:618	UBERON:0000908	hippocampal commissure
+MBA:619	UBERON:0002893	nucleus of lateral olfactory tract
+MBA:62	UBERON:0002660	medial longitudinal fasciculus of midbrain
+MBA:621	UBERON:0002633	motor nucleus of trigeminal nerve
+MBA:623	UBERON:8440012	cerebral nuclei
+MBA:628	UBERON:0002996	nucleus of optic tract
+MBA:628	UBERON:0006331	brainstem nucleus
+MBA:63	UBERON:0014602	paraventricular nucleus of the hypothalamus descending division
+MBA:631	UBERON:0002891	cortical amygdaloid nucleus
+MBA:632	UBERON:0005381	dentate gyrus granule cell layer
+MBA:633	UBERON:0003028	commissure of inferior colliculus
+MBA:633	UBERON:0034763	hindbrain commissure
+MBA:634	UBERON:0002711	nucleus of posterior commissure
+MBA:634	UBERON:0014450	pretectal nucleus
+MBA:637	UBERON:0002776	ventral nuclear group
+MBA:637	UBERON:0006331	brainstem nucleus
+MBA:64	UBERON:0002679	anterodorsal nucleus of thalamus
+MBA:64	UBERON:0006331	brainstem nucleus
+MBA:642	UBERON:0007633	nucleus of trapezoid body
+MBA:642	UBERON:0007635	nucleus of medulla oblongata
+MBA:644	UBERON:0005395	cortical layer VI
+MBA:645	UBERON:0004720	cerebellar vermis
+MBA:651	UBERON:0009050	nucleus of solitary tract
+MBA:653	UBERON:0002682	abducens nucleus
+MBA:653	UBERON:0007635	nucleus of medulla oblongata
+MBA:658	UBERON:0002953	lateral lemniscus
+MBA:66	UBERON:0006331	brainstem nucleus
+MBA:66	UBERON:0013600	lateral accessory nucleus of optic tract
+MBA:661	UBERON:0003011	facial motor nucleus
+MBA:661	UBERON:0007635	nucleus of medulla oblongata
+MBA:662	UBERON:8440003	cortical layer VIb
+MBA:665	UBERON:0001888	lateral olfactory stria
+MBA:669	UBERON:0000411	visual cortex
+MBA:67	UBERON:0002551	interstitial nucleus of Cajal
+MBA:672	UBERON:0005383	caudate-putamen
+MBA:673	UBERON:0002720	mammillary peduncle
+MBA:677	UBERON:8440024	visceral area
+MBA:679	UBERON:0003004	median raphe nucleus
+MBA:679	UBERON:0009662	hindbrain nucleus
+MBA:685	UBERON:0002614	medial part of ventral lateral nucleus
+MBA:688	UBERON:0000956	cerebral cortex
+MBA:689	UBERON:0006331	brainstem nucleus
+MBA:689	UBERON:8440014	ventrolateral preoptic nucleus
+MBA:690	UBERON:0006696	mammillothalamic axonal tract
+MBA:693	UBERON:0001935	ventromedial nucleus of hypothalamus
+MBA:693	UBERON:0006331	brainstem nucleus
+MBA:695	UBERON:0005343	cortical plate
+MBA:697	UBERON:0003002	medial lemniscus
+MBA:698	UBERON:0002894	olfactory cortex
+MBA:7	UBERON:0002597	principal sensory nucleus of trigeminal nerve
+MBA:701	UBERON:0002673	vestibular nuclear complex
+MBA:703	UBERON:0004035	cortical subplate
+MBA:706	UBERON:0002565	olivary pretectal nucleus
+MBA:706	UBERON:0006331	brainstem nucleus
+MBA:707	UBERON:0005390	cortical layer I
+MBA:709	UBERON:0002596	ventral posterior nucleus of thalamus
+MBA:709	UBERON:0006331	brainstem nucleus
+MBA:710	UBERON:0001646	abducens nerve
+MBA:710	UBERON:0010314	structure with developmental contribution from neural crest
+MBA:711	UBERON:0002045	cuneate nucleus
+MBA:713	UBERON:0034931	perforant path
+MBA:717	UBERON:0014615	accessory nerve root
+MBA:718	UBERON:0002942	ventral posterolateral nucleus
+MBA:718	UBERON:0006331	brainstem nucleus
+MBA:720	UBERON:0018238	dorsal column nucleus
+MBA:721	UBERON:0035904	primary visual area, layer 4
+MBA:726	UBERON:0001885	dentate gyrus of hippocampal formation
+MBA:73	UBERON:0005281	ventricular system of central nervous system
+MBA:732	UBERON:0002632	medial part of medial mammillary nucleus
+MBA:733	UBERON:0002945	ventral posteromedial nucleus of thalamus
+MBA:733	UBERON:0006331	brainstem nucleus
+MBA:737	UBERON:0003016	postcommissural fornix of brain
+MBA:739	UBERON:0005394	cortical layer V
+MBA:741	UBERON:0003018	parvocellular part of ventral posteromedial nucleus
+MBA:744	UBERON:0005970	brain commissure
+MBA:744	UBERON:0006847	cerebellar commissure
+MBA:747	UBERON:0005391	cortical layer II
+MBA:749	UBERON:0002691	ventral tegmental area
+MBA:752	UBERON:0007416	cerebellar peduncle
+MBA:753	UBERON:0002723	mammillary princeps fasciculus
+MBA:754	UBERON:0001883	olfactory tubercle
+MBA:763	UBERON:0002689	supraoptic crest
+MBA:771	UBERON:0000988	pons
+MBA:773	UBERON:0002871	hypoglossal nucleus
+MBA:776	UBERON:0002336	corpus callosum
+MBA:778	UBERON:0035906	primary visual area, layer 5
+MBA:78	UBERON:0002152	middle cerebellar peduncle
+MBA:780	UBERON:0022229	posterior amygdaloid nucleus
+MBA:784	UBERON:0002707	corticospinal tract
+MBA:784	UBERON:0007702	tract of brain
+MBA:788	UBERON:8440039	piriform-amygdalar area
+MBA:794	UBERON:0014761	spinal trigeminal tract
+MBA:795	UBERON:0003040	central gray substance of midbrain
+MBA:796	UBERON:0036007	A13 dopaminergic cell group
+MBA:797	UBERON:0001907	zona incerta
+MBA:797	UBERON:0006331	brainstem nucleus
+MBA:797	UBERON:0006568	hypothalamic nucleus
+MBA:798	UBERON:0004674	facial nerve root
+MBA:8	UBERON:0002616	regional part of brain
+MBA:802	UBERON:0006086	stria medullaris
+MBA:803	UBERON:0006514	pallidum
+MBA:803	UBERON:0011300	gray matter of telencephalon
+MBA:808	UBERON:0019310	glossopharyngeal nerve root
+MBA:81	UBERON:0002285	telencephalic ventricle
+MBA:811	UBERON:0002563	central nucleus of inferior colliculus
+MBA:811	UBERON:0006331	brainstem nucleus
+MBA:812	UBERON:0002588	decussation of superior cerebellar peduncle
+MBA:813	UBERON:0004675	hypoglossal nerve root
+MBA:814	UBERON:8440040	dorsal peduncular area
+MBA:818	UBERON:0006516	dorsal pallidum
+MBA:820	UBERON:0002577	pericentral nucleus of inferior colliculus
+MBA:820	UBERON:0006331	brainstem nucleus
+MBA:821	UBERON:0035907	primary visual area, layer 2/3
+MBA:822	UBERON:0022230	retrohippocampal region
+MBA:828	UBERON:0002571	external nucleus of inferior colliculus
+MBA:828	UBERON:0006331	brainstem nucleus
+MBA:83	UBERON:0002127	inferior olivary complex
+MBA:830	UBERON:0001934	dorsomedial nucleus of hypothalamus
+MBA:830	UBERON:0006331	brainstem nucleus
+MBA:832	UBERON:0002668	oculomotor nerve root
+MBA:834	UBERON:0006780	zonal layer of superior colliculus
+MBA:835	UBERON:0002778	ventral pallidum
+MBA:839	UBERON:0002870	dorsal motor nucleus of vagus nerve
+MBA:84	UBERON:0005395	cortical layer VI
+MBA:840	UBERON:0019311	root of olfactory nerve
+MBA:841	UBERON:0002932	trapezoid body
+MBA:842	UBERON:0006120	superior colliculus superficial gray layer
+MBA:843	UBERON:0004683	parasubiculum
+MBA:846	UBERON:0002132	dentate nucleus
+MBA:848	UBERON:0000941	cranial nerve II
+MBA:849	UBERON:8440003	cortical layer VIb
+MBA:85	UBERON:0005413	spinocerebellar tract
+MBA:85	UBERON:0007702	tract of brain
+MBA:851	UBERON:0006779	superficial white layer of superior colliculus
+MBA:852	UBERON:0016633	parvocellular reticular nucleus
+MBA:857	UBERON:0005395	cortical layer VI
+MBA:859	UBERON:0002877	parasolitary nucleus
+MBA:863	UBERON:0002714	rubrospinal tract
+MBA:866	UBERON:0002987	anterior spinocerebellar tract
+MBA:867	UBERON:0007634	parabrachial nucleus
+MBA:872	UBERON:0002043	dorsal raphe nucleus
+MBA:874	UBERON:0002140	parabigeminal nucleus
+MBA:874	UBERON:0006331	brainstem nucleus
+MBA:876	UBERON:0035595	accessory optic tract
+MBA:877	UBERON:0002949	tectospinal tract
+MBA:88	UBERON:0002634	anterior nucleus of hypothalamus
+MBA:88	UBERON:0006331	brainstem nucleus
+MBA:88	UBERON:0006568	hypothalamic nucleus
+MBA:880	UBERON:0002143	dorsal tegmental nucleus
+MBA:880	UBERON:0009662	hindbrain nucleus
+MBA:898	UBERON:0002968	central gray substance of pons
+MBA:900	UBERON:0003039	anterior commissure anterior part
+MBA:901	UBERON:0004673	trigeminal nerve root
+MBA:903	UBERON:0002864	accessory cuneate nucleus
+MBA:904	UBERON:0007629	medial septal complex
+MBA:907	UBERON:0001924	paracentral nucleus
+MBA:907	UBERON:0006331	brainstem nucleus
+MBA:909	UBERON:0002728	entorhinal cortex
+MBA:91	UBERON:0004073	cerebellum interpositus nucleus
+MBA:916	UBERON:0002580	brachium of superior colliculus
+MBA:917	UBERON:0011213	root of vagus nerve
+MBA:918	UBERON:0007225	lateral entorhinal cortex
+MBA:920	UBERON:0003021	central lobule
+MBA:922	UBERON:0006083	perirhinal cortex
+MBA:924	UBERON:0002623	cerebral peduncle
+MBA:926	UBERON:0018262	dorsal zone of medial entorhinal cortex
+MBA:93	UBERON:0002796	motor root of trigeminal nerve
+MBA:930	UBERON:0001922	parafascicular nucleus
+MBA:930	UBERON:0006331	brainstem nucleus
+MBA:931	UBERON:0002151	pontine nuclear group
+MBA:933	UBERON:0002731	vestibulocochlear nerve root
+MBA:936	UBERON:0004080	cerebellum vermis lobule VI
+MBA:938	UBERON:0016635	paragigantocellular nucleus
+MBA:942	UBERON:0014284	endopiriform nucleus
+MBA:944	UBERON:0004081	cerebellum vermis lobule VII
+MBA:946	UBERON:0002706	posterior nucleus of hypothalamus
+MBA:946	UBERON:0006331	brainstem nucleus
+MBA:947	UBERON:8440003	cortical layer VIb
+MBA:95	UBERON:0034893	agranular insular cortex
+MBA:953	UBERON:0001905	pineal body
+MBA:957	UBERON:0004078	cerebellum vermis lobule IX
+MBA:958	UBERON:0001899	epithalamus
+MBA:96	UBERON:0002829	dorsal cochlear nucleus
+MBA:967	UBERON:0006843	root of cranial nerve
+MBA:968	UBERON:0004083	cerebellum vermis lobule X
+MBA:970	UBERON:0016825	dorsal paragigantocellular nucleus
+MBA:972	UBERON:8440032	prelimbic area
+MBA:973	UBERON:8440000	cortical layer II/III
+MBA:975	UBERON:0002141	parvocellular oculomotor nucleus
+MBA:976	UBERON:0004075	cerebellum vermis lobule II
+MBA:978	UBERON:0016824	lateral paragigantocellular nucleus
+MBA:980	UBERON:0006331	brainstem nucleus
+MBA:980	UBERON:0007767	dorsal premammillary nucleus
+MBA:982	UBERON:8440013	fasciola cinerea
+MBA:984	UBERON:0004076	cerebellum vermis lobule III
+MBA:985	UBERON:0001384	primary motor cortex
+MBA:986	UBERON:0015708	splenium of the corpus callosum
+MBA:989	UBERON:0002153	fastigial nucleus
+MBA:993	UBERON:0016634	premotor cortex
+MBA:997	UBERON:0008823	neural tube derived brain
+MBA:998	UBERON:0014605	fundus striati
+MBA:ENTITY	UBERON:0001062	anatomical entity

@@ -25,10 +25,14 @@ How a location is chosen:
   from their parts: forebrain (Cerebrum + Interbrain), brainstem (Midbrain + Hindbrain, counted as
   Brain stem minus Interbrain because some cells are only registered at Brain stem level)
   and hindbrain (Hindbrain + Cerebellum), mapped to Uberon `forebrain`, `brainstem` and
-  `hindbrain`.
-- The region is mapped to Uberon. Two CCF mappings are overridden: `Olfactory areas` →
-  `olfactory lobe` (the CCF region includes the main olfactory bulb, which isn't part of
-  `olfactory cortex`), and `Pallidum` → `pallidum`.
+  `hindbrain`. In the table (`ccf_region`) these virtual regions have IDs `V:forebrain`,
+  `V:brainstem` and `V:hindbrain`.
+- The region is mapped to Uberon. Where a region maps to several Uberon classes, the one whose
+  label matches the region's is used, otherwise the most specific (the one fewest CCF regions
+  map to), so thalamic and hypothalamic nuclei don't get generic classes such as `brainstem
+  nucleus`. A region with no mapping takes its nearest mapped CCF ancestor's. Two CCF mappings
+  are overridden: `Olfactory areas` → `olfactory lobe` (the CCF region includes the main
+  olfactory bulb, which isn't part of `olfactory cortex`), and `Pallidum` → `pallidum`.
 - The CL product asserts the taxonomy hierarchy, so a restriction is inherited by every
   descendant term. When a descendant cell set (at least 50 cells) has under half of its
   cells in the region, the location **moves up** to the most specific region that holds at
@@ -39,9 +43,12 @@ How a location is chosen:
 - The pineal cell set (class `25 Pineal Glut` and its chain) gets no location: spatial
   registration of pinealocytes isn't reliable.
 
-The table is generated outside the build, from the knowledge-graph export of cell counts
-per cell set and CCF region (`location_derivation/export_wmbo_locations.py` in the
-Whole_mouse_brain_collection workspace). Regenerate it when the taxonomy or the cell counts
+The table is generated outside the main build by `src/scripts/derive_soma_locations.py`
+(`make derived_soma_locations` in `src/dendrograms`) from a cached export of the
+[Brain Cell KG](https://github.com/Cellular-Semantics/Brain_Cell_KG): cell counts per cell set
+and CCF region, the CCF partonomy and CCF → Uberon mappings. The cache, the Cypher queries and
+the KG commit they ran against are in `kg_location_cache/` (see its README). Regenerate the
+table, and then the class_base template, when the method, the taxonomy or the cell counts
 change.
 
 Shared neurotransmitters (`Shared_NT`) need no table: the build computes them from the

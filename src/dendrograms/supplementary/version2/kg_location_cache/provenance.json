@@ -1,0 +1,37 @@
+{
+  "source": "https://github.com/Cellular-Semantics/Brain_Cell_KG",
+  "kg_commit": "053320ff7c6d45f6904d12d9f83124e5cb3c6545",
+  "queried_at": "2026-11-03T16:57:15Z",
+  "endpoint": "http://localhost:7474/db/neo4j/tx/commit",
+  "cell_count_sources": {
+    "yao": "https://doi.org/10.1038/s41586-023-06812-z",
+    "zhang": "https://doi.org/10.1038/s41586-023-06808-9"
+  },
+  "queries": {
+    "nodes": {
+      "file": "nodes.tsv",
+      "rows": 6907,
+      "cypher": "MATCH (i:Individual) WHERE i.curie STARTS WITH 'WMB:CS20230722_'\nOPTIONAL MATCH (i)-[:subcluster_of]->(p)\nOPTIONAL MATCH (i)-[:has_labelset]->(ls)\nRETURN i.curie, i.label, p.curie, ls.curie ORDER BY i.curie"
+    },
+    "cell_counts": {
+      "file": "cell_counts.tsv.gz",
+      "rows": 251445,
+      "cypher": "MATCH (i:Individual)-[r:obsolete_some_soma_located_in]->(l) WHERE i.curie STARTS WITH 'WMB:CS20230722_'\nRETURN i.curie, l.curie, r.source, r.cell_count ORDER BY i.curie, l.curie"
+    },
+    "mba_part_of": {
+      "file": "mba_part_of.tsv",
+      "rows": 732,
+      "cypher": "MATCH (a)-[:part_of]->(b) WHERE a.curie STARTS WITH 'MBA:' AND b.curie STARTS WITH 'MBA:'\nRETURN a.curie, b.curie ORDER BY a.curie, b.curie"
+    },
+    "mba_uberon": {
+      "file": "mba_uberon.tsv",
+      "rows": 566,
+      "cypher": "MATCH (a)-[:SUBCLASSOF]->(b) WHERE a.curie STARTS WITH 'MBA:' AND b.curie STARTS WITH 'UBERON:'\nRETURN a.curie, b.curie, b.label ORDER BY a.curie, b.curie"
+    },
+    "mba_labels": {
+      "file": "mba_labels.tsv",
+      "rows": 821,
+      "cypher": "MATCH (a) WHERE a.curie STARTS WITH 'MBA:'\nRETURN a.curie, a.label ORDER BY a.curie"
+    }
+  }
+}
