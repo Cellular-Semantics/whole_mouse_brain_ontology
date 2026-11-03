@@ -38,6 +38,22 @@ sheets: $(SHEETS_SCRIPT)
 	@echo "==> Exporting Google Sheets tabs to TSV..."
 	@python $(SHEETS_SCRIPT)
 
+# Soma locations derived from MERFISH cell counts (supplementary/version2/derived_soma_locations.md),
+# computed from a cached Brain Cell KG export. Not part of all: rerun when the method, the taxonomy or
+# the cell counts change, then regenerate the class_base template.
+KG_LOCATION_CACHE = $(SUPPLEMENTARY)/version2/kg_location_cache
+
+.PHONY: derived_soma_locations
+derived_soma_locations:
+	python ../scripts/derive_soma_locations.py -c $(KG_LOCATION_CACHE) -o $(SUPPLEMENTARY)/version2/derived_soma_locations.tsv
+
+# Refresh the cache. Needs a running Brain Cell KG (Neo4j on localhost:7474); KG_COMMIT is the
+# Brain_Cell_KG commit it was built from, e.g. make kg_location_cache KG_COMMIT=053320f...
+.PHONY: kg_location_cache
+kg_location_cache:
+	@test -n "$(KG_COMMIT)" || (echo "Set KG_COMMIT to the Brain_Cell_KG commit of the running KG" && false)
+	python ../scripts/kg_location_fetch.py --kg-commit $(KG_COMMIT) -o $(KG_LOCATION_CACHE)
+
 CCN20230722.json:
 	wget https://raw.githubusercontent.com/brain-bican/whole_mouse_brain_taxonomy/refs/heads/main/CCN20230722.json -O $@
 
