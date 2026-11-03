@@ -53,8 +53,11 @@ UBERON_OVERRIDE = {
 # Cell sets (and their descendants) whose soma location shouldn't come from registered MERFISH cells
 VENTRICULAR = "cells lining the ventricles: spatially registered cells are at best adjacent to a region, not in it"
 NO_LOCATION = {"WMB:CS20230722_CLAS_25": "pinealocytes: location from spatial registration is unreliable",
+               "WMB:CS20230722_SUBC_321": f"astroependymal cells, {VENTRICULAR}",
                "WMB:CS20230722_SUBC_322": f"tanycytes, {VENTRICULAR}",
-               "WMB:CS20230722_SUBC_323": f"ependymal cells, {VENTRICULAR}"}
+               "WMB:CS20230722_SUBC_323": f"ependymal cells, {VENTRICULAR}",
+               "WMB:CS20230722_SUBC_324": f"hypendymal cells, {VENTRICULAR}",
+               "WMB:CS20230722_SUBC_325": f"choroid plexus cells, {VENTRICULAR}"}
 
 
 def read_tsv(cache, fn):

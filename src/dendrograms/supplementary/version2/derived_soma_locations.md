@@ -41,8 +41,8 @@ How a location is chosen:
   isn't grey matter, no location is given (`note` says why).
 - Some branches get no location because spatial registration doesn't locate their cells: the
   pineal cell set (class `25 Pineal Glut` and its chain), and the cells lining the ventricles,
-  subclasses `322 Tanycyte NN` and `323 Ependymal NN` and their descendants, which registration
-  places at best adjacent to a region.
+  subclasses `321 Astroependymal NN`, `322 Tanycyte NN`, `323 Ependymal NN`, `324 Hypendymal NN`
+  and `325 CHOR NN` and their descendants, which registration places at best adjacent to a region.
 
 The table is generated outside the main build by `src/scripts/derive_soma_locations.py`
 (`make derived_soma_locations` in `src/dendrograms`) from a cached export of the
