@@ -259,9 +259,27 @@ $(TMPDIR)/cl_individuals.owl: $(OWL_FILES) $(TMPDIR)/cl_indv_terms.txt
 	query --update ../sparql/delete_namedindividuals_without_rdf_type.ru --output $@.tmp.owl
 	python ../scripts/cl_subset_terms.py trim_indvs -i $@.tmp.owl -t $(TMPDIR)/cl_indv_terms.txt -o $@
 
+# Source for the CL component. As $(ONT)-base.owl, but PCL classes are removed before reduce:
+# in base, reduce drops CL term axioms (parents, in_taxon) that are implied via a PCL parent,
+# so removing PCL classes from base leaves those CL terms with no parent other than cell.
+# --include-indirect asserts every inferred named superclass, so ones reached only via PCL survive;
+# reason's default redundant-axiom removal is switched off so the only reduction is after PCL removal.
+# The imports lack cell's BFO ancestry, so reduce can't drop the inferred-hierarchy 'continuant'
+# (BFO:0000002) parents; they are removed explicitly.
+$(TMPDIR)/$(ONT)-cl-base.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(IMPORT_FILES) $(OWL_INFERRED_HIERARCHY_FILES) $(GENE_IMPORTS)
+	$(ROBOT_RELEASE_IMPORT_MODE) \
+	merge $(patsubst %, -i %, $(OWL_INFERRED_HIERARCHY_FILES)) $(patsubst %, -i %, $(OWL_FILES)) \
+	reason --reasoner ELK --exclude-tautologies structural --annotate-inferred-axioms False --include-indirect true --remove-redundant-subclass-axioms false \
+	relax \
+	remove --select "<http://purl.obolibrary.org/obo/PCL_*>" --signature true \
+	reduce -r ELK --preserve-annotated-axioms true \
+	remove --term $(URIBASE)/BFO_0000002 --axioms subclass --signature true \
+	remove --base-iri $(URIBASE)/WMBO --base-iri $(URIBASE)/PCL --base-iri $(URIBASE)/pcl/CS20230722 --base-iri $(BICANBASE)/CCN20230722 --base-iri https://purl.brain-bican.org/ontology/CCN20230722 --base-iri $(URIBASE)/CL_43 --base-iri $(URIBASE)/CLM_5 --axioms external --preserve-structure false --trim false \
+	merge $(patsubst %, -i %, $(GENE_IMPORTS)) --output $@
+
 # Artifact for CL that hosts only the validated component annotations (used by CL)
-$(RELEASEDIR)/$(ONT)-cl-comp.owl: $(ONT)-pcl-comp.owl $(TMPDIR)/cl_component_terms.txt wmbo-cl-edit.owl $(TMPDIR)/cl_individuals.owl
-	$(ROBOT) remove --input $(RELEASEDIR)/$(ONT)-pcl-comp.owl --select "<http://purl.obolibrary.org/obo/PCL_*>" --select "<https://purl.brain-bican.org/taxonomy/CCN20230722/*>" --select "<https://purl.brain-bican.org/ontology/CCN20230722/*>" --signature true \
+$(RELEASEDIR)/$(ONT)-cl-comp.owl: $(TMPDIR)/$(ONT)-cl-base.owl $(TMPDIR)/cl_component_terms.txt wmbo-cl-edit.owl $(TMPDIR)/cl_individuals.owl
+	$(ROBOT) remove --input $< --select "<http://purl.obolibrary.org/obo/PCL_*>" --select "<https://purl.brain-bican.org/taxonomy/CCN20230722/*>" --select "<https://purl.brain-bican.org/ontology/CCN20230722/*>" --signature true \
 	filter --term-file $(TMPDIR)/cl_component_terms.txt --select "annotations anonymous self" --signature true --trim false  \
 	remove --select "<http://purl.obolibrary.org/obo/PCL_01*>" --signature true \
 	query --update ../sparql/delete_deprecated_pcl_terms.ru --update ../sparql/delete_multiple_gene_labels.ru \
