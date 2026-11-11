@@ -48,11 +48,12 @@ BRAIN_REGION_MAPPING = os.path.join(os.path.dirname(os.path.realpath(__file__)),
 # next to it); applied as has_soma_location to the CL subset only.
 DERIVED_SOMA_LOCATIONS = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../dendrograms/supplementary/version2/derived_soma_locations.tsv")
 NT_NOT_CALLED = "CS20230722_NEUR_NA"
-# Shared neurotransmitters are only given to cell sets in a class flagged Neuronal, plus these classes
-# (25 Pineal Glut: pinealocytes release glutamate, although they are not neurons). Derived locations of
-# cell sets outside neuronal classes are written as part_of rather than has_soma_location, whose domain
-# is neuron.
-SHARED_NT_EXTRA_CLASSES = {"CS20230722_CLAS_25"}
+# Neurotransmitters (a cluster's own assignment or a shared one) are only given to cell sets in a class
+# flagged Neuronal, plus these classes (25 Pineal Glut: pinealocytes release glutamate, although they are
+# not neurons). Other non-neuronal clusters occasionally have an assignment, which made astrocytes and
+# olfactory ensheathing cells secretory cells. Derived locations of cell sets outside neuronal classes are
+# written as part_of rather than has_soma_location, whose domain is neuron.
+NT_EXTRA_CLASSES = {"CS20230722_CLAS_25"}
 
 CROSS_SPECIES_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)),
                                   "../dendrograms/nomenclature_table_CCN202002270.csv")
@@ -354,7 +355,7 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
 
                 d['NT'] = ""
                 d['NT_markers'] = ""
-                if node.get('neurotransmitter_accession'):
+                if node.get('neurotransmitter_accession') and nt_allowed(node['cell_set_accession'], dend_tree, all_nodes):
                     nt_accession = node.get('neurotransmitter_accession')
                     if nt_accession in nt_symbols_mapping:
                         d['NT'] = nt_symbols_mapping.get(nt_accession)["CELL TYPE NEUROTRANSMISSION ID"]
@@ -484,7 +485,7 @@ def get_shared_neurotransmitter(accession, dend_tree, all_nodes, nt_symbols_mapp
     """
     Neurotransmitter(s) shared by every descendant cluster that has a neurotransmitter call, e.g. a supertype
     whose clusters are GABA or GABA-Glyc is GABAergic. Clusters without a call are left out. Cell sets outside
-    neuronal classes get nothing (see SHARED_NT_EXTRA_CLASSES for the exception).
+    neuronal classes get nothing (see NT_EXTRA_CLASSES for the exception).
     Args:
         accession: cell set accession of a non-cluster node
         dend_tree: networkx directed graph that represents the taxonomy
@@ -493,9 +494,7 @@ def get_shared_neurotransmitter(accession, dend_tree, all_nodes, nt_symbols_mapp
 
     Returns: ('|'-joined GO ids, comment), or ('', '') if there is nothing shared.
     """
-    if accession not in dend_tree or not (in_neuronal_class(accession, dend_tree, all_nodes) or
-                                          get_class_accession(accession, dend_tree, all_nodes)
-                                          in SHARED_NT_EXTRA_CLASSES):
+    if not nt_allowed(accession, dend_tree, all_nodes):
         return "", ""
     calls = [all_nodes[descendant].get('neurotransmitter_accession', '')
              for descendant in nx.descendants(dend_tree, accession)
@@ -535,6 +534,21 @@ def get_class_accession(accession, dend_tree, all_nodes):
         if all_nodes.get(member, {}).get('labelset') == 'class':
             return member
     return None
+
+
+def nt_allowed(accession, dend_tree, all_nodes):
+    """
+    Whether the cell set may be given a neurotransmitter: it is in a class flagged Neuronal, or in one of
+    NT_EXTRA_CLASSES.
+    Args:
+        accession: cell set accession
+        dend_tree: networkx directed graph that represents the taxonomy
+        all_nodes: dict of all nodes by accession
+
+    Returns: True if a neurotransmitter may be given, otherwise False.
+    """
+    return accession in dend_tree and (in_neuronal_class(accession, dend_tree, all_nodes) or
+                                       get_class_accession(accession, dend_tree, all_nodes) in NT_EXTRA_CLASSES)
 
 
 def in_neuronal_class(accession, dend_tree, all_nodes):
