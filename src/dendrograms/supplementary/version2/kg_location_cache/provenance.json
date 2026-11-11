@@ -1,7 +1,7 @@
 {
   "source": "https://github.com/Cellular-Semantics/Brain_Cell_KG",
   "kg_commit": "9a224d1822a5f0e1d04c80db3049b715dd38ef81",
-  "queried_at": "2026-11-11T17:46:20Z",
+  "queried_at": "2026-11-11T20:30:55Z",
   "endpoint": "http://localhost:7474/db/neo4j/tx/commit",
   "cell_count_sources": {
     "yao": "https://doi.org/10.1038/s41586-023-06812-z",
@@ -17,6 +17,11 @@
       "file": "cell_counts.tsv.gz",
       "rows": 255916,
       "cypher": "MATCH (i:Individual)-[r:obsolete_some_soma_located_in]->(l) WHERE i.curie STARTS WITH 'WMB:CS20230722_'\nRETURN i.curie, l.curie, r.source, r.cell_count ORDER BY i.curie, l.curie"
+    },
+    "cell_totals": {
+      "file": "cell_totals.tsv",
+      "rows": 6893,
+      "cypher": "MATCH (i:Individual)-[r:obsolete_some_soma_located_in]->(l {curie: 'MBA:997'}) WHERE i.curie STARTS WITH 'WMB:CS20230722_'\nRETURN i.curie, r.source, r.cell_count, r.obsolete_cell_ratio ORDER BY i.curie"
     },
     "mba_part_of": {
       "file": "mba_part_of.tsv",

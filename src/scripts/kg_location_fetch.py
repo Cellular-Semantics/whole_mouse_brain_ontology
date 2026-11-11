@@ -33,6 +33,10 @@ RETURN i.curie, i.label, p.curie, ls.curie ORDER BY i.curie"""),
     "cell_counts": ("cell_counts.tsv.gz", ["cell_set", "region", "yao", "zhang"], """
 MATCH (i:Individual)-[r:obsolete_some_soma_located_in]->(l) WHERE i.curie STARTS WITH 'WMB:CS20230722_'
 RETURN i.curie, l.curie, r.source, r.cell_count ORDER BY i.curie, l.curie"""),
+    # Cells per cell set and source, from the 'brain' (MBA:997) rollup: total = count / ratio
+    "cell_totals": ("cell_totals.tsv", ["cell_set", "yao", "zhang"], """
+MATCH (i:Individual)-[r:obsolete_some_soma_located_in]->(l {curie: 'MBA:997'}) WHERE i.curie STARTS WITH 'WMB:CS20230722_'
+RETURN i.curie, r.source, r.cell_count, r.obsolete_cell_ratio ORDER BY i.curie"""),
     "mba_part_of": ("mba_part_of.tsv", ["region", "parent"], """
 MATCH (a)-[:part_of]->(b) WHERE a.curie STARTS WITH 'MBA:' AND b.curie STARTS WITH 'MBA:'
 RETURN a.curie, b.curie ORDER BY a.curie, b.curie"""),
@@ -51,14 +55,30 @@ def cypher(endpoint, query):
     return [d["row"] for d in res["results"][0]["data"]]
 
 
+def per_source(sources, values):
+    """{source: value} from an edge's parallel list properties. The KG stores them as lists with
+    duplicates removed, so when both sources have the same value the list has one item."""
+    if len(values) == 1:
+        values = values * len(sources)
+    if len(values) != len(sources):
+        raise SystemExit(f"Can't align {values} with sources {sources}")
+    by_source = dict(zip(sources, values))
+    unknown = set(by_source) - {YAO, ZHANG}
+    if unknown:
+        raise SystemExit(f"Unexpected cell count source(s): {unknown}")
+    return by_source
+
+
 def to_row(name, row):
     if name == "cell_counts":
         cell_set, region, sources, counts = row
-        by_source = dict(zip(sources, counts))
-        unknown = set(by_source) - {YAO, ZHANG}
-        if unknown:
-            raise SystemExit(f"Unexpected cell count source(s): {unknown}")
+        by_source = per_source(sources, counts)
         return [cell_set, region, by_source.get(YAO, ""), by_source.get(ZHANG, "")]
+    if name == "cell_totals":
+        cell_set, sources, counts, ratios = row
+        counts, ratios = per_source(sources, counts), per_source(sources, ratios)
+        total = lambda s: round(counts[s] / ratios[s]) if ratios.get(s) else ""
+        return [cell_set, total(YAO), total(ZHANG)]
     return ["" if v is None else v for v in row]
 
 
