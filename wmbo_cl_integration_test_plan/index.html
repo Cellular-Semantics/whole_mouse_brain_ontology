@@ -1,0 +1,1002 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://Cellular-Semantics.github.io/whole_mouse_brain_ontology/wmbo_cl_integration_test_plan/">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>Testing the coordinated CL, WMB taxonomy and WMBO edits (plan) - Whole Mouse Brain Ontology</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.bcfcd587.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#testing-the-coordinated-cl-wmb-taxonomy-and-wmbo-edits-plan" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Whole Mouse Brain Ontology" class="md-header__button md-logo" aria-label="Whole Mouse Brain Ontology" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Whole Mouse Brain Ontology
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Testing the coordinated CL, WMB taxonomy and WMBO edits (plan)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Cellular-Semantics/whole_mouse_brain_ontology/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Whole Mouse Brain Ontology" class="md-nav__button md-logo" aria-label="Whole Mouse Brain Ontology" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Whole Mouse Brain Ontology
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Cellular-Semantics/whole_mouse_brain_ontology/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cite.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cite
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    How-to guides
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            How-to guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Standard ODK workflows
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Standard ODK workflows
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/index.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/EditorsWorkflow.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Editors Workflow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/ReleaseWorkflow.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Release Workflow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/RepoManagement.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manage your ODK Repository
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/SettingUpDockerForODK.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setting up Docker for ODK
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/UpdateImports.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Imports management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/components.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Components management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/ManageDocumentation.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Managing the documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/ManageAutomatedTest.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Managing your automated testing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/ContinuousIntegration.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Continuous Integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/RepositoryFileStructure.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Your ODK Repository Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contributing.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Reference
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Design Patterns
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Design Patterns
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../templates/dosdp.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Design Patterns Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#goal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Goal
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-each-repo-is" class="md-nav__link">
+    <span class="md-ellipsis">
+      Where each repo is
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Where each repo is">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cl-obophenotypecell-ontology" class="md-nav__link">
+    <span class="md-ellipsis">
+      CL (obophenotype/cell-ontology)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wmb-taxonomy-brain-bicanwhole_mouse_brain_taxonomy" class="md-nav__link">
+    <span class="md-ellipsis">
+      WMB taxonomy (brain-bican/whole_mouse_brain_taxonomy)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wmbo-cellular-semanticswhole_mouse_brain_ontology" class="md-nav__link">
+    <span class="md-ellipsis">
+      WMBO (Cellular-Semantics/whole_mouse_brain_ontology)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#current-evidence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Current evidence
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#local-end-to-end-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      Local end-to-end test
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="testing-the-coordinated-cl-wmb-taxonomy-and-wmbo-edits-plan">Testing the coordinated CL, WMB taxonomy and WMBO edits (plan)</h1>
+<p>Status as of 2026-11-03. Companion to <code>wmbo_location_nt_classification_plan.md</code>.</p>
+<p><em>2026-11-12: done. The test was run with WMBO #134 and #136 (both now merged) and CL #3841; results are in the status section of <code>wmbo_location_nt_classification_plan.md</code>. Kept as a record of the method. The taxonomy risk below was real: the export fails on CL:0020088/89 until a CL release containing them reaches SemSQL.</em></p>
+<h2 id="goal">Goal</h2>
+<p>Test the combined effect of the open CL, taxonomy and WMBO changes on how
+CL-promoted WMBO terms classify under CL's region × neurotransmitter grouping
+classes, before anything else is merged or released.</p>
+<h2 id="where-each-repo-is">Where each repo is</h2>
+<h3 id="cl-obophenotypecell-ontology">CL (obophenotype/cell-ontology)</h3>
+<p>Merged to master: the brain region × NT grouping classes (#3797, for #3788) and
+the cerebellum-like structure grouping classes (#3828).</p>
+<p>Open:</p>
+<table>
+<thead>
+<tr>
+<th>PR</th>
+<th>Change</th>
+<th>State</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>#3801</td>
+<td>Region-free MGE/CGE/LGE-derived GABAergic neuron classes (#3789), with <code>has soma location some forebrain</code></td>
+<td>Master merged in on 2026-11-02; no conflicts; awaiting review</td>
+</tr>
+<tr>
+<td>#3831</td>
+<td><code>sst chodl GABAergic interneuron</code> soma location → telencephalon; parent → CL:4023063, so no longer inferred under cortical <code>sst</code></td>
+<td>No conflicts; awaiting review</td>
+</tr>
+<tr>
+<td>#3832</td>
+<td>12 more region × NT grouping classes: forebrain, telencephalon, diencephalon, thalamus, pallidum, amygdala, hindbrain GABA; 5-HT, NA, HA groupings</td>
+<td>Conflicts with master and with #3801 (only <code>Declaration</code> ordering)</td>
+</tr>
+</tbody>
+</table>
+<p>Temporary IDs: #3801 uses CL_9900000–02 and #3832 uses CL_9900040–51, so they
+don't clash with each other.</p>
+<p>CL still imports <code>wmbo-cl-comp</code> from 2026-09-15 (130 terms). WMBO main
+(v2026-10-16, 406 terms) is not in CL yet; that needs a CL import refresh.</p>
+<p>Not blocking a test, but open: correcting the #3790 epic (sst chodl and
+Lamp5 Lhx6 as siblings of sst and lamp5; no expression-only <code>EquivalentClasses</code>
+on T-type classes) and #3739 / #2721 (Lamp5 Lhx6 inferred under lamp5 and CGE).</p>
+<h3 id="wmb-taxonomy-brain-bicanwhole_mouse_brain_taxonomy">WMB taxonomy (brain-bican/whole_mouse_brain_taxonomy)</h3>
+<ul>
+<li><strong>#28</strong> remaps classes 28 CB GABA and 29 CB Glut to <code>cerebellum-like
+  structure GABAergic/glutamatergic neuron</code> (CL:0020088 / CL:0020089). No
+  conflicts; not reviewed.</li>
+<li>Merging to <code>main</code> triggers <code>export_from_tsv.yml</code>, which regenerates
+  <code>CCN20230722.json</code>.</li>
+<li><strong>Risk:</strong> the export looks CL terms up in SemSQL <code>cl.db</code>, last built on
+  2026-09-26, which predates CL:0020088/89. The export may fail or produce a JSON
+  without labels for them. How <code>tdta</code> handles unknown IDs hasn't been checked.</li>
+</ul>
+<h3 id="wmbo-cellular-semanticswhole_mouse_brain_ontology">WMBO (Cellular-Semantics/whole_mouse_brain_ontology)</h3>
+<ul>
+<li><strong>#134</strong>: derived soma locations and shared neurotransmitters. 3 commits, no
+  conflicts. A full <code>make</code> has not been run.</li>
+<li>Withheld locations now move up a level: classes 28/29 and the DCO subclasses
+    get hindbrain, and the cerebellar subclasses get cerebellum.</li>
+<li><strong>Classes 28/29 <code>Locations</code> removal</strong> (curated MBA:512, which overrides the
+  derived location and puts cerebellum on the DCO subclasses) is uncommitted in
+  the <code>wmbo-derived-soma-location-nt</code> worktree.</li>
+<li><strong>Step 4 of the classification plan (fix the cl-comp build) is not started.</strong>
+  Without it, about 160 promoted neurons reach CL with no CL parent.</li>
+<li><code>docs/wmbo_location_nt_classification_plan.md</code> and
+  <code>docs/uberon_ntr_cerebellum_like_structure.md</code> are untracked in the main
+  checkout.</li>
+<li>The Google Sheet curation route is deprecated; <code>CCN20230722_class_curation.tsv</code>
+  in the repo is the source of truth.</li>
+</ul>
+<h2 id="current-evidence">Current evidence</h2>
+<p>The coverage figures in #3832 come from modelling the template tables against
+CL with ELK, not from a built ontology. Of 337 promoted neuronal terms, the
+number reaching a grouping class:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Today</td>
+<td>83</td>
+</tr>
+<tr>
+<td>With WMBO #134, on CL master</td>
+<td>299</td>
+</tr>
+<tr>
+<td>With WMBO #134 and CL #3832</td>
+<td>327</td>
+</tr>
+</tbody>
+</table>
+<h2 id="local-end-to-end-test">Local end-to-end test</h2>
+<p>Nothing needs to be merged or released for this.</p>
+<ol>
+<li><strong>Combined CL branch (small).</strong> A local worktree with master + #3801 + #3831</li>
+<li>
+<h1 id="3832-with-the-declaration-conflicts-resolved-dont-push-it">3832, with the <code>Declaration</code> conflicts resolved. Don't push it.</h1>
+</li>
+<li><strong>Taxonomy change (small).</strong> Either regenerate <code>CCN20230722.json</code> from the
+   #28 branch with <code>tdta</code> / <code>cas-tools</code>, or patch the two class mappings into a
+   local copy. Point the WMBO dendrogram build at that file instead of
+   downloading it from <code>main</code>.</li>
+<li><strong>WMBO build (medium; needs Docker).</strong> In the #134 worktree, with the 28/29
+   curation change: <code>src/dendrograms</code> <code>make all</code> (Python), then ODK <code>make</code> to
+   produce <code>wmbo-cl-comp.owl</code>. Docker Desktop is installed but not running, and
+   <code>dosdp-tools</code> isn't installed locally.</li>
+<li><strong>cl-comp fix (medium; new work).</strong> Implement plan step 4: before removing PCL
+   classes, give each CL term its nearest non-PCL ancestors from the reasoned
+   hierarchy (SPARQL update, then reduce). Do it in the WMBO Makefile, or as a
+   test-only step first. Without it the test reports about 160 parentless
+   promoted neurons and hides the real classification result.</li>
+<li><strong>Swap and reason (small).</strong> In the combined CL KB, remove axioms about
+   CL-product terms from CL's old WMBO component, merge in the new
+   <code>wmbo-cl-comp</code>, load into Owlery and run the plan's step 8 checks:</li>
+<li>no unsatisfiable classes;</li>
+<li>every <code>CL:430…</code> term has a CL parent;</li>
+<li>share of terms under a region × NT class, overall and by level;</li>
+<li>spot checks: olfactory bulb, claustrum/amygdala, cerebellar nuclei, DCO.</li>
+</ol>
+<p>Steps 1, 2 and 5 can be done now, with the current WMBO main component as a
+baseline. Step 3 needs Docker running. Step 4 changes the WMBO build and needs
+agreement on the approach.</p>
+<h2 id="tooling">Tooling</h2>
+<p><code>owlery/</code> (<code>build.sh</code>, <code>start.sh</code>) plus a one-off component swap script, as used
+for the earlier <code>cl-preview-wmbo-v2026-10-16</code> KB. <code>cl-uberon-workbench/</code> could
+host this later, but it doesn't handle WMBO yet (it needs an <code>unmerge:</code> part
+option).</p>
+<h2 id="after-the-test">After the test</h2>
+<ul>
+<li>Review and merge CL #3801, #3831, #3832 (renumber temporary IDs if needed).</li>
+<li>Merge taxonomy #28 once the CL release containing CL:0020088/89 is in SemSQL.</li>
+<li>Merge WMBO #134 with the 28/29 curation change and the cl-comp fix; release.</li>
+<li>CL import refresh to pull the new <code>wmbo-cl-comp</code>.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.tabs.link"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+    
+  </body>
+</html>
