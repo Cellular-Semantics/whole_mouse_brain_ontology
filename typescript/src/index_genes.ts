@@ -35,6 +35,7 @@ export function generatePayloadTableForGenes(genes_table_path: string, out_path:
     const labelsetIndex = headers.indexOf('Labelset');
     const genesIndex = headers.indexOf('Markers_label');
     const markerSetIdIndex = headers.indexOf('defined_class');
+    const deprecatedIndex = headers.indexOf('Deprecated');
 
     if (cellLabelIndex === -1 || labelsetIndex === -1 || genesIndex === -1) {
         throw new Error('Required columns not found in TSV file.');
@@ -43,6 +44,9 @@ export function generatePayloadTableForGenes(genes_table_path: string, out_path:
     const payloadDictionary: Record<string, any> = {};
     for (let i = 0; i < lines.length; i++) {
         const columns = lines[i].split('\t');
+        if (deprecatedIndex !== -1 && columns[deprecatedIndex] === 'true') {
+            continue;  // obsolete marker set IDs (issue #132)
+        }
         const annotation ={
             cell_label: columns[cellLabelIndex],
             labelset: columns[labelsetIndex]
