@@ -14,6 +14,7 @@ relations:
 vars:
   Brain_region: "'regional part of brain'"
   Parent: "'thing'"
+  ReplacedBy: "'thing'"
 
 list_vars:
   Markers: "'sequence_feature'"
@@ -30,6 +31,7 @@ data_vars:
   Markers_label: "xsd:string"
   Atlas_url: "xsd:anyURI"
   Atlas_url_label: "xsd:string"
+  Deprecated: "xsd:boolean"
 
 annotationProperties:
   fbetaConfidenceScore: "STATO:0000663"
@@ -39,6 +41,8 @@ annotationProperties:
   hasDbXref: "oboInOwl:hasDbXref"
   seeAlso: "rdfs:seeAlso"
   rdfsLabel: "rdfs:label"
+  deprecated: "owl:deprecated"
+  term_replaced_by: "IAO:0100001"
 
 name:
    text: "%s (%s)."
@@ -93,3 +97,10 @@ annotations:
         text: "%s"
         vars:
           - Atlas_url_label
+  # Obsolete PCL IDs of marker sets whose cell set moved to CL (issue #132)
+  - annotationProperty: deprecated
+    text: "%s"
+    vars:
+      - Deprecated
+  - annotationProperty: term_replaced_by
+    var: ReplacedBy

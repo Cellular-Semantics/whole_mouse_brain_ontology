@@ -25,6 +25,10 @@ log = logging.getLogger(__name__)
 PCL_BASE = 'http://purl.obolibrary.org/obo/PCL_'
 CL_BASE = 'http://purl.obolibrary.org/obo/CL_'
 CLM_BASE = 'http://purl.obolibrary.org/obo/CLM_'
+# Parent of obsolete terms. dosdp-tools declares a class only through its logical axioms, so an
+# obsolete term with none would not be an owl:Class and would drop out of the OBO release.
+# The base build removes subClassOf owl:Thing.
+OWL_THING = "http://www.w3.org/2002/07/owl#Thing"
 PCL_INDV_BASE = 'http://purl.obolibrary.org/obo/pcl/'
 BICAN_INDV_BASE = 'https://purl.brain-bican.org/ontology/CCN20230722/'
 
@@ -468,7 +472,7 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                 d['Taxon'] = taxonomy_config['Species'][0]
                 d['Taxon_abbv'] = taxonomy_config['Gene_abbv'][0]
                 d['Comment'] = "This term is obsoleted due to identical cell set chain compression."
-                d['Classification'] = "CL:0000000"
+                d['Classification'] = OWL_THING
                 d['ReplacedBy'] = ""
                 obsolete_template.append(d)
 
@@ -479,7 +483,9 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
             obsolete_d['Comment'] = "This PCL class is no longer in use; it has been relocated to CL."
             obsolete_d['Deprecated'] = "true"
             obsolete_d['Gross_cell_type'] = cl_obsolete['Gross_cell_type']
-            obsolete_d['Classification'] = "CL:0000000"
+            obsolete_d['Taxon'] = cl_obsolete['Taxon']
+            obsolete_d['Taxon_abbv'] = cl_obsolete['Taxon_abbv']
+            obsolete_d['Classification'] = OWL_THING
             obsolete_d['ReplacedBy'] = cl_obsolete['defined_class']
             obsolete_template.append(obsolete_d)
 
@@ -816,6 +822,22 @@ def generate_curated_class_template(taxonomy_file_path, output_filepath):
         class_robot_template.to_csv(output_filepath, sep="\t", index=False)
 
 
+def obsolete_marker_set(marker_set, pcl_id):
+    """
+    Obsolete row for the PCL ID a marker set had before its cell set was promoted to CL, replaced
+    by the marker set's CLM ID (issue #132). The label is the released one, prefixed "obsolete".
+    Its only logical axiom is subClassOf owl:Thing (see OWL_THING).
+    """
+    row = {k: '' for k in marker_set}
+    row['defined_class'] = pcl_id
+    row['Markers_label'] = "obsolete " + marker_set['Markers_label']
+    row['Source'] = marker_set['Source']
+    row['Parent'] = OWL_THING
+    row['Deprecated'] = "true"
+    row['ReplacedBy'] = marker_set['defined_class']
+    return row
+
+
 def generate_marker_gene_set_template(taxonomy_file_path, output_filepath):
     taxon = extract_taxonomy_name_from_path(taxonomy_file_path)
     taxonomy_config = read_taxonomy_config(taxon)
@@ -910,6 +932,9 @@ def generate_marker_gene_set_template(taxonomy_file_path, output_filepath):
                         if not (k in d.keys()):
                             d[k] = ''
                     class_template.append(d)
+                    if node['cell_set_accession'] in cl_subset:
+                        class_template.append(obsolete_marker_set(
+                            d, PCL_BASE + pcl_id_factory.get_marker_gene_set_id(node['cell_set_accession'])))
                     processed_accessions.add(node['cell_set_accession'])
 
         class_robot_template = pd.DataFrame.from_records(class_template)
@@ -1009,6 +1034,9 @@ def generate_within_subclass_marker_gene_set_template(taxonomy_file_path, output
                         if not (k in d.keys()):
                             d[k] = ''
                     class_template.append(d)
+                    if node['cell_set_accession'] in cl_subset:
+                        class_template.append(obsolete_marker_set(
+                            d, PCL_BASE + pcl_id_factory.get_ws_marker_gene_set_id(node['cell_set_accession'])))
                     processed_accessions.add(node['cell_set_accession'])
 
         class_robot_template = pd.DataFrame.from_records(class_template)
@@ -1103,6 +1131,9 @@ def generate_evidence_marker_gene_set_template(taxonomy_file_path, output_filepa
                         if not (k in d.keys()):
                             d[k] = ''
                     class_template.append(d)
+                    if node['cell_set_accession'] in cl_subset:
+                        class_template.append(obsolete_marker_set(
+                            d, PCL_BASE + pcl_id_factory.get_evidence_marker_gene_set_id(node['cell_set_accession'])))
                     processed_accessions.add(node['cell_set_accession'])
 
         class_robot_template = pd.DataFrame.from_records(class_template)
@@ -1196,6 +1227,9 @@ def generate_nsforest_marker_gene_set_template(taxonomy_file_path, output_filepa
                         if not (k in d.keys()):
                             d[k] = ''
                     class_template.append(d)
+                    if node['cell_set_accession'] in cl_subset:
+                        class_template.append(obsolete_marker_set(
+                            d, PCL_BASE + pcl_id_factory.get_nsf_marker_gene_set_id(o['cell_set_accession'])))
 
         class_robot_template = pd.DataFrame.from_records(class_template)
         class_robot_template.to_csv(output_filepath, sep="\t", index=False)
