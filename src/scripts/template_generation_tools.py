@@ -47,6 +47,9 @@ BRAIN_REGION_MAPPING = os.path.join(os.path.dirname(os.path.realpath(__file__)),
 # Soma location per cell set derived from MERFISH cell counts (generated outside the build, see the README
 # next to it); applied as has_soma_location to the CL subset only.
 DERIVED_SOMA_LOCATIONS = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../dendrograms/supplementary/version2/derived_soma_locations.tsv")
+# CCF regions holding a large share of each subclass and supertype's MERFISH cells (generated with the
+# derived soma locations); applied as some_soma_located_in to classes without cluster annotations.
+SUPERTYPE_SUBCLASS_LOCATIONS = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../dendrograms/supplementary/version2/supertype_subclass_locations.tsv")
 NT_NOT_CALLED = "CS20230722_NEUR_NA"
 # Neurotransmitters (a cluster's own assignment or a shared one) are only given to cell sets in a class
 # flagged Neuronal, plus these classes (25 Pineal Glut: pinealocytes release glutamate, although they are
@@ -75,6 +78,7 @@ EXPRESSION_SEPARATOR = "|"
 
 ACRONYM_REGION = "CCF acronym region"
 BROAD_REGION = "CCF broad region"
+MERFISH_REGION = "MERFISH cells registered to the CCF (Yao et al. 2023; Zhang et al. 2023)"
 
 
 def generate_ind_template(taxonomy_file_path, output_filepath):
@@ -210,6 +214,7 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
         cluster_annotations = read_csv_to_dict(CLUSTER_ANNOTATIONS_PATH, id_column_name="cell_set_accession.cluster")[1]
         nt_symbols_mapping = read_csv_to_dict(NT_SYMBOLS_MAPPING, delimiter="\t")[1]
         derived_soma_locations = read_csv_to_dict(DERIVED_SOMA_LOCATIONS, delimiter="\t")[1]
+        merfish_locations = read_merfish_locations(SUPERTYPE_SUBCLASS_LOCATIONS)
         mba_symbols = get_mba_symbols_map()
         mba_labels = get_mba_labels_map()
         anatomical_loc_inconsistencies = get_anatomical_location_inconsistencies(CLUSTER_ANNOTATIONS_PATH)
@@ -396,6 +401,11 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                     acronym_mbas, mba_text = populate_mba_relations(ccf_acronym_freq, ACRONYM_REGION, d, len(broad_mbas) + 1, mba_symbols, mba_labels, missed_regions, broad_mbas)
                     acronym_mbas = [acronym_mba for acronym_mba in acronym_mbas if acronym_mba not in broad_mbas]
                     d['CCF_acronym_freq'] = "|".join(acronym_mbas)
+                elif node['cell_set_accession'] in merfish_locations:
+                    for i, region in enumerate(merfish_locations[node['cell_set_accession']], start=1):
+                        d['MBA_' + str(i)] = region['region']
+                        d['MBA_' + str(i) + '_cell_percentage'] = round(float(region['cell_ratio']), 2)
+                        d['MBA_' + str(i) + '_comment'] = "Location assignment based on {}.".format(MERFISH_REGION)
 
                 d['MBA_assay'] = "EFO:0008992"
                 for missed_region in missed_regions:
@@ -682,6 +692,15 @@ def get_unique_cell_label(o, node, generated_labels, all_names, name_curations, 
     cell_label = format_cell_label(cell_label, node, all_names, generated_labels, is_collapsed, fail_on_duplicate)
     generated_labels.add(cell_label)
     return cell_label
+
+
+def read_merfish_locations(path):
+    """{cell set accession: [location rows, highest cell ratio first]} from supertype_subclass_locations.tsv."""
+    locations = dict()
+    with open(path) as f:
+        for row in csv.DictReader(f, delimiter="\t"):
+            locations.setdefault(row['cell_set_accession'], []).append(row)
+    return locations
 
 
 def populate_mba_relations(ccf_text, approach, d, index, mba_symbols, mba_labels, missed_regions, existing_mbas=None):
