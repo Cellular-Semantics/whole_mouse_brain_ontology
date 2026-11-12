@@ -252,3 +252,10 @@ For each row in `cl_lookup_queue.tsv`, use the OLS4 MCP tools, restricted to `on
 21. **ID collisions and stability.** New `CL_43…` IDs depend on the `CLIdFactory` block layout. Check that no new ID collides with an existing CL term, and that none of the existing 130 IDs shift.
 22. **Downstream.** Should the new CL terms and synonyms be coordinated with the CL editors before release (for example, a CL PR importing `wmbo-cl-comp`), and with PCL/CAP so that both versions resolve consistently?
 23. **WMBv2 in WMBO.** Out of scope here, but should a later WMBO release be built from CCN20251031 directly? If so, promotions chosen now should stay compatible with that route.
+
+## Next round (2026-11-12)
+
+After WMBO #134 and #136:
+
+- **More promotions.** Check for more stable WMBv2 types to promote (S1/S2/S3 tiers above). Each type now carries its own soma location and NT, so the hierarchy rules can be relaxed, as in `wmbo_location_nt_classification_plan.md` step 5. Review the candidates together before adding them to `Add_to_CL`.
+- **Naming.** Review the names of promoted terms again (`defined_class_name`; see `wmbo_cl_naming_plan.md`).
