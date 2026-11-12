@@ -1233,8 +1233,13 @@
       "labelset": "class",
       "cell_label": "28 CB GABA",
       "cell_set_accession": "CS20230722_CLAS_28",
-      "cell_ontology_term_id": "CL:1001611",
-      "cell_ontology_term": "cerebellar neuron",
+      "cell_ontology_term_id": "CL:0020088",
+      "cell_ontology_term": "cerebellum-like structure GABAergic neuron",
+      "rationale": "Class 28 includes the dorsal cochlear nucleus subclass 308 DCO Il22 Gly-Gaba as well as cerebellar GABAergic types, so it is mapped to the grouping class covering neurons of the cerebellum and of cerebellum-like structures such as the dorsal cochlear nucleus.",
+      "rationale_dois": [
+        "https://doi.org/10.1146/annurev.neuro.30.051606.094225",
+        "https://doi.org/10.1016/j.tins.2003.12.001"
+      ],
       "author_annotation_fields": {
         "neighborhood": "MB-HB-CB-GABA",
         "Neuronal": "Y",
@@ -1277,8 +1282,13 @@
       "labelset": "class",
       "cell_label": "29 CB Glut",
       "cell_set_accession": "CS20230722_CLAS_29",
-      "cell_ontology_term_id": "CL:2000028",
-      "cell_ontology_term": "cerebellar glutamatergic neuron",
+      "cell_ontology_term_id": "CL:0020089",
+      "cell_ontology_term": "cerebellum-like structure glutamatergic neuron",
+      "rationale": "Class 29 includes the dorsal cochlear nucleus subclass 315 DCO UBC Glut as well as cerebellar glutamatergic types, so it is mapped to the grouping class covering neurons of the cerebellum and of cerebellum-like structures such as the dorsal cochlear nucleus.",
+      "rationale_dois": [
+        "https://doi.org/10.1146/annurev.neuro.30.051606.094225",
+        "https://doi.org/10.1016/j.tins.2003.12.001"
+      ],
       "author_annotation_fields": {
         "neighborhood": "NN-IMN-GC",
         "Neuronal": "Y",
