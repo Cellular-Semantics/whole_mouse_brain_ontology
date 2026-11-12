@@ -4,6 +4,7 @@ Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/helper.owl>
@@ -26,5 +27,35 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002215> "capa
 # Object Property: <http://purl.obolibrary.org/obo/RO_0002292> (expresses)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002292> "expresses")
+
+############################
+#   TEMPORARY CL STAND-IN — DELETE WHEN CL RELEASES THESE TERMS
+############################
+# CL:0020087, CL:0020088 and CL:0020089 were merged to CL master (cell-ontology PR #3828,
+# 2026-10-27) but are not in a CL release yet (latest: v2026-06-08). The WMB taxonomy
+# (brain-bican/whole_mouse_brain_taxonomy ac63a01) maps classes 28 CB GABA and 29 CB Glut to them.
+# The axioms below copy CL master (labels, definitions, asserted parents; CL's GCIs are left out)
+# so the build resolves them. Once a CL release contains these terms: delete this whole block
+# (down to END STAND-IN), run `sh run.sh make refresh-imports`, then rebuild.
+
+Declaration(Class(:CL_0020087))
+AnnotationAssertion(rdfs:label :CL_0020087 "cerebellum-like structure neuron")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "doi:10.1016/j.tins.2003.12.001") Annotation(oboInOwl:hasDbXref "doi:10.1146/annurev.neuro.30.051606.094225") :IAO_0000115 :CL_0020087 "A neuron that has its soma located in the cerebellum or in another cerebellum-like structure, such as the dorsal cochlear nucleus.")
+SubClassOf(:CL_0020087 :CL_0000099)
+SubClassOf(:CL_0020087 :CL_2000029)
+
+Declaration(Class(:CL_0020088))
+AnnotationAssertion(rdfs:label :CL_0020088 "cerebellum-like structure GABAergic neuron")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "doi:10.1016/j.tins.2003.12.001") Annotation(oboInOwl:hasDbXref "doi:10.1146/annurev.neuro.30.051606.094225") :IAO_0000115 :CL_0020088 "A GABAergic neuron that has its soma located in the cerebellum or in another cerebellum-like structure, such as the dorsal cochlear nucleus.")
+SubClassOf(:CL_0020088 :CL_0000617)
+SubClassOf(:CL_0020088 :CL_0020087)
+
+Declaration(Class(:CL_0020089))
+AnnotationAssertion(rdfs:label :CL_0020089 "cerebellum-like structure glutamatergic neuron")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "doi:10.1016/j.tins.2003.12.001") Annotation(oboInOwl:hasDbXref "doi:10.1146/annurev.neuro.30.051606.094225") :IAO_0000115 :CL_0020089 "A glutamatergic neuron that has its soma located in the cerebellum or in another cerebellum-like structure, such as the dorsal cochlear nucleus.")
+SubClassOf(:CL_0020089 :CL_0000679)
+SubClassOf(:CL_0020089 :CL_0020087)
+
+# END STAND-IN
 
 )
