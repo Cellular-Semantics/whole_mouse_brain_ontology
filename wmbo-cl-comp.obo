@@ -11,6 +11,7 @@ def: "A cerebellum-like structure GABAergic neuron of the Mus musculus brain. Re
 comment: Rationale for assigning this type to reference data: Class 28 includes the dorsal cochlear nucleus subclass 308 DCO Il22 Gly-Gaba as well as cerebellar GABAergic types, so it is mapped to the grouping class covering neurons of the cerebellum and of cerebellum-like structures such as the dorsal cochlear nucleus. Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. {xref="https://doi.org/10.1146/annurev.neuro.30.051606.094225", xref="https://doi.org/10.1016/j.tins.2003.12.001"}
 synonym: "28 CB GABA" EXACT []
 is_a: CL:0020088
+is_a: CL:0020134
 relationship: RO:0002100 UBERON:0002028 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebellum; the broader hindbrain (Hindbrain + Cerebellum) is used because it also holds at least half of the cells of each of its descendant cell sets."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="All clusters in this set are inferred to be GABAergic from NT marker expression."}
@@ -27,6 +28,7 @@ def: "A cerebellum-like structure glutamatergic neuron of the Mus musculus brain
 comment: Rationale for assigning this type to reference data: Class 29 includes the dorsal cochlear nucleus subclass 315 DCO UBC Glut as well as cerebellar glutamatergic types, so it is mapped to the grouping class covering neurons of the cerebellum and of cerebellum-like structures such as the dorsal cochlear nucleus. Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. {xref="https://doi.org/10.1146/annurev.neuro.30.051606.094225", xref="https://doi.org/10.1016/j.tins.2003.12.001"}
 synonym: "29 CB Glut" EXACT []
 is_a: CL:0020089
+is_a: CL:0020097
 relationship: RO:0002100 UBERON:0002028 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebellum; the broader hindbrain (Hindbrain + Cerebellum) is used because it also holds at least half of the cells of each of its descendant cell sets."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All clusters in this set are inferred to be glutamatergic from NT marker expression."}
@@ -56,8 +58,7 @@ def: "A cerebral cortex neuron of the Mus musculus brain. It is distinguished fr
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "001 CLA-EPd-CTX Car3 Glut" EXACT []
 synonym: "007 CLA-EPd-CTX_Car3_Glut" EXACT [CCN20251031:CS20251031_SUBC_0007]
-is_a: CL:0000679
-is_a: CL:0010012
+is_a: CL:0020103
 relationship: RO:0002100 UBERON:0005343 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cortical plate (MBA:695)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 5 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -78,8 +79,7 @@ def: "A cerebral cortex neuron of the Mus musculus brain. It is distinguished fr
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "002 IT EP-CLA Glut" EXACT []
 synonym: "008 IT-EP-CLA_Osr1_Glut" EXACT [CCN20251031:CS20251031_SUBC_0008]
-is_a: CL:0000679
-is_a: CL:0010012
+is_a: CL:0020103
 relationship: RO:0002100 UBERON:0000956 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebral cortex (MBA:688)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 17 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -121,6 +121,7 @@ def: "A L2/3 intratelencephalic projecting glutamatergic neuron of the Mus muscu
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "008 L2/3 IT ENT Glut" EXACT []
 synonym: "014 L3-IT-ENT_Glut" EXACT [CCN20251031:CS20251031_SUBC_0014]
+is_a: CL:0020115
 is_a: CL:4030059
 relationship: RO:0002100 UBERON:0002728 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Entorhinal area (MBA:909)."}
 relationship: RO:0002162 NCBITaxon:10090
@@ -143,6 +144,7 @@ def: "A intratelencephalic-projecting glutamatergic cortical neuron of the Mus m
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "009 IT-AON-TT-DP_Glut" EXACT [CCN20251031:CS20251031_SUBC_0009]
 synonym: "010 IT AON-TT-DP Glut" EXACT []
+is_a: CL:0020115
 is_a: CL:4023008
 relationship: RO:0002100 UBERON:0005366 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Olfactory areas (MBA:698)."}
 relationship: RO:0002162 NCBITaxon:10090
@@ -162,7 +164,7 @@ def: "A hippocampal CA1-3 neuron of the Mus musculus brain. It is distinguished 
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "017 CA3 Glut" EXACT []
 synonym: "029 CA3_Glut" EXACT [CCN20251031:CS20251031_SUBC_0029]
-is_a: CL:0000679
+is_a: CL:0020105
 is_a: CL:4023060
 relationship: RO:0002100 UBERON:0000956 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Field CA3; the broader Cerebral cortex (MBA:688) is used because it also holds at least half of the cells of each of its descendant cell sets."}
 relationship: RO:0002162 NCBITaxon:10090
@@ -184,7 +186,7 @@ def: "A L2/3 intratelencephalic projecting glutamatergic neuron of the Mus muscu
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "019 L2/3 IT PPP Glut" EXACT []
 synonym: "020 L2/3-IT-PPP-an_Glut" EXACT [CCN20251031:CS20251031_SUBC_0020]
-is_a: CL:0002608
+is_a: CL:0020105
 is_a: CL:4030059
 relationship: RO:0002100 UBERON:0022230 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Retrohippocampal region (MBA:822)."}
 relationship: RO:0002162 NCBITaxon:10090
@@ -222,7 +224,7 @@ def: "A hippocampal CA1-3 neuron of the Mus musculus brain. It is distinguished 
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "025 CA2-FC-IG Glut" EXACT []
 synonym: "028 CA2-FC-IG_Glut" EXACT [CCN20251031:CS20251031_SUBC_0028]
-is_a: CL:0000679
+is_a: CL:0020105
 is_a: CL:4023060
 relationship: RO:0002100 UBERON:0005343 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hippocampal region; the broader Cortical plate (MBA:695) is used because it also holds at least half of the cells of each of its descendant cell sets."}
 relationship: RO:0002162 NCBITaxon:10090
@@ -267,8 +269,8 @@ def: "A cerebral cortex neuron of the Mus musculus brain. It is distinguished fr
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "035 OB Eomes Ms4a15 Glut" EXACT []
 synonym: "040 OB_Eomes:Sall1_Glut" EXACT [CCN20251031:CS20251031_SUBC_0040]
-is_a: CL:0000679
-is_a: CL:0010012
+is_a: CL:0020103
+is_a: CL:0020115
 relationship: RO:0002100 UBERON:0005366 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Olfactory areas (MBA:698)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 11 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -288,8 +290,7 @@ def: "A GABAergic neuron of the Mus musculus brain. It is distinguished from oth
 comment: Rationale for assigning this type to reference data: Assigned by automated classification (ELK) of a definition built from soma location Main olfactory bulb (MOB; ≥80% of grey-matter cells in both the Yao 2023 and Zhuang 2023 MERFISH atlases) and neurotransmitter GABA (all clusters) against CL 2026-06-08. Basis: NT. Other inferred CL parents: central nervous system neuron. [WMBO CL promotion round 1, 2026-10-13] Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. {xref="https://doi.org/10.1038/s41586-023-06812-z", xref="https://doi.org/10.1038/s41586-023-06808-9"}
 synonym: "040 OB Trdn Gaba" EXACT []
 synonym: "047 OB-in_Trdn_Gaba" EXACT [CCN20251031:CS20251031_SUBC_0047]
-is_a: CL:0000617
-is_a: CL:2000029
+is_a: CL:0020112
 relationship: RO:0002100 UBERON:0009951 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Main olfactory bulb (MBA:507)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="All 3 clusters in this cell set with a neurotransmitter assignment are GABAergic."}
@@ -347,8 +348,7 @@ def: "A medial ganglionic eminence derived interneuron of the Mus musculus brain
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "054 STR Prox1 Lhx6 Gaba" EXACT []
 synonym: "064 STR_Prox1:Lhx6_Gaba" EXACT [CCN20251031:CS20251031_SUBC_0064]
-is_a: CL:0011005
-is_a: CL:0012001
+is_a: CL:0020130
 is_a: CL:4023063
 relationship: RO:0002100 UBERON:0001893 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Striatum; the broader Cerebrum (MBA:567) is used because it also holds at least half of the cells of each of its descendant cell sets."}
 relationship: RO:0002162 NCBITaxon:10090
@@ -369,8 +369,7 @@ def: "A medial ganglionic eminence derived interneuron of the Mus musculus brain
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "055 STR Lhx8 Gaba" EXACT []
 synonym: "065 STR_Lhx8_Gaba" EXACT [CCN20251031:CS20251031_SUBC_0065]
-is_a: CL:0011005
-is_a: CL:0012001
+is_a: CL:0020108
 is_a: CL:4023063
 relationship: RO:0002100 UBERON:8440012 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebral nuclei (MBA:623)."}
 relationship: RO:0002162 NCBITaxon:10090
@@ -391,8 +390,8 @@ def: "A lateral ganglionic eminence derived neuron of the Mus musculus brain. It
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "059 GPe-SI Sox6 Cyp26b1 Gaba" EXACT []
 synonym: "080 GPe-SI_Sox6:Cyp26b1_Gaba" EXACT [CCN20251031:CS20251031_SUBC_0080]
-is_a: CL:0000617
-is_a: CL:4023035
+is_a: CL:0020126
+is_a: CL:0020131
 relationship: RO:0002100 UBERON:0006514 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pallidum (MBA:803)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="All 5 clusters in this cell set with a neurotransmitter assignment are GABAergic."}
@@ -413,7 +412,6 @@ def: "A direct pathway medium spiny neuron of the Mus musculus brain. It is dist
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "061 STR D1 Gaba" EXACT []
 synonym: "074 STR_D1_Gaba" EXACT [CCN20251031:CS20251031_SUBC_0074]
-is_a: CL:0002613
 is_a: CL:4023026
 relationship: RO:0002100 UBERON:0002435 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Striatum (MBA:477)."}
 relationship: RO:0002162 NCBITaxon:10090
@@ -434,7 +432,6 @@ def: "A indirect pathway medium spiny neuron of the Mus musculus brain. It is di
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "062 STR D2 Gaba" EXACT []
 synonym: "073 STR_D2_Gaba" EXACT [CCN20251031:CS20251031_SUBC_0073]
-is_a: CL:0002613
 is_a: CL:4023029
 relationship: RO:0002100 UBERON:0002435 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Striatum (MBA:477)."}
 relationship: RO:0002162 NCBITaxon:10090
@@ -454,8 +451,7 @@ def: "A striatum neuron of the Mus musculus brain. It is distinguished from othe
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "070 LSX Prdm12 Slit2 Gaba" EXACT []
 synonym: "082 LSX_Prdm12:Slit2_Gaba" EXACT [CCN20251031:CS20251031_SUBC_0082]
-is_a: CL:0000617
-is_a: CL:0002613
+is_a: CL:0020107
 relationship: RO:0002100 UBERON:0002435 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Striatum (MBA:477)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="All 34 clusters in this cell set with a neurotransmitter assignment are GABAergic."}
@@ -476,8 +472,7 @@ def: "A GABAergic neuron of the Mus musculus brain. It is distinguished from oth
 comment: Rationale for assigning this type to reference data: Assigned by automated classification (ELK) of a definition built from soma location Basic cell groups and regions (grey; ≥80% of grey-matter cells in both the Yao 2023 and Zhuang 2023 MERFISH atlases) and neurotransmitter GABA (all clusters) against CL 2026-06-08. Basis: NT. Other inferred CL parents: central nervous system neuron. [WMBO CL promotion round 1, 2026-10-13] Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. {xref="https://doi.org/10.1038/s41586-023-06812-z", xref="https://doi.org/10.1038/s41586-023-06808-9"}
 synonym: "085 SI-MPO-LPO Lhx8 Gaba" EXACT []
 synonym: "094 SI-MPO-LPO_Lhx8:Gbx2_Gaba" EXACT [CCN20251031:CS20251031_SUBC_0094]
-is_a: CL:0000617
-is_a: CL:0012001
+is_a: CL:0020128
 relationship: RO:0002100 UBERON:0001890 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in forebrain (Cerebrum + Interbrain)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="All 39 clusters in this cell set with a neurotransmitter assignment are GABAergic."}
@@ -499,8 +494,7 @@ def: "A GABAergic neuron of the Mus musculus brain. It is distinguished from oth
 comment: Rationale for assigning this type to reference data: Assigned by automated classification (ELK) of a definition built from soma location Basic cell groups and regions (grey; ≥80% of grey-matter cells in both the Yao 2023 and Zhuang 2023 MERFISH atlases) and neurotransmitter GABA (all clusters) against CL 2026-06-08. Basis: NT. Other inferred CL parents: central nervous system neuron. [WMBO CL promotion round 1, 2026-10-13] Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. {xref="https://doi.org/10.1038/s41586-023-06812-z", xref="https://doi.org/10.1038/s41586-023-06808-9"}
 synonym: "088 BST Tac2 Gaba" EXACT []
 synonym: "098 BST-LHA_Tac2_Gaba" EXACT [CCN20251031:CS20251031_SUBC_0098]
-is_a: CL:0000617
-is_a: CL:0012001
+is_a: CL:0020128
 relationship: RO:0002100 UBERON:0001890 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in forebrain (Cerebrum + Interbrain)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="All 10 clusters in this cell set with a neurotransmitter assignment are GABAergic."}
@@ -521,8 +515,7 @@ def: "A glutamatergic neuron of the Mus musculus brain. It is distinguished from
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "111 TRS-BAC Sln Glut" EXACT []
 synonym: "150 TRS-BAC_Sln_Glut" EXACT [CCN20251031:CS20251031_SUBC_0150]
-is_a: CL:0000679
-is_a: CL:0012001
+is_a: CL:0020127
 relationship: RO:0002100 UBERON:0001890 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebral nuclei; the broader forebrain (Cerebrum + Interbrain) is used because it also holds at least half of the cells of each of its descendant cell sets."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 5 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -543,8 +536,7 @@ def: "A glutamatergic neuron of the Mus musculus brain. It is distinguished from
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "121 MEA-BST Otp Zic2 Glut" EXACT []
 synonym: "140 MEA-BST_Otp:Sim1:Zic2_Glut" EXACT [CCN20251031:CS20251031_SUBC_0140]
-is_a: CL:0000679
-is_a: CL:0012001
+is_a: CL:0020127
 relationship: RO:0002100 UBERON:0001890 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in forebrain (Cerebrum + Interbrain)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 10 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -566,7 +558,7 @@ def: "A glutamatergic neuron of the Mus musculus brain. It is distinguished from
 comment: Rationale for assigning this type to reference data: Assigned by automated classification (ELK) of a definition built from soma location Hypothalamus (HY; ≥80% of grey-matter cells in both the Yao 2023 and Zhuang 2023 MERFISH atlases) and neurotransmitter glutamate (all clusters) against CL 2026-06-08. Basis: NT. Other inferred CL parents: neuron of the forebrain; hypothalamus cell. [WMBO CL promotion round 1, 2026-10-13] Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. {xref="https://doi.org/10.1038/s41586-023-06812-z", xref="https://doi.org/10.1038/s41586-023-06808-9"}
 synonym: "133 PVH-SO-PVa Otp Glut" EXACT []
 synonym: "152 PVH-SO-PVa_Otp:Fezf2_Glut" EXACT [CCN20251031:CS20251031_SUBC_0152]
-is_a: CL:4023068
+is_a: CL:0020101
 relationship: RO:0002100 UBERON:0001898 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hypothalamus (MBA:1097)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 22 clusters in this cell set with a neurotransmitter assignment are glutamatergic (1 clusters have no assignment)."}
@@ -586,7 +578,7 @@ def: "A glutamatergic neuron of the Mus musculus brain. It is distinguished from
 comment: Rationale for assigning this type to reference data: Assigned by automated classification (ELK) of a definition built from soma location Hypothalamus (HY; ≥80% of grey-matter cells in both the Yao 2023 and Zhuang 2023 MERFISH atlases) and neurotransmitter glutamate (all clusters) against CL 2026-06-08. Basis: NT. Other inferred CL parents: neuron of the forebrain; hypothalamus cell. [WMBO CL promotion round 1, 2026-10-13] Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. {xref="https://doi.org/10.1038/s41586-023-06812-z", xref="https://doi.org/10.1038/s41586-023-06808-9"}
 synonym: "136 PMv-TMv Pitx2 Glut" EXACT []
 synonym: "160 PMv-TMv_Pitx2:Irx3_Glut" EXACT [CCN20251031:CS20251031_SUBC_0160]
-is_a: CL:4023068
+is_a: CL:0020101
 relationship: RO:0002100 UBERON:0001898 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hypothalamus (MBA:1097)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 14 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -606,7 +598,8 @@ def: "A glutamatergic neuron of the Mus musculus brain. It is distinguished from
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "144 MM Foxb1 Glut" EXACT []
 synonym: "173 MM_Foxb1:Sall3_Glut" EXACT [CCN20251031:CS20251031_SUBC_0173]
-is_a: CL:4023068
+is_a: CL:0020101
+is_a: CL:0020141
 is_a: CL:4023074
 relationship: RO:0002100 UBERON:0001939 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medial mammillary nucleus (MBA:491)."}
 relationship: RO:0002162 NCBITaxon:10090
@@ -627,8 +620,7 @@ def: "A neuron of the Mus musculus brain. It is distinguished from other cells i
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "145 MH Tac2 Glut" EXACT []
 synonym: "174 MH_Tac2_Glut" EXACT [CCN20251031:CS20251031_SUBC_0174]
-is_a: CL:0000679
-is_a: CL:0012001
+is_a: CL:4023068
 relationship: RO:0002100 UBERON:0001942 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medial habenula (MBA:483)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All clusters in this set express Vglut1 and/or Vglut2 (Slc17a7, Slc17a6). Clusters called cholinergic also express Chat and Slc18a3: acetylcholine is co-released by some of them, not all."}
@@ -646,8 +638,7 @@ def: "A glutamatergic neuron of the Mus musculus brain. It is distinguished from
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "154 PF Fzd5 Glut" EXACT []
 synonym: "184 PF_Fzd5_Glut" EXACT [CCN20251031:CS20251031_SUBC_0184]
-is_a: CL:0000679
-is_a: CL:2000029
+is_a: CL:4023068
 relationship: RO:0002100 UBERON:0001897 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Thalamus (MBA:549)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 16 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -668,8 +659,7 @@ def: "A glutamatergic neuron of the Mus musculus brain. It is distinguished from
 comment: Rationale for assigning this type to reference data: Assigned by automated classification (ELK) of a definition built from soma location Periaqueductal gray (PAG; ≥80% of grey-matter cells in both the Yao 2023 and Zhuang 2023 MERFISH atlases) and neurotransmitter glutamate (all clusters) against CL 2026-06-08. Basis: NT. Other inferred CL parents: central nervous system neuron. [WMBO CL promotion round 1, 2026-10-13] Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. {xref="https://doi.org/10.1038/s41586-023-06812-z", xref="https://doi.org/10.1038/s41586-023-06808-9"}
 synonym: "172 PAG Pou4f1 Ebf2 Glut" EXACT []
 synonym: "195 PAG_Pou4f1:Barhl1:Adamtsl1_Glut" EXACT [CCN20251031:CS20251031_SUBC_0195]
-is_a: CL:0000679
-is_a: CL:2000029
+is_a: CL:0020090
 relationship: RO:0002100 UBERON:0001891 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Periaqueductal gray; the broader Midbrain, motor related (MBA:323) is used because it also holds at least half of the cells of each of its descendant cell sets."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 44 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -688,8 +678,7 @@ def: "A glutamatergic neuron of the Mus musculus brain. It is distinguished from
 comment: Rationale for assigning this type to reference data: Assigned by automated classification (ELK) of a definition built from soma location Midbrain (MB; ≥80% of grey-matter cells in both the Yao 2023 and Zhuang 2023 MERFISH atlases) and neurotransmitter glutamate (all clusters) against CL 2026-06-08. Basis: NT. Other inferred CL parents: central nervous system neuron. [WMBO CL promotion round 1, 2026-10-13] Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. {xref="https://doi.org/10.1038/s41586-023-06812-z", xref="https://doi.org/10.1038/s41586-023-06808-9"}
 synonym: "187 SCsg Pde5a Glut" EXACT []
 synonym: "210 SCsg_Pde5a_Glut" EXACT [CCN20251031:CS20251031_SUBC_0210]
-is_a: CL:0000679
-is_a: CL:2000029
+is_a: CL:0020090
 relationship: RO:0002100 UBERON:0001891 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 10 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -709,8 +698,7 @@ def: "A GABAergic neuron of the Mus musculus brain. It is distinguished from oth
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "205 SC-PAG Lef1 Emx2 Gaba" EXACT []
 synonym: "225 SC-PAG_Lef1:Emx2_Gaba" EXACT [CCN20251031:CS20251031_SUBC_0225]
-is_a: CL:0000617
-is_a: CL:2000029
+is_a: CL:0020091
 relationship: RO:0002100 UBERON:0001891 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain, motor related; the broader Midbrain (MBA:313) is used because it also holds at least half of the cells of each of its descendant cell sets."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="All 28 clusters in this cell set with a neurotransmitter assignment are GABAergic."}
@@ -732,8 +720,7 @@ def: "A GABAergic neuron of the Mus musculus brain. It is distinguished from oth
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "208 SC Lef1 Otx2 Gaba" EXACT []
 synonym: "228 SCs_Lef1:Otx2_Gaba" EXACT [CCN20251031:CS20251031_SUBC_0228]
-is_a: CL:0000617
-is_a: CL:2000029
+is_a: CL:0020091
 relationship: RO:0002100 UBERON:0001891 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="All 5 clusters in this cell set with a neurotransmitter assignment are GABAergic."}
@@ -754,8 +741,7 @@ def: "A GABAergic neuron of the Mus musculus brain. It is distinguished from oth
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "209 SCs Pax7 Nfia Gaba" EXACT []
 synonym: "229 SCs_Lef1:Nfib_Gaba" EXACT [CCN20251031:CS20251031_SUBC_0229]
-is_a: CL:0000617
-is_a: CL:2000029
+is_a: CL:0020091
 relationship: RO:0002100 UBERON:0001891 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="All 14 clusters in this cell set with a neurotransmitter assignment are GABAergic."}
@@ -778,8 +764,7 @@ def: "A GABAergic neuron of the Mus musculus brain. It is distinguished from oth
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "213 SCsg Gabrr2 Gaba" EXACT []
 synonym: "231 SCsg_Gabrr2_Gaba" EXACT [CCN20251031:CS20251031_SUBC_0231]
-is_a: CL:0000617
-is_a: CL:2000029
+is_a: CL:0020091
 relationship: RO:0002100 UBERON:0001891 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="All 31 clusters in this cell set with a neurotransmitter assignment are GABAergic."}
@@ -842,8 +827,7 @@ def: "A glutamatergic neuron of the Mus musculus brain. It is distinguished from
 comment: Rationale for assigning this type to reference data: Assigned by automated classification (ELK) of a definition built from soma location Basic cell groups and regions (grey; ≥80% of grey-matter cells in both the Yao 2023 and Zhuang 2023 MERFISH atlases) and neurotransmitter glutamate (all clusters) against CL 2026-06-08. Basis: NT. Other inferred CL parents: central nervous system neuron. [WMBO CL promotion round 1, 2026-10-13] Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. {xref="https://doi.org/10.1038/s41586-023-06812-z", xref="https://doi.org/10.1038/s41586-023-06808-9"}
 synonym: "254 VCO Mafa Meis2 Glut" EXACT []
 synonym: "298 VCO_Mafa:Meis2_Glut" EXACT [CCN20251031:CS20251031_SUBC_0298]
-is_a: CL:0000679
-is_a: CL:2000029
+is_a: CL:0020097
 relationship: RO:0002100 UBERON:0002028 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in hindbrain (Hindbrain + Cerebellum)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 9 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -864,8 +848,7 @@ def: "A GABAergic neuron of the Mus musculus brain. It is distinguished from oth
 comment: Rationale for assigning this type to reference data: Assigned by automated classification (ELK) of a definition built from soma location Pons (P; ≥80% of grey-matter cells in both the Yao 2023 and Zhuang 2023 MERFISH atlases) and neurotransmitter GABA (all clusters) against CL 2026-06-08. Basis: NT. Other inferred CL parents: central nervous system neuron. [WMBO CL promotion round 1, 2026-10-13] Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. {xref="https://doi.org/10.1038/s41586-023-06812-z", xref="https://doi.org/10.1038/s41586-023-06808-9"}
 synonym: "263 CS-RPO Meis2 Gaba" EXACT []
 synonym: "327 CS-RPO_Otp:Meis2_Gaba" EXACT [CCN20251031:CS20251031_SUBC_0327]
-is_a: CL:0000617
-is_a: CL:2000029
+is_a: CL:0020100
 relationship: RO:0002100 UBERON:0002298 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons; the broader brainstem (Midbrain + Hindbrain) is used because it also holds at least half of the cells of each of its descendant cell sets."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="All 26 clusters in this cell set with a neurotransmitter assignment are GABAergic."}
@@ -885,8 +868,7 @@ def: "A GABAergic neuron of the Mus musculus brain. It is distinguished from oth
 comment: Rationale for assigning this type to reference data: Assigned by automated classification (ELK) of a definition built from soma location Brain stem (BS; ≥80% of grey-matter cells in both the Yao 2023 and Zhuang 2023 MERFISH atlases) and neurotransmitter GABA (all clusters) against CL 2026-06-08. Basis: NT. Other inferred CL parents: central nervous system neuron. [WMBO CL promotion round 1, 2026-10-13] Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. {xref="https://doi.org/10.1038/s41586-023-06812-z", xref="https://doi.org/10.1038/s41586-023-06808-9"}
 synonym: "276 LDT-PCG St18 Gaba" EXACT []
 synonym: "321 PCG-LDT_Otp:Satb2_Gaba" EXACT [CCN20251031:CS20251031_SUBC_0321]
-is_a: CL:0000617
-is_a: CL:2000029
+is_a: CL:0020100
 relationship: RO:0002100 UBERON:0002298 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="All 12 clusters in this cell set with a neurotransmitter assignment are GABAergic."}
@@ -907,8 +889,7 @@ def: "A GABAergic neuron of the Mus musculus brain. It is distinguished from oth
 comment: Rationale for assigning this type to reference data: Assigned by automated classification (ELK) of a definition built from soma location Brain stem (BS; ≥80% of grey-matter cells in both the Yao 2023 and Zhuang 2023 MERFISH atlases) and neurotransmitter GABA (all clusters) against CL 2026-06-08. Basis: NT. Other inferred CL parents: central nervous system neuron. [WMBO CL promotion round 1, 2026-10-13] Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. {xref="https://doi.org/10.1038/s41586-023-06812-z", xref="https://doi.org/10.1038/s41586-023-06808-9"}
 synonym: "277 DTN-LDT-IPN Otp Pax3 Gaba" EXACT []
 synonym: "320 DTN-LDT-IPN_Otp:Vmn1r209_Gaba" EXACT [CCN20251031:CS20251031_SUBC_0320]
-is_a: CL:0000617
-is_a: CL:2000029
+is_a: CL:0020100
 relationship: RO:0002100 UBERON:0002298 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="All 25 clusters in this cell set with a neurotransmitter assignment are GABAergic."}
@@ -929,8 +910,7 @@ def: "A GABAergic neuron of the Mus musculus brain. It is distinguished from oth
 comment: Rationale for assigning this type to reference data: Assigned by automated classification (ELK) of a definition built from soma location Hindbrain (HB; ≥80% of grey-matter cells in both the Yao 2023 and Zhuang 2023 MERFISH atlases) and neurotransmitter GABA (all clusters) against CL 2026-06-08. Basis: NT. Other inferred CL parents: central nervous system neuron. [WMBO CL promotion round 1, 2026-10-13] Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. {xref="https://doi.org/10.1038/s41586-023-06812-z", xref="https://doi.org/10.1038/s41586-023-06808-9"}
 synonym: "287 MV-SPIV-PRP Dmbx1 Gly-Gaba" EXACT []
 synonym: "348 MV-SPIV-PRP_Dmbx1_Gly-Gaba" EXACT [CCN20251031:CS20251031_SUBC_0348]
-is_a: CL:0000617
-is_a: CL:2000029
+is_a: CL:0020134
 relationship: RO:0002100 UBERON:0002028 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hindbrain (MBA:1065)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="All 15 clusters in this cell set with a neurotransmitter assignment are GABAergic."}
@@ -950,8 +930,7 @@ def: "A GABA-Gly neuron of the Mus musculus brain. It is distinguished from othe
 comment: Rationale for assigning this type to reference data: Assigned by automated classification (ELK) of a definition built from soma location Medulla (MY; ≥80% of grey-matter cells in both the Yao 2023 and Zhuang 2023 MERFISH atlases) and neurotransmitter GABA + glycine (all clusters) against CL 2026-06-08. Basis: NT. Other inferred CL parents: central nervous system neuron. [WMBO CL promotion round 1, 2026-10-13] Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. {xref="https://doi.org/10.1038/s41586-023-06812-z", xref="https://doi.org/10.1038/s41586-023-06808-9"}
 synonym: "291 NTS-MDRNd Prox1 Zic1 Gly-Gaba" EXACT []
 synonym: "341 NTS-MDRNd_Neurog2:Zic1_Gly-Gaba" EXACT [CCN20251031:CS20251031_SUBC_0341]
-is_a: CL:0008059
-is_a: CL:2000029
+is_a: CL:0020096
 relationship: RO:0002100 UBERON:0001896 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medulla (MBA:354)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="All 6 clusters in this cell set with a neurotransmitter assignment are GABAergic and glycinergic."}
@@ -972,8 +951,7 @@ def: "A GABA-Gly neuron of the Mus musculus brain. It is distinguished from othe
 comment: Rationale for assigning this type to reference data: Assigned by automated classification (ELK) of a definition built from soma location Hindbrain (HB; ≥80% of grey-matter cells in both the Yao 2023 and Zhuang 2023 MERFISH atlases) and neurotransmitter GABA + glycine (all clusters) against CL 2026-06-08. Basis: NT. Other inferred CL parents: central nervous system neuron. [WMBO CL promotion round 1, 2026-10-13] Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. {xref="https://doi.org/10.1038/s41586-023-06812-z", xref="https://doi.org/10.1038/s41586-023-06808-9"}
 synonym: "294 MV Pax6 Gly-Gaba" EXACT []
 synonym: "344 MV_Pax6:Slc1a5_Gly-Gaba" EXACT [CCN20251031:CS20251031_SUBC_0344]
-is_a: CL:0008059
-is_a: CL:2000029
+is_a: CL:0020098
 relationship: RO:0002100 UBERON:0002028 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hindbrain (MBA:1065)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="All 6 clusters in this cell set with a neurotransmitter assignment are GABAergic and glycinergic."}
@@ -994,7 +972,7 @@ def: "A cerebellum-like structure GABAergic neuron of the Mus musculus brain. It
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "308 DCO Il22 Gly-Gaba" EXACT []
 synonym: "381 DCO_Il22_Gly-Gaba" EXACT [CCN20251031:CS20251031_SUBC_0381]
-is_a: CL:0008059
+is_a: CL:0020098
 is_a: CL:4300028 ! cerebellum-like structure GABAergic neuron (Mmus)
 relationship: RO:0002100 UBERON:0002028 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in hindbrain (Hindbrain + Cerebellum)."}
 relationship: RO:0002215 GO:0061534 {comment="All 10 clusters in this cell set with a neurotransmitter assignment are GABAergic and glycinergic."}
@@ -1060,7 +1038,6 @@ comment: Location is inferred from registration of MerFish Data. Registration ma
 synonym: "313 CBX Purkinje Gaba" EXACT []
 synonym: "386 CBX_Purkinje_Gaba" EXACT [CCN20251031:CS20251031_SUBC_0386]
 is_a: CL:0000121
-is_a: CL:4072102
 is_a: CL:4300028 ! cerebellum-like structure GABAergic neuron (Mmus)
 relationship: RO:0002100 UBERON:0002037 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebellum (MBA:512)."}
 relationship: RO:0002215 GO:0061534 {comment="All 4 clusters in this cell set with a neurotransmitter assignment are GABAergic."}
@@ -1388,8 +1365,7 @@ def: "A cerebral cortex neuron of the Mus musculus brain. It is distinguished fr
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "0057 MEA Slc17a7 Glut_3" EXACT []
 synonym: "0076 MEA_Zic5:Krt2_Glut 4" EXACT [CCN20251031:CS20251031_SUPT_0076]
-is_a: CL:0000679
-is_a: CL:0010012
+is_a: CL:0020103
 relationship: RO:0002100 UBERON:0001893 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebrum (MBA:567)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 2 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -1411,8 +1387,7 @@ def: "A cerebral cortex neuron of the Mus musculus brain. It is distinguished fr
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. Warning: Despite its name, LA-BLA-BMA-PA Glut_2 does not have cells in posterior amygdalar nucleus (PA). This assertion is based on data from registration to a reference standard common co-ordinate framework and parcelation scheme.
 synonym: "0061 LA-BLA-BMA-PA Glut_2" EXACT []
 synonym: "0067 LA-BLA-BMA-PA_Glut 2" EXACT [CCN20251031:CS20251031_SUPT_0067]
-is_a: CL:0000679
-is_a: CL:0010012
+is_a: CL:0020103
 relationship: RO:0002100 UBERON:0004035 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cortical subplate (MBA:703)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 6 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -1433,7 +1408,7 @@ def: "A hippocampal CA1-3 neuron of the Mus musculus brain. It is distinguished 
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. Warning: Despite its name, CA1-ProS Glut_1 does not have cells in prosubiculum (ProS). This assertion is based on data from registration to a reference standard common co-ordinate framework and parcelation scheme.
 synonym: "0069 CA1-ProS Glut_1" EXACT []
 synonym: "0103 CA1-ProS_Glut 2" EXACT [CCN20251031:CS20251031_SUPT_0103]
-is_a: CL:0000679
+is_a: CL:0020105
 is_a: CL:4023060
 relationship: RO:0002100 UBERON:0003881 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Field CA1 (MBA:382)."}
 relationship: RO:0002162 NCBITaxon:10090
@@ -1455,7 +1430,7 @@ def: "A hippocampal CA1-3 neuron of the Mus musculus brain. It is distinguished 
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "0074 CA1-ProS Glut_6" EXACT []
 synonym: "0109 CA1-ProS_Glut 8" EXACT [CCN20251031:CS20251031_SUPT_0109]
-is_a: CL:0000679
+is_a: CL:0020105
 is_a: CL:4023060
 relationship: RO:0002100 UBERON:0002421 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hippocampal formation (MBA:1089)."}
 relationship: RO:0002162 NCBITaxon:10090
@@ -1536,7 +1511,7 @@ def: "A L2 intratelencephalic projecting glutamatergic neuron of the Mus musculu
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "0082 L2 IT PPP-APr Glut_3" EXACT []
 synonym: "0082 L2-IT-PPP-APr_Glut 5" EXACT [CCN20251031:CS20251031_SUPT_0082]
-is_a: CL:0002608
+is_a: CL:0020105
 is_a: CL:4030060
 relationship: RO:0002100 UBERON:0002421 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hippocampal formation (MBA:1089)."}
 relationship: RO:0002162 NCBITaxon:10090
@@ -1558,8 +1533,7 @@ comment: Location is inferred from registration of MerFish Data. Registration ma
 synonym: "0086 L4-RSP-ACA_Glut 1" EXACT [CCN20251031:CS20251031_SUPT_0086]
 synonym: "0089 L4 RSP-ACA Glut_1" EXACT []
 synonym: "021 L4 RSP-ACA Glut" EXACT []
-is_a: CL:0000679
-is_a: CL:0010012
+is_a: CL:0020104
 relationship: RO:0002100 UBERON:0013531 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Retrosplenial area, ventral part (MBA:886)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 2 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -1620,8 +1594,7 @@ def: "A hippocampal neuron of the Mus musculus brain. It is distinguished from o
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "0096 SUB-ProS Glut_1" EXACT []
 synonym: "0096 SUB-ProS_Glut 1" EXACT [CCN20251031:CS20251031_SUPT_0096]
-is_a: CL:0000679
-is_a: CL:0002608
+is_a: CL:0020105
 relationship: RO:0002100 UBERON:0022230 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Retrohippocampal region (MBA:822)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 5 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -1685,7 +1658,7 @@ def: "A L6b glutamatergic cortical neuron of the Mus musculus brain. It is disti
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "0109 L6b/CT ENT Glut_4" EXACT []
 synonym: "0121 L6b/CT-ENT_Glut 1" EXACT [CCN20251031:CS20251031_SUPT_0121]
-is_a: CL:0002608
+is_a: CL:0020105
 is_a: CL:4300068 ! L6b/CT ENT Glut L6b glutamatergic cortical neuron (Mmus)
 relationship: RO:0002100 UBERON:0022230 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Retrohippocampal region (MBA:822)."}
 relationship: RO:0002215 GO:0061535 {comment="All 3 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -1726,6 +1699,7 @@ def: "A cerebral cortex neuron of the Mus musculus brain. It is distinguished fr
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "0130 OB Eomes Ms4a15 Glut_1" EXACT []
 synonym: "0151 OB_Eomes:Sall1_Glut 4" EXACT [CCN20251031:CS20251031_SUPT_0151]
+is_a: CL:0020113
 is_a: CL:4300075 ! OB Eomes Ms4a15 Glut cerebral cortex neuron (Mmus)
 relationship: RO:0002100 UBERON:0009951 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Main olfactory bulb (MBA:507)."}
 relationship: RO:0002215 GO:0061535 {comment="All 2 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -1767,7 +1741,7 @@ synonym: "0135 HPF CR Glut_1" EXACT []
 synonym: "0154 HPF_CR_Glut 1" EXACT [CCN20251031:CS20251031_SUPT_0154]
 synonym: "036 HPF CR Glut" EXACT []
 is_a: CL:0000695
-is_a: CL:0010012
+is_a: CL:0020103
 relationship: RO:0002100 UBERON:0005343 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hippocampal formation; the broader Cortical plate (MBA:695) is used because it also holds at least half of the cells of each of its descendant cell sets."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 5 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -1789,7 +1763,8 @@ def: "A dentate gyrus granule cell of the Mus musculus brain. It is distinguishe
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "0138 DG Glut_3" EXACT []
 synonym: "0157 DG_Glut 3" EXACT [CCN20251031:CS20251031_SUPT_0157]
-is_a: CL:0000679
+is_a: CL:0020105
+is_a: CL:0020141
 is_a: CL:2000089
 relationship: RO:0002100 UBERON:0002421 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hippocampal region (MBA:1080)."}
 relationship: RO:0002162 NCBITaxon:10090
@@ -1810,8 +1785,8 @@ def: "A cerebral cortex neuron of the Mus musculus brain. It is distinguished fr
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "0143 OB Meis2 Thsd7b Gaba_1" EXACT []
 synonym: "0163 OB_Meis2:Thsd7b_Gaba 3" EXACT [CCN20251031:CS20251031_SUPT_0163]
-is_a: CL:0000617
-is_a: CL:0010012
+is_a: CL:0020106
+is_a: CL:0020114
 relationship: RO:0002100 UBERON:0005366 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Olfactory areas (MBA:698)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="All 3 clusters in this cell set with a neurotransmitter assignment are GABAergic."}
@@ -1831,8 +1806,8 @@ def: "A cerebral cortex neuron of the Mus musculus brain. It is distinguished fr
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "0147 OB Meis2 Thsd7b Gaba_5" EXACT []
 synonym: "0164 OB_Meis2:Thsd7b_Gaba 4" EXACT [CCN20251031:CS20251031_SUPT_0164]
-is_a: CL:0000617
-is_a: CL:0010012
+is_a: CL:0020106
+is_a: CL:0020114
 relationship: RO:0002100 UBERON:0005366 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Olfactory areas (MBA:698)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="All 2 clusters in this cell set with a neurotransmitter assignment are GABAergic."}
@@ -1870,8 +1845,7 @@ def: "A immature neuron of the Mus musculus brain. It is distinguished from othe
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "0166 OB-STR-CTX Inh IMN_1" EXACT []
 synonym: "0185 OB-STR-CTX_Mex3a_Gaba-IMN 1" EXACT [CCN20251031:CS20251031_SUPT_0185]
-is_a: CL:0000617
-is_a: CL:0012001
+is_a: CL:0020130
 is_a: CL:4042028
 relationship: RO:0002100 UBERON:0001893 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebrum (MBA:567)."}
 relationship: RO:0002162 NCBITaxon:10090
@@ -1911,6 +1885,7 @@ def: "A caudal ganglionic eminence derived interneuron of the Mus musculus brain
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "0195 RHP-COA Ndnf Gaba_3" EXACT []
 synonym: "0211 RHP-COA_Ndnf_Gaba 2" EXACT [CCN20251031:CS20251031_SUPT_0211]
+is_a: CL:0010011
 is_a: CL:4023064
 relationship: RO:0002100 UBERON:0005343 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cortical plate (MBA:695)."}
 relationship: RO:0002162 NCBITaxon:10090
@@ -1935,6 +1910,8 @@ def: "A caudal ganglionic eminence derived interneuron of the Mus musculus brain
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. Warning: Despite its name, RHP-COA Ndnf Gaba_6 does not have cells in cortical amygdalar area (COA). This assertion is based on data from registration to a reference standard common co-ordinate framework and parcelation scheme.
 synonym: "0198 RHP-COA Ndnf Gaba_6" EXACT []
 synonym: "0212 RHP-COA_Ndnf_Gaba 3" EXACT [CCN20251031:CS20251031_SUPT_0212]
+is_a: CL:0010011
+is_a: CL:0020117
 is_a: CL:1001569
 is_a: CL:4023064
 relationship: RO:0002100 UBERON:0002421 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hippocampal formation (MBA:1089)."}
@@ -2024,6 +2001,7 @@ def: "A pvalb GABAergic interneuron of the Mus musculus brain. It is distinguish
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "0207 Pvalb Gaba_3" EXACT []
 synonym: "0226 Pvalb_Gaba 4" EXACT [CCN20251031:CS20251031_SUPT_0226]
+is_a: CL:0020118
 is_a: CL:4300092 ! Pvalb Gaba pvalb GABAergic interneuron (Mmus)
 relationship: RO:0002100 UBERON:0001950 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Isocortex (MBA:315)."}
 relationship: RO:0002215 GO:0061534 {comment="All 3 clusters in this cell set with a neurotransmitter assignment are GABAergic."}
@@ -2043,7 +2021,7 @@ def: "A medial ganglionic eminence derived interneuron of the Mus musculus brain
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "0234 STR Prox1 Lhx6 Gaba_2" EXACT []
 synonym: "0262 STR_Prox1:Lhx6_Gaba 2" EXACT [CCN20251031:CS20251031_SUPT_0262]
-is_a: CL:0002613
+is_a: CL:0020107
 is_a: CL:4300094 ! STR Prox1 Lhx6 Gaba medial ganglionic eminence derived interneuron (Mmus)
 relationship: RO:0002100 UBERON:0002435 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Striatum (MBA:477)."}
 relationship: RO:0002215 GO:0061534 {comment="All 4 clusters in this cell set with a neurotransmitter assignment are GABAergic."}
@@ -2062,7 +2040,7 @@ def: "A medial ganglionic eminence derived interneuron of the Mus musculus brain
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "0236 STR Lhx8 Gaba_1" EXACT []
 synonym: "0263 STR_Lhx8_Gaba 1" EXACT [CCN20251031:CS20251031_SUPT_0263]
-is_a: CL:0002613
+is_a: CL:0020107
 is_a: CL:4300095 ! STR Lhx8 Gaba medial ganglionic eminence derived interneuron (Mmus)
 relationship: RO:0002100 UBERON:0002435 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Striatum (MBA:477)."}
 relationship: RO:0002215 GO:0061534 {comment="All 4 clusters in this cell set with a neurotransmitter assignment are GABAergic."}
@@ -2082,6 +2060,7 @@ def: "A sst chodl GABAergic interneuron of the Mus musculus brain. It is disting
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "0241 Sst Chodl Gaba_4" EXACT []
 synonym: "0250 Sst:Chodl_Gaba 1" EXACT [CCN20251031:CS20251031_SUPT_0250]
+is_a: CL:4023017
 is_a: CL:4023121
 relationship: RO:0002100 UBERON:0005343 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cortical plate (MBA:695)."}
 relationship: RO:0002162 NCBITaxon:10090
@@ -2103,7 +2082,7 @@ def: "A medial ganglionic eminence derived interneuron of the Mus musculus brain
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. Warning: Despite its name, NDB-SI-MA-STRv Lhx8 Gaba_4 does not have cells in diagonal band nucleus (NDB), magnocellular nucleus (MA). This assertion is based on data from registration to a reference standard common co-ordinate framework and parcelation scheme.
 synonym: "0247 NDB-SI-MA-STRv Lhx8 Gaba_4" EXACT []
 synonym: "0253 NDB-SI-MA-STRv_Lhx8_Gaba 1" EXACT [CCN20251031:CS20251031_SUPT_0253]
-is_a: CL:0011005
+is_a: CL:0020131
 is_a: CL:4023063
 relationship: RO:0002100 UBERON:0006514 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pallidum (MBA:803)."}
 relationship: RO:0002162 NCBITaxon:10090
@@ -2125,8 +2104,6 @@ def: "A medial ganglionic eminence derived interneuron of the Mus musculus brain
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. Warning: Despite its name, NDB-SI-MA-STRv Lhx8 Gaba_7 does not have cells in magnocellular nucleus (MA). This assertion is based on data from registration to a reference standard common co-ordinate framework and parcelation scheme.
 synonym: "0250 NDB-SI-MA-STRv Lhx8 Gaba_7" EXACT []
 synonym: "0258 NDB-SI-MA-STRv_Lhx8_Gaba 6" EXACT [CCN20251031:CS20251031_SUPT_0258]
-is_a: CL:0011005
-is_a: CL:0012001
 is_a: CL:4023063
 relationship: RO:0002100 UBERON:0001890 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in forebrain (Cerebrum + Interbrain)."}
 relationship: RO:0002162 NCBITaxon:10090
@@ -2150,8 +2127,8 @@ comment: Rationale for assigning this type to reference data: This maps to  GPin
 synonym: "0259 PAL-STR Gaba-Chol_1" EXACT []
 synonym: "0265 PAL-STR_Lhx8_Gaba-Chol 1" EXACT [CCN20251031:CS20251031_SUPT_0265]
 is_a: CL:0008061
-is_a: CL:0011005
-is_a: CL:0012001
+is_a: CL:0020108
+is_a: CL:0020110
 is_a: CL:4023063
 relationship: RO:0002100 UBERON:8440012 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebral nuclei (MBA:623)."}
 relationship: RO:0002162 NCBITaxon:10090
@@ -2173,8 +2150,9 @@ def: "A medial ganglionic eminence derived interneuron of the Mus musculus brain
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "0260 PAL-STR Gaba-Chol_2" EXACT []
 synonym: "0266 PAL-STR_Lhx8_Gaba-Chol 2" EXACT [CCN20251031:CS20251031_SUPT_0266]
-is_a: CL:0000108
-is_a: CL:0012001
+is_a: CL:0008061
+is_a: CL:0020108
+is_a: CL:0020110
 is_a: CL:4023063
 relationship: RO:0002100 UBERON:8440012 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebral nuclei (MBA:623)."}
 relationship: RO:0002162 NCBITaxon:10090
@@ -2249,9 +2227,8 @@ def: "A lateral ganglionic eminence derived neuron of the Mus musculus brain. It
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "0286 STR-PAL Chst9 Gaba_2" EXACT []
 synonym: "0321 STR-PAL_Chst9_Gaba 2" EXACT [CCN20251031:CS20251031_SUPT_0321]
-is_a: CL:0000617
-is_a: CL:0012001
-is_a: CL:4023035
+is_a: CL:0020126
+is_a: CL:0020130
 relationship: RO:0002100 UBERON:0001893 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebrum (MBA:567)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="All 4 clusters in this cell set with a neurotransmitter assignment are GABAergic."}
@@ -2273,8 +2250,8 @@ def: "A striatum neuron of the Mus musculus brain. It is distinguished from othe
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "0336 LSX Sall3 Lmo1 Gaba_6" EXACT []
 synonym: "0358 LSX_Sall3:Lmo1_Gaba 6" EXACT [CCN20251031:CS20251031_SUPT_0358]
-is_a: CL:0000617
-is_a: CL:0002613
+is_a: CL:0020107
+is_a: CL:0020108
 relationship: RO:0002100 UBERON:8440012 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebral nuclei (MBA:623)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="All 3 clusters in this cell set with a neurotransmitter assignment are GABAergic."}
@@ -2294,8 +2271,7 @@ def: "A GABAergic neuron of the Mus musculus brain. It is distinguished from oth
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "0285 CEA-BST_Six3:Cyp26b1_Gaba 2" EXACT [CCN20251031:CS20251031_SUPT_0285]
 synonym: "0368 CEA-BST Six3 Cyp26b1 Gaba_2" EXACT []
-is_a: CL:0000617
-is_a: CL:0012001
+is_a: CL:0020108
 relationship: RO:0002100 UBERON:8440012 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebral nuclei (MBA:623)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="All 5 clusters in this cell set with a neurotransmitter assignment are GABAergic."}
@@ -2317,8 +2293,7 @@ def: "A GABAergic neuron of the Mus musculus brain. It is distinguished from oth
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. Warning: Despite its name, CEA-BST Six3 Cyp26b1 Gaba_4 does not have cells in bed nuclei of the stria terminalis (BST). This assertion is based on data from registration to a reference standard common co-ordinate framework and parcelation scheme.
 synonym: "0284 CEA-BST_Six3:Cyp26b1_Gaba 1" EXACT [CCN20251031:CS20251031_SUPT_0284]
 synonym: "0370 CEA-BST Six3 Cyp26b1 Gaba_4" EXACT []
-is_a: CL:0000617
-is_a: CL:0012001
+is_a: CL:0020135
 relationship: RO:0002100 UBERON:0002883 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Central amygdalar nucleus (MBA:536)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="All 4 clusters in this cell set with a neurotransmitter assignment are GABAergic."}
@@ -2340,8 +2315,7 @@ def: "A GABAergic neuron of the Mus musculus brain. It is distinguished from oth
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "0268 CEA-BST_Pgm5:Pde11a_Gaba 1" EXACT [CCN20251031:CS20251031_SUPT_0268]
 synonym: "0392 CEA-BST Rai14 Pdyn Crh Gaba_1" EXACT []
-is_a: CL:0000617
-is_a: CL:0012001
+is_a: CL:0020108
 relationship: RO:0002100 UBERON:8440012 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebral nuclei (MBA:623)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="All 2 clusters in this cell set with a neurotransmitter assignment are GABAergic."}
@@ -2383,8 +2357,7 @@ def: "A GABAergic neuron of the Mus musculus brain. It is distinguished from oth
 comment: Rationale for assigning this type to reference data: Assigned by automated classification (ELK) of a definition built from soma location Basic cell groups and regions (grey; ≥80% of grey-matter cells in both the Yao 2023 and Zhuang 2023 MERFISH atlases) and neurotransmitter GABA (all clusters) against CL 2026-06-08. Basis: NT. Other inferred CL parents: central nervous system neuron. [WMBO CL promotion round 1, 2026-10-13] Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. {xref="https://doi.org/10.1038/s41586-023-06812-z", xref="https://doi.org/10.1038/s41586-023-06808-9"}
 synonym: "0403 MPO-ADP Lhx8 Gaba_2" EXACT []
 synonym: "0408 MPO-ADP_Lhx8:Isl1_Gaba 2" EXACT [CCN20251031:CS20251031_SUPT_0408]
-is_a: CL:0000617
-is_a: CL:0012001
+is_a: CL:0020128
 relationship: RO:0002100 UBERON:0001890 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in forebrain (Cerebrum + Interbrain)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="All 6 clusters in this cell set with a neurotransmitter assignment are GABAergic."}
@@ -2424,8 +2397,7 @@ def: "A GABAergic neuron of the Mus musculus brain. It is distinguished from oth
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. Warning: Despite its name, BST-MPN Six3 Nrgn Gaba_1 does not have cells in bed nuclei of the stria terminalis (BST). This assertion is based on data from registration to a reference standard common co-ordinate framework and parcelation scheme.
 synonym: "0418 BST-MPN-AHN_Six3:Cmbl_Gaba 1" EXACT [CCN20251031:CS20251031_SUPT_0418]
 synonym: "0420 BST-MPN Six3 Nrgn Gaba_1" EXACT []
-is_a: CL:0000617
-is_a: CL:0012001
+is_a: CL:0020102
 relationship: RO:0002100 UBERON:0001898 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hypothalamus (MBA:1097)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="All 2 clusters in this cell set with a neurotransmitter assignment are GABAergic."}
@@ -2444,8 +2416,7 @@ def: "A histaminergic neuron of the Mus musculus brain. It is distinguished from
 comment: Rationale for assigning this type to reference data: Assigned by automated classification (ELK) of a definition built from soma location Hypothalamus (HY; ≥80% of grey-matter cells in both the Yao 2023 and Zhuang 2023 MERFISH atlases) and neurotransmitter histamine (all clusters) against CL 2026-06-08. Basis: NT. Other inferred CL parents: neuron of the forebrain; hypothalamus cell. [WMBO CL promotion round 1, 2026-10-13] Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. Warning: Despite its name, TMv-PMv Tbx3 Hist-Gaba_1 does not have cells in tuberomammillary nucleus, ventral part (TMv). This assertion is based on data from registration to a reference standard common co-ordinate framework and parcelation scheme. {xref="https://doi.org/10.1038/s41586-023-06812-z", xref="https://doi.org/10.1038/s41586-023-06808-9"}
 synonym: "0429 TMv-PMv Tbx3 Hist-Gaba_1" EXACT []
 synonym: "0506 TMv-PMv_Tbx3_Hist-Gaba 1" EXACT [CCN20251031:CS20251031_SUPT_0506]
-is_a: CL:0011110
-is_a: CL:0012001
+is_a: CL:0020136
 relationship: RO:0002100 UBERON:0001898 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hypothalamus (MBA:1097)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061538 {comment="All 5 clusters in this cell set with a neurotransmitter assignment are histaminergic."}
@@ -2464,8 +2435,7 @@ def: "A GABAergic neuron of the Mus musculus brain. It is distinguished from oth
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. Warning: Despite its name, RT-ZI Gnb3 Gaba_2 does not have cells in zona incerta (ZI). This assertion is based on data from registration to a reference standard common co-ordinate framework and parcelation scheme.
 synonym: "0432 RT-ZI Gnb3 Gaba_2" EXACT []
 synonym: "0480 RT-ZI_Creb5_Gaba 4" EXACT [CCN20251031:CS20251031_SUPT_0480]
-is_a: CL:0000617
-is_a: CL:2000029
+is_a: CL:0020129
 relationship: RO:0002100 UBERON:0001897 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Thalamus (MBA:549)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="All 5 clusters in this cell set with a neurotransmitter assignment are GABAergic."}
@@ -2486,7 +2456,7 @@ def: "A SCN pacemaker neuron of the Mus musculus brain. It is distinguished from
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "0435 SCH_Six6:Cdc14a_Gaba 4" EXACT [CCN20251031:CS20251031_SUPT_0435]
 synonym: "0438 SCH Six6 Cdc14a Gaba_3" EXACT []
-is_a: CL:0000617
+is_a: CL:0020102
 is_a: CL:4072019
 relationship: RO:0002100 UBERON:0001898 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Periventricular region (MBA:141)."}
 relationship: RO:0002162 NCBITaxon:10090
@@ -2506,8 +2476,7 @@ def: "A GABAergic neuron of the Mus musculus brain. It is distinguished from oth
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. Warning: Despite its name, LGv-ZI Otx2 Gaba_2 does not have cells in zona incerta (ZI). This assertion is based on data from registration to a reference standard common co-ordinate framework and parcelation scheme.
 synonym: "0473 LGv-ZI_Otx2_Gaba 2" EXACT [CCN20251031:CS20251031_SUPT_0473]
 synonym: "0497 LGv-ZI Otx2 Gaba_2" EXACT []
-is_a: CL:0000617
-is_a: CL:0012001
+is_a: CL:0020133
 relationship: RO:0002100 UBERON:0001894 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Interbrain (MBA:1129)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="All 2 clusters in this cell set with a neurotransmitter assignment are GABAergic."}
@@ -2527,6 +2496,7 @@ def: "A glutamatergic neuron of the Mus musculus brain. It is distinguished from
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. Warning: Despite its name, TRS-BAC Sln Glut_1 does not have cells in bed nucleus of the anterior commissure (BAC). This assertion is based on data from registration to a reference standard common co-ordinate framework and parcelation scheme.
 synonym: "0502 TRS-BAC Sln Glut_1" EXACT []
 synonym: "0590 TRS-BAC_Sln_Glut 1" EXACT [CCN20251031:CS20251031_SUPT_0590]
+is_a: CL:0020109
 is_a: CL:4300151 ! TRS-BAC Sln Glut glutamatergic neuron (Mmus)
 relationship: RO:0002100 UBERON:8440012 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebral nuclei (MBA:623)."}
 relationship: RO:0002215 GO:0061535 {comment="All 3 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -2547,8 +2517,7 @@ def: "A glutamatergic neuron of the Mus musculus brain. It is distinguished from
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. Warning: Despite its name, MEA-COA-BMA Ccdc42 Glut_3 does not have cells in cortical amygdalar area (COA). This assertion is based on data from registration to a reference standard common co-ordinate framework and parcelation scheme.
 synonym: "0507 MEA-COA-BMA Ccdc42 Glut_3" EXACT []
 synonym: "0559 MEA-COA-BMA_Ccdc42_Glut 2" EXACT [CCN20251031:CS20251031_SUPT_0559]
-is_a: CL:0000679
-is_a: CL:0012001
+is_a: CL:0020111
 relationship: RO:0002100 UBERON:0001893 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebrum (MBA:567)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 5 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -2567,8 +2536,7 @@ def: "A glutamatergic neuron of the Mus musculus brain. It is distinguished from
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. Warning: Despite its name, AVPV-MEPO-SFO Tbr1 Glut_5 does not have cells in median preoptic nucleus (MEPO), subfornical organ (SFO). This assertion is based on data from registration to a reference standard common co-ordinate framework and parcelation scheme.
 synonym: "0523 AVPV-MEPO-SFO Tbr1 Glut_5" EXACT []
 synonym: "0571 AVPV-MEPO-SFO_Gng8_Glut 3" EXACT [CCN20251031:CS20251031_SUPT_0571]
-is_a: CL:0000679
-is_a: CL:0012001
+is_a: CL:0020127
 relationship: RO:0002100 UBERON:0001890 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in forebrain (Cerebrum + Interbrain)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 3 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -2590,6 +2558,7 @@ def: "A glutamatergic neuron of the Mus musculus brain. It is distinguished from
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "0540 MEA-BST Otp Zic2 Glut_2" EXACT []
 synonym: "0554 MEA-BST_Otp:Sim1:Zic2_Glut 1" EXACT [CCN20251031:CS20251031_SUPT_0554]
+is_a: CL:0020109
 is_a: CL:4300161 ! MEA-BST Otp Zic2 Glut glutamatergic neuron (Mmus)
 relationship: RO:0002100 UBERON:8440012 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebral nuclei (MBA:623)."}
 relationship: RO:0002215 GO:0061535 {comment="All 3 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -2609,7 +2578,7 @@ def: "A glutamatergic neuron of the Mus musculus brain. It is distinguished from
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "0538 LHA_Pmch_Glut 1" EXACT [CCN20251031:CS20251031_SUPT_0538]
 synonym: "0572 LHA Pmch Glut_1" EXACT []
-is_a: CL:4023068
+is_a: CL:0020101
 relationship: RO:0002100 UBERON:0001898 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hypothalamus (MBA:1097)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 3 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -2629,7 +2598,7 @@ def: "A glutamatergic neuron of the Mus musculus brain. It is distinguished from
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. Warning: Despite its name, LHA-AHN-PVH Otp Trh Glut_2 does not have cells in anterior hypothalamic nucleus (AHN). This assertion is based on data from registration to a reference standard common co-ordinate framework and parcelation scheme.
 synonym: "0548 LHA-AHN-PVH_Otp:Trh_Glut 1" EXACT [CCN20251031:CS20251031_SUPT_0548]
 synonym: "0575 LHA-AHN-PVH Otp Trh Glut_2" EXACT []
-is_a: CL:4023068
+is_a: CL:0020101
 relationship: RO:0002100 UBERON:0001898 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hypothalamus (MBA:1097)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 4 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -2649,7 +2618,7 @@ def: "A glutamatergic neuron of the Mus musculus brain. It is distinguished from
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. Warning: Despite its name, LHA-AHN-PVH Otp Trh Glut_4 does not have cells in lateral hypothalamic area (LHA). This assertion is based on data from registration to a reference standard common co-ordinate framework and parcelation scheme.
 synonym: "0552 LHA-AHN-PVH_Otp:Trh_Glut 5" EXACT [CCN20251031:CS20251031_SUPT_0552]
 synonym: "0577 LHA-AHN-PVH Otp Trh Glut_4" EXACT []
-is_a: CL:4023068
+is_a: CL:0020101
 relationship: RO:0002100 UBERON:0001898 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hypothalamus (MBA:1097)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 2 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -2743,7 +2712,7 @@ def: "A glutamatergic neuron of the Mus musculus brain. It is distinguished from
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "0599 STN-PSTN Pitx2 Glut_2" EXACT []
 synonym: "0630 STN-PSTN_Pitx2:Foxa1_Glut 6" EXACT [CCN20251031:CS20251031_SUPT_0630]
-is_a: CL:4023068
+is_a: CL:0020101
 relationship: RO:0002100 UBERON:0001898 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hypothalamus (MBA:1097)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 6 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -2763,8 +2732,7 @@ def: "A glutamatergic neuron of the Mus musculus brain. It is distinguished from
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "0602 STN-PSTN Pitx2 Glut_5" EXACT []
 synonym: "0626 STN-PSTN_Pitx2:Foxa1_Glut 2" EXACT [CCN20251031:CS20251031_SUPT_0626]
-is_a: CL:0000679
-is_a: CL:0012001
+is_a: CL:0020127
 relationship: RO:0002100 UBERON:0001890 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in forebrain (Cerebrum + Interbrain)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 4 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -2804,7 +2772,7 @@ comment: Location is inferred from registration of MerFish Data. Registration ma
 synonym: "0629 MM-ant Foxb1 Glut_1" EXACT []
 synonym: "143 MM-ant Foxb1 Glut" EXACT []
 synonym: "172 MM-ant_Foxb1:Gpc6_Glut" EXACT [CCN20251031:CS20251031_SUBC_0172]
-is_a: CL:4023068
+is_a: CL:0020101
 relationship: RO:0002100 UBERON:0001898 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hypothalamus (MBA:1097)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 6 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -2884,8 +2852,7 @@ comment: Location is inferred from registration of MerFish Data. Registration ma
 synonym: "0641 AD Serpinb7 Glut_1" EXACT []
 synonym: "0672 AD_Serpinb7_Glut 1" EXACT [CCN20251031:CS20251031_SUPT_0672]
 synonym: "147 AD Serpinb7 Glut" EXACT []
-is_a: CL:0000679
-is_a: CL:0012001
+is_a: CL:4023068
 relationship: RO:0002100 UBERON:0002788 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Anterior group of the dorsal thalamus (MBA:239)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 2 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -2905,8 +2872,7 @@ def: "A glutamatergic neuron of the Mus musculus brain. It is distinguished from
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "0654 TH Prkcd Grin2c Glut_1" EXACT []
 synonym: "0692 TH_Prkcd:Grin2c:Hs3st1_Glut 7" EXACT [CCN20251031:CS20251031_SUPT_0692]
-is_a: CL:0000679
-is_a: CL:2000029
+is_a: CL:4023068
 relationship: RO:0002100 UBERON:0001897 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Thalamus (MBA:549)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 2 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -2928,8 +2894,7 @@ def: "A glutamatergic neuron of the Mus musculus brain. It is distinguished from
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "0656 TH Prkcd Grin2c Glut_3" EXACT []
 synonym: "0693 TH_Prkcd:Grin2c:Hs3st1_Glut 8" EXACT [CCN20251031:CS20251031_SUPT_0693]
-is_a: CL:0000679
-is_a: CL:2000029
+is_a: CL:4023068
 relationship: RO:0002100 UBERON:0001897 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Thalamus (MBA:549)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 2 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -2950,8 +2915,7 @@ def: "A glutamatergic neuron of the Mus musculus brain. It is distinguished from
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "0647 MRN-PAG_Nkx6-1:Sim1_Glut 1" EXACT [CCN20251031:CS20251031_SUPT_0647]
 synonym: "0683 MRN-PAG Nkx6-1 Glut_1" EXACT []
-is_a: CL:0000679
-is_a: CL:2000029
+is_a: CL:0020090
 relationship: RO:0002100 UBERON:0001891 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 3 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -2972,8 +2936,7 @@ def: "A glutamatergic neuron of the Mus musculus brain. It is distinguished from
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "0691 PAG-SC Neurod2 Meis2 Glut_2" EXACT []
 synonym: "0727 PAG-SC_Neurod2:Barhl1:Nfib_Glut 2" EXACT [CCN20251031:CS20251031_SUPT_0727]
-is_a: CL:0000679
-is_a: CL:2000029
+is_a: CL:0020090
 relationship: RO:0002100 UBERON:0001891 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain, motor related (MBA:323)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 4 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -2992,8 +2955,7 @@ def: "A glutamatergic neuron of the Mus musculus brain. It is distinguished from
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "0693 PAG-SC Neurod2 Meis2 Glut_4" EXACT []
 synonym: "0728 PAG-SC_Neurod2:Barhl1:Nfib_Glut 3" EXACT [CCN20251031:CS20251031_SUPT_0728]
-is_a: CL:0000679
-is_a: CL:2000029
+is_a: CL:0020090
 relationship: RO:0002100 UBERON:0001891 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain, motor related (MBA:323)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 7 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -3013,8 +2975,7 @@ comment: Rationale for assigning this type to reference data: Assigned by automa
 synonym: "0702 APN C1ql2 Glut_1" EXACT []
 synonym: "0718 APN-MRN_C1ql2:Esrrb_Glut 1" EXACT [CCN20251031:CS20251031_SUPT_0718]
 synonym: "163 APN C1ql2 Glut" EXACT []
-is_a: CL:0000679
-is_a: CL:2000029
+is_a: CL:0020090
 relationship: RO:0002100 UBERON:0001891 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 7 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -3053,6 +3014,7 @@ def: "A glutamatergic neuron of the Mus musculus brain. It is distinguished from
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "0738 PAG Pou4f1 Ebf2 Glut_2" EXACT []
 synonym: "0745 PAG_Pou4f1:Barhl1:Adamtsl1_Glut 3" EXACT [CCN20251031:CS20251031_SUPT_0745]
+is_a: CL:0020099
 is_a: CL:4300212 ! PAG Pou4f1 Ebf2 Glut glutamatergic neuron (Mmus)
 relationship: RO:0002100 UBERON:0003040 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Periaqueductal gray (MBA:795)."}
 relationship: RO:0002215 GO:0061535 {comment="All 9 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -3070,6 +3032,7 @@ def: "A glutamatergic neuron of the Mus musculus brain. It is distinguished from
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "0740 PAG Pou4f1 Ebf2 Glut_4" EXACT []
 synonym: "0744 PAG_Pou4f1:Barhl1:Adamtsl1_Glut 2" EXACT [CCN20251031:CS20251031_SUPT_0744]
+is_a: CL:0020099
 is_a: CL:4300212 ! PAG Pou4f1 Ebf2 Glut glutamatergic neuron (Mmus)
 relationship: RO:0002100 UBERON:0003040 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Periaqueductal gray (MBA:795)."}
 relationship: RO:0002215 GO:0061535 {comment="All 8 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -3087,8 +3050,7 @@ def: "A glutamatergic neuron of the Mus musculus brain. It is distinguished from
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "0758 SC Bnc2 Glut_3" EXACT []
 synonym: "0780 SC_Bnc2:Zeb2_Glut 2" EXACT [CCN20251031:CS20251031_SUPT_0780]
-is_a: CL:0000679
-is_a: CL:2000029
+is_a: CL:0020090
 relationship: RO:0002100 UBERON:0001891 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 3 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -3110,8 +3072,7 @@ def: "A glutamatergic neuron of the Mus musculus brain. It is distinguished from
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "0763 SCig Foxb1 Glut_4" EXACT []
 synonym: "0775 SCig_Foxb1:Zeb2_Glut 5" EXACT [CCN20251031:CS20251031_SUPT_0775]
-is_a: CL:0000679
-is_a: CL:2000029
+is_a: CL:0020090
 relationship: RO:0002100 UBERON:0001891 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain, motor related (MBA:323)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 7 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -3133,8 +3094,7 @@ comment: Rationale for assigning this type to reference data: Assigned by automa
 synonym: "0764 SCig-an-PPT Foxb1 Glut_1" EXACT []
 synonym: "0770 SCig-an-PPT_Foxb1:Nr2f2_Glut 2" EXACT [CCN20251031:CS20251031_SUPT_0770]
 synonym: "177 SCig-an-PPT Foxb1 Glut" EXACT []
-is_a: CL:0000679
-is_a: CL:2000029
+is_a: CL:0020090
 relationship: RO:0002100 UBERON:0001891 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 11 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -3158,8 +3118,7 @@ comment: Rationale for assigning this type to reference data: Assigned by automa
 synonym: "0765 SCig Foxb1 Otx2 Glut_1" EXACT []
 synonym: "0768 SCig_Foxb1:Otx2_Glut 1" EXACT [CCN20251031:CS20251031_SUPT_0768]
 synonym: "178 SCig Foxb1 Otx2 Glut" EXACT []
-is_a: CL:0000679
-is_a: CL:2000029
+is_a: CL:0020090
 relationship: RO:0002100 UBERON:0001891 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 4 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -3182,8 +3141,7 @@ def: "A glutamatergic neuron of the Mus musculus brain. It is distinguished from
 comment: Rationale for assigning this type to reference data: Assigned by automated classification (ELK) of a definition built from soma location Midbrain (MB; ≥80% of grey-matter cells in both the Yao 2023 and Zhuang 2023 MERFISH atlases) and neurotransmitter glutamate (all clusters) against CL 2026-06-08. Basis: NT. Other inferred CL parents: central nervous system neuron. [WMBO CL promotion round 1, 2026-10-13] Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. {xref="https://doi.org/10.1038/s41586-023-06812-z", xref="https://doi.org/10.1038/s41586-023-06808-9"}
 synonym: "0776 CUN-PPN Evx2 Meis2 Glut_1" EXACT []
 synonym: "0932 CUN-PPN_Evx2:Bnc2_Glut 3" EXACT [CCN20251031:CS20251031_SUPT_0932]
-is_a: CL:0000679
-is_a: CL:2000029
+is_a: CL:0020090
 relationship: RO:0002100 UBERON:0001891 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 16 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -3203,8 +3161,7 @@ def: "A glutamatergic neuron of the Mus musculus brain. It is distinguished from
 comment: Rationale for assigning this type to reference data: Assigned by automated classification (ELK) of a definition built from soma location Midbrain (MB; ≥80% of grey-matter cells in both the Yao 2023 and Zhuang 2023 MERFISH atlases) and neurotransmitter glutamate (all clusters) against CL 2026-06-08. Basis: NT. Other inferred CL parents: central nervous system neuron. [WMBO CL promotion round 1, 2026-10-13] Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. {xref="https://doi.org/10.1038/s41586-023-06812-z", xref="https://doi.org/10.1038/s41586-023-06808-9"}
 synonym: "0780 CUN-PPN Evx2 Meis2 Glut_5" EXACT []
 synonym: "0931 CUN-PPN_Evx2:Bnc2_Glut 2" EXACT [CCN20251031:CS20251031_SUPT_0931]
-is_a: CL:0000679
-is_a: CL:2000029
+is_a: CL:0020090
 relationship: RO:0002100 UBERON:0001891 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 3 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -3224,8 +3181,7 @@ comment: Rationale for assigning this type to reference data: Assigned by automa
 synonym: "0776 SCig_Pou4f2:Etv1_Glut 1" EXACT [CCN20251031:CS20251031_SUPT_0776]
 synonym: "0783 SCig Tfap2b Chrnb3 Glut_1" EXACT []
 synonym: "185 SCig Tfap2b Chrnb3 Glut" EXACT []
-is_a: CL:0000679
-is_a: CL:2000029
+is_a: CL:0020090
 relationship: RO:0002100 UBERON:0001891 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 4 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -3247,8 +3203,7 @@ comment: Rationale for assigning this type to reference data: Assigned by automa
 synonym: "0784 SCop_Sln_Glut 1" EXACT [CCN20251031:CS20251031_SUPT_0784]
 synonym: "0788 SCop Sln Glut_1" EXACT []
 synonym: "188 SCop Sln Glut" EXACT []
-is_a: CL:0000679
-is_a: CL:2000029
+is_a: CL:0020090
 relationship: RO:0002100 UBERON:0001891 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 11 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -3270,8 +3225,7 @@ def: "A GABAergic neuron of the Mus musculus brain. It is distinguished from oth
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. Warning: Despite its name, PAG-ND-PCG Onecut1 Gaba_3 does not have cells in periaqueductal gray (PAG), nucleus of darkschewitsch (ND). This assertion is based on data from registration to a reference standard common co-ordinate framework and parcelation scheme.
 synonym: "0820 PAG-ND-PCG Onecut1 Gaba_3" EXACT []
 synonym: "0884 PAG-ND-PCG_Onecut1_Gaba 1" EXACT [CCN20251031:CS20251031_SUPT_0884]
-is_a: CL:0000617
-is_a: CL:2000029
+is_a: CL:0020093
 relationship: RO:0002100 UBERON:0000988 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons (MBA:771)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="All 3 clusters in this cell set with a neurotransmitter assignment are GABAergic."}
@@ -3334,8 +3288,7 @@ def: "A GABAergic neuron of the Mus musculus brain. It is distinguished from oth
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. Warning: Despite its name, SCm-PAG Cdh23 Gaba_2 does not have cells in periaqueductal gray (PAG). This assertion is based on data from registration to a reference standard common co-ordinate framework and parcelation scheme.
 synonym: "0836 SCm-PAG_Tfap2b:Cdh23_Gaba 1" EXACT [CCN20251031:CS20251031_SUPT_0836]
 synonym: "0849 SCm-PAG Cdh23 Gaba_2" EXACT []
-is_a: CL:0000617
-is_a: CL:2000029
+is_a: CL:0020091
 relationship: RO:0002100 UBERON:0001891 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain, motor related (MBA:323)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="All 4 clusters in this cell set with a neurotransmitter assignment are GABAergic."}
@@ -3357,8 +3310,7 @@ def: "A GABAergic neuron of the Mus musculus brain. It is distinguished from oth
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "0852 SCs Dmbx1 Gaba_1" EXACT []
 synonym: "0856 SCs_Dmbx1:Pax7_Gaba 1" EXACT [CCN20251031:CS20251031_SUPT_0856]
-is_a: CL:0000617
-is_a: CL:2000029
+is_a: CL:0020091
 relationship: RO:0002100 UBERON:0001891 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="All 7 clusters in this cell set with a neurotransmitter assignment are GABAergic."}
@@ -3378,8 +3330,7 @@ def: "A GABAergic neuron of the Mus musculus brain. It is distinguished from oth
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "0855 SCs Dmbx1 Gaba_4" EXACT []
 synonym: "0857 SCs_Dmbx1:Pax7_Gaba 2" EXACT [CCN20251031:CS20251031_SUPT_0857]
-is_a: CL:0000617
-is_a: CL:2000029
+is_a: CL:0020091
 relationship: RO:0002100 UBERON:0001891 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="All 6 clusters in this cell set with a neurotransmitter assignment are GABAergic."}
@@ -3462,8 +3413,7 @@ def: "A GABAergic neuron of the Mus musculus brain. It is distinguished from oth
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "0848 SC_Gli3:Tnnt1_Gaba 1" EXACT [CCN20251031:CS20251031_SUPT_0848]
 synonym: "0867 SC Tnnt1 Gli3 Gaba_1" EXACT []
-is_a: CL:0000617
-is_a: CL:2000029
+is_a: CL:0020091
 relationship: RO:0002100 UBERON:0001891 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="All 2 clusters in this cell set with a neurotransmitter assignment are GABAergic."}
@@ -3484,8 +3434,7 @@ def: "A GABAergic neuron of the Mus musculus brain. It is distinguished from oth
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. Warning: This type SCs Lef1 Gli3 Gaba_1 does not have cells in any of the regions it is named for superior colliculus, sensory related (SCs). The name merely indicates that it is a subtype of more general transcriptomic type that does. This assertion is based on data from registration to a reference standard common co-ordinate framework and parcelation scheme.
 synonym: "0840 SCs_Lef1:Gli3_Gaba 1" EXACT [CCN20251031:CS20251031_SUPT_0840]
 synonym: "0869 SCs Lef1 Gli3 Gaba_1" EXACT []
-is_a: CL:0000617
-is_a: CL:2000029
+is_a: CL:0020091
 relationship: RO:0002100 UBERON:0001891 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Superior colliculus, motor related (MBA:294)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="All 4 clusters in this cell set with a neurotransmitter assignment are GABAergic."}
@@ -3691,8 +3640,7 @@ def: "A glutamatergic neuron of the Mus musculus brain. It is distinguished from
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "0932 PRNc-NI-SG-RPO Vsx2 Nr4a2 Glut_2" EXACT []
 synonym: "0955 PRNc-NI-SG-RPO_Vsx2:Nr4a3:Zfhx4_Glut 3" EXACT [CCN20251031:CS20251031_SUPT_0955]
-is_a: CL:0000679
-is_a: CL:2000029
+is_a: CL:0020092
 relationship: RO:0002100 UBERON:0000988 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons (MBA:771)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 6 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -3712,8 +3660,7 @@ def: "A glutamatergic neuron of the Mus musculus brain. It is distinguished from
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. Warning: Despite its name, PRNc-NI-SG-RPO Vsx2 Nr4a2 Glut_3 does not have cells in supragenual nucleus (SG), nucleus raphe pontis (RPO). This assertion is based on data from registration to a reference standard common co-ordinate framework and parcelation scheme.
 synonym: "0933 PRNc-NI-SG-RPO Vsx2 Nr4a2 Glut_3" EXACT []
 synonym: "0956 PRNc-NI-SG-RPO_Vsx2:Nr4a3:Zfhx4_Glut 4" EXACT [CCN20251031:CS20251031_SUPT_0956]
-is_a: CL:0000679
-is_a: CL:2000029
+is_a: CL:0020092
 relationship: RO:0002100 UBERON:0000988 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons (MBA:771)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 2 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -3734,8 +3681,7 @@ def: "A glutamatergic neuron of the Mus musculus brain. It is distinguished from
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "0939 PSV Pvalb Lhx2 Glut_1" EXACT []
 synonym: "0973 PSV_Vmn1r196_Glut 1" EXACT [CCN20251031:CS20251031_SUPT_0973]
-is_a: CL:0000679
-is_a: CL:2000029
+is_a: CL:0020092
 relationship: RO:0002100 UBERON:0000988 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons (MBA:771)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 3 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -3755,8 +3701,8 @@ def: "A glutamatergic neuron of the Mus musculus brain. It is distinguished from
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. Warning: This type LDT Vsx2 Nkx6-1 Nfib Glut_1 does not have cells in any of the regions it is named for laterodorsal tegmental nucleus (LDT). The name merely indicates that it is a subtype of more general transcriptomic type that does. This assertion is based on data from registration to a reference standard common co-ordinate framework and parcelation scheme.
 synonym: "0948 LDT Vsx2 Nkx6-1 Nfib Glut_1" EXACT []
 synonym: "0948 LDT-PCG_Vsx2:Pax5_Glut 2" EXACT [CCN20251031:CS20251031_SUPT_0948]
-is_a: CL:0000679
-is_a: CL:2000029
+is_a: CL:0020090
+is_a: CL:0020099
 relationship: RO:0002100 UBERON:0003040 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Periaqueductal gray (MBA:795)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 8 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -3774,8 +3720,7 @@ def: "A glutamatergic neuron of the Mus musculus brain. It is distinguished from
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. Warning: Despite its name, PRP-NI-PRNc-GRN Otp Glut_2 does not have cells in nucleus incertus (NI). This assertion is based on data from registration to a reference standard common co-ordinate framework and parcelation scheme.
 synonym: "0956 PRP-NI-PRNc-GRN Otp Glut_2" EXACT []
 synonym: "1071 GRN_Otp:Tcf7l2:C1ql4_Glut 1" EXACT [CCN20251031:CS20251031_SUPT_1071]
-is_a: CL:0000679
-is_a: CL:2000029
+is_a: CL:0020097
 relationship: RO:0002100 UBERON:0002028 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hindbrain (MBA:1065)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 6 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -3799,8 +3744,7 @@ comment: Rationale for assigning this type to reference data: Assigned by automa
 synonym: "0980 MV-SPIV Slc6a2 Glut_1" EXACT []
 synonym: "1057 MV-SPIV_Barhl1:Slc6a2_Glut 1" EXACT [CCN20251031:CS20251031_SUPT_1057]
 synonym: "244 MV-SPIV Slc6a2 Glut" EXACT []
-is_a: CL:0000679
-is_a: CL:2000029
+is_a: CL:0020095
 relationship: RO:0002100 UBERON:0001896 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medulla (MBA:354)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 6 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -3822,8 +3766,7 @@ def: "A neuron of the Mus musculus brain. It is distinguished from other cells i
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. Warning: This type NTS Dbh Glut_1 does not have cells in any of the regions it is named for nucleus of the solitary tract (NTS). The name merely indicates that it is a subtype of more general transcriptomic type that does. This assertion is based on data from registration to a reference standard common co-ordinate framework and parcelation scheme.
 synonym: "0999 NTS_Dbh:Etv1_Glut-NE 3" EXACT [CCN20251031:CS20251031_SUPT_0999]
 synonym: "1004 NTS Dbh Glut_1" EXACT []
-is_a: CL:0000679
-is_a: CL:2000029
+is_a: CL:0020097
 relationship: RO:0002100 UBERON:0002028 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in hindbrain (Hindbrain + Cerebellum)."}
 relationship: RO:0002162 NCBITaxon:10090
 property_value: CLM:0010001 MBA:145 {CLM:0010002="0.23", evidence="EFO:0008992", comment="Location assignment based on MERFISH cells registered to the CCF (Yao et al. 2023; Zhang et al. 2023)."}
@@ -3862,8 +3805,7 @@ comment: Rationale for assigning this type to reference data: Assigned by automa
 synonym: "1003 SPVO_Tlx3:Mafa:Fn1_Glut 1" EXACT [CCN20251031:CS20251031_SUPT_1003]
 synonym: "1017 SPVO Mafa Meis2 Glut_1" EXACT []
 synonym: "255 SPVO Mafa Meis2 Glut" EXACT []
-is_a: CL:0000679
-is_a: CL:2000029
+is_a: CL:0020095
 relationship: RO:0002100 UBERON:0001896 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medulla (MBA:354)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="All 2 clusters in this cell set with a neurotransmitter assignment are glutamatergic."}
@@ -3884,6 +3826,7 @@ def: "A GABAergic neuron of the Mus musculus brain. It is distinguished from oth
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. Warning: Despite its name, CS-RPO Meis2 Gaba_1 does not have cells in nucleus raphe pontis (RPO). This assertion is based on data from registration to a reference standard common co-ordinate framework and parcelation scheme.
 synonym: "1031 CS-RPO Meis2 Gaba_1" EXACT []
 synonym: "1156 CS-RPO_Otp:Meis2_Gaba 5" EXACT [CCN20251031:CS20251031_SUPT_1156]
+is_a: CL:0020093
 is_a: CL:4300303 ! CS-RPO Meis2 Gaba GABAergic neuron (Mmus)
 relationship: RO:0002100 UBERON:0000988 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons (MBA:771)."}
 relationship: RO:0002215 GO:0061534 {comment="All 6 clusters in this cell set with a neurotransmitter assignment are GABAergic."}
@@ -3903,6 +3846,7 @@ def: "A GABAergic neuron of the Mus musculus brain. It is distinguished from oth
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "1035 CS-RPO Meis2 Gaba_5" EXACT []
 synonym: "1157 CS-RPO_Otp:Meis2_Gaba 6" EXACT [CCN20251031:CS20251031_SUPT_1157]
+is_a: CL:0020093
 is_a: CL:4300303 ! CS-RPO Meis2 Gaba GABAergic neuron (Mmus)
 relationship: RO:0002100 UBERON:0000988 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons (MBA:771)."}
 relationship: RO:0002215 GO:0061534 {comment="All 5 clusters in this cell set with a neurotransmitter assignment are GABAergic."}
@@ -3922,8 +3866,7 @@ def: "A GABAergic neuron of the Mus musculus brain. It is distinguished from oth
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. Warning: Despite its name, PDTg-PCG Pax6 Gaba_1 does not have cells in posterodorsal tegmental nucleus (PDTg). This assertion is based on data from registration to a reference standard common co-ordinate framework and parcelation scheme.
 synonym: "0899 PCG_Pax6:Nfix_Gaba 1" EXACT [CCN20251031:CS20251031_SUPT_0899]
 synonym: "1061 PDTg-PCG Pax6 Gaba_1" EXACT []
-is_a: CL:0000617
-is_a: CL:2000029
+is_a: CL:0020100
 relationship: RO:0002100 UBERON:0002298 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="All 4 clusters in this cell set with a neurotransmitter assignment are GABAergic."}
@@ -3943,8 +3886,7 @@ comment: Rationale for assigning this type to reference data: Assigned by automa
 synonym: "1065 PDTg Otp Shroom3 Gaba_1" EXACT []
 synonym: "1117 PDTg_Otp:Shroom3_Gaba 1" EXACT [CCN20251031:CS20251031_SUPT_1117]
 synonym: "274 PDTg Otp Shroom3 Gaba" EXACT []
-is_a: CL:0000617
-is_a: CL:2000029
+is_a: CL:0020093
 relationship: RO:0002100 UBERON:0000988 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons, motor related (MBA:987)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="All 2 clusters in this cell set with a neurotransmitter assignment are GABAergic."}
@@ -3965,8 +3907,7 @@ comment: Rationale for assigning this type to reference data: Assigned by automa
 synonym: "1066 PDTg Otp Olig3 Gaba_1" EXACT []
 synonym: "1136 PDTg_Otp:Olig3_Gaba 1" EXACT [CCN20251031:CS20251031_SUPT_1136]
 synonym: "275 PDTg Otp Olig3 Gaba" EXACT []
-is_a: CL:0000617
-is_a: CL:2000029
+is_a: CL:0020093
 relationship: RO:0002100 UBERON:0000988 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons, motor related (MBA:987)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="All 3 clusters in this cell set with a neurotransmitter assignment are GABAergic."}
@@ -4006,6 +3947,7 @@ def: "A GABAergic neuron of the Mus musculus brain. It is distinguished from oth
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. Warning: Despite its name, DTN-LDT-IPN Otp Pax3 Gaba_4 does not have cells in interpeduncular nucleus (IPN). This assertion is based on data from registration to a reference standard common co-ordinate framework and parcelation scheme.
 synonym: "1072 DTN-LDT-IPN Otp Pax3 Gaba_4" EXACT []
 synonym: "1127 DTN-LDT-IPN_Otp:Vmn1r209_Gaba 5" EXACT [CCN20251031:CS20251031_SUPT_1127]
+is_a: CL:0020093
 is_a: CL:4300317 ! DTN-LDT-IPN Otp Pax3 Gaba GABAergic neuron (Mmus)
 relationship: RO:0002100 UBERON:0000988 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons (MBA:771)."}
 relationship: RO:0002215 GO:0061534 {comment="All 5 clusters in this cell set with a neurotransmitter assignment are GABAergic."}
@@ -4026,6 +3968,7 @@ def: "A GABAergic neuron of the Mus musculus brain. It is distinguished from oth
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. Warning: Despite its name, DTN-LDT-IPN Otp Pax3 Gaba_5 does not have cells in dorsal tegmental nucleus (DTN), laterodorsal tegmental nucleus (LDT). This assertion is based on data from registration to a reference standard common co-ordinate framework and parcelation scheme.
 synonym: "1073 DTN-LDT-IPN Otp Pax3 Gaba_5" EXACT []
 synonym: "1124 DTN-LDT-IPN_Otp:Vmn1r209_Gaba 2" EXACT [CCN20251031:CS20251031_SUPT_1124]
+is_a: CL:0020091
 is_a: CL:4300317 ! DTN-LDT-IPN Otp Pax3 Gaba GABAergic neuron (Mmus)
 relationship: RO:0002100 UBERON:0001891 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313)."}
 relationship: RO:0002215 GO:0061534 {comment="All 5 clusters in this cell set with a neurotransmitter assignment are GABAergic."}
@@ -4046,8 +3989,7 @@ comment: Rationale for assigning this type to reference data: Assigned by automa
 synonym: "1088 GRN-IRN-MDRNd Ikzf1 Gly-Gaba_1" EXACT []
 synonym: "1279 GRN-IRN-MDRNd_Ikzf1:Prrxl1_Gly-Gaba 1" EXACT [CCN20251031:CS20251031_SUPT_1279]
 synonym: "284 GRN-IRN-MDRNd Ikzf1 Gly-Gaba" EXACT []
-is_a: CL:0008059
-is_a: CL:2000029
+is_a: CL:0020096
 relationship: RO:0002100 UBERON:0001896 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medulla (MBA:354)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="All 3 clusters in this cell set with a neurotransmitter assignment are GABAergic and glycinergic."}
@@ -4071,6 +4013,7 @@ def: "A GABAergic neuron of the Mus musculus brain. It is distinguished from oth
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. Warning: Despite its name, MV-SPIV-PRP Dmbx1 Gly-Gaba_1 does not have cells in nucleus prepositus (PRP). This assertion is based on data from registration to a reference standard common co-ordinate framework and parcelation scheme.
 synonym: "1099 MV-SPIV-PRP Dmbx1 Gly-Gaba_1" EXACT []
 synonym: "1213 MV-SPIV-PRP_Dmbx1_Gly-Gaba 1" EXACT [CCN20251031:CS20251031_SUPT_1213]
+is_a: CL:0020100
 is_a: CL:4300327 ! MV-SPIV-PRP Dmbx1 Gly-Gaba GABAergic neuron (Mmus)
 relationship: RO:0002100 UBERON:0001896 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medulla (MBA:354)."}
 relationship: RO:0002215 GO:0061534 {comment="All 11 clusters in this cell set with a neurotransmitter assignment are GABAergic."}
@@ -4092,8 +4035,7 @@ comment: Rationale for assigning this type to reference data: Assigned by automa
 synonym: "1102 MDRN Hoxb5 Ebf2 Gly-Gaba_1" EXACT []
 synonym: "1212 MDRN_Hoxb5:Irx3:Ebf2_Gly-Gaba 1" EXACT [CCN20251031:CS20251031_SUPT_1212]
 synonym: "288 MDRN Hoxb5 Ebf2 Gly-Gaba" EXACT []
-is_a: CL:0008059
-is_a: CL:2000029
+is_a: CL:0020096
 relationship: RO:0002100 UBERON:0001896 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medulla (MBA:354)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="All 6 clusters in this cell set with a neurotransmitter assignment are GABAergic and glycinergic."}
@@ -4116,8 +4058,7 @@ comment: Rationale for assigning this type to reference data: Assigned by automa
 synonym: "1104 MY Prox1 Lmo7 Gly-Gaba_1" EXACT []
 synonym: "1204 PARN-PGRNI_Neurod2:Cyp26b1_Gly-Gaba 1" EXACT [CCN20251031:CS20251031_SUPT_1204]
 synonym: "290 MY Prox1 Lmo7 Gly-Gaba" EXACT []
-is_a: CL:0008059
-is_a: CL:2000029
+is_a: CL:0020098
 relationship: RO:0002100 UBERON:0002028 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hindbrain (MBA:1065)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="All 6 clusters in this cell set with a neurotransmitter assignment are GABAergic and glycinergic."}
@@ -4160,8 +4101,7 @@ def: "A GABA-Gly neuron of the Mus musculus brain. It is distinguished from othe
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "1107 MV Nkx6-1 Gly-Gaba_1" EXACT []
 synonym: "1210 MV_Nkx6-1_Gly-Gaba 1" EXACT [CCN20251031:CS20251031_SUPT_1210]
-is_a: CL:0008059
-is_a: CL:2000029
+is_a: CL:0020096
 relationship: RO:0002100 UBERON:0001722 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medial vestibular nucleus (MBA:202)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="All 6 clusters in this cell set with a neurotransmitter assignment are GABAergic and glycinergic."}
@@ -4203,8 +4143,8 @@ comment: Rationale for assigning this type to reference data: Assigned by automa
 synonym: "1116 RPA Pax6 Hoxb5 Gly-Gaba_1" EXACT []
 synonym: "1254 RPA_Gata3:Pax6:Hoxb5_Gly-Gaba 1" EXACT [CCN20251031:CS20251031_SUPT_1254]
 synonym: "296 RPA Pax6 Hoxb5 Gly-Gaba" EXACT []
-is_a: CL:0000617
-is_a: CL:2000029
+is_a: CL:0020100
+is_a: CL:0020134
 relationship: RO:0002100 UBERON:0001896 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medulla (MBA:354)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="All 7 clusters in this cell set with a neurotransmitter assignment are GABAergic."}
@@ -4224,8 +4164,7 @@ def: "A GABA-Gly neuron of the Mus musculus brain. It is distinguished from othe
 comment: Rationale for assigning this type to reference data: Assigned by automated classification (ELK) of a definition built from soma location Medulla (MY; ≥80% of grey-matter cells in both the Yao 2023 and Zhuang 2023 MERFISH atlases) and neurotransmitter GABA + glycine (all clusters) against CL 2026-06-08. Basis: NT. Other inferred CL parents: central nervous system neuron. [WMBO CL promotion round 1, 2026-10-13] Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. {xref="https://doi.org/10.1038/s41586-023-06812-z", xref="https://doi.org/10.1038/s41586-023-06808-9"}
 synonym: "1133 NTS-PARN Neurod2 Gly-Gaba_4" EXACT []
 synonym: "1183 NTS-PARN_Neurod2_Gly-Gaba 3" EXACT [CCN20251031:CS20251031_SUPT_1183]
-is_a: CL:0008059
-is_a: CL:2000029
+is_a: CL:0020096
 relationship: RO:0002100 UBERON:0001896 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medulla (MBA:354)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="All 8 clusters in this cell set with a neurotransmitter assignment are GABAergic and glycinergic."}
@@ -4349,7 +4288,7 @@ synonym: "1148 CBX Golgi Gly-Gaba_1" EXACT []
 synonym: "1292 CBX_Golgi_Gly-Gaba 2" EXACT [CCN20251031:CS20251031_SUPT_1292]
 synonym: "310 CBX Golgi Gly-Gaba" EXACT []
 is_a: CL:0000119
-is_a: CL:0008059
+is_a: CL:0020098
 is_a: CL:4300028 ! cerebellum-like structure GABAergic neuron (Mmus)
 relationship: RO:0002100 UBERON:0002037 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebellum (MBA:512)."}
 relationship: RO:0002215 GO:0061534 {comment="All 2 clusters in this cell set with a neurotransmitter assignment are GABAergic and glycinergic."}
@@ -4890,6 +4829,7 @@ comment: Location is inferred from registration of MerFish Data. Registration ma
 synonym: "0054 L2 IT ENT-po Glut_4" EXACT []
 synonym: "0056 L2-IT-ENT-po_Glut 3" EXACT [CCN20251031:CS20251031_SUPT_0056]
 synonym: "0191 L2 IT ENT-po Glut_4" EXACT []
+is_a: CL:0020115
 is_a: CL:4030060
 relationship: RO:0002100 UBERON:0018262 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Entorhinal area, medial part, dorsal zone (MBA:926)."}
 relationship: RO:0002162 NCBITaxon:10090
@@ -5015,8 +4955,8 @@ synonym: "0099 L5 PPP Glut_1" EXACT []
 synonym: "024 L5 PPP Glut" EXACT []
 synonym: "0398 L5 PPP Glut_1" EXACT []
 synonym: "0400 L5-PPP_Glut 1" EXACT [CCN20251031:CS20251031_CLUS_0400]
-is_a: CL:0000679
 is_a: CL:0002608 {evidence="http://identifiers.org/ncbigene/140919", evidence="http://identifiers.org/ncbigene/72961"}
+is_a: CL:0020105
 relationship: RO:0002100 UBERON:0022230 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Retrohippocampal region (MBA:822)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="Inferred to be glutamate secretion, neurotransmission based on expression of Slc17a7, Slc17a6"}
@@ -5061,8 +5001,7 @@ synonym: "0102 NLOT Rho Glut_1" EXACT []
 synonym: "026 NLOT Rho Glut" EXACT []
 synonym: "0402 NLOT Rho Glut_1" EXACT []
 synonym: "0518 NLOT_Sim1_Glut 1" EXACT [CCN20251031:CS20251031_CLUS_0518]
-is_a: CL:0000679
-is_a: CL:0010012
+is_a: CL:0020103
 relationship: RO:0002100 UBERON:0001893 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebrum (MBA:567)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="Inferred to be glutamate secretion, neurotransmission based on expression of Slc17a7, Slc17a6"}
@@ -5127,6 +5066,7 @@ comment: Location is inferred from registration of MerFish Data. Registration ma
 synonym: "0133 OB Eomes Ms4a15 Glut_4" EXACT []
 synonym: "0494 OB Eomes Ms4a15 Glut_4" EXACT []
 synonym: "0623 OB_Eomes:Sall1_Glut 2" EXACT [CCN20251031:CS20251031_CLUS_0623]
+is_a: CL:0020113
 is_a: CL:4300075 ! OB Eomes Ms4a15 Glut cerebral cortex neuron (Mmus)
 relationship: RO:0002100 UBERON:0009951 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Main olfactory bulb (MBA:507)."}
 relationship: RO:0002215 GO:0061535 {comment="Inferred to be glutamate secretion, neurotransmission based on expression of Slc17a7"}
@@ -5148,7 +5088,7 @@ def: "A Cajal-Retzius cell of the Mus musculus brain. It is distinguished from o
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "0497 HPF CR Glut_1" EXACT []
 synonym: "0637 HPF_CR_Glut 1" EXACT [CCN20251031:CS20251031_CLUS_0637]
-is_a: CL:0002608
+is_a: CL:0020105
 is_a: CL:4300565 ! HPF CR Glut Cajal-Retzius cell (Mmus)
 relationship: RO:0002100 UBERON:0002421 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hippocampal formation (MBA:1089)."}
 relationship: RO:0002215 GO:0061535 {comment="Inferred to be glutamate secretion, neurotransmission based on expression of Slc17a6"}
@@ -5191,8 +5131,8 @@ comment: Location is inferred from registration of MerFish Data. Registration ma
 synonym: "0145 OB Meis2 Thsd7b Gaba_3" EXACT []
 synonym: "0525 OB Meis2 Thsd7b Gaba_3" EXACT []
 synonym: "0684 OB_Meis2:Thsd7b_Gaba 7" EXACT [CCN20251031:CS20251031_CLUS_0684]
-is_a: CL:0000617
-is_a: CL:0010012
+is_a: CL:0020106
+is_a: CL:0020114
 relationship: RO:0002100 UBERON:0005366 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Olfactory areas (MBA:698)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="Inferred to be gamma-aminobutyric acid secretion, neurotransmission based on expression of Gad1, Gad2, Slc32a1"}
@@ -5216,8 +5156,8 @@ comment: Location is inferred from registration of MerFish Data. Registration ma
 synonym: "0146 OB Meis2 Thsd7b Gaba_4" EXACT []
 synonym: "0526 OB Meis2 Thsd7b Gaba_4" EXACT []
 synonym: "0682 OB_Meis2:Thsd7b_Gaba 5" EXACT [CCN20251031:CS20251031_CLUS_0682]
-is_a: CL:0000617
-is_a: CL:0010012
+is_a: CL:0020106
+is_a: CL:0020114
 relationship: RO:0002100 UBERON:0005366 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Olfactory areas (MBA:698)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="Inferred to be gamma-aminobutyric acid secretion, neurotransmission based on expression of Gad1, Gad2, Slc32a1"}
@@ -5238,6 +5178,7 @@ def: "A cerebral cortex neuron of the Mus musculus brain. It is distinguished fr
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "0527 OB Meis2 Thsd7b Gaba_5" EXACT []
 synonym: "0681 OB_Meis2:Thsd7b_Gaba 4" EXACT [CCN20251031:CS20251031_CLUS_0681]
+is_a: CL:0020112
 is_a: CL:4300577 ! OB Meis2 Thsd7b Gaba_5 cerebral cortex neuron (Mmus)
 relationship: RO:0002100 UBERON:0009951 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Main olfactory bulb (MBA:507)."}
 relationship: RO:0002215 GO:0061534 {comment="Inferred to be gamma-aminobutyric acid secretion, neurotransmission based on expression of Gad1, Gad2, Slc32a1"}
@@ -5301,7 +5242,10 @@ synonym: "0164 OB Dopa-Gaba_3" EXACT []
 synonym: "0591 OB Dopa-Gaba_3" EXACT []
 synonym: "0791 OB-out_Trh_Dopa-Gaba 3" EXACT [CCN20251031:CS20251031_CLUS_0791]
 is_a: CL:0008060
-is_a: CL:0010012
+is_a: CL:0020103
+is_a: CL:0020106
+is_a: CL:0020114
+is_a: CL:0020115
 relationship: RO:0002100 UBERON:0005366 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Olfactory areas (MBA:698)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="Inferred to be glutamate secretion, neurotransmission, gamma-aminobutyric acid secretion, neurotransmission based on expression of Gad1, Gad2, Slc32a1, Slc17a8"}
@@ -5364,7 +5308,7 @@ comment: Location is inferred from registration of MerFish Data. Registration ma
 synonym: "0262 OT D3 Folh1 Gaba_1" EXACT []
 synonym: "0311 OT_D3:Folh1_Gaba 1" EXACT [CCN20251031:CS20251031_SUPT_0311]
 synonym: "0939 OT D3 Folh1 Gaba_1" EXACT []
-is_a: CL:4023035
+is_a: CL:0020126
 is_a: CL:4030053
 relationship: RO:0002100 UBERON:0002435 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Striatum (MBA:477)."}
 relationship: RO:0002162 NCBITaxon:10090
@@ -5404,6 +5348,7 @@ def: "A striatum neuron of the Mus musculus brain. It is distinguished from othe
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions.
 synonym: "1143 LSX Prdm12 Slit2 Gaba_6" EXACT []
 synonym: "1506 LSX_Spp1_Gaba 1" EXACT [CCN20251031:CS20251031_CLUS_1506]
+is_a: CL:0020108
 is_a: CL:4300110 ! LSX Prdm12 Slit2 Gaba striatum neuron (Mmus)
 relationship: RO:0002100 UBERON:8440012 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Cerebral nuclei (MBA:623)."}
 relationship: RO:0002215 GO:0061534 {comment="Inferred to be gamma-aminobutyric acid secretion, neurotransmission based on expression of Gad1, Gad2, Slc32a1"}
@@ -5504,8 +5449,7 @@ synonym: "0501 BST-po Iigp1 Glut_1" EXACT []
 synonym: "110 BST-po Iigp1 Glut" EXACT []
 synonym: "1989 BST-po Iigp1 Glut_1" EXACT []
 synonym: "2555 BST-po_Ebf2:Iigp1_Glut 1" EXACT [CCN20251031:CS20251031_CLUS_2555]
-is_a: CL:0000679
-is_a: CL:0012001
+is_a: CL:0020127
 relationship: RO:0002100 UBERON:0001890 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in forebrain (Cerebrum + Interbrain)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="Inferred to be glutamate secretion, neurotransmission based on expression of Slc17a6, Gad1"}
@@ -5663,7 +5607,7 @@ comment: Location is inferred from registration of MerFish Data. Registration ma
 synonym: "0604 STN-PSTN Pitx2 Glut_7" EXACT []
 synonym: "2459 STN-PSTN Pitx2 Glut_7" EXACT []
 synonym: "2768 STN-PSTN_Pitx2:Foxa1_Glut 4" EXACT [CCN20251031:CS20251031_CLUS_2768]
-is_a: CL:4023068
+is_a: CL:0020101
 relationship: RO:0002100 UBERON:0001898 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hypothalamus (MBA:1097)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="Inferred to be glutamate secretion, neurotransmission based on expression of Slc17a6"}
@@ -5688,8 +5632,8 @@ synonym: "0628 HY Gnrh1 Glut_1" EXACT []
 synonym: "142 HY Gnrh1 Glut" EXACT []
 synonym: "15 HY Gnrh1 Glut" EXACT []
 synonym: "2564 HY Gnrh1 Glut_1" EXACT []
-is_a: CL:0000679
 is_a: CL:0011111 {evidence="http://identifiers.org/ncbigene/140919", evidence="http://identifiers.org/ncbigene/14415", evidence="http://identifiers.org/ncbigene/14417"}
+is_a: CL:0020127
 relationship: RO:0002100 UBERON:0001890 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in forebrain (Cerebrum + Interbrain)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="Inferred to be glutamate secretion, neurotransmission based on expression of Gad1, Slc17a6, Gad2"}
@@ -5736,8 +5680,7 @@ comment: Location is inferred from registration of MerFish Data. Registration ma
 synonym: "0705 PAG-MRN Pou3f1 Glut_2" EXACT []
 synonym: "2868 PAG-MRN Pou3f1 Glut_2" EXACT []
 synonym: "3465 PAG-MRN_C1ql4:Nxph4_Glut 3" EXACT [CCN20251031:CS20251031_CLUS_3465]
-is_a: CL:0000679
-is_a: CL:2000029
+is_a: CL:0020090
 relationship: RO:0002100 UBERON:0001891 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain, motor related (MBA:323)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="Inferred to be glutamate secretion, neurotransmission based on expression of Slc17a6"}
@@ -5839,8 +5782,7 @@ comment: Location is inferred from registration of MerFish Data. Registration ma
 synonym: "0821 PAG-ND-PCG Onecut1 Gaba_4" EXACT []
 synonym: "0888 PAG-ND-PCG_Onecut1_Gaba 5" EXACT [CCN20251031:CS20251031_SUPT_0888]
 synonym: "3553 PAG-ND-PCG Onecut1 Gaba_4" EXACT []
-is_a: CL:0000617
-is_a: CL:2000029
+is_a: CL:0020100
 relationship: RO:0002100 UBERON:0002298 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in brainstem (Midbrain + Hindbrain)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="Inferred to be gamma-aminobutyric acid secretion, neurotransmission based on expression of Gad2, Gad1, Slc32a1"}
@@ -5861,8 +5803,7 @@ comment: Location is inferred from registration of MerFish Data. Registration ma
 synonym: "0842 SC Otx2 Gcnt4 Gaba_2" EXACT []
 synonym: "3672 SC Otx2 Gcnt4 Gaba_2" EXACT []
 synonym: "4263 SCs_Otx2:Maf_Gaba 2" EXACT [CCN20251031:CS20251031_CLUS_4263]
-is_a: CL:0000617
-is_a: CL:2000029
+is_a: CL:0020091
 relationship: RO:0002100 UBERON:0001891 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain, sensory related (MBA:339)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="Inferred to be gamma-aminobutyric acid secretion, neurotransmission based on expression of Gad2, Gad1, Slc32a1"}
@@ -6120,7 +6061,7 @@ def: "A serotonergic neuron of the Mus musculus brain. It is distinguished from 
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. Warning: Despite its name, MB-MY Tph2 Glut-Sero_1 Trh does not have cells in medulla (MY). This assertion is based on data from registration to a reference standard common co-ordinate framework and parcelation scheme. Warning: Despite its name, MB-MY Tph2 Glut-Sero_1 Trh does not secrete the neurotransmitter Glut, as assessed by expression of multiple marker genes.
 synonym: "3885 MB-MY Tph2 Glut-Sero_1" EXACT []
 synonym: "4549 MB-MY_Tph2_Glut-Sero 3" EXACT [CCN20251031:CS20251031_CLUS_4549]
-is_a: CL:0000850
+is_a: CL:0020137
 is_a: CL:4300256 ! MB-HB Sero neuron (Mmus)
 relationship: RO:0002100 UBERON:0001891 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Midbrain (MBA:313)."}
 relationship: RO:0002215 GO:0060096 {comment="Inferred to be serotonin secretion, neurotransmission based on expression of Ddc, Slc6a4, Tph2, Slc18a2, Gad2, Gad1"}
@@ -6141,7 +6082,8 @@ def: "A neuron of the Mus musculus brain. It is distinguished from other cells i
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. Warning: Despite its name, MB-MY Tph2 Glut-Sero_5 Hoxb3 does not have cells in midbrain (MB). This assertion is based on data from registration to a reference standard common co-ordinate framework and parcelation scheme. Warning: Despite its name, MB-MY Tph2 Glut-Sero_5 Hoxb3 does not secrete the neurotransmitter Sero, as assessed by expression of multiple marker genes.
 synonym: "3908 MB-MY Tph2 Glut-Sero_5" EXACT []
 synonym: "4566 MB-MY_Tph2_Glut-Sero 8" EXACT [CCN20251031:CS20251031_CLUS_4566]
-is_a: CL:0000679
+is_a: CL:0020097
+is_a: CL:0020099
 is_a: CL:4301322 ! MB-MY Tph2 Glut-Sero_5 neuron (Mmus)
 relationship: RO:0002100 UBERON:0002028 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hindbrain (MBA:1065)."}
 relationship: RO:0002215 GO:0061535 {comment="Inferred to be glutamate secretion, neurotransmission based on expression of Slc17a8, Gad1"}
@@ -6165,6 +6107,7 @@ synonym: "0893 MB-MY Tph2 Glut-Sero_6" EXACT []
 synonym: "3910 MB-MY Tph2 Glut-Sero_6" EXACT []
 synonym: "4570 MB-MY_Tph2_Glut-Sero 9" EXACT [CCN20251031:CS20251031_CLUS_4570]
 is_a: CL:0000850 {evidence="http://identifiers.org/ncbigene/13195", evidence="http://identifiers.org/ncbigene/15567", evidence="http://identifiers.org/ncbigene/214084", evidence="http://identifiers.org/ncbigene/216227", evidence="http://identifiers.org/ncbigene/216343"}
+is_a: CL:0020094
 is_a: CL:4300256 ! MB-HB Sero neuron (Mmus)
 relationship: RO:0002100 UBERON:0000988 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons (MBA:771)."}
 relationship: RO:0002215 GO:0060096 {comment="Inferred to be serotonin secretion, neurotransmission based on expression of Ddc, Slc6a4, Tph2, Slc18a2, Slc17a8"}
@@ -6187,6 +6130,7 @@ synonym: "0894 MB-MY Tph2 Glut-Sero_7" EXACT []
 synonym: "3911 MB-MY Tph2 Glut-Sero_7" EXACT []
 synonym: "4571 MB-MY_Tph2_Glut-Sero 10" EXACT [CCN20251031:CS20251031_CLUS_4571]
 is_a: CL:0000850 {evidence="http://identifiers.org/ncbigene/13195", evidence="http://identifiers.org/ncbigene/15567", evidence="http://identifiers.org/ncbigene/214084", evidence="http://identifiers.org/ncbigene/216227", evidence="http://identifiers.org/ncbigene/216343"}
+is_a: CL:0020094
 is_a: CL:4300256 ! MB-HB Sero neuron (Mmus)
 relationship: RO:0002100 UBERON:0000988 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons (MBA:771)."}
 relationship: RO:0002215 GO:0060096 {comment="Inferred to be serotonin secretion, neurotransmission based on expression of Ddc, Slc6a4, Tph2, Slc18a2, Slc17a8"}
@@ -6268,8 +6212,7 @@ comment: Location is inferred from registration of MerFish Data. Registration ma
 synonym: "0950 NLL-SOC Spp1 Glut_1" EXACT []
 synonym: "0968 SOC_Mafb:Irx2_Glut 2" EXACT [CCN20251031:CS20251031_SUPT_0968]
 synonym: "4195 NLL-SOC Spp1 Glut_1" EXACT []
-is_a: CL:0000679
-is_a: CL:2000029
+is_a: CL:0020092
 relationship: RO:0002100 UBERON:0000988 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Pons (MBA:771)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="Inferred to be glutamate secretion, neurotransmission based on expression of Slc17a6"}
@@ -6363,7 +6306,8 @@ def: "A neuron of the Mus musculus brain. It is distinguished from other cells i
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. Warning: This type NTS Dbh Glut_1 Lpl does not have cells in any of the regions it is named for nucleus of the solitary tract (NTS). The name merely indicates that it is a subtype of more general transcriptomic type that does. This assertion is based on data from registration to a reference standard common co-ordinate framework and parcelation scheme.
 synonym: "4527 NTS Dbh Glut_1" EXACT []
 synonym: "5005 NTS_Dbh:Etv1_Glut-NE 3" EXACT [CCN20251031:CS20251031_CLUS_5005]
-is_a: CL:0008025
+is_a: CL:0020138
+is_a: CL:0020141
 is_a: CL:4301434 ! NTS Dbh Glut_1 neuron (Mmus)
 relationship: RO:0002100 UBERON:0002028 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in hindbrain (Hindbrain + Cerebellum)."}
 relationship: RO:0002215 GO:0061533 {comment="Inferred to be norepinephrine secretion, neurotransmission based on expression of Slc6a2, Ddc, Dbh, Th, Slc17a6"}
@@ -6385,7 +6329,7 @@ synonym: "1000 NTS_Dbh:Etv1_Glut-NE 4" EXACT [CCN20251031:CS20251031_SUPT_1000]
 synonym: "1009 NTS Dbh Glut_6" EXACT []
 synonym: "4550 NTS Dbh Glut_6" EXACT []
 is_a: CL:0000679 {evidence="http://identifiers.org/ncbigene/13195", evidence="http://identifiers.org/ncbigene/140919"}
-is_a: CL:2000029
+is_a: CL:0020095
 relationship: RO:0002100 UBERON:0001896 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medulla (MBA:354)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061535 {comment="Inferred to be glutamate secretion, neurotransmission based on expression of Slc17a6, Ddc"}
@@ -6511,7 +6455,7 @@ synonym: "1228 PRNc_Otp:Prox1:Brs3_Gly-Gaba 1" EXACT [CCN20251031:CS20251031_SUP
 synonym: "266 PRNc Prox1 Brs3 Gly-Gaba" EXACT []
 synonym: "4669 PRNc Prox1 Brs3 Gly-Gaba_1" EXACT []
 is_a: CL:0008059 {evidence="http://identifiers.org/ncbigene/104245", evidence="http://identifiers.org/ncbigene/14415", evidence="http://identifiers.org/ncbigene/14417", evidence="http://identifiers.org/ncbigene/22348"}
-is_a: CL:2000029
+is_a: CL:0020098
 relationship: RO:0002100 UBERON:0002028 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Hindbrain (MBA:1065)."}
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002215 GO:0061534 {comment="Inferred to be gamma-aminobutyric acid secretion, neurotransmission, glycine secretion, neurotransmission based on expression of Gad2, Gad1, Slc32a1, Slc6a5"}
@@ -6594,7 +6538,7 @@ def: "A GABAergic neuron of the Mus musculus brain. It is distinguished from oth
 comment: Location is inferred from registration of MerFish Data. Registration may be inaccurate, giving misleading location to adjacent anatomical regions. Warning: Despite its name, MV-SPIV-PRP Dmbx1 Gly-Gaba_2 Slc6a2 does not have cells in spinal vestibular nucleus (SPIV), nucleus prepositus (PRP). This assertion is based on data from registration to a reference standard common co-ordinate framework and parcelation scheme.
 synonym: "4947 MV-SPIV-PRP Dmbx1 Gly-Gaba_2" EXACT []
 synonym: "6343 MV-PRP_Dmbx1:Meis2_Gly-Gaba 1" EXACT [CCN20251031:CS20251031_CLUS_6343]
-is_a: CL:0008059
+is_a: CL:0020096
 is_a: CL:4300327 ! MV-SPIV-PRP Dmbx1 Gly-Gaba GABAergic neuron (Mmus)
 relationship: RO:0002100 UBERON:0001722 {comment="At least 80% of this cell set's MERFISH cells in grey matter (Yao et al. 2023; Zhang et al. 2023) are in Medial vestibular nucleus (MBA:202)."}
 relationship: RO:0002215 GO:0061534 {comment="Inferred to be gamma-aminobutyric acid secretion, neurotransmission, glycine secretion, neurotransmission based on expression of Slc6a5, Slc32a1, Slc6a2, Gad2, Gad1"}
