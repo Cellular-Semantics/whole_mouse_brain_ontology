@@ -1,0 +1,1402 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://Cellular-Semantics.github.io/whole_mouse_brain_ontology/wmbo_location_nt_classification_plan/">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>Classifying CL-promoted WMBO types by soma location and neurotransmitter - Whole Mouse Brain Ontology</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.bcfcd587.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#classifying-cl-promoted-wmbo-types-by-soma-location-and-neurotransmitter" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Whole Mouse Brain Ontology" class="md-header__button md-logo" aria-label="Whole Mouse Brain Ontology" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Whole Mouse Brain Ontology
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Classifying CL-promoted WMBO types by soma location and neurotransmitter
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Cellular-Semantics/whole_mouse_brain_ontology/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Whole Mouse Brain Ontology" class="md-nav__button md-logo" aria-label="Whole Mouse Brain Ontology" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Whole Mouse Brain Ontology
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Cellular-Semantics/whole_mouse_brain_ontology/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cite.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cite
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    How-to guides
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            How-to guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Standard ODK workflows
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Standard ODK workflows
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/index.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/EditorsWorkflow.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Editors Workflow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/ReleaseWorkflow.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Release Workflow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/RepoManagement.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manage your ODK Repository
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/SettingUpDockerForODK.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setting up Docker for ODK
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/UpdateImports.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Imports management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/components.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Components management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/ManageDocumentation.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Managing the documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/ManageAutomatedTest.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Managing your automated testing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/ContinuousIntegration.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Continuous Integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../odk-workflows/RepositoryFileStructure.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Your ODK Repository Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contributing.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Reference
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Design Patterns
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Design Patterns
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../templates/dosdp.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Design Patterns Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#status-2026-11-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      Status (2026-11-12)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-round" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next round
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#original-plan-2026-10-26" class="md-nav__link">
+    <span class="md-ellipsis">
+      Original plan (2026-10-26)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Original plan (2026-10-26)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#context" class="md-nav__link">
+    <span class="md-ellipsis">
+      Context
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proposal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Proposal
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Proposal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#evidence-that-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      Evidence that it works
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Steps
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-choose-the-soma-location-region-per-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Choose the soma-location region per type
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-neurotransmitter" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Neurotransmitter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-wmbo-templates-and-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. WMBO templates and pattern
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-fix-the-cl-comp-build-needed-regardless" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Fix the cl-comp build (needed regardless)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-selection-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Selection rules
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-grouping-classes-in-cl" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Grouping classes in CL
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-types-that-wont-classify" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Types that won't classify
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Verification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cerebellar-grouping-classes-review-2026-10-26" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cerebellar grouping classes (review, 2026-10-26)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cerebellar grouping classes (review, 2026-10-26)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cerebellar-nuclei-cbn-nodes-justified-axioms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cerebellar nuclei (CBN) nodes: justified axioms
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#open-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Open questions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="classifying-cl-promoted-wmbo-types-by-soma-location-and-neurotransmitter">Classifying CL-promoted WMBO types by soma location and neurotransmitter</h1>
+<p><em>Plan written 2026-10-26; status updated 2026-11-12. Follows <code>wmbv2_cl_promotion.md</code> (selection) and <code>wmbo_cl_naming_plan.md</code> (naming).</em></p>
+<h2 id="status-2026-11-12">Status (2026-11-12)</h2>
+<p>Done, on <code>main</code>:</p>
+<ul>
+<li><strong>#135</strong>: the cl-comp build gives each CL term its CL parents before PCL classes are removed (step 4).</li>
+<li><strong>#134</strong>: derived soma location and shared neurotransmitter for CL-subset terms (steps 1 to 3).</li>
+<li>Locations come from Brain Cell KG MERFISH counts (<code>derived_soma_locations.tsv</code>, method in <code>derived_soma_locations.md</code>). They are rolled up in a CCF tree aligned with Uberon at the top, then mapped by the mbao bridge.</li>
+<li>Neuronal terms get <code>has_soma_location</code>; non-neuronal terms get <code>part_of</code>. A curated <code>Locations</code> value replaces either.</li>
+<li>A term gets an NT when every cluster under it with a call shares it (<code>Shared_NT</code>).</li>
+<li>In the CL subset, 337 of 408 terms have a location (291 <code>has_soma_location</code>, 46 <code>part_of</code>).</li>
+<li>Curated NTs: <code>145 MH Tac2 Glut</code> and <code>251 NTS Dbh Glut</code> get glutamate. <code>215 SNc-VTA-RAmb Foxa1 Dopa</code> and class <code>21 MB Dopa</code> get dopamine, and the term is renamed "SNc-VTA-RAmb Foxa1 dopaminergic neuron (Mmus)".</li>
+<li><strong>#136</strong>: <code>some soma located in</code> (<code>CLM:0010001</code>) annotations on supertypes and subclasses, from the same MERFISH counts (<code>supertype_subclass_locations.tsv</code>).</li>
+<li>CL grouping classes are on CL master: region × NT (#3797), cerebellum-like structure (#3828; CL:0020087–89) and <code>cerebellum GABAergic neuron</code> (CL:0020116). The temporary <code>CL:99…</code> IDs in the sections below are the ones used while the plan was drafted.</li>
+<li>Taxonomy #28 maps classes <code>28 CB GABA</code> and <code>29 CB Glut</code> to CL:0020088 and CL:0020089.</li>
+</ul>
+<p>Test build (WMBO <code>main</code> + #134 + #136, with CL #3841), checked with <code>cl-full</code>: no unsatisfiable classes, cycles or new equivalences. 292 of 298 neuronal terms reach a region × NT grouping class. The six misses are three serotonergic terms whose clusters carry mixed NTs (CL:4300256, CL:4301319, CL:4301322) and three with no location (CL:4301055, CL:4301151, CL:4301345).</p>
+<p>Still open:</p>
+<ul>
+<li><code>MB-MY Tph2 Glut-Sero</code> and its supertypes need NT curation.</li>
+<li>Taxonomy release: the export fails because CL:0020088/89 are not in a CL release yet (see <code>wmbo_cl_integration_test_plan.md</code>).</li>
+<li>CL #3841 (MGE/CGE-derived interneuron definitions) fails CL's <code>cl-plus</code> step. The released <code>pcl-base.owl</code> still carries the old definitions of these classes, so four classes become equivalent. It needs PCL re-released, or CL axioms stripped from PCL in the <code>cl-plus</code> recipe.</li>
+</ul>
+<h2 id="next-round">Next round</h2>
+<ol>
+<li><strong>Location in textual definitions above cluster level.</strong> The DOSDP pattern generates a location clause in cluster definitions, and could do the same for supertypes, subclasses and classes. Some terms may lack it because a curated <code>defined_class_definition</code> overrides the generated one; check these.</li>
+<li><strong>MERFISH counts: Yao et al. 2023 only.</strong> Consider using only the Yao counts, not Yao + Zhang pooled. Counts would then add up across one taxonomy level and match the ABC atlas. This affects <code>derive_soma_locations.py</code> and <code>supertype_subclass_locations.py</code> (<code>src/scripts/</code>).</li>
+<li><strong>Naming.</strong> Review <code>defined_class_name</code> again (see <code>wmbo_cl_naming_plan.md</code>). It is better than before but can be improved.</li>
+<li><strong>More promotions.</strong> Check for more stable WMBv2 types to promote to CL and review them together (see <code>wmbv2_cl_promotion.md</code>, "Next round").</li>
+</ol>
+<h2 id="original-plan-2026-10-26">Original plan (2026-10-26)</h2>
+<h3 id="context">Context</h3>
+<p>Release <code>v2026-10-16</code> put 406 WMBv1 types in CL (<code>CL:430…</code>), up from 130. Two problems showed up in that release.</p>
+<ol>
+<li><strong>86 of the 276 new CL terms have no parent in <code>wmbo-cl-comp</code>.</strong> In <code>wmbo-base</code>, the only <code>is_a</code> these terms have is their taxonomy parent, which is a PCL class (e.g. <code>CL:4300041</code> → <code>PCL:0110001</code> "IT-ET Glut…"). Their CL <code>Gross_cell_type</code> parent is dropped as redundant, because it's implied through that PCL parent. The cl-comp recipe then removes every PCL axiom, so nothing is left.</li>
+<li><strong>Selection is conservative</strong>, mainly because of the hierarchy rules:</li>
+<li>The gate's parent check compares only the <em>immediate</em> parent's v1→v2 mapping. 352 types pass F1 and reciprocity but fail this check. Ignoring it, 90 of them would be S1 and 93 S2. Most failures come from an unstable parent (59 of the 90 S1 have a parent with F1 &lt; 0.8), not from the type itself.</li>
+<li>The first-release rule drops clusters with no promoted supertype or subclass (about 80).</li>
+</ol>
+<p>A promoted type only needs its taxonomy parent to be promoted if that parent is its sole route to a CL classification. If each promoted type instead carries <strong>its own soma-location and neurotransmitter axioms</strong>, the reasoner classifies it under general <strong>region × NT grouping classes</strong> (requested in obophenotype/cell-ontology#3788, drafted on CL branch <code>ai4c-agent-issue-3788-run1175</code>). That makes both hierarchy rules unnecessary.</p>
+<h3 id="proposal">Proposal</h3>
+<p>For every CL-promoted WMBO type, add two kinds of logical axiom:
+- <strong>Soma location:</strong> <code>has_soma_location some &lt;Uberon region&gt;</code>. This promotes today's <code>some_soma_located_in</code> (<code>CLM:0010001</code>) annotations, which give Allen atlas (MBA) regions with cell ratios, into an existential restriction to a single Uberon class.
+- <strong>Neurotransmitter:</strong> <code>capable_of some &lt;NT secretion GO process&gt;</code>, for each NT that every cluster under the type carries.</p>
+<p>The existing annotations and cell ratios stay as provenance.</p>
+<h4 id="evidence-that-it-works">Evidence that it works</h4>
+<p>In a spike (<code>cl_promotion/classification/</code> in the WMBv2 consensus repo), defined test classes of this shape were reasoned with ELK against CL 2026-06-08 plus the 26 grouping classes on the #3788 branch. <strong>About 80% of neuronal types classify under a grouping class</strong>, whichever selection rule is used:</p>
+<table>
+<thead>
+<tr>
+<th>Selection</th>
+<th>Neuronal types tested</th>
+<th>Under a #3788 class</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Current promotion set</td>
+<td>411</td>
+<td>327 (80%)</td>
+</tr>
+<tr>
+<td>S1, no parent rule</td>
+<td>459</td>
+<td>368 (80%)</td>
+</tr>
+<tr>
+<td>S1 + S2, no parent rule</td>
+<td>716</td>
+<td>573 (80%)</td>
+</tr>
+</tbody>
+</table>
+<p>Clusters outside the current set weren't profiled yet, so the cluster share in the wider rows is under-tested.</p>
+<h3 id="steps">Steps</h3>
+<h4 id="1-choose-the-soma-location-region-per-type">1. Choose the soma-location region per type</h4>
+<ul>
+<li>Use per-type MERFISH counts from Brain_Cell_KG (Yao 2023 and Zhuang 2023), renormalised to grey matter.</li>
+<li>Assert the <strong>deepest region holding ≥ 80% of cells in both atlases</strong>, not the common ancestor of <em>all</em> annotated regions. Registration noise scatters a few cells widely, which would push that ancestor up to "brain".</li>
+<li><strong>Map to Uberon first, then roll up in Uberon's partonomy, not the Allen atlas's.</strong> The Allen-to-Uberon bridge equates groupings that differ:</li>
+<li>Allen "cerebral cortex" includes the cortical subplate (claustrum, endopiriform nucleus, lateral/basolateral amygdala) and, via its olfactory areas, the olfactory bulb. Uberon <code>cerebral cortex</code> includes none of these, but does include the olfactory tubercle.</li>
+<li>Allen "brain stem" includes the interbrain (thalamus, hypothalamus); Uberon <code>brainstem</code> does not.</li>
+<li>Allen "hindbrain" excludes the cerebellum; Uberon <code>hindbrain</code> includes it.</li>
+</ul>
+<p>Rolling up in Allen terms is why 12 olfactory-bulb types are currently labelled "… cerebral cortex neuron", and why <code>250 CBN Neurod2 Pvalb Glut</code> (71% cerebellum, 20% medulla) gets no region at all. Within Uberon both resolve correctly: olfactory bulb, and hindbrain.
+- <strong>Fallback for types missing from the KG</strong> (64 nodes): use the taxonomy's per-cluster <code>CCF_acronym.freq</code>. Fix its parser first: acronyms containing commas (e.g. cerebellar lobules <code>CUL4, 5</code>) are currently split, which sends some cerebellar granule types to "grey matter".
+- Record the threshold, both atlas ratios and the source in a comment, since a type with a genuine 80/20 split is asserted at the 80% region.</p>
+<h4 id="2-neurotransmitter">2. Neurotransmitter</h4>
+<ul>
+<li>Use the expression-based cluster calls (<code>neurotransmitter_accession</code>, with evidence in <code>neurotransmitter_rationale</code>). Assert an NT only if every annotated cluster under the type carries it; NA is ignored.</li>
+<li>For co-transmitter types that genuinely share both NTs (e.g. GABA + glycine), assert both.</li>
+<li>Assert none for mixed types (e.g. <code>MB-MY Tph2 Glut-Sero</code>, <code>145 MH Tac2 Glut</code>). They classify by region only.</li>
+<li>GO terms are those used by CL's NT neuron classes: glutamate <code>GO:0061535</code>, GABA <code>GO:0061534</code>, glycine <code>GO:0061537</code>, acetylcholine <code>GO:0014055</code>, dopamine <code>GO:0061527</code>, serotonin <code>GO:0060096</code>, noradrenaline <code>GO:0061533</code>, histamine <code>GO:0061538</code>.</li>
+</ul>
+<h4 id="3-wmbo-templates-and-pattern">3. WMBO templates and pattern</h4>
+<ul>
+<li>The class base template already has a soma-location slot, currently whole brain (<code>MBA:997</code>) for every row. Fill it with the Uberon region from step 1, and add an NT slot.</li>
+<li>Generate both columns from the profiling step in the WMBv2 repo (<code>cl_promotion/classification/profile_nodes.py</code>, extended to emit Uberon IRIs).</li>
+<li><code>taxonomy_class.yaml</code>: emit <code>SubClassOf(has_soma_location some ?region)</code> and <code>SubClassOf(capable_of some ?nt)</code>.</li>
+<li><strong>Check the RO property chain</strong> <code>has_soma_location ∘ part_of → has_soma_location</code>, which ELK needs to classify a type in a sub-region under a coarser-region class. If RO doesn't provide it, also assert <code>part_of some ?region</code>, as the spike did.</li>
+</ul>
+<h4 id="4-fix-the-cl-comp-build-needed-regardless">4. Fix the cl-comp build (needed regardless)</h4>
+<ul>
+<li>Before <code>remove --select "&lt;…PCL_*&gt;"</code>, give each CL term its <strong>nearest non-PCL ancestors from the reasoned hierarchy</strong>, e.g. a SPARQL update over the reasoned <code>wmbo-pcl-comp</code>, then reduce.</li>
+<li><code>robot remove --preserve-structure</code> is not enough. Tested on the released base, it parents most orphans to <code>BFO:0000002</code> and leaves 11 parentless.</li>
+<li>Release check: no <code>CL:430…</code> term in <code>wmbo-cl-comp</code> without a CL parent.</li>
+</ul>
+<h4 id="5-selection-rules">5. Selection rules</h4>
+<p>Once types carry their own axioms:
+- drop the gate's parent check, or apply it only against the nearest <em>stable</em> ancestor;
+- drop the cluster-needs-promoted-parent rule.</p>
+<p>Release sizes with no parent rule (including everything already in CL; the current release is 456):</p>
+<table>
+<thead>
+<tr>
+<th>Promote</th>
+<th>Subclass</th>
+<th>Supertype</th>
+<th>Cluster</th>
+<th>Total</th>
+<th>Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S1</td>
+<td>99</td>
+<td>247</td>
+<td>281</td>
+<td>627</td>
+<td>+171</td>
+</tr>
+<tr>
+<td>S1 + S2</td>
+<td>201</td>
+<td>403</td>
+<td>541</td>
+<td>1,145</td>
+<td>+689</td>
+</tr>
+<tr>
+<td>S1 + S2 + S3</td>
+<td>252</td>
+<td>553</td>
+<td>898</td>
+<td>1,703</td>
+<td>+1,247</td>
+</tr>
+</tbody>
+</table>
+<p>Recommendation:
+- Start with <strong>S1, no parent rule</strong> (+171).
+- Then add <strong>S2 subclasses and supertypes</strong>. These are mostly coarse types that the Macosko clusters split differently, including the glia.
+- Add S3 only with independent evidence, such as a basal ganglia MapMyCells match or a curated CL mapping.</p>
+<h4 id="6-grouping-classes-in-cl">6. Grouping classes in CL</h4>
+<ul>
+<li><strong>#3788 branch (26 terms).</strong> Before merge:</li>
+<li>expand the definitions of the cerebral-cortex classes to state what's included;</li>
+<li>add <code>neocortex GABAergic neuron</code> and <code>hippocampal formation GABAergic neuron</code> to match the glutamatergic pair;</li>
+<li>note the olfactory-tubercle inclusion.</li>
+<li><strong>Cerebellar classes.</strong> These were left out of the branch; see the next section.</li>
+<li><strong>Lineage and marker classes</strong> (#3789, #3790) cover the telencephalic GABAergic types that region classes handle poorly.</li>
+<li><strong>Errors found</strong> (#3791), notably the <code>thalamic excitatory neuron</code> location.</li>
+</ul>
+<h4 id="7-types-that-wont-classify">7. Types that won't classify</h4>
+<p>About 20% of neuronal types have no single dominant region, or no NT shared by all clusters: MB-HB Glut/Sero mixes and extended-amygdala/preoptic types. They keep the nearest-non-PCL-ancestor parent from step 4, plus curator review. Lineage classes may cover some of them.</p>
+<h4 id="8-verification">8. Verification</h4>
+<ul>
+<li>Reasoning over <code>wmbo-cl-comp</code> + CL + the grouping classes gives no unsatisfiable classes.</li>
+<li>Every <code>CL:430…</code> term has a CL parent.</li>
+<li>Report what share of terms sits under a region × NT class, overall and by level.</li>
+<li>Spot-check the Allen-vs-Uberon cases: olfactory-bulb types, claustrum/amygdala types, cerebellar nuclei.</li>
+<li><code>make check_ids</code> still reports nothing missing other than the known marker-set gap (#129 follow-up).</li>
+</ul>
+<h3 id="cerebellar-grouping-classes-review-2026-10-26">Cerebellar grouping classes (review, 2026-10-26)</h3>
+<p><strong>What CL has now:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition / parents</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cerebellar neuron</code> CL:1001611</td>
+<td>neuron ⊓ soma in cerebellum</td>
+</tr>
+<tr>
+<td><code>cerebellum glutamatergic neuron</code> CL:2000028</td>
+<td>glutamatergic neuron ⊓ soma in cerebellum. Parent of <code>cerebellar granule cell</code></td>
+</tr>
+<tr>
+<td><code>cerebellar inhibitory GABAergic interneuron</code> CL:4023057</td>
+<td>GABAergic interneuron ⊓ soma in <strong>cerebellar cortex</strong>. Parent of molecular layer interneuron (basket, stellate), Purkinje layer interneuron (Lugaro, candelabrum) and Golgi cell</td>
+</tr>
+<tr>
+<td><code>Purkinje cell</code> CL:0000121</td>
+<td>no logical definition. is_a GABAergic neuron and cerebellar neuron</td>
+</tr>
+<tr>
+<td><code>Lugaro cell</code> CL:0011006</td>
+<td>is_a <strong>GABA-Gly neuron</strong> and Purkinje layer interneuron</td>
+</tr>
+<tr>
+<td><code>cerebellar Golgi cell</code> CL:0000119</td>
+<td>is_a cerebellar inhibitory GABAergic interneuron. <strong>Not</strong> GABA-Gly, although WMB <code>310 CBX Golgi Gly-Gaba</code> is GABA + glycine in every cluster</td>
+</tr>
+<tr>
+<td><code>unipolar brush cell</code> CL:4023161</td>
+<td>glutamatergic interneuron, soma in <strong>hindbrain</strong>. That's appropriate: UBCs are in both the cerebellar granular layer and the dorsal cochlear nucleus, and WMB <code>315 DCO UBC Glut</code> is 42% cerebellum, 51% medulla</td>
+</tr>
+<tr>
+<td>cerebellar nuclei neurons</td>
+<td><strong>nothing</strong>. No term has soma in <code>cerebellar nuclear complex</code> (UBERON:0002130)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Where WMB cerebellar types land now, with reasoning</strong> (ELK, via the local Owlery, <code>owlery/</code>, <code>cl</code> and <code>wmbo</code> KBs). An earlier label- and template-based pass suggested CL needed several new classes. Reasoning shows it doesn't:
+- Everything WMBO puts under <code>cerebellar neuron</code> is either GABAergic or glutamatergic (granule cells, UBCs).
+- The GABAergic side already has a mouse-specific grouping, <code>cerebellar GABAergic neuron (Mmus)</code> CL:4300028 (WMB class <code>28 CB GABA</code>). It is asserted is_a GABAergic neuron and cerebellar neuron, with soma in MBA:512 (cerebellum). What's missing is a species-neutral parent.</p>
+<p><strong>Proposed addition</strong> (one class):
+- [ ] <strong>cerebellum GABAergic neuron</strong> ≡ <code>GABAergic neuron</code> ⊓ <code>has soma location</code> some <code>cerebellum</code> (UBERON:0002037). The DL query for this expression returns:
+  - <strong><code>cl</code> KB, 27 classes:</strong> Purkinje cell; <code>cerebellar inhibitory GABAergic interneuron</code>, with Golgi, MLI (basket, stellate), PLI (Lugaro, candelabrum); and all the WMB-derived CL terms under CL:4300028.
+  - <strong><code>wmbo</code> KB, 55 classes:</strong> the same, plus their PCL clusters.
+  - It mirrors the existing <code>cerebellum glutamatergic neuron</code> (CL:2000028).
+- Golgi and Lugaro then sit under both this class and <code>GABA-Gly neuron</code>. A separate cerebellar GABA-Gly class isn't needed.</p>
+<p><strong>Cerebellum-like grouping (added on the CL branch 2026-10-26, uncommitted; tested in Owlery):</strong> The dorsal cochlear nucleus (DCN) shares the cerebellar circuit and cell types, and WMB places the DCO types in its cerebellar classes. Uberon has no term grouping the cerebellum with the DCN; a new term request is drafted in <code>docs/uberon_ntr_cerebellum_like_structure.md</code>. In the meantime the CL classes are populated by one GCI per structure, which ELK handles without unions:</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Label</th>
+<th>Populated by</th>
+<th>Result (<code>cl</code> KB)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CL:9900027</td>
+<td>cerebellum-like structure neuron</td>
+<td>GCIs: neuron ⊓ soma in cerebellum; neuron ⊓ soma in DCN</td>
+<td>40 subclasses</td>
+</tr>
+<tr>
+<td>CL:9900028</td>
+<td>cerebellum-like structure GABAergic neuron</td>
+<td>GCIs: GABAergic ⊓ soma in cerebellum / DCN</td>
+<td>29, incl. <code>cartwheel cell</code></td>
+</tr>
+<tr>
+<td>CL:9900029</td>
+<td>cerebellum-like structure glutamatergic neuron</td>
+<td>GCIs: glutamatergic ⊓ soma in cerebellum / DCN; asserted parent of <code>unipolar brush cell</code>, whose soma location is <code>hindbrain</code></td>
+<td>8</td>
+</tr>
+<tr>
+<td>CL:9900030</td>
+<td>cerebellum GABAergic neuron</td>
+<td>≡ GABAergic neuron ⊓ soma in cerebellum</td>
+<td>27: Purkinje cell, cerebellar inhibitory GABAergic interneuron, CL:4300028</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>In the <code>wmbo</code> KB the counts are 76, 56, 17 and 54.</li>
+<li>No classes are unsatisfiable in <code>cl</code>.</li>
+<li>Once the WMBO DCO types get their own soma location (DCN rather than the inherited cerebellum), they will classify under CL:9900028 and CL:9900029, not <code>cerebellum GABAergic neuron</code>.</li>
+</ul>
+<p><strong>Problems the query exposed (WMBO, not CL):</strong>
+- <strong>The DCO types are cerebellar only by inheritance.</strong> <code>308 DCO Il22 Gly-Gaba</code> has no soma axiom of its own (CL:4300348 and its supertypes). It inherits the cerebellum location from class <code>28 CB GABA</code>, but MERFISH puts it mostly in the medulla:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Medulla</th>
+<th>Cochlear nuclei</th>
+<th>Cerebellum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Yao</td>
+<td>66%</td>
+<td>38%</td>
+<td>28%</td>
+</tr>
+<tr>
+<td>Zhuang</td>
+<td>71%</td>
+<td>64%</td>
+<td>29%</td>
+</tr>
+</tbody>
+</table>
+<p>The type looks like the cochlear-nucleus cartwheel cell, so it shouldn't classify as cerebellar. The same applies to <code>315 DCO UBC Glut</code>: the cerebellum and medulla shares are close to even (42/51% in Yao, 53/38% in Zhuang). Its CL terms aren't classified as cerebellar today, but the PCL clusters under it are. Fix: give each node its own soma location, as Step 1 does, rather than inheriting the class's location.
+- <strong>The cerebellar-nuclei types classify only as <code>neuron</code>.</strong>
+  - <code>295 CBN Dmbx1 Gaba</code> (PCL:0111685) and <code>250 CBN Neurod2 Pvalb Glut</code> (PCL:0111573) carry no NT or soma axioms, and not even the <code>some soma located in</code> annotation.
+  - Their MERFISH distributions: 295 is 92% cerebellum and 79% nuclei; 250 is 71–80% cerebellum, 59–62% nuclei and 16–20% medulla.
+  - With Step 1 and Step 2 axioms, 295 lands under the new class. 250 lands under <code>cerebellum glutamatergic neuron</code> if the roll-up allows cerebellum (it is at 80% in Zhuang, 71% in Yao), and otherwise under hindbrain.
+  - Cerebellar-nuclei classes (UBERON:0002130) could be added later, but aren't needed now.
+- <strong>Soma location in WMBO PCL terms is annotation-only.</strong> 19,239 <code>some soma located in</code> annotations; 0 <code>RO:0002100</code> axioms. Only the CL product terms have the object property. Step 3 fixes this.</p>
+<h4 id="cerebellar-nuclei-cbn-nodes-justified-axioms">Cerebellar nuclei (CBN) nodes: justified axioms</h4>
+<p><strong>Mechanism.</strong> Parent-node location and NT axioms come only from curation rows: the <code>Locations</code>, <code>Neurotransmitters</code> and <code>Neurotransmitters_comment</code> columns of <code>CCN20230722_class_curation</code>. That is how CL:4300028 got <code>MBA:512</code> and <code>GO:0061534</code>. Only 4 rows use these columns today. Clusters get NT axioms automatically, but location only as <code>some soma located in</code> annotations.</p>
+<p><strong>Cluster evidence</strong> (ratios from those annotations):
+- "broad" values are broad regions; <code>brain</code> means the cell is outside grey matter, here almost entirely arbor vitae (cerebellar white matter).
+- "nuclei" is the sum of the interposed, fastigial and dentate nuclei.</p>
+<table>
+<thead>
+<tr>
+<th>Cluster</th>
+<th>NT</th>
+<th>Cerebellum (grey)</th>
+<th>Arbor vitae</th>
+<th>Medulla</th>
+<th>Nuclei</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4521 CBN … Glut_1 Lmx1a (PCL:0116901)</td>
+<td>Glut</td>
+<td>0.56</td>
+<td>0.25</td>
+<td>—</td>
+<td>0.43</td>
+</tr>
+<tr>
+<td>4522 … Prr16 (PCL:0116902)</td>
+<td>Glut</td>
+<td>0.53</td>
+<td>0.11</td>
+<td>0.24</td>
+<td>0.20</td>
+</tr>
+<tr>
+<td>4523 … Pax5 (PCL:0116903)</td>
+<td>Glut</td>
+<td>0.74</td>
+<td>—</td>
+<td>0.24 (superior vestibular nucleus 0.15)</td>
+<td>0.62</td>
+</tr>
+<tr>
+<td>4524 … Evx2 (PCL:0116904)</td>
+<td>Glut</td>
+<td>0.61</td>
+<td>0.36</td>
+<td>—</td>
+<td>0.49</td>
+</tr>
+<tr>
+<td>5000 CBN Dmbx1 Gaba_1 Foxp2 (PCL:0117380)</td>
+<td>GABA</td>
+<td>0.69</td>
+<td>0.24</td>
+<td>—</td>
+<td>0.58</td>
+</tr>
+<tr>
+<td>5001 … Tfap2a (PCL:0117381)</td>
+<td>GABA</td>
+<td>0.66</td>
+<td>0.20</td>
+<td>—</td>
+<td>0.31</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Node-level KG MERFISH</strong> (share of grey matter, Yao / Zhuang):
+- <code>295</code>: cerebellum 92/92%; cerebellar nuclei 79/79%; medulla 8/6%.
+- <code>250</code>: cerebellum 71/80%; cerebellar nuclei 59/62%; medulla 20/16%.</p>
+<p><strong>Proposed curation:</strong>
+- <strong><code>295 CBN Dmbx1 Gaba</code> (PCL:0111685, = SUPT_1115).</strong>
+  - <code>Neurotransmitters</code> GO:0061534, with the comment "all clusters GABAergic (Gad1, Gad2, Slc32a1)".
+  - <code>Locations</code> MBA:512 (cerebellum), justified: both clusters are ≥ 0.86 cerebellum including white matter, and the node is 92% in both atlases.
+  - MBA:519 (cerebellar nuclei) is biologically right but borderline on the data (79%). It would be an optional refinement with a comment.
+  - Result: <code>cerebellum GABAergic neuron</code> → <code>cerebellum-like structure GABAergic neuron</code>.
+- <strong><code>250 CBN Neurod2 Pvalb Glut</code> (PCL:0111573, = SUPT_1003).</strong>
+  - <code>Neurotransmitters</code> GO:0061535, with the comment "all 4 clusters glutamatergic (Slc17a6)".
+  - Location: cerebellum isn't defensible for the node as a whole. 2 of 4 clusters have 24% medulla (Pax5 partly in the superior vestibular nucleus), and Yao gives the node 71%. The options:
+    - (a) <code>Locations</code> = Uberon hindbrain (UBERON:0002028) on the node, not MBA:1065: Allen's hindbrain excludes the cerebellum. This needs checking that the <code>Locations</code> column accepts Uberon IDs. plus cerebellum on clusters 4521 and 4524 (0.81 and 0.97 with white matter). Those two clusters reach <code>cerebellum-like structure glutamatergic neuron</code>; the node reaches the hindbrain glutamatergic class.
+    - (b) Cerebellum on the node, with a comment recording the medullary/vestibular minority. This could be registration spill across the CN–vestibular boundary, or CN-like vestibular neurons.
+- <strong>Decision (2026-10-26): option (a).</strong> The <code>CCN20230722_class_curation</code> rows are set on branch <code>cbn-location-nt</code> (uncommitted; the Google Sheet still needs the same edits):
+  - SUPT_1003: UBERON:0002028 and GO:0061535;
+  - SUPT_1115: MBA:512 and GO:0061534;
+  - CLUS_4521 and CLUS_4524: MBA:512.</p>
+<p>Checked with ELK (current WMBO KB plus these axioms). Direct parents:</p>
+<table>
+<thead>
+<tr>
+<th>Node</th>
+<th>Direct parent(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>250</code></td>
+<td><code>hindbrain glutamatergic neuron</code> (CL:9900008)</td>
+</tr>
+<tr>
+<td><code>295</code></td>
+<td><code>cerebellum GABAergic neuron</code> (CL:9900030)</td>
+</tr>
+<tr>
+<td>4521, 4524</td>
+<td><code>cerebellum glutamatergic neuron</code> (and so cerebellum-like)</td>
+</tr>
+<tr>
+<td>4522, 4523</td>
+<td>stay under <code>250</code> (hindbrain)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Arbor vitae.</strong> MBA_728 has no Uberon mapping in the bridge, so white-matter cells don't count toward cerebellum in the Allen roll-up. Count them in when choosing regions for deep-nuclei types.</li>
+</ul>
+<h3 id="open-questions">Open questions</h3>
+<ol>
+<li><strong>Thresholds.</strong> Is 80% of cells, in both atlases, the right threshold for asserting a soma location? Should it be lower for coarse regions?</li>
+<li><strong>Comment wording.</strong> How should an existential soma-location axiom be documented when a minority of cells register elsewhere?</li>
+<li><strong>Selection.</strong> Go to S1 without the parent rule now, or wait until the cl-comp fix and the region/NT axioms are in?</li>
+<li><strong>CL ticket.</strong> Add <code>cerebellum GABAergic neuron</code> as an addendum on #3788, or edit it directly on the local CL branch?</li>
+<li><strong>Non-neuronal types.</strong> Should they get region axioms too (e.g. <code>astrocyte of the cerebellum</code>, already defined by part_of)?</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.tabs.link"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+    
+  </body>
+</html>
